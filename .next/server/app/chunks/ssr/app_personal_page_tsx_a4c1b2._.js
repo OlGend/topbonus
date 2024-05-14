@@ -87,20 +87,6 @@ function Personal() {
         setBrands(brandsData);
     };
     const onChangeTab = (_e, newTabIndex)=>{
-        const tabMap = {
-            wallet: 0,
-            historia: 1,
-            cards: 2,
-            brands: 3
-        };
-        const tabName = Object.keys(tabMap).find((key)=>tabMap[key] === newTabIndex);
-        if (tabName) {
-            const newUrl = `${window.location.pathname}?tab=${tabName}`;
-            window.history.pushState({}, "", newUrl);
-            setTab(newTabIndex);
-        }
-    };
-    const onChangeTab = (_e, newTabIndex)=>{
         console.log("Changing tab to:", newTabIndex);
         const tabMap = {
             wallet: 0,

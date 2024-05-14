@@ -9681,28 +9681,6 @@ const iconMap = {
     "Premium Casino": __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["Spade"]
 };
 const getLabel = (label)=>{
-    const Icon = iconMap[label];
-    if (!Icon) {
-        console.error("No icon found for label:", label);
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Box"], {
-            component: "span",
-            display: "flex",
-            alignItems: "center",
-            children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Typography"], {
-                component: "span",
-                marginLeft: 1,
-                children: label
-            }, void 0, false, {
-                fileName: "<[project]/components/personal/Tabs/Tabs.tsx>",
-                lineNumber: 43,
-                columnNumber: 9
-            }, this)
-        }, label, false, {
-            fileName: "<[project]/components/personal/Tabs/Tabs.tsx>",
-            lineNumber: 42,
-            columnNumber: 7
-        }, this);
-    }
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Box"], {
         component: "span",
         display: "flex",

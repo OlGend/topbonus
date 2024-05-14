@@ -35,17 +35,17 @@ const iconMap: Record<
 };
 
 const getLabel = (label: string) => {
-  const Icon = iconMap[label];
-  if (!Icon) {
-    console.error("No icon found for label:", label);
-    return (
-      <Box key={label} component="span" display="flex" alignItems="center">
-        <Typography component="span" marginLeft={1}>
-          {label}
-        </Typography>
-      </Box>
-    );
-  }
+  // const Icon = iconMap[label];
+  // if (!Icon) {
+  //   console.error("No icon found for label:", label);
+  //   return (
+  //     <Box key={label} component="span" display="flex" alignItems="center">
+  //       <Typography component="span" marginLeft={1}>
+  //         {label}
+  //       </Typography>
+  //     </Box>
+  //   );
+  // }
 
   return (
     <Box key={label} component="span" display="flex" alignItems="center">
