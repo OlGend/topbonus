@@ -68,6 +68,7 @@ export default function Personal() {
   const [tab, setTab] = useState(0);
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const searchParams = new URLSearchParams(window.location.search);
     const tab = searchParams.get("tab");
     if (!searchParams) return;
@@ -96,28 +97,7 @@ export default function Personal() {
       window.history.pushState({}, "", newUrl);
     }
   }, [searchParams]);
-  // const getInitialTab = () => {
-  //   const searchParams = new URLSearchParams(window.location.search);
-  //   const tab = searchParams.get("tab");
-  //   const tabMap = { wallet: 0, cards: 2 };
-  //   return tab !== null && tab in tabMap ? tabMap[tab] : 0;
-  // };
 
-  // const [tab, setTab] = useState(getInitialTab());
-
-  // useEffect(() => {
-  //   const handlePopState = () => {
-  //     setTab(getInitialTab());
-  //   };
-
-  //   // Слушаем изменения в истории браузера
-  //   window.addEventListener("popstate", handlePopState);
-
-  //   // Очистка слушателя
-  //   return () => {
-  //     window.removeEventListener("popstate", handlePopState);
-  //   };
-  // }, []);
 
   const [step, setStep] = useState(DEFAULT_STEP);
   const [coin, setCoin] = useState(DEFAULT_COIN);
@@ -134,34 +114,19 @@ export default function Personal() {
   // const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
   //   setTab(newTabIndex);
   // };
-  // const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
-  //   // Сначала определим объект сопоставления вне лямбда-функции
-  //   const tabMap = { wallet: 0, historia: 1, cards: 2, brands: 3 };
-  //   const tabName = Object.keys(tabMap).find(
-  //     (key) => tabMap[key as keyof typeof tabMap] === newTabIndex
-  //   );
-
-  //   if (tabName) {
-  //     const newUrl = `${window.location.pathname}?tab=${tabName}`;
-  //     window.history.pushState({}, "", newUrl);
-  //     setTab(newTabIndex);
-  //   }
-  // };
-
   const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
-    console.log("Changing tab to:", newTabIndex);
+    // Сначала определим объект сопоставления вне лямбда-функции
     const tabMap = { wallet: 0, historia: 1, cards: 2, brands: 3 };
     const tabName = Object.keys(tabMap).find(
       (key) => tabMap[key as keyof typeof tabMap] === newTabIndex
     );
-  
+
     if (tabName) {
       const newUrl = `${window.location.pathname}?tab=${tabName}`;
       window.history.pushState({}, "", newUrl);
       setTab(newTabIndex);
     }
   };
-  
 
   const onChangeStep = (nextStep: number) => {
     setStep(nextStep);

@@ -57,6 +57,7 @@ function Personal() {
     const { data: coins, loading: coinsLoading, error: coinsError, errorMessage: coinsErrorMessage, refetch: refetchCoins } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryCoins"]();
     const [tab, setTab] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](0);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window === 'undefined') return;
         const searchParams = new URLSearchParams(window.location.search);
         const tab = searchParams.get("tab");
         if (!searchParams) return;
@@ -87,7 +88,6 @@ function Personal() {
         setBrands(brandsData);
     };
     const onChangeTab = (_e, newTabIndex)=>{
-        console.log("Changing tab to:", newTabIndex);
         const tabMap = {
             wallet: 0,
             historia: 1,
@@ -158,7 +158,7 @@ function Personal() {
                     getFeeAndEstimatedAmount: getFeeAndEstimatedAmount
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 247,
+                    lineNumber: 212,
                     columnNumber: 11
                 }, this)
             },
@@ -178,7 +178,7 @@ function Personal() {
                     onFinish: onFinish
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 267,
+                    lineNumber: 232,
                     columnNumber: 11
                 }, this)
             },
@@ -189,7 +189,7 @@ function Personal() {
                     brands: brands
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 286,
+                    lineNumber: 251,
                     columnNumber: 18
                 }, this)
             }
@@ -206,7 +206,7 @@ function Personal() {
                     onChangePhoneNumber: onChangePhoneNumber
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 297,
+                    lineNumber: 262,
                     columnNumber: 11
                 }, this)
             });
@@ -300,12 +300,12 @@ function Personal() {
             }
         }, void 0, false, {
             fileName: "<[project]/app/personal/page.tsx>",
-            lineNumber: 313,
+            lineNumber: 278,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/app/personal/page.tsx>",
-        lineNumber: 312,
+        lineNumber: 277,
         columnNumber: 5
     }, this);
 }
