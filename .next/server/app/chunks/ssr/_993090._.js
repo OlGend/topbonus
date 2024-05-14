@@ -9503,8 +9503,8 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$newArrivals$2f
 ;
 ;
 const metadata = {
-    title: "Bonus topbon.us: Your Comprehensive Source for Casino Reviews and Insights",
-    description: "Welcome to Bonus topbon.us, your ultimate destination for comprehensive casino reviews and invaluable insights. Whether you're a seasoned gambler or just starting your casino journey, we're here to guide you through the world of online casinos. Our expert team meticulously reviews casinos, covering game variety, bonuses, payment options, security, and more. With our in-depth analysis and unbiased recommendations, you can make informed decisions and elevate your gaming experience. Explore our extensive database, stay updated with the latest trends, and embark on a rewarding casino adventure with Bonus topbon.us."
+    title: "topbon.us: Your Comprehensive Source for Casino Reviews and Insights",
+    description: "Welcome to topbon.us, your ultimate destination for comprehensive casino reviews and invaluable insights. Whether you're a seasoned gambler or just starting your casino journey, we're here to guide you through the world of online casinos. Our expert team meticulously reviews casinos, covering game variety, bonuses, payment options, security, and more. With our in-depth analysis and unbiased recommendations, you can make informed decisions and elevate your gaming experience. Explore our extensive database, stay updated with the latest trends, and embark on a rewarding casino adventure with Bonus topbon.us."
 };
 async function Home() {
     const banner = true;

@@ -70,7 +70,8 @@ export default function Personal() {
   useEffect(() => {
     const searchParams = new URLSearchParams(window.location.search);
     const tab = searchParams.get("tab");
-
+    if (!searchParams) return;
+    
     // const tabMap: { [key: string]: number } = { wallet: 0, cards: 2 };
 
     const tabMap: { [key: string]: number } = {
@@ -133,19 +134,34 @@ export default function Personal() {
   // const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
   //   setTab(newTabIndex);
   // };
+  // const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
+  //   // Сначала определим объект сопоставления вне лямбда-функции
+  //   const tabMap = { wallet: 0, historia: 1, cards: 2, brands: 3 };
+  //   const tabName = Object.keys(tabMap).find(
+  //     (key) => tabMap[key as keyof typeof tabMap] === newTabIndex
+  //   );
+
+  //   if (tabName) {
+  //     const newUrl = `${window.location.pathname}?tab=${tabName}`;
+  //     window.history.pushState({}, "", newUrl);
+  //     setTab(newTabIndex);
+  //   }
+  // };
+
   const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
-    // Сначала определим объект сопоставления вне лямбда-функции
+    console.log("Changing tab to:", newTabIndex);
     const tabMap = { wallet: 0, historia: 1, cards: 2, brands: 3 };
     const tabName = Object.keys(tabMap).find(
       (key) => tabMap[key as keyof typeof tabMap] === newTabIndex
     );
-
+  
     if (tabName) {
       const newUrl = `${window.location.pathname}?tab=${tabName}`;
       window.history.pushState({}, "", newUrl);
       setTab(newTabIndex);
     }
   };
+  
 
   const onChangeStep = (nextStep: number) => {
     setStep(nextStep);
