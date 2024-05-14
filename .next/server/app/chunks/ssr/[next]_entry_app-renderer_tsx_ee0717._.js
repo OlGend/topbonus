@@ -1,0 +1,43 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
+    "chunks/ssr/[next]_entry_app-renderer_tsx_ee0717._.js",
+    {},
+]);
+(globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
+  "path": "chunks/ssr/[next]_entry_app-renderer_tsx_ee0717._.js",
+  "chunks": [
+    "chunks/ssr/node_modules_191784._.js",
+    "chunks/ssr/node_modules_0ce700._.js",
+    "chunks/ssr/components_edad1a._.js",
+    "chunks/ssr/components_TheFooter_tsx_39d08d._.js",
+    "chunks/ssr/components_getBrands_getBrands2_jsx_df5698._.js",
+    "chunks/ssr/components_fortune_index_jsx_85b3ae._.js",
+    "chunks/ssr/public_menuBonuses2_png_mjs_5c96d9._.js",
+    "chunks/ssr/public_logo3_png_mjs_698db5._.js",
+    "chunks/ssr/public_whl2_png_mjs_d23193._.js",
+    "chunks/ssr/_env_b53fce.js",
+    "chunks/ssr/app_fortune_page_tsx_ab6a2c._.js",
+    "chunks/ssr/[turbopack-node]_ipc_index_ts_5f5c85._.js",
+    "chunks/ssr/[turbopack-node]_compiled_stacktrace-parser_index_c24c0a.js",
+    "chunks/ssr/[next]_internal_operation-stream_ts_6d1525._.js",
+    "chunks/ssr/[next]_internal_headers_ts_0502d5._.js",
+    "chunks/ssr/[next]_internal_http_ts_46b0b4._.js",
+    "chunks/ssr/[next]_polyfill_app-polyfills_ts_1c472f._.js",
+    "chunks/ssr/[next]_entry_app-renderer_tsx_a32d83._.js",
+    "chunks/ssr/_85f111._.js",
+    "chunks/ssr/[next]_entry_app-entry_tsx_e0a6bb._.js",
+    "chunks/ssr/[next]_entry_app-entry_tsx_334b35._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_0b01bd._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_6467c7._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_cf64a1._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_d85798._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_5ab633._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_b75fc8._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_321ea9._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_2b1a4b._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_a0137c._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_028a39._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_11c265._.js",
+    "chunks/rsc/app_globals.css"
+  ],
+  "source": "entry"
+});

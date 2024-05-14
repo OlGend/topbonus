@@ -361,6 +361,9 @@ video {
 .top-3 {
   top: 0.75rem;
 }
+.\!m-0 {
+  margin: 0px !important;
+}
 .m-0 {
   margin: 0px;
 }
@@ -552,6 +555,9 @@ video {
 }
 .items-end {
   align-items: flex-end;
+}
+.\!items-center {
+  align-items: center !important;
 }
 .items-center {
   align-items: center;
