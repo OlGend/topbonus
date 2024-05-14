@@ -134,7 +134,7 @@ const TheHeader = () => {
 
   useEffect(() => {
     const handleMessage = (event) => {
-      if (event.origin !== "https://bonus.xxxcasinoguru.com") {
+      if (event.origin !== "https://topbon.us") {
         // console.error(
         //   "Received message from an unauthorized origin:",
         //   event.origin
@@ -189,7 +189,7 @@ useEffect(() => {
     {showBasicModal && !showResponsiveDialog && <BasicModal />}
       <div className="header__bg">
         <div className="header__container ">
-          <div className="logo">
+          <div className="logo flex items-center">
             <Link href="/">
               <Image src={Img} alt="logo" width={130} loading="lazy" />
             </Link>

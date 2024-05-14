@@ -77,7 +77,7 @@ const TheFooter = () => {
         </div> */}
         <div className="footer-end">
           <div className="main__container pt-3 pb-3 flex justify-center">
-            <span>Copyright © 2024, bonus.xxxcasinoGuru.com All rights reserved.</span>
+            <span>Copyright © 2024, topbon.us All rights reserved.</span>
           </div>
         </div>
       </div>

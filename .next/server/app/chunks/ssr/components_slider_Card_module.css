@@ -1,0 +1,76 @@
+/* chunk [output]/.next/server/app/chunks/ssr/components_slider_Card_module.css */
+/* [project]/components/slider/Card.module.css (css, ssr) */
+.card__Card__40cc38fe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 26rem;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.9);
+}
+.card__Card__40cc38fe img {
+  width: 100%;
+  min-width: 200px;
+  max-width: 200px;
+  min-height: 100px;
+  max-height: 100px !important;
+  border-radius: 8px;
+  margin-right: auto;
+  padding-top: 15px !important;
+}
+.card__Card__40cc38fe h2 {
+  margin: 0;
+  margin-top: 1rem;
+}
+.card__Card__40cc38fe p {
+  margin: 0;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.card__Card__40cc38fe .btnn__Card__40cc38fe {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div div div:nth-child(6n+1) .card__Card__40cc38fe {
+  background: url(/green_2.png);
+  background-size: cover;
+}
+div div div:nth-child(6n+2) .card__Card__40cc38fe {
+  background: url(/lightblue.png);
+  background-size: cover;
+}
+div div div:nth-child(6n+3) .card__Card__40cc38fe {
+  background: url(/blue.png);
+  background-size: cover;
+}
+div div div:nth-child(6n+4) .card__Card__40cc38fe {
+  background: url(/green_1.png);
+  background-size: cover;
+}
+div div div:nth-child(6n+5) .card__Card__40cc38fe {
+  background: url(/orange.png);
+  background-size: cover;
+}
+div div div:nth-child(6n+6) .card__Card__40cc38fe {
+  background: url(/yellow.jpg);
+  background-size: cover;
+}
+@media (min-width: 320px) and (max-width: 1259px) {
+  .card__Card__40cc38fe {
+    width: 18rem;
+    padding: 15px;
+  }
+  .card__Card__40cc38fe img {
+    width: 100%;
+    min-width: 150px;
+    max-width: 150px;
+    max-height: 75px;
+    margin-top: 0 !important;
+    padding: 0 !important;
+  }
+}
+

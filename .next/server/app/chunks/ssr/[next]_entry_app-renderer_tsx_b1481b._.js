@@ -1,0 +1,40 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
+    "chunks/ssr/[next]_entry_app-renderer_tsx_b1481b._.js",
+    {},
+]);
+(globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
+  "path": "chunks/ssr/[next]_entry_app-renderer_tsx_b1481b._.js",
+  "chunks": [
+    "chunks/ssr/node_modules_e790de._.js",
+    "chunks/ssr/_ebbf15._.js",
+    "chunks/ssr/[next]_internal_operation-stream_ts_5d10d5._.js",
+    "chunks/ssr/[next]_internal_headers_ts_435e61._.js",
+    "chunks/ssr/[next]_internal_http_ts_a662b8._.js",
+    "chunks/ssr/[next]_polyfill_app-polyfills_ts_fa7482._.js",
+    "chunks/ssr/[next]_entry_app-renderer_tsx_911aa9._.js",
+    "chunks/ssr/[turbopack-node]_ipc_index_ts_603a02._.js",
+    "chunks/ssr/[turbopack-node]_compiled_stacktrace-parser_index_cd57ce.js",
+    "chunks/ssr/_993090._.js",
+    "chunks/ssr/[next]_entry_app-entry_tsx_4665ed._.js",
+    "chunks/ssr/[next]_entry_app-entry_tsx_c0e7e9._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_0b01bd._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_6467c7._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_cf64a1._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_d85798._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_5ab633._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_f573a9._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_64275d._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_a0dcc4._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_1ee79a._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_321ea9._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_2b1a4b._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_a0137c._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_028a39._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_11c265._.js",
+    "chunks/ssr/components_slider_Card_module.css",
+    "chunks/ssr/node_modules_slick-carousel_slick_slick.css",
+    "chunks/ssr/node_modules_slick-carousel_slick_slick-theme.css",
+    "chunks/rsc/app_globals.css"
+  ],
+  "source": "entry"
+});
