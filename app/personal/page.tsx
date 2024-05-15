@@ -29,7 +29,12 @@ import {
 } from "@mui/material";
 import { ChangeEvent, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+
 import { useSearchParams } from "next/navigation";
+
+
+
+
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands";
 
@@ -46,6 +51,7 @@ const BRAND_CATEGORIES = { key1: "Segment2", key2: "Premium" };
 
 export default function Personal() {
   const [searchParams, setSearchParams] = useSearchParams();
+  console.log("SEARCH", searchParams);
   const { t } = useTranslation();
   const { language } = useLanguage();
 
@@ -66,13 +72,14 @@ export default function Personal() {
   } = useQueryCoins();
 
   const [tab, setTab] = useState(0);
+  console.log("TAB", tab);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const searchParams = new URLSearchParams(window.location.search);
     const tab = searchParams.get("tab");
     if (!searchParams) return;
-    
+
     // const tabMap: { [key: string]: number } = { wallet: 0, cards: 2 };
 
     const tabMap: { [key: string]: number } = {
@@ -88,7 +95,7 @@ export default function Personal() {
       // Создаём новый объект URLSearchParams на основе текущего
       // чтобы можно было изменить параметры
       const newSearchParams = new URLSearchParams(window.location.search);
-      newSearchParams.delete("tab"); // Удаляем параметр 'tab'
+      newSearchParams.delete("tab");
 
       // Обновляем URL без перезагрузки страницы
       const newUrl = `${
@@ -99,6 +106,10 @@ export default function Personal() {
   }, [searchParams]);
 
 
+
+
+
+  
   const [step, setStep] = useState(DEFAULT_STEP);
   const [coin, setCoin] = useState(DEFAULT_COIN);
   const [amount, setAmount] = useState("");
@@ -127,6 +138,7 @@ export default function Personal() {
       setTab(newTabIndex);
     }
   };
+  
 
   const onChangeStep = (nextStep: number) => {
     setStep(nextStep);
@@ -310,7 +322,6 @@ export default function Personal() {
                       t("Withdrawal History"),
                       t("Cards Shop"),
                       t("Premium Casino"),
-
                     ],
                     content: [
                       <Stepper
@@ -335,7 +346,7 @@ export default function Personal() {
                         statusPayment={user.status_payment}
                       />,
                       <Cards key="cardsShop" user={user} onFinish={onFinish} />,
-                      <UserBrands key="brands" />
+                      <UserBrands key="brands" />,
                     ],
                   }}
                 />

@@ -51,11 +51,13 @@ const BRAND_CATEGORIES = {
 };
 function Personal() {
     const [searchParams, setSearchParams] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$28$ecmascript$29$__["useSearchParams"]();
+    console.log("SEARCH", searchParams);
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const { data: user, loading: userLoading, error: userError, errorMessage: userErrorMessage, refetch: refetchUser } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryUser"]();
     const { data: coins, loading: coinsLoading, error: coinsError, errorMessage: coinsErrorMessage, refetch: refetchCoins } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryCoins"]();
     const [tab, setTab] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](0);
+    console.log("TAB", tab);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         if (typeof window === 'undefined') return;
         const searchParams = new URLSearchParams(window.location.search);
@@ -158,7 +160,7 @@ function Personal() {
                     getFeeAndEstimatedAmount: getFeeAndEstimatedAmount
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 212,
+                    lineNumber: 224,
                     columnNumber: 11
                 }, this)
             },
@@ -178,7 +180,7 @@ function Personal() {
                     onFinish: onFinish
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 232,
+                    lineNumber: 244,
                     columnNumber: 11
                 }, this)
             },
@@ -189,7 +191,7 @@ function Personal() {
                     brands: brands
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 251,
+                    lineNumber: 263,
                     columnNumber: 18
                 }, this)
             }
@@ -206,7 +208,7 @@ function Personal() {
                     onChangePhoneNumber: onChangePhoneNumber
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 262,
+                    lineNumber: 274,
                     columnNumber: 11
                 }, this)
             });
@@ -300,12 +302,12 @@ function Personal() {
             }
         }, void 0, false, {
             fileName: "<[project]/app/personal/page.tsx>",
-            lineNumber: 278,
+            lineNumber: 290,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/app/personal/page.tsx>",
-        lineNumber: 277,
+        lineNumber: 289,
         columnNumber: 5
     }, this);
 }
