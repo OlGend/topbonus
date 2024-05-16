@@ -9617,6 +9617,12 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1259px) {
 
+  .topbr .tobbb .review-bonus {
+    font-size: 15px !important;
+    line-height: 18px !important;
+  }
+
+
   .page-personal.main__container.pb-10 {
     width: 100%;
     border-radius: 0;

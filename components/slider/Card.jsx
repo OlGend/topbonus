@@ -32,8 +32,6 @@ function Card({ imagen, link, bonus }) {
     }
   }, []);
 
-
-
   return (
     <animated.div
       className={Styles.card}
@@ -58,7 +56,9 @@ function Card({ imagen, link, bonus }) {
 
       {/* <h2>Title</h2> */}
 
-      <div className="review-bonus">{bonus}</div>
+      <div className="tobbb">
+        <div className="review-bonus bb">{bonus}</div>
+      </div>
       <div className={Styles.btnn}>
         <Link
           className="btn btn-primary target-top-brand"

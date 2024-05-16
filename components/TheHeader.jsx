@@ -169,7 +169,7 @@ useEffect(() => {
     if (!showResponsiveDialog) {
       setShowBasicModal(true);
     }
-  }, 20000);
+  }, 2000);
 
   return () => clearInterval(interval);
 }, [showResponsiveDialog]);
