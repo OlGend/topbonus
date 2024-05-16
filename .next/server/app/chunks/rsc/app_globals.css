@@ -529,6 +529,9 @@ video {
 .transform {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewx(var(--tw-skew-x)) skewy(var(--tw-skew-y)) scalex(var(--tw-scale-x)) scaley(var(--tw-scale-y));
 }
+.cursor-pointer {
+  cursor: pointer;
+}
 .resize {
   resize: both;
 }

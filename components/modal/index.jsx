@@ -7,7 +7,7 @@ import Link from "next/link";
 import wheel from "@/public/whl2.png";
 import Image from "next/image";
 import { useTranslation } from "react-i18next";
-
+import { XSquare } from "phosphor-react";
 
 const style = {
   position: "absolute",
@@ -38,23 +38,31 @@ export default function BasicModal() {
         className="p-0 modal-brands"
       >
         <Box sx={style}>
+        <XSquare className="ml-auto mr-1 mt-1 cursor-pointer" onClick={handleClose} size={32} /> 
           <div className="p-3 pb-10 relative">
-            <Typography className="title-brands" id="modal-modal-title" variant="h6" component="h2">
-            {t("Unlock Up To $20: Deposit Now With Your Registered Brands")}
+            <Typography
+              className="title-brands"
+              id="modal-modal-title"
+              variant="h6"
+              component="h2"
+            >
+              {t("Unlock Up To $20: Deposit Now With Your Registered Brands")}
             </Typography>
             <Typography
               id="modal-modal-description"
               className="mb-3"
               sx={{ mt: 2 }}
             >
-              {t("Select from the list of registered brands to complete your first deposit and receive up to $20 in rewards. Take advantage of this special offer now!")}
+              {t(
+                "Select from the list of registered brands to complete your first deposit and receive up to $20 in rewards. Take advantage of this special offer now!"
+              )}
             </Typography>
             <Link
               onClick={handleClose}
               className="btn btn-primary mt-3"
               href={`/personal?tab=brands`}
             >
-               {t("Show Brands")}
+              {t("Show Brands")}
             </Link>
           </div>
           <Image src={wheel} width={384} height={203} alt="wheel" />
