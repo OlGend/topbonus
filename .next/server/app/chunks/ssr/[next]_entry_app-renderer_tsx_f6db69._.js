@@ -1,0 +1,43 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
+    "chunks/ssr/[next]_entry_app-renderer_tsx_f6db69._.js",
+    {},
+]);
+(globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
+  "path": "chunks/ssr/[next]_entry_app-renderer_tsx_f6db69._.js",
+  "chunks": [
+    "chunks/ssr/node_modules_18b8e6._.js",
+    "chunks/ssr/public_c789d7._.js",
+    "chunks/ssr/node_modules_b2e7e3._.js",
+    "chunks/ssr/components_FilterLoader_jsx_c46a1c._.js",
+    "chunks/ssr/components_18f9dd._.js",
+    "chunks/ssr/components_TheFooter_tsx_39d08d._.js",
+    "chunks/ssr/components_getBrands_getBrands2_jsx_d0f2bf._.js",
+    "chunks/ssr/components_Brands_payments_FilteredPayments_jsx_b0995c._.js",
+    "chunks/ssr/components_Brands_payments_Payments_jsx_7251e2._.js",
+    "chunks/ssr/_env_b53fce.js",
+    "chunks/ssr/[turbopack-node]_ipc_index_ts_0541fd._.js",
+    "chunks/ssr/[turbopack-node]_compiled_stacktrace-parser_index_befd5a.js",
+    "chunks/ssr/[next]_internal_operation-stream_ts_c9e944._.js",
+    "chunks/ssr/[next]_internal_headers_ts_8de3fd._.js",
+    "chunks/ssr/[next]_internal_http_ts_814061._.js",
+    "chunks/ssr/[next]_polyfill_app-polyfills_ts_ff702b._.js",
+    "chunks/ssr/[next]_entry_app-renderer_tsx_f674b2._.js",
+    "chunks/ssr/[next]_entry_09a7ef._.js",
+    "chunks/ssr/node_modules_946a91._.js",
+    "chunks/ssr/components_TheHeader_jsx_e398df._.js",
+    "chunks/ssr/components_TheHeader_jsx_3ad551._.js",
+    "chunks/ssr/components_TheFooter_tsx_c02346._.js",
+    "chunks/ssr/components_TheFooter_tsx_ea0019._.js",
+    "chunks/ssr/components_Brands_payments_FilteredPayments_jsx_c93ef8._.js",
+    "chunks/ssr/components_Brands_payments_FilteredPayments_jsx_30f6e1._.js",
+    "chunks/ssr/components_Brands_payments_Payments_jsx_2e1b0d._.js",
+    "chunks/ssr/components_Brands_payments_Payments_jsx_73f9a2._.js",
+    "chunks/ssr/components_switcher_LanguageContext_jsx_631687._.js",
+    "chunks/ssr/components_switcher_LanguageContext_jsx_bf02d4._.js",
+    "chunks/ssr/app_3c29d6._.js",
+    "chunks/ssr/node_modules_slick-carousel_slick_slick.css",
+    "chunks/ssr/node_modules_slick-carousel_slick_slick-theme.css",
+    "chunks/rsc/app_globals.css"
+  ],
+  "source": "entry"
+});

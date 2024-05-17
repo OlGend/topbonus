@@ -138,7 +138,7 @@ export default function Personal() {
       setTab(newTabIndex);
     }
   };
-  
+  // Спасибо за своевременную работу с логотипами и удобное предоставление данных статей для заливки на сайт.
 
   const onChangeStep = (nextStep: number) => {
     setStep(nextStep);
