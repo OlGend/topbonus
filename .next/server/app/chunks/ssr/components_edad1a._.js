@@ -116,7 +116,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link
 var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$whl2$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$whl2$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/whl2.png.mjs/(IMAGE)/[project]/public/whl2.png (static) (structured image object, ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/phosphor-react/dist/index.esm.js (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+;
 ;
 ;
 ;
@@ -153,6 +155,15 @@ function BasicModal() {
             children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Box$2f$index$2e$js__$28$ecmascript$29$__["default"], {
                 sx: style,
                 children: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["XSquare"], {
+                        className: "ml-auto mr-1 mt-1 cursor-pointer",
+                        onClick: handleClose,
+                        size: 32
+                    }, void 0, false, {
+                        fileName: "<[project]/components/modal/index.jsx>",
+                        lineNumber: 41,
+                        columnNumber: 9
+                    }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                         className: "p-3 pb-10 relative",
                         children: [
@@ -164,7 +175,7 @@ function BasicModal() {
                                 children: t("Unlock Up To $20: Deposit Now With Your Registered Brands")
                             }, void 0, false, {
                                 fileName: "<[project]/components/modal/index.jsx>",
-                                lineNumber: 42,
+                                lineNumber: 43,
                                 columnNumber: 13
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Typography$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -176,7 +187,7 @@ function BasicModal() {
                                 children: t("Select from the list of registered brands to complete your first deposit and receive up to $20 in rewards. Take advantage of this special offer now!")
                             }, void 0, false, {
                                 fileName: "<[project]/components/modal/index.jsx>",
-                                lineNumber: 45,
+                                lineNumber: 51,
                                 columnNumber: 13
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -186,13 +197,13 @@ function BasicModal() {
                                 children: t("Show Brands")
                             }, void 0, false, {
                                 fileName: "<[project]/components/modal/index.jsx>",
-                                lineNumber: 52,
+                                lineNumber: 60,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/components/modal/index.jsx>",
-                        lineNumber: 41,
+                        lineNumber: 42,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -202,7 +213,7 @@ function BasicModal() {
                         alt: "wheel"
                     }, void 0, false, {
                         fileName: "<[project]/components/modal/index.jsx>",
-                        lineNumber: 60,
+                        lineNumber: 68,
                         columnNumber: 11
                     }, this)
                 ]
@@ -7378,7 +7389,7 @@ const TheHeader = ()=>{
             if (!showResponsiveDialog) {
                 setShowBasicModal(true);
             }
-        }, 20000);
+        }, 2000);
         return ()=>clearInterval(interval);
     }, [
         showResponsiveDialog

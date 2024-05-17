@@ -1,6 +1,6 @@
 Error.stackTraceLimit = 100;
 global.self = global;
-require("./node_modules_191784._.js");
+require("./node_modules_067d70._.js");
 require("./node_modules_0ce700._.js");
 require("./components_edad1a._.js");
 require("./components_TheFooter_tsx_39d08d._.js");
@@ -33,4 +33,4 @@ require("./[next]_entry_app_server-to-client-ssr_tsx_a0137c._.js");
 require("./[next]_entry_app_server-to-client-ssr_tsx_028a39._.js");
 require("./[next]_entry_app_server-to-client-ssr_tsx_11c265._.js");
 require("./[next]_entry_app-renderer_tsx_ee0717._.js");
-require("./[next]_entry_app-renderer_tsx_fb3fa8._.js");
+require("./[next]_entry_app-renderer_tsx_bbebed._.js");

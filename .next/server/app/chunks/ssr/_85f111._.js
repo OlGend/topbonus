@@ -8882,24 +8882,24 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_34bb49._.js",
+    "path": "_next/static/chunks/node_modules_fbbbd0._.js",
     "included": [
       "[project]/node_modules/react-transition-group/esm/index.js (ecmascript)",
+      "[project]/node_modules/memoize-one/dist/memoize-one.esm.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_436009._.js",
+    "included": [
+      "[project]/node_modules/use-isomorphic-layout-effect/dist/use-isomorphic-layout-effect.browser.esm.js (ecmascript)",
+      "[project]/node_modules/react-country-flag/dist/react-country-flag.esm.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_2d745d._.js",
+    "included": [
+      "[project]/node_modules/html-parse-stringify/dist/html-parse-stringify.module.js (ecmascript)",
       "[project]/node_modules/phosphor-react/dist/index.esm.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_cde877._.js",
-    "included": [
-      "[project]/node_modules/memoize-one/dist/memoize-one.esm.js (ecmascript)",
-      "[project]/node_modules/use-isomorphic-layout-effect/dist/use-isomorphic-layout-effect.browser.esm.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_eb41c4._.js",
-    "included": [
-      "[project]/node_modules/react-country-flag/dist/react-country-flag.esm.js (ecmascript)",
-      "[project]/node_modules/html-parse-stringify/dist/html-parse-stringify.module.js (ecmascript)"
     ]
   },
   {
