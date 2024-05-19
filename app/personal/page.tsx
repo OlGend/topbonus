@@ -29,6 +29,7 @@ import {
 } from "@mui/material";
 import { ChangeEvent, useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
+import { useRouter } from 'next/router';
 import { useSearchParams } from "next/navigation";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands";
@@ -45,8 +46,8 @@ const DEFAULT_STEP = 0;
 const BRAND_CATEGORIES = { key1: "Segment2", key2: "Premium" };
 
 export default function Personal() {
+  const router = useRouter();
   const [searchParams, setSearchParams] = useSearchParams();
-  console.log("SEARCH", searchParams);
   const { t } = useTranslation();
   const { language } = useLanguage();
 
@@ -69,39 +70,48 @@ export default function Personal() {
   const [tab, setTab] = useState(0);
   console.log("TAB", tab);
 
+  // useEffect(() => {
+  //   if (typeof window === 'undefined') return;
+  //   const searchParams = new URLSearchParams(window.location.search);
+  //   // const tab = searchParams.get("tab");
+  //   const { tab } = router.query;
+  //   if (!searchParams) return;
+
+  //   // const tabMap: { [key: string]: number } = { wallet: 0, cards: 2 };
+
+  //   const tabMap: { [key: string]: number } = {
+  //     wallet: 0,
+  //     historia: 1,
+  //     cards: 2,
+  //     brands: 3,
+  //   };
+
+  //   if (tab !== null && tab in tabMap) {
+  //     setTab(tabMap[tab]);
+
+  //     // Создаём новый объект URLSearchParams на основе текущего
+  //     // чтобы можно было изменить параметры
+  //     const newSearchParams = new URLSearchParams(window.location.search);
+  //     newSearchParams.delete("tab");
+
+  //     // Обновляем URL без перезагрузки страницы
+  //     const newUrl = `${
+  //       window.location.pathname
+  //     }?${newSearchParams.toString()}`;
+  //     window.history.pushState({}, "", newUrl);
+  //   }
+  // }, [searchParams]);
+
+
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    const searchParams = new URLSearchParams(window.location.search);
-    const tab = searchParams.get("tab");
-    if (!searchParams) return;
-
-    // const tabMap: { [key: string]: number } = { wallet: 0, cards: 2 };
-
-    const tabMap: { [key: string]: number } = {
-      wallet: 0,
-      historia: 1,
-      cards: 2,
-      brands: 3,
-    };
-
-    if (tab !== null && tab in tabMap) {
-      setTab(tabMap[tab]);
-
-      // Создаём новый объект URLSearchParams на основе текущего
-      // чтобы можно было изменить параметры
-      const newSearchParams = new URLSearchParams(window.location.search);
-      newSearchParams.delete("tab");
-
-      // Обновляем URL без перезагрузки страницы
-      const newUrl = `${
-        window.location.pathname
-      }?${newSearchParams.toString()}`;
-      window.history.pushState({}, "", newUrl);
+    const tab = Array.isArray(router.query.tab) ? router.query.tab[0] : router.query.tab;
+    if (tab) {
+      const tabMap = { wallet: 0, historia: 1, cards: 2, brands: 3 };
+      if (tab in tabMap) {
+        setTab(tabMap[tab as keyof typeof tabMap]);
+      }
     }
-  }, [searchParams]);
-
-
-
+  }, [router.query]);
 
 
   
