@@ -1,4 +1,3 @@
-"use client"
 import { useState, useEffect, ChangeEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { useSearchParams } from "next/navigation";
@@ -17,7 +16,6 @@ import { getBrands } from "@/components/getBrands/getBrands";
 import { Coins, useQueryCoins, useQueryEstimated, useQueryFee, useQueryUser } from "@/queries";
 import type { User } from "@/interfaces/user";
 import { useLanguage } from "@/components/switcher/LanguageContext";
-
 
 export type Brand = {
   id_brand: string;
@@ -59,7 +57,7 @@ export default function Personal() {
     };
 
     if (tab !== null && tab in tabMap) {
-      setTab(tabMap[tab]);
+      setTab(tabMap[tab as keyof typeof tabMap]);
 
       const newSearchParams = new URLSearchParams(window.location.search);
       newSearchParams.delete("tab");
@@ -233,7 +231,7 @@ export default function Personal() {
                         ))}
                       </Stepper>,
                       <PaymentHistory key="withdrawalHistory" statusPayment={user.status_payment} />,
-                      <Cards key="cardsShop" user={user} onFinish={onFinish} />,
+                      <Cards key="cardsShop" user={user} />,
                       <UserBrands key="brands" />,
                     ],
                   }}
