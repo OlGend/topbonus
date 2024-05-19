@@ -7389,7 +7389,7 @@ const TheHeader = ()=>{
             if (!showResponsiveDialog) {
                 setShowBasicModal(true);
             }
-        }, 2000);
+        }, 20000);
         return ()=>clearInterval(interval);
     }, [
         showResponsiveDialog

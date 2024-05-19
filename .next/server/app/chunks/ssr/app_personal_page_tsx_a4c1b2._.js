@@ -20,9 +20,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$personal$2f$Ta
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$personal$2f$WalletAddressStep$2f$index$2e$ts__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/personal/WalletAddressStep/index.ts (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$products$2f$Cards$2f$index$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/products/Cards/index.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UserBrands$2f$UserBrands$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/UserBrands/UserBrands.tsx (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__ = __turbopack_import__("[project]/queries/index.ts (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands.jsx (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
 ;
@@ -56,28 +56,20 @@ function Personal() {
     const { data: user, loading: userLoading, error: userError, refetch: refetchUser } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryUser"]();
     const { data: coins, loading: coinsLoading, error: coinsError, refetch: refetchCoins } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryCoins"]();
     const [tab, setTab] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](0);
-    const [step, setStep] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](DEFAULT_STEP);
-    const [coin, setCoin] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](DEFAULT_COIN);
-    const [amount, setAmount] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
-    const [walletAddress, setWalletAddress] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
-    const [phoneNumber, setPhoneNumber] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
-    const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         if (typeof window === 'undefined') return;
         const searchParams = new URLSearchParams(window.location.search);
-        const tab = searchParams.get("tab");
-        const tabMap = {
-            wallet: 0,
-            historia: 1,
-            cards: 2,
-            brands: 3
-        };
-        if (tab !== null && tab in tabMap) {
-            setTab(tabMap[tab]);
-            const newSearchParams = new URLSearchParams(window.location.search);
-            newSearchParams.delete("tab");
-            const newUrl = `${window.location.pathname}?${newSearchParams.toString()}`;
-            window.history.pushState({}, "", newUrl);
+        const tabParam = searchParams.get("tab");
+        if (tabParam) {
+            const tabMap = {
+                wallet: 0,
+                historia: 1,
+                cards: 2,
+                brands: 3
+            };
+            if (tabParam in tabMap) {
+                setTab(tabMap[tabParam]);
+            }
         }
     }, [
         searchParams
@@ -95,6 +87,16 @@ function Personal() {
             window.history.pushState({}, "", newUrl);
             setTab(newTabIndex);
         }
+    };
+    const [step, setStep] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](DEFAULT_STEP);
+    const [coin, setCoin] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](DEFAULT_COIN);
+    const [amount, setAmount] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const [walletAddress, setWalletAddress] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const [phoneNumber, setPhoneNumber] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const fetchBrands = async ()=>{
+        const brandsData = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES, language);
+        setBrands(brandsData);
     };
     const onChangeStep = (nextStep)=>{
         setStep(nextStep);
@@ -116,10 +118,6 @@ function Personal() {
     };
     const { data: fee, refetch: refetchFee, reset: resetFee } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryFee"](coin, amount);
     const { data: estimatedAmount, refetch: refetchEstimatedAmount, reset: resetEstimatedAmount } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryEstimated"](coin, amount);
-    const fetchBrands = async ()=>{
-        const brandsData = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES, language);
-        setBrands(brandsData);
-    };
     const getFeeAndEstimatedAmount = async ()=>{
         await refetchFee();
         await refetchEstimatedAmount();
@@ -135,7 +133,8 @@ function Personal() {
         resetEstimatedAmount();
     };
     const getWalletAddressStepDescription = ()=>{
-        if (!fee || !estimatedAmount || coin === "PayPal") return;
+        const isPayPal = coin === "PayPal";
+        if (!fee || !estimatedAmount || isPayPal) return;
         const receive = Number(estimatedAmount) - fee;
         return `${t("Fee:")} ${fee} ${coin}, ${t("You will receive on balance:")} ${receive} ${coin}`;
     };
@@ -156,7 +155,7 @@ function Personal() {
                     getFeeAndEstimatedAmount: getFeeAndEstimatedAmount
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 143,
+                    lineNumber: 160,
                     columnNumber: 11
                 }, this)
             },
@@ -176,7 +175,7 @@ function Personal() {
                     onFinish: onFinish
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 160,
+                    lineNumber: 180,
                     columnNumber: 11
                 }, this)
             },
@@ -187,7 +186,7 @@ function Personal() {
                     brands: brands
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 177,
+                    lineNumber: 199,
                     columnNumber: 18
                 }, this)
             }
@@ -204,7 +203,7 @@ function Personal() {
                     onChangePhoneNumber: onChangePhoneNumber
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 186,
+                    lineNumber: 210,
                     columnNumber: 11
                 }, this)
             });
@@ -298,12 +297,12 @@ function Personal() {
             }
         }, void 0, false, {
             fileName: "<[project]/app/personal/page.tsx>",
-            lineNumber: 202,
+            lineNumber: 226,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/app/personal/page.tsx>",
-        lineNumber: 201,
+        lineNumber: 225,
         columnNumber: 5
     }, this);
 }
