@@ -1,5 +1,9 @@
 "use client";
 
+import { useState, useEffect, ChangeEvent } from "react";
+import { useTranslation } from "react-i18next";
+import { useSearchParams } from "next/navigation";
+import { Box, Step, StepContent, StepLabel, Stepper, Typography, SelectChangeEvent } from "@mui/material";
 import { Fetcher } from "@/components/Fetcher";
 import Loader from "@/components/Loader";
 import { FinallyStep } from "@/components/personal/FinallyStep";
@@ -11,25 +15,7 @@ import { WalletAddressStep } from "@/components/personal/WalletAddressStep";
 import Cards from "@/components/products/Cards";
 import UserBrands from "@/components/UserBrands/UserBrands";
 import type { User } from "@/interfaces/user";
-import {
-  Coins,
-  useQueryCoins,
-  useQueryEstimated,
-  useQueryFee,
-  useQueryUser,
-} from "@/queries";
-import {
-  Box,
-  SelectChangeEvent,
-  Step,
-  StepContent,
-  StepLabel,
-  Stepper,
-  Typography,
-} from "@mui/material";
-import { ChangeEvent, useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
-import { useSearchParams } from "next/navigation";
+import { Coins, useQueryCoins, useQueryEstimated, useQueryFee, useQueryUser } from "@/queries";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands";
 
@@ -46,7 +32,6 @@ const BRAND_CATEGORIES = { key1: "Segment2", key2: "Premium" };
 
 export default function Personal() {
   const [searchParams, setSearchParams] = useSearchParams();
-  console.log("SEARCH", searchParams);
   const { t } = useTranslation();
   const { language } = useLanguage();
 
@@ -54,7 +39,6 @@ export default function Personal() {
     data: user,
     loading: userLoading,
     error: userError,
-    errorMessage: userErrorMessage,
     refetch: refetchUser,
   } = useQueryUser();
 
@@ -62,66 +46,31 @@ export default function Personal() {
     data: coins,
     loading: coinsLoading,
     error: coinsError,
-    errorMessage: coinsErrorMessage,
     refetch: refetchCoins,
   } = useQueryCoins();
 
   const [tab, setTab] = useState(0);
-  console.log("TAB", tab);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const searchParams = new URLSearchParams(window.location.search);
-    const tab = searchParams.get("tab");
-    if (!searchParams) return;
+    const tabParam = searchParams.get("tab");
 
-    // const tabMap: { [key: string]: number } = { wallet: 0, cards: 2 };
+    if (tabParam) {
+      const tabMap: { [key: string]: number } = {
+        wallet: 0,
+        historia: 1,
+        cards: 2,
+        brands: 3,
+      };
 
-    const tabMap: { [key: string]: number } = {
-      wallet: 0,
-      historia: 1,
-      cards: 2,
-      brands: 3,
-    };
-
-    if (tab !== null && tab in tabMap) {
-      setTab(tabMap[tab]);
-
-      // Создаём новый объект URLSearchParams на основе текущего
-      // чтобы можно было изменить параметры
-      const newSearchParams = new URLSearchParams(window.location.search);
-      newSearchParams.delete("tab");
-
-      // Обновляем URL без перезагрузки страницы
-      const newUrl = `${
-        window.location.pathname
-      }?${newSearchParams.toString()}`;
-      window.history.pushState({}, "", newUrl);
+      if (tabParam in tabMap) {
+        setTab(tabMap[tabParam]);
+      }
     }
   }, [searchParams]);
 
-
-
-
-
-  
-  const [step, setStep] = useState(DEFAULT_STEP);
-  const [coin, setCoin] = useState(DEFAULT_COIN);
-  const [amount, setAmount] = useState("");
-  const [walletAddress, setWalletAddress] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [brands, setBrands] = useState<Brand[]>([]);
-
-  const fetchBrands = async () => {
-    const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
-    setBrands(brandsData);
-  };
-
-  // const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
-  //   setTab(newTabIndex);
-  // };
   const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
-    // Сначала определим объект сопоставления вне лямбда-функции
     const tabMap = { wallet: 0, historia: 1, cards: 2, brands: 3 };
     const tabName = Object.keys(tabMap).find(
       (key) => tabMap[key as keyof typeof tabMap] === newTabIndex
@@ -134,6 +83,18 @@ export default function Personal() {
     }
   };
 
+  const [step, setStep] = useState(DEFAULT_STEP);
+  const [coin, setCoin] = useState(DEFAULT_COIN);
+  const [amount, setAmount] = useState("");
+  const [walletAddress, setWalletAddress] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [brands, setBrands] = useState<Brand[]>([]);
+
+  const fetchBrands = async () => {
+    const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
+    setBrands(brandsData);
+  };
+
   const onChangeStep = (nextStep: number) => {
     setStep(nextStep);
   };
@@ -143,16 +104,12 @@ export default function Personal() {
     setCoin(nextCoin);
   };
 
-  const onChangeAmount = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const onChangeAmount = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const nextAmount = e.target.value;
     setAmount(nextAmount);
   };
 
-  const onChangeWalletAddress = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const onChangeWalletAddress = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const nextWalletAddress = e.target.value;
     setWalletAddress(nextWalletAddress);
   };
@@ -161,23 +118,8 @@ export default function Personal() {
     setPhoneNumber(nextPhoneNumber);
   };
 
-  const {
-    data: fee,
-    loading: feeLoading,
-    error: feeError,
-    errorMessage: feeErrorMessage,
-    refetch: refetchFee,
-    reset: resetFee,
-  } = useQueryFee(coin, amount);
-
-  const {
-    data: estimatedAmount,
-    loading: estimatedAmountLoading,
-    error: estimatedAmountError,
-    errorMessage: estimatedAmountErrorMessage,
-    refetch: refetchEstimatedAmount,
-    reset: resetEstimatedAmount,
-  } = useQueryEstimated(coin, amount);
+  const { data: fee, refetch: refetchFee, reset: resetFee } = useQueryFee(coin, amount);
+  const { data: estimatedAmount, refetch: refetchEstimatedAmount, reset: resetEstimatedAmount } = useQueryEstimated(coin, amount);
 
   const getFeeAndEstimatedAmount = async () => {
     await refetchFee();
