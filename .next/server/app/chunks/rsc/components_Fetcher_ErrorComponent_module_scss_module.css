@@ -1,0 +1,24 @@
+/* chunk [output]/.next/server/app/chunks/rsc/components_Fetcher_ErrorComponent_module_scss_module.css */
+/* [project]/components/Fetcher/ErrorComponent.module.scss.module.css (css, rsc) */
+.container__ErrorComponent__8d977c06 {
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+.container__ErrorComponent__8d977c06 .title__ErrorComponent__8d977c06 {
+  margin: 0;
+  color: var(--base-black);
+}
+.container__ErrorComponent__8d977c06 .subtitle__ErrorComponent__8d977c06 {
+  margin: 0;
+  color: var(--base-med-grey-1);
+}
+.container__ErrorComponent__8d977c06 .button__ErrorComponent__8d977c06 {
+  width: 150px;
+}
+

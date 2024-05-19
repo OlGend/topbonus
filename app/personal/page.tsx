@@ -1,5 +1,8 @@
-"use client";
-
+"use client"
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import { useSearchParams } from "next/navigation";
+import { Box, Step, StepContent, StepLabel, Stepper, Typography } from "@mui/material";
 import { Fetcher } from "@/components/Fetcher";
 import Loader from "@/components/Loader";
 import { FinallyStep } from "@/components/personal/FinallyStep";
@@ -10,33 +13,11 @@ import { Tabs } from "@/components/personal/Tabs";
 import { WalletAddressStep } from "@/components/personal/WalletAddressStep";
 import Cards from "@/components/products/Cards";
 import UserBrands from "@/components/UserBrands/UserBrands";
-import type { User } from "@/interfaces/user";
-import {
-  Coins,
-  useQueryCoins,
-  useQueryEstimated,
-  useQueryFee,
-  useQueryUser,
-} from "@/queries";
-import {
-  Box,
-  SelectChangeEvent,
-  Step,
-  StepContent,
-  StepLabel,
-  Stepper,
-  Typography,
-} from "@mui/material";
-import { ChangeEvent, useState, useEffect } from "react";
-import { useTranslation } from "react-i18next";
-
-import { useSearchParams } from "next/navigation";
-
-
-
-
-import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands";
+import { Coins, useQueryCoins, useQueryEstimated, useQueryFee, useQueryUser } from "@/queries";
+import type { User } from "@/interfaces/user";
+import { SelectChangeEvent, ChangeEvent } from "react";
+import { useLanguage } from "@/components/switcher/LanguageContext";
 
 export type Brand = {
   id_brand: string;
@@ -51,38 +32,26 @@ const BRAND_CATEGORIES = { key1: "Segment2", key2: "Premium" };
 
 export default function Personal() {
   const [searchParams, setSearchParams] = useSearchParams();
-  console.log("SEARCH", searchParams);
   const { t } = useTranslation();
   const { language } = useLanguage();
 
-  const {
-    data: user,
-    loading: userLoading,
-    error: userError,
-    errorMessage: userErrorMessage,
-    refetch: refetchUser,
-  } = useQueryUser();
-
-  const {
-    data: coins,
-    loading: coinsLoading,
-    error: coinsError,
-    errorMessage: coinsErrorMessage,
-    refetch: refetchCoins,
-  } = useQueryCoins();
+  const { data: user, loading: userLoading, error: userError, refetch: refetchUser } = useQueryUser();
+  const { data: coins, loading: coinsLoading, error: coinsError, refetch: refetchCoins } = useQueryCoins();
 
   const [tab, setTab] = useState(0);
-  console.log("TAB", tab);
+  const [step, setStep] = useState(DEFAULT_STEP);
+  const [coin, setCoin] = useState(DEFAULT_COIN);
+  const [amount, setAmount] = useState("");
+  const [walletAddress, setWalletAddress] = useState("");
+  const [phoneNumber, setPhoneNumber] = useState("");
+  const [brands, setBrands] = useState<Brand[]>([]);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
     const searchParams = new URLSearchParams(window.location.search);
     const tab = searchParams.get("tab");
-    if (!searchParams) return;
 
-    // const tabMap: { [key: string]: number } = { wallet: 0, cards: 2 };
-
-    const tabMap: { [key: string]: number } = {
+    const tabMap = {
       wallet: 0,
       historia: 1,
       cards: 2,
@@ -92,41 +61,14 @@ export default function Personal() {
     if (tab !== null && tab in tabMap) {
       setTab(tabMap[tab]);
 
-      // Создаём новый объект URLSearchParams на основе текущего
-      // чтобы можно было изменить параметры
       const newSearchParams = new URLSearchParams(window.location.search);
       newSearchParams.delete("tab");
-
-      // Обновляем URL без перезагрузки страницы
-      const newUrl = `${
-        window.location.pathname
-      }?${newSearchParams.toString()}`;
+      const newUrl = `${window.location.pathname}?${newSearchParams.toString()}`;
       window.history.pushState({}, "", newUrl);
     }
   }, [searchParams]);
 
-
-
-
-
-  
-  const [step, setStep] = useState(DEFAULT_STEP);
-  const [coin, setCoin] = useState(DEFAULT_COIN);
-  const [amount, setAmount] = useState("");
-  const [walletAddress, setWalletAddress] = useState("");
-  const [phoneNumber, setPhoneNumber] = useState("");
-  const [brands, setBrands] = useState<Brand[]>([]);
-
-  const fetchBrands = async () => {
-    const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
-    setBrands(brandsData);
-  };
-
-  // const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
-  //   setTab(newTabIndex);
-  // };
   const onChangeTab = (_e: React.SyntheticEvent, newTabIndex: number) => {
-    // Сначала определим объект сопоставления вне лямбда-функции
     const tabMap = { wallet: 0, historia: 1, cards: 2, brands: 3 };
     const tabName = Object.keys(tabMap).find(
       (key) => tabMap[key as keyof typeof tabMap] === newTabIndex
@@ -138,7 +80,6 @@ export default function Personal() {
       setTab(newTabIndex);
     }
   };
-  // Спасибо за своевременную работу с логотипами и удобное предоставление данных статей для заливки на сайт.
 
   const onChangeStep = (nextStep: number) => {
     setStep(nextStep);
@@ -149,16 +90,12 @@ export default function Personal() {
     setCoin(nextCoin);
   };
 
-  const onChangeAmount = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const onChangeAmount = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const nextAmount = e.target.value;
     setAmount(nextAmount);
   };
 
-  const onChangeWalletAddress = (
-    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
+  const onChangeWalletAddress = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const nextWalletAddress = e.target.value;
     setWalletAddress(nextWalletAddress);
   };
@@ -167,23 +104,13 @@ export default function Personal() {
     setPhoneNumber(nextPhoneNumber);
   };
 
-  const {
-    data: fee,
-    loading: feeLoading,
-    error: feeError,
-    errorMessage: feeErrorMessage,
-    refetch: refetchFee,
-    reset: resetFee,
-  } = useQueryFee(coin, amount);
+  const { data: fee, refetch: refetchFee, reset: resetFee } = useQueryFee(coin, amount);
+  const { data: estimatedAmount, refetch: refetchEstimatedAmount, reset: resetEstimatedAmount } = useQueryEstimated(coin, amount);
 
-  const {
-    data: estimatedAmount,
-    loading: estimatedAmountLoading,
-    error: estimatedAmountError,
-    errorMessage: estimatedAmountErrorMessage,
-    refetch: refetchEstimatedAmount,
-    reset: resetEstimatedAmount,
-  } = useQueryEstimated(coin, amount);
+  const fetchBrands = async () => {
+    const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
+    setBrands(brandsData);
+  };
 
   const getFeeAndEstimatedAmount = async () => {
     await refetchFee();
@@ -202,24 +129,16 @@ export default function Personal() {
   };
 
   const getWalletAddressStepDescription = () => {
-    const isPayPal = coin === "PayPal";
-
-    if (!fee || !estimatedAmount || isPayPal) return;
-
+    if (!fee || !estimatedAmount || coin === "PayPal") return;
     const receive = Number(estimatedAmount) - fee;
-
-    return `${t("Fee:")} ${fee} ${coin}, ${t(
-      "You will receive on balance:"
-    )} ${receive} ${coin}`;
+    return `${t("Fee:")} ${fee} ${coin}, ${t("You will receive on balance:")} ${receive} ${coin}`;
   };
 
   const getSteps = (user: User, coins: Coins["selectedCurrencies"]) => {
     const initialSteps = [
       {
         label: t("Payment Method"),
-        description: t(
-          "Select one of the withdrawal methods and enter the withdrawal amount"
-        ),
+        description: t("Select one of the withdrawal methods and enter the withdrawal amount"),
         content: (
           <PaymentMethodStep
             user={user}
@@ -235,10 +154,7 @@ export default function Personal() {
         ),
       },
       {
-        label:
-          coin === "PayPal"
-            ? `${t("Email")} ${t("Address")}`
-            : t("Wallet address"),
+        label: coin === "PayPal" ? `${t("Email")} ${t("Address")}` : t("Wallet address"),
         description: getWalletAddressStepDescription(),
         content: (
           <WalletAddressStep
@@ -257,9 +173,7 @@ export default function Personal() {
       },
       {
         label: t("Final Step"),
-        description: t(
-          "Congratulations, you have successfully requested a withdrawal, in order for them to be credited to your wallet you will need to make a deposit with one of our brands"
-        ),
+        description: t("Congratulations, you have successfully requested a withdrawal, in order for them to be credited to your wallet you will need to make a deposit with one of our brands"),
         content: <FinallyStep brands={brands} />,
       },
     ];
@@ -267,9 +181,7 @@ export default function Personal() {
     if (!user.phone_number) {
       initialSteps.splice(1, 0, {
         label: t("Phone Number"),
-        description: t(
-          "To create a transfer, we need to verify your phone number"
-        ),
+        description: t("To create a transfer, we need to verify your phone number"),
         content: (
           <PhoneNumberStep
             user={user}
@@ -301,36 +213,15 @@ export default function Personal() {
 
           return (
             <div className="tabsstep">
-              <h2 className="title-balance">
-                {t("Your balance:")} {user.balance}$
-              </h2>
-              <Box
-                className="tab_field"
-                sx={{
-                  flexGrow: 1,
-                  bgcolor: "background.paper",
-                  display: "flex",
-                  height: "100%",
-                }}
-              >
+              <h2 className="title-balance">{t("Your balance:")} {user.balance}$</h2>
+              <Box className="tab_field" sx={{ flexGrow: 1, bgcolor: "background.paper", display: "flex", height: "100%" }}>
                 <Tabs
                   value={tab}
                   onChange={onChangeTab}
                   tabs={{
-                    labels: [
-                      t("Withdrawal Request"),
-                      t("Withdrawal History"),
-                      t("Cards Shop"),
-                      t("Premium Casino"),
-                    ],
+                    labels: [t("Withdrawal Request"), t("Withdrawal History"), t("Cards Shop"), t("Premium Casino")],
                     content: [
-                      <Stepper
-                        key="withdrawalRequest"
-                        activeStep={step}
-                        orientation="vertical"
-                        sx={{ width: "100%" }}
-                        className="stepper"
-                      >
+                      <Stepper key="withdrawalRequest" activeStep={step} orientation="vertical" sx={{ width: "100%" }} className="stepper">
                         {steps.map((step) => (
                           <Step key={step.label}>
                             <StepLabel>{step.label}</StepLabel>
@@ -341,10 +232,7 @@ export default function Personal() {
                           </Step>
                         ))}
                       </Stepper>,
-                      <PaymentHistory
-                        key="withdrawalHistory"
-                        statusPayment={user.status_payment}
-                      />,
+                      <PaymentHistory key="withdrawalHistory" statusPayment={user.status_payment} />,
                       <Cards key="cardsShop" user={user} onFinish={onFinish} />,
                       <UserBrands key="brands" />,
                     ],
