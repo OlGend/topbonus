@@ -1,3 +1,4 @@
+"use client"
 import { useState, useEffect, ChangeEvent } from "react";
 import { useTranslation } from "react-i18next";
 import { useSearchParams } from "next/navigation";
@@ -231,7 +232,7 @@ export default function Personal() {
                         ))}
                       </Stepper>,
                       <PaymentHistory key="withdrawalHistory" statusPayment={user.status_payment} />,
-                      <Cards key="cardsShop" user={user} />,
+                      <Cards key="cardsShop" user={user} onFinish={onFinish} />,
                       <UserBrands key="brands" />,
                     ],
                   }}
