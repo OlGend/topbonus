@@ -10,11 +10,11 @@ import Loader from "../Loader";
 
 const Fortunes = ({ banner, target, creative }) => {
   const [brands, setBrands] = useState([]);
-  const [visibleBrands, setVisibleBrands] = useState(5); // Состояние для отслеживания количества видимых брендов
+  const [visibleBrands, setVisibleBrands] = useState(5); 
   const [isLoading, setIsLoading] = useState(false);
   const { language } = useLanguage();
   const categoryBrands = { key1: "FirstPriority", key2: "1" };
-  // const categoryBrands = { key1: "Segment2", key2: "Sandbox" };
+
 
   const { data, error } = useSWR(
     ["brands", language],
@@ -33,16 +33,7 @@ const Fortunes = ({ banner, target, creative }) => {
 
   const { t } = useTranslation();
 
-  // useEffect(() => {
-  //   const fetchBrands = async () => {
-  //     setIsLoading(true);
-  //     const brandsData = await getBrands(categoryBrands, language);
-  //     setBrands(brandsData);
-  //     setIsLoading(false);
-  //   };
 
-  //   fetchBrands();
-  // }, [language]);
 
   const [newUrl, setNewUrl] = useState("");
   useEffect(() => {
@@ -53,10 +44,10 @@ const Fortunes = ({ banner, target, creative }) => {
   }, []);
 
   const loadMoreBrands = () => {
-    setVisibleBrands((prev) => prev + 5); // Увеличиваем количество видимых брендов на 5
+    setVisibleBrands((prev) => prev + 5); 
   };
 
-  const hasMoreBrands = brands.length > visibleBrands; // Определяем, есть ли еще бренды для отображения
+  const hasMoreBrands = brands.length > visibleBrands; 
 
   return (
     <div className="flex flex-col container-fortune">

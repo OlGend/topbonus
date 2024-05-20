@@ -127,11 +127,11 @@ export default function Personal() {
       (key) => tabMap[key as keyof typeof tabMap] === newTabIndex
     );
 
-    if (tabName) {
-      const newUrl = `${window.location.pathname}?tab=${tabName}`;
-      window.history.pushState({}, "", newUrl);
-      setTab(newTabIndex);
-    }
+    // if (tabName) {
+    //   const newUrl = `${window.location.pathname}?tab=${tabName}`;
+    //   window.history.pushState({}, "", newUrl);
+    //   setTab(newTabIndex);
+    // }
   };
 
   const onChangeStep = (nextStep: number) => {
