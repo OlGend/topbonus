@@ -1,0 +1,42 @@
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push([
+    "chunks/ssr/[next]_entry_app-renderer_tsx_0a2e75._.js",
+    {},
+]);
+(globalThis.TURBOPACK_CHUNK_LISTS = globalThis.TURBOPACK_CHUNK_LISTS || []).push({
+  "path": "chunks/ssr/[next]_entry_app-renderer_tsx_0a2e75._.js",
+  "chunks": [
+    "chunks/ssr/node_modules_bd27f6._.js",
+    "chunks/ssr/components_afd61a._.js",
+    "chunks/ssr/node_modules_43a386._.js",
+    "chunks/ssr/public_menuBonuses2_png_mjs_5c96d9._.js",
+    "chunks/ssr/public_logo3_png_mjs_698db5._.js",
+    "chunks/ssr/public_whl2_png_mjs_d23193._.js",
+    "chunks/ssr/_env_b53fce.js",
+    "chunks/ssr/queries_index_ts_ec4598._.js",
+    "chunks/ssr/app_brands_page_tsx_47742e._.js",
+    "chunks/ssr/[turbopack-node]_ipc_index_ts_91e6da._.js",
+    "chunks/ssr/[turbopack-node]_compiled_stacktrace-parser_index_cc5783.js",
+    "chunks/ssr/[next]_internal_operation-stream_ts_897417._.js",
+    "chunks/ssr/[next]_internal_headers_ts_009f22._.js",
+    "chunks/ssr/[next]_internal_http_ts_c4afe6._.js",
+    "chunks/ssr/[next]_polyfill_app-polyfills_ts_539b68._.js",
+    "chunks/ssr/[next]_entry_app-renderer_tsx_01003f._.js",
+    "chunks/ssr/_465e3a._.js",
+    "chunks/ssr/[next]_entry_app-entry_tsx_727643._.js",
+    "chunks/ssr/[next]_entry_app-entry_tsx_0f4f30._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_0b01bd._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_6467c7._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_cf64a1._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_d85798._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_5ab633._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_aebaf1._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_321ea9._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_2b1a4b._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_a0137c._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_028a39._.js",
+    "chunks/ssr/[next]_entry_app_server-to-client-ssr_tsx_11c265._.js",
+    "chunks/ssr/components_Fetcher_ErrorComponent_module_scss_module.css",
+    "chunks/rsc/app_globals.css"
+  ],
+  "source": "entry"
+});

@@ -199,7 +199,7 @@ useEffect(() => {
             <div className="flex flex-col">
               {load ? (
                 <Badge badgeContent={`${dataUser.balance}$`} color="secondary">
-                  <Link href={`/personal?tab=wallet`} className="balance flex">
+                  <Link href={`/personal`} className="balance flex">
                     <>
                       <AccountBalanceWalletOutlinedIcon
                         className="mr-2"
@@ -232,7 +232,7 @@ useEffect(() => {
             </div>
             <div className="flex flex-col ml-8">
               {load && (
-                <Link href={`/personal?tab=cards`} className="cards-shop flex">
+                <Link href={`/shop`} className="cards-shop flex">
                   <>
                     <ShoppingBagOutlinedIcon className="mr-2" size={18} />
                     <span>{t("Cards Shop")}</span>

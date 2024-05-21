@@ -60,7 +60,7 @@ export default function BasicModal() {
             <Link
               onClick={handleClose}
               className="btn btn-primary mt-3"
-              href={`/personal?tab=brands`}
+              href={`/brands`}
             >
               {t("Show Brands")}
             </Link>

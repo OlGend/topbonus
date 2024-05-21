@@ -20,12 +20,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@mui/material/index.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/navigation.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands.jsx (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
-;
 ;
 ;
 ;
@@ -50,35 +48,11 @@ const BRAND_CATEGORIES = {
     key2: "Premium"
 };
 function Personal() {
-    const [searchParams, setSearchParams] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$navigation$2e$js__$28$ecmascript$29$__["useSearchParams"]();
-    console.log("SEARCH", searchParams);
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const { data: user, loading: userLoading, error: userError, errorMessage: userErrorMessage, refetch: refetchUser } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryUser"]();
     const { data: coins, loading: coinsLoading, error: coinsError, errorMessage: coinsErrorMessage, refetch: refetchCoins } = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useQueryCoins"]();
     const [tab, setTab] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](0);
-    console.log("TAB", tab);
-    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        if (typeof window === 'undefined') return;
-        const searchParams = new URLSearchParams(window.location.search);
-        const tab = searchParams.get("tab");
-        if (!searchParams) return;
-        const tabMap = {
-            wallet: 0,
-            historia: 1,
-            cards: 2,
-            brands: 3
-        };
-        if (tab !== null && tab in tabMap) {
-            setTab(tabMap[tab]);
-            const newSearchParams = new URLSearchParams(window.location.search);
-            newSearchParams.delete("tab");
-            const newUrl = `${window.location.pathname}?${newSearchParams.toString()}`;
-            window.history.pushState({}, "", newUrl);
-        }
-    }, [
-        searchParams
-    ]);
     const [step, setStep] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](DEFAULT_STEP);
     const [coin, setCoin] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](DEFAULT_COIN);
     const [amount, setAmount] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
@@ -90,13 +64,7 @@ function Personal() {
         setBrands(brandsData);
     };
     const onChangeTab = (_e, newTabIndex)=>{
-        const tabMap = {
-            wallet: 0,
-            historia: 1,
-            cards: 2,
-            brands: 3
-        };
-        const tabName = Object.keys(tabMap).find((key)=>tabMap[key] === newTabIndex);
+        setTab(newTabIndex);
     };
     const onChangeStep = (nextStep)=>{
         setStep(nextStep);
@@ -155,7 +123,7 @@ function Personal() {
                     getFeeAndEstimatedAmount: getFeeAndEstimatedAmount
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 218,
+                    lineNumber: 172,
                     columnNumber: 11
                 }, this)
             },
@@ -175,7 +143,7 @@ function Personal() {
                     onFinish: onFinish
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 238,
+                    lineNumber: 192,
                     columnNumber: 11
                 }, this)
             },
@@ -186,7 +154,7 @@ function Personal() {
                     brands: brands
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 257,
+                    lineNumber: 211,
                     columnNumber: 18
                 }, this)
             }
@@ -203,7 +171,7 @@ function Personal() {
                     onChangePhoneNumber: onChangePhoneNumber
                 }, void 0, false, {
                     fileName: "<[project]/app/personal/page.tsx>",
-                    lineNumber: 268,
+                    lineNumber: 222,
                     columnNumber: 11
                 }, this)
             });
@@ -297,12 +265,12 @@ function Personal() {
             }
         }, void 0, false, {
             fileName: "<[project]/app/personal/page.tsx>",
-            lineNumber: 284,
+            lineNumber: 238,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/app/personal/page.tsx>",
-        lineNumber: 283,
+        lineNumber: 237,
         columnNumber: 5
     }, this);
 }

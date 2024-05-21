@@ -147,7 +147,7 @@ export default function AccountMenu({ userId, t }) {
         <MenuItem onClick={handleClose}>
           <Link
             className="flex items-center w-full"
-            href={`/personal?tab=wallet`}
+            href={`/personal`}
           >
             <ListItemIcon>
               <AccountBalanceWalletOutlinedIcon
@@ -161,7 +161,7 @@ export default function AccountMenu({ userId, t }) {
         <MenuItem onClick={handleClose}>
           <Link
             className="flex items-center w-full"
-            href={`/personal?tab=cards`}
+            href={`/shop`}
           >
             <ListItemIcon>
               <ShoppingBagOutlinedIcon

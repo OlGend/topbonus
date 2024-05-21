@@ -9536,7 +9536,7 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_dabdd7._.js",
+    "path": "_next/static/chunks/node_modules_fd335f._.js",
     "included": [
       "[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs (ecmascript)",
       "[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs (ecmascript)",
@@ -9545,7 +9545,6 @@ const chunks = [
       "[project]/node_modules/next/link.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/process/browser.js (ecmascript)",
       "[project]/node_modules/next/dist/build/polyfills/process.js (ecmascript)",
-      "[project]/node_modules/next/navigation.js (ecmascript)",
       "[project]/node_modules/next/image.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/scheduler/index.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/react-dom/index.js (ecmascript)",
