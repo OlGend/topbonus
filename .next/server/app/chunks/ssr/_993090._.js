@@ -14,6 +14,12 @@ const chunks = [
     ]
   },
   {
+    "path": "_next/static/chunks/public_logo3_png_mjs_f1144d._.js",
+    "included": [
+      "[project]/public/logo3.png.mjs/(IMAGE)/[project]/public/logo3.png (static) (structured image object, ecmascript)"
+    ]
+  },
+  {
     "path": "_next/static/chunks/components_TopBrands_jsx_b53fce._.js",
     "included": [
       "[project]/components/TopBrands.jsx (ecmascript)"
@@ -30,23 +36,17 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_next_4018f3._.js",
+    "path": "_next/static/chunks/node_modules_next_dabfbe._.js",
     "included": [
-      "[project]/node_modules/next/image.js (ecmascript)",
+      "[project]/node_modules/next/link.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/process/browser.js (ecmascript)",
+      "[project]/node_modules/next/dist/build/polyfills/process.js (ecmascript)",
+      "[project]/node_modules/next/image.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/scheduler/index.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/react-dom/index.js (ecmascript)",
-      "[project]/node_modules/next/dist/build/polyfills/process.js (ecmascript)",
-      "[project]/node_modules/next/link.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/react/index.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript)",
       "[project]/node_modules/next/dist/shared/lib/app-dynamic.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_wildcard_cjs_8b75ce._.js",
-    "included": [
-      "[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs (ecmascript)"
     ]
   },
   {
@@ -56,15 +56,21 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_wildcard_14848f.js",
+    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_wildcard_cjs_8b75ce._.js",
     "included": [
-      "[project]/node_modules/@swc/helpers/esm/_interop_require_wildcard.js (ecmascript)"
+      "[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs (ecmascript)"
     ]
   },
   {
     "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_default_c9559a.js",
     "included": [
       "[project]/node_modules/@swc/helpers/esm/_interop_require_default.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_wildcard_14848f.js",
+    "included": [
+      "[project]/node_modules/@swc/helpers/esm/_interop_require_wildcard.js (ecmascript)"
     ]
   },
   {

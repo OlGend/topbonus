@@ -69,7 +69,7 @@ const NewArrivals = () => {
     }
   }, [data, categoryBrands.key1, categoryBrands.key2]);
   return (
-    <div className="bl-sand">
+    <div id="real" className="bl-sand">
       <div className="main__container block-sandbox">
         <h2>{t("Top New Releases")}</h2>
         <Slider {...settings}>

@@ -191,7 +191,7 @@ useEffect(() => {
         <div className="header__container ">
           <div className="logo flex items-center">
             <Link href="/">
-              <Image src={Img} alt="logo" width={130} loading="lazy" />
+              <Image src={Img} alt="logo" width={150} loading="lazy" />
             </Link>
           </div>
 

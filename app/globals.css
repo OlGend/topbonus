@@ -9407,7 +9407,7 @@ body {
   max-height: initial !important;
 }
 .bl-sand {
-  margin-top: 100px !important;
+  /* margin-top: 100px !important; */
   background: #1d2730;
   padding: 50px 0;
   background-image: url(/bgfilter.png) !important;
@@ -9485,7 +9485,6 @@ body {
   background-position: top left !important;
   align-items: flex-start !important;
   /* border: 2px solid rgba(255, 255, 255, 0.9) !important; */
-
 }
 .card-brand.glowing-box .brandImage .review-bonus {
   font-size: 15px;
@@ -9501,27 +9500,26 @@ body {
   background: url(/green_2_2.png);
   background-size: cover;
 }
-.card-brand.glowing-box:nth-child(6n + 2) .brandImage  {
+.card-brand.glowing-box:nth-child(6n + 2) .brandImage {
   background: url(/lightblue_2.png);
   background-size: cover;
 }
-.card-brand.glowing-box:nth-child(6n + 3) .brandImage  {
+.card-brand.glowing-box:nth-child(6n + 3) .brandImage {
   background: url(/blue_2.png);
   background-size: cover;
 }
-.card-brand.glowing-box:nth-child(6n + 4) .brandImage  {
+.card-brand.glowing-box:nth-child(6n + 4) .brandImage {
   background: url(/green_1_2.png);
   background-size: cover;
 }
-.card-brand.glowing-box:nth-child(6n + 5) .brandImage  {
+.card-brand.glowing-box:nth-child(6n + 5) .brandImage {
   background: url(/orange_2.png);
   background-size: cover;
 }
-.card-brand.glowing-box:nth-child(6n + 6) .brandImage  {
+.card-brand.glowing-box:nth-child(6n + 6) .brandImage {
   background: url(/yellow_2.jpg);
   background-size: cover;
 }
-
 
 .card-brand.glowing-box .brandImage .flex {
   position: relative;
@@ -9547,7 +9545,8 @@ body {
 }
 .p-0.MuiBox-root {
 }
-.p-0 .MuiBox-root, .modal-country .MuiPaper-root {
+.p-0 .MuiBox-root,
+.modal-country .MuiPaper-root {
   max-width: 384px;
   box-sizing: border-box;
   padding: 0 !important;
@@ -9576,7 +9575,8 @@ body {
   font-weight: bold; /* Жирность шрифта */
   font-family: "Arial", sans-serif; /* Шрифт */
 }
-.modal-brands p, .modal-country p {
+.modal-brands p,
+.modal-country p {
   font-size: 13px;
   color: #c3c5c7;
 }
@@ -9587,19 +9587,21 @@ body {
 .MuiDialog-root {
   z-index: 1400;
 }
-.frstdep, .frstreg {
+.frstdep,
+.frstreg {
   position: relative;
   min-height: 231px;
   height: 100%;
 }
-.frstdep::before, .frstreg::before {
+.frstdep::before,
+.frstreg::before {
   content: "50 Free Spins";
   position: absolute;
   color: #fff;
   padding: 3px 8px;
-  background: #E0743A;
+  background: #e0743a;
   border: 1px solid #fff;
-  left: calc(50% - 124px/2);
+  left: calc(50% - 124px / 2);
   top: 1px;
   font-weight: 700;
   z-index: 3;
@@ -9616,12 +9618,10 @@ body {
   color: #fff !important;
 }
 @media (min-width: 320px) and (max-width: 1259px) {
-
   .topbr .tobbb .review-bonus {
     font-size: 15px !important;
     line-height: 18px !important;
   }
-
 
   .page-personal.main__container.pb-10 {
     width: 100%;
@@ -9643,4 +9643,128 @@ body {
   .title-balance {
     margin-left: 20px;
   }
+}
+.preview2 {
+  margin-top: 0;
+  padding-top: 30px;
+  padding-bottom: 100px;
+  background-image: url(/bgfilter.png);
+  background-position: top -499px right -72px;
+}
+.bl-sand {
+  background-position: top -1067px right -72px;
+}
+.bander {
+  border: 4px solid #0967e3;
+  padding: 30px;
+  background: #1d2730;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  max-height: 480px;
+  min-height: 480px;
+}
+.bander::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 50%;
+  right: -150px;
+  filter: drop-shadow(0px 0px 250px rgba(42, 85, 239));
+  background: rgba(42, 85, 239, 0.5);
+  z-index: 50;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+
+.bander::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  top: 50%;
+  left: -149px;
+  filter: drop-shadow(0px 0px 250px #2aef90);
+  background: rgba(42, 239, 144, 0.025);
+  z-index: 50;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+.bander * {
+  text-align: center;
+}
+.bander h1 {
+  color: #fff;
+  margin: 20px 0;
+
+  /* text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.6), 0 0 25px #2aef90, 0 0 50px darkmagenta; */
+}
+.bander h1 span {
+  /* text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white,
+    1px -1px 0 white; */
+    /* font-size: 30px !important; */
+}
+.bander .big-btn {
+  border: 1px solid #fff;
+}
+.preview2 span.ftd {
+  font-size: 64px;
+  line-height: 72px;
+  margin-top: 30px;
+  color: #0967e3;
+  text-shadow: 2px 2px 0 white, -2px -2px 0 white, -2px 2px 0 white,
+  2px -2px 0 white;
+  font-weight: 900;
+}
+
+.brands-keitaro .card-32 .btn-primary {
+  font-size: 15px;
+  border: 1px solid #fff;
+}
+.brands-keitaro .card-32 .review-bonus {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.brands-keitaro .card-32 .frstdep::before {
+  content: "You Made Registration Here";
+  display: none;
+}
+.crd-3 {
+  flex-basis: 49%;
+}
+.crd-3:nth-child(2) {
+  margin-left: auto;
+}
+.crd-3:nth-child(3) {
+  flex-basis: 100%;
+  margin-left: 0;
+}
+.crd-1 {
+  flex-basis: 100%;
+}
+.crd-2 {
+  flex-basis: 48%;
+}
+.crd-4 {
+  flex-basis: 48%;
+}
+.crd-0, .crd-5, .crd-6, .crd-7, .crd-8, .crd-9, .crd-10, .crd-11, .crd-12, .crd-13, .crd-14, .crd-15, .crd-16, .crd-17, .crd-18, .crd-19, .crd-20, .crd-21 {
+  flex-basis: 32%;
+}
+.crd-6:nth-child(4) {
+  margin-left: 0;
+}
+.card-32:nth-child(5n+1) {
+  margin-left: 1%;
+}
+.card-32 .brandImage:before {
+  display: none;
+}
+.card-32 .btn-fzl {
+  margin-right: 0;
+  margin-bottom: 10px;
 }
