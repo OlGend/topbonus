@@ -182,8 +182,8 @@ const BrandCard: React.FC<{
         <Image
           src={`/brands/${brand.CasinoBrand}.png`}
           alt={`Image of ${brand.CasinoBrand}`}
-          width={100}
-          height={50}
+          width={250}
+          height={125}
           className="mb-2"
         />
         <div>

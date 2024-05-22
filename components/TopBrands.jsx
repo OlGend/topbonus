@@ -148,12 +148,12 @@ export default function TopBrands() {
         <div className="main__container flex justify-between !mt-7">
           <div className="flex justify-content basis-[40%] flex-col items-center bander">
             <Image src={Img} alt={Img} width={290} loading="lazy" />
-            <h1 className="">
-              {t("Feeling lucky today?")}{" "}
-              <span className="text-blued">{t("Click now to play")}</span>{" "}
-              {t("and see if")}{" "}
-              <span className="text-blued"> {t("luck is on your side!")}</span>
+            <h1 className="fz31">
+              {t("You Made Registration Here.")}{" "}
+              <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
+              {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
             </h1>
+
             {/* {shuffledBrands.slice(0, 1).map((item) => (
               <Link
                 target="_blank"
