@@ -9643,6 +9643,26 @@ body {
   .title-balance {
     margin-left: 20px;
   }
+  .preview2 {
+    background-image: none !important;
+    padding-bottom: 50px !important;
+  }
+  .bander {
+    padding: 15px !important;
+    max-height: initial !important;
+    min-height: initial !important;
+    margin-bottom: 20px;
+  }
+  h1.fz31 {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+  .preview2 span.ftd {
+    font-size: 32px !important;
+    line-height: 40px !important;
+    text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white,
+      1px -1px 0 white !important;
+  }
 }
 .preview2 {
   margin-top: 0;
@@ -9705,7 +9725,7 @@ body {
 .bander h1 span {
   /* text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white,
     1px -1px 0 white; */
-    /* font-size: 30px !important; */
+  /* font-size: 30px !important; */
 }
 .bander .big-btn {
   border: 1px solid #fff;
@@ -9716,7 +9736,7 @@ body {
   margin-top: 30px;
   color: #0967e3;
   text-shadow: 2px 2px 0 white, -2px -2px 0 white, -2px 2px 0 white,
-  2px -2px 0 white;
+    2px -2px 0 white;
   font-weight: 900;
 }
 
@@ -9736,7 +9756,14 @@ body {
 .crd-3 {
   flex-basis: 49%;
 }
-.crd-6 .brandImage img, .crd-7 .brandImage img, .crd-5 .brandImage img, .crd-8 .brandImage img, .crd-9 .brandImage img, .crd-10 .brandImage img, .crd-11 .brandImage img, .crd-12 .brandImage img {
+.crd-6 .brandImage img,
+.crd-7 .brandImage img,
+.crd-5 .brandImage img,
+.crd-8 .brandImage img,
+.crd-9 .brandImage img,
+.crd-10 .brandImage img,
+.crd-11 .brandImage img,
+.crd-12 .brandImage img {
   max-width: 150px;
 }
 .crd-4 .brandImage img {
@@ -9759,13 +9786,30 @@ body {
 .crd-4 {
   flex-basis: 48%;
 }
-.crd-0, .crd-5, .crd-6, .crd-7, .crd-8, .crd-9, .crd-10, .crd-11, .crd-12, .crd-13, .crd-14, .crd-15, .crd-16, .crd-17, .crd-18, .crd-19, .crd-20, .crd-21 {
+.crd-0,
+.crd-5,
+.crd-6,
+.crd-7,
+.crd-8,
+.crd-9,
+.crd-10,
+.crd-11,
+.crd-12,
+.crd-13,
+.crd-14,
+.crd-15,
+.crd-16,
+.crd-17,
+.crd-18,
+.crd-19,
+.crd-20,
+.crd-21 {
   flex-basis: 32%;
 }
 .crd-6:nth-child(4) {
   margin-left: 0;
 }
-.card-32:nth-child(5n+1) {
+.card-32:nth-child(5n + 1) {
   margin-left: 1%;
 }
 .card-32 .brandImage:before {
@@ -9792,4 +9836,7 @@ body {
 h1.fz31 {
   font-size: 31px;
   line-height: 39px;
+}
+.crd-0 {
+  height: initial;
 }

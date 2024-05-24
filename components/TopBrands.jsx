@@ -145,7 +145,7 @@ export default function TopBrands() {
           <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
         </div>
   
-        <div className="main__container flex justify-between !mt-7">
+        {/* <div className="main__container flex justify-between !mt-7">
           <div className="flex justify-content basis-[40%] flex-col items-center bander">
             <Image src={Img} alt={Img} width={290} loading="lazy" />
             <h1 className="fz31">
@@ -154,22 +154,13 @@ export default function TopBrands() {
               {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
             </h1>
 
-            {/* {shuffledBrands.slice(0, 1).map((item) => (
-              <Link
-                target="_blank"
-                key={item}
-                className="btn btn-primary big-btn mt-3 target-try-your-luck"
-                href={`${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`}
-              >
-                {t("Try Your Luck")}
-              </Link>
-            ))} */}
+
             <span className="ftd">20$ for FTD</span>
           </div>
           <div className="brands-keitaro basis-[58%]">
             <UserBrands />
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

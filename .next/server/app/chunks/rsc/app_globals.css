@@ -8660,6 +8660,25 @@ body {
   .title-balance {
     margin-left: 20px;
   }
+  .preview2 {
+    background-image: none !important;
+    padding-bottom: 50px !important;
+  }
+  .bander {
+    padding: 15px !important;
+    max-height: initial !important;
+    min-height: initial !important;
+    margin-bottom: 20px;
+  }
+  h1.fz31 {
+    font-size: 20px !important;
+    line-height: 26px !important;
+  }
+  .preview2 span.ftd {
+    font-size: 32px !important;
+    line-height: 40px !important;
+    text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white, 1px -1px 0 white !important;
+  }
 }
 .preview2 {
   margin-top: 0;
@@ -8823,5 +8842,8 @@ body {
 h1.fz31 {
   font-size: 31px;
   line-height: 39px;
+}
+.crd-0 {
+  height: initial;
 }
 
