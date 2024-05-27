@@ -1566,7 +1566,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$j
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo3$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$logo3$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/logo3.png.mjs/(IMAGE)/[project]/public/logo3.png (static) (structured image object, ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$gr_bl$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$gr_bl$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/gr_bl.png.mjs/(IMAGE)/[project]/public/gr_bl.png (static) (structured image object, ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$UserBrands$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Brands_home/UserBrands.tsx (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
@@ -1704,78 +1704,142 @@ function TopBrands() {
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "preview2 flex flex-col",
-                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    className: "main__container flex items-center",
-                    children: [
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                            className: "flex flex-col",
-                            children: [
-                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h1", {
-                                    className: "",
-                                    children: [
-                                        t("Feeling lucky today?"),
-                                        " ",
-                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                            className: "text-blued",
-                                            children: t("Click now to play")
-                                        }, void 0, false, {
-                                            fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 130,
-                                            columnNumber: 15
-                                        }, this),
-                                        " ",
-                                        t("and see if"),
-                                        " ",
-                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                            className: "text-blued",
-                                            children: [
-                                                " ",
-                                                t("luck is on your side!")
-                                            ]
-                                        }, void 0, true, {
-                                            fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 132,
-                                            columnNumber: 15
-                                        }, this)
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "<[project]/components/TopBrands.jsx>",
-                                    lineNumber: 128,
-                                    columnNumber: 13
-                                }, this),
-                                shuffledBrands.slice(0, 1).map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
-                                        target: "_blank",
-                                        className: "btn btn-primary big-btn mt-3 target-try-your-luck",
-                                        href: `${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`,
-                                        children: t("Try Your Luck")
-                                    }, item, false, {
+                children: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "main__container flex items-center",
+                        children: [
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "flex flex-col",
+                                children: [
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h1", {
+                                        className: "",
+                                        children: [
+                                            t("Feeling lucky today?"),
+                                            " ",
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                className: "text-blued",
+                                                children: t("Click now to play")
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/TopBrands.jsx>",
+                                                lineNumber: 130,
+                                                columnNumber: 15
+                                            }, this),
+                                            " ",
+                                            t("and see if"),
+                                            " ",
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                className: "text-blued",
+                                                children: [
+                                                    " ",
+                                                    t("luck is on your side!")
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/TopBrands.jsx>",
+                                                lineNumber: 132,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "<[project]/components/TopBrands.jsx>",
-                                        lineNumber: 135,
-                                        columnNumber: 15
-                                    }, this))
-                            ]
-                        }, void 0, true, {
-                            fileName: "<[project]/components/TopBrands.jsx>",
-                            lineNumber: 127,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                            alt: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                            width: 500,
-                            loading: "lazy"
-                        }, void 0, false, {
-                            fileName: "<[project]/components/TopBrands.jsx>",
-                            lineNumber: 145,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "<[project]/components/TopBrands.jsx>",
-                    lineNumber: 126,
-                    columnNumber: 9
-                }, this)
-            }, void 0, false, {
+                                        lineNumber: 128,
+                                        columnNumber: 13
+                                    }, this),
+                                    shuffledBrands.slice(0, 1).map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                            target: "_blank",
+                                            className: "btn btn-primary big-btn mt-3 target-try-your-luck",
+                                            href: `${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`,
+                                            children: t("Try Your Luck")
+                                        }, item, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 135,
+                                            columnNumber: 15
+                                        }, this))
+                                ]
+                            }, void 0, true, {
+                                fileName: "<[project]/components/TopBrands.jsx>",
+                                lineNumber: 127,
+                                columnNumber: 11
+                            }, this),
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                alt: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                width: 500,
+                                loading: "lazy"
+                            }, void 0, false, {
+                                fileName: "<[project]/components/TopBrands.jsx>",
+                                lineNumber: 145,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "<[project]/components/TopBrands.jsx>",
+                        lineNumber: 126,
+                        columnNumber: 9
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "main__container flex justify-between !mt-7",
+                        children: [
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "flex justify-content basis-[40%] flex-col items-center bander",
+                                children: [
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                        src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$gr_bl$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$gr_bl$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                        alt: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$gr_bl$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$gr_bl$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                        width: 290,
+                                        loading: "lazy"
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/TopBrands.jsx>",
+                                        lineNumber: 150,
+                                        columnNumber: 13
+                                    }, this),
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h1", {
+                                        className: "fz31",
+                                        children: [
+                                            t("You Made Registration Here."),
+                                            " ",
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                className: "text-blued",
+                                                children: t("Make First Deposit Now ")
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/TopBrands.jsx>",
+                                                lineNumber: 153,
+                                                columnNumber: 15
+                                            }, this),
+                                            " ",
+                                            t("and Receive Up To $20 Back On Your Wallet!"),
+                                            " "
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/TopBrands.jsx>",
+                                        lineNumber: 151,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "<[project]/components/TopBrands.jsx>",
+                                lineNumber: 149,
+                                columnNumber: 11
+                            }, this),
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "brands-keitaro basis-[58%]",
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$UserBrands$2e$tsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                    fileName: "<[project]/components/TopBrands.jsx>",
+                                    lineNumber: 161,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "<[project]/components/TopBrands.jsx>",
+                                lineNumber: 160,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "<[project]/components/TopBrands.jsx>",
+                        lineNumber: 148,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "<[project]/components/TopBrands.jsx>",
                 lineNumber: 125,
                 columnNumber: 7

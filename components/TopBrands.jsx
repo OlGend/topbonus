@@ -12,7 +12,7 @@ import imgrandom from "@/public/coins_banner2.jpg";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands2";
 import { useTranslation } from "react-i18next";
-import Img from "@/public/logo3.png";
+import Img from "@/public/gr_bl.png";
 import UserBrands from "./Brands_home/UserBrands";
 
 export default function TopBrands() {
@@ -144,23 +144,25 @@ export default function TopBrands() {
           </div>
           <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
         </div>
-  
-        {/* <div className="main__container flex justify-between !mt-7">
-          <div className="flex justify-content basis-[40%] flex-col items-center bander">
-            <Image src={Img} alt={Img} width={290} loading="lazy" />
-            <h1 className="fz31">
-              {t("You Made Registration Here.")}{" "}
-              <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
-              {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
-            </h1>
 
-
-            <span className="ftd">20$ for FTD</span>
+        <div className="main__container flex flex-col !mt-7 shMb">
+            {/* <h3 className="mb-5 whotake">Users who take bonus from us: <span>3543</span></h3> */}
+          <div className="flex justify-between mob-col">
+            <div className="flex justify-content basis-[40%] flex-col items-center bander">
+              <Image src={Img} alt={Img} width={290} loading="lazy" />
+              <h1 className="fz31">
+                {t("You Made Registration Here.")}{" "}
+                <span className="text-blued">
+                  {t("Make First Deposit Now ")}
+                </span>{" "}
+                {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
+              </h1>
+            </div>
+            <div className="brands-keitaro basis-[58%]">
+              <UserBrands />
+            </div>
           </div>
-          <div className="brands-keitaro basis-[58%]">
-            <UserBrands />
-          </div>
-        </div> */}
+        </div>
       </div>
     </>
   );
