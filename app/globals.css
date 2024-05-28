@@ -9925,7 +9925,7 @@ h1.fz31 {
 .crd-0 {
   height: initial;
 }
-
+.crd-0:nth-child(1) .brandImage,
 .crd-5:nth-child(1) .brandImage,
 .crd-6:nth-child(1) .brandImage,
 .crd-7:nth-child(1) .brandImage,
@@ -9941,6 +9941,7 @@ h1.fz31 {
   background: url(/crd5-1.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(2) .brandImage,
 .crd-5:nth-child(2) .brandImage,
 .crd-6:nth-child(2) .brandImage,
 .crd-7:nth-child(2) .brandImage,
@@ -9956,6 +9957,7 @@ h1.fz31 {
   background: url(/crd5-2.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(3) .brandImage,
 .crd-5:nth-child(3) .brandImage,
 .crd-6:nth-child(3) .brandImage,
 .crd-7:nth-child(3) .brandImage,
@@ -9971,6 +9973,7 @@ h1.fz31 {
   background: url(/crd5-3.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(4) .brandImage,
 .crd-5:nth-child(4) .brandImage,
 .crd-6:nth-child(4) .brandImage,
 .crd-7:nth-child(4) .brandImage,
@@ -9986,6 +9989,7 @@ h1.fz31 {
   background: url(/crd5-4.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(5) .brandImage,
 .crd-5:nth-child(5) .brandImage,
 .crd-6:nth-child(5) .brandImage,
 .crd-7:nth-child(5) .brandImage,
@@ -10001,6 +10005,7 @@ h1.fz31 {
   background: url(/crd5-5.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(6) .brandImage,
 .crd-5:nth-child(6) .brandImage,
 .crd-6:nth-child(6) .brandImage,
 .crd-7:nth-child(6) .brandImage,
