@@ -45,7 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
         <LanguageProvider>
           <TheHeader />
-  
+
           <main>
             {children}
             <Analytics />
@@ -65,6 +65,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
         </Script>
+        <Script
+          src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+          defer
+        ></Script>
+        <Script id="onesignal">
+          {`window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "a61d76f1-bd61-460e-96fe-db296a297bc0",
+    });
+  });`}
+        </Script>
+
         <Script id="ladesc">
           {`
             (function (d, src, c) {

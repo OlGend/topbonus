@@ -9686,6 +9686,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border: 1px solid rgba(123, 140, 152, 0.101);
 }
 .bander::before {
   content: "";
