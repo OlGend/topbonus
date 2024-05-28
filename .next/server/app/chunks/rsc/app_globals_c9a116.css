@@ -9118,11 +9118,35 @@ h1.fz31 {
     flex-basis: 100% !important;
   }
   .slick-slide:nth-child(1) .card-brand .brandImage {
-    background: url(/crd5-1.png) no-repeat center !important;
+    background: url(/crd4-1.png) no-repeat center !important;
     background-size: cover !important;
   }
   .slick-slide:nth-child(2) .card-brand .brandImage {
-    background: url(/crd5-2.png) no-repeat center !important;
+    background: url(/crd4-2.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(3) .card-brand .brandImage {
+    background: url(/crd4-3.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(4) .card-brand .brandImage {
+    background: url(/crd4-4.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(5) .card-brand .brandImage {
+    background: url(/crd4-1.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(6) .card-brand .brandImage {
+    background: url(/crd4-2.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(7) .card-brand .brandImage {
+    background: url(/crd4-3.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(8) .card-brand .brandImage {
+    background: url(/crd4-4.png) no-repeat center !important;
     background-size: cover !important;
   }
 }

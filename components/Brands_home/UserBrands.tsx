@@ -204,7 +204,7 @@ const UserBrands = () => {
       {isLoading && <Loader />}
       {brands.length > 0 ? (
         <>
-          {isMobile ? (
+          {isMobile && brands.length > 1 ? (
             <LazySlider {...settings}>
               {brands.map((brand) => (
                 <BrandCard
@@ -218,7 +218,7 @@ const UserBrands = () => {
             </LazySlider>
           ) : (
             <div className="flex flex-wrap">
-              {brands.map((brand) => (
+              {brands.slice(0, 6).map((brand) => (
                 <BrandCard
                   key={brand.id_brand}
                   brand={brand}
@@ -232,8 +232,56 @@ const UserBrands = () => {
         </>
       ) : (
         <>
-          <div className="flex flex-wrap px-0">
+        {isMobile && brands.length > 1 ? (
+            <LazySlider {...settings}>
+              {otherBrands.map((brand) => (
+                <BrandCard
+                brand={brand}
+                savedUrl={savedUrl}
+                key={brand.id_brand}
+                t={t}
+                register={() => {
+                  updateUserStatus(
+                    localStorage.getItem("user_id") || "",
+                    brand.KeitaroGoBigID,
+                    "lead",
+                    () => {
+                      fetchBrands();
+                      setIshow((prev) => !prev);
+                    }
+                  );
+                }}
+                count={count}
+                />
+              ))}
+            </LazySlider>
+          ) : (
+            <div className="flex flex-wrap">
+              {otherBrands.slice(0, 6).map((brand) => (
+                <BrandCard
+                brand={brand}
+                savedUrl={savedUrl}
+                key={brand.id_brand}
+                t={t}
+                register={() => {
+                  updateUserStatus(
+                    localStorage.getItem("user_id") || "",
+                    brand.KeitaroGoBigID,
+                    "lead",
+                    () => {
+                      fetchBrands();
+                      setIshow((prev) => !prev);
+                    }
+                  );
+                }}
+                count={count}
+                />
+              ))}
+            </div>
+          )}
+          {/* <div className="flex flex-wrap px-0">
             {otherBrands.slice(0, 6).map((brand) => (
+              
               <BrandCard
                 brand={brand}
                 savedUrl={savedUrl}
@@ -253,7 +301,7 @@ const UserBrands = () => {
                 count={count}
               />
             ))}
-          </div>
+          </div> */}
         </>
       )}
     </div>

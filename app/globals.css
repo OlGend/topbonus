@@ -9663,7 +9663,6 @@ body {
     text-shadow: 1px 1px 0 white, -1px -1px 0 white, -1px 1px 0 white,
       1px -1px 0 white !important;
   }
-
 }
 .preview2 {
   margin-top: 0;
@@ -9688,7 +9687,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }
 .bander::before {
   content: "";
@@ -9808,8 +9806,9 @@ body {
 .crd-12 .brandImage img {
   max-width: 150px;
 }
-.crd-4:nth-child(1), .crd-4:nth-child(2) {
-  margin-bottom: 18px !important;  
+.crd-4:nth-child(1),
+.crd-4:nth-child(2) {
+  margin-bottom: 18px !important;
 }
 .crd-4 {
   margin-left: auto !important;
@@ -9818,7 +9817,7 @@ body {
 .crd-4:nth-child(2n) {
   margin-left: auto !important;
 }
-.crd-4 .brandImage img{
+.crd-4 .brandImage img {
   max-width: 150px;
 }
 .crd-3:nth-child(2) {
@@ -9832,24 +9831,21 @@ body {
 .crd-1 .brandImage {
   background: url(/crd1.png) no-repeat center !important;
   background-size: cover !important;
-
 }
 .crd-2:nth-child(1) .brandImage {
   background: url(/crd2-2.png) no-repeat center !important;
   background-size: cover !important;
-
 }
 .crd-2:nth-child(2) .brandImage {
   background: url(/crd2-1.png) no-repeat center !important;
   background-size: cover !important;
-
 }
 .crd-2 {
   flex-basis: 48% !important;
   height: initial !important;
   margin-bottom: 0 !important;
 }
-.brands-keitaro .slick-slide>div {
+.brands-keitaro .slick-slide > div {
   width: max-content !important;
 }
 .crd-4 {
@@ -9930,52 +9926,117 @@ h1.fz31 {
   height: initial;
 }
 
-.crd-5:nth-child(1) .brandImage,.crd-6:nth-child(1) .brandImage,.crd-7:nth-child(1) .brandImage,.crd-8:nth-child(1) .brandImage,.crd-9:nth-child(1) .brandImage,.crd-10:nth-child(1) .brandImage,.crd-11:nth-child(1) .brandImage,.crd-12:nth-child(1) .brandImage,.crd-13:nth-child(1) .brandImage,.crd-14:nth-child(1) .brandImage,.crd-15:nth-child(1) .brandImage,.crd-16:nth-child(1) .brandImage {
+.crd-5:nth-child(1) .brandImage,
+.crd-6:nth-child(1) .brandImage,
+.crd-7:nth-child(1) .brandImage,
+.crd-8:nth-child(1) .brandImage,
+.crd-9:nth-child(1) .brandImage,
+.crd-10:nth-child(1) .brandImage,
+.crd-11:nth-child(1) .brandImage,
+.crd-12:nth-child(1) .brandImage,
+.crd-13:nth-child(1) .brandImage,
+.crd-14:nth-child(1) .brandImage,
+.crd-15:nth-child(1) .brandImage,
+.crd-16:nth-child(1) .brandImage {
   background: url(/crd5-1.png) no-repeat center !important;
   background-size: cover !important;
 }
-.crd-5:nth-child(2) .brandImage,.crd-6:nth-child(2) .brandImage,.crd-7:nth-child(2) .brandImage,.crd-8:nth-child(2) .brandImage,.crd-9:nth-child(2) .brandImage,.crd-10:nth-child(2) .brandImage,.crd-11:nth-child(2) .brandImage,.crd-12:nth-child(2) .brandImage,.crd-13:nth-child(2) .brandImage,.crd-14:nth-child(2) .brandImage,.crd-15:nth-child(2) .brandImage,.crd-16:nth-child(2) .brandImage {
+.crd-5:nth-child(2) .brandImage,
+.crd-6:nth-child(2) .brandImage,
+.crd-7:nth-child(2) .brandImage,
+.crd-8:nth-child(2) .brandImage,
+.crd-9:nth-child(2) .brandImage,
+.crd-10:nth-child(2) .brandImage,
+.crd-11:nth-child(2) .brandImage,
+.crd-12:nth-child(2) .brandImage,
+.crd-13:nth-child(2) .brandImage,
+.crd-14:nth-child(2) .brandImage,
+.crd-15:nth-child(2) .brandImage,
+.crd-16:nth-child(2) .brandImage {
   background: url(/crd5-2.png) no-repeat center !important;
   background-size: cover !important;
 }
-.crd-5:nth-child(3) .brandImage,.crd-6:nth-child(3) .brandImage,.crd-7:nth-child(3) .brandImage,.crd-8:nth-child(3) .brandImage,.crd-9:nth-child(3) .brandImage,.crd-10:nth-child(3) .brandImage,.crd-11:nth-child(3) .brandImage,.crd-12:nth-child(3) .brandImage,.crd-13:nth-child(3) .brandImage,.crd-14:nth-child(3) .brandImage,.crd-15:nth-child(3) .brandImage,.crd-16:nth-child(3) .brandImage {
+.crd-5:nth-child(3) .brandImage,
+.crd-6:nth-child(3) .brandImage,
+.crd-7:nth-child(3) .brandImage,
+.crd-8:nth-child(3) .brandImage,
+.crd-9:nth-child(3) .brandImage,
+.crd-10:nth-child(3) .brandImage,
+.crd-11:nth-child(3) .brandImage,
+.crd-12:nth-child(3) .brandImage,
+.crd-13:nth-child(3) .brandImage,
+.crd-14:nth-child(3) .brandImage,
+.crd-15:nth-child(3) .brandImage,
+.crd-16:nth-child(3) .brandImage {
   background: url(/crd5-3.png) no-repeat center !important;
   background-size: cover !important;
 }
-.crd-5:nth-child(4) .brandImage,.crd-6:nth-child(4) .brandImage,.crd-7:nth-child(4) .brandImage,.crd-8:nth-child(4) .brandImage,.crd-9:nth-child(4) .brandImage,.crd-10:nth-child(4) .brandImage,.crd-11:nth-child(4) .brandImage,.crd-12:nth-child(4) .brandImage,.crd-13:nth-child(4) .brandImage,.crd-14:nth-child(4) .brandImage,.crd-15:nth-child(4) .brandImage,.crd-16:nth-child(4) .brandImage {
+.crd-5:nth-child(4) .brandImage,
+.crd-6:nth-child(4) .brandImage,
+.crd-7:nth-child(4) .brandImage,
+.crd-8:nth-child(4) .brandImage,
+.crd-9:nth-child(4) .brandImage,
+.crd-10:nth-child(4) .brandImage,
+.crd-11:nth-child(4) .brandImage,
+.crd-12:nth-child(4) .brandImage,
+.crd-13:nth-child(4) .brandImage,
+.crd-14:nth-child(4) .brandImage,
+.crd-15:nth-child(4) .brandImage,
+.crd-16:nth-child(4) .brandImage {
   background: url(/crd5-4.png) no-repeat center !important;
   background-size: cover !important;
 }
-.crd-5:nth-child(5) .brandImage,.crd-6:nth-child(5) .brandImage,.crd-7:nth-child(5) .brandImage,.crd-8:nth-child(5) .brandImage,.crd-9:nth-child(5) .brandImage,.crd-10:nth-child(5) .brandImage,.crd-11:nth-child(5) .brandImage,.crd-12:nth-child(5) .brandImage,.crd-13:nth-child(5) .brandImage,.crd-14:nth-child(5) .brandImage,.crd-15:nth-child(5) .brandImage,.crd-16:nth-child(5) .brandImage {
+.crd-5:nth-child(5) .brandImage,
+.crd-6:nth-child(5) .brandImage,
+.crd-7:nth-child(5) .brandImage,
+.crd-8:nth-child(5) .brandImage,
+.crd-9:nth-child(5) .brandImage,
+.crd-10:nth-child(5) .brandImage,
+.crd-11:nth-child(5) .brandImage,
+.crd-12:nth-child(5) .brandImage,
+.crd-13:nth-child(5) .brandImage,
+.crd-14:nth-child(5) .brandImage,
+.crd-15:nth-child(5) .brandImage,
+.crd-16:nth-child(5) .brandImage {
   background: url(/crd5-5.png) no-repeat center !important;
   background-size: cover !important;
 }
-.crd-5:nth-child(6) .brandImage,.crd-6:nth-child(6) .brandImage,.crd-7:nth-child(6) .brandImage,.crd-8:nth-child(6) .brandImage,.crd-9:nth-child(6) .brandImage,.crd-10:nth-child(6) .brandImage,.crd-11:nth-child(6) .brandImage,.crd-12:nth-child(6) .brandImage,.crd-13:nth-child(6) .brandImage,.crd-14:nth-child(6) .brandImage,.crd-15:nth-child(6) .brandImage,.crd-16:nth-child(6) .brandImage {
+.crd-5:nth-child(6) .brandImage,
+.crd-6:nth-child(6) .brandImage,
+.crd-7:nth-child(6) .brandImage,
+.crd-8:nth-child(6) .brandImage,
+.crd-9:nth-child(6) .brandImage,
+.crd-10:nth-child(6) .brandImage,
+.crd-11:nth-child(6) .brandImage,
+.crd-12:nth-child(6) .brandImage,
+.crd-13:nth-child(6) .brandImage,
+.crd-14:nth-child(6) .brandImage,
+.crd-15:nth-child(6) .brandImage,
+.crd-16:nth-child(6) .brandImage {
   background: url(/crd5-6.png) no-repeat center !important;
   background-size: cover !important;
 }
 .brands-keitaro .card-brand {
   margin-left: 2% !important;
-
 }
-.crd-0:nth-child(3n+1),
-.crd-5:nth-child(3n+1),
-.crd-6:nth-child(3n+1),
-.crd-7:nth-child(3n+1),
-.crd-8:nth-child(3n+1),
-.crd-9:nth-child(3n+1),
-.crd-10:nth-child(3n+1),
-.crd-11:nth-child(3n+1),
-.crd-12:nth-child(3n+1),
-.crd-13:nth-child(3n+1),
-.crd-14:nth-child(3n+1),
-.crd-15:nth-child(3n+1),
-.crd-16:nth-child(3n+1),
-.crd-17:nth-child(3n+1),
-.crd-18:nth-child(3n+1),
-.crd-19:nth-child(3n+1),
-.crd-20:nth-child(3n+1),
-.crd-21:nth-child(3n+1) {
+.crd-0:nth-child(3n + 1),
+.crd-5:nth-child(3n + 1),
+.crd-6:nth-child(3n + 1),
+.crd-7:nth-child(3n + 1),
+.crd-8:nth-child(3n + 1),
+.crd-9:nth-child(3n + 1),
+.crd-10:nth-child(3n + 1),
+.crd-11:nth-child(3n + 1),
+.crd-12:nth-child(3n + 1),
+.crd-13:nth-child(3n + 1),
+.crd-14:nth-child(3n + 1),
+.crd-15:nth-child(3n + 1),
+.crd-16:nth-child(3n + 1),
+.crd-17:nth-child(3n + 1),
+.crd-18:nth-child(3n + 1),
+.crd-19:nth-child(3n + 1),
+.crd-20:nth-child(3n + 1),
+.crd-21:nth-child(3n + 1) {
   margin-left: 0 !important;
 }
 .crd-0 .btn-fz {
@@ -9986,7 +10047,8 @@ h1.fz31 {
   align-items: center;
   justify-content: center;
 }
-.crd-0 .btn-fz, .crd-0 .btn-fzl {
+.crd-0 .btn-fz,
+.crd-0 .btn-fzl {
   max-width: 125px;
   min-width: 125px;
 }
@@ -9995,11 +10057,12 @@ h1.fz31 {
   line-height: 17px !important;
   min-height: 51px !important;
 }
-.crd-5 .brandImage img,.crd-0 .brandImage img  {
+.crd-5 .brandImage img,
+.crd-0 .brandImage img {
   max-width: 120px;
 }
 
-@media(min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .mob-col {
     flex-direction: column;
   }
@@ -10029,36 +10092,64 @@ h1.fz31 {
   .brands-keitaro .card-brand {
     margin-left: 0 !important;
   }
-  .crd-0,.crd-1,.crd-2,.crd-3,.crd-4,
-.crd-5,
-.crd-6,
-.crd-7,
-.crd-8,
-.crd-9,
-.crd-10,
-.crd-11,
-.crd-12,
-.crd-13,
-.crd-14,
-.crd-15,
-.crd-16,
-.crd-17,
-.crd-18,
-.crd-19,
-.crd-20,
-.crd-21 {
-  flex-basis: 100% !important;
-  /* flex-basis: 32%;
+  .crd-0,
+  .crd-1,
+  .crd-2,
+  .crd-3,
+  .crd-4,
+  .crd-5,
+  .crd-6,
+  .crd-7,
+  .crd-8,
+  .crd-9,
+  .crd-10,
+  .crd-11,
+  .crd-12,
+  .crd-13,
+  .crd-14,
+  .crd-15,
+  .crd-16,
+  .crd-17,
+  .crd-18,
+  .crd-19,
+  .crd-20,
+  .crd-21 {
+    flex-basis: 100% !important;
+    /* flex-basis: 32%;
   max-height: 231px;
   height: 231px !important;
   margin-bottom: 17px; */
-}
-.slick-slide:nth-child(1) .card-brand .brandImage {
-  background: url(/crd5-1.png) no-repeat center !important;
-  background-size: cover !important;
-}
-.slick-slide:nth-child(2) .card-brand .brandImage {
-  background: url(/crd5-2.png) no-repeat center !important;
-  background-size: cover !important;
-}
+  }
+  .slick-slide:nth-child(1) .card-brand .brandImage {
+    background: url(/crd4-1.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(2) .card-brand .brandImage {
+    background: url(/crd4-2.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(3) .card-brand .brandImage {
+    background: url(/crd4-3.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(4) .card-brand .brandImage {
+    background: url(/crd4-4.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(5) .card-brand .brandImage {
+    background: url(/crd4-1.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(6) .card-brand .brandImage {
+    background: url(/crd4-2.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(7) .card-brand .brandImage {
+    background: url(/crd4-3.png) no-repeat center !important;
+    background-size: cover !important;
+  }
+  .slick-slide:nth-child(8) .card-brand .brandImage {
+    background: url(/crd4-4.png) no-repeat center !important;
+    background-size: cover !important;
+  }
 }
