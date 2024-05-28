@@ -15,6 +15,7 @@ import Loader from "../Loader";
 import { updateUserStatus } from "../UserBrands/UpdateUserStatus";
 import { getUserData } from "@/components/getUser/getUser";
 import { useTranslation } from "react-i18next";
+import Img from "@/public/gr_bl.png";
 
 export type Brand = {
   id_brand: string;
@@ -200,86 +201,105 @@ const UserBrands = () => {
   console.log("ISMOB", isMobile);
 
   return userId ? (
-    <div className="flex flex-col">
-      {isLoading && <Loader />}
-      {brands.length > 0 ? (
-        <>
-          {isMobile && brands.length > 1 ? (
-            <LazySlider {...settings}>
-              {brands.map((brand) => (
-                <BrandCard
-                  key={brand.id_brand}
-                  brand={brand}
-                  savedUrl={savedUrl}
-                  t={t}
-                  count={count}
-                />
-              ))}
-            </LazySlider>
+    <div className="flex justify-between mob-col">
+      <div className="flex justify-content basis-[40%] flex-col items-center bander">
+        <Image src={Img} alt="random brand" width={290} loading="lazy" />
+        {brands.length > 0 ? (
+          <h1 className="fz31">
+            {t("You Made Registration Here.")}{" "}
+            <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
+            {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
+          </h1>
+        ) : (
+          <h1 className="fz31">
+            {t("Make First Deposit On One Of These Brands &")}{" "}
+            <span className="text-blued">
+              {t("Get Up To $20 Right On Your Wallet!")}
+            </span>{" "}
+          </h1>
+        )}
+      </div>
+      <div className="brands-keitaro basis-[58%]">
+        <div className="flex flex-col">
+          {isLoading && <Loader />}
+          {brands.length > 0 ? (
+            <>
+              {isMobile && brands.length > 1 ? (
+                <LazySlider {...settings}>
+                  {brands.map((brand) => (
+                    <BrandCard
+                      key={brand.id_brand}
+                      brand={brand}
+                      savedUrl={savedUrl}
+                      t={t}
+                      count={count}
+                    />
+                  ))}
+                </LazySlider>
+              ) : (
+                <div className="flex flex-wrap">
+                  {brands.slice(0, 6).map((brand) => (
+                    <BrandCard
+                      key={brand.id_brand}
+                      brand={brand}
+                      savedUrl={savedUrl}
+                      t={t}
+                      count={count}
+                    />
+                  ))}
+                </div>
+              )}
+            </>
           ) : (
-            <div className="flex flex-wrap">
-              {brands.slice(0, 6).map((brand) => (
-                <BrandCard
-                  key={brand.id_brand}
-                  brand={brand}
-                  savedUrl={savedUrl}
-                  t={t}
-                  count={count}
-                />
-              ))}
-            </div>
-          )}
-        </>
-      ) : (
-        <>
-        {isMobile && brands.length > 1 ? (
-            <LazySlider {...settings}>
-              {otherBrands.map((brand) => (
-                <BrandCard
-                brand={brand}
-                savedUrl={savedUrl}
-                key={brand.id_brand}
-                t={t}
-                register={() => {
-                  updateUserStatus(
-                    localStorage.getItem("user_id") || "",
-                    brand.KeitaroGoBigID,
-                    "lead",
-                    () => {
-                      fetchBrands();
-                      setIshow((prev) => !prev);
-                    }
-                  );
-                }}
-                count={count}
-                />
-              ))}
-            </LazySlider>
-          ) : (
-            <div className="flex flex-wrap">
-              {otherBrands.slice(0, 6).map((brand) => (
-                <BrandCard
-                brand={brand}
-                savedUrl={savedUrl}
-                key={brand.id_brand}
-                t={t}
-                register={() => {
-                  updateUserStatus(
-                    localStorage.getItem("user_id") || "",
-                    brand.KeitaroGoBigID,
-                    "lead",
-                    () => {
-                      fetchBrands();
-                      setIshow((prev) => !prev);
-                    }
-                  );
-                }}
-                count={count}
-                />
-              ))}
-            </div>
-          )}
-          {/* <div className="flex flex-wrap px-0">
+            <>
+              {isMobile && otherBrands.length > 1 ? (
+                <LazySlider {...settings}>
+                  {otherBrands.map((brand) => (
+                    <BrandCard
+                      brand={brand}
+                      savedUrl={savedUrl}
+                      key={brand.id_brand}
+                      t={t}
+                      register={() => {
+                        updateUserStatus(
+                          localStorage.getItem("user_id") || "",
+                          brand.KeitaroGoBigID,
+                          "lead",
+                          () => {
+                            fetchBrands();
+                            setIshow((prev) => !prev);
+                          }
+                        );
+                      }}
+                      count={count}
+                    />
+                  ))}
+                </LazySlider>
+              ) : (
+                <div className="flex flex-wrap">
+                  {otherBrands.slice(0, 6).map((brand) => (
+                    <BrandCard
+                      brand={brand}
+                      savedUrl={savedUrl}
+                      key={brand.id_brand}
+                      t={t}
+                      register={() => {
+                        updateUserStatus(
+                          localStorage.getItem("user_id") || "",
+                          brand.KeitaroGoBigID,
+                          "lead",
+                          () => {
+                            fetchBrands();
+                            setIshow((prev) => !prev);
+                          }
+                        );
+                      }}
+                      count={count}
+                    />
+                  ))}
+                </div>
+              )}
+              {/* <div className="flex flex-wrap px-0">
             {otherBrands.slice(0, 6).map((brand) => (
               
               <BrandCard
@@ -302,8 +322,10 @@ const UserBrands = () => {
               />
             ))}
           </div> */}
-        </>
-      )}
+            </>
+          )}
+        </div>
+      </div>
     </div>
   ) : null;
 };
@@ -344,7 +366,7 @@ const BrandCard: React.FC<{
             className="btn btn-secondary btn-fz btn-fzl mr-2"
             onClick={register}
           >
-            {t("I'm Registered")}
+            {t("Already Registered")}
           </button>
         ) : (
           ""

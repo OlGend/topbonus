@@ -470,6 +470,13 @@ async function initializeI18n() {
           "Registration and First Deposit Not Completed",
         "I’m Registered": "I’m Registered",
         "Deposit Now": "Deposit Now",
+
+        "Get $20": "Get $20",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "You Already Made Registration Here, Make First Deposit & Get Up To $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!": "Make First Deposit On One Brand Below & Get Up To $20!",
+        "Make First Deposit On One Of These Brands &": "Make First Deposit On One Of These Brands &",
+        "Get Up To $20 Right On Your Wallet!": "Get Up To $20 Right On Your Wallet!",
+        "Already Registered": "Already Registered"
       },
     },
   

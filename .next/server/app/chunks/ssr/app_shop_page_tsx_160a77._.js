@@ -222,7 +222,7 @@ function Personal() {
                                         t("Withdrawal Request"),
                                         t("Withdrawal History"),
                                         t("Cards Shop"),
-                                        t("Premium Casino")
+                                        t("Get $20")
                                     ],
                                     content: [
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Stepper"], {

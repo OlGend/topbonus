@@ -31,7 +31,7 @@ const iconMap: Record<
   "Withdrawal Request": Bank,
   "Withdrawal History": ClockCounterClockwise,
   "Cards Shop": ShoppingCart,
-  "Premium Casino": Spade
+  "Get $20": Spade
 };
 
 const getLabel = (label: string) => {

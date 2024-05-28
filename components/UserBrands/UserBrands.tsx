@@ -115,38 +115,51 @@ const UserBrands = () => {
   return userId ? (
     <div className="flex flex-col">
       {isLoading && <Loader />}
-      {brands.length > 0 && (
-        <h2>{t("Your Registration Completed, First Deposit Awaited")}</h2>
+      {brands.length > 0 ? (
+        <>
+          <h2>
+            {t(
+              "You Already Made Registration Here, Make First Deposit & Get Up To $20!"
+            )}
+          </h2>
+          <div className="flex flex-wrap px-0 py-6">
+            {brands.map((brand) => (
+              <BrandCard
+                brand={brand}
+                savedUrl={savedUrl}
+                key={brand.id_brand}
+                t={t}
+              />
+            ))}
+          </div>
+        </>
+      ) : (
+        <>
+          <h2>{t("Make First Deposit On One Brand Below & Get Up To $20!")}</h2>
+
+          <div className="flex flex-wrap px-0 py-6">
+            {otherBrands.map((brand) => (
+              <BrandCard
+                brand={brand}
+                savedUrl={savedUrl}
+                key={brand.id_brand}
+                t={t}
+                register={() => {
+                  updateUserStatus(
+                    localStorage.getItem("user_id") || "",
+                    brand.KeitaroGoBigID,
+                    "lead",
+                    () => {
+                      fetchBrands(); // Эта функция вызовется после успешного обновления статуса
+                      setIshow((prev) => !prev); // Это изменит состояние isShow
+                    }
+                  );
+                }}
+              />
+            ))}
+          </div>
+        </>
       )}
-      <div className="flex flex-wrap px-0 py-6">
-        {brands.map((brand) => (
-          <BrandCard brand={brand} savedUrl={savedUrl} key={brand.id_brand} t={t} />
-        ))}
-      </div>
-      {otherBrands.length > 0 && (
-        <h2>{t("Registration and First Deposit Not Completed")}</h2>
-      )}
-      <div className="flex flex-wrap px-0 py-6">
-        {otherBrands.map((brand) => (
-          <BrandCard
-            brand={brand}
-            savedUrl={savedUrl}
-            key={brand.id_brand}
-            t={t}
-            register={() => {
-              updateUserStatus(
-                localStorage.getItem("user_id") || "",
-                brand.KeitaroGoBigID,
-                "lead",
-                () => {
-                  fetchBrands(); // Эта функция вызовется после успешного обновления статуса
-                  setIshow((prev) => !prev); // Это изменит состояние isShow
-                }
-              );
-            }}
-          />
-        ))}
-      </div>
     </div>
   ) : null;
 };
@@ -183,7 +196,7 @@ const BrandCard: React.FC<{
             className="btn btn-secondary btn-fz btn-fzl mr-2"
             onClick={register}
           >
-            {t("I'm Registered")}
+            {t("Already Registered")}
           </button>
         ) : (
           ""

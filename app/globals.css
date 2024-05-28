@@ -9593,7 +9593,7 @@ body {
   min-height: 231px;
   height: 100%;
 }
-.frstdep::before,
+/* .frstdep::before,
 .frstreg::before {
   content: "50 Free Spins";
   position: absolute;
@@ -9607,8 +9607,7 @@ body {
   z-index: 3;
   width: 124px;
 
-  /* width: 100%; */
-}
+} */
 .btn-fzl {
   border-color: #fff !important;
   color: #fff !important;
@@ -9704,7 +9703,7 @@ body {
 }
 .shMb {
   padding: 30px 30px 12px;
-  background: rgba(223, 242, 255, 0.505);
+  background: rgba(223, 242, 255, 0.616);
   border: 2px solid rgba(248, 248, 253, 0.45);
 }
 .whotake span {

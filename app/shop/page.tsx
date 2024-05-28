@@ -269,7 +269,7 @@ export default function Personal() {
                       t("Withdrawal Request"),
                       t("Withdrawal History"),
                       t("Cards Shop"),
-                      t("Premium Casino"),
+                      t("Get $20"),
                     ],
                     content: [
                       <Stepper

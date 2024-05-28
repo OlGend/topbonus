@@ -8612,20 +8612,6 @@ body {
   min-height: 231px;
   height: 100%;
 }
-.frstdep::before, 
-.frstreg::before {
-  content: "50 Free Spins";
-  position: absolute;
-  color: #fff;
-  padding: 3px 8px;
-  background: #e0743a;
-  border: 1px solid #fff;
-  left: calc(50% - 124px / 2);
-  top: 1px;
-  font-weight: 700;
-  z-index: 3;
-  width: 124px;
-}
 .btn-fzl {
   border-color: #fff !important;
   color: #fff !important;
@@ -8717,7 +8703,7 @@ body {
 }
 .shMb {
   padding: 30px 30px 12px;
-  background: rgba(223, 242, 255, 0.505);
+  background: rgba(223, 242, 255, 0.616);
   border: 2px solid rgba(248, 248, 253, 0.45);
 }
 .whotake span {
@@ -8928,6 +8914,7 @@ h1.fz31 {
 .crd-0 {
   height: initial;
 }
+.crd-0:nth-child(1) .brandImage, 
 .crd-5:nth-child(1) .brandImage, 
 .crd-6:nth-child(1) .brandImage, 
 .crd-7:nth-child(1) .brandImage, 
@@ -8943,6 +8930,7 @@ h1.fz31 {
   background: url(/crd5-1.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(2) .brandImage, 
 .crd-5:nth-child(2) .brandImage, 
 .crd-6:nth-child(2) .brandImage, 
 .crd-7:nth-child(2) .brandImage, 
@@ -8958,6 +8946,7 @@ h1.fz31 {
   background: url(/crd5-2.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(3) .brandImage, 
 .crd-5:nth-child(3) .brandImage, 
 .crd-6:nth-child(3) .brandImage, 
 .crd-7:nth-child(3) .brandImage, 
@@ -8973,6 +8962,7 @@ h1.fz31 {
   background: url(/crd5-3.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(4) .brandImage, 
 .crd-5:nth-child(4) .brandImage, 
 .crd-6:nth-child(4) .brandImage, 
 .crd-7:nth-child(4) .brandImage, 
@@ -8988,6 +8978,7 @@ h1.fz31 {
   background: url(/crd5-4.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(5) .brandImage, 
 .crd-5:nth-child(5) .brandImage, 
 .crd-6:nth-child(5) .brandImage, 
 .crd-7:nth-child(5) .brandImage, 
@@ -9003,6 +8994,7 @@ h1.fz31 {
   background: url(/crd5-5.png) no-repeat center !important;
   background-size: cover !important;
 }
+.crd-0:nth-child(6) .brandImage, 
 .crd-5:nth-child(6) .brandImage, 
 .crd-6:nth-child(6) .brandImage, 
 .crd-7:nth-child(6) .brandImage, 

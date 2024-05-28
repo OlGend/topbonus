@@ -12,7 +12,7 @@ import imgrandom from "@/public/coins_banner2.jpg";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands2";
 import { useTranslation } from "react-i18next";
-import Img from "@/public/gr_bl.png";
+
 import UserBrands from "./Brands_home/UserBrands";
 
 export default function TopBrands() {
@@ -104,6 +104,7 @@ export default function TopBrands() {
   return (
     <>
       <div className="topbr">
+
         <div className="main__container">
           {loading ? (
             <Loader />
@@ -146,22 +147,7 @@ export default function TopBrands() {
         </div>
 
         <div className="main__container flex flex-col !mt-7 shMb">
-
-          <div className="flex justify-between mob-col">
-            <div className="flex justify-content basis-[40%] flex-col items-center bander">
-              <Image src={Img} alt={Img} width={290} loading="lazy" />
-              <h1 className="fz31">
-                {t("You Made Registration Here.")}{" "}
-                <span className="text-blued">
-                  {t("Make First Deposit Now ")}
-                </span>{" "}
-                {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
-              </h1>
-            </div>
-            <div className="brands-keitaro basis-[58%]">
-              <UserBrands />
-            </div>
-          </div>
+          <UserBrands />
         </div>
       </div>
     </>
