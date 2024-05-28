@@ -1,8 +1,12 @@
 "use client";
 import { useState, useEffect } from "react";
-// import Slider from "react-slick";
-// import "slick-carousel/slick/slick.css";
-// import "slick-carousel/slick/slick-theme.css";
+import dynamic from "next/dynamic";
+const LazySlider = dynamic(() => import("react-slick"), {
+  ssr: false, // Это будет импортировать 'react-slick' только на клиенте
+  loading: () => <p>Download...</p>,
+});
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import { getBrands } from "@/components/getBrands/getBrands";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import Link from "next/link";
@@ -31,59 +35,59 @@ interface LeadOrSale {
   USD: string;
 }
 
-// interface Settings {
-//   accessibility?: boolean;
-//   adaptiveHeight?: boolean;
-//   afterChange?: (currentSlide: number) => void;
-//   appendDots?: (dots: React.ReactNode) => JSX.Element;
-//   arrows?: boolean;
-//   asNavFor?: string | null;
-//   autoplay?: boolean;
-//   autoplaySpeed?: number;
-//   beforeChange?: (currentSlide: number, nextSlide: number) => void;
-//   centerMode?: boolean;
-//   centerPadding?: string;
-//   className?: string;
-//   cssEase?: string;
-//   customPaging?: (index: number) => JSX.Element;
-//   dots?: boolean;
-//   dotsClass?: string;
-//   draggable?: boolean;
-//   easing?: string;
-//   edgeFriction?: number;
-//   fade?: boolean;
-//   focusOnSelect?: boolean;
-//   infinite?: boolean;
-//   initialSlide?: number;
-//   lazyLoad?: "ondemand" | "progressive";
-//   nextArrow?: JSX.Element;
-//   pauseOnDotsHover?: boolean;
-//   pauseOnFocus?: boolean;
-//   pauseOnHover?: boolean;
-//   prevArrow?: JSX.Element;
-//   responsive?: Array<{
-//     breakpoint: number;
-//     settings: Settings | "unslick";
-//   }>;
-//   rows?: number;
-//   rtl?: boolean;
-//   slide?: string;
-//   slidesPerRow?: number;
-//   slidesToScroll?: number;
-//   slidesToShow?: number;
-//   speed?: number;
-//   swipe?: boolean;
-//   swipeEvent?: (swipeDirection: "left" | "right" | "up" | "down") => void;
-//   swipeToSlide?: boolean;
-//   touchMove?: boolean;
-//   touchThreshold?: number;
-//   useCSS?: boolean;
-//   useTransform?: boolean;
-//   variableWidth?: boolean;
-//   vertical?: boolean;
-//   verticalSwiping?: boolean;
-//   waitForAnimate?: boolean;
-// }
+interface Settings {
+  accessibility?: boolean;
+  adaptiveHeight?: boolean;
+  afterChange?: (currentSlide: number) => void;
+  appendDots?: (dots: React.ReactNode) => JSX.Element;
+  arrows?: boolean;
+  asNavFor?: string | null;
+  autoplay?: boolean;
+  autoplaySpeed?: number;
+  beforeChange?: (currentSlide: number, nextSlide: number) => void;
+  centerMode?: boolean;
+  centerPadding?: string;
+  className?: string;
+  cssEase?: string;
+  customPaging?: (index: number) => JSX.Element;
+  dots?: boolean;
+  dotsClass?: string;
+  draggable?: boolean;
+  easing?: string;
+  edgeFriction?: number;
+  fade?: boolean;
+  focusOnSelect?: boolean;
+  infinite?: boolean;
+  initialSlide?: number;
+  lazyLoad?: "ondemand" | "progressive";
+  nextArrow?: JSX.Element;
+  pauseOnDotsHover?: boolean;
+  pauseOnFocus?: boolean;
+  pauseOnHover?: boolean;
+  prevArrow?: JSX.Element;
+  responsive?: Array<{
+    breakpoint: number;
+    settings: Settings | "unslick";
+  }>;
+  rows?: number;
+  rtl?: boolean;
+  slide?: string;
+  slidesPerRow?: number;
+  slidesToScroll?: number;
+  slidesToShow?: number;
+  speed?: number;
+  swipe?: boolean;
+  swipeEvent?: (swipeDirection: "left" | "right" | "up" | "down") => void;
+  swipeToSlide?: boolean;
+  touchMove?: boolean;
+  touchThreshold?: number;
+  useCSS?: boolean;
+  useTransform?: boolean;
+  variableWidth?: boolean;
+  vertical?: boolean;
+  verticalSwiping?: boolean;
+  waitForAnimate?: boolean;
+}
 
 const BRAND_CATEGORIES = { key1: "Segment2", key2: "Sandbox" };
 
@@ -92,35 +96,33 @@ const UserBrands = () => {
   const [otherBrands, setOtherBrands] = useState<Brand[]>([]);
   const count = brands.length;
 
-  // const settings: Settings = {
-  //   infinite: true,
-  //   speed: 500,
-  //   slidesToShow: 1,
-  //   slidesToScroll: 1,
-  //   responsive: [
-  //     {
-  //       breakpoint: 768,
-  //       settings: {
-  //         slidesToShow: 1,
-  //         slidesToScroll: 1,
-  //         initialSlide: 1,
-  //       },
-  //     },
-  //   ],
-  // };
+  const settings: Settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
 
   const { language } = useLanguage();
   const [isLoading, setIsLoading] = useState(false);
   const [isShow, setIshow] = useState(false);
   const { t } = useTranslation();
 
-  // const savedUrl = localStorage.getItem("savedUrl") || "";
   let savedUrl = "";
   if (typeof window !== "undefined") {
     savedUrl = localStorage.getItem("savedUrl") || "";
   }
 
-  // const userId = localStorage.getItem("user_id");
   let userId = "";
   if (typeof window !== "undefined") {
     userId = localStorage.getItem("user_id") || "";
@@ -145,28 +147,23 @@ const UserBrands = () => {
       return;
     }
 
-    // Преобразование строк JSON в массивы объектов
     const userLeads: LeadOrSale[] = JSON.parse(data.leads || "[]");
     const userSales: LeadOrSale[] = JSON.parse(data.sales || "[]");
 
-    // Создание массивов идентификаторов кампаний из лидов и продаж
     const leadsIds = userLeads.map((lead) => lead.campaignId);
     const salesIds = userSales.map((sale) => sale.campaignId);
 
     try {
       const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
 
-      // Фильтрация брендов по лидам, которые не пересекаются с продажами
       const leadsOnlyBrands = brandsData.filter(
         (brand) =>
           leadsIds.includes(brand.KeitaroGoBigID) &&
           !salesIds.includes(brand.KeitaroGoBigID)
       );
 
-      // Обновление состояния с брендами только из лидов
       setBrands(leadsOnlyBrands);
 
-      // Остальные бренды, которые могут быть использованы в другом контексте
       setOtherBrands(
         brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
       );
@@ -186,39 +183,52 @@ const UserBrands = () => {
   if (userId === "null") {
     return null;
   }
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    setIsMobile(window.innerWidth < 768);
+
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+  console.log("ISMOB", isMobile);
 
   return userId ? (
     <div className="flex flex-col">
       {isLoading && <Loader />}
       {brands.length > 0 ? (
         <>
-          <div className="flex flex-wrap px-0">
-            {brands.length > 1 ? (
-              brands.slice(0, 6).map((brand) => (
+          {isMobile ? (
+            <LazySlider {...settings}>
+              {brands.map((brand) => (
                 <BrandCard
+                  key={brand.id_brand}
                   brand={brand}
                   savedUrl={savedUrl}
-                  key={brand.id_brand}
                   t={t}
                   count={count}
                 />
-              ))
-            ) : (
-              <p>not</p>
-              // <Slider {...settings}>
-              //   {brands.map((brand) => (
-              //     <div key={brand.id_brand}>
-              //       <BrandCard
-              //         brand={brand}
-              //         savedUrl={savedUrl}
-              //         t={t}
-              //         count={count}
-              //       />
-              //     </div>
-              //   ))}
-              // </Slider>
-            )}
-          </div>
+              ))}
+            </LazySlider>
+          ) : (
+            <div className="flex flex-wrap">
+              {brands.map((brand) => (
+                <BrandCard
+                  key={brand.id_brand}
+                  brand={brand}
+                  savedUrl={savedUrl}
+                  t={t}
+                  count={count}
+                />
+              ))}
+            </div>
+          )}
         </>
       ) : (
         <>
@@ -235,8 +245,8 @@ const UserBrands = () => {
                     brand.KeitaroGoBigID,
                     "lead",
                     () => {
-                      fetchBrands(); // Эта функция вызовется после успешного обновления статуса
-                      setIshow((prev) => !prev); // Это изменит состояние isShow
+                      fetchBrands();
+                      setIshow((prev) => !prev);
                     }
                   );
                 }}
@@ -299,8 +309,6 @@ const BrandCard: React.FC<{
         </Link>
       </div>
     </div>
-    {/* <div className="brandContent p-3">
-    </div> */}
   </div>
 );
 

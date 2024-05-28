@@ -9845,7 +9845,12 @@ body {
 
 }
 .crd-2 {
-  flex-basis: 48%;
+  flex-basis: 48% !important;
+  height: initial !important;
+  margin-bottom: 0 !important;
+}
+.brands-keitaro .slick-slide>div {
+  width: max-content !important;
 }
 .crd-4 {
   flex-basis: 48%;
@@ -10000,11 +10005,23 @@ h1.fz31 {
   }
   .shMb {
     padding: 0.9375rem !important;
+    max-width: 100%;
   }
   .bander {
     background-size: cover !important;
     padding: 90px 30px !important;
-
+    flex-basis: 100%;
+  }
+  .brands-keitaro {
+    flex-basis: 100%;
+    margin-top: 50px;
+  }
+  .brands-keitaro .slick-slide {
+    margin-right: 0 !important;
+    padding: 0px !important;
+  }
+  .brands-keitaro .slick-slide div {
+    width: 100% !important;
   }
   .crd-1 {
     margin-left: 0 !important;
@@ -10035,5 +10052,13 @@ h1.fz31 {
   max-height: 231px;
   height: 231px !important;
   margin-bottom: 17px; */
+}
+.slick-slide:nth-child(1) .card-brand .brandImage {
+  background: url(/crd5-1.png) no-repeat center !important;
+  background-size: cover !important;
+}
+.slick-slide:nth-child(2) .card-brand .brandImage {
+  background: url(/crd5-2.png) no-repeat center !important;
+  background-size: cover !important;
 }
 }

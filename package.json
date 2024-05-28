@@ -58,6 +58,7 @@
     "uuid": "^9.0.1"
   },
   "devDependencies": {
+    "@types/react-slick": "^0.23.13",
     "webpack-bundle-analyzer": "^4.10.1"
   }
 }

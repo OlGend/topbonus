@@ -145,8 +145,8 @@ export default function TopBrands() {
           <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
         </div>
 
-        <div className="main__container flex flex-col !mt-7 shMb">
-            {/* <h3 className="mb-5 whotake">Users who take bonus from us: <span>3543</span></h3> */}
+        {/* <div className="main__container flex flex-col !mt-7 shMb">
+
           <div className="flex justify-between mob-col">
             <div className="flex justify-content basis-[40%] flex-col items-center bander">
               <Image src={Img} alt={Img} width={290} loading="lazy" />
@@ -162,7 +162,7 @@ export default function TopBrands() {
               <UserBrands />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
