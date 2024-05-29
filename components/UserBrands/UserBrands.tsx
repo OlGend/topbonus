@@ -116,7 +116,7 @@ const UserBrands = () => {
   }
 
   return userId ? (
-    <div id="brands-keitaro" className="flex flex-col">
+    <div  className="flex flex-col">
       {isLoading && <Loader />}
       {brands.length > 0 ? (
         <>
