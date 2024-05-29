@@ -1,8 +1,8 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import dynamic from "next/dynamic";
 const LazySlider = dynamic(() => import("react-slick"), {
-  ssr: false, // Это будет импортировать 'react-slick' только на клиенте
+  ssr: false,
   loading: () => <p>Download...</p>,
 });
 import "slick-carousel/slick/slick.css";
@@ -36,68 +36,26 @@ interface LeadOrSale {
   USD: string;
 }
 
-interface Settings {
-  accessibility?: boolean;
-  adaptiveHeight?: boolean;
-  afterChange?: (currentSlide: number) => void;
-  appendDots?: (dots: React.ReactNode) => JSX.Element;
-  arrows?: boolean;
-  asNavFor?: string | null;
-  autoplay?: boolean;
-  autoplaySpeed?: number;
-  beforeChange?: (currentSlide: number, nextSlide: number) => void;
-  centerMode?: boolean;
-  centerPadding?: string;
-  className?: string;
-  cssEase?: string;
-  customPaging?: (index: number) => JSX.Element;
-  dots?: boolean;
-  dotsClass?: string;
-  draggable?: boolean;
-  easing?: string;
-  edgeFriction?: number;
-  fade?: boolean;
-  focusOnSelect?: boolean;
-  infinite?: boolean;
-  initialSlide?: number;
-  lazyLoad?: "ondemand" | "progressive";
-  nextArrow?: JSX.Element;
-  pauseOnDotsHover?: boolean;
-  pauseOnFocus?: boolean;
-  pauseOnHover?: boolean;
-  prevArrow?: JSX.Element;
-  responsive?: Array<{
-    breakpoint: number;
-    settings: Settings | "unslick";
-  }>;
-  rows?: number;
-  rtl?: boolean;
-  slide?: string;
-  slidesPerRow?: number;
-  slidesToScroll?: number;
-  slidesToShow?: number;
-  speed?: number;
-  swipe?: boolean;
-  swipeEvent?: (swipeDirection: "left" | "right" | "up" | "down") => void;
-  swipeToSlide?: boolean;
-  touchMove?: boolean;
-  touchThreshold?: number;
-  useCSS?: boolean;
-  useTransform?: boolean;
-  variableWidth?: boolean;
-  vertical?: boolean;
-  verticalSwiping?: boolean;
-  waitForAnimate?: boolean;
-}
-
 const BRAND_CATEGORIES = { key1: "Segment2", key2: "Sandbox" };
 
 const UserBrands = () => {
   const [brands, setBrands] = useState<Brand[]>([]);
   const [otherBrands, setOtherBrands] = useState<Brand[]>([]);
-  const count = brands.length;
+  const [isLoading, setIsLoading] = useState(false);
+  const [isShow, setIsShow] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [userId, setUserId] = useState("");
+  const [savedUrl, setSavedUrl] = useState("");
 
-  const settings: Settings = {
+  const { language } = useLanguage();
+  const { t } = useTranslation();
+
+  useEffect(() => {
+    setUserId(localStorage.getItem("user_id") || "");
+    setSavedUrl(localStorage.getItem("savedUrl") || "");
+  }, []);
+
+  const settings = {
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -114,47 +72,29 @@ const UserBrands = () => {
     ],
   };
 
-  const { language } = useLanguage();
-  const [isLoading, setIsLoading] = useState(false);
-  const [isShow, setIshow] = useState(false);
-  const { t } = useTranslation();
-
-  let savedUrl = "";
-  if (typeof window !== "undefined") {
-    savedUrl = localStorage.getItem("savedUrl") || "";
-  }
-
-  let userId = "";
-  if (typeof window !== "undefined") {
-    userId = localStorage.getItem("user_id") || "";
-  }
-
-  const fetchBrands = async () => {
-    if (userId === "null") {
-      console.error("No user ID found, unable to fetch brands.");
-      setIsLoading(false);
-      return;
-    }
+  const fetchBrands = useCallback(async () => {
     if (!userId) {
       console.error("No user ID found, unable to fetch brands.");
       setIsLoading(false);
       return;
     }
+
     setIsLoading(true);
-    const data = await getUserData(userId);
-    if (!data) {
-      console.error("Received null data from getUserData");
-      setIsLoading(false);
-      return;
-    }
-
-    const userLeads: LeadOrSale[] = JSON.parse(data.leads || "[]");
-    const userSales: LeadOrSale[] = JSON.parse(data.sales || "[]");
-
-    const leadsIds = userLeads.map((lead) => lead.campaignId);
-    const salesIds = userSales.map((sale) => sale.campaignId);
 
     try {
+      const data = await getUserData(userId);
+      if (!data) {
+        console.error("Received null data from getUserData");
+        setIsLoading(false);
+        return;
+      }
+
+      const userLeads: LeadOrSale[] = JSON.parse(data.leads || "[]");
+      const userSales: LeadOrSale[] = JSON.parse(data.sales || "[]");
+
+      const leadsIds = userLeads.map((lead) => lead.campaignId);
+      const salesIds = userSales.map((sale) => sale.campaignId);
+
       const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
 
       const leadsOnlyBrands = brandsData.filter(
@@ -173,18 +113,14 @@ const UserBrands = () => {
     } finally {
       setIsLoading(false);
     }
-  };
+  }, [language, userId]);
 
   useEffect(() => {
     if (userId) {
       fetchBrands();
     }
-  }, [language, isShow, userId]);
+  }, [language, isShow, userId, fetchBrands]);
 
-  if (userId === "null") {
-    return null;
-  }
-  const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     setIsMobile(window.innerWidth < 768);
 
@@ -198,9 +134,12 @@ const UserBrands = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log("ISMOB", isMobile);
 
-  return userId ? (
+  if (!userId) {
+    return null;
+  }
+
+  return (
     <div className="flex justify-between mob-col">
       <div className="flex justify-content basis-[40%] flex-col items-center bander">
         <Image src={Img} alt="random brand" width={290} loading="lazy" />
@@ -232,7 +171,7 @@ const UserBrands = () => {
                       brand={brand}
                       savedUrl={savedUrl}
                       t={t}
-                      count={count}
+                      count={brands.length}
                     />
                   ))}
                 </LazySlider>
@@ -244,7 +183,7 @@ const UserBrands = () => {
                       brand={brand}
                       savedUrl={savedUrl}
                       t={t}
-                      count={count}
+                      count={brands.length}
                     />
                   ))}
                 </div>
@@ -262,16 +201,16 @@ const UserBrands = () => {
                       t={t}
                       register={() => {
                         updateUserStatus(
-                          localStorage.getItem("user_id") || "",
+                          userId,
                           brand.KeitaroGoBigID,
                           "lead",
                           () => {
                             fetchBrands();
-                            setIshow((prev) => !prev);
+                            setIsShow((prev) => !prev);
                           }
                         );
                       }}
-                      count={count}
+                      count={brands.length}
                     />
                   ))}
                 </LazySlider>
@@ -285,49 +224,26 @@ const UserBrands = () => {
                       t={t}
                       register={() => {
                         updateUserStatus(
-                          localStorage.getItem("user_id") || "",
+                          userId,
                           brand.KeitaroGoBigID,
                           "lead",
                           () => {
                             fetchBrands();
-                            setIshow((prev) => !prev);
+                            setIsShow((prev) => !prev);
                           }
                         );
                       }}
-                      count={count}
+                      count={brands.length}
                     />
                   ))}
                 </div>
               )}
-              {/* <div className="flex flex-wrap px-0">
-            {otherBrands.slice(0, 6).map((brand) => (
-              
-              <BrandCard
-                brand={brand}
-                savedUrl={savedUrl}
-                key={brand.id_brand}
-                t={t}
-                register={() => {
-                  updateUserStatus(
-                    localStorage.getItem("user_id") || "",
-                    brand.KeitaroGoBigID,
-                    "lead",
-                    () => {
-                      fetchBrands();
-                      setIshow((prev) => !prev);
-                    }
-                  );
-                }}
-                count={count}
-              />
-            ))}
-          </div> */}
             </>
           )}
         </div>
       </div>
     </div>
-  ) : null;
+  );
 };
 
 const BrandCard: React.FC<{
