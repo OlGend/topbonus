@@ -9205,6 +9205,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         columnNumber: 9
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$28$ecmascript$29$__["default"], {
+                        src: "https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js",
+                        defer: true
+                    }, void 0, false, {
+                        fileName: "<[project]/app/layout.tsx>",
+                        lineNumber: 68,
+                        columnNumber: 9
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$28$ecmascript$29$__["default"], {
+                        id: "onesignal",
+                        children: `window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(function(OneSignal) {
+    OneSignal.init({
+      appId: "a61d76f1-bd61-460e-96fe-db296a297bc0",
+    });
+  });`
+                    }, void 0, false, {
+                        fileName: "<[project]/app/layout.tsx>",
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$script$2e$js__$28$ecmascript$29$__["default"], {
                         id: "ladesc",
                         children: `
             (function (d, src, c) {
@@ -9227,7 +9248,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           `
                     }, void 0, false, {
                         fileName: "<[project]/app/layout.tsx>",
-                        lineNumber: 68,
+                        lineNumber: 81,
                         columnNumber: 9
                     }, this)
                 ]

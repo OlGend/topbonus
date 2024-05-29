@@ -122,6 +122,8 @@ const UserBrands = () => {
               "You Already Made Registration Here, Make First Deposit & Get Up To $20!"
             )}
           </h2>
+          <p className="mt-3">{t(
+              "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!")}</p>
           <div className="flex flex-wrap px-0 py-6">
             {brands.map((brand) => (
               <BrandCard
@@ -132,11 +134,15 @@ const UserBrands = () => {
               />
             ))}
           </div>
+          <span className="descriptions">
+          {t("You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.")}
+          </span>
         </>
       ) : (
         <>
           <h2>{t("Make First Deposit On One Brand Below & Get Up To $20!")}</h2>
-
+          <p className="mt-3">{t(
+              "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!")}</p>
           <div className="flex flex-wrap px-0 py-6">
             {otherBrands.map((brand) => (
               <BrandCard
@@ -158,6 +164,9 @@ const UserBrands = () => {
               />
             ))}
           </div>
+          <span className="descriptions">
+          {t("You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.")}
+          </span>
         </>
       )}
     </div>

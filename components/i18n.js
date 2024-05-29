@@ -476,6 +476,8 @@ async function initializeI18n() {
           "Make First Deposit On One Of These Brands &": "Make First Deposit On One Of These Brands &",
           "Get Up To $20 Right On Your Wallet!": "Get Up To $20 Right On Your Wallet!",
           "Already Registered": "Already Registered",
+          "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!",
+            "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
       },
     },
   
@@ -834,6 +836,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Dokonaj pierwszej wpłaty na jednej z tych marek &",
   "Get Up To $20 Right On Your Wallet!": "Dostań nawet do 20 dolarów prosto na swoje konto!",
   "Already Registered": "Już zarejestrowany",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wybierz kasyno z poniższej listy, dokonaj pierwszej wpłaty i odbierz nawet do 20 dolarów nagrody!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Otrzymasz 50 darmowych spinów za każdą pierwszą wpłatę z naszej strony internetowej. Obróć te spiny i zdobądź do 20 dolarów na swoim portfelu kryptowalutowym/PayPal. Aby zakwalifikować się do wypłaty, upewnij się, że Twoja pierwsza wpłata wynosi co najmniej 25 euro lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę.",
       },
     },
     de: {
@@ -1191,6 +1195,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Tätigen Sie die erste Einzahlung bei einer dieser Marken &",
   "Get Up To $20 Right On Your Wallet!": "Erhalten Sie bis zu 20 $ direkt auf Ihr Portemonnaie!",
   "Already Registered": "Bereits registriert",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wählen Sie ein Casino aus der Liste unten, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 $ Belohnung!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sie erhalten 50 Freispiele für jede Ersteinzahlung von unserer Website. Drehen Sie diese Spins und erhalten Sie bis zu $20 auf Ihrem Kryptowallet/PayPal. Um sich für Auszahlungen zu qualifizieren, stellen Sie sicher, dass Ihre erste Einzahlung mindestens Є25 oder dem Äquivalent in anderen Währungen beträgt und nach der Beantragung einer Auszahlung erfolgt ist.",
       },
     },
     bg: {
@@ -1547,6 +1553,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Направете първия депозит в една от тези марки &",
   "Get Up To $20 Right On Your Wallet!": "Вземете до $20 директно във вашата портмоне!",
   "Already Registered": "Вече регистриран",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Изберете казино от списъка по-долу, направете първия си депозит и получете до $20 награда!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ще получите 50 безплатни завъртания за всеки първи депозит от нашия уебсайт. Завъртете тези завъртания и получете до $20 на вашия криптовалутен портфейл/PayPal. За да квалифицирате за изтегляне, се уверете, че първият ви депозит е поне Є25 или еквивалентът му в други валути и е направен след като сте поискали изтегляне.",
       },
     },
     cz: {
@@ -1903,6 +1911,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Proveďte první vklad na jednu z těchto značek &",
   "Get Up To $20 Right On Your Wallet!": "Získejte až 20 $ přímo na svůj peněženku!",
   "Already Registered": "Již registrován",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasino z níže uvedeného seznamu, proveďte svůj první vklad a získejte až 20 $ odměny!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 volných zatočení za každý první vklad z našich webových stránek. Roztočte tyto zatočení a získejte až 20 $ na svou kryptoměnovou peněženku/PayPal. Pro kvalifikaci k výběrům se ujistěte, že váš první vklad je minimálně 25 € nebo ekvivalent v jiných měnách a byl proveden požadováním výběru.",
       },
     },
     dk: {
@@ -2258,6 +2268,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Foretag første indbetaling på en af disse mærker &",
   "Get Up To $20 Right On Your Wallet!": "Få op til $20 lige på din tegnebog!",
   "Already Registered": "Allerede registreret",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vælg et casino fra listen nedenfor, foretag dit første indskud og modtag op til $20 i belønninger!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratis spins for hver første indbetaling fra vores hjemmeside. Spil disse spins og få op til $20 på din kryptopung/PayPal. For at kvalificere dig til udbetalinger, skal du sikre dig, at din første indbetaling er på mindst Є25 eller tilsvarende i andre valutaer og blev foretaget efter anmodning om en udbetaling.",
       },
     },
     nl: {
@@ -2614,6 +2626,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Maak een eerste storting op een van deze merken &",
   "Get Up To $20 Right On Your Wallet!": "Krijg tot $20 rechtstreeks op je portemonnee!",
   "Already Registered": "Al geregistreerd",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecteer een casino uit de onderstaande lijst, maak je eerste storting en ontvang tot $20 aan beloningen!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Je krijgt 50 gratis spins voor elke eerste storting vanaf onze website. Draai deze spins en krijg tot $20 op je crypto wallet/PayPal. Om in aanmerking te komen voor opnames, zorg ervoor dat je eerste storting minstens Є25 is of het equivalent in andere valuta en is gedaan na het aanvragen van een opname.",
       },
     },
     es: {
@@ -2970,6 +2984,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Realiza el primer depósito en una de estas marcas &",
   "Get Up To $20 Right On Your Wallet!": "¡Obtén hasta $20 directamente en tu billetera!",
   "Already Registered": "Ya registrado",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "¡Selecciona un casino de la lista a continuación, realiza tu primer depósito y recibe hasta $20 en recompensas!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Recibirás 50 giros gratis por cada primer depósito desde nuestro sitio web. Gira estos giros y obtén hasta $20 en tu billetera de criptomonedas/PayPal. Para calificar para retiros, asegúrate de que tu primer depósito sea de al menos Є25 o su equivalente en otras monedas y se haya realizado después de solicitar un retiro.",
       },
     },
     fi: {
@@ -3325,6 +3341,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Tee ensimmäinen talletus yhdelle näistä brändeistä &",
   "Get Up To $20 Right On Your Wallet!": "Saat jopa 20 dollaria suoraan lompakkoosi!",
   "Already Registered": "Jo rekisteröitynyt",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Valitse kasino alla olevasta listasta, tee ensimmäinen talletuksesi ja saat jopa 20 dollaria palkintoina!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Saat 50 ilmaiskierrosta jokaisesta ensimmäisestä talletuksestasi verkkosivustoltamme. Pyöritä nämä kierrokset ja saat jopa 20 dollaria krypto lompakkoosi/PayPaliin. Jotta voit olla oikeutettu nostoihin, varmista että ensimmäinen talletuksesi on vähintään 25 euroa tai vastaava summa muissa valuutoissa ja se on tehty pyynnön jälkeen.",
       },
     },
     fr: {
@@ -3680,6 +3698,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Effectuez un premier dépôt sur l'une de ces marques &",
   "Get Up To $20 Right On Your Wallet!": "Recevez jusqu'à 20 $ directement sur votre portefeuille!",
   "Already Registered": "Déjà inscrit",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Sélectionnez un casino dans la liste ci-dessous, effectuez votre premier dépôt et recevez jusqu'à 20 $ de récompenses!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Vous recevrez 50 tours gratuits pour chaque premier dépôt à partir de notre site Web. Faites tourner ces tours et obtenez jusqu'à 20 $ sur votre portefeuille crypto/PayPal. Pour être éligible aux retraits, assurez-vous que vos premiers dépôts sont d'au moins 25 € ou l'équivalent dans d'autres devises et ont été effectués après avoir demandé un retrait.",
       },
     },
     gr: {
@@ -4036,6 +4056,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Κάντε την πρώτη κατάθεση σε μία από αυτές τις εταιρείες &",
   "Get Up To $20 Right On Your Wallet!": "Πάρτε μέχρι και $20 απευθείας στο πορτοφόλι σας!",
   "Already Registered": "Ήδη Εγγεγραμμένος",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Επιλέξτε ένα καζίνο από τη λίστα παρακάτω, κάντε την πρώτη σας κατάθεση και λάβετε μέχρι και $20 σε ανταμοιβές!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Θα λάβετε 50 δωρεάν περιστροφές για κάθε Πρώτη Κατάθεση από την ιστοσελίδα μας. Περιστρέψτε αυτές τις περιστροφές και κερδίστε έως και $20 στο κρυπτονόμισμά σας/PayPal. Για να προκριθείτε για αναλήψεις, βεβαιωθείτε ότι η πρώτη κατάθεσή σας είναι τουλάχιστον €25 ή το αντίστοιχο σε άλλα νομίσματα και έγινε μετά από αίτηση ανάληψης.",
       },
     },
     hu: {
@@ -4392,6 +4414,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Hajtsa végre az első befizetést az egyik ilyen márka esetében &",
   "Get Up To $20 Right On Your Wallet!": "Akár 20 dollárt is kapj a pénztárcádba!",
   "Already Registered": "Már regisztrált",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Válasszon egy kaszinót az alábbi listából, végezze el az első befizetését, és akár 20 dollár jutalmat kapjon!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ingyenes 50 pörgetést kapsz minden első befizetésért a weboldalunkról. Pörgetsd ezeket a pörgetéseket, és akár 20 dollárt is kaphatsz a kriptopénz tárcádon/PayPal számládon. A kifizetésekhez való jogosultsághoz biztosítsd, hogy az első befizetés legalább 25 euró vagy annak megfelelője más devizákon, és azt a kifizetés kérése után végezted.",
       },
     },
     it: {
@@ -4748,6 +4772,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Effettua il primo deposito su uno di questi marchi &",
   "Get Up To $20 Right On Your Wallet!": "Ricevi fino a $20 direttamente sul tuo portafoglio!",
   "Already Registered": "Gia registrato",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Seleziona un casinò dalla lista qui sotto, effettua il tuo primo deposito e ricevi fino a $20 di ricompense!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Riceverai 50 giri gratuiti per ogni primo deposito dal nostro sito web. Fai girare questi giri e ottieni fino a $20 sul tuo portafoglio criptato/PayPal. Per poter prelevare, assicurati che il tuo primo deposito sia di almeno Є25 o l'equivalente in altre valute e sia stato effettuato dopo aver richiesto un prelievo.",
       },
     },
     no: {
@@ -5104,6 +5130,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Gjør første innskudd på en av disse merkene &",
   "Get Up To $20 Right On Your Wallet!": "Få opptil $20 rett på lommeboken din!",
   "Already Registered": "Allerede registrert",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Velg et kasino fra listen nedenfor, gjør ditt første innskudd og motta opptil $20 i belønninger!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratisspinn for hver første innskudd fra nettstedet vårt. Spinn disse spinnene og få opptil $20 på din kryptolommebok/PayPal. For å kvalifisere for uttak, sørg for at ditt første innskudd er på minst Є25 eller tilsvarende i andre valutaer og ble gjort etter at du ba om et uttak.",
       },
     },
     pt: {
@@ -5459,6 +5487,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Faça o primeiro depósito em uma dessas marcas &",
   "Get Up To $20 Right On Your Wallet!": "Receba até $20 direto na sua carteira!",
   "Already Registered": "Já Registrado",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecione um cassino da lista abaixo, faça seu primeiro depósito e receba até $20 em recompensas!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Você receberá 50 rodadas grátis para cada primeiro depósito em nosso site. Gire essas rodadas e ganhe até $20 em sua carteira de criptomoedas/PayPal. Para se qualificar para saques, certifique-se de que seu primeiro depósito seja de pelo menos Є25 ou o equivalente em outras moedas e tenha sido feito após solicitar um saque.",
       },
     },
     se: {
@@ -5816,6 +5846,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Gör första insättningen på ett av dessa varumärken &",
   "Get Up To $20 Right On Your Wallet!": "Få upp till $20 direkt på plånboken!",
   "Already Registered": "Redan registrerad",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Välj ett kasino från listan nedan, gör din första insättning och få upp till $20 i belöningar!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du kommer att få 50 gratissnurr för varje första insättning från vår webbplats. Snurra dessa snurr och få upp till $20 på din kryptoplånbok/PayPal. För att kvalificera dig för uttag, se till att din första insättning är minst Є25 eller motsvarande i andra valutor och gjordes efter att du begärt ett uttag.",
       },
     },
     sk: {
@@ -6172,6 +6204,8 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Urobte prvý vklad na jednu z týchto značiek &",
   "Get Up To $20 Right On Your Wallet!": "Získajte až 20 dolárov priamo na svojom peňaženke!",
   "Already Registered": "Už registrovaný",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasíno zo zoznamu nižšie, urobte svoj prvý vklad a získajte až 20 dolárov odmeny!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 bezplatných zatočení za každý prvý vklad z našej webovej stránky. Zatočte týmito zatočeniami a získajte až 20 dolárov na svoj kryptomenový peňaženku/PayPal. Pre kvalifikáciu na výbery sa uistite, že váš prvý vklad je aspoň 25 eur alebo ekvivalent v iných menách a bol vykonaný požiadavkou na výber.",
       },
     },
     tr: {
@@ -6526,9 +6560,12 @@ async function initializeI18n() {
   "Make First Deposit On One Of These Brands &": "Bir Bu Markalardan İlk Yatırımı Yapın &",
   "Get Up To $20 Right On Your Wallet!": "Cüzdanınızda Hemen 20 Dolara Kadar Kazanın!",
   "Already Registered": "Zaten Kayıtlı",
+  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Aşağıdaki listeden bir kumarhaneyi seçin, ilk para yatırmanızı yapın ve 20 $'a kadar ödül alın!",
+  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sitemizden her ilk para yatırma işlemi için 50 Ücretsiz Dönüş alacaksınız. Bu dönüşleri çevirin ve kripto cüzdanınıza/PayPal hesabınıza kadar 20 $ kazanın. Çekilmeye hak kazanmak için, ilk para yatırma işleminizin en az 25 Є veya diğer para birimlerindeki karşılığı olması ve çekim talebinde bulunulduktan sonra yapılması gerekmektedir.",
       },
     },
   };
+  
   
   
 

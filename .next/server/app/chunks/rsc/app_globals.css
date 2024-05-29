@@ -9144,4 +9144,8 @@ h1.fz31 {
     background-size: cover !important;
   }
 }
+span.descriptions {
+  font-size: 14px;
+  line-height: 17px;
+}
 
