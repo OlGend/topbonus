@@ -37,6 +37,7 @@ interface LeadOrSale {
 }
 
 const BRAND_CATEGORIES = { key1: "Segment2", key2: "Sandbox" };
+const BRAND_CATEGORIES2 = { key1: "FirstPriority", key2: "1" };
 
 const UserBrands = () => {
   const [brands, setBrands] = useState<Brand[]>([]);
@@ -96,6 +97,7 @@ const UserBrands = () => {
       const salesIds = userSales.map((sale) => sale.campaignId);
 
       const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
+      const brandsData2: Brand[] = await getBrands(BRAND_CATEGORIES2, language);
 
       const leadsOnlyBrands = brandsData.filter(
         (brand) =>
@@ -106,7 +108,8 @@ const UserBrands = () => {
       setBrands(leadsOnlyBrands);
 
       setOtherBrands(
-        brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
+        // brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
+        brandsData2
       );
     } catch (error) {
       console.error("Error loading brands:", error);

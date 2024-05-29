@@ -29,6 +29,7 @@ interface LeadOrSale {
 }
 
 const BRAND_CATEGORIES = { key1: "Segment2", key2: "Sandbox" };
+const BRAND_CATEGORIES2 = { key1: "FirstPriority", key2: "1" };
 
 const UserBrands = () => {
   const [brands, setBrands] = useState<Brand[]>([]);
@@ -80,6 +81,7 @@ const UserBrands = () => {
 
     try {
       const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
+      const brandsData2: Brand[] = await getBrands(BRAND_CATEGORIES2, language);
 
       // Фильтрация брендов по лидам, которые не пересекаются с продажами
       const leadsOnlyBrands = brandsData.filter(
@@ -93,7 +95,8 @@ const UserBrands = () => {
 
       // Остальные бренды, которые могут быть использованы в другом контексте
       setOtherBrands(
-        brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
+        // brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
+        brandsData2
       );
     } catch (error) {
       console.error("Error loading brands:", error);
@@ -113,7 +116,7 @@ const UserBrands = () => {
   }
 
   return userId ? (
-    <div className="flex flex-col">
+    <div id="brands-keitaro" className="flex flex-col">
       {isLoading && <Loader />}
       {brands.length > 0 ? (
         <>
