@@ -150,7 +150,7 @@ const UserBrands = () => {
         <Image src={Img} alt="random brand" width={290} loading="lazy" />
         {brands.length > 0 ? (
           <h1 className="fz31">
-            {t("You Made Registration Here.")}{" "}
+            {t("You have successfully registered on these brands")}{" "}
             <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
             {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
           </h1>

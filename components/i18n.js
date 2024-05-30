@@ -478,6 +478,8 @@ async function initializeI18n() {
           "Already Registered": "Already Registered",
           "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!",
             "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
+
+         
       },
     },
   
