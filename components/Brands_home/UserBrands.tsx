@@ -108,8 +108,8 @@ const UserBrands = () => {
       setBrands(leadsOnlyBrands);
 
       setOtherBrands(
-        // brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
-        brandsData2
+        brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
+        // brandsData2
       );
     } catch (error) {
       console.error("Error loading brands:", error);
