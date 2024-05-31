@@ -145,10 +145,10 @@ export default function TopBrands() {
           </div>
           <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
         </div>
-
+{/* 
         <div id="keitaro" className="main__container flex flex-col !mt-7 shMb">
           <UserBrands />
-        </div>
+        </div> */}
       </div>
     </>
   );
