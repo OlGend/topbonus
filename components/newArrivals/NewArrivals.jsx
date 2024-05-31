@@ -72,9 +72,9 @@ const NewArrivals = () => {
     <div id="real" className="bl-sand">
       <div className="main__container block-sandbox">
         <h2>{t("Top New Releases")}</h2>
-        <Slider {...settings}>
-          {brands.map((item) => {
-            return (
+        {brands.length > 3 ? (
+          <Slider {...settings}>
+            {brands.map((item) => (
               <div
                 className="card-second-banner mb-2 flex flex-col items-center pb-3"
                 key={item.id_brand}
@@ -82,13 +82,12 @@ const NewArrivals = () => {
                 <div className="brandImage p-3">
                   <Link
                     className="flex justify-center flex-col items-center target-top-new-releases"
-                    key={item.id_brand}
                     href={`${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`}
                     target="_blank"
                   >
                     <Image
                       src={`/brands/${item.CasinoBrand}.png`}
-                      alt={`/brands/${item.CasinoBrand}.png`}
+                      alt={item.CasinoBrand}
                       width={200}
                       height={80}
                       loading="lazy"
@@ -101,16 +100,51 @@ const NewArrivals = () => {
                 </div>
                 <Link
                   className="btn btn-primary btn-new target-top-new-releases"
-                  key={item.id_brand}
                   href={`${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`}
                   target="_blank"
                 >
                   {t("Play Now")}
                 </Link>
               </div>
-            );
-          })}
-        </Slider>
+            ))}
+          </Slider>
+        ) : (
+          <>
+            {brands.map((item) => (
+              <div
+                className="card-second-banner mb-2 flex flex-col items-center pb-3"
+                key={item.id_brand}
+              >
+                <div className="brandImage p-3">
+                  <Link
+                    className="flex justify-center flex-col items-center target-top-new-releases"
+                    href={`${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`}
+                    target="_blank"
+                  >
+                    <Image
+                      src={`/brands/${item.CasinoBrand}.png`}
+                      alt={item.CasinoBrand}
+                      width={200}
+                      height={80}
+                      loading="lazy"
+                      className="target-top-new-releases"
+                    />
+                    <div className="p-3 text-center flex items-center review-bonus">
+                      {item.OurOfferContent}
+                    </div>
+                  </Link>
+                </div>
+                <Link
+                  className="btn btn-primary btn-new target-top-new-releases"
+                  href={`${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`}
+                  target="_blank"
+                >
+                  {t("Play Now")}
+                </Link>
+              </div>
+            ))}
+          </>
+        )}
       </div>
     </div>
   );

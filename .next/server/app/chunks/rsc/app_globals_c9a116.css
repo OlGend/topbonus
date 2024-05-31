@@ -8424,17 +8424,40 @@ body {
 .page-fortune {
   margin-bottom: 30px;
 }
-.slick-track .slick-slide .card-second-banner {
+#real .card-second-banner {
   border: 2px solid rgba(255, 255, 255, 0.9);
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.slick-track .slick-slide:nth-child(3n+0) .card-second-banner {
+#real .card-second-banner:nth-child(3n+0) {
   background: linear-gradient(to right, #4b79ce 0%, #2346a6 100%);
 }
-.slick-track .slick-slide:nth-child(3n+1) .card-second-banner {
+#real .card-second-banner:nth-child(3n+1) {
   background: linear-gradient(to right, #e88b4f 0%, #dc652c 100%);
 }
-.slick-track .slick-slide:nth-child(3n+2) .card-second-banner {
+#real .card-second-banner:nth-child(3n+2) {
   background: linear-gradient(to right, #bcda6c 0%, #8aad52 100%);
+}
+#real .card-second-banner .brandImage {
+  max-height: initial !important;
+}
+.slick-track .slick-slide .card-second-banner .brandImage {
+  max-height: 100px !important;
+}
+.slick-track .slick-slide .card-second-banner {
+  border: 2px solid rgba(255, 255, 255, 0.9) !important;
+}
+.slick-track .slick-slide:nth-child(3n+0) .card-second-banner {
+  background: linear-gradient(to right, #4b79ce 0%, #2346a6 100%) !important;
+}
+.slick-track .slick-slide:nth-child(3n+1) .card-second-banner {
+  background: linear-gradient(to right, #e88b4f 0%, #dc652c 100%) !important;
+}
+.slick-track .slick-slide:nth-child(3n+2) .card-second-banner {
+  background: linear-gradient(to right, #bcda6c 0%, #8aad52 100%) !important;
 }
 .slick-track .slick-slide .card-second-banner .brandImage {
   max-height: initial !important;
