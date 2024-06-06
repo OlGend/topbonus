@@ -51,7 +51,7 @@ const Fortunes = ({ banner, target, creative }) => {
 
   return (
     <div className="flex flex-col container-fortune">
-      <div className="banner-wheel">
+      <div id="banner-wheel" className="banner-wheel">
         <h3>{t("FORTUNE WHEEL BRANDS")}</h3>
         <p>{t("Pick a brand below, make first deposit and win real cash")}</p>
         {banner && (
