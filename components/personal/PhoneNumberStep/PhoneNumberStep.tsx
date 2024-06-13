@@ -46,17 +46,14 @@ export const PhoneNumberStep = ({
 }: PhoneNumberStepProps) => {
   const { t } = useTranslation();
 
-
-  const defaultCountry = (localStorage.getItem("country_phone") ?? undefined) as
-    | MuiTelInputCountry
-    | undefined;
-
-
+  const defaultCountry = (localStorage.getItem("country_phone") ??
+    undefined) as MuiTelInputCountry | undefined;
 
   const [isLoading, setIsLoading] = useState(false);
   const [otp, setOtp] = useState("");
   const [otpMessage, setOtpMessage] = useState("");
   const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const [isDialogOpen2, setIsDialogOpen2] = useState(false);
 
   const [
     saveUserPhoneNumber,
@@ -109,7 +106,8 @@ export const PhoneNumberStep = ({
         await saveUserPhoneNumber({ userId: user.id, phoneNumber });
         onCloseDialog();
         setIsLoading(false);
-        onChangeStep(step + 1);
+        setIsDialogOpen2(true);
+        // onChangeStep(step + 1);
         return;
       }
 
@@ -131,6 +129,11 @@ export const PhoneNumberStep = ({
     }
   };
 
+  const onConfDial = async () => {
+    setIsDialogOpen2(false);
+    onChangeStep(step + 1);
+  };
+
   const onCloseDialog = () => {
     setIsDialogOpen(false);
   };
@@ -140,8 +143,6 @@ export const PhoneNumberStep = ({
     isSendUserPhoneNumberLoading || isLoading || isSaveUserPhoneNumberLoading;
   const isButtonSendCodeDisabled =
     phoneNumber.length < DEFAULT_PHONE_NUMBER_LENGTH;
-
-    
 
   return (
     <StyledDiv>
@@ -188,6 +189,20 @@ export const PhoneNumberStep = ({
         >
           {t("Continue")}
         </Button>
+      </Dialog>
+      <Dialog open={isDialogOpen2} onClose={onConfDial} className="p-3">
+        <div className="p-3">
+          {t("Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!")}
+        </div>
+        <div className="p-3">
+          <Button
+            className="btn-primary"
+            variant="contained"
+            onClick={onConfDial}
+          >
+            {t("Continue")}
+          </Button>
+        </div>
       </Dialog>
       <Box>
         <Button

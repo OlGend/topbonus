@@ -861,7 +861,8 @@ async function initializeI18n() {
                 "Get Up To $20 Right On Your Wallet!": "Get Up To $20 Right On Your Wallet!",
                 "Already Registered": "Already Registered",
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!",
-                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal."
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!"
             }
         },
         pl: {
@@ -1109,7 +1110,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Zrób pierwszą wpłatę na jednej z marek poniżej i otrzymaj nawet do 20 dolarów!",
                 "Make First Deposit On One Of These Brands &": "Dokonaj pierwszej wpłaty na jednej z tych marek &",
                 "Get Up To $20 Right On Your Wallet!": "Dostań nawet do 20 dolarów prosto na swoje konto!",
-                "Already Registered": "Już zarejestrowany"
+                "Already Registered": "Już zarejestrowany",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wybierz kasyno z poniższej listy, dokonaj pierwszej wpłaty i odbierz nawet do 20 dolarów nagrody!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Otrzymasz 50 darmowych spinów za każdą pierwszą wpłatę z naszej strony internetowej. Obróć te spiny i zdobądź do 20 dolarów na swoim portfelu kryptowalutowym/PayPal. Aby zakwalifikować się do wypłaty, upewnij się, że Twoja pierwsza wpłata wynosi co najmniej 25 euro lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę."
             }
         },
         de: {
@@ -1357,7 +1360,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Tätigen Sie die erste Einzahlung bei einer der unten aufgeführten Marken und erhalten Sie bis zu 20 $!",
                 "Make First Deposit On One Of These Brands &": "Tätigen Sie die erste Einzahlung bei einer dieser Marken &",
                 "Get Up To $20 Right On Your Wallet!": "Erhalten Sie bis zu 20 $ direkt auf Ihr Portemonnaie!",
-                "Already Registered": "Bereits registriert"
+                "Already Registered": "Bereits registriert",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wählen Sie ein Casino aus der Liste unten, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 $ Belohnung!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sie erhalten 50 Freispiele für jede Ersteinzahlung von unserer Website. Drehen Sie diese Spins und erhalten Sie bis zu $20 auf Ihrem Kryptowallet/PayPal. Um sich für Auszahlungen zu qualifizieren, stellen Sie sicher, dass Ihre erste Einzahlung mindestens Є25 oder dem Äquivalent in anderen Währungen beträgt und nach der Beantragung einer Auszahlung erfolgt ist."
             }
         },
         bg: {
@@ -1605,7 +1610,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Направете първия депозит в една от марките по-долу и получете до 20 долара!",
                 "Make First Deposit On One Of These Brands &": "Направете първия депозит в една от тези марки &",
                 "Get Up To $20 Right On Your Wallet!": "Вземете до $20 директно във вашата портмоне!",
-                "Already Registered": "Вече регистриран"
+                "Already Registered": "Вече регистриран",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Изберете казино от списъка по-долу, направете първия си депозит и получете до $20 награда!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ще получите 50 безплатни завъртания за всеки първи депозит от нашия уебсайт. Завъртете тези завъртания и получете до $20 на вашия криптовалутен портфейл/PayPal. За да квалифицирате за изтегляне, се уверете, че първият ви депозит е поне Є25 или еквивалентът му в други валути и е направен след като сте поискали изтегляне."
             }
         },
         cz: {
@@ -1853,7 +1860,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Proveďte první vklad na jednu značku níže a získejte až 20 $!",
                 "Make First Deposit On One Of These Brands &": "Proveďte první vklad na jednu z těchto značek &",
                 "Get Up To $20 Right On Your Wallet!": "Získejte až 20 $ přímo na svůj peněženku!",
-                "Already Registered": "Již registrován"
+                "Already Registered": "Již registrován",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasino z níže uvedeného seznamu, proveďte svůj první vklad a získejte až 20 $ odměny!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 volných zatočení za každý první vklad z našich webových stránek. Roztočte tyto zatočení a získejte až 20 $ na svou kryptoměnovou peněženku/PayPal. Pro kvalifikaci k výběrům se ujistěte, že váš první vklad je minimálně 25 € nebo ekvivalent v jiných měnách a byl proveden požadováním výběru."
             }
         },
         dk: {
@@ -2101,7 +2110,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Foretag første indbetaling på et af nedenstående mærker og få op til $20!",
                 "Make First Deposit On One Of These Brands &": "Foretag første indbetaling på en af disse mærker &",
                 "Get Up To $20 Right On Your Wallet!": "Få op til $20 lige på din tegnebog!",
-                "Already Registered": "Allerede registreret"
+                "Already Registered": "Allerede registreret",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vælg et casino fra listen nedenfor, foretag dit første indskud og modtag op til $20 i belønninger!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratis spins for hver første indbetaling fra vores hjemmeside. Spil disse spins og få op til $20 på din kryptopung/PayPal. For at kvalificere dig til udbetalinger, skal du sikre dig, at din første indbetaling er på mindst Є25 eller tilsvarende i andre valutaer og blev foretaget efter anmodning om en udbetaling."
             }
         },
         nl: {
@@ -2349,7 +2360,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Maak een eerste storting op een van de onderstaande merken en ontvang tot $20!",
                 "Make First Deposit On One Of These Brands &": "Maak een eerste storting op een van deze merken &",
                 "Get Up To $20 Right On Your Wallet!": "Krijg tot $20 rechtstreeks op je portemonnee!",
-                "Already Registered": "Al geregistreerd"
+                "Already Registered": "Al geregistreerd",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecteer een casino uit de onderstaande lijst, maak je eerste storting en ontvang tot $20 aan beloningen!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Je krijgt 50 gratis spins voor elke eerste storting vanaf onze website. Draai deze spins en krijg tot $20 op je crypto wallet/PayPal. Om in aanmerking te komen voor opnames, zorg ervoor dat je eerste storting minstens Є25 is of het equivalent in andere valuta en is gedaan na het aanvragen van een opname."
             }
         },
         es: {
@@ -2597,7 +2610,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "¡Realiza tu primer depósito en una de las marcas a continuación y obtén hasta $20!",
                 "Make First Deposit On One Of These Brands &": "Realiza el primer depósito en una de estas marcas &",
                 "Get Up To $20 Right On Your Wallet!": "¡Obtén hasta $20 directamente en tu billetera!",
-                "Already Registered": "Ya registrado"
+                "Already Registered": "Ya registrado",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "¡Selecciona un casino de la lista a continuación, realiza tu primer depósito y recibe hasta $20 en recompensas!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Recibirás 50 giros gratis por cada primer depósito desde nuestro sitio web. Gira estos giros y obtén hasta $20 en tu billetera de criptomonedas/PayPal. Para calificar para retiros, asegúrate de que tu primer depósito sea de al menos Є25 o su equivalente en otras monedas y se haya realizado después de solicitar un retiro."
             }
         },
         fi: {
@@ -2845,7 +2860,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Tee ensimmäinen talletus yhdelle alla olevista brändeistä ja saat jopa 20 dollaria!",
                 "Make First Deposit On One Of These Brands &": "Tee ensimmäinen talletus yhdelle näistä brändeistä &",
                 "Get Up To $20 Right On Your Wallet!": "Saat jopa 20 dollaria suoraan lompakkoosi!",
-                "Already Registered": "Jo rekisteröitynyt"
+                "Already Registered": "Jo rekisteröitynyt",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Valitse kasino alla olevasta listasta, tee ensimmäinen talletuksesi ja saat jopa 20 dollaria palkintoina!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Saat 50 ilmaiskierrosta jokaisesta ensimmäisestä talletuksestasi verkkosivustoltamme. Pyöritä nämä kierrokset ja saat jopa 20 dollaria krypto lompakkoosi/PayPaliin. Jotta voit olla oikeutettu nostoihin, varmista että ensimmäinen talletuksesi on vähintään 25 euroa tai vastaava summa muissa valuutoissa ja se on tehty pyynnön jälkeen."
             }
         },
         fr: {
@@ -3093,7 +3110,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Effectuez un premier dépôt sur une des marques ci-dessous et obtenez jusqu'à 20 $ !",
                 "Make First Deposit On One Of These Brands &": "Effectuez un premier dépôt sur l'une de ces marques &",
                 "Get Up To $20 Right On Your Wallet!": "Recevez jusqu'à 20 $ directement sur votre portefeuille!",
-                "Already Registered": "Déjà inscrit"
+                "Already Registered": "Déjà inscrit",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Sélectionnez un casino dans la liste ci-dessous, effectuez votre premier dépôt et recevez jusqu'à 20 $ de récompenses!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Vous recevrez 50 tours gratuits pour chaque premier dépôt à partir de notre site Web. Faites tourner ces tours et obtenez jusqu'à 20 $ sur votre portefeuille crypto/PayPal. Pour être éligible aux retraits, assurez-vous que vos premiers dépôts sont d'au moins 25 € ou l'équivalent dans d'autres devises et ont été effectués après avoir demandé un retrait."
             }
         },
         gr: {
@@ -3341,7 +3360,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Κάντε την πρώτη κατάθεση σε μια από τις παρακάτω μάρκες και κερδίστε μέχρι και $20!",
                 "Make First Deposit On One Of These Brands &": "Κάντε την πρώτη κατάθεση σε μία από αυτές τις εταιρείες &",
                 "Get Up To $20 Right On Your Wallet!": "Πάρτε μέχρι και $20 απευθείας στο πορτοφόλι σας!",
-                "Already Registered": "Ήδη Εγγεγραμμένος"
+                "Already Registered": "Ήδη Εγγεγραμμένος",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Επιλέξτε ένα καζίνο από τη λίστα παρακάτω, κάντε την πρώτη σας κατάθεση και λάβετε μέχρι και $20 σε ανταμοιβές!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Θα λάβετε 50 δωρεάν περιστροφές για κάθε Πρώτη Κατάθεση από την ιστοσελίδα μας. Περιστρέψτε αυτές τις περιστροφές και κερδίστε έως και $20 στο κρυπτονόμισμά σας/PayPal. Για να προκριθείτε για αναλήψεις, βεβαιωθείτε ότι η πρώτη κατάθεσή σας είναι τουλάχιστον €25 ή το αντίστοιχο σε άλλα νομίσματα και έγινε μετά από αίτηση ανάληψης."
             }
         },
         hu: {
@@ -3589,7 +3610,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Hajtsa végre az első befizetést az alábbi egyik márkánál, és akár 20 dollárt kapjon!",
                 "Make First Deposit On One Of These Brands &": "Hajtsa végre az első befizetést az egyik ilyen márka esetében &",
                 "Get Up To $20 Right On Your Wallet!": "Akár 20 dollárt is kapj a pénztárcádba!",
-                "Already Registered": "Már regisztrált"
+                "Already Registered": "Már regisztrált",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Válasszon egy kaszinót az alábbi listából, végezze el az első befizetését, és akár 20 dollár jutalmat kapjon!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ingyenes 50 pörgetést kapsz minden első befizetésért a weboldalunkról. Pörgetsd ezeket a pörgetéseket, és akár 20 dollárt is kaphatsz a kriptopénz tárcádon/PayPal számládon. A kifizetésekhez való jogosultsághoz biztosítsd, hogy az első befizetés legalább 25 euró vagy annak megfelelője más devizákon, és azt a kifizetés kérése után végezted."
             }
         },
         it: {
@@ -3837,7 +3860,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Effettua il primo deposito su uno dei marchi qui sotto e ottieni fino a $20!",
                 "Make First Deposit On One Of These Brands &": "Effettua il primo deposito su uno di questi marchi &",
                 "Get Up To $20 Right On Your Wallet!": "Ricevi fino a $20 direttamente sul tuo portafoglio!",
-                "Already Registered": "Gia registrato"
+                "Already Registered": "Gia registrato",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Seleziona un casinò dalla lista qui sotto, effettua il tuo primo deposito e ricevi fino a $20 di ricompense!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Riceverai 50 giri gratuiti per ogni primo deposito dal nostro sito web. Fai girare questi giri e ottieni fino a $20 sul tuo portafoglio criptato/PayPal. Per poter prelevare, assicurati che il tuo primo deposito sia di almeno Є25 o l'equivalente in altre valute e sia stato effettuato dopo aver richiesto un prelievo."
             }
         },
         no: {
@@ -4085,7 +4110,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Gjør første innskudd på ett av merkene nedenfor og få opptil $20!",
                 "Make First Deposit On One Of These Brands &": "Gjør første innskudd på en av disse merkene &",
                 "Get Up To $20 Right On Your Wallet!": "Få opptil $20 rett på lommeboken din!",
-                "Already Registered": "Allerede registrert"
+                "Already Registered": "Allerede registrert",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Velg et kasino fra listen nedenfor, gjør ditt første innskudd og motta opptil $20 i belønninger!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratisspinn for hver første innskudd fra nettstedet vårt. Spinn disse spinnene og få opptil $20 på din kryptolommebok/PayPal. For å kvalifisere for uttak, sørg for at ditt første innskudd er på minst Є25 eller tilsvarende i andre valutaer og ble gjort etter at du ba om et uttak."
             }
         },
         pt: {
@@ -4333,7 +4360,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Faça o primeiro depósito em uma das marcas abaixo e ganhe até $20!",
                 "Make First Deposit On One Of These Brands &": "Faça o primeiro depósito em uma dessas marcas &",
                 "Get Up To $20 Right On Your Wallet!": "Receba até $20 direto na sua carteira!",
-                "Already Registered": "Já Registrado"
+                "Already Registered": "Já Registrado",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecione um cassino da lista abaixo, faça seu primeiro depósito e receba até $20 em recompensas!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Você receberá 50 rodadas grátis para cada primeiro depósito em nosso site. Gire essas rodadas e ganhe até $20 em sua carteira de criptomoedas/PayPal. Para se qualificar para saques, certifique-se de que seu primeiro depósito seja de pelo menos Є25 ou o equivalente em outras moedas e tenha sido feito após solicitar um saque."
             }
         },
         se: {
@@ -4581,7 +4610,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Gör första insättningen på ett av varumärkena nedan och få upp till $20!",
                 "Make First Deposit On One Of These Brands &": "Gör första insättningen på ett av dessa varumärken &",
                 "Get Up To $20 Right On Your Wallet!": "Få upp till $20 direkt på plånboken!",
-                "Already Registered": "Redan registrerad"
+                "Already Registered": "Redan registrerad",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Välj ett kasino från listan nedan, gör din första insättning och få upp till $20 i belöningar!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du kommer att få 50 gratissnurr för varje första insättning från vår webbplats. Snurra dessa snurr och få upp till $20 på din kryptoplånbok/PayPal. För att kvalificera dig för uttag, se till att din första insättning är minst Є25 eller motsvarande i andra valutor och gjordes efter att du begärt ett uttag."
             }
         },
         sk: {
@@ -4829,7 +4860,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Urobte prvý vklad na jednu značku nižšie a získajte až 20 dolárov!",
                 "Make First Deposit On One Of These Brands &": "Urobte prvý vklad na jednu z týchto značiek &",
                 "Get Up To $20 Right On Your Wallet!": "Získajte až 20 dolárov priamo na svojom peňaženke!",
-                "Already Registered": "Už registrovaný"
+                "Already Registered": "Už registrovaný",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasíno zo zoznamu nižšie, urobte svoj prvý vklad a získajte až 20 dolárov odmeny!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 bezplatných zatočení za každý prvý vklad z našej webovej stránky. Zatočte týmito zatočeniami a získajte až 20 dolárov na svoj kryptomenový peňaženku/PayPal. Pre kvalifikáciu na výbery sa uistite, že váš prvý vklad je aspoň 25 eur alebo ekvivalent v iných menách a bol vykonaný požiadavkou na výber."
             }
         },
         tr: {
@@ -5077,7 +5110,9 @@ async function initializeI18n() {
                 "Make First Deposit On One Brand Below & Get Up To $20!": "Aşağıdaki Markaya İlk Yatırımı Yapın ve 20 $'a Kadar Kazanın!",
                 "Make First Deposit On One Of These Brands &": "Bir Bu Markalardan İlk Yatırımı Yapın &",
                 "Get Up To $20 Right On Your Wallet!": "Cüzdanınızda Hemen 20 Dolara Kadar Kazanın!",
-                "Already Registered": "Zaten Kayıtlı"
+                "Already Registered": "Zaten Kayıtlı",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Aşağıdaki listeden bir kumarhaneyi seçin, ilk para yatırmanızı yapın ve 20 $'a kadar ödül alın!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sitemizden her ilk para yatırma işlemi için 50 Ücretsiz Dönüş alacaksınız. Bu dönüşleri çevirin ve kripto cüzdanınıza/PayPal hesabınıza kadar 20 $ kazanın. Çekilmeye hak kazanmak için, ilk para yatırma işleminizin en az 25 Є veya diğer para birimlerindeki karşılığı olması ve çekim talebinde bulunulduktan sonra yapılması gerekmektedir."
             }
         }
     };
@@ -7516,11 +7551,6 @@ const TheHeader = ()=>{
                 lineNumber: 184,
                 columnNumber: 11
             }, this) : "",
-            showBasicModal && !showResponsiveDialog && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modal$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 189,
-                columnNumber: 49
-            }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "header__bg",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8629,6 +8659,10 @@ const BRAND_CATEGORIES = {
     key1: "Segment2",
     key2: "Sandbox"
 };
+const BRAND_CATEGORIES2 = {
+    key1: "FirstPriority",
+    key2: "1"
+};
 const UserBrands = ()=>{
     const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
     const [otherBrands, setOtherBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
@@ -8668,9 +8702,10 @@ const UserBrands = ()=>{
         const salesIds = userSales.map((sale)=>sale.campaignId);
         try {
             const brandsData = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES, language);
+            const brandsData2 = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES2, language);
             const leadsOnlyBrands = brandsData.filter((brand)=>leadsIds.includes(brand.KeitaroGoBigID) && !salesIds.includes(brand.KeitaroGoBigID));
             setBrands(leadsOnlyBrands);
-            setOtherBrands(brandsData.filter((brand)=>!leadsIds.includes(brand.KeitaroGoBigID)));
+            setOtherBrands(brandsData2);
         } catch (error) {
             console.error("Error loading brands:", error);
         } finally{
@@ -8694,7 +8729,7 @@ const UserBrands = ()=>{
         children: [
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                lineNumber: 117,
+                lineNumber: 120,
                 columnNumber: 21
             }, this),
             brands.length > 0 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
@@ -8703,7 +8738,7 @@ const UserBrands = ()=>{
                         children: t("You Already Made Registration Here, Make First Deposit & Get Up To $20!")
                     }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 120,
+                        lineNumber: 123,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
@@ -8711,7 +8746,7 @@ const UserBrands = ()=>{
                         children: t("Select a brand from the list below, make your first deposit and receive up to $20 in rewards!")
                     }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 125,
+                        lineNumber: 128,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8722,12 +8757,12 @@ const UserBrands = ()=>{
                                 t: t
                             }, brand.id_brand, false, {
                                 fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                                lineNumber: 129,
+                                lineNumber: 132,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 127,
+                        lineNumber: 130,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
@@ -8735,7 +8770,7 @@ const UserBrands = ()=>{
                         children: t("You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.")
                     }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 137,
+                        lineNumber: 140,
                         columnNumber: 11
                     }, this)
                 ]
@@ -8745,7 +8780,7 @@ const UserBrands = ()=>{
                         children: t("Make First Deposit On One Brand Below & Get Up To $20!")
                     }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 143,
+                        lineNumber: 146,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
@@ -8753,7 +8788,7 @@ const UserBrands = ()=>{
                         children: t("Select a brand from the list below, make your first deposit and receive up to $20 in rewards!")
                     }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 144,
+                        lineNumber: 147,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8770,12 +8805,12 @@ const UserBrands = ()=>{
                                 }
                             }, brand.id_brand, false, {
                                 fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                                lineNumber: 148,
+                                lineNumber: 151,
                                 columnNumber: 15
                             }, this))
                     }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 146,
+                        lineNumber: 149,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
@@ -8783,7 +8818,7 @@ const UserBrands = ()=>{
                         children: t("You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.")
                     }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 167,
+                        lineNumber: 170,
                         columnNumber: 11
                     }, this)
                 ]
@@ -8791,7 +8826,7 @@ const UserBrands = ()=>{
         ]
     }, void 0, true, {
         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-        lineNumber: 116,
+        lineNumber: 119,
         columnNumber: 5
     }, this) : null;
 };
@@ -8811,7 +8846,7 @@ const BrandCard = ({ brand, savedUrl, register, t })=>__TURBOPACK__imported__mod
                             height: 100
                         }, void 0, false, {
                             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                            lineNumber: 192,
+                            lineNumber: 195,
                             columnNumber: 9
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8820,18 +8855,18 @@ const BrandCard = ({ brand, savedUrl, register, t })=>__TURBOPACK__imported__mod
                                 children: brand.OurOfferContent
                             }, void 0, false, {
                                 fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                                lineNumber: 199,
+                                lineNumber: 202,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                            lineNumber: 198,
+                            lineNumber: 201,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                    lineNumber: 188,
+                    lineNumber: 191,
                     columnNumber: 7
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8843,7 +8878,7 @@ const BrandCard = ({ brand, savedUrl, register, t })=>__TURBOPACK__imported__mod
                             children: t("Already Registered")
                         }, void 0, false, {
                             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                            lineNumber: 204,
+                            lineNumber: 207,
                             columnNumber: 11
                         }, this) : "",
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -8852,24 +8887,24 @@ const BrandCard = ({ brand, savedUrl, register, t })=>__TURBOPACK__imported__mod
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                            lineNumber: 213,
+                            lineNumber: 216,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                    lineNumber: 202,
+                    lineNumber: 205,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-            lineNumber: 183,
+            lineNumber: 186,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-        lineNumber: 182,
+        lineNumber: 185,
         columnNumber: 3
     }, this);
 const __TURBOPACK__default__export__ = UserBrands;
@@ -9606,6 +9641,7 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
     const [otp, setOtp] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     const [otpMessage, setOtpMessage] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     const [isDialogOpen, setIsDialogOpen] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    const [isDialogOpen2, setIsDialogOpen2] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const [saveUserPhoneNumber, { loading: isSaveUserPhoneNumberLoading, error: isEaveUserPhoneNumberError }] = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useMutationSaveUserPhoneNumber"]();
     const [sendUserPhoneNumber, { data: sendUserPhoneNumberData, loading: isSendUserPhoneNumberLoading, error: isSendUserPhoneNumberError, message: sendUserPhoneNumberMessage }] = __TURBOPACK__imported__module__$5b$project$5d2f$queries$2f$index$2e$ts__$28$ecmascript$29$__["useMutationSendUserPhoneNumber"]();
     const onSendUserPhoneNumber = async (phoneNumber)=>{
@@ -9640,7 +9676,7 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
                 });
                 onCloseDialog();
                 setIsLoading(false);
-                onChangeStep(step + 1);
+                setIsDialogOpen2(true);
                 return;
             }
             if (hasConfirmOtpResponseStatus(data) && data.status === "EXPIRED") {
@@ -9658,6 +9694,10 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
             setOtpMessage(t("Something wrong, try again!"));
             setIsLoading(false);
         }
+    };
+    const onConfDial = async ()=>{
+        setIsDialogOpen2(false);
+        onChangeStep(step + 1);
     };
     const onCloseDialog = ()=>{
         setIsDialogOpen(false);
@@ -9680,7 +9720,7 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
                         error: isSendUserPhoneNumberError
                     }, void 0, false, {
                         fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                        lineNumber: 149,
+                        lineNumber: 150,
                         columnNumber: 9
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](StyledButton, {
@@ -9693,13 +9733,13 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
                         children: t("Send code")
                     }, void 0, false, {
                         fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                        lineNumber: 158,
+                        lineNumber: 159,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                lineNumber: 148,
+                lineNumber: 149,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Dialog"], {
@@ -9714,19 +9754,19 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
                             separator: ""
                         }, void 0, false, {
                             fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                            lineNumber: 175,
+                            lineNumber: 176,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                        lineNumber: 174,
+                        lineNumber: 175,
                         columnNumber: 9
                     }, this),
                     otpMessage && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                         children: otpMessage
                     }, void 0, false, {
                         fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                        lineNumber: 182,
+                        lineNumber: 183,
                         columnNumber: 24
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Button"], {
@@ -9737,13 +9777,49 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
                         children: t("Continue")
                     }, void 0, false, {
                         fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                        lineNumber: 183,
+                        lineNumber: 184,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                lineNumber: 170,
+                lineNumber: 171,
+                columnNumber: 7
+            }, this),
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Dialog"], {
+                open: isDialogOpen2,
+                onClose: onConfDial,
+                className: "p-3",
+                children: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "p-3",
+                        children: t("Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!")
+                    }, void 0, false, {
+                        fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
+                        lineNumber: 194,
+                        columnNumber: 9
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "p-3",
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Button"], {
+                            className: "btn-primary",
+                            variant: "contained",
+                            onClick: onConfDial,
+                            children: t("Continue")
+                        }, void 0, false, {
+                            fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
+                            lineNumber: 198,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
+                        lineNumber: 197,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
+                lineNumber: 193,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Box"], {
@@ -9757,7 +9833,7 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
                         children: t("Prev step")
                     }, void 0, false, {
                         fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                        lineNumber: 193,
+                        lineNumber: 208,
                         columnNumber: 9
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$index$2e$js__$28$ecmascript$29$__["Button"], {
@@ -9769,24 +9845,24 @@ const PhoneNumberStep = ({ user, step, phoneNumber, onChangeStep, onChangePhoneN
                         children: t("Skip")
                     }, void 0, false, {
                         fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                        lineNumber: 202,
+                        lineNumber: 217,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                lineNumber: 192,
+                lineNumber: 207,
                 columnNumber: 7
             }, this),
             isLoaderShown && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-                lineNumber: 212,
+                lineNumber: 227,
                 columnNumber: 25
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/personal/PhoneNumberStep/PhoneNumberStep.tsx>",
-        lineNumber: 147,
+        lineNumber: 148,
         columnNumber: 5
     }, this);
 };
