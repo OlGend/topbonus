@@ -11,7 +11,7 @@ const updateUserStatus = async (userId, campaignId, status, fetchBrands)=>{
         return;
     }
     try {
-        const response = await fetch("https://pickbonus.myawardwallet.com/api/addStatus/add_status.php", {
+        const response = await fetch("https://bonusnumber1.com/api/addStatus/add_status.php", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -63,6 +63,10 @@ const BRAND_CATEGORIES = {
     key1: "Segment2",
     key2: "Sandbox"
 };
+const BRAND_CATEGORIES2 = {
+    key1: "FirstPriority",
+    key2: "1"
+};
 const UserBrands = ()=>{
     const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
     const [otherBrands, setOtherBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
@@ -102,9 +106,10 @@ const UserBrands = ()=>{
         const salesIds = userSales.map((sale)=>sale.campaignId);
         try {
             const brandsData = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES, language);
+            const brandsData2 = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES2, language);
             const leadsOnlyBrands = brandsData.filter((brand)=>leadsIds.includes(brand.KeitaroGoBigID) && !salesIds.includes(brand.KeitaroGoBigID));
             setBrands(leadsOnlyBrands);
-            setOtherBrands(brandsData.filter((brand)=>!leadsIds.includes(brand.KeitaroGoBigID)));
+            setOtherBrands(brandsData2);
         } catch (error) {
             console.error("Error loading brands:", error);
         } finally{
@@ -128,65 +133,104 @@ const UserBrands = ()=>{
         children: [
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                lineNumber: 117,
+                lineNumber: 120,
                 columnNumber: 21
             }, this),
-            brands.length > 0 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h2", {
-                children: t("Your Registration Completed, First Deposit Awaited")
-            }, void 0, false, {
-                fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                lineNumber: 119,
-                columnNumber: 9
-            }, this),
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                className: "flex flex-wrap px-0 py-6",
-                children: brands.map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
-                        brand: brand,
-                        savedUrl: savedUrl,
-                        t: t
-                    }, brand.id_brand, false, {
+            brands.length > 0 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
+                children: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h2", {
+                        children: t("You Already Made Registration Here, Make First Deposit & Get Up To $20!")
+                    }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
                         lineNumber: 123,
                         columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                lineNumber: 121,
-                columnNumber: 7
-            }, this),
-            otherBrands.length > 0 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h2", {
-                children: t("Registration and First Deposit Not Completed")
-            }, void 0, false, {
-                fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                lineNumber: 127,
-                columnNumber: 9
-            }, this),
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                className: "flex flex-wrap px-0 py-6",
-                children: otherBrands.map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
-                        brand: brand,
-                        savedUrl: savedUrl,
-                        t: t,
-                        register: ()=>{
-                            __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UserBrands$2f$UpdateUserStatus$2e$tsx__$28$ecmascript$29$__["updateUserStatus"](localStorage.getItem("user_id") || "", brand.KeitaroGoBigID, "lead", ()=>{
-                                fetchBrands();
-                                setIshow((prev)=>!prev);
-                            });
-                        }
-                    }, brand.id_brand, false, {
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                        className: "mt-3",
+                        children: t("Select a brand from the list below, make your first deposit and receive up to $20 in rewards!")
+                    }, void 0, false, {
                         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                        lineNumber: 131,
+                        lineNumber: 128,
                         columnNumber: 11
-                    }, this))
-            }, void 0, false, {
-                fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                lineNumber: 129,
-                columnNumber: 7
-            }, this)
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "flex flex-wrap px-0 py-6",
+                        children: brands.map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
+                                brand: brand,
+                                savedUrl: savedUrl,
+                                t: t
+                            }, brand.id_brand, false, {
+                                fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
+                                lineNumber: 132,
+                                columnNumber: 15
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
+                        lineNumber: 130,
+                        columnNumber: 11
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                        className: "descriptions",
+                        children: t("You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.")
+                    }, void 0, false, {
+                        fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
+                        lineNumber: 140,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
+                children: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h2", {
+                        children: t("Make First Deposit On One Brand Below & Get Up To $20!")
+                    }, void 0, false, {
+                        fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
+                        lineNumber: 146,
+                        columnNumber: 11
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                        className: "mt-3",
+                        children: t("Select a brand from the list below, make your first deposit and receive up to $20 in rewards!")
+                    }, void 0, false, {
+                        fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
+                        lineNumber: 147,
+                        columnNumber: 11
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "flex flex-wrap px-0 py-6",
+                        children: otherBrands.map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
+                                brand: brand,
+                                savedUrl: savedUrl,
+                                t: t,
+                                register: ()=>{
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UserBrands$2f$UpdateUserStatus$2e$tsx__$28$ecmascript$29$__["updateUserStatus"](localStorage.getItem("user_id") || "", brand.KeitaroGoBigID, "lead", ()=>{
+                                        fetchBrands();
+                                        setIshow((prev)=>!prev);
+                                    });
+                                }
+                            }, brand.id_brand, false, {
+                                fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
+                                lineNumber: 151,
+                                columnNumber: 15
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
+                        lineNumber: 149,
+                        columnNumber: 11
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                        className: "descriptions",
+                        children: t("You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.")
+                    }, void 0, false, {
+                        fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
+                        lineNumber: 170,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-        lineNumber: 116,
+        lineNumber: 119,
         columnNumber: 5
     }, this) : null;
 };
@@ -206,7 +250,7 @@ const BrandCard = ({ brand, savedUrl, register, t })=>__TURBOPACK__imported__mod
                             height: 100
                         }, void 0, false, {
                             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                            lineNumber: 170,
+                            lineNumber: 195,
                             columnNumber: 9
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -215,18 +259,18 @@ const BrandCard = ({ brand, savedUrl, register, t })=>__TURBOPACK__imported__mod
                                 children: brand.OurOfferContent
                             }, void 0, false, {
                                 fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                                lineNumber: 177,
+                                lineNumber: 202,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                            lineNumber: 176,
+                            lineNumber: 201,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                    lineNumber: 166,
+                    lineNumber: 191,
                     columnNumber: 7
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -235,10 +279,10 @@ const BrandCard = ({ brand, savedUrl, register, t })=>__TURBOPACK__imported__mod
                         register ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
                             className: "btn btn-secondary btn-fz btn-fzl mr-2",
                             onClick: register,
-                            children: t("I'm Registered")
+                            children: t("Already Registered")
                         }, void 0, false, {
                             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                            lineNumber: 182,
+                            lineNumber: 207,
                             columnNumber: 11
                         }, this) : "",
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -247,24 +291,24 @@ const BrandCard = ({ brand, savedUrl, register, t })=>__TURBOPACK__imported__mod
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                            lineNumber: 191,
+                            lineNumber: 216,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-                    lineNumber: 180,
+                    lineNumber: 205,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-            lineNumber: 161,
+            lineNumber: 186,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/UserBrands/UserBrands.tsx>",
-        lineNumber: 160,
+        lineNumber: 185,
         columnNumber: 3
     }, this);
 const __TURBOPACK__default__export__ = UserBrands;

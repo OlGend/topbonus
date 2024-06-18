@@ -5,7 +5,7 @@ import TopBrands from "@/components/TopBrands";
 import FilteredHome from "@/components/Brands_home/FilteredHome";
 import Fortunes from "@/components/fortune";
 import NewArrivals from "@/components/newArrivals/NewArrivals";
-import UserBrands from "@/components/UserBrands/UserBrands";
+import UserBrands from "@/components/Brands_home/UserBrands";
 
 export const metadata: Metadata = {
   title:
@@ -31,9 +31,9 @@ export default async function Home() {
         <Fortunes banner={banner} target={target} creative={creative} />
       </div>
 
-      {/* <div className="main__container">
+      <div className="main__container mt-3">
         <UserBrands />
-      </div> */}
+      </div>
 
       <div className="background-block">
         <FilteredHome />

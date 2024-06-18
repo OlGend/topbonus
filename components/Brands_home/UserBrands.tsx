@@ -99,12 +99,19 @@ const UserBrands = () => {
       const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
       const brandsData2: Brand[] = await getBrands(BRAND_CATEGORIES2, language);
 
-      const leadsOnlyBrands = brandsData.filter(
-        (brand) =>
-          leadsIds.includes(brand.KeitaroGoBigID) &&
-          !salesIds.includes(brand.KeitaroGoBigID)
-      );
+      console.log("DATA", brandsData, leadsIds, salesIds)
 
+      // const leadsOnlyBrands = brandsData.filter(
+      //   (brand) =>
+      //     leadsIds.includes(brand.KeitaroGoBigID)
+      // );
+
+      const leadsOnlyBrands = brandsData.filter((brand) => {
+        console.log("Keitaro", brand.KeitaroGoBigID);
+        return leadsIds.includes(brand.KeitaroGoBigID);
+      });
+      console.log("leadsOnlyBrands:", leadsOnlyBrands);
+      
       setBrands(leadsOnlyBrands);
 
       setOtherBrands(
@@ -143,31 +150,25 @@ const UserBrands = () => {
   }
 
 
+  console.log("----", brands)
 
   return (
-    <div className="flex justify-between mob-col">
-      <div className="flex justify-content basis-[40%] flex-col items-center bander">
-        <Image src={Img} alt="random brand" width={290} loading="lazy" />
-        {brands.length > 0 ? (
-          <h1 className="fz31">
-            {t("You have successfully registered on these brands")}{" "}
-            <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
-            {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
-          </h1>
-        ) : (
-          <h1 className="fz31">
-            {t("Make First Deposit On One Of These Brands &")}{" "}
-            <span className="text-blued">
-              {t("Get Up To $20 Right On Your Wallet!")}
-            </span>{" "}
-          </h1>
-        )}
-      </div>
-      <div className="brands-keitaro basis-[58%]">
+    <div className="mt-10">
+      {brands.length > 0 ? (
         <div className="flex flex-col">
-          {isLoading && <Loader />}
-          {brands.length > 0 ? (
-            <>
+        <h2 className="fz31">
+              {t("You have successfully registered on these brands")}{" "}
+              <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
+              {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
+            </h2>
+        <div className="flex justify-between mob-col mt-7">
+          <div className="flex justify-content basis-[40%] flex-col items-center bander">
+            <Image src={Img} alt="random brand" width={290} loading="lazy" />
+          
+          </div>
+          <div className="brands-keitaro basis-[58%]">
+            <div className="flex flex-col">
+              {isLoading && <Loader />}
               {isMobile && brands.length > 1 ? (
                 <LazySlider {...settings}>
                   {brands.map((brand) => (
@@ -193,62 +194,16 @@ const UserBrands = () => {
                   ))}
                 </div>
               )}
-            </>
-          ) : (
-            <>
-              {isMobile && otherBrands.length > 1 ? (
-                <LazySlider {...settings}>
-                  {otherBrands.map((brand) => (
-                    <BrandCard
-                      brand={brand}
-                      savedUrl={savedUrl}
-                      key={brand.id_brand}
-                      t={t}
-                      register={() => {
-                        updateUserStatus(
-                          userId,
-                          brand.KeitaroGoBigID,
-                          "lead",
-                          () => {
-                            fetchBrands();
-                            setIsShow((prev) => !prev);
-                          }
-                        );
-                      }}
-                      count={brands.length}
-                    />
-                  ))}
-                </LazySlider>
-              ) : (
-                <div className="flex flex-wrap">
-                  {otherBrands.slice(0, 6).map((brand) => (
-                    <BrandCard
-                      brand={brand}
-                      savedUrl={savedUrl}
-                      key={brand.id_brand}
-                      t={t}
-                      register={() => {
-                        updateUserStatus(
-                          userId,
-                          brand.KeitaroGoBigID,
-                          "lead",
-                          () => {
-                            fetchBrands();
-                            setIsShow((prev) => !prev);
-                          }
-                        );
-                      }}
-                      count={brands.length}
-                    />
-                  ))}
-                </div>
-              )}
-            </>
-          )}
+            </div>
+          </div>
         </div>
-      </div>
+        </div>
+      ) : (
+      <div></div>
+      )}
     </div>
   );
+  
 };
 
 const BrandCard: React.FC<{

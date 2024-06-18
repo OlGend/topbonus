@@ -88,10 +88,9 @@ const NewArrivals = ()=>{
                     lineNumber: 74,
                     columnNumber: 9
                 }, this),
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$29$__["default"], {
+                brands.length > 3 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$29$__["default"], {
                     ...settings,
-                    children: brands.map((item)=>{
-                        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    children: brands.map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                             className: "card-second-banner mb-2 flex flex-col items-center pb-3",
                             children: [
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -103,14 +102,14 @@ const NewArrivals = ()=>{
                                         children: [
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
                                                 src: `/brands/${item.CasinoBrand}.png`,
-                                                alt: `/brands/${item.CasinoBrand}.png`,
+                                                alt: item.CasinoBrand,
                                                 width: 200,
                                                 height: 80,
                                                 loading: "lazy",
                                                 className: "target-top-new-releases"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
-                                                lineNumber: 89,
+                                                lineNumber: 88,
                                                 columnNumber: 21
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -118,11 +117,11 @@ const NewArrivals = ()=>{
                                                 children: item.OurOfferContent
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
-                                                lineNumber: 97,
+                                                lineNumber: 96,
                                                 columnNumber: 21
                                             }, this)
                                         ]
-                                    }, item.id_brand, true, {
+                                    }, void 0, true, {
                                         fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
                                         lineNumber: 83,
                                         columnNumber: 19
@@ -137,9 +136,9 @@ const NewArrivals = ()=>{
                                     href: `${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
                                     target: "_blank",
                                     children: t("Play Now")
-                                }, item.id_brand, false, {
+                                }, void 0, false, {
                                     fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
-                                    lineNumber: 102,
+                                    lineNumber: 101,
                                     columnNumber: 17
                                 }, this)
                             ]
@@ -147,13 +146,70 @@ const NewArrivals = ()=>{
                             fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
                             lineNumber: 78,
                             columnNumber: 15
-                        }, this);
-                    })
+                        }, this))
                 }, void 0, false, {
                     fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
-                    lineNumber: 75,
-                    columnNumber: 9
-                }, this)
+                    lineNumber: 76,
+                    columnNumber: 11
+                }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
+                    children: brands.map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "card-second-banner mb-2 flex flex-col items-center pb-3",
+                            children: [
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: "brandImage p-3",
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                        className: "flex justify-center flex-col items-center target-top-new-releases",
+                                        href: `${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                        target: "_blank",
+                                        children: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                src: `/brands/${item.CasinoBrand}.png`,
+                                                alt: item.CasinoBrand,
+                                                width: 200,
+                                                height: 80,
+                                                loading: "lazy",
+                                                className: "target-top-new-releases"
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                                lineNumber: 124,
+                                                columnNumber: 21
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "p-3 text-center flex items-center review-bonus",
+                                                children: item.OurOfferContent
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                                lineNumber: 132,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                        lineNumber: 119,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                    lineNumber: 118,
+                                    columnNumber: 17
+                                }, this),
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                    className: "btn btn-primary btn-new target-top-new-releases",
+                                    href: `${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                    target: "_blank",
+                                    children: t("Play Now")
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                    lineNumber: 137,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, item.id_brand, true, {
+                            fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                            lineNumber: 114,
+                            columnNumber: 15
+                        }, this))
+                }, void 0, false)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
