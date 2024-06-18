@@ -18,7 +18,7 @@ export const useMutationSaveUserPhoneNumber = () => {
 
     try {
       const response = await fetch(
-        `https://pickbonus.myawardwallet.com/api/user/update_phone.php`,
+        `https://bonusnumber1.com/api/user/update_phone.php`,
         {
           method: "POST",
           body: JSON.stringify({

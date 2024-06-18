@@ -87,7 +87,7 @@ export const PhoneNumberStep = ({
     setOtpMessage("");
     try {
       const response = await fetch(
-        "https://pickbonus.myawardwallet.com/api/user/send_code.php",
+        "https://bonusnumber1.com/api/user/send_code.php",
         {
           method: "POST",
           headers: {

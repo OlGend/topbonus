@@ -12,7 +12,7 @@ import Phone from "@/components/phone/Phone";
 import { useTranslation } from "react-i18next";
 
 export default function Withdrawal() {
-  const api = "https://pickbonus.myawardwallet.com/api";
+  const api = "https://bonusnumber1.com/api";
   const apiKey = "MG5SRC6-HFBMACK-MMSR9QW-1EST6QC";
   const { user, coins } = useUserData(api, apiKey);
 
@@ -83,7 +83,7 @@ export default function Withdrawal() {
       const amount = withdrawalRequestValue; // Используем актуальное значение withdrawalRequestValue
 
       // Формируем URL с параметрами
-      const url = `https://pickbonus.myawardwallet.com/api/payment/estimated.php?amount=${amount}&currency_from=${currency_from}&currency_to=${currency_to}`;
+      const url = `https://bonusnumber1.com/api/payment/estimated.php?amount=${amount}&currency_from=${currency_from}&currency_to=${currency_to}`;
 
       const response = await fetch(url);
 
@@ -108,7 +108,7 @@ export default function Withdrawal() {
     const getMinAmount = async () => {
       try {
         const response = await fetch(
-          `https://pickbonus.myawardwallet.com/api/payment/minamount.php?currency=${selectedPaymentMethod}`
+          `https://bonusnumber1.com/api/payment/minamount.php?currency=${selectedPaymentMethod}`
         );
         if (!response.ok) {
           throw new Error("Network response was not ok");

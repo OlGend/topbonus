@@ -20,7 +20,7 @@ export const useMutationSendUserPhoneNumber = () => {
 
     try {
       const response = await fetch(
-        "https://pickbonus.myawardwallet.com/api/user/get_token.php",
+        "https://bonusnumber1.com/api/user/get_token.php",
         {
           method: "POST",
           headers: {

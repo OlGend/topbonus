@@ -2,10 +2,10 @@ import {availableLanguages1039, availableLanguages1043, availableLanguages1044, 
 
 
 export const getBrands = async (lng) => {
-  const apiAll = "https://pickbonus.myawardwallet.com/api/brandsNew/read.php";
-  const api1039 = "https://pickbonus.myawardwallet.com/api/brandsNew2/read.php";
-  const api1043 = "https://pickbonus.myawardwallet.com/api/brandsNew3/read.php";
-  const api1044 = "https://pickbonus.myawardwallet.com/api/brandsNew4/read.php";
+  const apiAll = "https://bonusnumber1.com/api/brandsNew/read.php";
+  const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
+  const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
+  const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
 
 
   const partners = {

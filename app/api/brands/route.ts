@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 export async function GET(req: Request) {
     // URL API, откуда будут получаться данные
-    const apiUrl = "https://pickbonus.myawardwallet.com/api/brandsNew4/read.php";
+    const apiUrl = "https://bonusnumber1.com/api/brandsNew4/read.php";
 
     try {
         // Выполнение запроса к API

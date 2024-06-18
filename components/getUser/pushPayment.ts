@@ -1,7 +1,7 @@
 export const updateUserStatusPayment = async (body: string) => {
   try {
     const res = await fetch(
-      `https://pickbonus.myawardwallet.com/api/user/update_payment.php`,
+      `https://bonusnumber1.com/api/user/update_payment.php`,
       {
         method: "POST", // Изменено на POST, убедитесь, что ваш PHP скрипт поддерживает этот метод
         headers: {

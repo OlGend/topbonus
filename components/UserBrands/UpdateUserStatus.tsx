@@ -12,7 +12,7 @@ export const updateUserStatus = async (
 
     try {
       const response = await fetch(
-        "https://pickbonus.myawardwallet.com/api/addStatus/add_status.php",
+        "https://bonusnumber1.com/api/addStatus/add_status.php",
         {
           method: "POST",
           headers: {

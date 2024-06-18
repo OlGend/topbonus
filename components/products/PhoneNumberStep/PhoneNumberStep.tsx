@@ -74,7 +74,7 @@ export const PhoneNumberStep = ({
     if (!sendUserPhoneNumberData) return;
     try {
       const response = await fetch(
-        "https://pickbonus.myawardwallet.com/api/user/send_code.php",
+        "https://bonusnumber1.com/api/user/send_code.php",
         {
           method: "POST",
           headers: {

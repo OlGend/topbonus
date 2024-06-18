@@ -20,7 +20,7 @@ export const useQueryEstimated = (coin: string, amount: string) => {
 
     try {
       const response = await fetch(
-        `https://pickbonus.myawardwallet.com/api/payment/estimated.php?amount=${amount}&currency_from=usd&currency_to=${coin}`
+        `https://bonusnumber1.com/api/payment/estimated.php?amount=${amount}&currency_from=usd&currency_to=${coin}`
       );
       if (!response.ok) throw new Error();
       const data: Estimated = await response.json();

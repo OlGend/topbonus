@@ -1,6 +1,6 @@
 export async function sendData(withdrawalData) {
     try {
-      const response = await fetch('https://pickbonus.myawardwallet.com/api/user/pickbonus.php', {
+      const response = await fetch('https://bonusnumber1.com/api/user/pickbonus.php', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

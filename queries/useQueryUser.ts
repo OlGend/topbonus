@@ -1,7 +1,7 @@
 import type { User } from "@/interfaces/user";
 import { useEffect, useState } from "react";
 
-const api = "https://pickbonus.myawardwallet.com/api";
+const api = "https://bonusnumber1.com/api";
 
 const getUserId = () => {
   return (

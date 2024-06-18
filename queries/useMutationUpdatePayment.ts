@@ -37,7 +37,7 @@ export const useMutationUpdatePayment = (
 
     try {
       const response = await fetch(
-        `https://pickbonus.myawardwallet.com/api/user/update_payment.php`,
+        `https://bonusnumber1.com/api/user/update_payment.php`,
         {
           method: "POST",
           headers: {

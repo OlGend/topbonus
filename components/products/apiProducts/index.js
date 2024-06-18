@@ -1,7 +1,7 @@
 export const getProducts = async () => {
     try {
       // Добавляем `userId` в URL запроса
-      const res = await fetch(`https://pickbonus.myawardwallet.com/api/products/read.php`);
+      const res = await fetch(`https://bonusnumber1.com/api/products/read.php`);
   
       if (res.ok) {
         const responseData = await res.json();

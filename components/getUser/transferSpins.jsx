@@ -4,7 +4,7 @@ const transferSpinsToTickets = async (userData) => {
 
   try {
     const response = await fetch(
-      "https://pickbonus.myawardwallet.com/api/user/transfer_spins.php",
+      "https://bonusnumber1.com/api/user/transfer_spins.php",
       {
         method: "PUT",
         headers: {
