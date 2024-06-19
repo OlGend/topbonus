@@ -99,25 +99,11 @@ const UserBrands = () => {
       const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
       const brandsData2: Brand[] = await getBrands(BRAND_CATEGORIES2, language);
 
-      console.log("DATA", brandsData, leadsIds, salesIds)
-
-      // const leadsOnlyBrands = brandsData.filter(
-      //   (brand) =>
-      //     leadsIds.includes(brand.KeitaroGoBigID)
-      // );
-
-      const leadsOnlyBrands = brandsData.filter((brand) => {
-        console.log("Keitaro", brand.KeitaroGoBigID);
-        return leadsIds.includes(brand.KeitaroGoBigID);
-      });
-      console.log("leadsOnlyBrands:", leadsOnlyBrands);
+      const leadsOnlyBrands = brandsData.filter((brand) => leadsIds.includes(brand.KeitaroGoBigID));
       
       setBrands(leadsOnlyBrands);
 
-      setOtherBrands(
-        brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
-        // brandsData2
-      );
+      setOtherBrands(brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID)));
     } catch (error) {
       console.error("Error loading brands:", error);
     } finally {
@@ -149,61 +135,86 @@ const UserBrands = () => {
     return null;
   }
 
+  const chunkBrands = (brands: Brand[], chunkSize: number) => {
+    const chunks = [];
+    for (let i = 0; i < brands.length; i += chunkSize) {
+      chunks.push(brands.slice(i, i + chunkSize));
+    }
+    return chunks;
+  };
 
-  console.log("----", brands)
+  const brandChunks = chunkBrands(brands, 6);
 
   return (
     <div className="mt-10">
       {brands.length > 0 ? (
         <div className="flex flex-col">
-        <h2 className="fz31">
-              {t("You have successfully registered on these brands")}{" "}
-              <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
-              {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
-            </h2>
-        <div className="flex justify-between mob-col mt-7">
-          <div className="flex justify-content basis-[40%] flex-col items-center bander">
-            <Image src={Img} alt="random brand" width={290} loading="lazy" />
-          
-          </div>
-          <div className="brands-keitaro basis-[58%]">
-            <div className="flex flex-col">
-              {isLoading && <Loader />}
-              {isMobile && brands.length > 1 ? (
-                <LazySlider {...settings}>
-                  {brands.map((brand) => (
-                    <BrandCard
-                      key={brand.id_brand}
-                      brand={brand}
-                      savedUrl={savedUrl}
-                      t={t}
-                      count={brands.length}
-                    />
-                  ))}
-                </LazySlider>
-              ) : (
-                <div className="flex flex-wrap">
-                  {brands.slice(0, 6).map((brand) => (
-                    <BrandCard
-                      key={brand.id_brand}
-                      brand={brand}
-                      savedUrl={savedUrl}
-                      t={t}
-                      count={brands.length}
-                    />
-                  ))}
-                </div>
-              )}
+          <h2 className="fz31">
+            {t("You have successfully registered on these brands")}{" "}
+            <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
+            {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
+          </h2>
+          <div className="flex justify-between mob-col mt-7">
+            <div className="flex justify-content basis-[40%] flex-col items-center bander">
+              <Image src={Img} alt="random brand" width={290} loading="lazy" />
+            </div>
+            <div className="brands-keitaro basis-[58%]">
+              <div className="flex flex-col">
+                {isLoading && <Loader />}
+                {brands.length > 7 ? (
+                  <LazySlider {...settings}>
+                    {brandChunks.map((chunk, index) => (
+                      <div key={index} className="flex flex-wrap">
+                        {chunk.map((brand) => (
+                          <BrandCard
+                            key={brand.id_brand}
+                            brand={brand}
+                            savedUrl={savedUrl}
+                            t={t}
+                            count={brands.length}
+                          />
+                        ))}
+                      </div>
+                    ))}
+                  </LazySlider>
+                ) : (
+                  <>
+                    {isMobile && brands.length > 1 ? (
+                      <LazySlider {...settings}>
+                        {brands.map((brand) => (
+                          <BrandCard
+                            key={brand.id_brand}
+                            brand={brand}
+                            savedUrl={savedUrl}
+                            t={t}
+                            count={brands.length}
+                          />
+                        ))}
+                      </LazySlider>
+                    ) : (
+                      <div className="flex flex-wrap">
+                        {brands.slice(0, 6).map((brand) => (
+                          <BrandCard
+                            key={brand.id_brand}
+                            brand={brand}
+                            savedUrl={savedUrl}
+                            t={t}
+                            count={brands.length}
+                          />
+                        ))}
+                      </div>
+                    )}
+                  </>
+                )}
+              </div>
             </div>
           </div>
         </div>
-        </div>
       ) : (
-      <div></div>
+        <div></div>
       )}
     </div>
   );
-  
 };
 
 const BrandCard: React.FC<{
