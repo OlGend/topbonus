@@ -6293,6 +6293,9 @@ h1 {
     max-height: 214px;
   }
 }
+.brands-keitaro {
+  max-width: 58%;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .awesome-slider {
     max-height: 214px;
@@ -10085,11 +10088,22 @@ h1.fz31 {
   line-height: 17px !important;
   min-height: 51px !important;
 }
+.brands-keitaro .slick-slide {
+  padding: 0 !important;
+  margin-right: 0 !important;
+}
 .crd-5 .brandImage img,
 .crd-0 .brandImage img {
   max-width: 120px;
 }
+.w679 {
+  max-width: 679px;
+  min-width: 679px;
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
 @media(min-width:320px) and (max-width:425px) {
+
   .topbr {
     background-image: url(/backgroundmm.png) !important;
   background-repeat: no-repeat;
@@ -10097,7 +10111,16 @@ h1.fz31 {
     background-size: auto;
   }
 }
+@media (min-width: 320px) and (max-width: 1259px) {
+  .w679 {
+    min-width: initial;
+  }
+
+}
 @media (min-width: 320px) and (max-width: 767px) {
+  .brands-keitaro {
+    max-width: initial !important;
+  }
   .topbr {
     background-repeat: no-repeat;
     background-position: bottom right;

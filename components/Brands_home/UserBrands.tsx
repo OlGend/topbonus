@@ -12,7 +12,6 @@ import { useLanguage } from "@/components/switcher/LanguageContext";
 import Link from "next/link";
 import Image from "next/image";
 import Loader from "../Loader";
-import { updateUserStatus } from "../UserBrands/UpdateUserStatus";
 import { getUserData } from "@/components/getUser/getUser";
 import { useTranslation } from "react-i18next";
 import Img from "@/public/gr_bl.png";
@@ -99,11 +98,15 @@ const UserBrands = () => {
       const brandsData: Brand[] = await getBrands(BRAND_CATEGORIES, language);
       const brandsData2: Brand[] = await getBrands(BRAND_CATEGORIES2, language);
 
-      const leadsOnlyBrands = brandsData.filter((brand) => leadsIds.includes(brand.KeitaroGoBigID));
-      
+      const leadsOnlyBrands = brandsData.filter((brand) =>
+        leadsIds.includes(brand.KeitaroGoBigID)
+      );
+
       setBrands(leadsOnlyBrands);
 
-      setOtherBrands(brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID)));
+      setOtherBrands(
+        brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
+      );
     } catch (error) {
       console.error("Error loading brands:", error);
     } finally {
@@ -149,7 +152,7 @@ const UserBrands = () => {
     <div className="mt-10">
       {brands.length > 0 ? (
         <div className="flex flex-col">
-          <h2 className="fz31">
+          <h2 className="fz31 text-center">
             {t("YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND ")}{" "}
             <span className="text-blued">{t("RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL")}</span>{" "}
           </h2>
@@ -160,10 +163,10 @@ const UserBrands = () => {
             <div className="brands-keitaro basis-[58%]">
               <div className="flex flex-col">
                 {isLoading && <Loader />}
-                {brands.length > 7 ? (
+                {brands.length > 6 && !isMobile ? (
                   <LazySlider {...settings}>
                     {brandChunks.map((chunk, index) => (
-                      <div key={index} className="flex flex-wrap">
+                      <div key={index} className="flex flex-wra w679">
                         {chunk.map((brand) => (
                           <BrandCard
                             key={brand.id_brand}
