@@ -35,28 +35,34 @@
   align-items: center;
 }
 div div div:nth-child(6n+1) .card__Card__40cc38fe {
-  background: url(/green_2.png);
-  background-size: cover;
+  background: url(/bl_01.png);
+  background-color: bottom right;
+  background-size: contain;
 }
 div div div:nth-child(6n+2) .card__Card__40cc38fe {
-  background: url(/lightblue.png);
-  background-size: cover;
+  background: url(/ylw_01.png);
+  background-color: bottom right;
+  background-size: contain;
 }
 div div div:nth-child(6n+3) .card__Card__40cc38fe {
-  background: url(/blue.png);
-  background-size: cover;
+  background: url(/bl_02.png);
+  background-color: bottom right;
+  background-size: contain;
 }
 div div div:nth-child(6n+4) .card__Card__40cc38fe {
-  background: url(/green_1.png);
-  background-size: cover;
+  background: url(/gr_01.png);
+  background-color: bottom right;
+  background-size: contain;
 }
 div div div:nth-child(6n+5) .card__Card__40cc38fe {
-  background: url(/orange.png);
-  background-size: cover;
+  background: url(/ylw_02.png);
+  background-color: bottom right;
+  background-size: contain;
 }
 div div div:nth-child(6n+6) .card__Card__40cc38fe {
-  background: url(/yellow.jpg);
-  background-size: cover;
+  background: url(/gr_02.jpg);
+  background-color: bottom right;
+  background-size: contain;
 }
 @media (min-width: 320px) and (max-width: 1259px) {
   .card__Card__40cc38fe {
@@ -70,5 +76,14 @@ div div div:nth-child(6n+6) .card__Card__40cc38fe {
     max-height: 75px;
     margin-top: 0 !important;
     padding: 0 !important;
+  }
+  div div div:nth-child(6n+1) .card__Card__40cc38fe {
+    background: url(/green_mobile.png);
+  }
+  div div div:nth-child(6n+2) .card__Card__40cc38fe {
+    background: url(/yellow_mobile.png);
+  }
+  div div div:nth-child(6n+3) .card__Card__40cc38fe {
+    background: url(/blue_mobile.png);
   }
 }

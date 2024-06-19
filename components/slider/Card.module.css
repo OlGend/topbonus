@@ -40,7 +40,7 @@
   align-items: center;
 }
 
-div div div:nth-child(6n + 1) .card {
+/* div div div:nth-child(6n + 1) .card {
   background: url(/green_2.png);
   background-size: cover;
 }
@@ -63,6 +63,37 @@ div div div:nth-child(6n + 5) .card  {
 div div div:nth-child(6n + 6) .card  {
   background: url(/yellow.jpg);
   background-size: cover;
+} */
+
+div div div:nth-child(6n + 1) .card {
+  background: url(/bl_01.png);
+  background-color: bottom right;
+  background-size: contain;
+}
+div div div:nth-child(6n + 2) .card  {
+  background: url(/ylw_01.png);
+  background-color: bottom right;
+  background-size: contain;
+}
+div div div:nth-child(6n + 3) .card  {
+  background: url(/bl_02.png);
+  background-color: bottom right;
+  background-size: contain;
+}
+div div div:nth-child(6n + 4) .card  {
+  background: url(/gr_01.png);
+  background-color: bottom right;
+  background-size: contain;
+}
+div div div:nth-child(6n + 5) .card  {
+  background: url(/ylw_02.png);
+  background-color: bottom right;
+  background-size: contain;
+}
+div div div:nth-child(6n + 6) .card  {
+  background: url(/gr_02.jpg);
+  background-color: bottom right;
+  background-size: contain;
 }
 
 @media (min-width: 320px) and (max-width: 1259px) {
@@ -79,4 +110,15 @@ div div div:nth-child(6n + 6) .card  {
     margin-top: 0 !important;
     padding: 0 !important;
   }
+
+  div div div:nth-child(6n + 1) .card {
+    background: url(/green_mobile.png);
+  }
+  div div div:nth-child(6n + 2) .card  {
+    background: url(/yellow_mobile.png);
+  }
+  div div div:nth-child(6n + 3) .card  {
+    background: url(/blue_mobile.png);
+  }
+
 }

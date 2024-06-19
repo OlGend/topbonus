@@ -6477,8 +6477,8 @@ h1 {
   background-color: #1d2730;
   /* background-image: url(../bgp.png); */
   /* position: relative; */
-  background-image: url(/bgfilter.png) !important;
-  background-position: top 50% !important;
+  background-image: url(/bgfilter2.png) !important;
+  background-position: bottom !important;
 }
 .topbr .preview {
   padding-top: 0 !important;
@@ -7098,7 +7098,7 @@ p {
   background-size: contain;
 }
 .custom-bonuses {
-  background-image: url(/bgfilter.png) !important;
+  background-image: url(/bgfilter2.png) !important;
   background-position: top center !important;
 }
 /* .other-custom-bonuses {
@@ -10089,8 +10089,23 @@ h1.fz31 {
 .crd-0 .brandImage img {
   max-width: 120px;
 }
-
+@media(min-width:320px) and (max-width:425px) {
+  .topbr {
+    background-image: url(/backgroundmm.png) !important;
+  background-repeat: no-repeat;
+    background-position: bottom center !important;
+    background-size: auto;
+  }
+}
 @media (min-width: 320px) and (max-width: 767px) {
+  .topbr {
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+  .topbr .btn-primary {
+    margin-left: 0;
+    width: 50%;
+  }
   .mob-col {
     flex-direction: column;
   }
