@@ -150,9 +150,8 @@ const UserBrands = () => {
       {brands.length > 0 ? (
         <div className="flex flex-col">
           <h2 className="fz31">
-            {t("You have successfully registered on these brands")}{" "}
-            <span className="text-blued">{t("Make First Deposit Now ")}</span>{" "}
-            {t("and Receive Up To $20 Back On Your Wallet!")}{" "}
+            {t("YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND ")}{" "}
+            <span className="text-blued">{t("RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL")}</span>{" "}
           </h2>
           <div className="flex justify-between mob-col mt-7">
             <div className="flex justify-content basis-[40%] flex-col items-center bander">

@@ -6497,7 +6497,7 @@ h1 {
 .sub-menu {
   z-index: 3;
 }
-.preview2 h1 .text-blued {
+.preview2 h2 .text-blued, .text-blued  {
   color: #0066dc;
 }
 .topbr .btn-primary {
