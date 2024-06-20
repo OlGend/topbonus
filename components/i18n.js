@@ -481,7 +481,8 @@ async function initializeI18n() {
             "You have successfully registered on these brands": "You have successfully registered on these brands",
             "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
             "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND",
-            "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL"
+            "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL",
+            "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL"
       },
     },
   
@@ -846,6 +847,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JESTEŚ JUŻ ZAREJESTROWANY TUTAJ, ZRÓB SWOJE PIERWSZE WPŁATY I",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"OTRZYMAJ NAWET DO 2035 PLN Z NATYCHMIASTOWYM WYPŁACANIEM",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"OTRZYMUJ PRAWDZIWE PIENIĄDZE Z NATYCHMIASTOWYM WYPŁACANIEM",
       },
     },
     de: {
@@ -1209,6 +1211,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SIE SIND BEREITS HIER REGISTRIERT, MACHEN SIE IHRE ERSTEN EINZAHLUNGEN UND",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"ERHALTEN SIE BIS ZU 500 EUR MIT SOFORTIGER AUSZAHLUNG",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"ERHALTEN SIE ECHTES GELD MIT SOFORTIGER AUSZAHLUNG.",
       },
     },
     bg: {
@@ -1571,6 +1574,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ВЕЧЕ СТЕ РЕГИСТРИРАНИ ТУК, НАПРАВЕТЕ ПЪРВИТЕ СИ ДЕПОЗИТИ И",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"ПОЛУЧЕТЕ ДО 890 ЛВ. С МИГНОВЕНО ИЗТЕГЛЯНЕ",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"ПОЛУЧАЙТЕ РЕАЛНИ ПАРИ С НЕЗАБАВНО ТЕГЛЕНЕ",
       },
     },
     cz: {
@@ -1933,6 +1937,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JSTE JIŽ ZAREGISTROVÁNI ZDE, PROVEĎTE SVÉ PRVNÍ VLOŽENÍ A",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"ZÍSKEJTE AŽ 11200 KČ S OKAMŽITÝM VÝBĚREM",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"ZÍSKEJTE SKUTEČNÉ PENÍZE S OKAMŽITÝM VÝBĚREM",
       },
     },
     dk: {
@@ -2294,6 +2299,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERET HER, LAV DINE FØRSTE INDBETALINGER OG",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"MODTAG OP TIL 3400 DKK MED ØJEBLIKKELIG UDBETALING",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"MODTAG RIGTIGE PENGE MED ØJEBLIKKELIG UDBETALING.",
       },
     },
     nl: {
@@ -2656,6 +2662,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JE BENT AL GEREGISTREERD HIER, MAAK JE EERSTE STORTINGEN EN",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"ONTVANG TOT 500 EURO MET ONMIDDELLIJKE OPNAME",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"ONTVANG ECHT GELD MET ONMIDDELLIJKE OPNAME",
       },
     },
     es: {
@@ -3018,6 +3025,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YA ESTÁS REGISTRADO AQUÍ, REALIZA TUS PRIMEROS DEPÓSITOS Y",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"RECIBE HASTA 500 EUR CON RETIRO INSTANTÁNEO",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"RECIBE DINERO REAL CON RETIRO INSTANTÁNEO",
       },
     },
     fi: {
@@ -3379,6 +3387,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "OLET JO REKISTERÖITYNYT TÄHÄN, TEE ENSIMMÄISET TALLETUKSESI JA",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"SAAT JOPA 500 EURON NOPEALLA NOSTOLLA",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"SAAT OIKEAA RAHAA NOPEALLA NOSTOLLA",
       },
     },
     fr: {
@@ -3740,6 +3749,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOUS ÊTES DÉJÀ INSCRIT ICI, FAITES VOS PREMIERS DÉPÔTS ET",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"RECEVEZ JUSQU'À 500 EUR AVEC RETRAIT INSTANTANÉ",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"RECEVEZ DE L'ARGENT RÉEL AVEC RETRAIT INSTANTANÉ",
       },
     },
     gr: {
@@ -4102,6 +4112,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ΕΊΣΤΕ ΉΔΗ ΕΓΓΕΓΡΑΜΜΈΝΟΙ ΕΔΏ, ΚΆΝΤΕ ΤΙΣ ΠΡΏΤΕΣ ΣΑΣ ΚΑΤΑΘΈΣΕΙΣ ΚΑΙ",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"ΛΑΒΕ ΜΕΧΡΙ 500 ΕΥΡΩ ΜΕ ΑΜΕΣΗ ΑΝΑΛΗΨΗ",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"ΛΑΜΒΆΝΕΤΕ ΠΡΑΓΜΑΤΙΚΆ ΧΡΗΜΑΤΑ ΜΕ ΆΜΕΣΗ ΑΝΑΛΗΨΗ",
       },
     },
     hu: {
@@ -4464,6 +4475,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "MÁR REGISZTRÁLTÁL ITT, KEZD EL AZ ELSŐ BEFIZETÉSEIDET ÉS",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"AKÁR 184060 HUF-OT IS KAPHAT AZONNALI KIFIZETÉSSEL",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"VALÓDI PÉNZT KAPJ AZ AZONNALI KIFIZETÉSSEL",
       },
     },
     it: {
@@ -4826,6 +4838,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SEI GIÀ REGISTRATO QUI, EFFETTUA I TUOI PRIMI DEPOSITI E",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"RICEVI FINO A 500 EURO CON PRELIEVO ISTANTANEO",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"RICEVI DENARO REALE CON PRELIEVO ISTANTANEO",
       },
     },
     no: {
@@ -5188,6 +5201,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERT HER, GJØR DINE FØRSTE INNSKUDD OG",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"MOTTA OPPTIL 4625 NOK MED UMIDDELBAR UTTAK",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"MOTTA EKTE PENGER MED ØYEBLIKKELIG UTTAK",
       },
     },
     pt: {
@@ -5549,6 +5563,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOCÊ JÁ ESTÁ REGISTRADO AQUI, FAÇA SEUS PRIMEIROS DEPÓSITOS E",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"RECEBA ATÉ 500 EUR COM RETIRADA INSTANTÂNEA",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"RECEBA DINHEIRO REAL COM SAQUE INSTANTÂNEO",
       },
     },
     se: {
@@ -5912,6 +5927,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ÄR REDAN REGISTRERAD HÄR, GÖR DINA FÖRSTA INSÄTTNINGAR OCH",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"FÅ UPP TILL 5200 SEK MED OMEDELBAR UTTAG",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"FÅ RIKTIGA PENGAR MED OMEDELBAR UTTAG",
       },
     },
     sk: {
@@ -6274,6 +6290,7 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "UŽ STE TU ZAREGISTROVANÝ, UROBTE SI PRVÉ VLOŽENIA A",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"ZÍSKAJTE AŽ 500 EUR S OKAMŽITÝM VÝBEROM",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"ZÍSKAJTE SKUTOČNÉ PENIAZE S OKAMŽITÝM VÝBEROM",
       },
     },
     tr: {
@@ -6634,9 +6651,11 @@ async function initializeI18n() {
   "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
   "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ZATEN BURADA KAYITLISINIZ, İLK YATIRIMLARINIZI YAPIN VE",
   "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL":"HIZLI ÇEKİM İLE 13000 TRY'YE KADAR ALIN",
+  "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL":"ANINDA ÇEKİM İLE GERÇEK PARA ALIN",
       },
     },
   };
+  
   
   
   
