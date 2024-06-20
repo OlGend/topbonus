@@ -9700,19 +9700,17 @@ body {
   background-position: top -1571px right -72px;
 }
 .bander {
-  /* border: 4px solid #0967e3; */
-  padding: 30px;
-  background: #1d2730;
+
   position: relative;
   overflow: hidden;
   border-radius: 4px;
   max-height: 480px;
   min-height: 480px;
-  background: url(/bnar.png) no-repeat center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border: 1px solid rgba(123, 140, 152, 0.101);
+  border: 1px solid rgba(123, 140, 152, 0.101) !important;
 }
 .bander::before {
   content: "";
@@ -10138,7 +10136,7 @@ h1.fz31 {
   }
   .bander {
     background-size: cover !important;
-    padding: 90px 30px !important;
+    padding: 0 !important;
     flex-basis: 100%;
   }
   .brands-keitaro {

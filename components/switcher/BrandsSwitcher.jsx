@@ -36,6 +36,7 @@ const BrandsSwitcher = () => {
     setLanguage(lng);
     localStorage.setItem("country_brands", lng);
     setIsLoading(false);
+    window.location.reload();
   };
 
   const availableLanguages = [

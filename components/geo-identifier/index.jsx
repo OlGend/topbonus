@@ -71,19 +71,24 @@ export default function ResponsiveDialog() {
   const handleClose = () => {
     setOpen(false);
   };
-  const handleYes = () => {
+  const handleYes = async () => {
     const an = (value && value !== "N/A" && value !== "") ? value : localStorage.getItem("country_data");
     setOpen(false);
     setLoading(true);
     if (userData.geo_approve === null || userData.geo_approve === "") {
-      updateGeo(
-        localStorage.getItem("user_id"),
-        an.value
-      );
-      console.log("====", an)
+      try {
+        await updateGeo(localStorage.getItem("user_id"), an.value);
+        localStorage.setItem("country_brands", an.value);
+        console.log("====", an);
+        window.location.reload(); 
+      } catch (error) {
+        console.error("Failed to update geo:", error);
+      } finally {
+        setLoading(false);
+      }
+    } else {
+      setLoading(false);
     }
-    setLoading(false);
-
   };
 
 

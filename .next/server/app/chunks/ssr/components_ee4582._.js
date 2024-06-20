@@ -14,12 +14,6 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/public_gr_bl_png_mjs_a60c67._.js",
-    "included": [
-      "[project]/public/gr_bl.png.mjs/(IMAGE)/[project]/public/gr_bl.png (static) (structured image object, ecmascript)"
-    ]
-  },
-  {
     "path": "_next/static/chunks/components_TopBrands_jsx_b53fce._.js",
     "included": [
       "[project]/components/TopBrands.jsx (ecmascript)"
@@ -812,12 +806,6 @@ const chunks = [
     "path": "_next/static/chunks/components_Brands_home_UserBrands_tsx_b53fce._.js",
     "included": [
       "[project]/components/Brands_home/UserBrands.tsx (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/public_gr_bl_png_mjs_5d04e4._.js",
-    "included": [
-      "[project]/public/gr_bl.png.mjs/(IMAGE)/[project]/public/gr_bl.png (static) (structured image object, ecmascript)"
     ]
   },
   {

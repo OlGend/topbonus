@@ -14,7 +14,6 @@ import Image from "next/image";
 import Loader from "../Loader";
 import { getUserData } from "@/components/getUser/getUser";
 import { useTranslation } from "react-i18next";
-import Img from "@/public/gr_bl.png";
 
 export type Brand = {
   id_brand: string;
@@ -46,14 +45,50 @@ const UserBrands = () => {
   const [isMobile, setIsMobile] = useState(false);
   const [userId, setUserId] = useState("");
   const [savedUrl, setSavedUrl] = useState("");
+  const [countryBrand, setCountryBrand] = useState("ALL");
 
   const { language } = useLanguage();
   const { t } = useTranslation();
 
-  useEffect(() => {
+  const loadLocalStorageData = useCallback(() => {
     setUserId(localStorage.getItem("user_id") || "");
     setSavedUrl(localStorage.getItem("savedUrl") || "");
+    setCountryBrand(localStorage.getItem("country_brands") || "ALL");
   }, []);
+
+  useEffect(() => {
+    loadLocalStorageData();
+
+    const handleStorageChange = (e) => {
+      if (e.key === "user_id" || e.key === "savedUrl" || e.key === "country_brands") {
+        loadLocalStorageData();
+      }
+    };
+
+    window.addEventListener("storage", handleStorageChange);
+
+    return () => {
+      window.removeEventListener("storage", handleStorageChange);
+    };
+  }, [loadLocalStorageData]);
+
+  useEffect(() => {
+    const handleLocalStorageUpdate = () => {
+      loadLocalStorageData();
+    };
+
+    window.addEventListener("storage", handleLocalStorageUpdate);
+
+    return () => {
+      window.removeEventListener("storage", handleLocalStorageUpdate);
+    };
+  }, [loadLocalStorageData]);
+
+  useEffect(() => {
+    if (userId) {
+      fetchBrands();
+    }
+  }, [userId, language]);
 
   const settings = {
     infinite: true,
@@ -115,12 +150,6 @@ const UserBrands = () => {
   }, [language, userId]);
 
   useEffect(() => {
-    if (userId) {
-      fetchBrands();
-    }
-  }, [language, isShow, userId, fetchBrands]);
-
-  useEffect(() => {
     setIsMobile(window.innerWidth < 768);
 
     const handleResize = () => {
@@ -153,12 +182,18 @@ const UserBrands = () => {
       {brands.length > 0 ? (
         <div className="flex flex-col">
           <h2 className="fz31 text-center">
-            {t("YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND ")}{" "}
+            {t("YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND")}{" "}
             <span className="text-blued">{t("RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL")}</span>{" "}
           </h2>
           <div className="flex justify-between mob-col mt-7">
             <div className="flex justify-content basis-[40%] flex-col items-center bander">
-              <Image src={Img} alt="random brand" width={290} loading="lazy" />
+              <Image
+                src={`/banerhome/${countryBrand.toUpperCase()}.png`}
+                alt="country specific banner"
+                width={468}
+                height={480}
+                loading="lazy"
+              />
             </div>
             <div className="brands-keitaro basis-[58%]">
               <div className="flex flex-col">
