@@ -34,7 +34,7 @@ interface LeadOrSale {
   USD: string;
 }
 
-const BRAND_CATEGORIES = { key1: "Segment2", key2: "Sandbox" };
+const BRAND_CATEGORIES = { key1: "CurrentStatus", key2: "Ongoing" };
 const BRAND_CATEGORIES2 = { key1: "FirstPriority", key2: "1" };
 
 const UserBrands = () => {
@@ -126,6 +126,7 @@ const UserBrands = () => {
       );
 
       setBrands(leadsOnlyBrands);
+      console.log("ALLLL", brandsData, leadsOnlyBrands)
 
       setOtherBrands(
         brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))

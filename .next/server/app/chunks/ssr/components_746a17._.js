@@ -646,8 +646,8 @@ const LazySlider = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$
 ;
 ;
 const BRAND_CATEGORIES = {
-    key1: "Segment2",
-    key2: "Sandbox"
+    key1: "CurrentStatus",
+    key2: "Ongoing"
 };
 const BRAND_CATEGORIES2 = {
     key1: "FirstPriority",
@@ -679,17 +679,6 @@ const UserBrands = ()=>{
         window.addEventListener("storage", handleStorageChange);
         return ()=>{
             window.removeEventListener("storage", handleStorageChange);
-        };
-    }, [
-        loadLocalStorageData
-    ]);
-    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        const handleLocalStorageUpdate = ()=>{
-            loadLocalStorageData();
-        };
-        window.addEventListener("storage", handleLocalStorageUpdate);
-        return ()=>{
-            window.removeEventListener("storage", handleLocalStorageUpdate);
         };
     }, [
         loadLocalStorageData
@@ -740,6 +729,7 @@ const UserBrands = ()=>{
             const brandsData2 = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES2, language);
             const leadsOnlyBrands = brandsData.filter((brand)=>leadsIds.includes(brand.KeitaroGoBigID));
             setBrands(leadsOnlyBrands);
+            console.log("ALLLL", brandsData, leadsOnlyBrands);
             setOtherBrands(brandsData.filter((brand)=>!leadsIds.includes(brand.KeitaroGoBigID)));
         } catch (error) {
             console.error("Error loading brands:", error);
@@ -783,17 +773,17 @@ const UserBrands = ()=>{
                         " ",
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                             className: "text-blued",
-                            children: t("RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL")
+                            children: t("RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 186,
+                            lineNumber: 175,
                             columnNumber: 13
                         }, this),
                         " "
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 184,
+                    lineNumber: 173,
                     columnNumber: 11
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -809,12 +799,12 @@ const UserBrands = ()=>{
                                 loading: "lazy"
                             }, void 0, false, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 190,
+                                lineNumber: 179,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 189,
+                            lineNumber: 178,
                             columnNumber: 13
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -824,7 +814,7 @@ const UserBrands = ()=>{
                                 children: [
                                     isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                        lineNumber: 200,
+                                        lineNumber: 189,
                                         columnNumber: 31
                                     }, this),
                                     brands.length > 6 && !isMobile ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
@@ -838,17 +828,17 @@ const UserBrands = ()=>{
                                                         count: brands.length
                                                     }, brand.id_brand, false, {
                                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                        lineNumber: 206,
+                                                        lineNumber: 195,
                                                         columnNumber: 27
                                                     }, this))
                                             }, index, false, {
                                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                lineNumber: 204,
+                                                lineNumber: 193,
                                                 columnNumber: 23
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                        lineNumber: 202,
+                                        lineNumber: 191,
                                         columnNumber: 19
                                     }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
                                         children: isMobile && brands.length > 1 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
@@ -860,12 +850,12 @@ const UserBrands = ()=>{
                                                     count: brands.length
                                                 }, brand.id_brand, false, {
                                                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                    lineNumber: 222,
+                                                    lineNumber: 211,
                                                     columnNumber: 27
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                            lineNumber: 220,
+                                            lineNumber: 209,
                                             columnNumber: 23
                                         }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                             className: "flex flex-wrap",
@@ -876,45 +866,45 @@ const UserBrands = ()=>{
                                                     count: brands.length
                                                 }, brand.id_brand, false, {
                                                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                    lineNumber: 234,
+                                                    lineNumber: 223,
                                                     columnNumber: 27
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                            lineNumber: 232,
+                                            lineNumber: 221,
                                             columnNumber: 23
                                         }, this)
                                     }, void 0, false)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 199,
+                                lineNumber: 188,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 198,
+                            lineNumber: 187,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 188,
+                    lineNumber: 177,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 183,
+            lineNumber: 172,
             columnNumber: 9
         }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 251,
+            lineNumber: 240,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-        lineNumber: 181,
+        lineNumber: 170,
         columnNumber: 5
     }, this);
 };
@@ -935,7 +925,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             className: "mb-2"
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 274,
+                            lineNumber: 263,
                             columnNumber: 9
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -944,18 +934,18 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                                 children: brand.OurOfferContent
                             }, void 0, false, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 282,
+                                lineNumber: 271,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 281,
+                            lineNumber: 270,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 270,
+                    lineNumber: 259,
                     columnNumber: 7
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -967,7 +957,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             children: t("Already Registered")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 289,
+                            lineNumber: 278,
                             columnNumber: 11
                         }, this) : "",
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -976,24 +966,24 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 298,
+                            lineNumber: 287,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 287,
+                    lineNumber: 276,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 265,
+            lineNumber: 254,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-        lineNumber: 264,
+        lineNumber: 253,
         columnNumber: 3
     }, this);
 const __TURBOPACK__default__export__ = UserBrands;
@@ -2697,7 +2687,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "You have successfully registered on these brands",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL"
             }
         },
         pl: {
@@ -2951,7 +2942,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Zarejestrowałeś się pomyślnie na tych markach",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JESTEŚ JUŻ ZAREJESTROWANY TUTAJ, ZRÓB SWOJE PIERWSZE WPŁATY I",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "OTRZYMAJ NAWET DO 2035 PLN Z NATYCHMIASTOWYM WYPŁACANIEM"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "OTRZYMAJ NAWET DO 2035 PLN Z NATYCHMIASTOWYM WYPŁACANIEM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "OTRZYMUJ PRAWDZIWE PIENIĄDZE Z NATYCHMIASTOWYM WYPŁACANIEM"
             }
         },
         de: {
@@ -3205,7 +3197,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Sie haben sich erfolgreich bei diesen Marken registriert",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SIE SIND BEREITS HIER REGISTRIERT, MACHEN SIE IHRE ERSTEN EINZAHLUNGEN UND",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ERHALTEN SIE BIS ZU 500 EUR MIT SOFORTIGER AUSZAHLUNG"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ERHALTEN SIE BIS ZU 500 EUR MIT SOFORTIGER AUSZAHLUNG",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ERHALTEN SIE ECHTES GELD MIT SOFORTIGER AUSZAHLUNG."
             }
         },
         bg: {
@@ -3459,7 +3452,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Вие успешно се регистрирахте в тези казина",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ВЕЧЕ СТЕ РЕГИСТРИРАНИ ТУК, НАПРАВЕТЕ ПЪРВИТЕ СИ ДЕПОЗИТИ И",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ПОЛУЧЕТЕ ДО 890 ЛВ. С МИГНОВЕНО ИЗТЕГЛЯНЕ"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ПОЛУЧЕТЕ ДО 890 ЛВ. С МИГНОВЕНО ИЗТЕГЛЯНЕ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ПОЛУЧАЙТЕ РЕАЛНИ ПАРИ С НЕЗАБАВНО ТЕГЛЕНЕ"
             }
         },
         cz: {
@@ -3713,7 +3707,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Úspěšně jste se zaregistrovali na tyto značky",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JSTE JIŽ ZAREGISTROVÁNI ZDE, PROVEĎTE SVÉ PRVNÍ VLOŽENÍ A",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKEJTE AŽ 11200 KČ S OKAMŽITÝM VÝBĚREM"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKEJTE AŽ 11200 KČ S OKAMŽITÝM VÝBĚREM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKEJTE SKUTEČNÉ PENÍZE S OKAMŽITÝM VÝBĚREM"
             }
         },
         dk: {
@@ -3967,7 +3962,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Du har succesfuldt registreret dig på disse mærker",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERET HER, LAV DINE FØRSTE INDBETALINGER OG",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MODTAG OP TIL 3400 DKK MED ØJEBLIKKELIG UDBETALING"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MODTAG OP TIL 3400 DKK MED ØJEBLIKKELIG UDBETALING",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MODTAG RIGTIGE PENGE MED ØJEBLIKKELIG UDBETALING."
             }
         },
         nl: {
@@ -4221,7 +4217,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Je hebt succesvol geregistreerd op deze merken",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JE BENT AL GEREGISTREERD HIER, MAAK JE EERSTE STORTINGEN EN",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ONTVANG TOT 500 EURO MET ONMIDDELLIJKE OPNAME"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ONTVANG TOT 500 EURO MET ONMIDDELLIJKE OPNAME",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ONTVANG ECHT GELD MET ONMIDDELLIJKE OPNAME"
             }
         },
         es: {
@@ -4475,7 +4472,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Te has registrado con éxito en estas marcas",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YA ESTÁS REGISTRADO AQUÍ, REALIZA TUS PRIMEROS DEPÓSITOS Y",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECIBE HASTA 500 EUR CON RETIRO INSTANTÁNEO"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECIBE HASTA 500 EUR CON RETIRO INSTANTÁNEO",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECIBE DINERO REAL CON RETIRO INSTANTÁNEO"
             }
         },
         fi: {
@@ -4729,7 +4727,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Olet rekisteröitynyt näille brändeille onnistuneesti",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "OLET JO REKISTERÖITYNYT TÄHÄN, TEE ENSIMMÄISET TALLETUKSESI JA",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "SAAT JOPA 500 EURON NOPEALLA NOSTOLLA"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "SAAT JOPA 500 EURON NOPEALLA NOSTOLLA",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "SAAT OIKEAA RAHAA NOPEALLA NOSTOLLA"
             }
         },
         fr: {
@@ -4983,7 +4982,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Vous vous êtes inscrit avec succès sur ces marques",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOUS ÊTES DÉJÀ INSCRIT ICI, FAITES VOS PREMIERS DÉPÔTS ET",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEVEZ JUSQU'À 500 EUR AVEC RETRAIT INSTANTANÉ"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEVEZ JUSQU'À 500 EUR AVEC RETRAIT INSTANTANÉ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEVEZ DE L'ARGENT RÉEL AVEC RETRAIT INSTANTANÉ"
             }
         },
         gr: {
@@ -5237,7 +5237,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Έχετε εγγραφεί με επιτυχία σε αυτά τα καζίνο",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ΕΊΣΤΕ ΉΔΗ ΕΓΓΕΓΡΑΜΜΈΝΟΙ ΕΔΏ, ΚΆΝΤΕ ΤΙΣ ΠΡΏΤΕΣ ΣΑΣ ΚΑΤΑΘΈΣΕΙΣ ΚΑΙ",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ΛΑΒΕ ΜΕΧΡΙ 500 ΕΥΡΩ ΜΕ ΑΜΕΣΗ ΑΝΑΛΗΨΗ"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ΛΑΒΕ ΜΕΧΡΙ 500 ΕΥΡΩ ΜΕ ΑΜΕΣΗ ΑΝΑΛΗΨΗ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ΛΑΜΒΆΝΕΤΕ ΠΡΑΓΜΑΤΙΚΆ ΧΡΗΜΑΤΑ ΜΕ ΆΜΕΣΗ ΑΝΑΛΗΨΗ"
             }
         },
         hu: {
@@ -5491,7 +5492,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Sikeresen regisztrált ezeken a márkákon",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "MÁR REGISZTRÁLTÁL ITT, KEZD EL AZ ELSŐ BEFIZETÉSEIDET ÉS",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "AKÁR 184060 HUF-OT IS KAPHAT AZONNALI KIFIZETÉSSEL"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "AKÁR 184060 HUF-OT IS KAPHAT AZONNALI KIFIZETÉSSEL",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "VALÓDI PÉNZT KAPJ AZ AZONNALI KIFIZETÉSSEL"
             }
         },
         it: {
@@ -5745,7 +5747,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Hai completato con successo la registrazione su questi marchi",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SEI GIÀ REGISTRATO QUI, EFFETTUA I TUOI PRIMI DEPOSITI E",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RICEVI FINO A 500 EURO CON PRELIEVO ISTANTANEO"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RICEVI FINO A 500 EURO CON PRELIEVO ISTANTANEO",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RICEVI DENARO REALE CON PRELIEVO ISTANTANEO"
             }
         },
         no: {
@@ -5999,7 +6002,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Du har registrert deg vellykket på disse merkene",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERT HER, GJØR DINE FØRSTE INNSKUDD OG",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MOTTA OPPTIL 4625 NOK MED UMIDDELBAR UTTAK"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MOTTA OPPTIL 4625 NOK MED UMIDDELBAR UTTAK",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MOTTA EKTE PENGER MED ØYEBLIKKELIG UTTAK"
             }
         },
         pt: {
@@ -6253,7 +6257,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Você se registrou com sucesso nestas marcas",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOCÊ JÁ ESTÁ REGISTRADO AQUI, FAÇA SEUS PRIMEIROS DEPÓSITOS E",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEBA ATÉ 500 EUR COM RETIRADA INSTANTÂNEA"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEBA ATÉ 500 EUR COM RETIRADA INSTANTÂNEA",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEBA DINHEIRO REAL COM SAQUE INSTANTÂNEO"
             }
         },
         se: {
@@ -6507,7 +6512,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Du har framgångsrikt registrerat dig på dessa varumärken",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ÄR REDAN REGISTRERAD HÄR, GÖR DINA FÖRSTA INSÄTTNINGAR OCH",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "FÅ UPP TILL 5200 SEK MED OMEDELBAR UTTAG"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "FÅ UPP TILL 5200 SEK MED OMEDELBAR UTTAG",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "FÅ RIKTIGA PENGAR MED OMEDELBAR UTTAG"
             }
         },
         sk: {
@@ -6761,7 +6767,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Úspešne ste sa zaregistrovali na tieto značky",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "UŽ STE TU ZAREGISTROVANÝ, UROBTE SI PRVÉ VLOŽENIA A",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKAJTE AŽ 500 EUR S OKAMŽITÝM VÝBEROM"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKAJTE AŽ 500 EUR S OKAMŽITÝM VÝBEROM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKAJTE SKUTOČNÉ PENIAZE S OKAMŽITÝM VÝBEROM"
             }
         },
         tr: {
@@ -7015,7 +7022,8 @@ async function initializeI18n() {
                 "You have successfully registered on these brands": "Bu markalara başarıyla kaydoldunuz",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
                 "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ZATEN BURADA KAYITLISINIZ, İLK YATIRIMLARINIZI YAPIN VE",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "HIZLI ÇEKİM İLE 13000 TRY'YE KADAR ALIN"
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "HIZLI ÇEKİM İLE 13000 TRY'YE KADAR ALIN",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ANINDA ÇEKİM İLE GERÇEK PARA ALIN"
             }
         }
     };
