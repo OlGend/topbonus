@@ -59,7 +59,7 @@ const UserBrands = () => {
   useEffect(() => {
     loadLocalStorageData();
 
-    const handleStorageChange = (e) => {
+    const handleStorageChange = (e: StorageEvent) => {
       if (e.key === "user_id" || e.key === "savedUrl" || e.key === "country_brands") {
         loadLocalStorageData();
       }
@@ -69,18 +69,6 @@ const UserBrands = () => {
 
     return () => {
       window.removeEventListener("storage", handleStorageChange);
-    };
-  }, [loadLocalStorageData]);
-
-  useEffect(() => {
-    const handleLocalStorageUpdate = () => {
-      loadLocalStorageData();
-    };
-
-    window.addEventListener("storage", handleLocalStorageUpdate);
-
-    return () => {
-      window.removeEventListener("storage", handleLocalStorageUpdate);
     };
   }, [loadLocalStorageData]);
 
