@@ -7,7 +7,7 @@ __turbopack_esm__({
 });
 const getUserData = async (userId)=>{
     try {
-        const res = await fetch(`https://pickbonus.myawardwallet.com/api/user/read_one.php?id=${userId}`);
+        const res = await fetch(`https://bonusnumber1.com/api/user/read_one.php?id=${userId}`);
         if (res.ok) {
             const responseData = await res.json();
             return responseData;
@@ -18,38 +18,6 @@ const getUserData = async (userId)=>{
     } catch (error) {
         console.error("An error occurred:", error);
         return null;
-    }
-};
-
-})()),
-"[project]/components/UserBrands/UpdateUserStatus.tsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
-
-__turbopack_esm__({
-    "updateUserStatus": ()=>updateUserStatus
-});
-const updateUserStatus = async (userId, campaignId, status, fetchBrands)=>{
-    if (!userId || !campaignId) {
-        console.error("Error: Missing userId or campaignId");
-        return;
-    }
-    try {
-        const response = await fetch("https://pickbonus.myawardwallet.com/api/addStatus/add_status.php", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({
-                id: userId,
-                campaignId: campaignId,
-                status: status
-            })
-        });
-        if (!response.ok) throw new Error("Network response was not ok");
-        if (response.ok) {
-            fetchBrands();
-        }
-    } catch (error) {
-        console.error("Error:", error);
     }
 };
 
@@ -199,10 +167,10 @@ __turbopack_esm__({
     "getBrands": ()=>getBrands
 });
 const getBrands = async (categoryBrands, lng)=>{
-    const apiAll = "https://pickbonus.myawardwallet.com/api/brandsNew/read.php";
-    const api1039 = "https://pickbonus.myawardwallet.com/api/brandsNew2/read.php";
-    const api1043 = "https://pickbonus.myawardwallet.com/api/brandsNew3/read.php";
-    const api1044 = "https://pickbonus.myawardwallet.com/api/brandsNew4/read.php";
+    const apiAll = "https://bonusnumber1.com/api/brandsNew/read.php";
+    const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
+    const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
+    const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
     const availableLanguages = [
         {
             code: "au",
@@ -632,19 +600,42 @@ const getBrands = async (categoryBrands, lng)=>{
 __turbopack_esm__({
     "default": ()=>__TURBOPACK__default__export__
 });
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$2c$__chunks$29$__ = __turbopack_import__("[project]/node_modules/react-slick/lib/index.js (ecmascript, chunks, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/shared/lib/app-dynamic.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Loader.jsx (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UserBrands$2f$UpdateUserStatus$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/UserBrands/UpdateUserStatus.tsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$getUser$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getUser/getUser.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+"TURBOPACK { transition: next-client-chunks }";
+;
 "use client";
 ;
+;
+;
+const LazySlider = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$28$ecmascript$29$__["default"](null, {
+    loadableGenerated: {
+        modules: [
+            JSON.stringify({
+                id: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$2c$__chunks$29$__["default"],
+                chunks: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$2c$__chunks$29$__["chunks"]
+            })
+        ]
+    },
+    ssr: false,
+    loading: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+            children: "Download..."
+        }, void 0, false, {
+            fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+            lineNumber: 6,
+            columnNumber: 18
+        }, this)
+});
 ;
 ;
 ;
@@ -655,127 +646,267 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18
 ;
 ;
 const BRAND_CATEGORIES = {
-    key1: "Segment2",
-    key2: "Sandbox"
+    key1: "CurrentStatus",
+    key2: "Ongoing"
+};
+const BRAND_CATEGORIES2 = {
+    key1: "FirstPriority",
+    key2: "1"
 };
 const UserBrands = ()=>{
     const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
     const [otherBrands, setOtherBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
-    const count = brands.length;
-    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const [isLoading, setIsLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
-    const [isShow, setIshow] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    const [isShow, setIsShow] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    const [isMobile, setIsMobile] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    const [userId, setUserId] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const [savedUrl, setSavedUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const [countryBrand, setCountryBrand] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("ALL");
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
-    let savedUrl = "";
-    if (typeof window !== "undefined") {
-        savedUrl = localStorage.getItem("savedUrl") || "";
-    }
-    let userId = "";
-    if (typeof window !== "undefined") {
-        userId = localStorage.getItem("user_id") || "";
-    }
-    const fetchBrands = async ()=>{
-        if (userId === "null") {
-            console.error("No user ID found, unable to fetch brands.");
-            setIsLoading(false);
-            return;
+    const loadLocalStorageData = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useCallback"](()=>{
+        setUserId(localStorage.getItem("user_id") || "");
+        setSavedUrl(localStorage.getItem("savedUrl") || "");
+        setCountryBrand(localStorage.getItem("country_brands") || "ALL");
+    }, []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        loadLocalStorageData();
+        const handleStorageChange = (e)=>{
+            if (e.key === "user_id" || e.key === "savedUrl" || e.key === "country_brands") {
+                loadLocalStorageData();
+            }
+        };
+        window.addEventListener("storage", handleStorageChange);
+        return ()=>{
+            window.removeEventListener("storage", handleStorageChange);
+        };
+    }, [
+        loadLocalStorageData
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (userId) {
+            fetchBrands();
         }
+    }, [
+        userId,
+        language
+    ]);
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }
+        ]
+    };
+    const fetchBrands = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useCallback"](async ()=>{
         if (!userId) {
             console.error("No user ID found, unable to fetch brands.");
             setIsLoading(false);
             return;
         }
         setIsLoading(true);
-        const data = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$getUser$2e$jsx__$28$ecmascript$29$__["getUserData"](userId);
-        if (!data) {
-            console.error("Received null data from getUserData");
-            setIsLoading(false);
-            return;
-        }
-        const userLeads = JSON.parse(data.leads || "[]");
-        const userSales = JSON.parse(data.sales || "[]");
-        const leadsIds = userLeads.map((lead)=>lead.campaignId);
-        const salesIds = userSales.map((sale)=>sale.campaignId);
         try {
+            const data = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$getUser$2e$jsx__$28$ecmascript$29$__["getUserData"](userId);
+            if (!data) {
+                console.error("Received null data from getUserData");
+                setIsLoading(false);
+                return;
+            }
+            const userLeads = JSON.parse(data.leads || "[]");
+            const userSales = JSON.parse(data.sales || "[]");
+            const leadsIds = userLeads.map((lead)=>lead.campaignId);
+            const salesIds = userSales.map((sale)=>sale.campaignId);
             const brandsData = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES, language);
-            const leadsOnlyBrands = brandsData.filter((brand)=>leadsIds.includes(brand.KeitaroGoBigID) && !salesIds.includes(brand.KeitaroGoBigID));
+            const brandsData2 = await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands$2e$jsx__$28$ecmascript$29$__["getBrands"](BRAND_CATEGORIES2, language);
+            const leadsOnlyBrands = brandsData.filter((brand)=>leadsIds.includes(brand.KeitaroGoBigID));
             setBrands(leadsOnlyBrands);
+            console.log("ALLLL", brandsData, leadsOnlyBrands);
             setOtherBrands(brandsData.filter((brand)=>!leadsIds.includes(brand.KeitaroGoBigID)));
         } catch (error) {
             console.error("Error loading brands:", error);
         } finally{
             setIsLoading(false);
         }
-    };
-    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        if (userId) {
-            fetchBrands();
-        }
     }, [
         language,
-        isShow,
         userId
     ]);
-    if (userId === "null") {
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        setIsMobile(window.innerWidth < 768);
+        const handleResize = ()=>{
+            setIsMobile(window.innerWidth < 768);
+        };
+        window.addEventListener("resize", handleResize);
+        return ()=>{
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    if (!userId) {
         return null;
     }
-    return userId ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-        className: "flex flex-col",
-        children: [
-            isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                lineNumber: 119,
-                columnNumber: 21
-            }, this),
-            brands.length > 0 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
-                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    className: "flex flex-wrap px-0",
-                    children: brands.map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
-                            brand: brand,
-                            savedUrl: savedUrl,
-                            t: t,
-                            count: count
-                        }, brand.id_brand, false, {
+    const chunkBrands = (brands, chunkSize)=>{
+        const chunks = [];
+        for(let i = 0; i < brands.length; i += chunkSize){
+            chunks.push(brands.slice(i, i + chunkSize));
+        }
+        return chunks;
+    };
+    const brandChunks = chunkBrands(brands, 6);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: "mt-10",
+        children: brands.length > 0 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            className: "flex flex-col",
+            children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h2", {
+                    className: "fz31 text-center",
+                    children: [
+                        t("YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND"),
+                        " ",
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                            className: "text-blued",
+                            children: t("RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL")
+                        }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 125,
-                            columnNumber: 15
-                        }, this))
-                }, void 0, false, {
+                            lineNumber: 175,
+                            columnNumber: 13
+                        }, this),
+                        " "
+                    ]
+                }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 123,
+                    lineNumber: 173,
+                    columnNumber: 11
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "flex justify-between mob-col mt-7",
+                    children: [
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "flex justify-content basis-[40%] flex-col items-center bander",
+                            children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                src: `/banerhome/${countryBrand.toUpperCase()}.png`,
+                                alt: "country specific banner",
+                                width: 468,
+                                height: 480,
+                                loading: "lazy"
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                lineNumber: 179,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                            lineNumber: 178,
+                            columnNumber: 13
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "brands-keitaro basis-[58%]",
+                            children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "flex flex-col",
+                                children: [
+                                    isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                        fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                        lineNumber: 189,
+                                        columnNumber: 31
+                                    }, this),
+                                    brands.length > 6 && !isMobile ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
+                                        ...settings,
+                                        children: brandChunks.map((chunk, index)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "flex flex-wra w679",
+                                                children: chunk.map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
+                                                        brand: brand,
+                                                        savedUrl: savedUrl,
+                                                        t: t,
+                                                        count: brands.length
+                                                    }, brand.id_brand, false, {
+                                                        fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                                        lineNumber: 195,
+                                                        columnNumber: 27
+                                                    }, this))
+                                            }, index, false, {
+                                                fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                                lineNumber: 193,
+                                                columnNumber: 23
+                                            }, this))
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                        lineNumber: 191,
+                                        columnNumber: 19
+                                    }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
+                                        children: isMobile && brands.length > 1 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
+                                            ...settings,
+                                            children: brands.map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
+                                                    brand: brand,
+                                                    savedUrl: savedUrl,
+                                                    t: t,
+                                                    count: brands.length
+                                                }, brand.id_brand, false, {
+                                                    fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                                    lineNumber: 211,
+                                                    columnNumber: 27
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                            lineNumber: 209,
+                                            columnNumber: 23
+                                        }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                            className: "flex flex-wrap",
+                                            children: brands.slice(0, 6).map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
+                                                    brand: brand,
+                                                    savedUrl: savedUrl,
+                                                    t: t,
+                                                    count: brands.length
+                                                }, brand.id_brand, false, {
+                                                    fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                                    lineNumber: 223,
+                                                    columnNumber: 27
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                            lineNumber: 221,
+                                            columnNumber: 23
+                                        }, this)
+                                    }, void 0, false)
+                                ]
+                            }, void 0, true, {
+                                fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                                lineNumber: 188,
+                                columnNumber: 15
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                            lineNumber: 187,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+                    lineNumber: 177,
                     columnNumber: 11
                 }, this)
-            }, void 0, false) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
-                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    className: "flex flex-wrap px-0",
-                    children: otherBrands.slice(0, 6).map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](BrandCard, {
-                            brand: brand,
-                            savedUrl: savedUrl,
-                            t: t,
-                            register: ()=>{
-                                __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$UserBrands$2f$UpdateUserStatus$2e$tsx__$28$ecmascript$29$__["updateUserStatus"](localStorage.getItem("user_id") || "", brand.KeitaroGoBigID, "lead", ()=>{
-                                    fetchBrands();
-                                    setIshow((prev)=>!prev);
-                                });
-                            },
-                            count: count
-                        }, brand.id_brand, false, {
-                            fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 140,
-                            columnNumber: 15
-                        }, this))
-                }, void 0, false, {
-                    fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 138,
-                    columnNumber: 11
-                }, this)
-            }, void 0, false)
-        ]
-    }, void 0, true, {
+            ]
+        }, void 0, true, {
+            fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+            lineNumber: 172,
+            columnNumber: 9
+        }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
+            fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
+            lineNumber: 240,
+            columnNumber: 9
+        }, this)
+    }, void 0, false, {
         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-        lineNumber: 118,
+        lineNumber: 170,
         columnNumber: 5
-    }, this) : null;
+    }, this);
 };
 const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
         className: `card-brand mb-3 card-32 crd-${count}`,
@@ -794,7 +925,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             className: "mb-2"
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 183,
+                            lineNumber: 263,
                             columnNumber: 9
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -803,18 +934,18 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                                 children: brand.OurOfferContent
                             }, void 0, false, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 191,
+                                lineNumber: 271,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 190,
+                            lineNumber: 270,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 179,
+                    lineNumber: 259,
                     columnNumber: 7
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -823,10 +954,10 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                         register ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
                             className: "btn btn-secondary btn-fz btn-fzl mr-2",
                             onClick: register,
-                            children: t("I'm Registered")
+                            children: t("Already Registered")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 196,
+                            lineNumber: 278,
                             columnNumber: 11
                         }, this) : "",
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -835,24 +966,24 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 205,
+                            lineNumber: 287,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 194,
+                    lineNumber: 276,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 174,
+            lineNumber: 254,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-        lineNumber: 173,
+        lineNumber: 253,
         columnNumber: 3
     }, this);
 const __TURBOPACK__default__export__ = UserBrands;
@@ -1255,10 +1386,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$l
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
 const getBrands = async (lng)=>{
-    const apiAll = "https://pickbonus.myawardwallet.com/api/brandsNew/read.php";
-    const api1039 = "https://pickbonus.myawardwallet.com/api/brandsNew2/read.php";
-    const api1043 = "https://pickbonus.myawardwallet.com/api/brandsNew3/read.php";
-    const api1044 = "https://pickbonus.myawardwallet.com/api/brandsNew4/read.php";
+    const apiAll = "https://bonusnumber1.com/api/brandsNew/read.php";
+    const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
+    const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
+    const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
     const partners = {
         partner1039: {
             url: api1039,
@@ -1566,11 +1697,9 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$j
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$gr_bl$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$gr_bl$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/gr_bl.png.mjs/(IMAGE)/[project]/public/gr_bl.png (static) (structured image object, ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$UserBrands$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Brands_home/UserBrands.tsx (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
-;
 ;
 ;
 ;
@@ -1677,7 +1806,7 @@ function TopBrands() {
                     className: "main__container",
                     children: loading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 109,
+                        lineNumber: 110,
                         columnNumber: 13
                     }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
                         className: "carmob",
@@ -1689,12 +1818,12 @@ function TopBrands() {
                         showArrows: false
                     }, void 0, false, {
                         fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 112,
+                        lineNumber: 113,
                         columnNumber: 15
                     }, this)
                 }, void 0, false, {
                     fileName: "<[project]/components/TopBrands.jsx>",
-                    lineNumber: 107,
+                    lineNumber: 108,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
@@ -1704,144 +1833,80 @@ function TopBrands() {
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "preview2 flex flex-col",
-                children: [
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                        className: "main__container flex items-center",
-                        children: [
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                className: "flex flex-col",
-                                children: [
-                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h1", {
-                                        className: "",
-                                        children: [
-                                            t("Feeling lucky today?"),
-                                            " ",
-                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                                className: "text-blued",
-                                                children: t("Click now to play")
-                                            }, void 0, false, {
-                                                fileName: "<[project]/components/TopBrands.jsx>",
-                                                lineNumber: 130,
-                                                columnNumber: 15
-                                            }, this),
-                                            " ",
-                                            t("and see if"),
-                                            " ",
-                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                                className: "text-blued",
-                                                children: [
-                                                    " ",
-                                                    t("luck is on your side!")
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "<[project]/components/TopBrands.jsx>",
-                                                lineNumber: 132,
-                                                columnNumber: 15
-                                            }, this)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "<[project]/components/TopBrands.jsx>",
-                                        lineNumber: 128,
-                                        columnNumber: 13
-                                    }, this),
-                                    shuffledBrands.slice(0, 1).map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
-                                            target: "_blank",
-                                            className: "btn btn-primary big-btn mt-3 target-try-your-luck",
-                                            href: `${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`,
-                                            children: t("Try Your Luck")
-                                        }, item, false, {
+                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "main__container flex items-center",
+                    children: [
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "flex flex-col",
+                            children: [
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h1", {
+                                    className: "",
+                                    children: [
+                                        t("Feeling lucky today?"),
+                                        " ",
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                            className: "text-blued",
+                                            children: t("Click now to play")
+                                        }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 135,
+                                            lineNumber: 131,
                                             columnNumber: 15
-                                        }, this))
-                                ]
-                            }, void 0, true, {
-                                fileName: "<[project]/components/TopBrands.jsx>",
-                                lineNumber: 127,
-                                columnNumber: 11
-                            }, this),
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                                src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                alt: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                width: 500,
-                                loading: "lazy"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/TopBrands.jsx>",
-                                lineNumber: 145,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 126,
-                        columnNumber: 9
-                    }, this),
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                        className: "main__container flex justify-between !mt-7",
-                        children: [
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                className: "flex justify-content basis-[40%] flex-col items-center bander",
-                                children: [
-                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                                        src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$gr_bl$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$gr_bl$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                        alt: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$gr_bl$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$gr_bl$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                                        width: 290,
-                                        loading: "lazy"
-                                    }, void 0, false, {
-                                        fileName: "<[project]/components/TopBrands.jsx>",
-                                        lineNumber: 150,
-                                        columnNumber: 13
-                                    }, this),
-                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h1", {
-                                        className: "fz31",
-                                        children: [
-                                            t("You Made Registration Here."),
-                                            " ",
-                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                                className: "text-blued",
-                                                children: t("Make First Deposit Now ")
-                                            }, void 0, false, {
-                                                fileName: "<[project]/components/TopBrands.jsx>",
-                                                lineNumber: 153,
-                                                columnNumber: 15
-                                            }, this),
-                                            " ",
-                                            t("and Receive Up To $20 Back On Your Wallet!"),
-                                            " "
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "<[project]/components/TopBrands.jsx>",
-                                        lineNumber: 151,
-                                        columnNumber: 13
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "<[project]/components/TopBrands.jsx>",
-                                lineNumber: 149,
-                                columnNumber: 11
-                            }, this),
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                className: "brands-keitaro basis-[58%]",
-                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$UserBrands$2e$tsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                                        }, this),
+                                        " ",
+                                        t("and see if"),
+                                        " ",
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                            className: "text-blued",
+                                            children: [
+                                                " ",
+                                                t("luck is on your side!")
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 133,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
                                     fileName: "<[project]/components/TopBrands.jsx>",
-                                    lineNumber: 161,
+                                    lineNumber: 129,
                                     columnNumber: 13
-                                }, this)
-                            }, void 0, false, {
-                                fileName: "<[project]/components/TopBrands.jsx>",
-                                lineNumber: 160,
-                                columnNumber: 11
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 148,
-                        columnNumber: 9
-                    }, this)
-                ]
-            }, void 0, true, {
+                                }, this),
+                                shuffledBrands.slice(0, 1).map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                        target: "_blank",
+                                        className: "btn btn-primary big-btn mt-3 target-try-your-luck",
+                                        href: `${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`,
+                                        children: t("Try Your Luck")
+                                    }, item, false, {
+                                        fileName: "<[project]/components/TopBrands.jsx>",
+                                        lineNumber: 136,
+                                        columnNumber: 15
+                                    }, this))
+                            ]
+                        }, void 0, true, {
+                            fileName: "<[project]/components/TopBrands.jsx>",
+                            lineNumber: 128,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            alt: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            width: 500,
+                            loading: "lazy"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/TopBrands.jsx>",
+                            lineNumber: 146,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/TopBrands.jsx>",
+                    lineNumber: 127,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 125,
+                lineNumber: 126,
                 columnNumber: 7
             }, this)
         ]
@@ -1989,7 +2054,7 @@ __turbopack_esm__({
     "updateGeo": ()=>updateGeo
 });
 const updateGeo = async (userId, country)=>{
-    const url = 'https://pickbonus.myawardwallet.com/api/user/update_geo.php';
+    const url = 'https://bonusnumber1.com/api/user/update_geo.php';
     const data = {
         id: userId,
         country: country
@@ -2113,15 +2178,24 @@ function ResponsiveDialog() {
     const handleClose = ()=>{
         setOpen(false);
     };
-    const handleYes = ()=>{
+    const handleYes = async ()=>{
         const an = value && value !== "N/A" && value !== "" ? value : localStorage.getItem("country_data");
         setOpen(false);
         setLoading(true);
         if (userData.geo_approve === null || userData.geo_approve === "") {
-            __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$updateGeo$2e$jsx__$28$ecmascript$29$__["updateGeo"](localStorage.getItem("user_id"), an.value);
-            console.log("====", an);
+            try {
+                await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$updateGeo$2e$jsx__$28$ecmascript$29$__["updateGeo"](localStorage.getItem("user_id"), an.value);
+                localStorage.setItem("country_brands", an.value);
+                console.log("====", an);
+                window.location.reload();
+            } catch (error) {
+                console.error("Failed to update geo:", error);
+            } finally{
+                setLoading(false);
+            }
+        } else {
+            setLoading(false);
         }
-        setLoading(false);
     };
     const [show, setShow] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__.useState(true);
     const handleNo = ()=>{
@@ -2142,12 +2216,12 @@ function ResponsiveDialog() {
                         children: `${t("Are you from")} ${localStorage.getItem("country_name")}?`
                     }, void 0, false, {
                         fileName: "<[project]/components/geo-identifier/index.jsx>",
-                        lineNumber: 105,
+                        lineNumber: 110,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "<[project]/components/geo-identifier/index.jsx>",
-                    lineNumber: 104,
+                    lineNumber: 109,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$DialogContent$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -2155,12 +2229,12 @@ function ResponsiveDialog() {
                         children: t("Not right? Pick your actual country of residence from the list below to see the relevant offers!")
                     }, void 0, false, {
                         fileName: "<[project]/components/geo-identifier/index.jsx>",
-                        lineNumber: 110,
+                        lineNumber: 115,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "<[project]/components/geo-identifier/index.jsx>",
-                    lineNumber: 109,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this),
                 show && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$DialogActions$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -2171,7 +2245,7 @@ function ResponsiveDialog() {
                             children: t("Choose my Country")
                         }, void 0, false, {
                             fileName: "<[project]/components/geo-identifier/index.jsx>",
-                            lineNumber: 116,
+                            lineNumber: 121,
                             columnNumber: 13
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -2181,13 +2255,13 @@ function ResponsiveDialog() {
                             children: t("Yes")
                         }, void 0, false, {
                             fileName: "<[project]/components/geo-identifier/index.jsx>",
-                            lineNumber: 118,
+                            lineNumber: 123,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/geo-identifier/index.jsx>",
-                    lineNumber: 115,
+                    lineNumber: 120,
                     columnNumber: 11
                 }, this),
                 !show && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$DialogActions$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -2202,7 +2276,7 @@ function ResponsiveDialog() {
                             getOptionValue: (option)=>option.value
                         }, void 0, false, {
                             fileName: "<[project]/components/geo-identifier/index.jsx>",
-                            lineNumber: 125,
+                            lineNumber: 130,
                             columnNumber: 13
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -2212,24 +2286,24 @@ function ResponsiveDialog() {
                             children: t("Confirm")
                         }, void 0, false, {
                             fileName: "<[project]/components/geo-identifier/index.jsx>",
-                            lineNumber: 133,
+                            lineNumber: 138,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/geo-identifier/index.jsx>",
-                    lineNumber: 124,
+                    lineNumber: 129,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/geo-identifier/index.jsx>",
-            lineNumber: 97,
+            lineNumber: 102,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/geo-identifier/index.jsx>",
-        lineNumber: 96,
+        lineNumber: 101,
         columnNumber: 5
     }, this);
 }
@@ -2506,9 +2580,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Top-Rated Online Casinos Accepting Maestro Payments for 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Top Online Casinos Supporting MuchBetter Transactions in 2024",
@@ -2516,7 +2590,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Top Online Casinos Supporting Neteller Transactions in 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Leading Online Casinos Accepting PayPal Payments in 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!",
                 "Top-Ranked Online Casino Platforms for 2024": "Top-Ranked Online Casino Platforms for 2024",
@@ -2528,7 +2602,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Top Online Casinos Supporting Trustly Transactions for 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Top-Rated Online Casinos Welcoming Visa Transactions in 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio",
@@ -2601,7 +2675,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Your Registration Completed, First Deposit Awaited",
                 "Registration and First Deposit Not Completed": "Registration and First Deposit Not Completed",
                 "I’m Registered": "I’m Registered",
-                "Deposit Now": "Deposit Now"
+                "Deposit Now": "Deposit Now",
+                "Get $20": "Get $20",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "You Already Made Registration Here, Make First Deposit & Get Up To $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Make First Deposit On One Brand Below & Get Up To $20!",
+                "Make First Deposit On One Of These Brands &": "Make First Deposit On One Of These Brands &",
+                "Get Up To $20 Right On Your Wallet!": "Get Up To $20 Right On Your Wallet!",
+                "Already Registered": "Already Registered",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Select a brand from the list below, make your first deposit and receive up to 20 USD in rewards!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to 20 USD on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
+                "You have successfully registered on these brands": "You have successfully registered on these brands",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL"
             }
         },
         pl: {
@@ -2748,9 +2835,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Najlepiej oceniane kasyna online obsługujące transakcje EcoPayz na rok 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Poszukujesz wiodących kasyn online, które akceptują transakcje ecoPayz? Odkryj naszą starannie wyselekcjonowaną selekcję premium kasyn przyjaznych ecoPayz, aby znaleźć idealne miejsce dla siebie.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Najwyżej oceniane kasyna online akceptujące płatności Maestro na rok 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Zainteresowany graniem w kasynach online, które akceptują transakcje Maestro? Pozwól topbon.us poprowadzić Cię do idealnego kasyna przyjaznego Maestro dla Ciebie.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Zainteresowany graniem w kasynach online, które akceptują transakcje Maestro? Pozwól XXXCasinoGuru poprowadzić Cię do idealnego kasyna przyjaznego Maestro dla Ciebie.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Najlepiej oceniane kasyna online, które akceptują transakcje Mastercard w 2024 roku",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling": "Zainteresowany graniem w kasynie przyjaznym dla Mastercarda? topbon.us jest tutaj, aby prowadzić Cię do najbardziej godnych zaufania kasyn, które akceptują Mastercarda do bezpiecznego hazardu.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling": "Zainteresowany graniem w kasynie przyjaznym dla Mastercarda? XXXCasinoGuru jest tutaj, aby prowadzić Cię do najbardziej godnych zaufania kasyn, które akceptują Mastercarda do bezpiecznego hazardu.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Wiodące kasyna online, które faworyzują płatności mobilne dla płynnych transakcji w 2024 roku.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Zapewnij sobie płynne transakcje finansowe w kasynach online, wykorzystując łatwość i szybkość metod płatności mobilnych. Bądź na bieżąco z dostępnymi opcjami, aby wybrać najlepsze rozwiązanie dla swojej lokalizacji geograficznej i preferowanej waluty, zapewniając bezproblemową podróż po świecie gier.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Najlepsze kasyna online obsługujące transakcje MuchBetter w 2024 roku",
@@ -2758,7 +2845,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Najlepiej oceniane kasyna online obsługujące transakcje Neosurf na rok 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "W poszukiwaniu kasyna online kompatybilnego z płatnościami Neosurf? Przeglądaj naszą starannie wybraną selekcję kasyn przyjaznych Neosurfowi, zagłębiaj się w nasze szczegółowe recenzje i wybierz idealną platformę dla siebie.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Najlepsze kasyna online obsługujące transakcje za pomocą Netellera w 2024 roku",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Katalog kasyn online kompatybilnych z płatnościami Neteller. ✅ Dokładne oceny autorstwa topbon.us. ✅ Odkryj swoje idealne kasyno przyjazne dla Netellera.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Katalog kasyn online kompatybilnych z płatnościami Neteller. ✅ Dokładne oceny autorstwa XXXCasinoGuru. ✅ Odkryj swoje idealne kasyno przyjazne dla Netellera.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Wiodące kasyna online akceptujące płatności PayPal w 2024 roku",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Sprawdź naszą obszerną listę najlepiej ocenianych kasyn, które akceptują PayPal - szybką i bezpieczną opcję zarówno dla wpłat, jak i wypłat. Ta metoda płatności jest popularnym wyborem wśród globalnych graczy online, oferując takie korzyści jak omijanie tradycyjnych ograniczeń bankowych i geograficznych. Jeśli jeszcze nie masz konta PayPal, łatwo je założyć i rozpocząć swoją podróż do dużych wygranych!",
                 "Top-Ranked Online Casino Platforms for 2024": "Najlepsze platformy kasyn online w 2024 roku",
@@ -2770,7 +2857,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Najlepsze kasyna online obsługujące transakcje Trustly na rok 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Poszukujesz kasyn internetowych, które akceptują płatności Trustly? Przejrzyj naszą starannie wyselekcjonowaną listę i szczegółowe recenzje, aby znaleźć najbardziej odpowiednie kasyno kompatybilne z Trustly dla Ciebie.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Najlepiej oceniane kasyna online, które akceptują transakcje Visa w 2024 roku",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Zainteresowany graniem w kasynie przyjaznym dla Visa? topbon.us jest tutaj, aby prowadzić Cię do najbardziej godnych zaufania kasyn, które akceptują Visa dla bezpiecznego hazardu.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Zainteresowany graniem w kasynie przyjaznym dla Visa? XXXCasinoGuru jest tutaj, aby prowadzić Cię do najbardziej godnych zaufania kasyn, które akceptują Visa dla bezpiecznego hazardu.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Łącząc przepaść między tradycyjnymi a internetowymi kasynami za pomocą klasycznych tytułów gier",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic tworzy cyfrowe gry, które odzwierciedlają swoje wersje z rzeczywistego świata zarówno pod względem estetyki, jak i narracji. Ta wyraźna strategia przyciąga graczy lubiących klasyczną atmosferę kasyna. Dzięki wyróżniającym się grą takim jak 'Hot Fruits 100', 'Allways Hot Fruits', 'Book Of Aztec' i 'Lucky Joker 10', Amatic zapewnia niezrównane doświadczenie rozrywkowe dla miłośników kasyn.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Dwa dziesięciolecia doskonałości w grach: Odkrywanie innowacyjnego portfolio Amusnet Interactive",
@@ -2820,7 +2907,7 @@ async function initializeI18n() {
                 "Error occurred while loading. Try again.": "Wystąpił błąd podczas ładowania. Spróbuj ponownie.",
                 "Reload page": "Odśwież stronę",
                 "To qualify for withdrawals, ensure your first deposit is at least €25 or the equivalent in other currencies and was made after requesting a withdrawal.": "Aby zakwalifikować się do wypłaty, upewnij się, że pierwsza wpłata wynosi co najmniej 25 € lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę.",
-                "FORTUNE WHEEL BRANDS": "CASYNA KOŁA FORTUNY",
+                "FORTUNE WHEEL BRANDS": "MARKI KOŁA FORTUNY",
                 "Pick a brand below, make first deposit and win real cash": "Wybierz poniższą markę, dokonaj pierwszej wpłaty i wygraj prawdziwe pieniądze",
                 "Spin the Roulette": "Kręć ruletką",
                 "Quick Sign-Up": "Szybka rejestracja",
@@ -2838,12 +2925,25 @@ async function initializeI18n() {
                 Yes: "Tak",
                 "Unlock Up To $20: Deposit Now With Your Registered Brands": "Odblokuj do 20 dolarów: Dokonaj teraz wpłaty za pomocą swoich zarejestrowanych marek",
                 "Select from the list of registered brands to complete your first deposit and receive up to $20 in rewards. Take advantage of this special offer now!": "Wybierz z listy zarejestrowanych marek, aby dokonać pierwszej wpłaty i otrzymać nawet do 20 dolarów nagrody. Skorzystaj teraz z tej specjalnej oferty!",
-                "Show Brands": "Pokaż Casyna",
+                "Show Brands": "Pokaż marki",
                 "Premium Casino": "Kasyno Premium",
                 "Your Registration Completed, First Deposit Awaited": "Twoja rejestracja została zakończona, oczekuje się pierwszej wpłaty",
                 "Registration and First Deposit Not Completed": "Rejestracja i pierwsza wpłata nie zostały ukończone",
                 "I’m Registered": "Jestem zarejestrowany",
-                "Deposit Now": "Zdeponuj teraz"
+                "Deposit Now": "Zdeponuj teraz",
+                "Get $20": "Dostań 20 dolarów",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Już dokonałeś rejestracji tutaj, dokonaj pierwszej wpłaty i otrzymaj nawet do 20 dolarów!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Zrób pierwszą wpłatę na jednej z marek poniżej i otrzymaj nawet do 20 dolarów!",
+                "Make First Deposit On One Of These Brands &": "Dokonaj pierwszej wpłaty na jednej z tych marek &",
+                "Get Up To $20 Right On Your Wallet!": "Dostań nawet do 20 dolarów prosto na swoje konto!",
+                "Already Registered": "Już zarejestrowany",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wybierz kasyno z poniższej listy, dokonaj pierwszej wpłaty i odbierz nawet do 20 USD nagrody!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Otrzymasz 50 darmowych spinów za każdą pierwszą wpłatę z naszej strony internetowej. Obróć te spiny i zdobądź do 20 USD na swoim portfelu kryptowalutowym/PayPal. Aby zakwalifikować się do wypłaty, upewnij się, że Twoja pierwsza wpłata wynosi co najmniej 25 euro lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę.",
+                "You have successfully registered on these brands": "Zarejestrowałeś się pomyślnie na tych markach",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JESTEŚ JUŻ ZAREJESTROWANY TUTAJ, ZRÓB SWOJE PIERWSZE WPŁATY I",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "OTRZYMAJ NAWET DO 2035 PLN Z NATYCHMIASTOWYM WYPŁACANIEM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "OTRZYMUJ PRAWDZIWE PIENIĄDZE Z NATYCHMIASTOWYM WYPŁACANIEM"
             }
         },
         de: {
@@ -2990,9 +3090,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Top-bewertete Online-Casinos, die EcoPayz-Transaktionen für 2024 unterstützen",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Auf der Suche nach führenden Online-Casinos, die ecoPayz-Transaktionen akzeptieren? Entdecken Sie unsere sorgfältig ausgewählte Auswahl an Premium-Casinos, die ecoPayz-freundlich sind, um die perfekte Lösung für Sie zu finden.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Top-bewertete Online-Casinos, die Maestro-Zahlungen für 2024 akzeptieren",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Interessiert an Glücksspielen in Online-Casinos, die Maestro-Transaktionen akzeptieren? Lassen Sie sich von topbon.us zum idealen Maestro-freundlichen Casino für Sie führen.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Interessiert an Glücksspielen in Online-Casinos, die Maestro-Transaktionen akzeptieren? Lassen Sie sich von XXXCasinoGuru zum idealen Maestro-freundlichen Casino für Sie führen.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Top-bewertete Online-Casinos, die Mastercard-Transaktionen im Jahr 2024 begrüßen",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interessiert an Glücksspielen in einem Mastercard-freundlichen Casino? topbon.us ist hier, um Sie zu den vertrauenswürdigsten Casinos zu führen, die Mastercard für sicheres Glücksspiel akzeptieren.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interessiert an Glücksspielen in einem Mastercard-freundlichen Casino? XXXCasinoGuru ist hier, um Sie zu den vertrauenswürdigsten Casinos zu führen, die Mastercard für sicheres Glücksspiel akzeptieren.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Führende Online-Casinos, die mobile Zahlungen für reibungslose Transaktionen im Jahr 2024 bevorzugen.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Erleben Sie reibungslose finanzielle Transaktionen in Online-Casinos, indem Sie die Einfachheit und Geschwindigkeit von mobilen Zahlungsmethoden nutzen. Halten Sie sich über Ihre verfügbaren Optionen auf dem Laufenden, um die beste Passform für Ihren geografischen Standort und Ihre bevorzugte Währung auszuwählen und so eine mühelose Spielerfahrung zu gewährleisten.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Top Online Casinos, die MuchBetter-Transaktionen im Jahr 2024 unterstützen",
@@ -3000,7 +3100,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Top-bewertete Online-Casinos, die Neosurf-Transaktionen für 2024 unterstützen",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "Auf der Suche nach einem Online-Casino, das mit Neosurf-Zahlungen kompatibel ist? Durchsuchen Sie unsere sorgfältig ausgewählte Auswahl an Neosurf-freundlichen Casinos, tauchen Sie in unsere ausführlichen Bewertungen ein und finden Sie die ideale Plattform für Sie.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Top Online Casinos, die Neteller-Transaktionen im Jahr 2024 unterstützen",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Verzeichnis von Online-Casinos, die mit Neteller-Zahlungen kompatibel sind. ✅ Ausführliche Bewertungen von topbon.us. ✅ Entdecken Sie Ihr ideales Neteller-freundliches Casino.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Verzeichnis von Online-Casinos, die mit Neteller-Zahlungen kompatibel sind. ✅ Ausführliche Bewertungen von XXXCasinoGuru. ✅ Entdecken Sie Ihr ideales Neteller-freundliches Casino.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Führende Online-Casinos, die PayPal-Zahlungen im Jahr 2024 akzeptieren",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Schauen Sie sich unsere umfassende Liste der bestbewerteten Casinos an, die PayPal akzeptieren - eine schnelle und sichere Option für Ein- und Auszahlungen. Diese Zahlungsmethode ist bei globalen Online-Spielern beliebt und bietet Vorteile wie die Umgehung traditioneller Bankbeschränkungen und geografischer Einschränkungen. Wenn Sie noch kein PayPal-Konto haben, ist es einfach, eines einzurichten und Ihre Reise zu großen Gewinnen zu beginnen!",
                 "Top-Ranked Online Casino Platforms for 2024": "Top-bewertete Online-Casino-Plattformen für 2024",
@@ -3012,7 +3112,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Top Online Casinos, die Trustly-Transaktionen für 2024 unterstützen",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Auf der Suche nach Internet-Casinos, die Trustly-Zahlungen akzeptieren? Durchsuchen Sie unsere sorgfältig zusammengestellte Liste und detaillierte Bewertungen, um das für Sie am besten geeignete Trustly-kompatible Casino zu entdecken.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Top-bewertete Online-Casinos, die Visa-Transaktionen im Jahr 2024 begrüßen",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interessiert an Spielen in einem Visa-freundlichen Casino? topbon.us ist hier, um Sie zu den vertrauenswürdigsten Casinos zu führen, die Visa für sicheres Glücksspiel akzeptieren.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interessiert an Spielen in einem Visa-freundlichen Casino? XXXCasinoGuru ist hier, um Sie zu den vertrauenswürdigsten Casinos zu führen, die Visa für sicheres Glücksspiel akzeptieren.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Die Kluft zwischen traditionellen und Online-Casinos mit klassischen Spieltiteln überbrücken",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic entwickelt digitale Spiele, die ihre realen Versionen sowohl in Ästhetik als auch in Erzählung widerspiegeln. Diese einzigartige Strategie fesselt Spieler, die den traditionsreichen Casinovibe mögen. Mit herausragenden Spielen wie Hot Fruits 100, Allways Hot Fruits, Book Of Aztec und Lucky Joker 10 bietet Amatic ein unvergleichliches Unterhaltungserlebnis für Casino-Liebhaber.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Zwei Jahrzehnte Gaming-Exzellenz: Erkundung des innovativen Portfolios von Amusnet Interactive",
@@ -3085,7 +3185,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Ihre Registrierung abgeschlossen, erste Einzahlung erwartet",
                 "Registration and First Deposit Not Completed": "Registrierung und erste Einzahlung nicht abgeschlossen",
                 "I’m Registered": "Ich bin registriert",
-                "Deposit Now": "Einzahlen Sie jetzt"
+                "Deposit Now": "Einzahlen Sie jetzt",
+                "Get $20": "Holen Sie sich 20 $",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Sie haben sich bereits hier registriert, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 $!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Tätigen Sie die erste Einzahlung bei einer der unten aufgeführten Marken und erhalten Sie bis zu 20 $!",
+                "Make First Deposit On One Of These Brands &": "Tätigen Sie die erste Einzahlung bei einer dieser Marken &",
+                "Get Up To $20 Right On Your Wallet!": "Erhalten Sie bis zu 20 $ direkt auf Ihr Portemonnaie!",
+                "Already Registered": "Bereits registriert",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wählen Sie ein Casino aus der Liste unten, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 USD Belohnung!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sie erhalten 50 Freispiele für jede Ersteinzahlung von unserer Website. Drehen Sie diese Spins und erhalten Sie bis zu 20 USD auf Ihrem Kryptowallet/PayPal. Um sich für Auszahlungen zu qualifizieren, stellen Sie sicher, dass Ihre erste Einzahlung mindestens Є25 oder dem Äquivalent in anderen Währungen beträgt und nach der Beantragung einer Auszahlung erfolgt ist.",
+                "You have successfully registered on these brands": "Sie haben sich erfolgreich bei diesen Marken registriert",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SIE SIND BEREITS HIER REGISTRIERT, MACHEN SIE IHRE ERSTEN EINZAHLUNGEN UND",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ERHALTEN SIE BIS ZU 500 EUR MIT SOFORTIGER AUSZAHLUNG",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ERHALTEN SIE ECHTES GELD MIT SOFORTIGER AUSZAHLUNG."
             }
         },
         bg: {
@@ -3232,9 +3345,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Най-високо класирани онлайн казина, поддържащи транзакции с EcoPayz за 2024 година",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Търсите водещи онлайн казина, които посрещат транзакции с ecoPayz? Изследвайте нашата подбрана селекция от премиум казина, които приемат ecoPayz, за да откриете перфектното за вас.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Най-добрите онлайн казина, приемащи плащания с Maestro за 2024 година",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Интересувате се от игри в онлайн казина, които приемат транзакции с Maestro? Нека topbon.us ви насочи към идеалното казино, което поддържа Maestro за вас.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Интересувате се от игри в онлайн казина, които приемат транзакции с Maestro? Нека XXXCasinoGuru ви насочи към идеалното казино, което поддържа Maestro за вас.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Най-добрите онлайн казина, които посрещат транзакции с Mastercard през 2024 г.",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Интересувате се от игри в казино, което приема Mastercard? topbon.us е тук, за да ви насочи към най-надеждните казина, които приемат Mastercard за сигурно залагане.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Интересувате се от игри в казино, което приема Mastercard? XXXCasinoGuru е тук, за да ви насочи към най-надеждните казина, които приемат Mastercard за сигурно залагане.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Водещи онлайн казина, които предпочитат мобилни плащания за безпроблемни транзакции през 2024 г.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Преживейте гладки финансови транзакции в онлайн казина, като използвате удобството и бързината на мобилните методи за плащане. Бъдете в крак с наличните ви възможности, за да изберете най-подходящото за вашето местоположение и предпочитана валута, гарантирайки безпроблемно пътуване в света на игрите.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Най-добрите онлайн казина, поддържащи транзакции с MuchBetter през 2024 г.",
@@ -3242,7 +3355,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Най-добрите онлайн казина, поддържащи транзакции с Neosurf за 2024 г.",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "В търсене на онлайн казино, съвместимо с плащания с Neosurf? Разгледайте нашата подбрана селекция от казина, които приемат Neosurf, прочетете нашите подробни ревюта и намерете идеалната платформа за вас.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Най-добрите онлайн казина, поддържащи транзакции с Neteller през 2024 г.",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Директория на онлайн казина, съвместими с плащания чрез Neteller. ✅ Подробни оценки от topbon.us. ✅ Открийте вашето идеално казино, което приема Neteller.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Директория на онлайн казина, съвместими с плащания чрез Neteller. ✅ Подробни оценки от XXXCasinoGuru. ✅ Открийте вашето идеално казино, което приема Neteller.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Водещите онлайн казина, приемащи плащания с PayPal през 2024 г.",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Проверете нашия изчерпателен списък с най-добрите казина, които приемат PayPal - бърза и сигурна опция за депозити и тегления. Този начин на плащане е популярен избор сред глобалните онлайн играчи, като предлага предимства като прескачане на традиционните банкови ограничения и географски ограничения. Ако вече нямате акаунт в PayPal, е лесно да създадете такъв и да започнете пътешествието си към големи печалби!",
                 "Top-Ranked Online Casino Platforms for 2024": "Най-добрите онлайн казино платформи за 2024 година",
@@ -3254,7 +3367,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Най-добрите онлайн казина, поддържащи транзакции чрез Trustly за 2024 г.",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Търсите интернет казина, които приемат плащания с Trustly? Разгледайте нашия подбран списък и подробни оценки, за да откриете най-подходящото казино, съвместимо с Trustly, за вас.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Най-добрите онлайн казина, които посрещат транзакции с Visa през 2024 г.",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Интересувате се от игри в казино, което приема Visa? topbon.us е тук, за да ви насочи към най-надеждните казина, които посрещат Visa за сигурно залагане.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Интересувате се от игри в казино, което приема Visa? XXXCasinoGuru е тук, за да ви насочи към най-надеждните казина, които посрещат Visa за сигурно залагане.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Свързване на разликата между традиционните и онлайн казина с класически игрови заглавия",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic създава цифрови игри, които отразяват своите реални версии както в естетиката, така и в разказа. Тази различна стратегия пленява играчите, които обичат класическата атмосфера на казиното. С изключителни игри като Hot Fruits 100, Allways Hot Fruits, Book Of Aztec и Lucky Joker 10, Amatic предлага неповторимо преживяване за любителите на казиното.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Две десетилетия от отличие в гейминга: Изследване на иновативния портфолио на Amusnet Interactive",
@@ -3327,7 +3440,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Вашата регистрация е завършена, очаква се първият депозит",
                 "Registration and First Deposit Not Completed": "Регистрация и първо депозиране не са завършени",
                 "I’m Registered": "Аз съм регистриран",
-                "Deposit Now": "Депозирай сега"
+                "Deposit Now": "Депозирай сега",
+                "Get $20": "Вземи $20",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Вече сте се регистрирали тук, направете първи депозит и вземете до $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Направете първия депозит в една от марките по-долу и получете до 20 долара!",
+                "Make First Deposit On One Of These Brands &": "Направете първия депозит в една от тези марки &",
+                "Get Up To $20 Right On Your Wallet!": "Вземете до $20 директно във вашата портмоне!",
+                "Already Registered": "Вече регистриран",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Изберете казино от списъка по-долу, направете първия си депозит и получете до 20 USD награда!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ще получите 50 безплатни завъртания за всеки първи депозит от нашия уебсайт. Завъртете тези завъртания и получете до 20 USD на вашия криптовалутен портфейл/PayPal. За да квалифицирате за изтегляне, се уверете, че първият ви депозит е поне Є25 или еквивалентът му в други валути и е направен след като сте поискали изтегляне.",
+                "You have successfully registered on these brands": "Вие успешно се регистрирахте в тези казина",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ВЕЧЕ СТЕ РЕГИСТРИРАНИ ТУК, НАПРАВЕТЕ ПЪРВИТЕ СИ ДЕПОЗИТИ И",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ПОЛУЧЕТЕ ДО 890 ЛВ. С МИГНОВЕНО ИЗТЕГЛЯНЕ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ПОЛУЧАЙТЕ РЕАЛНИ ПАРИ С НЕЗАБАВНО ТЕГЛЕНЕ"
             }
         },
         cz: {
@@ -3474,9 +3600,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Nejlépe hodnocená online kasina podporující transakce s EcoPayz pro rok 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Hledáte přední online kasina, která přijímají transakce pomocí ecoPayz? Objevte naši pečlivě vybranou selekci prémiových kasin přátelských k ecoPayz a najděte ten správný pro vás.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Nejlépe hodnocená online kasina přijímající platby Maestro pro rok 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Zajímá vás hraní v online kasinech, které přijímají transakce Maestro? Nechte topbon.us, aby vás dovedl k ideálnímu kasinu přátelskému k Maestru pro vás.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Zajímá vás hraní v online kasinech, které přijímají transakce Maestro? Nechte XXXCasinoGuru, aby vás dovedl k ideálnímu kasinu přátelskému k Maestru pro vás.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Nejlépe hodnocená online kasina vítající transakce s Mastercardem v roce 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Zajímá vás hraní v kasinu přijímajícím Mastercard? topbon.us vám pomůže najít nejspolehlivější kasina, která přijímají Mastercard pro bezpečné hraní.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Zajímá vás hraní v kasinu přijímajícím Mastercard? XXXCasinoGuru vám pomůže najít nejspolehlivější kasina, která přijímají Mastercard pro bezpečné hraní.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Přední online casina, která preferují mobilní platby pro plynulé transakce v roce 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Zkušenosti s plynulými finančními transakcemi v online kasinech můžete zlepšit využitím jednoduchosti a rychlosti mobilních platebních metod. Buďte v obraze ohledně dostupných možností a vyberte tu nejvhodnější pro vaši geografickou polohu a preferovanou měnu, zajistíte tak bezproblémový herní zážitek.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Nejlepší online casina podporující transakce pomocí MuchBetter v roce 2024",
@@ -3484,7 +3610,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Nejlepší online casina podporující transakce s Neosurfem pro rok 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "Vyhledáváte online kasino kompatibilní s platbami Neosurf? Procházejte naši pečlivě vybranou nabídku kasin přátelských k Neosurfu, prozkoumejte naše podrobné recenze a najděte ideální platformu pro vás.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Nejlepší online casina podporující transakce pomocí Netelleru v roce 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Adresář online kasin kompatibilních s platbami pomocí Netelleru. ✅ Podrobné hodnocení od topbon.us. ✅ Objevte své ideální kasino přátelské k Netelleru.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Adresář online kasin kompatibilních s platbami pomocí Netelleru. ✅ Podrobné hodnocení od XXXCasinoGuru. ✅ Objevte své ideální kasino přátelské k Netelleru.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Přední online casina přijímající platby prostřednictvím PayPal v roce 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Podívejte se na naši komplexní seznam nejlépe hodnocených kasin, která přijímají PayPal - rychlou a bezpečnou možnost pro vklady i výběry. Tato platební metoda je oblíbenou volbou mezi globálními online hráči, nabízející výhody jako obejití tradičních bankovních omezení a geografických omezení. Pokud ještě nemáte účet PayPal, je snadné si jeden zřídit a začít svou cestu k velkým výhrám!",
                 "Top-Ranked Online Casino Platforms for 2024": "Nejlépe hodnocené online kasinové platformy pro rok 2024",
@@ -3496,7 +3622,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Nejlepší online casina podporující transakce Trustly pro rok 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Hledáte internetová kasina, která přijímají platby Trustly? Procházejte naši pečlivě vybraný seznam a podrobné recenze, abyste objevili nejvhodnější kasino kompatibilní s Trustly pro vás.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Nejlépe hodnocená online kasina vítající platební transakce Visa v roce 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Zajímá vás hraní v kasinu přijímajícím platby Visa? topbon.us vám pomůže najít nejspolehlivější kasina, která vítají Visa pro bezpečné hraní.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Zajímá vás hraní v kasinu přijímajícím platby Visa? XXXCasinoGuru vám pomůže najít nejspolehlivější kasina, která vítají Visa pro bezpečné hraní.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Překlenutí propasti mezi tradičními a online kasiny s klasickými herními tituly",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic vytváří digitální hry, které odrážejí své realistické verze jak v estetice, tak v naraci. Tato odlišná strategie poutá hráče, kteří mají rádi tradiční kasinovou atmosféru. S významnými hrami jako Hot Fruits 100, Allways Hot Fruits, Book Of Aztec a Lucky Joker 10, Amatic poskytuje nepřekonatelný zážitek zábavy pro nadšence kasin.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Dvě desetiletí herní excelence: Prozkoumání inovativního portfolia společnosti Amusnet Interactive",
@@ -3569,7 +3695,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Vaše registrace dokončena, první vklad očekáván",
                 "Registration and First Deposit Not Completed": "Registrace a první vklad nebyly dokončeny",
                 "I’m Registered": "Jsem registrován",
-                "Deposit Now": "Vložit nyní"
+                "Deposit Now": "Vložit nyní",
+                "Get $20": "Získejte 20 dolarů",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Již jste se zde zaregistrovali, proveďte první vklad a získejte až 20 $!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Proveďte první vklad na jednu značku níže a získejte až 20 $!",
+                "Make First Deposit On One Of These Brands &": "Proveďte první vklad na jednu z těchto značek &",
+                "Get Up To $20 Right On Your Wallet!": "Získejte až 20 $ přímo na svůj peněženku!",
+                "Already Registered": "Již registrován",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasino z níže uvedeného seznamu, proveďte svůj první vklad a získejte až 20 USD odměny!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 volných zatočení za každý první vklad z našich webových stránek. Roztočte tyto zatočení a získejte až 20 USD na svou kryptoměnovou peněženku/PayPal. Pro kvalifikaci k výběrům se ujistěte, že váš první vklad je minimálně 25 € nebo ekvivalent v jiných měnách a byl proveden požadováním výběru.",
+                "You have successfully registered on these brands": "Úspěšně jste se zaregistrovali na tyto značky",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JSTE JIŽ ZAREGISTROVÁNI ZDE, PROVEĎTE SVÉ PRVNÍ VLOŽENÍ A",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKEJTE AŽ 11200 KČ S OKAMŽITÝM VÝBĚREM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKEJTE SKUTEČNÉ PENÍZE S OKAMŽITÝM VÝBĚREM"
             }
         },
         dk: {
@@ -3716,9 +3855,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Toprangere online casinoer, der understøtter EcoPayz-transaktioner for 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Er du på udkig efter førende online casinoer, der byder velkommen til ecoPayz-transaktioner? Udforsk vores udvalgte udvalg af premium ecoPayz-venlige casinoer for at finde den perfekte match for dig.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Toprangere online casinoer, der accepterer Maestro-betalinger for 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Interesseret i at spille på online casinoer, der byder velkommen til Maestro-transaktioner? Lad topbon.us guide dig til det ideelle Maestro-venlige casino for dig.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Interesseret i at spille på online casinoer, der byder velkommen til Maestro-transaktioner? Lad XXXCasinoGuru guide dig til det ideelle Maestro-venlige casino for dig.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Top-vurderede online casinoer byder velkommen til Mastercard-transaktioner i 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interesseret i at spille på et casino, der accepterer Mastercard? topbon.us er her for at guide dig til de mest pålidelige casinoer, der byder velkommen til Mastercard for sikker gambling.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interesseret i at spille på et casino, der accepterer Mastercard? XXXCasinoGuru er her for at guide dig til de mest pålidelige casinoer, der byder velkommen til Mastercard for sikker gambling.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Førende online casinoer, der foretrækker mobilbetalinger for problemfri transaktioner i 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Oplev problemfrie finansielle transaktioner i online casinoer ved at udnytte lethed og hastighed af mobile betalingsmetoder. Hold dig opdateret om dine tilgængelige muligheder for at vælge den bedste løsning for din geografiske placering og foretrukne valuta, hvilket sikrer en ubesværet spiloplevelse.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Top Online Casinos, der understøtter MuchBetter-transaktioner i 2024",
@@ -3726,7 +3865,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Top-vurderede online casinoer, der understøtter Neosurf-transaktioner for 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "På jagt efter et online casino kompatibelt med Neosurf betalinger? Gennemse vores udvalgte udvalg af Neosurf-venlige casinoer, dykke ned i vores dybdegående anmeldelser, og finde den ideelle platform for dig.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Top Online Casinoer, der understøtter Neteller-transaktioner i 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Oversigt over online casinoer kompatible med Neteller betalinger. ✅ Dybdegående vurderinger af topbon.us. ✅ Opdag dit ideelle Neteller-venlige casino.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Oversigt over online casinoer kompatible med Neteller betalinger. ✅ Dybdegående vurderinger af XXXCasinoGuru. ✅ Opdag dit ideelle Neteller-venlige casino.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Førende online casinoer, der accepterer PayPal-betalinger i 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Tjek vores omfattende liste over topkarakter kasinoer, der accepterer PayPal - en hurtig og sikker mulighed for både indskud og udbetalinger. Denne betalingsmetode er et populært valg blandt globale online spillere og tilbyder fordele som at omgå traditionelle bankbegrænsninger og geografiske begrænsninger. Hvis du ikke allerede har en PayPal-konto, er det nemt at oprette en og starte din rejse mod store gevinster!",
                 "Top-Ranked Online Casino Platforms for 2024": "Toprangere Online Casino Platforme for 2024",
@@ -3738,7 +3877,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Top Online Casinoer, der understøtter Trustly-transaktioner for 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Leder du efter internetcasinoer, der byder velkommen til Trustly-betalinger? Gennemse vores udvalgte liste og dybdegående evalueringer for at finde det mest passende Trustly-kompatible casino for dig.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Top-vurderede online casinoer byder velkommen til Visa-transaktioner i 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interesseret i at spille på et Visa-venligt casino? topbon.us er her for at guide dig til de mest pålidelige casinoer, der byder velkommen til Visa for sikker gambling.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interesseret i at spille på et Visa-venligt casino? XXXCasinoGuru er her for at guide dig til de mest pålidelige casinoer, der byder velkommen til Visa for sikker gambling.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Broen mellem traditionelle og online casinoer med klassiske spiltitler",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic skaber digitale spil, der afspejler deres virkelige versioner både æstetisk og narrativt. Denne distinkte strategi fanger spillere, der er glade for den traditionsrige casinostemning. Med fremragende spil som Hot Fruits 100, Allways Hot Fruits, Book Of Aztec og Lucky Joker 10, tilbyder Amatic en uovertruffen underholdningsoplevelse for casinofans.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "To Årtier af Spil Excellence: Udforskning af Amusnet Interaktive's Innovative Portefølje",
@@ -3811,7 +3950,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Din registrering er fuldført, første indbetaling afventes",
                 "Registration and First Deposit Not Completed": "Tilmelding og første indbetaling ikke fuldført",
                 "I’m Registered": "Jeg er registreret",
-                "Deposit Now": "Indsæt nu"
+                "Deposit Now": "Indsæt nu",
+                "Get $20": "Få 20 dollars",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Du har allerede foretaget registrering her, lav første indbetaling og få op til $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Foretag første indbetaling på et af nedenstående mærker og få op til $20!",
+                "Make First Deposit On One Of These Brands &": "Foretag første indbetaling på en af disse mærker &",
+                "Get Up To $20 Right On Your Wallet!": "Få op til $20 lige på din tegnebog!",
+                "Already Registered": "Allerede registreret",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vælg et casino fra listen nedenfor, foretag dit første indskud og modtag op til 20 USD i belønninger!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratis spins for hver første indbetaling fra vores hjemmeside. Spil disse spins og få op til 20 USD på din kryptopung/PayPal. For at kvalificere dig til udbetalinger, skal du sikre dig, at din første indbetaling er på mindst Є25 eller tilsvarende i andre valutaer og blev foretaget efter anmodning om en udbetaling.",
+                "You have successfully registered on these brands": "Du har succesfuldt registreret dig på disse mærker",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERET HER, LAV DINE FØRSTE INDBETALINGER OG",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MODTAG OP TIL 3400 DKK MED ØJEBLIKKELIG UDBETALING",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MODTAG RIGTIGE PENGE MED ØJEBLIKKELIG UDBETALING."
             }
         },
         nl: {
@@ -3958,9 +4110,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Top gerangschikte online casino's die EcoPayz-transacties ondersteunen voor 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Op zoek naar toonaangevende online casino's die ecoPayz-transacties accepteren? Verken onze samengestelde selectie van premium ecoPayz-vriendelijke casino's om de perfecte match voor jou te ontdekken.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Top-beoordeelde online casino's die Maestro-betalingen accepteren voor 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Geïnteresseerd in gokken bij online casino's die Maestro-transacties accepteren? Laat topbon.us je naar het ideale Maestro-vriendelijke casino leiden voor jou.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Geïnteresseerd in gokken bij online casino's die Maestro-transacties accepteren? Laat XXXCasinoGuru je naar het ideale Maestro-vriendelijke casino leiden voor jou.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Top-beoordeelde online casino's die Mastercard-transacties verwelkomen in 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Geïnteresseerd in gokken bij een casino dat Mastercard accepteert? topbon.us staat klaar om je te begeleiden naar de meest betrouwbare casino's die Mastercard accepteren voor veilig gokken.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Geïnteresseerd in gokken bij een casino dat Mastercard accepteert? XXXCasinoGuru staat klaar om je te begeleiden naar de meest betrouwbare casino's die Mastercard accepteren voor veilig gokken.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Toonaangevende online casino's die de voorkeur geven aan mobiele betalingen voor naadloze transacties in 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Ervaar soepele financiële transacties in online casino's door gebruik te maken van het gemak en de snelheid van mobiele betaalmethoden. Blijf op de hoogte van uw beschikbare opties om de beste keuze te maken voor uw geografische locatie en voorkeursvaluta, zodat u een moeiteloze game-ervaring heeft.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Top Online Casino's die MuchBetter Transacties ondersteunen in 2024",
@@ -3968,7 +4120,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Top-beoordeelde online casino's die Neosurf-transacties ondersteunen voor 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "Op zoek naar een online casino dat compatibel is met Neosurf-betalingen? Blader door onze samengestelde selectie van Neosurf-vriendelijke casino's, duik in onze diepgaande reviews en vind het ideale platform voor jou.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Top Online Casino's die Neteller-transacties ondersteunen in 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Overzicht van online casino's die compatibel zijn met Neteller-betalingen. ✅ Diepgaande beoordelingen door topbon.us. ✅ Ontdek jouw ideale Neteller-vriendelijke casino.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Overzicht van online casino's die compatibel zijn met Neteller-betalingen. ✅ Diepgaande beoordelingen door XXXCasinoGuru. ✅ Ontdek jouw ideale Neteller-vriendelijke casino.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Vooraanstaande online casino's die PayPal-betalingen accepteren in 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Bekijk onze uitgebreide lijst van top beoordeelde casino's die PayPal accepteren - een snelle en veilige optie voor zowel stortingen als opnames. Deze betaalmethode is een populaire keuze onder wereldwijde online spelers, met voordelen zoals het omzeilen van traditionele bankbeperkingen en geografische beperkingen. Als je nog geen PayPal-account hebt, is het eenvoudig om er een aan te maken en je reis naar grote winsten te beginnen!",
                 "Top-Ranked Online Casino Platforms for 2024": "Topranglijst Online Casino Platforms voor 2024",
@@ -3980,7 +4132,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Top Online Casino's die Trustly-transacties ondersteunen voor 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Op zoek naar internetcasino's die Trustly-betalingen accepteren? Blader door onze samengestelde lijst en diepgaande evaluaties om het meest geschikte Trustly-compatibele casino voor jou te ontdekken.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Top-beoordeelde online casino's die Visa-transacties verwelkomen in 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Geïnteresseerd in gokken bij een Visa-vriendelijk casino? topbon.us is hier om je te begeleiden naar de meest betrouwbare casino's die Visa accepteren voor veilig gokken.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Geïnteresseerd in gokken bij een Visa-vriendelijk casino? XXXCasinoGuru is hier om je te begeleiden naar de meest betrouwbare casino's die Visa accepteren voor veilig gokken.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Het overbruggen van de kloof tussen traditionele en online casino's met klassieke spel titels",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic maakt digitale spellen die hun real-world versies weerspiegelen in zowel esthetiek als verhaal. Deze onderscheidende strategie boeit spelers die dol zijn op de tijdloze casinovibe. Met opvallende spellen zoals Hot Fruits 100, Allways Hot Fruits, Book Of Aztec en Lucky Joker 10, biedt Amatic een ongeëvenaarde entertainmentervaring voor casinoliefhebbers.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Twee decennia van game-uitmuntendheid: Het verkennen van het innovatieve portfolio van Amusnet Interactive",
@@ -4053,7 +4205,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Uw registratie is voltooid, eerste storting verwacht",
                 "Registration and First Deposit Not Completed": "Registratie en eerste storting niet voltooid",
                 "I’m Registered": "Ik ben geregistreerd",
-                "Deposit Now": "Stort nu"
+                "Deposit Now": "Stort nu",
+                "Get $20": "Ontvang $20",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Je hebt je hier al geregistreerd, maak een eerste storting en ontvang tot $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Maak een eerste storting op een van de onderstaande merken en ontvang tot $20!",
+                "Make First Deposit On One Of These Brands &": "Maak een eerste storting op een van deze merken &",
+                "Get Up To $20 Right On Your Wallet!": "Krijg tot $20 rechtstreeks op je portemonnee!",
+                "Already Registered": "Al geregistreerd",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecteer een casino uit de onderstaande lijst, maak je eerste storting en ontvang tot 20 USD aan beloningen!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Je krijgt 50 gratis spins voor elke eerste storting vanaf onze website. Draai deze spins en krijg tot 20 USD op je crypto wallet/PayPal. Om in aanmerking te komen voor opnames, zorg ervoor dat je eerste storting minstens Є25 is of het equivalent in andere valuta en is gedaan na het aanvragen van een opname.",
+                "You have successfully registered on these brands": "Je hebt succesvol geregistreerd op deze merken",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JE BENT AL GEREGISTREERD HIER, MAAK JE EERSTE STORTINGEN EN",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ONTVANG TOT 500 EURO MET ONMIDDELLIJKE OPNAME",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ONTVANG ECHT GELD MET ONMIDDELLIJKE OPNAME"
             }
         },
         es: {
@@ -4200,9 +4365,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Principales casinos en línea que admiten transacciones con EcoPayz para 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "¿Buscas los principales casinos en línea que aceptan transacciones con ecoPayz? Explora nuestra selección cuidadosamente elegida de casinos amigables con ecoPayz para descubrir la opción perfecta para ti.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Los mejores casinos en línea que aceptan pagos con Maestro para el 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "¿Interesado en jugar en casinos en línea que acepten transacciones con Maestro? Deja que topbon.us te guíe hacia el casino Maestro ideal para ti.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "¿Interesado en jugar en casinos en línea que acepten transacciones con Maestro? Deja que XXXCasinoGuru te guíe hacia el casino Maestro ideal para ti.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Los mejores casinos en línea que aceptarán transacciones con Mastercard en 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "¿Interesado en jugar en un casino amigable con Mastercard? topbon.us está aquí para guiarte hacia los casinos más confiables que aceptan Mastercard para un juego seguro.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "¿Interesado en jugar en un casino amigable con Mastercard? XXXCasinoGuru está aquí para guiarte hacia los casinos más confiables que aceptan Mastercard para un juego seguro.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Principales casinos en línea que favorecen los pagos móviles para transacciones sin problemas en 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Experimenta transacciones financieras fluidas en casinos en línea aprovechando la facilidad y rapidez de los métodos de pago móvil. Mantente al tanto de tus opciones disponibles para elegir la mejor opción para tu ubicación geográfica y moneda preferida, asegurando un viaje de juego sin esfuerzo.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Principales casinos en línea que admiten transacciones MuchBetter en 2024",
@@ -4210,7 +4375,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Los mejores casinos en línea que admiten transacciones con Neosurf para 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "¿En busca de un casino en línea compatible con pagos Neosurf? Explore nuestra selección cuidadosamente seleccionada de casinos amigables con Neosurf, profundice en nuestras reseñas detalladas y encuentre la plataforma ideal para usted.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Principales casinos en línea que admiten transacciones con Neteller en 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Directorio de casinos en línea compatibles con pagos de Neteller. ✅ Evaluaciones detalladas por topbon.us. ✅ Descubre tu casino ideal compatible con Neteller.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Directorio de casinos en línea compatibles con pagos de Neteller. ✅ Evaluaciones detalladas por XXXCasinoGuru. ✅ Descubre tu casino ideal compatible con Neteller.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Principales casinos en línea que aceptan pagos con PayPal en 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Echa un vistazo a nuestra lista completa de casinos de alta calificación que aceptan PayPal, una opción rápida y segura tanto para depósitos como para retiros. Este método de pago es una elección popular entre los jugadores en línea a nivel mundial, ofreciendo ventajas como evitar las limitaciones bancarias tradicionales y geográficas. Si aún no tienes una cuenta de PayPal, es fácil crear una y comenzar tu camino hacia grandes ganancias.",
                 "Top-Ranked Online Casino Platforms for 2024": "Plataformas de casino en línea mejor valoradas para 2024",
@@ -4222,7 +4387,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Principales casinos en línea que admiten transacciones con Trustly para 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "¿Buscando casinos en línea que acepten pagos con Trustly? Explore nuestra lista seleccionada y evaluaciones detalladas para descubrir el casino compatible con Trustly más adecuado para ti.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Los casinos en línea mejor valorados que aceptarán transacciones con Visa en 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "¿Interesado en jugar en un casino que acepte Visa? topbon.us está aquí para guiarte hacia los casinos más confiables que aceptan Visa para un juego seguro.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "¿Interesado en jugar en un casino que acepte Visa? XXXCasinoGuru está aquí para guiarte hacia los casinos más confiables que aceptan Visa para un juego seguro.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Acortando la brecha entre los casinos tradicionales y en línea con títulos de juegos clásicos",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic crea juegos digitales que reflejan sus versiones del mundo real tanto en estética como en narrativa. Esta estrategia distintiva cautiva a los jugadores aficionados a la atmósfera de casino tradicional. Con juegos destacados como Hot Fruits 100, Allways Hot Fruits, Book Of Aztec y Lucky Joker 10, Amatic ofrece una experiencia de entretenimiento incomparable para los aficionados al casino.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Dos décadas de excelencia en juegos: Explorando el innovador portafolio de Amusnet Interactive",
@@ -4295,7 +4460,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Tu registro se ha completado, se espera el primer depósito",
                 "Registration and First Deposit Not Completed": "Inscripción y primer depósito no completados",
                 "I’m Registered": "Estoy registrado",
-                "Deposit Now": "Depositar ahora"
+                "Deposit Now": "Depositar ahora",
+                "Get $20": "Obtener $20",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Ya te registraste aquí, ¡haz tu primer depósito y obtén hasta $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "¡Realiza tu primer depósito en una de las marcas a continuación y obtén hasta $20!",
+                "Make First Deposit On One Of These Brands &": "Realiza el primer depósito en una de estas marcas &",
+                "Get Up To $20 Right On Your Wallet!": "¡Obtén hasta $20 directamente en tu billetera!",
+                "Already Registered": "Ya registrado",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "¡Selecciona un casino de la lista a continuación, realiza tu primer depósito y recibe hasta 20 USD en recompensas!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Recibirás 50 giros gratis por cada primer depósito desde nuestro sitio web. Gira estos giros y obtén hasta 20 USD en tu billetera de criptomonedas/PayPal. Para calificar para retiros, asegúrate de que tu primer depósito sea de al menos Є25 o su equivalente en otras monedas y se haya realizado después de solicitar un retiro.",
+                "You have successfully registered on these brands": "Te has registrado con éxito en estas marcas",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YA ESTÁS REGISTRADO AQUÍ, REALIZA TUS PRIMEROS DEPÓSITOS Y",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECIBE HASTA 500 EUR CON RETIRO INSTANTÁNEO",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECIBE DINERO REAL CON RETIRO INSTANTÁNEO"
             }
         },
         fi: {
@@ -4442,9 +4620,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Parhaiten sijoittuneet verkkokasinot, jotka tukevat EcoPayz-transaktioita vuodelle 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Etsitkö johtavia verkkokasinoita, jotka ottavat vastaan ecoPayz-tapahtumia? Tutustu kuratoituun valikoimaamme premium ecoPayz-yhteensopivia kasinoita löytääksesi täydellisen vaihtoehdon sinulle.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Parhaiten arvioidut verkkokasinot hyväksyvät Maestro-maksut vuodelle 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Kiinnostunut pelaamisesta verkko kasinoilla, jotka hyväksyvät Maestro-maksut? Anna topbon.usn ohjata sinut sopivaan Maestro-ystävälliseen kasinoon.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Kiinnostunut pelaamisesta verkko kasinoilla, jotka hyväksyvät Maestro-maksut? Anna XXXCasinoGurun ohjata sinut sopivaan Maestro-ystävälliseen kasinoon.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Parhaiten arvioidut verkkokasinot, jotka ottavat vastaan Mastercard-tapahtumia vuonna 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Kiinnostunut pelaamisesta Mastercard-ystävällisessä kasinossa? topbon.us on täällä opastamassa sinua luotettavimpiin kasinoihin, jotka toivottavat Mastercardin tervetulleeksi turvalliseen pelaamiseen.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Kiinnostunut pelaamisesta Mastercard-ystävällisessä kasinossa? XXXCasinoGuru on täällä opastamassa sinua luotettavimpiin kasinoihin, jotka toivottavat Mastercardin tervetulleeksi turvalliseen pelaamiseen.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Johtavat verkkokasinot, jotka suosivat mobiilimaksuja saumattomien tapahtumien vuoksi vuonna 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Nauti sujuvista rahansiirroista online-kasinoilla hyödyntämällä mobiilimaksutapojen helppoutta ja nopeutta. Pysy ajan tasalla saatavilla olevista vaihtoehdoista valitaksesi parhaiten sopivan maantieteellisen sijaintisi ja haluamasi valuutan mukaan, varmistaen vaivattoman pelikokemuksen.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Parhaat verkkokasinot, jotka tukevat MuchBetter-transaktioita vuonna 2024",
@@ -4452,7 +4630,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Parhaiten arvioidut verkkokasinot, jotka tukevat Neosurf-tapahtumia vuodelle 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "Etsitkö nettikasinoa, joka tukee Neosurf-maksuja? Selaa kuratoitua valikoimaamme Neosurf-yhteensopivia kasinoita, tutustu perusteellisiin arvosteluihimme ja löydä sinulle sopiva alusta.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Parhaat verkkokasinot, jotka tukevat Neteller-transaktioita vuonna 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Luettelo Neteller-maksuja tukevista verkkokasinoista. ✅ Perusteelliset arvioinnit topbon.uslta. ✅ Löydä täydellinen Neteller-yhteensopiva kasino.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Luettelo Neteller-maksuja tukevista verkkokasinoista. ✅ Perusteelliset arvioinnit XXXCasinoGurulta. ✅ Löydä täydellinen Neteller-yhteensopiva kasino.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Johtavat verkkokasinot hyväksyvät PayPal-maksut vuonna 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Tutustu kattavaan luetteloomme parhaista kasinoista, jotka hyväksyvät PayPalin - nopea ja turvallinen vaihtoehto sekä talletuksiin että nostoihin. Tämä maksutapa on suosittu valinta maailmanlaajuisten verkkopelaajien keskuudessa, tarjoten etuja kuten perinteisten pankkien rajoitusten ja maantieteellisten rajoitusten ohittamisen. Jos sinulla ei vielä ole PayPal-tiliä, sen perustaminen ja matkasi suuriin voittoihin on helppoa aloittaa!",
                 "Top-Ranked Online Casino Platforms for 2024": "Parhaat verkkokasinoiden alustat vuodelle 2024",
@@ -4464,7 +4642,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Parhaat verkkokasinot, jotka tukevat Trustly-maksuja vuodelle 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Etsitkö internet-kasinoita, jotka hyväksyvät Trustly-maksut? Selaa kuratoitua listaa ja syvällisiä arvosteluja löytääksesi sinulle sopivimman Trustly-yhteensopivan kasinon.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Parhaiten arvioidut verkkokasinot, jotka ottavat vastaan Visa-maksuja vuonna 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Kiinnostunut pelaamisesta Visa-ystävällisessä kasinossa? topbon.us on täällä opastamassa sinua luotettavimpiin kasinoihin, jotka toivottavat Visan tervetulleeksi turvalliseen pelaamiseen.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Kiinnostunut pelaamisesta Visa-ystävällisessä kasinossa? XXXCasinoGuru on täällä opastamassa sinua luotettavimpiin kasinoihin, jotka toivottavat Visan tervetulleeksi turvalliseen pelaamiseen.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Silta perinteisten ja verkkokasinoiden välillä klassisten pelien nimikkeillä",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic valmistaa digitaalisia pelejä, jotka heijastavat niiden todellisia versioita sekä esteettisesti että kerronnallisesti. Tämä erottuva strategia lumoaa pelaajat, jotka pitävät perinteisestä kasinotunnelmasta. Esitellen huippupelejä kuten Hot Fruits 100, Allways Hot Fruits, Book Of Aztec ja Lucky Joker 10, Amatic tarjoaa vertaansa vailla olevan viihdekokemuksen kasinoharrastajille.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Kahden vuosikymmenen pelien huippuosaaminen: Tutustuminen Amusnet Interactiven innovatiiviseen portfolioon",
@@ -4537,7 +4715,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Rekisteröintisi on valmis, odotetaan ensimmäistä talletusta",
                 "Registration and First Deposit Not Completed": "Rekisteröintiä ja ensimmäistä talletusta ei ole suoritettu",
                 "I’m Registered": "Olen rekisteröity",
-                "Deposit Now": "Talleta nyt"
+                "Deposit Now": "Talleta nyt",
+                "Get $20": "Saa 20 dollaria",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Olet jo rekisteröitynyt täällä, tee ensimmäinen talletus ja saat jopa 20 dollaria!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Tee ensimmäinen talletus yhdelle alla olevista brändeistä ja saat jopa 20 dollaria!",
+                "Make First Deposit On One Of These Brands &": "Tee ensimmäinen talletus yhdelle näistä brändeistä &",
+                "Get Up To $20 Right On Your Wallet!": "Saat jopa 20 dollaria suoraan lompakkoosi!",
+                "Already Registered": "Jo rekisteröitynyt",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Valitse kasino alla olevasta listasta, tee ensimmäinen talletuksesi ja saat jopa 20 USD palkintoina!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Saat 50 ilmaiskierrosta jokaisesta ensimmäisestä talletuksestasi verkkosivustoltamme. Pyöritä nämä kierrokset ja saat jopa 20 USD krypto lompakkoosi/PayPaliin. Jotta voit olla oikeutettu nostoihin, varmista että ensimmäinen talletuksesi on vähintään 25 euroa tai vastaava summa muissa valuutoissa ja se on tehty pyynnön jälkeen.",
+                "You have successfully registered on these brands": "Olet rekisteröitynyt näille brändeille onnistuneesti",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "OLET JO REKISTERÖITYNYT TÄHÄN, TEE ENSIMMÄISET TALLETUKSESI JA",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "SAAT JOPA 500 EURON NOPEALLA NOSTOLLA",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "SAAT OIKEAA RAHAA NOPEALLA NOSTOLLA"
             }
         },
         fr: {
@@ -4684,9 +4875,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Les casinos en ligne les mieux classés soutenant les transactions EcoPayz pour 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "À la recherche des principaux casinos en ligne qui acceptent les transactions ecoPayz ? Explorez notre sélection soigneusement choisie de casinos premium compatibles avec ecoPayz pour découvrir celui qui vous convient parfaitement.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Les meilleurs casinos en ligne acceptant les paiements Maestro pour 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Intéressé par les jeux de casino en ligne qui acceptent les transactions Maestro ? Laissez topbon.us vous guider vers le casino Maestro idéal pour vous.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Intéressé par les jeux de casino en ligne qui acceptent les transactions Maestro ? Laissez XXXCasinoGuru vous guider vers le casino Maestro idéal pour vous.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Les casinos en ligne les mieux notés accueillant les transactions Mastercard en 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Intéressé par les jeux de hasard dans un casino acceptant Mastercard ? topbon.us est là pour vous guider vers les casinos les plus fiables qui acceptent Mastercard pour un jeu sécurisé.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Intéressé par les jeux de hasard dans un casino acceptant Mastercard ? XXXCasinoGuru est là pour vous guider vers les casinos les plus fiables qui acceptent Mastercard pour un jeu sécurisé.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Principaux casinos en ligne qui favorisent les paiements mobiles pour des transactions fluides en 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Profitez de transactions financières fluides dans les casinos en ligne en tirant parti de la facilité et de la rapidité des méthodes de paiement mobiles. Restez informé de vos options disponibles pour choisir la meilleure solution pour votre emplacement géographique et votre devise préférée, garantissant un voyage de jeu sans effort.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Meilleurs casinos en ligne soutenant les transactions MuchBetter en 2024",
@@ -4694,7 +4885,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Les meilleurs casinos en ligne prenant en charge les transactions Neosurf pour 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "À la recherche d'un casino en ligne compatible avec les paiements Neosurf ? Parcourez notre sélection soigneusement choisie de casinos compatibles avec Neosurf, plongez dans nos critiques approfondies, et trouvez la plateforme idéale pour vous.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Meilleurs casinos en ligne soutenant les transactions Neteller en 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Répertoire des casinos en ligne compatibles avec les paiements Neteller. ✅ Évaluations approfondies par topbon.us. ✅ Découvrez votre casino idéal compatible avec Neteller.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Répertoire des casinos en ligne compatibles avec les paiements Neteller. ✅ Évaluations approfondies par XXXCasinoGuru. ✅ Découvrez votre casino idéal compatible avec Neteller.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Principaux casinos en ligne acceptant les paiements PayPal en 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Découvrez notre liste complète des meilleurs casinos qui acceptent PayPal - une option rapide et sécurisée pour les dépôts et les retraits. Cette méthode de paiement est un choix populaire parmi les joueurs en ligne du monde entier, offrant des avantages tels que contourner les contraintes bancaires traditionnelles et les limitations géographiques. Si vous n'avez pas encore de compte PayPal, il est simple d'en créer un et de commencer votre voyage vers de gros gains!",
                 "Top-Ranked Online Casino Platforms for 2024": "Plateformes de casino en ligne les mieux classées pour 2024",
@@ -4706,7 +4897,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Meilleurs casinos en ligne soutenant les transactions Trustly pour 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "À la recherche de casinos en ligne qui acceptent les paiements Trustly ? Parcourez notre liste sélectionnée et nos évaluations approfondies pour découvrir le casino compatible avec Trustly le plus adapté pour vous.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Les casinos en ligne les mieux notés accueillant les transactions Visa en 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Intéressé par les jeux dans un casino acceptant Visa ? topbon.us est là pour vous guider vers les casinos les plus fiables qui acceptent Visa pour un jeu sécurisé.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Intéressé par les jeux dans un casino acceptant Visa ? XXXCasinoGuru est là pour vous guider vers les casinos les plus fiables qui acceptent Visa pour un jeu sécurisé.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic : Combler le fossé entre les casinos traditionnels et en ligne avec des titres de jeux classiques",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic crée des jeux numériques qui reflètent leurs versions du monde réel à la fois en termes d'esthétique et de narration. Cette stratégie distincte captive les joueurs amateurs de l'ambiance de casino traditionnelle. Avec des jeux phares tels que Hot Fruits 100, Allways Hot Fruits, Book Of Aztec et Lucky Joker 10, Amatic offre une expérience de divertissement inégalée pour les passionnés de casino.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Deux décennies d'excellence dans le jeu : Exploration du portefeuille innovant d'Amusnet Interactive",
@@ -4779,7 +4970,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Votre inscription est terminée, premier dépôt attendu",
                 "Registration and First Deposit Not Completed": "Inscription et premier dépôt non complétés",
                 "I’m Registered": "Je suis inscrit",
-                "Deposit Now": "Effectuer un dépôt maintenant"
+                "Deposit Now": "Effectuer un dépôt maintenant",
+                "Get $20": "Obtenez 20 $",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Vous avez déjà fait une inscription ici, faites un premier dépôt et obtenez jusqu'à 20 $ !",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Effectuez un premier dépôt sur une des marques ci-dessous et obtenez jusqu'à 20 $ !",
+                "Make First Deposit On One Of These Brands &": "Effectuez un premier dépôt sur l'une de ces marques &",
+                "Get Up To $20 Right On Your Wallet!": "Recevez jusqu'à 20 $ directement sur votre portefeuille!",
+                "Already Registered": "Déjà inscrit",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Sélectionnez un casino dans la liste ci-dessous, effectuez votre premier dépôt et recevez jusqu'à 20 USD de récompenses!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Vous recevrez 50 tours gratuits pour chaque premier dépôt à partir de notre site Web. Faites tourner ces tours et obtenez jusqu'à 20 USD sur votre portefeuille crypto/PayPal. Pour être éligible aux retraits, assurez-vous que vos premiers dépôts sont d'au moins 25 € ou l'équivalent dans d'autres devises et ont été effectués après avoir demandé un retrait.",
+                "You have successfully registered on these brands": "Vous vous êtes inscrit avec succès sur ces marques",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOUS ÊTES DÉJÀ INSCRIT ICI, FAITES VOS PREMIERS DÉPÔTS ET",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEVEZ JUSQU'À 500 EUR AVEC RETRAIT INSTANTANÉ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEVEZ DE L'ARGENT RÉEL AVEC RETRAIT INSTANTANÉ"
             }
         },
         gr: {
@@ -4926,9 +5130,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Κορυφαία online καζίνο που υποστηρίζουν συναλλαγές EcoPayz για το 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Ψάχνετε για κορυφαία online καζίνο που καλωσορίζουν συναλλαγές με ecoPayz; Εξερευνήστε την επιλεγμένη μας συλλογή από premium καζίνο φιλικά προς το ecoPayz για να ανακαλύψετε το τέλειο για εσάς.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Κορυφαία online καζίνο που δέχονται πληρωμές με Maestro για το 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Ενδιαφέρεστε για παιχνίδια σε online καζίνο που δέχονται συναλλαγές Maestro; Αφήστε τον topbon.us να σας καθοδηγήσει στο ιδανικό καζίνο φιλικό προς τη Maestro για εσάς.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Ενδιαφέρεστε για παιχνίδια σε online καζίνο που δέχονται συναλλαγές Maestro; Αφήστε τον XXXCasinoGuru να σας καθοδηγήσει στο ιδανικό καζίνο φιλικό προς τη Maestro για εσάς.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Κορυφαία online καζίνο που καλωσορίζουν συναλλαγές Mastercard το 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Ενδιαφέρεστε για παιχνίδια σε ένα καζίνο φιλικό προς τη Mastercard; Το topbon.us είναι εδώ για να σας καθοδηγήσει προς τα πιο αξιόπιστα καζίνο που καλωσορίζουν τη Mastercard για ασφαλή τυχερά παιχνίδια.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Ενδιαφέρεστε για παιχνίδια σε ένα καζίνο φιλικό προς τη Mastercard; Το XXXCasinoGuru είναι εδώ για να σας καθοδηγήσει προς τα πιο αξιόπιστα καζίνο που καλωσορίζουν τη Mastercard για ασφαλή τυχερά παιχνίδια.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Κορυφαία online καζίνο που υποστηρίζουν τις κινητές πληρωμές για άνετες συναλλαγές το 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Βιώστε ομαλές χρηματοοικονομικές συναλλαγές στα online καζίνο εκμεταλλευόμενοι την ευκολία και την ταχύτητα των μεθόδων πληρωμής μέσω κινητού. Ενημερωθείτε για τις διαθέσιμες επιλογές σας για να επιλέξετε τον καλύτερο τρόπο πληρωμής για τη γεωγραφική σας τοποθεσία και το προτιμώμενο νόμισμα, εξασφαλίζοντας μια άνετη εμπειρία στο παιχνίδι.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Κορυφαία online καζίνο που υποστηρίζουν συναλλαγές με το MuchBetter το 2024",
@@ -4936,7 +5140,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Κορυφαία online καζίνο που υποστηρίζουν συναλλαγές με Neosurf για το 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "Ψάχνετε για ένα online καζίνο συμβατό με πληρωμές Neosurf; Περιηγηθείτε στην επιλεγμένη μας επιλογή καζίνο φιλικών προς το Neosurf, μελετήστε τις λεπτομερείς μας κριτικές και εντοπίστε την ιδανική πλατφόρμα για εσάς.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Κορυφαία online καζίνο που υποστηρίζουν συναλλαγές μέσω Neteller το 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Κατάλογος online καζίνο συμβατών με πληρωμές μέσω Neteller. ✅ Λεπτομερείς αξιολογήσεις από τον topbon.us. ✅ Ανακαλύψτε το ιδανικό καζίνο φιλικό προς το Neteller.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Κατάλογος online καζίνο συμβατών με πληρωμές μέσω Neteller. ✅ Λεπτομερείς αξιολογήσεις από τον XXXCasinoGuru. ✅ Ανακαλύψτε το ιδανικό καζίνο φιλικό προς το Neteller.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Κορυφαία online καζίνο που δέχονται πληρωμές μέσω PayPal το 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Ελέγξτε την πλήρη λίστα μας με τα κορυφαία καζίνο που δέχονται PayPal - μια γρήγορη και ασφαλής επιλογή τόσο για καταθέσεις όσο και για αναλήψεις. Αυτή η μέθοδος πληρωμής είναι μια δημοφιλής επιλογή μεταξύ παγκόσμιων online παικτών, προσφέροντας πλεονεκτήματα όπως η αποφυγή παραδοσιακών τραπεζικών περιορισμών και γεωγραφικών περιορισμών. Αν δεν έχετε ήδη ένα λογαριασμό PayPal, είναι εύκολο να δημιουργήσετε έναν και να ξεκινήσετε το ταξίδι σας προς μεγάλες νίκες!",
                 "Top-Ranked Online Casino Platforms for 2024": "Κορυφαίες online πλατφόρμες καζίνο για το 2024",
@@ -4948,7 +5152,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Κορυφαία online καζίνο που υποστηρίζουν συναλλαγές μέσω Trustly για το 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Ψάχνετε για διαδικτυακά καζίνο που δέχονται πληρωμές μέσω Trustly; Περιηγηθείτε στην επιμελώς επιλεγμένη μας λίστα και στις λεπτομερείς αξιολογήσεις για να βρείτε το πιο κατάλληλο καζίνο συμβατό με το Trustly για εσάς.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Κορυφαία online καζίνο που καλωσορίζουν συναλλαγές με Visa το 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Ενδιαφέρεστε για παιχνίδια σε ένα καζίνο φιλικό προς τη Visa; Το topbon.us είναι εδώ για να σας καθοδηγήσει προς τα πιο αξιόπιστα καζίνο που καλωσορίζουν τη Visa για ασφαλή τυχερά παιχνίδια.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Ενδιαφέρεστε για παιχνίδια σε ένα καζίνο φιλικό προς τη Visa; Το XXXCasinoGuru είναι εδώ για να σας καθοδηγήσει προς τα πιο αξιόπιστα καζίνο που καλωσορίζουν τη Visa για ασφαλή τυχερά παιχνίδια.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Γέφυρα μεταξύ Παραδοσιακών και Online Καζίνο με Κλασικούς Τίτλους Παιχνιδιών",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Η Amatic δημιουργεί ψηφιακά παιχνίδια που αντικατοπτρίζουν τις πραγματικές τους εκδοχές τόσο στην αισθητική όσο και στην αφήγηση. Αυτή η ξεχωριστή στρατηγική καθηλώνει τους παίκτες που λατρεύουν τον παραδοσιακό ρυθμό του καζίνο. Με εξαιρετικά παιχνίδια όπως το Hot Fruits 100, το Allways Hot Fruits, το Book Of Aztec και το Lucky Joker 10, η Amatic παρέχει μια ασυναγώνιστη εμπειρία ψυχαγωγίας για τους λάτρεις του καζίνο.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Δύο Δεκαετίες Αριστείας στον Κόσμο του Gaming: Εξερευνώντας το Καινοτόμο Χαρτοφυλάκιο της Amusnet Interactive",
@@ -5021,7 +5225,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Η εγγραφή σας ολοκληρώθηκε, πρώτη κατάθεση αναμένεται",
                 "Registration and First Deposit Not Completed": "Η εγγραφή και η πρώτη κατάθεση δεν ολοκληρώθηκαν",
                 "I’m Registered": "Είμαι εγγεγραμμένος",
-                "Deposit Now": "Κατάθεση τώρα"
+                "Deposit Now": "Κατάθεση τώρα",
+                "Get $20": "Λάβε $20",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Έχετε ήδη κάνει εγγραφή εδώ, κάντε την πρώτη κατάθεση και κερδίστε έως και $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Κάντε την πρώτη κατάθεση σε μια από τις παρακάτω μάρκες και κερδίστε μέχρι και $20!",
+                "Make First Deposit On One Of These Brands &": "Κάντε την πρώτη κατάθεση σε μία από αυτές τις εταιρείες &",
+                "Get Up To $20 Right On Your Wallet!": "Πάρτε μέχρι και $20 απευθείας στο πορτοφόλι σας!",
+                "Already Registered": "Ήδη Εγγεγραμμένος",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Επιλέξτε ένα καζίνο από τη λίστα παρακάτω, κάντε την πρώτη σας κατάθεση και λάβετε μέχρι και 20 USD σε ανταμοιβές!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Θα λάβετε 50 δωρεάν περιστροφές για κάθε Πρώτη Κατάθεση από την ιστοσελίδα μας. Περιστρέψτε αυτές τις περιστροφές και κερδίστε έως και 20 USD στο κρυπτονόμισμά σας/PayPal. Για να προκριθείτε για αναλήψεις, βεβαιωθείτε ότι η πρώτη κατάθεσή σας είναι τουλάχιστον €25 ή το αντίστοιχο σε άλλα νομίσματα και έγινε μετά από αίτηση ανάληψης.",
+                "You have successfully registered on these brands": "Έχετε εγγραφεί με επιτυχία σε αυτά τα καζίνο",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ΕΊΣΤΕ ΉΔΗ ΕΓΓΕΓΡΑΜΜΈΝΟΙ ΕΔΏ, ΚΆΝΤΕ ΤΙΣ ΠΡΏΤΕΣ ΣΑΣ ΚΑΤΑΘΈΣΕΙΣ ΚΑΙ",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ΛΑΒΕ ΜΕΧΡΙ 500 ΕΥΡΩ ΜΕ ΑΜΕΣΗ ΑΝΑΛΗΨΗ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ΛΑΜΒΆΝΕΤΕ ΠΡΑΓΜΑΤΙΚΆ ΧΡΗΜΑΤΑ ΜΕ ΆΜΕΣΗ ΑΝΑΛΗΨΗ"
             }
         },
         hu: {
@@ -5168,9 +5385,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "A 2024-ben támogatott legjobb online kaszinók az EcoPayz tranzakciókhoz",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Keresed a vezető online kaszinókat, amelyek fogadják az ecoPayz tranzakciókat? Fedezd fel válogatott választékunkat prémium ecoPayz-barát kaszinókból, hogy megtaláld a tökéleteset számodra.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "A legjobban értékelt online kaszinók elfogadják a Maestro fizetéseket 2024-re",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Érdekel a játék az online kaszinókban, amelyek fogadják a Maestro tranzakciókat? Hagyd, hogy az topbon.us elvezessen téged az ideális Maestro-barát kaszinóhoz.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Érdekel a játék az online kaszinókban, amelyek fogadják a Maestro tranzakciókat? Hagyd, hogy az XXXCasinoGuru elvezessen téged az ideális Maestro-barát kaszinóhoz.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "A legjobban értékelt online kaszinók, amelyek 2024-ben fogadják a Mastercard tranzakciókat",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Érdekel a játék egy olyan kaszinóban, amely elfogadja a Mastercardot? Az topbon.us itt van, hogy segítsen a legmegbízhatóbb kaszinók felkutatásában, amelyek biztonságos szerencsejátékot kínálnak Mastercard elfogadásával.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Érdekel a játék egy olyan kaszinóban, amely elfogadja a Mastercardot? Az XXXCasinoGuru itt van, hogy segítsen a legmegbízhatóbb kaszinók felkutatásában, amelyek biztonságos szerencsejátékot kínálnak Mastercard elfogadásával.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Az online kaszinók vezetői, amelyek támogatják a mobilfizetéseket a zökkenőmentes tranzakciók érdekében 2024-ben.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Tapasztald meg a zökkenőmentes pénzügyi tranzakciókat az online kaszinókban, kihasználva a mobil fizetési módszerek könnyűségét és sebességét. Tartsd magad naprakészen elérhető lehetőségeidről, hogy kiválaszthasd a legmegfelelőbbet földrajzi elhelyezkedésed és preferált valutád szerint, biztosítva ezzel egy könnyed játékutat.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "A 2024-ben a MuchBetter tranzakciókat támogató legjobb online kaszinók",
@@ -5178,7 +5395,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "A legjobban értékelt online kaszinók, amelyek támogatják a Neosurf tranzakciókat 2024-re",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "Keres egy online kaszinót, amely kompatibilis a Neosurf fizetésekkel? Böngéssze át válogatott Neosurf-barát kaszinóinkat, mélyreható véleményeinkbe merülve találja meg az Ön számára ideális platformot.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "A 2024-ben támogatott legjobb online kaszinók Neteller tranzakciókkal",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "A Neteller fizetéseket elfogadó online kaszinók könyvtára. ✅ A topbon.us által részletesen értékelt. ✅ Fedezze fel az ideális Neteller-barát kaszinóját.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "A Neteller fizetéseket elfogadó online kaszinók könyvtára. ✅ A XXXCasinoGuru által részletesen értékelt. ✅ Fedezze fel az ideális Neteller-barát kaszinóját.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "A vezető online kaszinók elfogadják a PayPal fizetéseket 2024-ben",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Nézze meg átfogó listánkat a legjobban értékelt kaszinókról, amelyek elfogadják a PayPal-t - egy gyors és biztonságos lehetőség mind a befizetésekre, mind a kifizetésekre. Ez a fizetési módszer népszerű választás a világ online játékosai körében, előnyökkel, mint a hagyományos banki korlátok és földrajzi korlátok elkerülése. Ha még nincs PayPal-fiókja, egyszerűen hozzon létre egyet, és kezdje el az utat a nagy nyeremények felé!",
                 "Top-Ranked Online Casino Platforms for 2024": "A legjobb online kaszinó platformok 2024-re",
@@ -5190,7 +5407,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "A 2024-ben támogatott Trustly tranzakciókat támogató legjobb online kaszinók",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Keres internetes kaszinókat, amelyek fogadnak Trustly fizetéseket? Böngéssze át válogatott listánkat és részletes értékeléseinket, hogy megtalálja a legmegfelelőbb Trustly-kompatibilis kaszinót Önnek.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "A legjobban értékelt online kaszinók üdvözlik a Visa tranzakciókat 2024-ben",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Érdekli a játék a Visa-barát kaszinókban? Az topbon.us itt van, hogy segítsen a legmegbízhatóbb kaszinók felkutatásában, amelyek fogadnak Visát a biztonságos szerencsejátékhoz.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Érdekli a játék a Visa-barát kaszinókban? Az XXXCasinoGuru itt van, hogy segítsen a legmegbízhatóbb kaszinók felkutatásában, amelyek fogadnak Visát a biztonságos szerencsejátékhoz.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Hidakat építve a hagyományos és online kaszinók között klasszikus játékcímekkel",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Az Amatic digitális játékokat készít, amelyek megidézik a valódi világ változatait mind esztétikailag, mind narratív szempontból. Ez a megkülönböztető stratégia lebilincseli az időtlen kaszinó hangulatát kedvelő játékosokat. Az Amatic olyan kiemelkedő játékokat kínál, mint a Hot Fruits 100, az Allways Hot Fruits, a Book Of Aztec és a Lucky Joker 10, amelyek páratlan szórakozási élményt nyújtanak a kaszinó rajongóinak.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Két évtized játék kiválósága: Az Amusnet Interactive innovatív portfóliójának felfedezése",
@@ -5263,7 +5480,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "A regisztrációja befejeződött, az első befizetés várakozik",
                 "Registration and First Deposit Not Completed": "A regisztráció és az első befizetés nem lett befejezve",
                 "I’m Registered": "Regisztrált vagyok",
-                "Deposit Now": "Letét most"
+                "Deposit Now": "Letét most",
+                "Get $20": "Kapj 20 dollárt",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Már regisztráltál itt, végezz első befizetést és akár 20 dollárt kapj!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Hajtsa végre az első befizetést az alábbi egyik márkánál, és akár 20 dollárt kapjon!",
+                "Make First Deposit On One Of These Brands &": "Hajtsa végre az első befizetést az egyik ilyen márka esetében &",
+                "Get Up To $20 Right On Your Wallet!": "Akár 20 dollárt is kapj a pénztárcádba!",
+                "Already Registered": "Már regisztrált",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Válasszon egy kaszinót az alábbi listából, végezze el az első befizetését, és akár 20 USD jutalmat kapjon!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ingyenes 50 pörgetést kapsz minden első befizetésért a weboldalunkról. Pörgetsd ezeket a pörgetéseket, és akár 20 USD is kaphatsz a kriptopénz tárcádon/PayPal számládon. A kifizetésekhez való jogosultsághoz biztosítsd, hogy az első befizetés legalább 25 euró vagy annak megfelelője más devizákon, és azt a kifizetés kérése után végezted.",
+                "You have successfully registered on these brands": "Sikeresen regisztrált ezeken a márkákon",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "MÁR REGISZTRÁLTÁL ITT, KEZD EL AZ ELSŐ BEFIZETÉSEIDET ÉS",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "AKÁR 184060 HUF-OT IS KAPHAT AZONNALI KIFIZETÉSSEL",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "VALÓDI PÉNZT KAPJ AZ AZONNALI KIFIZETÉSSEL"
             }
         },
         it: {
@@ -5410,9 +5640,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "I Migliori Casinò Online Classificati che Supportano Transazioni EcoPayz per il 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Stai cercando i principali casinò online che accettano transazioni ecoPayz? Esplora la nostra selezione curata di casinò ecoPayz-friendly premium per scoprire la soluzione perfetta per te.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "I Migliori Casinò Online che Accettano Pagamenti con Maestro per il 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Interessato a giocare nei casinò online che accettano transazioni con Maestro? Lascia che topbon.us ti guidi verso il casinò Maestro-friendly ideale per te.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Interessato a giocare nei casinò online che accettano transazioni con Maestro? Lascia che XXXCasinoGuru ti guidi verso il casinò Maestro-friendly ideale per te.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "I Migliori Casinò Online che Accettano Transazioni con Mastercard nel 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interessato a giocare in un casinò Mastercard-friendly? topbon.us è qui per guidarti verso i casinò più affidabili che accettano Mastercard per un gioco sicuro.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interessato a giocare in un casinò Mastercard-friendly? XXXCasinoGuru è qui per guidarti verso i casinò più affidabili che accettano Mastercard per un gioco sicuro.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "I principali casinò online che favoriscono i pagamenti mobili per transazioni senza soluzione di continuità nel 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Sperimenta transazioni finanziarie fluide nei casinò online sfruttando la facilità e la velocità dei metodi di pagamento mobile. Resta aggiornato sulle opzioni disponibili per scegliere la soluzione migliore per la tua posizione geografica e la tua valuta preferita, garantendo un viaggio di gioco senza sforzi.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "I migliori casinò online che supportano transazioni MuchBetter nel 2024",
@@ -5420,7 +5650,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "I migliori casinò online che supportano transazioni Neosurf per il 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "Sei alla ricerca di un casinò online compatibile con i pagamenti Neosurf? Sfoglia la nostra selezione curata di casinò amici di Neosurf, approfondisci le nostre recensioni dettagliate e individua la piattaforma ideale per te.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "I migliori casinò online che supportano transazioni Neteller nel 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Directory di casinò online compatibili con pagamenti Neteller. ✅ Valutazioni approfondite da topbon.us. ✅ Scopri il tuo casinò Neteller-friendly ideale.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Directory di casinò online compatibili con pagamenti Neteller. ✅ Valutazioni approfondite da XXXCasinoGuru. ✅ Scopri il tuo casinò Neteller-friendly ideale.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "I principali casinò online che accettano pagamenti PayPal nel 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Scopri la nostra esaustiva lista dei casinò più votati che accettano PayPal: una opzione rapida e sicura sia per depositi che prelievi. Questo metodo di pagamento è una scelta popolare tra i giocatori online globali, offrendo vantaggi come il superamento dei vincoli bancari tradizionali e delle limitazioni geografiche. Se non hai ancora un account PayPal, è semplice crearne uno e iniziare il tuo viaggio verso grandi vincite!",
                 "Top-Ranked Online Casino Platforms for 2024": "Piattaforme di casinò online classificate al top per il 2024",
@@ -5432,7 +5662,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "I migliori casinò online che supportano transazioni Trustly per il 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Stai cercando casinò su internet che accettano pagamenti con Trustly? Sfoglia la nostra lista selezionata e le valutazioni approfondite per scoprire il casinò compatibile con Trustly più adatto a te.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "I migliori casinò online accolgono transazioni Visa nel 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interessato a giocare in un casinò che accetta Visa? topbon.us è qui per guidarti verso i casinò più affidabili che accolgono Visa per un gioco sicuro.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interessato a giocare in un casinò che accetta Visa? XXXCasinoGuru è qui per guidarti verso i casinò più affidabili che accolgono Visa per un gioco sicuro.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Colmare il divario tra casinò tradizionali e online con titoli di giochi classici",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic crea giochi digitali che riflettono le loro versioni reali sia nell'estetica che nella narrazione. Questa strategia distintiva affascina i giocatori amanti dell'atmosfera classica del casinò. Con giochi eccezionali come Hot Fruits 100, Allways Hot Fruits, Book Of Aztec e Lucky Joker 10, Amatic offre un'esperienza di intrattenimento senza pari per gli appassionati di casinò.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Due decenni di eccellenza nel gioco: esplorando il portafoglio innovativo di Amusnet Interactive",
@@ -5505,7 +5735,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "La tua registrazione è stata completata, primo deposito in attesa",
                 "Registration and First Deposit Not Completed": "Registrazione e primo deposito non completati",
                 "I’m Registered": "Sono registrato",
-                "Deposit Now": "Fai un deposito ora"
+                "Deposit Now": "Fai un deposito ora",
+                "Get $20": "Ottieni 20 dollari",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Hai già effettuato la registrazione qui, effettua il primo deposito e ottieni fino a $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Effettua il primo deposito su uno dei marchi qui sotto e ottieni fino a $20!",
+                "Make First Deposit On One Of These Brands &": "Effettua il primo deposito su uno di questi marchi &",
+                "Get Up To $20 Right On Your Wallet!": "Ricevi fino a $20 direttamente sul tuo portafoglio!",
+                "Already Registered": "Gia registrato",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Seleziona un casinò dalla lista qui sotto, effettua il tuo primo deposito e ricevi fino a 20 USD di ricompense!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Riceverai 50 giri gratuiti per ogni primo deposito dal nostro sito web. Fai girare questi giri e ottieni fino a 20 USD sul tuo portafoglio criptato/PayPal. Per poter prelevare, assicurati che il tuo primo deposito sia di almeno Є25 o l'equivalente in altre valute e sia stato effettuato dopo aver richiesto un prelievo.",
+                "You have successfully registered on these brands": "Hai completato con successo la registrazione su questi marchi",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SEI GIÀ REGISTRATO QUI, EFFETTUA I TUOI PRIMI DEPOSITI E",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RICEVI FINO A 500 EURO CON PRELIEVO ISTANTANEO",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RICEVI DENARO REALE CON PRELIEVO ISTANTANEO"
             }
         },
         no: {
@@ -5652,9 +5895,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Topprangerte nettcasinoer som støtter EcoPayz-transaksjoner for 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "På jakt etter ledende nettcasinoer som ønsker ecoPayz-transaksjoner velkommen? Utforsk vårt kuraterte utvalg av førsteklasses ecoPayz-vennlige casinoer for å finne den perfekte matchen for deg.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Topp rangerte nettcasinoer som aksepterer Maestro-betalinger for 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Interessert i å spille på nettcasinoer som aksepterer Maestro-transaksjoner? La topbon.us guide deg til det ideelle Maestro-vennlige casinoet for deg.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Interessert i å spille på nettcasinoer som aksepterer Maestro-transaksjoner? La XXXCasinoGuru guide deg til det ideelle Maestro-vennlige casinoet for deg.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Topp rangerte nettcasinoer som ønsker velkommen Mastercard-transaksjoner i 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interessert i å spille på et Mastercard-vennlig casino? topbon.us er her for å guide deg til de mest pålitelige casinoene som godtar Mastercard for trygt pengespill.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interessert i å spille på et Mastercard-vennlig casino? XXXCasinoGuru er her for å guide deg til de mest pålitelige casinoene som godtar Mastercard for trygt pengespill.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Ledende nettcasinoer som foretrekker mobilbetalinger for sømløse transaksjoner i 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Opplev smidige økonomiske transaksjoner i nettcasinoer ved å dra nytte av enkelheten og hastigheten til mobile betalingsmetoder. Hold deg oppdatert på tilgjengelige alternativer for å velge det beste for din geografiske plassering og foretrukne valuta, og sikre en problemfri spillopplevelse.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Topp nettbaserte kasinoer som støtter MuchBetter-transaksjoner i 2024",
@@ -5662,7 +5905,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Topprangerte nettcasinoer som støtter Neosurf-transaksjoner for 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "På jakt etter et nettcasino kompatibelt med Neosurf-betalinger? Bla gjennom vårt kuraterte utvalg av Neosurf-vennlige casinoer, dykk ned i våre grundige anmeldelser, og finn den ideelle plattformen for deg.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Topp nettbaserte kasinoer som støtter Neteller-transaksjoner i 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Oversikt over nettcasinoer kompatible med Neteller-betalinger. ✅ Grundige vurderinger av topbon.us. ✅ Oppdag ditt ideelle Neteller-vennlige casino.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Oversikt over nettcasinoer kompatible med Neteller-betalinger. ✅ Grundige vurderinger av XXXCasinoGuru. ✅ Oppdag ditt ideelle Neteller-vennlige casino.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Ledende nettbaserte kasinoer som aksepterer PayPal-betalinger i 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Sjekk ut vår omfattende liste over topprangerte kasinoer som godtar PayPal - et raskt og sikkert alternativ for både innskudd og uttak. Denne betalingsmetoden er et populært valg blant globale nettspillere, og tilbyr fordeler som å omgå tradisjonelle bankbegrensninger og geografiske begrensninger. Hvis du ikke allerede har en PayPal-konto, er det enkelt å opprette en og starte reisen mot store gevinster!",
                 "Top-Ranked Online Casino Platforms for 2024": "Topprangerte nettbaserte kasinoplattformer for 2024",
@@ -5674,7 +5917,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Topp nettbaserte kasinoer som støtter Trustly-transaksjoner for 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Er du på jakt etter nettcasinoer som aksepterer Trustly-betalinger? Bla gjennom vår kuraterte liste og grundige evalueringer for å finne det mest passende Trustly-kompatible casinoet for deg.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Topp rangerte nettcasinoer som ønsker Visa-transaksjoner velkommen i 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interessert i å spille på et Visa-vennlig casino? topbon.us er her for å guide deg til de mest pålitelige casinoene som ønsker Visa velkommen for trygt pengespill.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interessert i å spille på et Visa-vennlig casino? XXXCasinoGuru er her for å guide deg til de mest pålitelige casinoene som ønsker Visa velkommen for trygt pengespill.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Broen mellom tradisjonelle og online kasinoer med klassiske spilltitler",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic lager digitale spill som gjenspeiler sine virkelige versjoner både estetisk og narrativt. Denne distinkte strategien fanger spillere som er glade i den tradisjonelle casinostemningen. Med fremragende spill som Hot Fruits 100, Allways Hot Fruits, Book Of Aztec og Lucky Joker 10, gir Amatic en uovertruffen underholdningsopplevelse for casinofans.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "To tiår med spillutmerkelse: Utforske Amusnet Interactives innovative portefølje",
@@ -5747,7 +5990,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Din registrering er fullført, første innskudd venter",
                 "Registration and First Deposit Not Completed": "Registrering og første innskudd ikke fullført",
                 "I’m Registered": "Jeg er registrert",
-                "Deposit Now": "Innskudd nå"
+                "Deposit Now": "Innskudd nå",
+                "Get $20": "Få $20",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Du har allerede registrert deg her, gjør ditt første innskudd og få opptil $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Gjør første innskudd på ett av merkene nedenfor og få opptil $20!",
+                "Make First Deposit On One Of These Brands &": "Gjør første innskudd på en av disse merkene &",
+                "Get Up To $20 Right On Your Wallet!": "Få opptil $20 rett på lommeboken din!",
+                "Already Registered": "Allerede registrert",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Velg et kasino fra listen nedenfor, gjør ditt første innskudd og motta opptil 20 USD i belønninger!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratisspinn for hver første innskudd fra nettstedet vårt. Spinn disse spinnene og få opptil 20 USD på din kryptolommebok/PayPal. For å kvalifisere for uttak, sørg for at ditt første innskudd er på minst Є25 eller tilsvarende i andre valutaer og ble gjort etter at du ba om et uttak.",
+                "You have successfully registered on these brands": "Du har registrert deg vellykket på disse merkene",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERT HER, GJØR DINE FØRSTE INNSKUDD OG",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MOTTA OPPTIL 4625 NOK MED UMIDDELBAR UTTAK",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MOTTA EKTE PENGER MED ØYEBLIKKELIG UTTAK"
             }
         },
         pt: {
@@ -5894,9 +6150,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Principais Cassinos Online que Aceitam Transações com EcoPayz para 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Procurando os principais cassinos online que aceitam transações ecoPayz? Explore nossa seleção cuidadosa de cassinos premium amigáveis ao ecoPayz para descobrir a opção perfeita para você.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Principais Cassinos Online que Aceitam Pagamentos com Maestro para 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Interessado em jogar em cassinos online que aceitam transações Maestro? Deixe o topbon.us te guiar para o cassino Maestro ideal para você.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Interessado em jogar em cassinos online que aceitam transações Maestro? Deixe o XXXCasinoGuru te guiar para o cassino Maestro ideal para você.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Principais Cassinos Online que Aceitam Transações com Mastercard em 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interessado em jogar em um cassino que aceita Mastercard? O topbon.us está aqui para guiá-lo aos cassinos mais confiáveis que aceitam Mastercard para jogos seguros.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Interessado em jogar em um cassino que aceita Mastercard? O XXXCasinoGuru está aqui para guiá-lo aos cassinos mais confiáveis que aceitam Mastercard para jogos seguros.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Principais Cassinos Online que Favorecem Pagamentos Móveis para Transações Sem Problemas em 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Tenha experiências de transações financeiras suaves em cassinos online, aproveitando a facilidade e rapidez dos métodos de pagamento móvel. Mantenha-se atualizado sobre suas opções disponíveis para escolher a melhor opção para sua localização geográfica e moeda preferida, garantindo uma jornada de jogo sem esforço.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Principais Cassinos Online que Suportam Transações MuchBetter em 2024",
@@ -5904,7 +6160,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Principais Cassinos Online que Aceitam Transações com Neosurf para 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "À procura de um cassino online compatível com pagamentos Neosurf? Navegue pela nossa seleção de cassinos compatíveis com Neosurf, mergulhe em nossas análises detalhadas e encontre a plataforma ideal para você.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Principais Cassinos Online que Aceitam Transações com Neteller em 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Catálogo de cassinos online compatíveis com pagamentos Neteller. ✅ Avaliações detalhadas feitas por topbon.us. ✅ Descubra seu cassino ideal compatível com Neteller.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Catálogo de cassinos online compatíveis com pagamentos Neteller. ✅ Avaliações detalhadas feitas por XXXCasinoGuru. ✅ Descubra seu cassino ideal compatível com Neteller.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Principais Cassinos Online que Aceitam Pagamentos com PayPal em 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Confira nossa lista abrangente dos melhores cassinos que aceitam PayPal - uma opção rápida e segura para depósitos e saques. Este método de pagamento é uma escolha popular entre os jogadores online globais, oferecendo vantagens como contornar as restrições bancárias tradicionais e limitações geográficas. Se você ainda não tem uma conta do PayPal, é simples criar uma e começar sua jornada rumo a grandes vitórias!",
                 "Top-Ranked Online Casino Platforms for 2024": "Plataformas de Cassino Online Mais Bem Classificadas para 2024",
@@ -5916,7 +6172,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Principais Cassinos Online que Suportam Transações Trustly para 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Procurando por cassinos online que aceitam pagamentos via Trustly? Navegue pela nossa lista selecionada e avaliações detalhadas para descobrir o cassino compatível com Trustly mais adequado para você.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Principais Cassinos Online que Aceitam Transações Visa em 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interessado em jogar em um cassino que aceita Visa? O topbon.us está aqui para guiá-lo aos cassinos mais confiáveis que aceitam Visa para jogos seguros.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Interessado em jogar em um cassino que aceita Visa? O XXXCasinoGuru está aqui para guiá-lo aos cassinos mais confiáveis que aceitam Visa para jogos seguros.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Aproximando o Abismo Entre Cassinos Tradicionais e Online com Títulos de Jogos Clássicos",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic cria jogos digitais que espelham suas versões do mundo real tanto em estética quanto em narrativa. Essa estratégia distinta cativa jogadores que apreciam a atmosfera clássica de cassino. Com jogos marcantes como Hot Fruits 100, Allways Hot Fruits, Book Of Aztec e Lucky Joker 10, a Amatic oferece uma experiência de entretenimento incomparável para os aficionados por cassinos.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Duas décadas de excelência em jogos: explorando o portfólio inovador da Amusnet Interactive",
@@ -5989,7 +6245,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Sua inscrição foi concluída, primeiro depósito aguardado",
                 "Registration and First Deposit Not Completed": "Inscrição e Primeiro Depósito Não Concluídos",
                 "I’m Registered": "Estou registrado",
-                "Deposit Now": "Deposite Agora"
+                "Deposit Now": "Deposite Agora",
+                "Get $20": "Receba $20",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Você já fez o registro aqui, faça o primeiro depósito e ganhe até $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Faça o primeiro depósito em uma das marcas abaixo e ganhe até $20!",
+                "Make First Deposit On One Of These Brands &": "Faça o primeiro depósito em uma dessas marcas &",
+                "Get Up To $20 Right On Your Wallet!": "Receba até $20 direto na sua carteira!",
+                "Already Registered": "Já Registrado",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecione um cassino da lista abaixo, faça seu primeiro depósito e receba até 20 USD em recompensas!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Você receberá 50 rodadas grátis para cada primeiro depósito em nosso site. Gire essas rodadas e ganhe até 20 USD em sua carteira de criptomoedas/PayPal. Para se qualificar para saques, certifique-se de que seu primeiro depósito seja de pelo menos Є25 ou o equivalente em outras moedas e tenha sido feito após solicitar um saque.",
+                "You have successfully registered on these brands": "Você se registrou com sucesso nestas marcas",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOCÊ JÁ ESTÁ REGISTRADO AQUI, FAÇA SEUS PRIMEIROS DEPÓSITOS E",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEBA ATÉ 500 EUR COM RETIRADA INSTANTÂNEA",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEBA DINHEIRO REAL COM SAQUE INSTANTÂNEO"
             }
         },
         se: {
@@ -6136,9 +6405,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Topprankade onlinecasinon som stöder EcoPayz-transaktioner för 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Letar du efter ledande online casinon som välkomnar ecoPayz-transaktioner? Utforska vårt kuraterade urval av premium ecoPayz-vänliga casinon för att hitta den perfekta matchningen för dig.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Topprankade onlinecasinon som accepterar Maestro-betalningar för 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Intresserad av spel på online casinon som välkomnar Maestro-transaktioner? Låt topbon.us styra dig till det idealiska Maestro-vänliga casinot för dig.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Intresserad av spel på online casinon som välkomnar Maestro-transaktioner? Låt XXXCasinoGuru styra dig till det idealiska Maestro-vänliga casinot för dig.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Topprankade onlinekasinon som välkomnar Mastercard-transaktioner år 2024",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Intresserad av spel på ett Mastercard-vänligt casino? topbon.us är här för att guida dig till de mest pålitliga casinona som välkomnar Mastercard för säker spel.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Intresserad av spel på ett Mastercard-vänligt casino? XXXCasinoGuru är här för att guida dig till de mest pålitliga casinona som välkomnar Mastercard för säker spel.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Ledande onlinekasinon som föredrar mobila betalningar för smidiga transaktioner år 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Upplev smidiga finansiella transaktioner på online casinon genom att dra nytta av enkelheten och hastigheten hos mobila betalningsmetoder. Håll dig informerad om dina tillgängliga alternativ för att välja det bästa alternativet för din geografiska plats och önskad valuta, vilket säkerställer en problemfri spelresa.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Top Online Casinos som stöder MuchBetter-transaktioner år 2024",
@@ -6146,7 +6415,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Topprankade onlinekasinon som stöder Neosurf-transaktioner för 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "På jakt efter ett online casino kompatibelt med Neosurf-betalningar? Bläddra igenom vårt kuraterade urval av Neosurf-vänliga casinon, fördjupa dig i våra detaljerade recensioner och hitta den perfekta plattformen för dig.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Top Online Casinos som stöder Neteller-transaktioner år 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Katalog över online casinon kompatibla med Neteller-betalningar. ✅ Djupgående bedömningar av topbon.us. ✅ Upptäck ditt idealiska Neteller-vänliga casino.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Katalog över online casinon kompatibla med Neteller-betalningar. ✅ Djupgående bedömningar av XXXCasinoGuru. ✅ Upptäck ditt idealiska Neteller-vänliga casino.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Ledande onlinekasinon som accepterar PayPal-betalningar år 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Kolla in vår omfattande lista över topprankade casinon som accepterar PayPal - ett snabbt och säkert alternativ för både insättningar och uttag. Denna betalningsmetod är ett populärt val bland globala online-spelare och erbjuder fördelar som att kringgå traditionella bankbegränsningar och geografiska begränsningar. Om du inte redan har ett PayPal-konto är det enkelt att skapa ett och börja din resa mot stora vinster!",
                 "Top-Ranked Online Casino Platforms for 2024": "Topprankade online casino-plattformar för 2024",
@@ -6158,7 +6427,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Top Online Casinos som stöder Trustly-transaktioner för 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Söker du efter internetcasinon som välkomnar Trustly-betalningar? Bläddra igenom vår kuraterade lista och djupgående utvärderingar för att hitta det mest lämpliga Trustly-kompatibla casinot för dig.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Topprankade onlinecasinon som välkomnar Visa-transaktioner år 2024",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Intresserad av spel på ett Visa-vänligt casino? topbon.us är här för att guida dig till de mest pålitliga casinona som välkomnar Visa för säker spel.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Intresserad av spel på ett Visa-vänligt casino? XXXCasinoGuru är här för att guida dig till de mest pålitliga casinona som välkomnar Visa för säker spel.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Överbrygga klyftan mellan traditionella och online casinon med klassiska spel titlar",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic skapar digitala spel som speglar sina verkliga versioner både estetiskt och narrativt. Denna distinkta strategi fångar spelare som gillar den traditionella casinokänslan. Med framstående spel som Hot Fruits 100, Allways Hot Fruits, Book Of Aztec och Lucky Joker 10, erbjuder Amatic en oöverträffad underhållningsupplevelse för casinofantaster.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Två decennier av spelutmärkelser: Utforska Amusnet Interactives innovativa portfölj",
@@ -6231,7 +6500,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Din registrering är klar, första insättningen väntar",
                 "Registration and First Deposit Not Completed": "Registrering och första insättning inte slutförd",
                 "I’m Registered": "Jag är registrerad",
-                "Deposit Now": "Insättning nu"
+                "Deposit Now": "Insättning nu",
+                "Get $20": "Få 20 dollar",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Du har redan registrerat dig här, gör första insättningen och få upp till $20!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Gör första insättningen på ett av varumärkena nedan och få upp till $20!",
+                "Make First Deposit On One Of These Brands &": "Gör första insättningen på ett av dessa varumärken &",
+                "Get Up To $20 Right On Your Wallet!": "Få upp till $20 direkt på plånboken!",
+                "Already Registered": "Redan registrerad",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Välj ett kasino från listan nedan, gör din första insättning och få upp till 20 USD i belöningar!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du kommer att få 50 gratissnurr för varje första insättning från vår webbplats. Snurra dessa snurr och få upp till 20 USD på din kryptoplånbok/PayPal. För att kvalificera dig för uttag, se till att din första insättning är minst Є25 eller motsvarande i andra valutor och gjordes efter att du begärt ett uttag.",
+                "You have successfully registered on these brands": "Du har framgångsrikt registrerat dig på dessa varumärken",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ÄR REDAN REGISTRERAD HÄR, GÖR DINA FÖRSTA INSÄTTNINGAR OCH",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "FÅ UPP TILL 5200 SEK MED OMEDELBAR UTTAG",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "FÅ RIKTIGA PENGAR MED OMEDELBAR UTTAG"
             }
         },
         sk: {
@@ -6378,9 +6660,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "Online kasína s najvyšším hodnotením podporujúce transakcie cez EcoPayz pre rok 2024",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "Hľadáte popredné online kasína, ktoré prijímajú transakcie cez ecoPayz? Preskúmajte našu vybranú ponuku prémiových kasín priateľských k ecoPayz, aby ste objavili tú správnu voľbu pre vás.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "Najlepšie hodnotené online kasína prijímajúce platby Maestro pre rok 2024",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Zaujíma vás hranie hier v online kasínach, ktoré prijímajú transakcie Maestro? Nech vás topbon.us usmerní k ideálnemu kasínu priateľskému k Maestru pre vás.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Zaujíma vás hranie hier v online kasínach, ktoré prijímajú transakcie Maestro? Nech vás XXXCasinoGuru usmerní k ideálnemu kasínu priateľskému k Maestru pre vás.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "Najlepšie hodnotené online kasína, ktoré v roku 2024 prijímajú transakcie s kartou Mastercard",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Zaujíma vás hrať v kasíne priateľskom k Mastercard? topbon.us je tu, aby vás usmernil k najspoľahlivejším kasínam, ktoré vítajú Mastercard pre bezpečné hazardovanie.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Zaujíma vás hrať v kasíne priateľskom k Mastercard? XXXCasinoGuru je tu, aby vás usmernil k najspoľahlivejším kasínam, ktoré vítajú Mastercard pre bezpečné hazardovanie.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "Vedúce online kasína, ktoré uprednostňujú mobilné platby pre bezproblémové transakcie v roku 2024.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Zažite plynulé finančné transakcie v online kasínach využitím jednoduchosti a rýchlosti mobilných platobných metód. Buďte v obraze o dostupných možnostiach a vyberte si tú najlepšiu pre vašu geografickú polohu a preferovanú menu, čím zabezpečíte bezproblémovú hernú cestu.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "Top online kasína podporujúce transakcie cez MuchBetter v roku 2024",
@@ -6388,7 +6670,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "Online kasína s najvyšším hodnotením podporujúce transakcie Neosurf pre rok 2024",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "V hľadaní online kasína kompatibilného s platbami Neosurf? Prezrite si našu vybranú ponuku kasín priateľských k Neosurfu, preštudujte naše podrobné recenzie a nájdite ideálnu platformu pre vás.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "Top online kasína podporujúce transakcie cez Neteller v roku 2024",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Zoznam online kasín kompatibilných s platbami cez Neteller. ✅ Podrobné hodnotenia od topbon.us. ✅ Objavte svoje ideálne kasíno priateľské k Netelleru.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Zoznam online kasín kompatibilných s platbami cez Neteller. ✅ Podrobné hodnotenia od XXXCasinoGuru. ✅ Objavte svoje ideálne kasíno priateľské k Netelleru.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "Popredné online kasína prijímajúce platby cez PayPal v roku 2024",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "Skontrolujte našu komplexnú ponuku najlepších kasín, ktoré prijímajú PayPal - rýchlu a bezpečnú možnosť pre vklady aj výbery. Táto platobná metóda je populárna vo svete online hráčov, ponúka výhody ako obchádzanie tradičných bankových obmedzení a geografických obmedzení. Ak ešte nemáte účet PayPal, je jednoduché si ho vytvoriť a začať svoju cestu k veľkým výhram!",
                 "Top-Ranked Online Casino Platforms for 2024": "Online kasínové platformy s najvyšším hodnotením pre rok 2024",
@@ -6400,7 +6682,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "Top online kasína podporujúce transakcie cez Trustly pre rok 2024",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Hľadáte internetové kasína, ktoré prijímajú platby cez Trustly? Prezrite si našu vybranú ponuku a podrobné recenzie, aby ste našli najvhodnejšie kasíno kompatibilné s Trustly pre vás.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "Najlepšie hodnotené online kasína, ktoré v roku 2024 vítajú platby kartou Visa",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Zaujíma vás hra v kasíne priateľskom k Visa? topbon.us je tu, aby vás usmernil k najspoľahlivejším kasínam, ktoré vítajú Visa pre bezpečné hazardovanie.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Zaujíma vás hra v kasíne priateľskom k Visa? XXXCasinoGuru je tu, aby vás usmernil k najspoľahlivejším kasínam, ktoré vítajú Visa pre bezpečné hazardovanie.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Preklenutie medzery medzi tradičnými a online kasínami s klasickými hernými titulmi",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic vytvára digitálne hry, ktoré odrážajú ich realistické verzie nielen v estetike, ale aj v príbehu. Táto špecifická stratégia zaujíma hráčov, ktorí majú radi tradičnú kasínovú atmosféru. S hrami ako Hot Fruits 100, Allways Hot Fruits, Book Of Aztec a Lucky Joker 10, Amatic poskytuje neprekonateľný zážitok zábavy pre nadšencov kasín.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Dve desaťročia herného majstrovstva: Preskúmanie inovatívneho portfólia spoločnosti Amusnet Interactive",
@@ -6473,7 +6755,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Vaša registrácia bola dokončená, čaká sa prvý vklad",
                 "Registration and First Deposit Not Completed": "Registrácia a prvý vklad neboli dokončené",
                 "I’m Registered": "Som registrovaný",
-                "Deposit Now": "Vložiť teraz"
+                "Deposit Now": "Vložiť teraz",
+                "Get $20": "Získajte 20 dolárov",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Už ste sa tu zaregistrovali, urobte prvý vklad a získajte až 20 dolárov!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Urobte prvý vklad na jednu značku nižšie a získajte až 20 dolárov!",
+                "Make First Deposit On One Of These Brands &": "Urobte prvý vklad na jednu z týchto značiek &",
+                "Get Up To $20 Right On Your Wallet!": "Získajte až 20 dolárov priamo na svojom peňaženke!",
+                "Already Registered": "Už registrovaný",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasíno zo zoznamu nižšie, urobte svoj prvý vklad a získajte až 20 USD odmeny!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 bezplatných zatočení za každý prvý vklad z našej webovej stránky. Zatočte týmito zatočeniami a získajte až 20 USD na svoj kryptomenový peňaženku/PayPal. Pre kvalifikáciu na výbery sa uistite, že váš prvý vklad je aspoň 25 eur alebo ekvivalent v iných menách a bol vykonaný požiadavkou na výber.",
+                "You have successfully registered on these brands": "Úspešne ste sa zaregistrovali na tieto značky",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "UŽ STE TU ZAREGISTROVANÝ, UROBTE SI PRVÉ VLOŽENIA A",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKAJTE AŽ 500 EUR S OKAMŽITÝM VÝBEROM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKAJTE SKUTOČNÉ PENIAZE S OKAMŽITÝM VÝBEROM"
             }
         },
         tr: {
@@ -6620,9 +6915,9 @@ async function initializeI18n() {
                 "Top-Ranked Online Casinos Supporting EcoPayz Transactions for 2024": "2024 için EcoPayz İşlemlerini Destekleyen En İyi Sıralı Çevrimiçi Casinolar",
                 "Looking for leading online casinos that welcome ecoPayz transactions? Explore our curated selection of premium ecoPayz-friendly casinos to discover the perfect fit for you.": "EcoPayz işlemlerini kabul eden önde gelen online casinolar mı arıyorsunuz? Size uygun olanı keşfetmek için seçilmiş premium EcoPayz dostu casinolarımızı keşfedin.",
                 "Top-Rated Online Casinos Accepting Maestro Payments for 2024": "2024 için Maestro Ödemelerini Kabul Eden En İyi Dereceli Online Casinolar",
-                "Interested in gaming at online casinos that welcome Maestro transactions? Let topbon.us steer you to the ideal Maestro-friendly casino for you.": "Maestro işlemlerini kabul eden online casinolarda oyun oynamaya ilgi duyuyor musunuz? topbon.us sizi size uygun Maestro dostu casinoya yönlendirsin.",
+                "Interested in gaming at online casinos that welcome Maestro transactions? Let XXXCasinoGuru steer you to the ideal Maestro-friendly casino for you.": "Maestro işlemlerini kabul eden online casinolarda oyun oynamaya ilgi duyuyor musunuz? XXXCasinoGuru sizi size uygun Maestro dostu casinoya yönlendirsin.",
                 "Top-Rated Online Casinos Welcoming Mastercard Transactions in 2024": "2024'te Mastercard İşlemlerini Kabul Eden En İyi Online Casinolar",
-                "Interested in gaming at a Mastercard-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Mastercard dostu bir casinoda oyun oynamak ilginizi çekiyor mu? topbon.us, güvenli kumarhanelere Mastercard kabul eden en güvenilir casinolara rehberlik etmek için burada.",
+                "Interested in gaming at a Mastercard-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Mastercard for secure gambling.": "Mastercard dostu bir casinoda oyun oynamak ilginizi çekiyor mu? XXXCasinoGuru, güvenli kumarhanelere Mastercard kabul eden en güvenilir casinolara rehberlik etmek için burada.",
                 "Leading Online Casinos That Favor Mobile Payments for Seamless Transactions in 2024.": "2024'te Sorunsuz İşlemler İçin Mobil Ödemeleri Tercih Eden Önde Gelen Online Casinolar.",
                 "Experience smooth financial transactions in online casinos by leveraging the ease and speed of mobile payment methods. Keep abreast of your available options to choose the best fit for your geographical location and preferred currency, ensuring an effortless gaming journey.": "Online casinolarda sorunsuz finansal işlemlerin keyfini, mobil ödeme yöntemlerinin kolaylığı ve hızından faydalanarak yaşayın. Coğrafi konumunuza ve tercih ettiğiniz para birimine en uygun seçenekleri takip ederek, sorunsuz bir oyun deneyimi yaşayın.",
                 "Top Online Casinos Supporting MuchBetter Transactions in 2024": "2024 yılında MuchBetter İşlemlerini Destekleyen En İyi Online Casinolar",
@@ -6630,7 +6925,7 @@ async function initializeI18n() {
                 "Top-Rated Online Casinos Supporting Neosurf Transactions for 2024": "2024 için Neosurf İşlemlerini Destekleyen En İyi Dereceli Online Casinolar",
                 "In search of an online casino compatible with Neosurf payments? Browse our curated selection of Neosurf-friendly casinos, delve into our in-depth reviews, and pinpoint the ideal platform for you.": "Neosurf ödemeleriyle uyumlu bir online kumarhane mi arıyorsunuz? Seçtiğimiz Neosurf dostu kumarhaneler arasında gezinin, detaylı incelemelerimize dalın ve sizin için ideal platformu belirleyin.",
                 "Top Online Casinos Supporting Neteller Transactions in 2024": "2024 yılında Neteller İşlemlerini Destekleyen En İyi Online Casinolar",
-                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by topbon.us. ✅ Discover your ideal Neteller-friendly casino.": "Neteller ödemeleri ile uyumlu online casinoların dizini. ✅ topbon.us tarafından detaylı değerlendirmeler. ✅ İdeal Neteller dostu casinonuzu keşfedin.",
+                "Directory of online casinos compatible with Neteller payments. ✅ In-depth assessments by XXXCasinoGuru. ✅ Discover your ideal Neteller-friendly casino.": "Neteller ödemeleri ile uyumlu online casinoların dizini. ✅ XXXCasinoGuru tarafından detaylı değerlendirmeler. ✅ İdeal Neteller dostu casinonuzu keşfedin.",
                 "Leading Online Casinos Accepting PayPal Payments in 2024": "2024'te PayPal Ödemelerini Kabul Eden Önde Gelen Online Casinolar",
                 "Check out our comprehensive list of top-rated casinos that accept PayPal—a quick and secure option for both deposits and withdrawals. This payment method is a popular choice among global online players, offering advantages like bypassing traditional banking constraints and geographical limitations. If you don&'t already have a PayPal account, it's simple to set one up and start your journey to big wins!": "PayPal kabul eden en iyi derecelendirilmiş casinoların kapsamlı listemizi kontrol edin - hem yatırımlar hem de çekimler için hızlı ve güvenli bir seçenek. Bu ödeme yöntemi, geleneksel bankacılık kısıtlamalarını ve coğrafi sınırlamaları atlayarak küresel çevrimiçi oyuncular arasında popüler bir tercih. Eğer zaten bir PayPal hesabınız yoksa, bir tane oluşturmak ve büyük kazançlara doğru yolculuğunuza başlamak oldukça basittir!",
                 "Top-Ranked Online Casino Platforms for 2024": "2024 için En İyi Sıralanmış Online Casino Platformları",
@@ -6642,7 +6937,7 @@ async function initializeI18n() {
                 "Top Online Casinos Supporting Trustly Transactions for 2024": "2024 için Trustly İşlemlerini Destekleyen En İyi Online Casinolar",
                 "Searching for internet casinos that welcome Trustly payments? Browse our curated list and in-depth evaluations to discover the most suitable Trustly-compatible casino for you.": "Trustly ödemelerini kabul eden internet casinolarını mı arıyorsunuz? Size en uygun Trustly uyumlu casinoyu bulmak için hazırladığımız seçilmiş listemizi ve detaylı değerlendirmelerimizi inceleyin.",
                 "Top-Rated Online Casinos Welcoming Visa Transactions in 2024": "2024'te Visa İşlemlerini Kabul Eden En İyi Dereceli Online Casinolar",
-                "Interested in gaming at a Visa-friendly casino? topbon.us is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Visa dostu bir casinoda oyun oynamak ilginizi çekiyor mu? topbon.us, güvenli kumarhanelere Visa'yı kabul eden en güvenilir casinolara rehberlik etmek için burada.",
+                "Interested in gaming at a Visa-friendly casino? XXXCasinoGuru is here to guide you to the most reliable casinos that welcome Visa for secure gambling.": "Visa dostu bir casinoda oyun oynamak ilginizi çekiyor mu? XXXCasinoGuru, güvenli kumarhanelere Visa'yı kabul eden en güvenilir casinolara rehberlik etmek için burada.",
                 "Amatic: Bridging the Gap Between Traditional and Online Casinos with Classic Game Titles": "Amatic: Geleneksel ve Çevrimiçi Casinolar Arasındaki Boşluğu Klasik Oyun Başlıkları ile Kapatıyor",
                 "Amatic crafts digital games that mirror their real-world versions in both aesthetics and narrative. This distinct strategy captivates players fond of the time-honored casino vibe. Featuring standout games such as Hot Fruits 100, Allways Hot Fruits, Book Of Aztec, and Lucky Joker 10, Amatic provides an unparalleled entertainment experience for casino aficionados.": "Amatic, estetik ve anlatıda gerçek dünya versiyonlarına yansıyan dijital oyunlar üretir. Bu farklı strateji, geleneksel kumarhane atmosferini seven oyuncuları büyüler. Hot Fruits 100, Allways Hot Fruits, Book Of Aztec ve Lucky Joker 10 gibi öne çıkan oyunlarla Amatic, kumarhane tutkunları için eşsiz bir eğlence deneyimi sunar.",
                 "Two Decades of Gaming Excellence: Exploring Amusnet Interactive's Innovative Portfolio": "Oyun Endüstrisinde İki On Yılın Mükemmelliği: Amusnet Interactive'in Yenilikçi Portföyünü Keşfetmek",
@@ -6715,7 +7010,20 @@ async function initializeI18n() {
                 "Your Registration Completed, First Deposit Awaited": "Kaydınız Tamamlandı, İlk Yatırım Bekleniyor",
                 "Registration and First Deposit Not Completed": "Kayıt ve İlk Yatırım Tamamlanmadı",
                 "I’m Registered": "Kayıtlıyım",
-                "Deposit Now": "Şimdi Yatırım Yap"
+                "Deposit Now": "Şimdi Yatırım Yap",
+                "Get $20": "20 dolar al",
+                "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Zaten burada kaydınızı yaptırdınız, ilk para yatırma işlemini yapın ve 20 $'a kadar kazanın!",
+                "Make First Deposit On One Brand Below & Get Up To $20!": "Aşağıdaki Markaya İlk Yatırımı Yapın ve 20 $'a Kadar Kazanın!",
+                "Make First Deposit On One Of These Brands &": "Bir Bu Markalardan İlk Yatırımı Yapın &",
+                "Get Up To $20 Right On Your Wallet!": "Cüzdanınızda Hemen 20 Dolara Kadar Kazanın!",
+                "Already Registered": "Zaten Kayıtlı",
+                "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Aşağıdaki listeden bir kumarhaneyi seçin, ilk para yatırmanızı yapın ve 20 USD'a kadar ödül alın!",
+                "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sitemizden her ilk para yatırma işlemi için 50 Ücretsiz Dönüş alacaksınız. Bu dönüşleri çevirin ve kripto cüzdanınıza/PayPal hesabınıza kadar 20 USD kazanın. Çekilmeye hak kazanmak için, ilk para yatırma işleminizin en az 25 Є veya diğer para birimlerindeki karşılığı olması ve çekim talebinde bulunulduktan sonra yapılması gerekmektedir.",
+                "You have successfully registered on these brands": "Bu markalara başarıyla kaydoldunuz",
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ZATEN BURADA KAYITLISINIZ, İLK YATIRIMLARINIZI YAPIN VE",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "HIZLI ÇEKİM İLE 13000 TRY'YE KADAR ALIN",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ANINDA ÇEKİM İLE GERÇEK PARA ALIN"
             }
         }
     };
@@ -7066,6 +7374,7 @@ const BrandsSwitcher = ()=>{
         setLanguage(lng);
         localStorage.setItem("country_brands", lng);
         setIsLoading(false);
+        window.location.reload();
     };
     const availableLanguages = [
         {
@@ -7509,23 +7818,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 168,
+                        lineNumber: 169,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 157,
+                lineNumber: 158,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 178,
+                lineNumber: 179,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 156,
+        lineNumber: 157,
         columnNumber: 5
     }, this);
 };
@@ -9094,11 +9403,6 @@ const TheHeader = ()=>{
                 lineNumber: 184,
                 columnNumber: 11
             }, this) : "",
-            showBasicModal && !showResponsiveDialog && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modal$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 189,
-                columnNumber: 49
-            }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "header__bg",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {

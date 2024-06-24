@@ -55,7 +55,7 @@ const Fortunes = ({ banner, target, creative }) => {
         <h3>{t("FORTUNE WHEEL BRANDS")}</h3>
         <p>{t("Pick a brand below, make first deposit and win real cash")}</p>
         {banner && (
-          <Link className="btn btn-thirdy target-spin-the-roulette" href={`/fortune`}>
+          <Link target="_blank" className="btn btn-thirdy target-spin-the-roulette" href={`/fortune`}>
             {t("Spin the Roulette")}
           </Link>
         )}
@@ -72,7 +72,7 @@ const Fortunes = ({ banner, target, creative }) => {
           brands.slice(0, visibleBrands).map((brand) => (
             <div key={brand.id_brand} className="card-brand mb-3 basis-[19%]">
               <div className="brandImage p-3">
-                <Link className={target} href={`${brand.GoBig}/${newUrl}&creative_id=${target}`}>
+                <Link target="_blank" className={target} href={`${brand.GoBig}/${newUrl}&creative_id=${target}`}>
                   <Image
                     src={`/brands/${brand.CasinoBrand}.png`}
                     alt={brand.CasinoBrand}
@@ -86,6 +86,7 @@ const Fortunes = ({ banner, target, creative }) => {
                 <div className="review-bonus">{brand.OurOfferContent}</div>
                 <div className="buttons">
                   <Link
+                  target="_blank"
                     className={`btn btn-primary ${target}`}
                     href={`${brand.GoBig}/${newUrl}&creative_id=${target}`}
                   >

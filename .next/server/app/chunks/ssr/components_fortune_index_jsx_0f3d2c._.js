@@ -85,6 +85,7 @@ const Fortunes = ({ banner, target, creative })=>{
                         columnNumber: 9
                     }, this),
                     banner && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                        target: "_blank",
                         className: "btn btn-thirdy target-spin-the-roulette",
                         href: `/fortune`,
                         children: t("Spin the Roulette")
@@ -119,6 +120,7 @@ const Fortunes = ({ banner, target, creative })=>{
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                 className: "brandImage p-3",
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                    target: "_blank",
                                     className: target,
                                     href: `${brand.GoBig}/${newUrl}&creative_id=${target}`,
                                     children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -156,6 +158,7 @@ const Fortunes = ({ banner, target, creative })=>{
                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                         className: "buttons",
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                            target: "_blank",
                                             className: `btn btn-primary ${target}`,
                                             href: `${brand.GoBig}/${newUrl}&creative_id=${target}`,
                                             children: t("Play Now")
@@ -192,7 +195,7 @@ const Fortunes = ({ banner, target, creative })=>{
                 children: t("Load More Brands")
             }, void 0, false, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 101,
+                lineNumber: 102,
                 columnNumber: 9
             }, this)
         ]
