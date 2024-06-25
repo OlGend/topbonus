@@ -21,6 +21,7 @@ const Fortunes = ({ banner, target, creative }) => {
     () => getBrands(language),
     { initialData: brands }
   );
+  
   useEffect(() => {
     if (data) {
       const filteredData = data.filter(
