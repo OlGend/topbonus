@@ -63,6 +63,7 @@ const Fortunes = ({ banner, target, creative })=>{
         setVisibleBrands((prev)=>prev + 5);
     };
     const hasMoreBrands = brands.length > visibleBrands;
+    console.log("aaaaaa", brands);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
         className: "flex flex-col container-fortune",
         children: [
@@ -74,14 +75,14 @@ const Fortunes = ({ banner, target, creative })=>{
                         children: t("FORTUNE WHEEL BRANDS")
                     }, void 0, false, {
                         fileName: "<[project]/components/fortune/index.jsx>",
-                        lineNumber: 55,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                         children: t("Pick a brand below, make first deposit and win real cash")
                     }, void 0, false, {
                         fileName: "<[project]/components/fortune/index.jsx>",
-                        lineNumber: 56,
+                        lineNumber: 59,
                         columnNumber: 9
                     }, this),
                     banner && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -91,13 +92,13 @@ const Fortunes = ({ banner, target, creative })=>{
                         children: t("Spin the Roulette")
                     }, void 0, false, {
                         fileName: "<[project]/components/fortune/index.jsx>",
-                        lineNumber: 58,
+                        lineNumber: 61,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 54,
+                lineNumber: 57,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
@@ -105,14 +106,14 @@ const Fortunes = ({ banner, target, creative })=>{
                 children: t("To qualify for withdrawals, ensure your first deposit is at least €25 or the equivalent in other currencies and was made after requesting a withdrawal.")
             }, void 0, false, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 63,
+                lineNumber: 66,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "flex flex-wrap px-0 py-6",
                 children: isLoading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "<[project]/components/fortune/index.jsx>",
-                    lineNumber: 70,
+                    lineNumber: 73,
                     columnNumber: 11
                 }, this) : brands.slice(0, visibleBrands).map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                         className: "card-brand mb-3 basis-[19%]",
@@ -131,17 +132,17 @@ const Fortunes = ({ banner, target, creative })=>{
                                         className: target
                                     }, void 0, false, {
                                         fileName: "<[project]/components/fortune/index.jsx>",
-                                        lineNumber: 76,
+                                        lineNumber: 79,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/fortune/index.jsx>",
-                                    lineNumber: 75,
+                                    lineNumber: 78,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/fortune/index.jsx>",
-                                lineNumber: 74,
+                                lineNumber: 77,
                                 columnNumber: 15
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -152,7 +153,7 @@ const Fortunes = ({ banner, target, creative })=>{
                                         children: brand.OurOfferContent
                                     }, void 0, false, {
                                         fileName: "<[project]/components/fortune/index.jsx>",
-                                        lineNumber: 86,
+                                        lineNumber: 89,
                                         columnNumber: 17
                                     }, this),
                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -164,29 +165,29 @@ const Fortunes = ({ banner, target, creative })=>{
                                             children: t("Play Now")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/fortune/index.jsx>",
-                                            lineNumber: 88,
+                                            lineNumber: 91,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/fortune/index.jsx>",
-                                        lineNumber: 87,
+                                        lineNumber: 90,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/fortune/index.jsx>",
-                                lineNumber: 85,
+                                lineNumber: 88,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, brand.id_brand, true, {
                         fileName: "<[project]/components/fortune/index.jsx>",
-                        lineNumber: 73,
+                        lineNumber: 76,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 68,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             hasMoreBrands && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -195,13 +196,13 @@ const Fortunes = ({ banner, target, creative })=>{
                 children: t("Load More Brands")
             }, void 0, false, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 102,
+                lineNumber: 105,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/fortune/index.jsx>",
-        lineNumber: 53,
+        lineNumber: 56,
         columnNumber: 5
     }, this);
 };
