@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useSWR from "swr";
 import { shuffle } from "lodash";
 import Image from "next/image";
@@ -9,8 +9,6 @@ import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands2";
 import { useTranslation } from "react-i18next";
 
-
-
 export default function TopBrandsRandom() {
   const [newUrl, setNewUrl] = useState("");
   const [source, setSource] = useState("");
@@ -18,6 +16,19 @@ export default function TopBrandsRandom() {
   const [brands, setBrands] = useState([]);
   const { language } = useLanguage();
   const { t } = useTranslation();
+  const timeoutRef = useRef(null);
+
+  const resetTimeout = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      if (brands.length > 0) {
+        const randomBrand = brands[Math.floor(Math.random() * brands.length)];
+        window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
+      }
+    }, 100000); // 10 секунд
+  };
 
   useEffect(() => {
     // Обновляем URL, удаляем параметры и устанавливаем source на основе localStorage
@@ -64,7 +75,22 @@ export default function TopBrandsRandom() {
     if (savedUrl) {
       setNewUrl(savedUrl);
     }
-  }, [language]);
+
+    resetTimeout();
+    const events = ["mousemove", "scroll", "keydown"];
+    events.forEach((event) => {
+      window.addEventListener(event, resetTimeout);
+    });
+
+    return () => {
+      events.forEach((event) => {
+        window.removeEventListener(event, resetTimeout);
+      });
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [language, brands]);
 
   const categoryBrands = { key1: "Segment2", key2: "Premium" };
   const { data, error } = useSWR(
@@ -85,12 +111,8 @@ export default function TopBrandsRandom() {
 
   const shuffledBrands = shuffle(brands);
 
-
-
-
   return (
     <>
-   
       <div className="preview2 flex flex-col">
         <div className="main__container flex items-center">
           <div className="flex flex-col">
@@ -103,7 +125,7 @@ export default function TopBrandsRandom() {
             {shuffledBrands.slice(0, 1).map((item) => (
               <Link
                 target="_blank"
-                key={item}
+                key={item.CasinoBrand}
                 className="btn btn-primary big-btn mt-3 target-try-your-luck"
                 href={`${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`}
               >
@@ -113,10 +135,6 @@ export default function TopBrandsRandom() {
           </div>
           <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
         </div>
-{/* 
-        <div id="keitaro" className="main__container flex flex-col !mt-7 shMb">
-          <UserBrands />
-        </div> */}
       </div>
     </>
   );
