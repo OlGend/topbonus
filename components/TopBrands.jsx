@@ -1,14 +1,19 @@
 "use client";
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import useSWR from "swr";
 import Loader from "@/components/Loader";
 import { shuffle } from "lodash";
+import Image from "next/image";
+import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
 import Card from "@/components/slider/Card";
 import Carousel from "@/components/slider/Carousel";
+import imgrandom from "@/public/coins_banner2.jpg";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands2";
 import { useTranslation } from "react-i18next";
+
+import UserBrands from "./Brands_home/UserBrands";
 
 export default function TopBrands() {
   const [newUrl, setNewUrl] = useState("");
@@ -17,19 +22,6 @@ export default function TopBrands() {
   const [brands, setBrands] = useState([]);
   const { language } = useLanguage();
   const { t } = useTranslation();
-  const timeoutRef = useRef(null);
-
-  const resetTimeout = () => {
-    if (timeoutRef.current) {
-      clearTimeout(timeoutRef.current);
-    }
-    timeoutRef.current = setTimeout(() => {
-      if (brands.length > 0) {
-        const randomBrand = brands[Math.floor(Math.random() * brands.length)];
-        window.location.href = randomBrand.GoBig;
-      }
-    }, 100000); // 10 секунд
-  };
 
   useEffect(() => {
     // Обновляем URL, удаляем параметры и устанавливаем source на основе localStorage
@@ -76,22 +68,7 @@ export default function TopBrands() {
     if (savedUrl) {
       setNewUrl(savedUrl);
     }
-
-    resetTimeout();
-    const events = ["mousemove", "scroll", "keydown"];
-    events.forEach((event) => {
-      window.addEventListener(event, resetTimeout);
-    });
-
-    return () => {
-      events.forEach((event) => {
-        window.removeEventListener(event, resetTimeout);
-      });
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    };
-  }, [language, brands]);
+  }, [language]);
 
   const categoryBrands = { key1: "Segment2", key2: "Premium" };
   const { data, error } = useSWR(
@@ -127,6 +104,7 @@ export default function TopBrands() {
   return (
     <>
       <div className="topbr">
+
         <div className="main__container">
           {loading ? (
             <Loader />
@@ -145,6 +123,7 @@ export default function TopBrands() {
           )}
         </div>
       </div>
+ 
     </>
   );
 }
