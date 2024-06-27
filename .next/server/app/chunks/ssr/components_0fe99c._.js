@@ -874,7 +874,7 @@ function TopBrands() {
                 const randomBrand = brands[Math.floor(Math.random() * brands.length)];
                 window.location.href = randomBrand.GoBig;
             }
-        }, 100000);
+        }, 10000);
     };
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const currentUrl = window.location.href;
