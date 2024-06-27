@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["chunks/ssr/components_ee4582._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["chunks/ssr/components_f98455._.js", {
 
 "[project]/components/TopBrands.jsx (ecmascript, chunks, rsc)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname }) => (() => {
 
@@ -1130,4 +1130,4 @@ __turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$next$5d2f$entr
 })()),
 }]);
 
-//# sourceMappingURL=components_ee4582._.js.map
+//# sourceMappingURL=components_f98455._.js.map

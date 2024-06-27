@@ -123,33 +123,7 @@ export default function TopBrands() {
           )}
         </div>
       </div>
-      <div className="preview2 flex flex-col">
-        <div className="main__container flex items-center">
-          <div className="flex flex-col">
-            <h1 className="">
-              {t("Feeling lucky today?")}{" "}
-              <span className="text-blued">{t("Click now to play")}</span>{" "}
-              {t("and see if")}{" "}
-              <span className="text-blued"> {t("luck is on your side!")}</span>
-            </h1>
-            {shuffledBrands.slice(0, 1).map((item) => (
-              <Link
-                target="_blank"
-                key={item}
-                className="btn btn-primary big-btn mt-3 target-try-your-luck"
-                href={`${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`}
-              >
-                {t("Try Your Luck")}
-              </Link>
-            ))}
-          </div>
-          <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
-        </div>
-{/* 
-        <div id="keitaro" className="main__container flex flex-col !mt-7 shMb">
-          <UserBrands />
-        </div> */}
-      </div>
+ 
     </>
   );
 }

@@ -10100,13 +10100,14 @@ h1.fz31 {
   display: flex !important;
   flex-wrap: wrap !important;
 }
-@media(min-width:320px) and (max-width:425px) {
+@media(min-width:1921px) and (max-width:10000px) {
 
-  .topbr {
-    /* background-image: url(/backgroundmm.png) !important; */
-  background-repeat: no-repeat;
-    background-position: bottom center !important;
-    background-size: auto;
+  .topbr, .background-block {
+    background-size: cover !important;
+  }
+  .preview2 {
+    background-size: cover !important;
+    background-position: initial !important;
   }
 }
 @media (min-width: 320px) and (max-width: 1259px) {
