@@ -10103,7 +10103,7 @@ h1.fz31 {
 @media(min-width:320px) and (max-width:425px) {
 
   .topbr {
-    background-image: url(/backgroundmm.png) !important;
+    /* background-image: url(/backgroundmm.png) !important; */
   background-repeat: no-repeat;
     background-position: bottom center !important;
     background-size: auto;
