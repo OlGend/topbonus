@@ -1,27 +1,34 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useSWR from "swr";
-import Loader from "@/components/Loader";
 import { shuffle } from "lodash";
 import Image from "next/image";
 import Link from "next/link";
-import { v4 as uuidv4 } from "uuid";
-import Card from "@/components/slider/Card";
-import Carousel from "@/components/slider/Carousel";
 import imgrandom from "@/public/coins_banner2.jpg";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands2";
 import { useTranslation } from "react-i18next";
 
-import UserBrands from "./Brands_home/UserBrands";
-
-export default function TopBrands() {
+export default function TopBrandsRandom() {
   const [newUrl, setNewUrl] = useState("");
   const [source, setSource] = useState("");
   const [loading, setLoading] = useState(true);
   const [brands, setBrands] = useState([]);
   const { language } = useLanguage();
   const { t } = useTranslation();
+  const timeoutRef = useRef(null);
+
+  const resetTimeout = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
+    timeoutRef.current = setTimeout(() => {
+      if (brands.length > 0) {
+        const randomBrand = brands[Math.floor(Math.random() * brands.length)];
+        window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
+      }
+    }, 100000); // 10 секунд
+  };
 
   useEffect(() => {
     // Обновляем URL, удаляем параметры и устанавливаем source на основе localStorage
@@ -68,7 +75,22 @@ export default function TopBrands() {
     if (savedUrl) {
       setNewUrl(savedUrl);
     }
-  }, [language]);
+
+    resetTimeout();
+    const events = ["mousemove", "scroll", "keydown"];
+    events.forEach((event) => {
+      window.addEventListener(event, resetTimeout);
+    });
+
+    return () => {
+      events.forEach((event) => {
+        window.removeEventListener(event, resetTimeout);
+      });
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [language, brands]);
 
   const categoryBrands = { key1: "Segment2", key2: "Premium" };
   const { data, error } = useSWR(
@@ -88,18 +110,6 @@ export default function TopBrands() {
   }, [data, categoryBrands.key1, categoryBrands.key2]);
 
   const shuffledBrands = shuffle(brands);
-  const cards2 = shuffledBrands.slice(0, 6).map((brand) => ({
-    key: uuidv4(),
-    content: (
-      <Card
-        imagen={`/brands/${brand.CasinoBrand}.png`}
-        link={brand.GoBig}
-        bonus={brand.OurOfferContent}
-      />
-    ),
-  }));
-
-  console.log("BRANDS", brands);
 
   return (
     <>
