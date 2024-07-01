@@ -190,6 +190,75 @@ const chunks = [
     ]
   },
   {
+    "path": "_next/static/chunks/node_modules_@react-spring_3b7909._.js",
+    "included": [
+      "[project]/node_modules/@react-spring/shared/dist/react-spring_shared.modern.mjs (ecmascript)",
+      "[project]/node_modules/@react-spring/animated/dist/react-spring_animated.modern.mjs (ecmascript)",
+      "[project]/node_modules/@react-spring/types/dist/react-spring_types.modern.mjs (ecmascript)",
+      "[project]/node_modules/@react-spring/core/dist/react-spring_core.modern.mjs (ecmascript)",
+      "[project]/node_modules/@react-spring/web/dist/react-spring_web.modern.mjs (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_next_2bac9b._.js",
+    "included": [
+      "[project]/node_modules/next/link.js (ecmascript)",
+      "[project]/node_modules/next/dist/compiled/process/browser.js (ecmascript)",
+      "[project]/node_modules/next/dist/build/polyfills/process.js (ecmascript)",
+      "[project]/node_modules/next/image.js (ecmascript)",
+      "[project]/node_modules/next/dist/compiled/scheduler/index.js (ecmascript)",
+      "[project]/node_modules/next/dist/compiled/react-dom/index.js (ecmascript)",
+      "[project]/node_modules/next/dist/compiled/react/index.js (ecmascript)",
+      "[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript)",
+      "[project]/node_modules/next/dist/shared/lib/app-dynamic.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_default_cjs_c515f6._.js",
+    "included": [
+      "[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_wildcard_cjs_fc7ed3._.js",
+    "included": [
+      "[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_default_3f1681.js",
+    "included": [
+      "[project]/node_modules/@swc/helpers/esm/_interop_require_default.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_wildcard_e62699.js",
+    "included": [
+      "[project]/node_modules/@swc/helpers/esm/_interop_require_wildcard.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_util_a2a536._.js",
+    "included": [
+      "[project]/node_modules/util/util.js (ecmascript)",
+      "[project]/node_modules/util/node_modules/inherits/inherits_browser.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_use-sync-external-store_e8c9cc._.js",
+    "included": [
+      "[project]/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js (ecmascript)",
+      "[project]/node_modules/use-sync-external-store/shim/index.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_swr_eb10c9._.js",
+    "included": [
+      "[project]/node_modules/swr/_internal/dist/index.mjs (ecmascript)",
+      "[project]/node_modules/swr/core/dist/index.mjs (ecmascript)"
+    ]
+  },
+  {
     "path": "_next/static/chunks/node_modules_lodash_shuffle_08c1b9.js",
     "included": [
       "[project]/node_modules/lodash/shuffle.js (ecmascript)"
@@ -202,54 +271,15 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_util_util_a0d290.js",
-    "included": [
-      "[project]/node_modules/util/util.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/0df90_inherits_inherits_browser_890db3.js",
-    "included": [
-      "[project]/node_modules/util/node_modules/inherits/inherits_browser.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_next_f14058._.js",
-    "included": [
-      "[project]/node_modules/next/image.js (ecmascript)",
-      "[project]/node_modules/next/dist/compiled/process/browser.js (ecmascript)",
-      "[project]/node_modules/next/dist/build/polyfills/process.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_next_link_f8b909.js",
-    "included": [
-      "[project]/node_modules/next/link.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_next_dist_compiled_react_f5b698._.js",
-    "included": [
-      "[project]/node_modules/next/dist/compiled/react/index.js (ecmascript)",
-      "[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript)"
-    ]
-  },
-  {
     "path": "_next/static/chunks/node_modules_void-elements_index_d79bf2.js",
     "included": [
       "[project]/node_modules/void-elements/index.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/8069e_use-sync-external-store_cjs_use-sync-external-store-shim_development_e04939.js",
+    "path": "_next/static/chunks/node_modules_react-spring_dist_react-spring_modern_mjs_636c1f._.js",
     "included": [
-      "[project]/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_use-sync-external-store_shim_index_29795c.js",
-    "included": [
-      "[project]/node_modules/use-sync-external-store/shim/index.js (ecmascript)"
+      "[project]/node_modules/react-spring/dist/react-spring.modern.mjs (ecmascript)"
     ]
   },
   {
@@ -259,45 +289,42 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_swr__internal_dist_index_mjs_1bbd4a._.js",
+    "path": "_next/static/chunks/node_modules_uuid_dist_esm-browser_index_247be9.js",
     "included": [
-      "[project]/node_modules/swr/_internal/dist/index.mjs (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_swr_core_dist_index_mjs_f43d60._.js",
-    "included": [
-      "[project]/node_modules/swr/core/dist/index.mjs (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_wildcard_cjs_fc7ed3._.js",
-    "included": [
-      "[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_default_cjs_c515f6._.js",
-    "included": [
-      "[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_wildcard_e62699.js",
-    "included": [
-      "[project]/node_modules/@swc/helpers/esm/_interop_require_wildcard.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_default_3f1681.js",
-    "included": [
-      "[project]/node_modules/@swc/helpers/esm/_interop_require_default.js (ecmascript)"
+      "[project]/node_modules/uuid/dist/esm-browser/index.js (ecmascript)"
     ]
   },
   {
     "path": "_next/static/chunks/node_modules_react-i18next_dist_es_index_22923c.js",
     "included": [
       "[project]/node_modules/react-i18next/dist/es/index.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/components_slider_Card_module.css",
+    "included": [
+      "[project]/components/slider/Card.module.css (css)"
+    ],
+    "moduleChunks": [
+      "_next/static/chunks/components_slider_Card_module_c9a116.css"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_slick-carousel_slick_slick.css",
+    "included": [
+      "[project]/node_modules/slick-carousel/slick/slick.css (css)"
+    ],
+    "moduleChunks": [
+      "_next/static/chunks/node_modules_slick-carousel_slick_slick_c9a116.css"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_slick-carousel_slick_slick-theme.css",
+    "included": [
+      "[project]/node_modules/slick-carousel/slick/slick-theme.css (css)"
+    ],
+    "moduleChunks": [
+      "_next/static/chunks/node_modules_slick-carousel_slick_slick-theme_c9a116.css"
     ]
   },
   "_next/static/chunks/components_TopBrandsRandom_jsx_5771e1._.js"
