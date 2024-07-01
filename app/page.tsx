@@ -28,6 +28,7 @@ export default async function Home() {
       </div> */}
       <TopBrandsRandom />
 
+
       <NewArrivals />
 
       <div className="main__container">
