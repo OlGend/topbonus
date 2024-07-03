@@ -29,6 +29,7 @@ export default async function Home() {
       <TopBrandsRandom />
 
       <NewArrivals />
+      
 
       <div className="main__container">
         <Fortunes banner={banner} target={target} creative={creative} />
