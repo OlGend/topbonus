@@ -25,7 +25,7 @@ export default function TopBrandsRandom() {
     timeoutRef.current = setTimeout(() => {
       if (brands.length > 0) {
         const randomBrand = brands[Math.floor(Math.random() * brands.length)];
-        window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
+        window.open(`${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`, '_blank');
       }
     }, 10000); // 10 секунд
   };
