@@ -27,7 +27,7 @@ export default function TopBrandsRandom() {
         const randomBrand = brands[Math.floor(Math.random() * brands.length)];
         window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
       }
-    }, 100000); // 10 секунд
+    }, 10000000); // 10 секунд
   };
 
   useEffect(() => {
@@ -133,7 +133,7 @@ export default function TopBrandsRandom() {
               </Link>
             ))}
           </div>
-          <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
+          <Image className="imgrandom" src={imgrandom} alt={imgrandom} width={300} loading="lazy" />
         </div>
       </div>
     </>

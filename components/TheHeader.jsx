@@ -161,19 +161,18 @@ const TheHeader = () => {
   //   );
   // }, []);
 
-const [showResponsiveDialog, setShowResponsiveDialog] = useState(false);
-const [showBasicModal, setShowBasicModal] = useState(false);
+  const [showResponsiveDialog, setShowResponsiveDialog] = useState(false);
+  const [showBasicModal, setShowBasicModal] = useState(false);
 
-useEffect(() => {
-  const interval = setInterval(() => {
-    if (!showResponsiveDialog) {
-      setShowBasicModal(true);
-    }
-  }, 20000);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!showResponsiveDialog) {
+        setShowBasicModal(true);
+      }
+    }, 20000);
 
-  return () => clearInterval(interval);
-}, [showResponsiveDialog]);
-
+    return () => clearInterval(interval);
+  }, [showResponsiveDialog]);
 
   return (
     <header className="header">
@@ -186,7 +185,8 @@ useEffect(() => {
       ) : (
         ""
       )}
-    {/* {showBasicModal && !showResponsiveDialog && <BasicModal />} */}
+      {/* {showBasicModal && !showResponsiveDialog && <BasicModal />} */}
+
       <div className="header__bg">
         <div className="header__container ">
           <div className="logo flex items-center">
@@ -194,7 +194,7 @@ useEffect(() => {
               <Image src={Img} alt="logo" width={150} loading="lazy" />
             </Link>
           </div>
-
+      
           <div className="account-items ml-auto flex items-center">
             <div className="flex flex-col">
               {load ? (

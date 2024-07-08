@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { TheFooter } from "@/components/TheFooter";
 import { LanguageProvider } from "@/components/switcher/LanguageContext";
 import RandomWindow from "@/components/random/RandomWindow";
+import Marque from "@/components/Marque";
 
 // import BannerWindow from "@/components/banner/BannerWindow";
 import Script from "next/script";
@@ -44,6 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
 
         <LanguageProvider>
+          <Marque />
           <TheHeader />
 
           <main>
@@ -78,8 +80,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   });`}
         </Script>
 
-
-
         <Script id="ladesc">
           {`
             (function (d, src, c) {
@@ -101,8 +101,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
           `}
         </Script>
-
-
       </body>
     </html>
   );

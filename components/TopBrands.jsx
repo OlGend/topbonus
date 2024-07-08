@@ -12,6 +12,7 @@ import imgrandom from "@/public/coins_banner2.jpg";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { getBrands } from "@/components/getBrands/getBrands2";
 import { useTranslation } from "react-i18next";
+import Timer from "@/components/Timer";
 
 import UserBrands from "./Brands_home/UserBrands";
 
@@ -106,6 +107,7 @@ export default function TopBrands() {
       <div className="topbr">
 
         <div className="main__container">
+        <Timer />
           {loading ? (
             <Loader />
           ) : (

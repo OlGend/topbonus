@@ -8,6 +8,7 @@ import Fortunes from "@/components/fortune";
 import NewArrivals from "@/components/newArrivals/NewArrivals";
 import UserBrands from "@/components/Brands_home/UserBrands";
 
+
 export const metadata: Metadata = {
   title: "topbon.us: Your Comprehensive Source for Casino Reviews and Insights",
   description:
@@ -23,6 +24,7 @@ export default async function Home() {
       {/* <PreviewHome /> */}
 
       <TopBrands />
+     
       <div className="main__container mt-3">
         <UserBrands />
       </div>

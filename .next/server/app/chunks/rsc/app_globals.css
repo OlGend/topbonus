@@ -1,4 +1,5 @@
 /* chunk [output]/.next/server/app/chunks/rsc/app_globals.css */
+@import "https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap";
 /* [project]/app/globals.css (css, rsc) */
 @charset "UTF-8";
 *, 
@@ -6835,8 +6836,19 @@ p {
     text-align: left;
   }
   .topbr .main__container > div {
-    height: 500px !important;
+    height: 300px !important;
     padding-top: 35px !important;
+  }
+  .topbr .main__container {
+    padding: 150px 0 60px;
+  }
+  .topbr .main__container .timer {
+    height: initial !important;
+    padding-top: 90px !important;
+    font-size: 30px;
+  }
+  .imgrandom {
+    display: none;
   }
   .topbr .preview h1 {
     width: 100%;
@@ -7458,7 +7470,7 @@ input.error {
   }
   .mobile-menu {
     position: fixed;
-    top: 61px;
+    top: 105px;
     left: -100%;
     width: 80%;
     max-width: 300px;
@@ -7580,7 +7592,7 @@ input.error {
   }
   .mobile-menu {
     position: fixed;
-    top: 61px;
+    top: 105px;
     left: -100%;
     width: 80%;
     max-width: 300px;
@@ -9207,5 +9219,78 @@ h1.fz31 {
 span.descriptions {
   font-size: 14px;
   line-height: 17px;
+}
+.review2 .main__container img {
+  max-width: 250px;
+}
+.preview2 {
+  padding-bottom: 30px;
+}
+.timer {
+  color: #2ceb8f;
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  font-family: 'Tourney', sans-serif;
+  font-weight: 700;
+  position: absolute;
+  max-width: 200px;
+  min-width: 200px;
+  top: 50px;
+  left: calc(50% - 200px / 2);
+}
+.topbr .main__container {
+  position: relative;
+}
+.wrap-line-text {
+  margin: auto;
+  padding: 10px 0;
+  background-color: #3760b1;
+}
+.marquee-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 30s linear infinite;
+}
+.marquee span {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+  padding-right: 100%;
+}
+.marquee b {
+  color: #2ceb8f;
+}
+.marquee-container:hover .marquee {
+  animation-play-state: paused;
+}
+@keyframes scroll {
+  0% {
+    transform: translatex(0);
+  }
+  100% {
+    transform: translatex(-100%);
+  }
+}
+@media (min-width: 320px) and (max-width: 1259px) {
+  .wrap-line-text {
+    position: fixed;
+    z-index: 4;
+  }
+  .marquee span {
+    font-size: 14px;
+  }
+  .header {
+    margin-top: 41px;
+  }
 }
 

@@ -1,12 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 
 export default function Carroussel(props) {
   const [Carousel, setCarousel] = useState(null);
   const [offsetRadius, setOffsetRadius] = useState(4);
   const [showArrows, setShowArrows] = useState(false);
-  const [goToSlide, setGoToSlide] = useState(null);
+  const [goToSlide, setGoToSlide] = useState(0);
   const [cards, setCards] = useState([]);
+  const autoScrollRef = useRef(null);
 
   useEffect(() => {
     const loadCarousel = async () => {
@@ -24,15 +25,36 @@ export default function Carroussel(props) {
     setShowArrows(props.showArrows);
   }, [props.offset, props.showArrows]);
 
-
-
   useEffect(() => {
     const table = props.cards.map((element, index) => {
       return { ...element, onClick: () => setGoToSlide(index) };
     });
     setCards(table);
   }, [props.cards, setGoToSlide]);
-  
+
+  useEffect(() => {
+    const startAutoScroll = () => {
+      autoScrollRef.current = setInterval(() => {
+        setGoToSlide((prevSlide) => (prevSlide + 1) % props.cards.length);
+      }, 2000); // Смена слайда каждые 3 секунды
+    };
+
+    startAutoScroll();
+
+    return () => {
+      clearInterval(autoScrollRef.current);
+    };
+  }, [props.cards.length]);
+
+  const handleMouseEnter = () => {
+    clearInterval(autoScrollRef.current);
+  };
+
+  const handleMouseLeave = () => {
+    autoScrollRef.current = setInterval(() => {
+      setGoToSlide((prevSlide) => (prevSlide + 1) % props.cards.length);
+    }, 2000);
+  };
 
   if (!Carousel) {
     return null; // Мы рендерим пустоту, если Carousel еще не загружен
@@ -42,15 +64,14 @@ export default function Carroussel(props) {
   let yDown = null;
 
   const getTouches = (evt) => {
-    return (
-      evt.touches || evt.originalEvent.touches // browser API
-    ); // jQuery
+    return evt.touches || evt.originalEvent.touches; // browser API // jQuery
   };
 
   const handleTouchStart = (evt) => {
     const firstTouch = getTouches(evt)[0];
     xDown = firstTouch.clientX;
     yDown = firstTouch.clientY;
+    clearInterval(autoScrollRef.current); // Остановка автопрокрутки при касании
   };
 
   const handleTouchMove = (evt) => {
@@ -65,31 +86,25 @@ export default function Carroussel(props) {
     let yDiff = yDown - yUp;
 
     if (Math.abs(xDiff) > Math.abs(yDiff)) {
-      /*most significant*/
       if (xDiff > 0) {
-        /* left swipe */
-        setGoToSlide(prevSlide => prevSlide + 1);
-
+        setGoToSlide((prevSlide) => (prevSlide + 1) % props.cards.length);
       } else {
-        /* right swipe */
-        setGoToSlide(prevSlide => prevSlide - 1);
-
-      }
-    } else {
-      if (yDiff > 0) {
-        /* up swipe */
-      } else {
-        /* down swipe */
+        setGoToSlide((prevSlide) => (prevSlide - 1 + props.cards.length) % props.cards.length);
       }
     }
-    /* reset values */
     xDown = null;
     yDown = null;
+
+    autoScrollRef.current = setInterval(() => {
+      setGoToSlide((prevSlide) => (prevSlide + 1) % props.cards.length);
+    }, 2000); // Возобновление автопрокрутки после завершения касания
   };
 
   return (
     <div
       style={{ width: props.width, height: props.height, margin: props.margin }}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
     >
