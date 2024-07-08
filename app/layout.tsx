@@ -65,7 +65,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
         </Script>
-        {/* <Script
+        <Script
           src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
           defer
         ></Script>
@@ -76,7 +76,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       appId: "7bc5d17e-80e2-4e29-8894-67b4cef49fd6",
     });
   });`}
-        </Script> */}
+        </Script>
+
+
 
         <Script id="ladesc">
           {`
@@ -99,6 +101,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
           `}
         </Script>
+
+
       </body>
     </html>
   );
