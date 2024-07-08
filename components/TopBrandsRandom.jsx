@@ -14,7 +14,6 @@ export default function TopBrandsRandom() {
   const [source, setSource] = useState("");
   const [loading, setLoading] = useState(true);
   const [brands, setBrands] = useState([]);
-  const [hasRedirected, setHasRedirected] = useState(false); // Новое состояние для отслеживания редиректа
   const { language } = useLanguage();
   const { t } = useTranslation();
   const timeoutRef = useRef(null);
@@ -24,12 +23,11 @@ export default function TopBrandsRandom() {
       clearTimeout(timeoutRef.current);
     }
     timeoutRef.current = setTimeout(() => {
-      if (brands.length > 0 && !hasRedirected) {
+      if (brands.length > 0) {
         const randomBrand = brands[Math.floor(Math.random() * brands.length)];
-        window.open(`${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`, '_blank');
-        setHasRedirected(false); 
+        window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
       }
-    }, 100000); 
+    }, 100000); // 10 секунд
   };
 
   useEffect(() => {
@@ -112,19 +110,6 @@ export default function TopBrandsRandom() {
   }, [data, categoryBrands.key1, categoryBrands.key2]);
 
   const shuffledBrands = shuffle(brands);
-
-  useEffect(() => {
-    if (hasRedirected) {
-      // Если редирект уже был выполнен, удаляем все слушатели событий
-      const events = ["mousemove", "scroll", "keydown"];
-      events.forEach((event) => {
-        window.removeEventListener(event, resetTimeout);
-      });
-      if (timeoutRef.current) {
-        clearTimeout(timeoutRef.current);
-      }
-    }
-  }, [hasRedirected]);
 
   return (
     <>
