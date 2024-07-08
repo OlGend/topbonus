@@ -14,6 +14,7 @@ export default function TopBrandsRandom() {
   const [source, setSource] = useState("");
   const [loading, setLoading] = useState(true);
   const [brands, setBrands] = useState([]);
+  const [hasRedirected, setHasRedirected] = useState(false); // Новое состояние для отслеживания редиректа
   const { language } = useLanguage();
   const { t } = useTranslation();
   const timeoutRef = useRef(null);
@@ -23,9 +24,10 @@ export default function TopBrandsRandom() {
       clearTimeout(timeoutRef.current);
     }
     timeoutRef.current = setTimeout(() => {
-      if (brands.length > 0) {
+      if (brands.length > 0 && !hasRedirected) {
         const randomBrand = brands[Math.floor(Math.random() * brands.length)];
         window.open(`${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`, '_blank');
+        setHasRedirected(true); // Устанавливаем состояние, чтобы редирект происходил только один раз
       }
     }, 10000); // 10 секунд
   };
