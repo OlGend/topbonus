@@ -27,7 +27,7 @@ export default function TopBrandsRandom() {
         const randomBrand = brands[Math.floor(Math.random() * brands.length)];
         window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
       }
-    }, 100000000); // 10 секунд
+    }, 10000); // 10 секунд
   };
 
   useEffect(() => {
