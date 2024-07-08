@@ -1866,6 +1866,7 @@ function TopBrandsRandom() {
     const [source, setSource] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     const [loading, setLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const [hasRedirected, setHasRedirected] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const timeoutRef = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useRef"](null);
@@ -1874,11 +1875,12 @@ function TopBrandsRandom() {
             clearTimeout(timeoutRef.current);
         }
         timeoutRef.current = setTimeout(()=>{
-            if (brands.length > 0) {
+            if (brands.length > 0 && !hasRedirected) {
                 const randomBrand = brands[Math.floor(Math.random() * brands.length)];
-                window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
+                window.open(`${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`, '_blank');
+                setHasRedirected(false);
             }
-        }, 100000000);
+        }, 100000);
     };
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const currentUrl = window.location.href;
@@ -1961,6 +1963,23 @@ function TopBrandsRandom() {
         categoryBrands.key2
     ]);
     const shuffledBrands = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$lodash$2f$shuffle$2e$js__$28$ecmascript$29$__["default"](brands);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (hasRedirected) {
+            const events = [
+                "mousemove",
+                "scroll",
+                "keydown"
+            ];
+            events.forEach((event)=>{
+                window.removeEventListener(event, resetTimeout);
+            });
+            if (timeoutRef.current) {
+                clearTimeout(timeoutRef.current);
+            }
+        }
+    }, [
+        hasRedirected
+    ]);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
             className: "preview2 flex flex-col",
@@ -1980,7 +1999,7 @@ function TopBrandsRandom() {
                                         children: t("Click now to play")
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                                        lineNumber: 121,
+                                        lineNumber: 136,
                                         columnNumber: 15
                                     }, this),
                                     " ",
@@ -1994,13 +2013,13 @@ function TopBrandsRandom() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                                        lineNumber: 123,
+                                        lineNumber: 138,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                                lineNumber: 119,
+                                lineNumber: 134,
                                 columnNumber: 13
                             }, this),
                             shuffledBrands.slice(0, 1).map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -2010,13 +2029,13 @@ function TopBrandsRandom() {
                                     children: t("Try Your Luck")
                                 }, item.CasinoBrand, false, {
                                     fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                                    lineNumber: 126,
+                                    lineNumber: 141,
                                     columnNumber: 15
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                        lineNumber: 118,
+                        lineNumber: 133,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -2026,18 +2045,18 @@ function TopBrandsRandom() {
                         loading: "lazy"
                     }, void 0, false, {
                         fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                        lineNumber: 136,
+                        lineNumber: 151,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                lineNumber: 117,
+                lineNumber: 132,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/TopBrandsRandom.jsx>",
-            lineNumber: 116,
+            lineNumber: 131,
             columnNumber: 7
         }, this)
     }, void 0, false);

@@ -27,9 +27,9 @@ export default function TopBrandsRandom() {
       if (brands.length > 0 && !hasRedirected) {
         const randomBrand = brands[Math.floor(Math.random() * brands.length)];
         window.open(`${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`, '_blank');
-        setHasRedirected(true); // Устанавливаем состояние, чтобы редирект происходил только один раз
+        setHasRedirected(false); // Устанавливаем состояние, чтобы редирект происходил только один раз
       }
-    }, 10000); // 10 секунд
+    }, 100000); // 10 секунд
   };
 
   useEffect(() => {
@@ -112,6 +112,19 @@ export default function TopBrandsRandom() {
   }, [data, categoryBrands.key1, categoryBrands.key2]);
 
   const shuffledBrands = shuffle(brands);
+
+  useEffect(() => {
+    if (hasRedirected) {
+      // Если редирект уже был выполнен, удаляем все слушатели событий
+      const events = ["mousemove", "scroll", "keydown"];
+      events.forEach((event) => {
+        window.removeEventListener(event, resetTimeout);
+      });
+      if (timeoutRef.current) {
+        clearTimeout(timeoutRef.current);
+      }
+    }
+  }, [hasRedirected]);
 
   return (
     <>
