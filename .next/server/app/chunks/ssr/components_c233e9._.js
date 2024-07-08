@@ -915,7 +915,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
             children: [
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
                     className: `flex flex-col items-center`,
-                    href: `${brand.GoBig}/${savedUrl}`,
+                    href: `${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`,
                     children: [
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
                             src: `/brands/${brand.CasinoBrand}.png`,
@@ -962,7 +962,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                         }, this) : "",
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
                             className: "btn btn-primary btn-fz",
-                            href: `${brand.GoBig}/${savedUrl}`,
+                            href: `${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`,
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
@@ -1878,7 +1878,7 @@ function TopBrandsRandom() {
                 const randomBrand = brands[Math.floor(Math.random() * brands.length)];
                 window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
             }
-        }, 10000);
+        }, 100000000);
     };
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const currentUrl = window.location.href;

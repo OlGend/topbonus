@@ -365,15 +365,24 @@ function ResponsiveDialog() {
     const handleClose = ()=>{
         setOpen(false);
     };
-    const handleYes = ()=>{
+    const handleYes = async ()=>{
         const an = value && value !== "N/A" && value !== "" ? value : localStorage.getItem("country_data");
         setOpen(false);
         setLoading(true);
         if (userData.geo_approve === null || userData.geo_approve === "") {
-            __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$updateGeo$2e$jsx__$28$ecmascript$29$__["updateGeo"](localStorage.getItem("user_id"), an.value);
-            console.log("====", an);
+            try {
+                await __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$updateGeo$2e$jsx__$28$ecmascript$29$__["updateGeo"](localStorage.getItem("user_id"), an.value);
+                localStorage.setItem("country_brands", an.value);
+                console.log("====", an);
+                window.location.reload();
+            } catch (error) {
+                console.error("Failed to update geo:", error);
+            } finally{
+                setLoading(false);
+            }
+        } else {
+            setLoading(false);
         }
-        setLoading(false);
     };
     const [show, setShow] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__.useState(true);
     const handleNo = ()=>{
@@ -394,12 +403,12 @@ function ResponsiveDialog() {
                         children: `${t("Are you from")} ${localStorage.getItem("country_name")}?`
                     }, void 0, false, {
                         fileName: "<[project]/components/geo-identifier/index.jsx>",
-                        lineNumber: 105,
+                        lineNumber: 110,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "<[project]/components/geo-identifier/index.jsx>",
-                    lineNumber: 104,
+                    lineNumber: 109,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$DialogContent$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -407,12 +416,12 @@ function ResponsiveDialog() {
                         children: t("Not right? Pick your actual country of residence from the list below to see the relevant offers!")
                     }, void 0, false, {
                         fileName: "<[project]/components/geo-identifier/index.jsx>",
-                        lineNumber: 110,
+                        lineNumber: 115,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "<[project]/components/geo-identifier/index.jsx>",
-                    lineNumber: 109,
+                    lineNumber: 114,
                     columnNumber: 9
                 }, this),
                 show && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$DialogActions$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -423,7 +432,7 @@ function ResponsiveDialog() {
                             children: t("Choose my Country")
                         }, void 0, false, {
                             fileName: "<[project]/components/geo-identifier/index.jsx>",
-                            lineNumber: 116,
+                            lineNumber: 121,
                             columnNumber: 13
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -433,13 +442,13 @@ function ResponsiveDialog() {
                             children: t("Yes")
                         }, void 0, false, {
                             fileName: "<[project]/components/geo-identifier/index.jsx>",
-                            lineNumber: 118,
+                            lineNumber: 123,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/geo-identifier/index.jsx>",
-                    lineNumber: 115,
+                    lineNumber: 120,
                     columnNumber: 11
                 }, this),
                 !show && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$DialogActions$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -454,7 +463,7 @@ function ResponsiveDialog() {
                             getOptionValue: (option)=>option.value
                         }, void 0, false, {
                             fileName: "<[project]/components/geo-identifier/index.jsx>",
-                            lineNumber: 125,
+                            lineNumber: 130,
                             columnNumber: 13
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$Button$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -464,24 +473,24 @@ function ResponsiveDialog() {
                             children: t("Confirm")
                         }, void 0, false, {
                             fileName: "<[project]/components/geo-identifier/index.jsx>",
-                            lineNumber: 133,
+                            lineNumber: 138,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/geo-identifier/index.jsx>",
-                    lineNumber: 124,
+                    lineNumber: 129,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/geo-identifier/index.jsx>",
-            lineNumber: 97,
+            lineNumber: 102,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/geo-identifier/index.jsx>",
-        lineNumber: 96,
+        lineNumber: 101,
         columnNumber: 5
     }, this);
 }
@@ -863,7 +872,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Select a brand from the list below, make your first deposit and receive up to 20 USD in rewards!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to 20 USD on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
                 "You have successfully registered on these brands": "You have successfully registered on these brands",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL"
             }
         },
         pl: {
@@ -1115,7 +1127,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wybierz kasyno z poniższej listy, dokonaj pierwszej wpłaty i odbierz nawet do 20 USD nagrody!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Otrzymasz 50 darmowych spinów za każdą pierwszą wpłatę z naszej strony internetowej. Obróć te spiny i zdobądź do 20 USD na swoim portfelu kryptowalutowym/PayPal. Aby zakwalifikować się do wypłaty, upewnij się, że Twoja pierwsza wpłata wynosi co najmniej 25 euro lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę.",
                 "You have successfully registered on these brands": "Zarejestrowałeś się pomyślnie na tych markach",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JESTEŚ JUŻ ZAREJESTROWANY TUTAJ, ZRÓB SWOJE PIERWSZE WPŁATY I",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "OTRZYMAJ NAWET DO 2035 PLN Z NATYCHMIASTOWYM WYPŁACANIEM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "OTRZYMUJ PRAWDZIWE PIENIĄDZE Z NATYCHMIASTOWYM WYPŁACANIEM"
             }
         },
         de: {
@@ -1367,7 +1382,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wählen Sie ein Casino aus der Liste unten, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 USD Belohnung!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sie erhalten 50 Freispiele für jede Ersteinzahlung von unserer Website. Drehen Sie diese Spins und erhalten Sie bis zu 20 USD auf Ihrem Kryptowallet/PayPal. Um sich für Auszahlungen zu qualifizieren, stellen Sie sicher, dass Ihre erste Einzahlung mindestens Є25 oder dem Äquivalent in anderen Währungen beträgt und nach der Beantragung einer Auszahlung erfolgt ist.",
                 "You have successfully registered on these brands": "Sie haben sich erfolgreich bei diesen Marken registriert",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SIE SIND BEREITS HIER REGISTRIERT, MACHEN SIE IHRE ERSTEN EINZAHLUNGEN UND",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ERHALTEN SIE BIS ZU 500 EUR MIT SOFORTIGER AUSZAHLUNG",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ERHALTEN SIE ECHTES GELD MIT SOFORTIGER AUSZAHLUNG."
             }
         },
         bg: {
@@ -1619,7 +1637,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Изберете казино от списъка по-долу, направете първия си депозит и получете до 20 USD награда!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ще получите 50 безплатни завъртания за всеки първи депозит от нашия уебсайт. Завъртете тези завъртания и получете до 20 USD на вашия криптовалутен портфейл/PayPal. За да квалифицирате за изтегляне, се уверете, че първият ви депозит е поне Є25 или еквивалентът му в други валути и е направен след като сте поискали изтегляне.",
                 "You have successfully registered on these brands": "Вие успешно се регистрирахте в тези казина",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ВЕЧЕ СТЕ РЕГИСТРИРАНИ ТУК, НАПРАВЕТЕ ПЪРВИТЕ СИ ДЕПОЗИТИ И",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ПОЛУЧЕТЕ ДО 890 ЛВ. С МИГНОВЕНО ИЗТЕГЛЯНЕ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ПОЛУЧАЙТЕ РЕАЛНИ ПАРИ С НЕЗАБАВНО ТЕГЛЕНЕ"
             }
         },
         cz: {
@@ -1871,7 +1892,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasino z níže uvedeného seznamu, proveďte svůj první vklad a získejte až 20 USD odměny!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 volných zatočení za každý první vklad z našich webových stránek. Roztočte tyto zatočení a získejte až 20 USD na svou kryptoměnovou peněženku/PayPal. Pro kvalifikaci k výběrům se ujistěte, že váš první vklad je minimálně 25 € nebo ekvivalent v jiných měnách a byl proveden požadováním výběru.",
                 "You have successfully registered on these brands": "Úspěšně jste se zaregistrovali na tyto značky",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JSTE JIŽ ZAREGISTROVÁNI ZDE, PROVEĎTE SVÉ PRVNÍ VLOŽENÍ A",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKEJTE AŽ 11200 KČ S OKAMŽITÝM VÝBĚREM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKEJTE SKUTEČNÉ PENÍZE S OKAMŽITÝM VÝBĚREM"
             }
         },
         dk: {
@@ -2123,7 +2147,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vælg et casino fra listen nedenfor, foretag dit første indskud og modtag op til 20 USD i belønninger!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratis spins for hver første indbetaling fra vores hjemmeside. Spil disse spins og få op til 20 USD på din kryptopung/PayPal. For at kvalificere dig til udbetalinger, skal du sikre dig, at din første indbetaling er på mindst Є25 eller tilsvarende i andre valutaer og blev foretaget efter anmodning om en udbetaling.",
                 "You have successfully registered on these brands": "Du har succesfuldt registreret dig på disse mærker",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERET HER, LAV DINE FØRSTE INDBETALINGER OG",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MODTAG OP TIL 3400 DKK MED ØJEBLIKKELIG UDBETALING",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MODTAG RIGTIGE PENGE MED ØJEBLIKKELIG UDBETALING."
             }
         },
         nl: {
@@ -2375,7 +2402,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecteer een casino uit de onderstaande lijst, maak je eerste storting en ontvang tot 20 USD aan beloningen!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Je krijgt 50 gratis spins voor elke eerste storting vanaf onze website. Draai deze spins en krijg tot 20 USD op je crypto wallet/PayPal. Om in aanmerking te komen voor opnames, zorg ervoor dat je eerste storting minstens Є25 is of het equivalent in andere valuta en is gedaan na het aanvragen van een opname.",
                 "You have successfully registered on these brands": "Je hebt succesvol geregistreerd op deze merken",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JE BENT AL GEREGISTREERD HIER, MAAK JE EERSTE STORTINGEN EN",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ONTVANG TOT 500 EURO MET ONMIDDELLIJKE OPNAME",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ONTVANG ECHT GELD MET ONMIDDELLIJKE OPNAME"
             }
         },
         es: {
@@ -2627,7 +2657,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "¡Selecciona un casino de la lista a continuación, realiza tu primer depósito y recibe hasta 20 USD en recompensas!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Recibirás 50 giros gratis por cada primer depósito desde nuestro sitio web. Gira estos giros y obtén hasta 20 USD en tu billetera de criptomonedas/PayPal. Para calificar para retiros, asegúrate de que tu primer depósito sea de al menos Є25 o su equivalente en otras monedas y se haya realizado después de solicitar un retiro.",
                 "You have successfully registered on these brands": "Te has registrado con éxito en estas marcas",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YA ESTÁS REGISTRADO AQUÍ, REALIZA TUS PRIMEROS DEPÓSITOS Y",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECIBE HASTA 500 EUR CON RETIRO INSTANTÁNEO",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECIBE DINERO REAL CON RETIRO INSTANTÁNEO"
             }
         },
         fi: {
@@ -2879,7 +2912,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Valitse kasino alla olevasta listasta, tee ensimmäinen talletuksesi ja saat jopa 20 USD palkintoina!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Saat 50 ilmaiskierrosta jokaisesta ensimmäisestä talletuksestasi verkkosivustoltamme. Pyöritä nämä kierrokset ja saat jopa 20 USD krypto lompakkoosi/PayPaliin. Jotta voit olla oikeutettu nostoihin, varmista että ensimmäinen talletuksesi on vähintään 25 euroa tai vastaava summa muissa valuutoissa ja se on tehty pyynnön jälkeen.",
                 "You have successfully registered on these brands": "Olet rekisteröitynyt näille brändeille onnistuneesti",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "OLET JO REKISTERÖITYNYT TÄHÄN, TEE ENSIMMÄISET TALLETUKSESI JA",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "SAAT JOPA 500 EURON NOPEALLA NOSTOLLA",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "SAAT OIKEAA RAHAA NOPEALLA NOSTOLLA"
             }
         },
         fr: {
@@ -3131,7 +3167,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Sélectionnez un casino dans la liste ci-dessous, effectuez votre premier dépôt et recevez jusqu'à 20 USD de récompenses!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Vous recevrez 50 tours gratuits pour chaque premier dépôt à partir de notre site Web. Faites tourner ces tours et obtenez jusqu'à 20 USD sur votre portefeuille crypto/PayPal. Pour être éligible aux retraits, assurez-vous que vos premiers dépôts sont d'au moins 25 € ou l'équivalent dans d'autres devises et ont été effectués après avoir demandé un retrait.",
                 "You have successfully registered on these brands": "Vous vous êtes inscrit avec succès sur ces marques",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOUS ÊTES DÉJÀ INSCRIT ICI, FAITES VOS PREMIERS DÉPÔTS ET",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEVEZ JUSQU'À 500 EUR AVEC RETRAIT INSTANTANÉ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEVEZ DE L'ARGENT RÉEL AVEC RETRAIT INSTANTANÉ"
             }
         },
         gr: {
@@ -3383,7 +3422,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Επιλέξτε ένα καζίνο από τη λίστα παρακάτω, κάντε την πρώτη σας κατάθεση και λάβετε μέχρι και 20 USD σε ανταμοιβές!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Θα λάβετε 50 δωρεάν περιστροφές για κάθε Πρώτη Κατάθεση από την ιστοσελίδα μας. Περιστρέψτε αυτές τις περιστροφές και κερδίστε έως και 20 USD στο κρυπτονόμισμά σας/PayPal. Για να προκριθείτε για αναλήψεις, βεβαιωθείτε ότι η πρώτη κατάθεσή σας είναι τουλάχιστον €25 ή το αντίστοιχο σε άλλα νομίσματα και έγινε μετά από αίτηση ανάληψης.",
                 "You have successfully registered on these brands": "Έχετε εγγραφεί με επιτυχία σε αυτά τα καζίνο",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ΕΊΣΤΕ ΉΔΗ ΕΓΓΕΓΡΑΜΜΈΝΟΙ ΕΔΏ, ΚΆΝΤΕ ΤΙΣ ΠΡΏΤΕΣ ΣΑΣ ΚΑΤΑΘΈΣΕΙΣ ΚΑΙ",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ΛΑΒΕ ΜΕΧΡΙ 500 ΕΥΡΩ ΜΕ ΑΜΕΣΗ ΑΝΑΛΗΨΗ",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ΛΑΜΒΆΝΕΤΕ ΠΡΑΓΜΑΤΙΚΆ ΧΡΗΜΑΤΑ ΜΕ ΆΜΕΣΗ ΑΝΑΛΗΨΗ"
             }
         },
         hu: {
@@ -3635,7 +3677,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Válasszon egy kaszinót az alábbi listából, végezze el az első befizetését, és akár 20 USD jutalmat kapjon!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ingyenes 50 pörgetést kapsz minden első befizetésért a weboldalunkról. Pörgetsd ezeket a pörgetéseket, és akár 20 USD is kaphatsz a kriptopénz tárcádon/PayPal számládon. A kifizetésekhez való jogosultsághoz biztosítsd, hogy az első befizetés legalább 25 euró vagy annak megfelelője más devizákon, és azt a kifizetés kérése után végezted.",
                 "You have successfully registered on these brands": "Sikeresen regisztrált ezeken a márkákon",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "MÁR REGISZTRÁLTÁL ITT, KEZD EL AZ ELSŐ BEFIZETÉSEIDET ÉS",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "AKÁR 184060 HUF-OT IS KAPHAT AZONNALI KIFIZETÉSSEL",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "VALÓDI PÉNZT KAPJ AZ AZONNALI KIFIZETÉSSEL"
             }
         },
         it: {
@@ -3887,7 +3932,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Seleziona un casinò dalla lista qui sotto, effettua il tuo primo deposito e ricevi fino a 20 USD di ricompense!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Riceverai 50 giri gratuiti per ogni primo deposito dal nostro sito web. Fai girare questi giri e ottieni fino a 20 USD sul tuo portafoglio criptato/PayPal. Per poter prelevare, assicurati che il tuo primo deposito sia di almeno Є25 o l'equivalente in altre valute e sia stato effettuato dopo aver richiesto un prelievo.",
                 "You have successfully registered on these brands": "Hai completato con successo la registrazione su questi marchi",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SEI GIÀ REGISTRATO QUI, EFFETTUA I TUOI PRIMI DEPOSITI E",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RICEVI FINO A 500 EURO CON PRELIEVO ISTANTANEO",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RICEVI DENARO REALE CON PRELIEVO ISTANTANEO"
             }
         },
         no: {
@@ -4139,7 +4187,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Velg et kasino fra listen nedenfor, gjør ditt første innskudd og motta opptil 20 USD i belønninger!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratisspinn for hver første innskudd fra nettstedet vårt. Spinn disse spinnene og få opptil 20 USD på din kryptolommebok/PayPal. For å kvalifisere for uttak, sørg for at ditt første innskudd er på minst Є25 eller tilsvarende i andre valutaer og ble gjort etter at du ba om et uttak.",
                 "You have successfully registered on these brands": "Du har registrert deg vellykket på disse merkene",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERT HER, GJØR DINE FØRSTE INNSKUDD OG",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MOTTA OPPTIL 4625 NOK MED UMIDDELBAR UTTAK",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MOTTA EKTE PENGER MED ØYEBLIKKELIG UTTAK"
             }
         },
         pt: {
@@ -4391,7 +4442,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecione um cassino da lista abaixo, faça seu primeiro depósito e receba até 20 USD em recompensas!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Você receberá 50 rodadas grátis para cada primeiro depósito em nosso site. Gire essas rodadas e ganhe até 20 USD em sua carteira de criptomoedas/PayPal. Para se qualificar para saques, certifique-se de que seu primeiro depósito seja de pelo menos Є25 ou o equivalente em outras moedas e tenha sido feito após solicitar um saque.",
                 "You have successfully registered on these brands": "Você se registrou com sucesso nestas marcas",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOCÊ JÁ ESTÁ REGISTRADO AQUI, FAÇA SEUS PRIMEIROS DEPÓSITOS E",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEBA ATÉ 500 EUR COM RETIRADA INSTANTÂNEA",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEBA DINHEIRO REAL COM SAQUE INSTANTÂNEO"
             }
         },
         se: {
@@ -4643,7 +4697,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Välj ett kasino från listan nedan, gör din första insättning och få upp till 20 USD i belöningar!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du kommer att få 50 gratissnurr för varje första insättning från vår webbplats. Snurra dessa snurr och få upp till 20 USD på din kryptoplånbok/PayPal. För att kvalificera dig för uttag, se till att din första insättning är minst Є25 eller motsvarande i andra valutor och gjordes efter att du begärt ett uttag.",
                 "You have successfully registered on these brands": "Du har framgångsrikt registrerat dig på dessa varumärken",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ÄR REDAN REGISTRERAD HÄR, GÖR DINA FÖRSTA INSÄTTNINGAR OCH",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "FÅ UPP TILL 5200 SEK MED OMEDELBAR UTTAG",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "FÅ RIKTIGA PENGAR MED OMEDELBAR UTTAG"
             }
         },
         sk: {
@@ -4895,7 +4952,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasíno zo zoznamu nižšie, urobte svoj prvý vklad a získajte až 20 USD odmeny!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 bezplatných zatočení za každý prvý vklad z našej webovej stránky. Zatočte týmito zatočeniami a získajte až 20 USD na svoj kryptomenový peňaženku/PayPal. Pre kvalifikáciu na výbery sa uistite, že váš prvý vklad je aspoň 25 eur alebo ekvivalent v iných menách a bol vykonaný požiadavkou na výber.",
                 "You have successfully registered on these brands": "Úspešne ste sa zaregistrovali na tieto značky",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "UŽ STE TU ZAREGISTROVANÝ, UROBTE SI PRVÉ VLOŽENIA A",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKAJTE AŽ 500 EUR S OKAMŽITÝM VÝBEROM",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKAJTE SKUTOČNÉ PENIAZE S OKAMŽITÝM VÝBEROM"
             }
         },
         tr: {
@@ -5147,7 +5207,10 @@ async function initializeI18n() {
                 "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Aşağıdaki listeden bir kumarhaneyi seçin, ilk para yatırmanızı yapın ve 20 USD'a kadar ödül alın!",
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sitemizden her ilk para yatırma işlemi için 50 Ücretsiz Dönüş alacaksınız. Bu dönüşleri çevirin ve kripto cüzdanınıza/PayPal hesabınıza kadar 20 USD kazanın. Çekilmeye hak kazanmak için, ilk para yatırma işleminizin en az 25 Є veya diğer para birimlerindeki karşılığı olması ve çekim talebinde bulunulduktan sonra yapılması gerekmektedir.",
                 "You have successfully registered on these brands": "Bu markalara başarıyla kaydoldunuz",
-                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!"
+                "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
+                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ZATEN BURADA KAYITLISINIZ, İLK YATIRIMLARINIZI YAPIN VE",
+                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "HIZLI ÇEKİM İLE 13000 TRY'YE KADAR ALIN",
+                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ANINDA ÇEKİM İLE GERÇEK PARA ALIN"
             }
         }
     };
@@ -5536,6 +5599,7 @@ const BrandsSwitcher = ()=>{
         setLanguage(lng);
         localStorage.setItem("country_brands", lng);
         setIsLoading(false);
+        window.location.reload();
     };
     const availableLanguages = [
         {
@@ -5979,23 +6043,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 168,
+                        lineNumber: 169,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 157,
+                lineNumber: 158,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 178,
+                lineNumber: 179,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 156,
+        lineNumber: 157,
         columnNumber: 5
     }, this);
 };
