@@ -27,9 +27,9 @@ export default function TopBrandsRandom() {
       if (brands.length > 0 && !hasRedirected) {
         const randomBrand = brands[Math.floor(Math.random() * brands.length)];
         window.open(`${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`, '_blank');
-        setHasRedirected(false); // Устанавливаем состояние, чтобы редирект происходил только один раз
+        setHasRedirected(false); 
       }
-    }, 100000); // 10 секунд
+    }, 100000); 
   };
 
   useEffect(() => {
