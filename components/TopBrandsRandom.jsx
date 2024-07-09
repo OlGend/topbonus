@@ -1,37 +1,30 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
-import useSWR from "swr";
-import { shuffle } from "lodash";
 import Image from "next/image";
 import Link from "next/link";
 import imgrandom from "@/public/coins_banner2.jpg";
 import { useLanguage } from "@/components/switcher/LanguageContext";
-import { getBrands } from "@/components/getBrands/getBrands2";
 import { useTranslation } from "react-i18next";
 
 export default function TopBrandsRandom() {
   const [newUrl, setNewUrl] = useState("");
   const [source, setSource] = useState("");
-  const [loading, setLoading] = useState(true);
-  const [brands, setBrands] = useState([]);
   const { language } = useLanguage();
   const { t } = useTranslation();
   const timeoutRef = useRef(null);
+  const [redirectUrl, setRedirectUrl] = useState("");
 
   const resetTimeout = () => {
     if (timeoutRef.current) {
       clearTimeout(timeoutRef.current);
     }
     timeoutRef.current = setTimeout(() => {
-      if (brands.length > 0) {
-        const randomBrand = brands[Math.floor(Math.random() * brands.length)];
-        window.location.href = `${randomBrand.GoBig}/${newUrl}&creative_id=XXL_Redirect`;
-      }
-    }, 10000000); // 10 секунд
+      if (!redirectUrl) return;
+      window.location.href = `${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`;
+    }, 1000000000); // 10 секунд
   };
 
   useEffect(() => {
-    // Обновляем URL, удаляем параметры и устанавливаем source на основе localStorage
     const currentUrl = window.location.href;
     const indexOfQuestionMark = currentUrl.indexOf("?");
     const newUrl2 =
@@ -40,7 +33,6 @@ export default function TopBrandsRandom() {
         : currentUrl;
     window.history.replaceState({}, document.title, newUrl2);
 
-    // Работа с URL и localStorage для определения source
     const urlObj = new URL(currentUrl);
     const searchParams = new URLSearchParams(urlObj.search);
     searchParams.delete("brand");
@@ -56,20 +48,24 @@ export default function TopBrandsRandom() {
         searchParams.set("source", partner);
       } else {
         setSource("0");
-        // Получаем текущий источник и проверяем, не является ли он одним из допустимых партнеров
         const sourceFound = localStorage.getItem("source");
         if (!partners.includes(sourceFound)) {
           localStorage.setItem("source", "0");
           searchParams.set("source", "0");
+        } else {
+          setSource(sourceFound);
         }
       }
     }
 
     if (currentKeyword) {
       setPartnerSource(currentKeyword);
+    } else {
+      const savedSource = localStorage.getItem("source");
+      if (savedSource) {
+        setSource(savedSource);
+      }
     }
-
-    const ad_campaign = localStorage.getItem("ad_campaign_id");
 
     const savedUrl = localStorage.getItem("savedUrl");
     if (savedUrl) {
@@ -90,26 +86,25 @@ export default function TopBrandsRandom() {
         clearTimeout(timeoutRef.current);
       }
     };
-  }, [language, brands]);
+  }, [language]);
 
-  const categoryBrands = { key1: "Segment2", key2: "Premium" };
-  const { data, error } = useSWR(
-    ["brands", language],
-    () => getBrands(language),
-    { initialData: brands }
-  );
   useEffect(() => {
-    if (data) {
-      const filteredData = data.filter(
-        (rowData) => rowData[categoryBrands.key1] === categoryBrands.key2
-      );
-      console.log("FILTER", filteredData);
-      setBrands(filteredData);
-      setLoading(false);
+    let url = "";
+    switch (source) {
+      case "partner1039":
+        url = "https://info.topbon.us/partner_aurnd";
+        break;
+      case "partner1043":
+        url = "https://info.topbon.us/rnd1043";
+        break;
+      case "partner1044":
+        url = "https://info.topbon.us/rnd1044";
+        break;
+      default:
+        url = "https://info.topbon.us/aurnd";
     }
-  }, [data, categoryBrands.key1, categoryBrands.key2]);
-
-  const shuffledBrands = shuffle(brands);
+    setRedirectUrl(url);
+  }, [source]);
 
   return (
     <>
@@ -122,18 +117,14 @@ export default function TopBrandsRandom() {
               {t("and see if")}{" "}
               <span className="text-blued"> {t("luck is on your side!")}</span>
             </h1>
-            {shuffledBrands.slice(0, 1).map((item) => (
-              <Link
-                target="_blank"
-                key={item.CasinoBrand}
-                className="btn btn-primary big-btn mt-3 target-try-your-luck"
-                href={`${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`}
-              >
-                {t("Try Your Luck")}
-              </Link>
-            ))}
+            <Link
+              className="btn btn-primary big-btn mt-3 target-try-your-luck"
+              href={`${redirectUrl}/${newUrl}&creative_id=XXL_Try_Your_Luck`}
+            >
+              {t("Try Your Luck")}
+            </Link>
           </div>
-          <Image className="imgrandom" src={imgrandom} alt={imgrandom} width={300} loading="lazy" />
+          <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
         </div>
       </div>
     </>

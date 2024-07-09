@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import useSWR from "swr";
 import { I18nextProvider } from "react-i18next";
 import i18n from "@/components/i18n";
 import { Navigation } from "./Navigation";
@@ -23,6 +24,9 @@ import Badge from "@mui/material/Badge";
 import { updateGeo } from "@/components/getUser/updateGeo";
 import ResponsiveDialog from "@/components/geo-identifier";
 import BasicModal from "@/components/modal";
+import KeitaroIframe from "@/components/KeitaroIframe";
+import { getBrands } from "@/components/getBrands/getBrands2";
+import { useLanguage } from "@/components/switcher/LanguageContext";
 
 const TheHeader = () => {
   const { t } = useTranslation();
@@ -153,13 +157,25 @@ const TheHeader = () => {
     };
   }, []);
 
-  // useEffect(() => {
+  
+  
+  const { language } = useLanguage();
+  const [brands, setBrands] = useState([]);
+  const { data, error } = useSWR(
+    ["brands", language],
+    () => getBrands(language),
+    { initialData: brands }
+  );
+  const [links, setLinks] = useState([]); // Инициализируем пустым массивом
+  
+  useEffect(() => {
+    if (data) {
+      setBrands(data); // Обновляем состояние brands данными из запроса
+      setLinks(data.map((brand) => brand.GoBig)); // Обновляем состояние links на основе данных
+    }
+  }, [data]);
 
-  //   updateGeo(
-  //     localStorage.getItem("user_id"),
-  //     localStorage.getItem("country_data")
-  //   );
-  // }, []);
+  
 
   const [showResponsiveDialog, setShowResponsiveDialog] = useState(false);
   const [showBasicModal, setShowBasicModal] = useState(false);
@@ -194,7 +210,7 @@ const TheHeader = () => {
               <Image src={Img} alt="logo" width={150} loading="lazy" />
             </Link>
           </div>
-      
+          {/* <KeitaroIframe links={links} /> */}
           <div className="account-items ml-auto flex items-center">
             <div className="flex flex-col">
               {load ? (

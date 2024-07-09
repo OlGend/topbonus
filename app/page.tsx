@@ -24,7 +24,7 @@ export default async function Home() {
       {/* <PreviewHome /> */}
 
       <TopBrands />
-     
+
       <div className="main__container mt-3">
         <UserBrands />
       </div>

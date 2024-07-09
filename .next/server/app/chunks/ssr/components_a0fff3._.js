@@ -190,12 +190,6 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_lodash_shuffle_08c1b9.js",
-    "included": [
-      "[project]/node_modules/lodash/shuffle.js (ecmascript)"
-    ]
-  },
-  {
     "path": "_next/static/chunks/node_modules_inherits_inherits_browser_f5cf02.js",
     "included": [
       "[project]/node_modules/inherits/inherits_browser.js (ecmascript)"
@@ -228,10 +222,10 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_next_dist_compiled_react_f5b698._.js",
+    "path": "_next/static/chunks/node_modules_next_dist_compiled_react_226c08._.js",
     "included": [
-      "[project]/node_modules/next/dist/compiled/react/index.js (ecmascript)",
-      "[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript)"
+      "[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript)",
+      "[project]/node_modules/next/dist/compiled/react/index.js (ecmascript)"
     ]
   },
   {
@@ -241,33 +235,9 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/8069e_use-sync-external-store_cjs_use-sync-external-store-shim_development_e04939.js",
-    "included": [
-      "[project]/node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_use-sync-external-store_shim_index_29795c.js",
-    "included": [
-      "[project]/node_modules/use-sync-external-store/shim/index.js (ecmascript)"
-    ]
-  },
-  {
     "path": "_next/static/chunks/node_modules_html-parse-stringify_dist_html-parse-stringify_module_f19bab.js",
     "included": [
       "[project]/node_modules/html-parse-stringify/dist/html-parse-stringify.module.js (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_swr__internal_dist_index_mjs_1bbd4a._.js",
-    "included": [
-      "[project]/node_modules/swr/_internal/dist/index.mjs (ecmascript)"
-    ]
-  },
-  {
-    "path": "_next/static/chunks/node_modules_swr_core_dist_index_mjs_f43d60._.js",
-    "included": [
-      "[project]/node_modules/swr/core/dist/index.mjs (ecmascript)"
     ]
   },
   {

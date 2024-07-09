@@ -36,7 +36,7 @@ export default function Carroussel(props) {
     const startAutoScroll = () => {
       autoScrollRef.current = setInterval(() => {
         setGoToSlide((prevSlide) => (prevSlide + 1) % props.cards.length);
-      }, 2000); // Смена слайда каждые 3 секунды
+      }, 5000); // Смена слайда каждые 3 секунды
     };
 
     startAutoScroll();
@@ -53,7 +53,7 @@ export default function Carroussel(props) {
   const handleMouseLeave = () => {
     autoScrollRef.current = setInterval(() => {
       setGoToSlide((prevSlide) => (prevSlide + 1) % props.cards.length);
-    }, 2000);
+    }, 5000);
   };
 
   if (!Carousel) {
@@ -97,7 +97,7 @@ export default function Carroussel(props) {
 
     autoScrollRef.current = setInterval(() => {
       setGoToSlide((prevSlide) => (prevSlide + 1) % props.cards.length);
-    }, 2000); // Возобновление автопрокрутки после завершения касания
+    }, 5000); // Возобновление автопрокрутки после завершения касания
   };
 
   return (
