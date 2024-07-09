@@ -53,6 +53,7 @@ const TheHeader = () => {
   const userData = keywordValue !== null ? keywordValue : idUserParam;
   const [dataUser, setDataUser] = useState();
   const [d, setD] = useState(null);
+  const [newUrl, setNewUrl] = useState("");
 
   useEffect(() => {
     if (ad_campaign !== null) {
@@ -132,6 +133,12 @@ const TheHeader = () => {
     if (tokenGive !== "give") {
       localStorage.setItem("savedUrl", newUrlWithSource);
     }
+
+    const savedUrl = localStorage.getItem("savedUrl");
+    if (savedUrl) {
+      setNewUrl(savedUrl);
+    }
+
   });
 
   //////////////////////////////////////////////////
@@ -168,7 +175,7 @@ const TheHeader = () => {
   );
   const [links, setLinks] = useState([]); // Инициализируем пустым массивом
   
-  
+
   useEffect(() => {
     if (data) {
       setBrands(data); // Обновляем состояние brands данными из запроса
@@ -211,7 +218,7 @@ const TheHeader = () => {
               <Image src={Img} alt="logo" width={150} loading="lazy" />
             </Link>
           </div>
-          {/* <KeitaroIframe links={links} /> */}
+          <KeitaroIframe links={links} newUrl={newUrl} />
           <div className="account-items ml-auto flex items-center">
             <div className="flex flex-col">
               {load ? (
