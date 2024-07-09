@@ -10224,3 +10224,8 @@ span.descriptions {
   line-height: 17px;
 
 }
+
+#keitaro-iframe {
+  width: 100%;
+  height: 500px;
+}

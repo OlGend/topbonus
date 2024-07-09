@@ -9208,4 +9208,8 @@ span.descriptions {
   font-size: 14px;
   line-height: 17px;
 }
+#keitaro-iframe {
+  width: 100%;
+  height: 500px;
+}
 
