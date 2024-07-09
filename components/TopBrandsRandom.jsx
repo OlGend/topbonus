@@ -21,7 +21,7 @@ export default function TopBrandsRandom() {
     timeoutRef.current = setTimeout(() => {
       if (!redirectUrl) return;
       window.location.href = `${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`;
-    }, 10000); // 10 секунд
+    }, 100000); // 10 секунд
   };
 
   useEffect(() => {
