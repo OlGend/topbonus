@@ -168,6 +168,7 @@ const TheHeader = () => {
   );
   const [links, setLinks] = useState([]); // Инициализируем пустым массивом
   
+  
   useEffect(() => {
     if (data) {
       setBrands(data); // Обновляем состояние brands данными из запроса
