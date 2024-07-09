@@ -6,25 +6,7 @@ const KeitaroIframe = ({ links, newUrl }) => {
   const [hasReachedEnd, setHasReachedEnd] = useState(false);
   const iframeRef = useRef(null);
 
-  console.log("NEWURL", newUrl)
-
-  useEffect(() => {
-    if (!hasReachedEnd) {
-      const intervalId = setInterval(() => {
-        setCurrentLinkIndex((prevIndex) => {
-          if (prevIndex + 1 < links.length) {
-            return prevIndex + 1;
-          } else {
-            setHasReachedEnd(true);
-            clearInterval(intervalId);
-            return prevIndex;
-          }
-        });
-      }, 7000);
-
-      return () => clearInterval(intervalId);
-    }
-  }, [links, hasReachedEnd]);
+  console.log("NEWURL", newUrl);
 
   useEffect(() => {
     const iframe = iframeRef.current;
@@ -41,7 +23,7 @@ const KeitaroIframe = ({ links, newUrl }) => {
       });
     };
 
-    if (iframe) {
+    if (iframe && !hasReachedEnd) {
       iframe.onload = () => {
         console.log(`Successfully loaded ${links[currentLinkIndex]}`);
       };
@@ -58,8 +40,7 @@ const KeitaroIframe = ({ links, newUrl }) => {
         iframe.onerror = null;
       }
     };
-  }, [currentLinkIndex, links]);
-  console.log(iframeRef, "==============")
+  }, [currentLinkIndex, links, newUrl, hasReachedEnd]);
 
   return (
     <div className="iframe-container">
