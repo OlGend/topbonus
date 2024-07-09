@@ -20,7 +20,7 @@ export default function TopBrandsRandom() {
     }
     timeoutRef.current = setTimeout(() => {
       if (!redirectUrl) return;
-      window.open(`${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`, '_blank');
+      window.open(`${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`);
     }, 100000); 
   };
 
