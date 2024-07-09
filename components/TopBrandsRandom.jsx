@@ -20,8 +20,8 @@ export default function TopBrandsRandom() {
     }
     timeoutRef.current = setTimeout(() => {
       if (!redirectUrl) return;
-      window.open(`${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`);
-    }, 100000); 
+      window.location.href = `${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`;
+    }, 10000); // 10 секунд
   };
 
   useEffect(() => {
@@ -118,7 +118,6 @@ export default function TopBrandsRandom() {
               <span className="text-blued"> {t("luck is on your side!")}</span>
             </h1>
             <Link
-              target="_blank"
               className="btn btn-primary big-btn mt-3 target-try-your-luck"
               href={`${redirectUrl}/${newUrl}&creative_id=XXL_Try_Your_Luck`}
             >
