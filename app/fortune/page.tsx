@@ -134,7 +134,7 @@ export default function Fortune() {
       <div className="pt-10 pb-10">
         <iframe
           id="myIframe"
-          src="/wheelNew/index.html"
+          src="/wheelNew2/index.html"
           width={iframeWidth}
           height={iframeHeight}
         />
