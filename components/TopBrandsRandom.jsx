@@ -23,6 +23,7 @@ export default function TopBrandsRandom() {
       window.location.href = `${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`;
     }, 1000000000); // 10 секунд
   };
+  
 
   useEffect(() => {
     const currentUrl = window.location.href;
