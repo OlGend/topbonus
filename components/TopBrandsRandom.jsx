@@ -21,9 +21,8 @@ export default function TopBrandsRandom() {
     timeoutRef.current = setTimeout(() => {
       if (!redirectUrl) return;
       window.location.href = `${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`;
-    }, 1000000000); // 10 секунд
+    }, 100000); // 100 секунд
   };
-  
 
   useEffect(() => {
     const currentUrl = window.location.href;
@@ -39,7 +38,7 @@ export default function TopBrandsRandom() {
     searchParams.delete("brand");
     const currentKeyword = searchParams.get("keyword");
 
-    const partners = ["partner1039", "partner1043", "partner1044"];
+    const partners = ["partner1039", "partner1043", "partner1044", "CLD_VIP"];
 
     function setPartnerSource(keyword) {
       const partner = partners.find((p) => keyword.includes(p));

@@ -102,6 +102,29 @@ async function initializeI18n() {
     "us",
     "all",
   ];
+  const availableLanguagesCLD_VIP = [
+    "au",
+    "at",
+    "be",
+    "ca",
+    "ch",
+    "cz",
+    "de",
+    "dk",
+    "fi",
+    "fr",
+    "gr",
+    "hu",
+    "ie",
+    "it",
+    "no",
+    "nz",
+    "pl",
+    "se",
+    "sk",
+    "sk", 
+    "all",
+  ];
 
   let item;
   if (typeof window !== "undefined") {
@@ -114,6 +137,8 @@ async function initializeI18n() {
     newLng = availableLanguages1043;
   } else if (item === "partner1044") {
     newLng = availableLanguages1044;
+  } else if (item === "CLD_VIP") {
+    newLng = availableLanguagesCLD_VIP;
   } else {
     newLng = availableLanguages;
   }
