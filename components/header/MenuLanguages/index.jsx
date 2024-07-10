@@ -122,7 +122,29 @@ export default function MultipleSelectPlaceholder() {
     { code: "us", label: "USA", flag: "🇺🇸" },
     { code: "all", label: "World", flag: "🌍" },
   ];
-  
+  const flagsCLD_VIP = [
+    { code: "au", label: "Australia", flag: "🇦🇺" },
+    { code: "at", label: "Austria", flag: "🇦🇹" },
+    { code: "be", label: "Belgium", flag: "🇧🇪" },
+    { code: "ca", label: "Canada", flag: "🇨🇦" },
+    { code: "ch", label: "Switzerland", flag: "🇨🇭" },
+    { code: "cz", label: "The Czech Republic", flag: "🇨🇿" },
+    { code: "de", label: "Germany", flag: "🇩🇪" },
+    { code: "dk", label: "Denmark", flag: "🇩🇰" },
+    { code: "fi", label: "Finland", flag: "🇫🇮" },
+    { code: "fr", label: "France", flag: "🇫🇷" },
+    { code: "gr", label: "Greece", flag: "🇬🇷" },
+    { code: "hu", label: "Hungary", flag: "🇭🇺" },
+    { code: "ie", label: "Ireland", flag: "🇮🇪" },
+    { code: "it", label: "Italy", flag: "🇮🇹" },
+    { code: "no", label: "Norway", flag: "🇳🇴" },
+    { code: "nz", label: "New Zealand", flag: "🇳🇿" },
+    { code: "pl", label: "Poland", flag: "🇵🇱" },
+    { code: "se", label: "Sweden", flag: "🇸🇪" },
+    { code: "sk", label: "Slovakia", flag: "🇸🇰" },
+    { code: "all", label: "World", flag: "🌍" },
+  ];
+
   // Ваши флаги определены где-то здесь
 
   const [lng, setLng] = useState();
@@ -147,6 +169,9 @@ export default function MultipleSelectPlaceholder() {
     case "partner1044":
       newFlag = flags1044;
       break;
+    case "CLD_VIP":
+      newFlag = flagsCLD_VIP;
+      break;
     default:
       newFlag = flags;
       break;
@@ -154,7 +179,10 @@ export default function MultipleSelectPlaceholder() {
 
   return (
     <div className="flex !items-center mobile-switcher">
-      <FormControl className="!m-0 form-control" sx={{ m: 1, width: 300, mt: 3 }}>
+      <FormControl
+        className="!m-0 form-control"
+        sx={{ m: 1, width: 300, mt: 3 }}
+      >
         <Select
           className="selectlang"
           multiple
@@ -164,22 +192,24 @@ export default function MultipleSelectPlaceholder() {
           input={<OutlinedInput />}
           renderValue={(selected) => {
             if (selected.length === 0) {
-              const languageFlag = newFlag.find((f) => f.code === language)?.flag || newFlag.find((f) => f.code === 'all').flag;
+              const languageFlag =
+                newFlag.find((f) => f.code === language)?.flag ||
+                newFlag.find((f) => f.code === "all").flag;
               return (
                 <div className="flex items-center">
                   <em className="flagflag">{languageFlag}</em>
-                    <em className="flagflag2">
-                      {lng ? lng.toUpperCase() : ""}
-                    </em>
+                  <em className="flagflag2">{lng ? lng.toUpperCase() : ""}</em>
                   {/* {source !== "partner1043" && (
                   )} */}
                 </div>
               );
             }
-            return selected.map((code) => {
-              const flag = newFlag.find((flag) => flag.code === code);
-              return flag ? `${flag.flag}` : code;
-            }).join(", ");
+            return selected
+              .map((code) => {
+                const flag = newFlag.find((flag) => flag.code === code);
+                return flag ? `${flag.flag}` : code;
+              })
+              .join(", ");
           }}
           MenuProps={MenuProps}
           inputProps={{ "aria-label": "Without label" }}

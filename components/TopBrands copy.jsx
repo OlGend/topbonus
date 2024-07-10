@@ -38,7 +38,7 @@ export default function TopBrands() {
 
   
 
-    const partners = ["partner1039", "partner1043", "partner1044"];
+    const partners = ["partner1039", "partner1043", "partner1044", "CLD_VIP"];
 
     function setPartnerSource(keyword) {
       const partner = partners.find((p) => keyword.includes(p));

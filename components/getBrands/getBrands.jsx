@@ -3,6 +3,7 @@ export const getBrands = async (categoryBrands, lng) => {
   const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
   const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
   const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
+  const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
 
   const availableLanguages = [
     { code: "au", label: "Australia", flag: "🇦🇺" },
@@ -63,6 +64,7 @@ export const getBrands = async (categoryBrands, lng) => {
   const availableLanguages1043 = [
     { code: "ca", label: "Canada", flag: "🇨🇦" },
     { code: "us", label: "United States", flag: "🇺🇸" },
+    { code: "all", label: "World", flag: "🌍" },
   ];
   const availableLanguages1044 = [
     { code: "au", label: "Australia", flag: "🇦🇺" },
@@ -86,10 +88,34 @@ export const getBrands = async (categoryBrands, lng) => {
     { code: "us", label: "USA", flag: "🇺🇸" },
     { code: "all", label: "World", flag: "🌍" },
   ];
+  const availableLanguagesCLD_VIP = [
+    { code: "au", label: "Australia", flag: "🇦🇺" },
+    { code: "at", label: "Austria", flag: "🇦🇹" },
+    { code: "be", label: "Belgium", flag: "🇧🇪" },
+    { code: "ca", label: "Canada", flag: "🇨🇦" },
+    { code: "ch", label: "Switzerland", flag: "🇨🇭" },
+    { code: "cz", label: "The Czech Republic", flag: "🇨🇿" },
+    { code: "de", label: "Germany", flag: "🇩🇪" },
+    { code: "dk", label: "Denmark", flag: "🇩🇰" },
+    { code: "fi", label: "Finland", flag: "🇫🇮" },
+    { code: "fr", label: "France", flag: "🇫🇷" },
+    { code: "gr", label: "Greece", flag: "🇬🇷" },
+    { code: "hu", label: "Hungary", flag: "🇭🇺" },
+    { code: "ie", label: "Ireland", flag: "🇮🇪" },
+    { code: "it", label: "Italy", flag: "🇮🇹" },
+    { code: "no", label: "Norway", flag: "🇳🇴" },
+    { code: "nz", label: "New Zealand", flag: "🇳🇿" },
+    { code: "pl", label: "Poland", flag: "🇵🇱" },
+    { code: "se", label: "Sweden", flag: "🇸🇪" },
+    { code: "sk", label: "Slovakia", flag: "🇸🇰" },
+    { code: "all", label: "World", flag: "🌍" },
+  ];
+
   const partners = {
     partner1039: { url: api1039, languages: availableLanguages1039 },
     partner1043: { url: api1043, languages: availableLanguages1043 },
     partner1044: { url: api1044, languages: availableLanguages1044 },
+    CLD_VIP: { url: apiCLD_VIP, languages: availableLanguagesCLD_VIP },
     default: { url: apiAll, languages: availableLanguages },
   };
 

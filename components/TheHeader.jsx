@@ -57,7 +57,7 @@ const TheHeader = () => {
     async function updateUserData(data) {
       localStorage.setItem("user_id", data);
 
-      const partners = ["partner1039", "partner1043", "partner1044"];
+      const partners = ["partner1039", "partner1043", "partner1044", "CLD_VIP"];
       partners.forEach((partner) => {
         if (data.includes(partner)) {
           localStorage.setItem("source", partner);

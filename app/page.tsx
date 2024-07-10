@@ -7,7 +7,7 @@ import FilteredHome from "@/components/Brands_home/FilteredHome";
 import Fortunes from "@/components/fortune";
 import NewArrivals from "@/components/newArrivals/NewArrivals";
 import UserBrands from "@/components/Brands_home/UserBrands";
-import KeitaroIframe from "@/components/KeitaroIframe";
+// import KeitaroIframe from "@/components/KeitaroIframe";
 
 export const metadata: Metadata = {
   title: "topbon.us: Your Comprehensive Source for Casino Reviews and Insights",
