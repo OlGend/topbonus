@@ -21,7 +21,7 @@ export default function TopBrandsRandom() {
     timeoutRef.current = setTimeout(() => {
       if (!redirectUrl) return;
       window.location.href = `${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`;
-    }, 10000000); // 100 секунд
+    }, 100000); // 100 секунд
   };
 
   useEffect(() => {
@@ -100,13 +100,16 @@ export default function TopBrandsRandom() {
       case "partner1044":
         url = "https://info.topbon.us/rnd1044";
         break;
+      case "CLD_VIP":
+        url = "https://link.bo-nus.com/rnd_cld";
+        break;
       default:
         url = "https://info.topbon.us/aurnd";
     }
     setRedirectUrl(url);
   }, [source]);
-
-  return (
+  
+  https: return (
     <>
       <div className="preview2 flex flex-col">
         <div className="main__container flex items-center">
@@ -118,14 +121,20 @@ export default function TopBrandsRandom() {
               <span className="text-blued"> {t("luck is on your side!")}</span>
             </h1>
             <Link
-            target="_blank"
+              target="_blank"
               className="btn btn-primary big-btn mt-3 target-try-your-luck"
               href={`${redirectUrl}/${newUrl}&creative_id=XXL_Try_Your_Luck`}
             >
               {t("Try Your Luck")}
             </Link>
           </div>
-          <Image className="randomimg" src={imgrandom} alt={imgrandom} width={300} loading="lazy" />
+          <Image
+            className="randomimg"
+            src={imgrandom}
+            alt={imgrandom}
+            width={300}
+            loading="lazy"
+          />
         </div>
       </div>
     </>
