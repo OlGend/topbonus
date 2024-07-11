@@ -121,6 +121,7 @@ export default function Carroussel(props) {
           goToSlide={goToSlide}
           offsetRadius={offsetRadius}
           showNavigation={showArrows}
+          className="proverka"
         />
       </div>
   

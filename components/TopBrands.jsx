@@ -21,6 +21,8 @@ export default function TopBrands() {
   const [source, setSource] = useState("");
   const [loading, setLoading] = useState(true);
   const [brands, setBrands] = useState([]);
+  const [currentBrandIndex, setCurrentBrandIndex] = useState(0);
+  const [fade, setFade] = useState(true); // State to manage fade effect
   const { language } = useLanguage();
   const { t } = useTranslation();
 
@@ -100,36 +102,81 @@ export default function TopBrands() {
     ),
   }));
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); // Start fade-out
+      setTimeout(() => {
+        setCurrentBrandIndex((prevIndex) => (prevIndex + 1) % brands.length);
+        setFade(true); // Start fade-in
+      }, 500); // Duration of fade-out effect
+    }, 5000); // Change brand every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [brands.length]);
+
   console.log("BRANDS", brands);
 
   return (
     <>
       <div className="topbr">
-
         <div className="main__container">
-        <Timer />
+          <Timer />
           {loading ? (
             <Loader />
           ) : (
             cards2 && (
-              <div className="slidertop">
-              <Carousel
-                className="carmob"
-                cards={cards2}
-                height="500px"
-                width="100%"
-                margin="0 auto"
-                offset={200}
-                showArrows={false}
-              />
+              <div className="flex justify-between items-center">
+                <div className="slidertop">
+                  <Carousel
+                    className="carmob"
+                    cards={cards2}
+                    height="500px"
+                    width="100%"
+                    margin="0 auto"
+                    offset={200}
+                    showArrows={false}
+                  />
+                </div>
+                <div className="secondbanner flex items-center justify-center">
+                  {brands.length > 0 && (
+                    <div
+                      className={`card-second-banner mb-2 flex flex-col items-center pb-3 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`}
+                      key={brands[currentBrandIndex].id_brand}
+                    >
+                      <div className="brandImage p-3">
+                        <Link
+                          className="flex justify-center flex-col items-center target-top-new-releases"
+                          href={`${brands[currentBrandIndex].GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`}
+                          target="_blank"
+                        >
+                          <Image
+                            src={`/brands/${brands[currentBrandIndex].CasinoBrand}.png`}
+                            alt={brands[currentBrandIndex].CasinoBrand}
+                            width={200}
+                            height={80}
+                            loading="lazy"
+                            className="target-top-new-releases"
+                          />
+                          <div className="p-3 text-center flex items-center review-bonus">
+                            {brands[currentBrandIndex].OurOfferContent}
+                          </div>
+                        </Link>
+                      </div>
+                      <Link
+                        className="btn btn-primary btn-new target-top-new-releases"
+                        href={`${brands[currentBrandIndex].GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`}
+                        target="_blank"
+                      >
+                        {t("Play Now")}
+                      </Link>
+                    </div>
+                  )}
+                </div>
               </div>
-          
             )
-            
           )}
         </div>
       </div>
- 
     </>
   );
 }

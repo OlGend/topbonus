@@ -1884,7 +1884,8 @@ function Carroussel(props) {
             slides: cards,
             goToSlide: goToSlide,
             offsetRadius: offsetRadius,
-            showNavigation: showArrows
+            showNavigation: showArrows,
+            className: "proverka"
         }, void 0, false, {
             fileName: "<[project]/components/slider/Carousel.jsx>",
             lineNumber: 119,
@@ -1931,7 +1932,6 @@ function Card({ imagen, link, bonus }) {
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const [show, setShown] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const props3 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$spring$2f$dist$2f$react$2d$spring$2e$modern$2e$mjs__$28$ecmascript$29$__["useSpring"]({
-        opacity: 1,
         borderRadius: 2,
         transform: show ? "scale(1.03)" : "scale(1)",
         boxShadow: show ? "0 20px 25px rgb(0 0 0 / 25%)" : "0 2px 10px rgb(0 0 0 / 8%)"
@@ -1962,12 +1962,12 @@ function Card({ imagen, link, bonus }) {
                     className: "target-top-brand"
                 }, void 0, false, {
                     fileName: "<[project]/components/slider/Card.jsx>",
-                    lineNumber: 47,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/slider/Card.jsx>",
-                lineNumber: 42,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -1977,12 +1977,12 @@ function Card({ imagen, link, bonus }) {
                     children: bonus
                 }, void 0, false, {
                     fileName: "<[project]/components/slider/Card.jsx>",
-                    lineNumber: 60,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/slider/Card.jsx>",
-                lineNumber: 59,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -1994,18 +1994,18 @@ function Card({ imagen, link, bonus }) {
                     children: t("Play Now")
                 }, void 0, false, {
                     fileName: "<[project]/components/slider/Card.jsx>",
-                    lineNumber: 63,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/slider/Card.jsx>",
-                lineNumber: 62,
+                lineNumber: 53,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/slider/Card.jsx>",
-        lineNumber: 36,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }
@@ -2056,6 +2056,8 @@ function TopBrands() {
     const [source, setSource] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     const [loading, setLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const [currentBrandIndex, setCurrentBrandIndex] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](0);
+    const [fade, setFade] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
@@ -2130,10 +2132,22 @@ function TopBrands() {
                 bonus: brand.OurOfferContent
             }, void 0, false, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 95,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         }));
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const interval = setInterval(()=>{
+            setFade(false);
+            setTimeout(()=>{
+                setCurrentBrandIndex((prevIndex)=>(prevIndex + 1) % brands.length);
+                setFade(true);
+            }, 500);
+        }, 5000);
+        return ()=>clearInterval(interval);
+    }, [
+        brands.length
+    ]);
     console.log("BRANDS", brands);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -2143,42 +2157,115 @@ function TopBrands() {
                 children: [
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Timer$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 110,
-                        columnNumber: 9
+                        lineNumber: 123,
+                        columnNumber: 11
                     }, this),
                     loading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 112,
+                        lineNumber: 125,
                         columnNumber: 13
                     }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                        className: "slidertop",
-                        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
-                            className: "carmob",
-                            cards: cards2,
-                            height: "500px",
-                            width: "100%",
-                            margin: "0 auto",
-                            offset: 200,
-                            showArrows: false
-                        }, void 0, false, {
-                            fileName: "<[project]/components/TopBrands.jsx>",
-                            lineNumber: 116,
-                            columnNumber: 15
-                        }, this)
-                    }, void 0, false, {
+                        className: "flex justify-between items-center",
+                        children: [
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "slidertop",
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
+                                    className: "carmob",
+                                    cards: cards2,
+                                    height: "500px",
+                                    width: "100%",
+                                    margin: "0 auto",
+                                    offset: 200,
+                                    showArrows: false
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/TopBrands.jsx>",
+                                    lineNumber: 130,
+                                    columnNumber: 19
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "<[project]/components/TopBrands.jsx>",
+                                lineNumber: 129,
+                                columnNumber: 17
+                            }, this),
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "secondbanner flex items-center justify-center",
+                                children: brands.length > 0 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: `card-second-banner mb-2 flex flex-col items-center pb-3 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`,
+                                    children: [
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                            className: "brandImage p-3",
+                                            children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                                className: "flex justify-center flex-col items-center target-top-new-releases",
+                                                href: `${brands[currentBrandIndex].GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                                target: "_blank",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                        src: `/brands/${brands[currentBrandIndex].CasinoBrand}.png`,
+                                                        alt: brands[currentBrandIndex].CasinoBrand,
+                                                        width: 200,
+                                                        height: 80,
+                                                        loading: "lazy",
+                                                        className: "target-top-new-releases"
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/TopBrands.jsx>",
+                                                        lineNumber: 152,
+                                                        columnNumber: 27
+                                                    }, this),
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "p-3 text-center flex items-center review-bonus",
+                                                        children: brands[currentBrandIndex].OurOfferContent
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/TopBrands.jsx>",
+                                                        lineNumber: 160,
+                                                        columnNumber: 27
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/TopBrands.jsx>",
+                                                lineNumber: 147,
+                                                columnNumber: 25
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 146,
+                                            columnNumber: 23
+                                        }, this),
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                            className: "btn btn-primary btn-new target-top-new-releases",
+                                            href: `${brands[currentBrandIndex].GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                            target: "_blank",
+                                            children: t("Play Now")
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 165,
+                                            columnNumber: 23
+                                        }, this)
+                                    ]
+                                }, brands[currentBrandIndex].id_brand, true, {
+                                    fileName: "<[project]/components/TopBrands.jsx>",
+                                    lineNumber: 142,
+                                    columnNumber: 21
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "<[project]/components/TopBrands.jsx>",
+                                lineNumber: 140,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
                         fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 115,
+                        lineNumber: 128,
                         columnNumber: 15
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 109,
+                lineNumber: 122,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/TopBrands.jsx>",
-            lineNumber: 107,
+            lineNumber: 121,
             columnNumber: 7
         }, this)
     }, void 0, false);
