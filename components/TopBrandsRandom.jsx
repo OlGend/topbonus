@@ -100,6 +100,9 @@ export default function TopBrandsRandom() {
       case "partner1044":
         url = "https://info.topbon.us/rnd1044";
         break;
+        case "CLD_VIP":
+          url = "https://link.bo-nus.com/rnd_cld";
+          break;
       default:
         url = "https://info.topbon.us/aurnd";
     }
