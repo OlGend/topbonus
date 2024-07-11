@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Marque = () => {
   const handleClick = () => {
@@ -8,6 +9,7 @@ const Marque = () => {
       targetElement.scrollIntoView({ behavior: "smooth" });
     }
   };
+  const { t } = useTranslation();
 
   return (
     <div className="wrap-line-text">

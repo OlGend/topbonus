@@ -1,8 +1,10 @@
 "use client";
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 const Timer = () => {
   const [timeLeft, setTimeLeft] = useState(null);
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Check if there is a stored start date in Local Storage
