@@ -6810,6 +6810,9 @@ p {
   background: transparent;
 }
 @media (min-width: 320px) and (max-width: 767px) {
+  .randomimg {
+    display: none;
+  }
   .topbr {
     overflow: hidden;
   }
@@ -6846,6 +6849,7 @@ p {
     height: initial !important;
     padding-top: 90px !important;
     font-size: 30px;
+    top: 30px;
   }
   .imgrandom {
     display: none;
@@ -9227,6 +9231,9 @@ span.descriptions {
   padding-bottom: 30px;
 }
 .timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: #2ceb8f;
   font-size: 48px;
   text-align: center;
@@ -9234,10 +9241,14 @@ span.descriptions {
   font-family: 'Tourney', sans-serif;
   font-weight: 700;
   position: absolute;
-  max-width: 200px;
-  min-width: 200px;
-  top: 50px;
-  left: calc(50% - 200px / 2);
+  max-width: 400px;
+  min-width: 400px;
+  top: 20px;
+  left: calc(50% - 400px / 2);
+}
+.timer p {
+  font-family: Arial, sans-serif;
+  color: #fff;
 }
 .topbr .main__container {
   position: relative;
@@ -9258,7 +9269,7 @@ span.descriptions {
 .marquee {
   display: flex;
   white-space: nowrap;
-  animation: scroll 30s linear infinite;
+  animation: scroll 60s linear infinite;
 }
 .marquee span {
   font-size: 18px;
@@ -9291,6 +9302,31 @@ span.descriptions {
   }
   .header {
     margin-top: 41px;
+  }
+}
+.btn.target-top-new-releases {
+  position: relative;
+  overflow: hidden;
+}
+.btn.target-top-new-releases:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0) 70%);
+  top: 0;
+  left: -100px;
+  animation: shine 2s infinite linear;
+}
+@keyframes shine {
+  0% {
+    left: -100px;
+  }
+  20% {
+    left: 100%;
+  }
+  100% {
+    left: 100%;
   }
 }
 

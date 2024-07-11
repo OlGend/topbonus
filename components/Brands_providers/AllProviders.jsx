@@ -372,6 +372,7 @@ export default function AllProviders({
                         className="target-brand-exit"
                         key={brand.id_brand}
                         href={`${brand.GoBig}/${newUrl}&creative_id=XXL_Brand_Exit`}
+                        target="_blank"
                       >
                         <Image
                           src={`/brands/${brand.CasinoBrand}.png`}

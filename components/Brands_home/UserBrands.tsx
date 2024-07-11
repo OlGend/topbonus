@@ -60,7 +60,11 @@ const UserBrands = () => {
     loadLocalStorageData();
 
     const handleStorageChange = (e: StorageEvent) => {
-      if (e.key === "user_id" || e.key === "savedUrl" || e.key === "country_brands") {
+      if (
+        e.key === "user_id" ||
+        e.key === "savedUrl" ||
+        e.key === "country_brands"
+      ) {
         loadLocalStorageData();
       }
     };
@@ -126,7 +130,7 @@ const UserBrands = () => {
       );
 
       setBrands(leadsOnlyBrands);
-      console.log("ALLLL", brandsData, leadsOnlyBrands)
+      console.log("ALLLL", brandsData, leadsOnlyBrands);
 
       setOtherBrands(
         brandsData.filter((brand) => !leadsIds.includes(brand.KeitaroGoBigID))
@@ -172,7 +176,9 @@ const UserBrands = () => {
         <div className="flex flex-col">
           <h2 className="fz31 text-center">
             {t("YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND")}{" "}
-            <span className="text-blued">{t("RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL")}</span>{" "}
+            <span className="text-blued">
+              {t("RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL")}
+            </span>{" "}
           </h2>
           <div className="flex justify-between mob-col mt-7">
             <div className="flex justify-content basis-[40%] flex-col items-center bander">
@@ -259,6 +265,7 @@ const BrandCard: React.FC<{
       <Link
         className={`flex flex-col items-center`}
         href={`${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`}
+        target="_blank"
       >
         <Image
           src={`/brands/${brand.CasinoBrand}.png`}
@@ -285,6 +292,7 @@ const BrandCard: React.FC<{
           ""
         )}
         <Link
+          target="_blank"
           className="btn btn-primary btn-fz"
           href={`${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`}
         >

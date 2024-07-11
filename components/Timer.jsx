@@ -36,9 +36,9 @@ const Timer = () => {
         const minutes = Math.floor((timeDiff % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
         setTimeLeft({
-          hours: String(hours).padStart(2, '0'),
-          minutes: String(minutes).padStart(2, '0'),
-          seconds: String(seconds).padStart(2, '0')
+          hours: String(hours).padStart(2, "0"),
+          minutes: String(minutes).padStart(2, "0"),
+          seconds: String(seconds).padStart(2, "0"),
         });
       }
     };
@@ -59,7 +59,7 @@ const Timer = () => {
 
   return (
     <div className="timer">
-      {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}
+      <p>Expires in:</p> {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}
     </div>
   );
 };
