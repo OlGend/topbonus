@@ -120,6 +120,7 @@ export default function TopBrands() {
                 showArrows={false}
               />
             )
+            
           )}
         </div>
       </div>
