@@ -4,11 +4,22 @@ import { useTranslation } from "react-i18next";
 
 const Marque = () => {
   const handleClick = () => {
-    const targetElement = document.getElementById("real");
+    const targetElement = document.getElementById("real-block");
     if (targetElement) {
-      targetElement.scrollIntoView({ behavior: "smooth" });
+      const headerOffset = 50; // Adjust this value based on your header height
+      const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+      const elementStyle = window.getComputedStyle(targetElement);
+      const elementMarginTop = parseInt(elementStyle.marginTop, 10) || 0;
+      const elementPaddingTop = parseInt(elementStyle.paddingTop, 10) || 0;
+      const offsetPosition = elementPosition - headerOffset - elementPaddingTop - elementMarginTop;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
     }
   };
+
   const { t } = useTranslation();
 
   return (
@@ -25,7 +36,7 @@ const Marque = () => {
           </span>
         </div>
         <div aria-hidden="true" className="marquee">
-        <span onClick={handleClick}>
+          <span onClick={handleClick}>
             {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
             {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
             {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}

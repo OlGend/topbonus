@@ -7,19 +7,29 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
 ;
 ;
+;
 const Marque = ()=>{
     const handleClick = ()=>{
-        const targetElement = document.getElementById("real");
+        const targetElement = document.getElementById("real-block");
         if (targetElement) {
-            targetElement.scrollIntoView({
+            const headerOffset = 50;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const elementStyle = window.getComputedStyle(targetElement);
+            const elementMarginTop = parseInt(elementStyle.marginTop, 10) || 0;
+            const elementPaddingTop = parseInt(elementStyle.paddingTop, 10) || 0;
+            const offsetPosition = elementPosition - headerOffset - elementPaddingTop - elementMarginTop;
+            window.scrollTo({
+                top: offsetPosition,
                 behavior: "smooth"
             });
         }
     };
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
         className: "wrap-line-text",
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -30,67 +40,74 @@ const Marque = ()=>{
                     children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                         onClick: handleClick,
                         children: [
-                            "* Explore the Hottest New Brands – ",
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 17,
-                                columnNumber: 48
-                            }, this),
-                            " * Explore the Hottest New Brands – ",
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 18,
-                                columnNumber: 34
-                            }, this),
-                            " * Explore the Hottest New Brands – ",
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 19,
-                                columnNumber: 22
-                            }, this),
-                            " * Explore the Hottest New Brands –",
+                            t("* Explore the Hottest New Brands –"),
                             " ",
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
+                                children: t("Click Here!")
                             }, void 0, false, {
                                 fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 20,
-                                columnNumber: 13
+                                lineNumber: 30,
+                                columnNumber: 55
                             }, this),
-                            " * Explore the Hottest New Brands –",
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
                             " ",
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
+                                children: t("Click Here!")
                             }, void 0, false, {
                                 fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 21,
-                                columnNumber: 13
+                                lineNumber: 31,
+                                columnNumber: 55
                             }, this),
-                            " * Explore the Hottest New Brands –",
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
                             " ",
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
+                                children: t("Click Here!")
                             }, void 0, false, {
                                 fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 22,
-                                columnNumber: 13
+                                lineNumber: 32,
+                                columnNumber: 55
                             }, this),
-                            " *"
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 33,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 34,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 35,
+                                columnNumber: 55
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/components/Marque.jsx>",
-                        lineNumber: 16,
+                        lineNumber: 29,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "<[project]/components/Marque.jsx>",
-                    lineNumber: 15,
+                    lineNumber: 28,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -99,78 +116,85 @@ const Marque = ()=>{
                     children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                         onClick: handleClick,
                         children: [
-                            "* Explore the Hottest New Brands – ",
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 27,
-                                columnNumber: 46
-                            }, this),
-                            " * Explore the Hottest New Brands – ",
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 28,
-                                columnNumber: 34
-                            }, this),
-                            " * Explore the Hottest New Brands – ",
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
-                            }, void 0, false, {
-                                fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 29,
-                                columnNumber: 22
-                            }, this),
-                            " * Explore the Hottest New Brands –",
+                            t("* Explore the Hottest New Brands –"),
                             " ",
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
+                                children: t("Click Here!")
                             }, void 0, false, {
                                 fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 30,
-                                columnNumber: 13
+                                lineNumber: 40,
+                                columnNumber: 55
                             }, this),
-                            " * Explore the Hottest New Brands –",
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
                             " ",
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
+                                children: t("Click Here!")
                             }, void 0, false, {
                                 fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 31,
-                                columnNumber: 13
+                                lineNumber: 41,
+                                columnNumber: 55
                             }, this),
-                            " * Explore the Hottest New Brands –",
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
                             " ",
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
-                                children: "Click Here!"
+                                children: t("Click Here!")
                             }, void 0, false, {
                                 fileName: "<[project]/components/Marque.jsx>",
-                                lineNumber: 32,
-                                columnNumber: 13
+                                lineNumber: 42,
+                                columnNumber: 55
                             }, this),
-                            " *"
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 43,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 44,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 45,
+                                columnNumber: 55
+                            }, this)
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/components/Marque.jsx>",
-                        lineNumber: 26,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, this)
                 }, void 0, false, {
                     fileName: "<[project]/components/Marque.jsx>",
-                    lineNumber: 25,
+                    lineNumber: 38,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Marque.jsx>",
-            lineNumber: 14,
+            lineNumber: 27,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/Marque.jsx>",
-        lineNumber: 13,
+        lineNumber: 26,
         columnNumber: 5
     }, this);
 };

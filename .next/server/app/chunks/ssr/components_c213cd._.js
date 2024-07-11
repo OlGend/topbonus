@@ -809,6 +809,24 @@ const chunks = [
     ]
   },
   {
+    "path": "_next/static/chunks/node_modules_void-elements_index_a47291.js",
+    "included": [
+      "[project]/node_modules/void-elements/index.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_html-parse-stringify_dist_html-parse-stringify_module_375d1d.js",
+    "included": [
+      "[project]/node_modules/html-parse-stringify/dist/html-parse-stringify.module.js (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_react-i18next_dist_es_index_99a88d.js",
+    "included": [
+      "[project]/node_modules/react-i18next/dist/es/index.js (ecmascript)"
+    ]
+  },
+  {
     "path": "_next/static/chunks/node_modules_next_dist_compiled_process_browser_43f765.js",
     "included": [
       "[project]/node_modules/next/dist/compiled/process/browser.js (ecmascript)"

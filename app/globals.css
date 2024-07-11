@@ -10358,9 +10358,16 @@ span.descriptions {
   }
 }
 
-/* .slidertop {
+.slidertop {
   max-width: 700px;
-} */
+}
+
 .marquee {
   cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .slidertop>div {
+    height: 300px !important;
+    
+  }
 }
