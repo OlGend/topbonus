@@ -73,7 +73,7 @@ function TopBrandsRandom() {
         timeoutRef.current = setTimeout(()=>{
             if (!redirectUrl) return;
             window.location.href = `${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`;
-        }, 100000);
+        }, 100000000);
     };
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const currentUrl = window.location.href;
@@ -87,7 +87,8 @@ function TopBrandsRandom() {
         const partners = [
             "partner1039",
             "partner1043",
-            "partner1044"
+            "partner1044",
+            "CLD_VIP"
         ];
         function setPartnerSource(keyword) {
             const partner = partners.find((p)=>keyword.includes(p));
@@ -150,6 +151,9 @@ function TopBrandsRandom() {
             case "partner1044":
                 url = "https://info.topbon.us/rnd1044";
                 break;
+            case "CLD_VIP":
+                url = "https://link.bo-nus.com/rnd_cld";
+                break;
             default:
                 url = "https://info.topbon.us/aurnd";
         }
@@ -176,7 +180,7 @@ function TopBrandsRandom() {
                                         children: t("Click now to play")
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                                        lineNumber: 116,
+                                        lineNumber: 119,
                                         columnNumber: 15
                                     }, this),
                                     " ",
@@ -190,49 +194,51 @@ function TopBrandsRandom() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                                        lineNumber: 118,
+                                        lineNumber: 121,
                                         columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                                lineNumber: 114,
+                                lineNumber: 117,
                                 columnNumber: 13
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                target: "_blank",
                                 className: "btn btn-primary big-btn mt-3 target-try-your-luck",
                                 href: `${redirectUrl}/${newUrl}&creative_id=XXL_Try_Your_Luck`,
                                 children: t("Try Your Luck")
                             }, void 0, false, {
                                 fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                                lineNumber: 120,
+                                lineNumber: 123,
                                 columnNumber: 13
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                        lineNumber: 113,
+                        lineNumber: 116,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                        className: "randomimg",
                         src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                         alt: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                        width: 500,
+                        width: 300,
                         loading: "lazy"
                     }, void 0, false, {
                         fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                        lineNumber: 127,
+                        lineNumber: 131,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/TopBrandsRandom.jsx>",
-                lineNumber: 112,
+                lineNumber: 115,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/TopBrandsRandom.jsx>",
-            lineNumber: 111,
+            lineNumber: 114,
             columnNumber: 7
         }, this)
     }, void 0, false);

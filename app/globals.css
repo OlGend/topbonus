@@ -10361,3 +10361,6 @@ span.descriptions {
 /* .slidertop {
   max-width: 700px;
 } */
+.marquee {
+  cursor: pointer;
+}

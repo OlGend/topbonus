@@ -171,6 +171,7 @@ const getBrands = async (categoryBrands, lng)=>{
     const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
     const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
     const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
+    const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
     const availableLanguages = [
         {
             code: "au",
@@ -445,6 +446,11 @@ const getBrands = async (categoryBrands, lng)=>{
             code: "us",
             label: "United States",
             flag: "🇺🇸"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
         }
     ];
     const availableLanguages1044 = [
@@ -549,6 +555,108 @@ const getBrands = async (categoryBrands, lng)=>{
             flag: "🌍"
         }
     ];
+    const availableLanguagesCLD_VIP = [
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     const partners = {
         partner1039: {
             url: api1039,
@@ -561,6 +669,10 @@ const getBrands = async (categoryBrands, lng)=>{
         partner1044: {
             url: api1044,
             languages: availableLanguages1044
+        },
+        CLD_VIP: {
+            url: apiCLD_VIP,
+            languages: availableLanguagesCLD_VIP
         },
         default: {
             url: apiAll,
@@ -776,14 +888,14 @@ const UserBrands = ()=>{
                             children: t("RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 175,
+                            lineNumber: 179,
                             columnNumber: 13
                         }, this),
                         " "
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 173,
+                    lineNumber: 177,
                     columnNumber: 11
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -799,12 +911,12 @@ const UserBrands = ()=>{
                                 loading: "lazy"
                             }, void 0, false, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 179,
+                                lineNumber: 185,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 178,
+                            lineNumber: 184,
                             columnNumber: 13
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -814,7 +926,7 @@ const UserBrands = ()=>{
                                 children: [
                                     isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                        lineNumber: 189,
+                                        lineNumber: 195,
                                         columnNumber: 31
                                     }, this),
                                     brands.length > 6 && !isMobile ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
@@ -828,17 +940,17 @@ const UserBrands = ()=>{
                                                         count: brands.length
                                                     }, brand.id_brand, false, {
                                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                        lineNumber: 195,
+                                                        lineNumber: 201,
                                                         columnNumber: 27
                                                     }, this))
                                             }, index, false, {
                                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                lineNumber: 193,
+                                                lineNumber: 199,
                                                 columnNumber: 23
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                        lineNumber: 191,
+                                        lineNumber: 197,
                                         columnNumber: 19
                                     }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
                                         children: isMobile && brands.length > 1 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
@@ -850,12 +962,12 @@ const UserBrands = ()=>{
                                                     count: brands.length
                                                 }, brand.id_brand, false, {
                                                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                    lineNumber: 211,
+                                                    lineNumber: 217,
                                                     columnNumber: 27
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                            lineNumber: 209,
+                                            lineNumber: 215,
                                             columnNumber: 23
                                         }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                             className: "flex flex-wrap",
@@ -866,45 +978,45 @@ const UserBrands = ()=>{
                                                     count: brands.length
                                                 }, brand.id_brand, false, {
                                                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                    lineNumber: 223,
+                                                    lineNumber: 229,
                                                     columnNumber: 27
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                            lineNumber: 221,
+                                            lineNumber: 227,
                                             columnNumber: 23
                                         }, this)
                                     }, void 0, false)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 188,
+                                lineNumber: 194,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 187,
+                            lineNumber: 193,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 177,
+                    lineNumber: 183,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 172,
+            lineNumber: 176,
             columnNumber: 9
         }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 240,
+            lineNumber: 246,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-        lineNumber: 170,
+        lineNumber: 174,
         columnNumber: 5
     }, this);
 };
@@ -916,6 +1028,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
                     className: `flex flex-col items-center`,
                     href: `${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`,
+                    target: "_blank",
                     children: [
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
                             src: `/brands/${brand.CasinoBrand}.png`,
@@ -925,7 +1038,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             className: "mb-2"
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 263,
+                            lineNumber: 270,
                             columnNumber: 9
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -934,18 +1047,18 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                                 children: brand.OurOfferContent
                             }, void 0, false, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 271,
+                                lineNumber: 278,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 270,
+                            lineNumber: 277,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 259,
+                    lineNumber: 265,
                     columnNumber: 7
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -957,33 +1070,34 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             children: t("Already Registered")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 278,
+                            lineNumber: 285,
                             columnNumber: 11
                         }, this) : "",
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                            target: "_blank",
                             className: "btn btn-primary btn-fz",
                             href: `${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`,
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 287,
+                            lineNumber: 294,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 276,
+                    lineNumber: 283,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 254,
+            lineNumber: 260,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-        lineNumber: 253,
+        lineNumber: 259,
         columnNumber: 3
     }, this);
 const __TURBOPACK__default__export__ = UserBrands;
@@ -1027,9 +1141,9 @@ const Timer = ()=>{
                 const minutes = Math.floor(timeDiff % (1000 * 60 * 60) / (1000 * 60));
                 const seconds = Math.floor(timeDiff % (1000 * 60) / 1000);
                 setTimeLeft({
-                    hours: String(hours).padStart(2, '0'),
-                    minutes: String(minutes).padStart(2, '0'),
-                    seconds: String(seconds).padStart(2, '0')
+                    hours: String(hours).padStart(2, "0"),
+                    minutes: String(minutes).padStart(2, "0"),
+                    seconds: String(seconds).padStart(2, "0")
                 });
             }
         };
@@ -1049,6 +1163,14 @@ const Timer = ()=>{
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
         className: "timer",
         children: [
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                children: "Expires in:"
+            }, void 0, false, {
+                fileName: "<[project]/components/Timer.jsx>",
+                lineNumber: 62,
+                columnNumber: 7
+            }, this),
+            " ",
             timeLeft.hours,
             ":",
             timeLeft.minutes,
@@ -1070,7 +1192,8 @@ __turbopack_esm__({
     "availableLanguages": ()=>availableLanguages,
     "availableLanguages1039": ()=>availableLanguages1039,
     "availableLanguages1043": ()=>availableLanguages1043,
-    "availableLanguages1044": ()=>availableLanguages1044
+    "availableLanguages1044": ()=>availableLanguages1044,
+    "availableLanguagesCLD_VIP": ()=>availableLanguagesCLD_VIP
 });
 const availableLanguages = [
     {
@@ -1450,6 +1573,108 @@ const availableLanguages1044 = [
         flag: "🌍"
     }
 ];
+const availableLanguagesCLD_VIP = [
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
+    },
+    {
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "ca",
+        label: "Canada",
+        flag: "🇨🇦"
+    },
+    {
+        code: "ch",
+        label: "Switzerland",
+        flag: "🇨🇭"
+    },
+    {
+        code: "cz",
+        label: "The Czech Republic",
+        flag: "🇨🇿"
+    },
+    {
+        code: "de",
+        label: "Germany",
+        flag: "🇩🇪"
+    },
+    {
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
+    },
+    {
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
+    },
+    {
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "ie",
+        label: "Ireland",
+        flag: "🇮🇪"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "no",
+        label: "Norway",
+        flag: "🇳🇴"
+    },
+    {
+        code: "nz",
+        label: "New Zealand",
+        flag: "🇳🇿"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "all",
+        label: "World",
+        flag: "🌍"
+    }
+];
 
 })()),
 "[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
@@ -1465,6 +1690,7 @@ const getBrands = async (lng)=>{
     const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
     const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
     const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
+    const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
     const partners = {
         partner1039: {
             url: api1039,
@@ -1477,6 +1703,10 @@ const getBrands = async (lng)=>{
         partner1044: {
             url: api1044,
             languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages1044"]
+        },
+        CLD_VIP: {
+            url: apiCLD_VIP,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
         },
         default: {
             url: apiAll,
@@ -1654,13 +1884,13 @@ function Carroussel(props) {
             showNavigation: showArrows
         }, void 0, false, {
             fileName: "<[project]/components/slider/Carousel.jsx>",
-            lineNumber: 111,
-            columnNumber: 7
+            lineNumber: 119,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/slider/Carousel.jsx>",
-        lineNumber: 104,
-        columnNumber: 5
+        lineNumber: 108,
+        columnNumber: 7
     }, this);
 }
 
@@ -1837,7 +2067,8 @@ function TopBrands() {
         const partners = [
             "partner1039",
             "partner1043",
-            "partner1044"
+            "partner1044",
+            "CLD_VIP"
         ];
         function setPartnerSource(keyword) {
             const partner = partners.find((p)=>keyword.includes(p));
@@ -1916,14 +2147,21 @@ function TopBrands() {
                         fileName: "<[project]/components/TopBrands.jsx>",
                         lineNumber: 112,
                         columnNumber: 13
-                    }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
-                        className: "carmob",
-                        cards: cards2,
-                        height: "500px",
-                        width: "100%",
-                        margin: "0 auto",
-                        offset: 200,
-                        showArrows: false
+                    }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "slidertop",
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
+                            className: "carmob",
+                            cards: cards2,
+                            height: "500px",
+                            width: "100%",
+                            margin: "0 auto",
+                            offset: 200,
+                            showArrows: false
+                        }, void 0, false, {
+                            fileName: "<[project]/components/TopBrands.jsx>",
+                            lineNumber: 116,
+                            columnNumber: 15
+                        }, this)
                     }, void 0, false, {
                         fileName: "<[project]/components/TopBrands.jsx>",
                         lineNumber: 115,
@@ -1944,6 +2182,10 @@ function TopBrands() {
 }
 
 })()),
+"[project]/components/KeitaroIframe.jsx (ecmascript, ssr)": (function({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__, m: module, e: exports }) { !function() {
+
+
+}.call(this) }),
 "[project]/components/modal/index.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
 
 __turbopack_esm__({
@@ -2449,6 +2691,29 @@ async function initializeI18n() {
         "us",
         "all"
     ];
+    const availableLanguagesCLD_VIP = [
+        "au",
+        "at",
+        "be",
+        "ca",
+        "ch",
+        "cz",
+        "de",
+        "dk",
+        "fi",
+        "fr",
+        "gr",
+        "hu",
+        "ie",
+        "it",
+        "no",
+        "nz",
+        "pl",
+        "se",
+        "sk",
+        "sk",
+        "all"
+    ];
     let item;
     if (typeof window !== "undefined") {
         item = localStorage.getItem("source");
@@ -2460,6 +2725,8 @@ async function initializeI18n() {
         newLng = availableLanguages1043;
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
+    } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
     }
@@ -7251,6 +7518,108 @@ const LanguageSwitcher = ()=>{
             flag: "🌍"
         }
     ];
+    const availableLanguagesCLD_VIP = [
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     let source;
     if (typeof window !== "undefined") {
         source = localStorage.getItem("source");
@@ -7266,6 +7635,9 @@ const LanguageSwitcher = ()=>{
         case "partner1044":
             newLng = availableLanguages1044;
             break;
+        case "CLD_VIP":
+            newLng = availableLanguagesCLD_VIP;
+            break;
         default:
             newLng = availableLanguages;
             break;
@@ -7274,7 +7646,7 @@ const LanguageSwitcher = ()=>{
         children: "Failed to load"
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 74,
+        lineNumber: 102,
         columnNumber: 21
     }, this);
     const changeLanguage = async (lng)=>{
@@ -7297,7 +7669,7 @@ const LanguageSwitcher = ()=>{
                     children: t("Website language")
                 }, void 0, false, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 92,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7326,34 +7698,34 @@ const LanguageSwitcher = ()=>{
                                     ]
                                 }, language.code, true, {
                                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                                    lineNumber: 107,
+                                    lineNumber: 137,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 94,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, this),
                         isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 116,
+                            lineNumber: 146,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 93,
+                    lineNumber: 121,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-            lineNumber: 91,
+            lineNumber: 119,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 90,
+        lineNumber: 118,
         columnNumber: 5
     }, this);
 };
@@ -7799,6 +8171,108 @@ const BrandsSwitcher = ()=>{
             flag: "🌍"
         }
     ];
+    const availableLanguagesCLD_VIP = [
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     let item;
     if (typeof window !== "undefined") {
         item = localStorage.getItem("source");
@@ -7810,6 +8284,8 @@ const BrandsSwitcher = ()=>{
         newLng = availableLanguages1043;
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
+    } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
     }
@@ -7848,23 +8324,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 169,
+                        lineNumber: 192,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 158,
+                lineNumber: 181,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 179,
+                lineNumber: 202,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 157,
+        lineNumber: 180,
         columnNumber: 5
     }, this);
 };
@@ -8314,6 +8790,108 @@ function MultipleSelectPlaceholder() {
             flag: "🌍"
         }
     ];
+    const flagsCLD_VIP = [
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     const [lng, setLng] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         setLng(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$i18n$2e$js__$28$ecmascript$29$__["default"].language);
@@ -8334,6 +8912,9 @@ function MultipleSelectPlaceholder() {
             break;
         case "partner1044":
             newFlag = flags1044;
+            break;
+        case "CLD_VIP":
+            newFlag = flagsCLD_VIP;
             break;
         default:
             newFlag = flags;
@@ -8357,7 +8938,7 @@ function MultipleSelectPlaceholder() {
                 input: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$OutlinedInput$2f$index$2e$js__$28$ecmascript$29$__["default"], {}, void 0, false, void 0, void 0),
                 renderValue: (selected)=>{
                     if (selected.length === 0) {
-                        const languageFlag = newFlag.find((f)=>f.code === language)?.flag || newFlag.find((f)=>f.code === 'all').flag;
+                        const languageFlag = newFlag.find((f)=>f.code === language)?.flag || newFlag.find((f)=>f.code === "all").flag;
                         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                             className: "flex items-center",
                             children: [
@@ -8387,33 +8968,33 @@ function MultipleSelectPlaceholder() {
                         children: t("Your country of residence")
                     }, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 187,
+                        lineNumber: 217,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 188,
+                        lineNumber: 218,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 189,
+                        lineNumber: 219,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                lineNumber: 158,
+                lineNumber: 186,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-            lineNumber: 157,
+            lineNumber: 182,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-        lineNumber: 156,
+        lineNumber: 181,
         columnNumber: 5
     }, this);
 }
@@ -9267,6 +9848,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/swr/core/dist/index.mjs (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$i18n$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/i18n.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navigation$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Navigation.tsx (ecmascript, ssr)");
@@ -9286,8 +9868,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$updateGeo$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getUser/updateGeo.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$geo$2d$identifier$2f$index$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/geo-identifier/index.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modal$2f$index$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/modal/index.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$KeitaroIframe$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/KeitaroIframe.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
+;
+;
+;
+;
 ;
 ;
 ;
@@ -9339,7 +9928,8 @@ const TheHeader = ()=>{
             const partners = [
                 "partner1039",
                 "partner1043",
-                "partner1044"
+                "partner1044",
+                "CLD_VIP"
             ];
             partners.forEach((partner)=>{
                 if (data.includes(partner)) {
@@ -9409,6 +9999,23 @@ const TheHeader = ()=>{
             window.removeEventListener("message", handleMessage);
         };
     }, []);
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
+    const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const { data, error } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__["default"]([
+        "brands",
+        language
+    ], ()=>__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__["getBrands"](language), {
+        initialData: brands
+    });
+    const [links, setLinks] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (data) {
+            setBrands(data);
+            setLinks(data.map((brand)=>brand.GoBig));
+        }
+    }, [
+        data
+    ]);
     const [showResponsiveDialog, setShowResponsiveDialog] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const [showBasicModal, setShowBasicModal] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
@@ -9426,11 +10033,11 @@ const TheHeader = ()=>{
         children: [
             load ? dataUser.geo_approve === null || dataUser.geo_approve === "" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$geo$2d$identifier$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 181,
+                lineNumber: 197,
                 columnNumber: 11
             }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 183,
+                lineNumber: 199,
                 columnNumber: 11
             }, this) : "",
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9449,17 +10056,17 @@ const TheHeader = ()=>{
                                     loading: "lazy"
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 194,
+                                    lineNumber: 210,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                lineNumber: 193,
+                                lineNumber: 209,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 192,
+                            lineNumber: 208,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9480,7 +10087,7 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 204,
+                                                        lineNumber: 220,
                                                         columnNumber: 23
                                                     }, this),
                                                     " ",
@@ -9488,24 +10095,24 @@ const TheHeader = ()=>{
                                                         children: t("My Wallet")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 208,
+                                                        lineNumber: 224,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 202,
+                                            lineNumber: 218,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 201,
+                                        lineNumber: 217,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 199,
+                                    lineNumber: 215,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9523,31 +10130,31 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 221,
+                                                        lineNumber: 237,
                                                         columnNumber: 23
                                                     }, this),
                                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                         children: t("Fortune Wheel")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 225,
+                                                        lineNumber: 241,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 219,
+                                            lineNumber: 235,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 218,
+                                        lineNumber: 234,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 216,
+                                    lineNumber: 232,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9562,32 +10169,32 @@ const TheHeader = ()=>{
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 237,
+                                                    lineNumber: 253,
                                                     columnNumber: 21
                                                 }, this),
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                     children: t("Cards Shop")
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 238,
+                                                    lineNumber: 254,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 235,
+                                        lineNumber: 251,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 233,
+                                    lineNumber: 249,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 198,
+                            lineNumber: 214,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["I18nextProvider"], {
@@ -9595,7 +10202,7 @@ const TheHeader = ()=>{
                             children: [
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuLanguages$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 246,
+                                    lineNumber: 262,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9606,31 +10213,31 @@ const TheHeader = ()=>{
                                             children: [
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 249,
+                                                    lineNumber: 265,
                                                     columnNumber: 17
                                                 }, this),
                                                 " "
                                             ]
                                         }, void 0, true, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 248,
+                                            lineNumber: 264,
                                             columnNumber: 15
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 251,
+                                            lineNumber: 267,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 247,
+                                    lineNumber: 263,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 245,
+                            lineNumber: 261,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuPages$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -9638,7 +10245,7 @@ const TheHeader = ()=>{
                             t: t
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 255,
+                            lineNumber: 271,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9654,32 +10261,32 @@ const TheHeader = ()=>{
                                                 className: "line line1"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 263,
+                                                lineNumber: 279,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line2"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 264,
+                                                lineNumber: 280,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line3"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 265,
+                                                lineNumber: 281,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 262,
+                                        lineNumber: 278,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 258,
+                                    lineNumber: 274,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9694,34 +10301,34 @@ const TheHeader = ()=>{
                                             onLinkClick: closeMobileMenu
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 270,
+                                            lineNumber: 286,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 269,
+                                        lineNumber: 285,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 268,
+                                    lineNumber: 284,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 257,
+                            lineNumber: 273,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 191,
+                    lineNumber: 207,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 190,
+                lineNumber: 206,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9733,18 +10340,18 @@ const TheHeader = ()=>{
                         }))
                 }, void 0, false, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 283,
+                    lineNumber: 299,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 282,
+                lineNumber: 298,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/TheHeader.jsx>",
-        lineNumber: 178,
+        lineNumber: 194,
         columnNumber: 5
     }, this);
 };

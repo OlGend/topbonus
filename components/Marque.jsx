@@ -1,39 +1,39 @@
+"use client"
 import React from "react";
 
 const Marque = () => {
+  const handleClick = () => {
+    const targetElement = document.getElementById("real");
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
-    <div class="wrap-line-text">
-      <div class="marquee-container">
-        <div class="marquee">
-          <span>
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            *
+    <div className="wrap-line-text">
+      <div className="marquee-container">
+        <div className="marquee">
+          <span onClick={handleClick}>
+            * Explore the Hottest New Brands – <b >Click Here!</b> * Explore the
+            Hottest New Brands – <b>Click Here!</b> * Explore the Hottest New
+            Brands – <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
+            <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
+            <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
+            <b>Click Here!</b> *
           </span>
         </div>
-        <div aria-hidden="true" class="marquee">
-          <span>
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            * get <b>500 usdt</b> for deposit * get <b>500 usdt</b> for deposit
-            *
+        <div aria-hidden="true" className="marquee">
+          <span onClick={handleClick}>
+          * Explore the Hottest New Brands – <b>Click Here!</b> * Explore the
+            Hottest New Brands – <b>Click Here!</b> * Explore the Hottest New
+            Brands – <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
+            <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
+            <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
+            <b>Click Here!</b> *
           </span>
         </div>
-        {/* <div aria-hidden="true" class="marquee">
-          <span>
-          * get <b>500 usdt</b> for deposit *  get <b>500 usdt</b> for deposit *  get <b>500 usdt</b> for deposit *  get <b>500 usdt</b> for deposit *  get <b>500 usdt</b> for deposit *  get <b>500 usdt</b> for deposit *  get <b>500 usdt</b> for deposit *  get <b>500 usdt</b> for deposit *  get 
-          </span>
-        </div> */}
       </div>
     </div>
-    // <marquee>This text will scroll from right to left</marquee>
   );
 };
 
