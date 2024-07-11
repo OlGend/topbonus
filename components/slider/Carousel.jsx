@@ -89,7 +89,10 @@ export default function Carroussel(props) {
       if (xDiff > 0) {
         setGoToSlide((prevSlide) => (prevSlide + 1) % props.cards.length);
       } else {
-        setGoToSlide((prevSlide) => (prevSlide - 1 + props.cards.length) % props.cards.length);
+        setGoToSlide(
+          (prevSlide) =>
+            (prevSlide - 1 + props.cards.length) % props.cards.length
+        );
       }
     }
     xDown = null;
@@ -101,19 +104,25 @@ export default function Carroussel(props) {
   };
 
   return (
-    <div
-      style={{ width: props.width, height: props.height, margin: props.margin }}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-      onTouchStart={handleTouchStart}
-      onTouchMove={handleTouchMove}
-    >
-      <Carousel
-        slides={cards}
-        goToSlide={goToSlide}
-        offsetRadius={offsetRadius}
-        showNavigation={showArrows}
-      />
-    </div>
+  
+      <div
+        style={{
+          width: props.width,
+          height: props.height,
+          margin: props.margin,
+        }}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+      >
+        <Carousel
+          slides={cards}
+          goToSlide={goToSlide}
+          offsetRadius={offsetRadius}
+          showNavigation={showArrows}
+        />
+      </div>
+  
   );
 }

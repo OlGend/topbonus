@@ -9329,4 +9329,7 @@ span.descriptions {
     left: 100%;
   }
 }
+.slidertop {
+  max-width: 700px;
+}
 

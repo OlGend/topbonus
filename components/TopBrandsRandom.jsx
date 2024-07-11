@@ -108,8 +108,8 @@ export default function TopBrandsRandom() {
     }
     setRedirectUrl(url);
   }, [source]);
-  
-  https: return (
+
+  return (
     <>
       <div className="preview2 flex flex-col">
         <div className="main__container flex items-center">

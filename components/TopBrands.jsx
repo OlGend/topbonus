@@ -112,6 +112,7 @@ export default function TopBrands() {
             <Loader />
           ) : (
             cards2 && (
+              <div className="slidertop">
               <Carousel
                 className="carmob"
                 cards={cards2}
@@ -121,6 +122,8 @@ export default function TopBrands() {
                 offset={200}
                 showArrows={false}
               />
+              </div>
+          
             )
           )}
         </div>

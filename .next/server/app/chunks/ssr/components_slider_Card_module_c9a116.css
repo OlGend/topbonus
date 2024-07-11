@@ -37,32 +37,32 @@
 div div div:nth-child(6n+1) .card__Card__40cc38fe {
   background: url(/bl_02.png);
   background-color: bottom right;
-  background-size: contain;
+  background-size: cover;
 }
 div div div:nth-child(6n+2) .card__Card__40cc38fe {
   background: url(/ylw_01.jpg);
   background-color: bottom right;
-  background-size: contain;
+  background-size: cover;
 }
 div div div:nth-child(6n+3) .card__Card__40cc38fe {
   background: url(/bl_02.png);
   background-color: bottom right;
-  background-size: contain;
+  background-size: cover;
 }
 div div div:nth-child(6n+4) .card__Card__40cc38fe {
   background: url(/gr_02.png);
   background-color: bottom right;
-  background-size: contain;
+  background-size: cover;
 }
 div div div:nth-child(6n+5) .card__Card__40cc38fe {
   background: url(/ylw_01.jpg);
   background-color: bottom right;
-  background-size: contain;
+  background-size: cover;
 }
 div div div:nth-child(6n+6) .card__Card__40cc38fe {
   background: url(/gr_02.png);
   background-color: bottom right;
-  background-size: contain;
+  background-size: cover;
 }
 @media (min-width: 320px) and (max-width: 1259px) {
   .card__Card__40cc38fe {
