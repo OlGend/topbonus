@@ -54,12 +54,12 @@ const Timer = () => {
   }, []);
 
   if (timeLeft === null) {
-    return <div>The timer has expired. Starting new countdown...</div>;
+    return <div>...</div>;
   }
 
   return (
     <div className="timer">
-      <p>Expires in:</p> {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}
+      <p>{t("Expires in:")}</p> {timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}
     </div>
   );
 };

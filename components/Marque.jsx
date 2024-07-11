@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React from "react";
 
 const Marque = () => {
@@ -14,22 +14,22 @@ const Marque = () => {
       <div className="marquee-container">
         <div className="marquee">
           <span onClick={handleClick}>
-            * Explore the Hottest New Brands – <b >Click Here!</b> * Explore the
-            Hottest New Brands – <b>Click Here!</b> * Explore the Hottest New
-            Brands – <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
-            <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
-            <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
-            <b>Click Here!</b> *
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>
           </span>
         </div>
         <div aria-hidden="true" className="marquee">
-          <span onClick={handleClick}>
-          * Explore the Hottest New Brands – <b>Click Here!</b> * Explore the
-            Hottest New Brands – <b>Click Here!</b> * Explore the Hottest New
-            Brands – <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
-            <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
-            <b>Click Here!</b> * Explore the Hottest New Brands –{" "}
-            <b>Click Here!</b> *
+        <span onClick={handleClick}>
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>{" "}
+            {t("* Explore the Hottest New Brands –")} <b>{t("Click Here!")}</b>
           </span>
         </div>
       </div>

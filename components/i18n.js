@@ -507,7 +507,10 @@ async function initializeI18n() {
             "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
             "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND",
             "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL",
-            "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL"
+            "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL",
+            "* Explore the Hottest New Brands –": "* Explore the Hottest New Brands –",
+            "Click Here!": "Click Here!",
+            "Expires in:": "Expires in:",
       },
     },
   
