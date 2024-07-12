@@ -191,6 +191,7 @@ const BrandCard: React.FC<{
       <Link
         className={`flex flex-col items-start`}
         href={`${brand.GoBig}/${savedUrl}`}
+        target="_blank"
       >
         <Image
           src={`/brands/${brand.CasinoBrand}.png`}
@@ -216,6 +217,7 @@ const BrandCard: React.FC<{
         <Link
           className="btn btn-primary btn-fz"
           href={`${brand.GoBig}/${savedUrl}`}
+          target="_blank"
         >
           {t("Deposit Now")}
         </Link>

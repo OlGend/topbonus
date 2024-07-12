@@ -362,6 +362,7 @@ export default function AllBrands({
                           key={brand.id_brand}
                           href={`${brand.GoBig}/${newUrl}&creative_id=XXL_${creative}`}
                           className={`${target}`}
+                          target="_blank"
                         >
                           <Image
                             className={`${target}`}
