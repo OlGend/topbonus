@@ -123,7 +123,7 @@ export default function TopBrandsRandom() {
             <Link
               target="_blank"
               className="btn btn-primary big-btn mt-3 target-try-your-luck"
-              href={`${redirectUrl}/${newUrl}&creative_id=XXL_Try_Your_Luck`} target="_blank"
+              href={`${redirectUrl}/${newUrl}&creative_id=XXL_Try_Your_Luck`} 
             >
               {t("Try Your Luck")}
             </Link>

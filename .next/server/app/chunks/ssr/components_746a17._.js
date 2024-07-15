@@ -1057,6 +1057,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             target: "_blank",
                             className: "btn btn-primary btn-fz",
                             href: `${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`,
+                            target: "_blank",
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",

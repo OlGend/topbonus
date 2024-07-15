@@ -295,7 +295,7 @@ const BrandCard: React.FC<{
           target="_blank"
           className="btn btn-primary btn-fz"
           href={`${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`}
-          target="_blank"
+      
         >
           {t("Deposit Now")}
         </Link>
