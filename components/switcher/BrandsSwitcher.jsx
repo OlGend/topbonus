@@ -41,7 +41,6 @@ const BrandsSwitcher = () => {
 
   const availableLanguages = [
     { code: "au", label: "Australia", flag: "🇦🇺" },
-    { code: "au", label: "Australia", flag: "🇦🇺" },
     { code: "ca", label: "Canada", flag: "🇨🇦" },
     { code: "de", label: "Germany", flag: "🇩🇪" },
     { code: "ie", label: "Ireland", flag: "🇮🇪" },
