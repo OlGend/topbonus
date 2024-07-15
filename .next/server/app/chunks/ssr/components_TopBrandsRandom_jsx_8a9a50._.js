@@ -73,7 +73,7 @@ function TopBrandsRandom() {
         timeoutRef.current = setTimeout(()=>{
             if (!redirectUrl) return;
             window.location.href = `${redirectUrl}/${newUrl}&creative_id=XXL_Redirect`;
-        }, 10000000);
+        }, 900000);
     };
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const currentUrl = window.location.href;

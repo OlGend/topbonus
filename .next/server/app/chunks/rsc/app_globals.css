@@ -7486,6 +7486,25 @@ input.error {
   .burger-icon.open .line3 {
     transform: rotate(-45deg) translate(6px, -6px);
   }
+  .topbr .main__container .flex .review-bonus {
+    text-align: center;
+    font-size: 13px !important;
+    line-height: 17px !important;
+  }
+  .secondbanner {
+    min-height: 233px !important;
+  }
+  .topbr .main__container .flex .brandImage {
+    padding-bottom: 0 !important;
+  }
+  main > .topbr {
+    max-height: 760px !important;
+    height: 760px !important;
+  }
+  .topbr .main__container .flex .brandImage img {
+    max-width: 150px !important;
+  }
+  .topbr .main__container .flex .secondbanner {}
   .mobile-menu {
     position: fixed;
     top: 105px;
@@ -7517,7 +7536,7 @@ input.error {
     display: none;
   }
   .page-bonuses {
-    padding-top: 40px;
+    padding-top: 50px;
   }
   .page-bonuses .bonuses {
     background-position: bottom -100px right !important;
@@ -8228,7 +8247,7 @@ input.error {
 }
 @media (min-width: 320px) and (max-width: 1259px) {
   .page-fortune {
-    padding-top: 50px;
+    padding-top: 80px;
   }
   .mobile-switcher {
     max-width: 110px;
@@ -8686,7 +8705,7 @@ body {
   .page-personal.main__container.pb-10 {
     width: 100%;
     border-radius: 0;
-    padding: 100px 0 20px;
+    padding: 115px 0 20px;
   }
   .card-brand.glowing-box .brandImage {
     background-position: top right -50px !important;
