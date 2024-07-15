@@ -75,14 +75,14 @@ const Fortunes = ({ banner, target, creative })=>{
                         children: t("FORTUNE WHEEL BRANDS")
                     }, void 0, false, {
                         fileName: "<[project]/components/fortune/index.jsx>",
-                        lineNumber: 58,
+                        lineNumber: 55,
                         columnNumber: 9
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                         children: t("Pick a brand below, make first deposit and win real cash")
                     }, void 0, false, {
                         fileName: "<[project]/components/fortune/index.jsx>",
-                        lineNumber: 59,
+                        lineNumber: 56,
                         columnNumber: 9
                     }, this),
                     banner && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -92,13 +92,13 @@ const Fortunes = ({ banner, target, creative })=>{
                         children: t("Spin the Roulette")
                     }, void 0, false, {
                         fileName: "<[project]/components/fortune/index.jsx>",
-                        lineNumber: 61,
+                        lineNumber: 58,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 57,
+                lineNumber: 54,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
@@ -106,14 +106,14 @@ const Fortunes = ({ banner, target, creative })=>{
                 children: t("To qualify for withdrawals, ensure your first deposit is at least €25 or the equivalent in other currencies and was made after requesting a withdrawal.")
             }, void 0, false, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 66,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "flex flex-wrap px-0 py-6",
                 children: isLoading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "<[project]/components/fortune/index.jsx>",
-                    lineNumber: 73,
+                    lineNumber: 74,
                     columnNumber: 11
                 }, this) : brands.slice(0, visibleBrands).map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                         className: "card-brand mb-3 basis-[19%]",
@@ -132,17 +132,17 @@ const Fortunes = ({ banner, target, creative })=>{
                                         className: target
                                     }, void 0, false, {
                                         fileName: "<[project]/components/fortune/index.jsx>",
-                                        lineNumber: 79,
+                                        lineNumber: 84,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/fortune/index.jsx>",
-                                    lineNumber: 78,
+                                    lineNumber: 79,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/fortune/index.jsx>",
-                                lineNumber: 77,
+                                lineNumber: 78,
                                 columnNumber: 15
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -153,7 +153,7 @@ const Fortunes = ({ banner, target, creative })=>{
                                         children: brand.OurOfferContent
                                     }, void 0, false, {
                                         fileName: "<[project]/components/fortune/index.jsx>",
-                                        lineNumber: 89,
+                                        lineNumber: 94,
                                         columnNumber: 17
                                     }, this),
                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -165,29 +165,29 @@ const Fortunes = ({ banner, target, creative })=>{
                                             children: t("Play Now")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/fortune/index.jsx>",
-                                            lineNumber: 91,
+                                            lineNumber: 96,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/fortune/index.jsx>",
-                                        lineNumber: 90,
+                                        lineNumber: 95,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/fortune/index.jsx>",
-                                lineNumber: 88,
+                                lineNumber: 93,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, brand.id_brand, true, {
                         fileName: "<[project]/components/fortune/index.jsx>",
-                        lineNumber: 76,
+                        lineNumber: 77,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 71,
+                lineNumber: 72,
                 columnNumber: 7
             }, this),
             hasMoreBrands && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -196,13 +196,13 @@ const Fortunes = ({ banner, target, creative })=>{
                 children: t("Load More Brands")
             }, void 0, false, {
                 fileName: "<[project]/components/fortune/index.jsx>",
-                lineNumber: 105,
+                lineNumber: 110,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/fortune/index.jsx>",
-        lineNumber: 56,
+        lineNumber: 53,
         columnNumber: 5
     }, this);
 };

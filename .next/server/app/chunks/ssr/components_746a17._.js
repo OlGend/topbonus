@@ -171,6 +171,7 @@ const getBrands = async (categoryBrands, lng)=>{
     const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
     const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
     const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
+    const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
     const availableLanguages = [
         {
             code: "au",
@@ -178,44 +179,9 @@ const getBrands = async (categoryBrands, lng)=>{
             flag: "🇦🇺"
         },
         {
-            code: "at",
-            label: "Austria",
-            flag: "🇦🇹"
-        },
-        {
-            code: "be",
-            label: "Belgium",
-            flag: "🇧🇪"
-        },
-        {
-            code: "bg",
-            label: "Bulgaria",
-            flag: "🇧🇬"
-        },
-        {
             code: "ca",
             label: "Canada",
             flag: "🇨🇦"
-        },
-        {
-            code: "cz",
-            label: "Czech",
-            flag: "🇨🇿"
-        },
-        {
-            code: "dk",
-            label: "Denmark",
-            flag: "🇩🇰"
-        },
-        {
-            code: "fi",
-            label: "Finland",
-            flag: "🇫🇮"
-        },
-        {
-            code: "fr",
-            label: "France",
-            flag: "🇫🇷"
         },
         {
             code: "de",
@@ -223,29 +189,9 @@ const getBrands = async (categoryBrands, lng)=>{
             flag: "🇩🇪"
         },
         {
-            code: "gr",
-            label: "Greece",
-            flag: "🇬🇷"
-        },
-        {
-            code: "hu",
-            label: "Hungary",
-            flag: "🇭🇺"
-        },
-        {
             code: "ie",
             label: "Ireland",
             flag: "🇮🇪"
-        },
-        {
-            code: "it",
-            label: "Italy",
-            flag: "🇮🇹"
-        },
-        {
-            code: "nl",
-            label: "Netherlands",
-            flag: "🇳🇱"
         },
         {
             code: "nz",
@@ -258,29 +204,14 @@ const getBrands = async (categoryBrands, lng)=>{
             flag: "🇳🇴"
         },
         {
-            code: "pl",
-            label: "Poland",
-            flag: "🇵🇱"
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
         },
         {
-            code: "pt",
-            label: "Portugal",
-            flag: "🇵🇹"
-        },
-        {
-            code: "sk",
-            label: "Slovakia",
-            flag: "🇸🇰"
-        },
-        {
-            code: "es",
-            label: "Spain",
-            flag: "🇪🇸"
-        },
-        {
-            code: "se",
-            label: "Sweden",
-            flag: "🇸🇪"
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
         },
         {
             code: "ch",
@@ -288,14 +219,64 @@ const getBrands = async (categoryBrands, lng)=>{
             flag: "🇨🇭"
         },
         {
-            code: "tr",
-            label: "Turkey",
-            flag: "🇹🇷"
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
         },
         {
-            code: "gb",
-            label: "United Kingdom",
-            flag: "🇬🇧"
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "cz",
+            label: "Czech",
+            flag: "🇨🇿"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "bg",
+            label: "Bulgaria",
+            flag: "🇧🇬"
         },
         {
             code: "all",
@@ -445,6 +426,11 @@ const getBrands = async (categoryBrands, lng)=>{
             code: "us",
             label: "United States",
             flag: "🇺🇸"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
         }
     ];
     const availableLanguages1044 = [
@@ -549,6 +535,108 @@ const getBrands = async (categoryBrands, lng)=>{
             flag: "🌍"
         }
     ];
+    const availableLanguagesCLD_VIP = [
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     const partners = {
         partner1039: {
             url: api1039,
@@ -561,6 +649,10 @@ const getBrands = async (categoryBrands, lng)=>{
         partner1044: {
             url: api1044,
             languages: availableLanguages1044
+        },
+        CLD_VIP: {
+            url: apiCLD_VIP,
+            languages: availableLanguagesCLD_VIP
         },
         default: {
             url: apiAll,
@@ -776,14 +868,14 @@ const UserBrands = ()=>{
                             children: t("RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 175,
+                            lineNumber: 179,
                             columnNumber: 13
                         }, this),
                         " "
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 173,
+                    lineNumber: 177,
                     columnNumber: 11
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -799,12 +891,12 @@ const UserBrands = ()=>{
                                 loading: "lazy"
                             }, void 0, false, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 179,
+                                lineNumber: 185,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 178,
+                            lineNumber: 184,
                             columnNumber: 13
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -814,7 +906,7 @@ const UserBrands = ()=>{
                                 children: [
                                     isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                        lineNumber: 189,
+                                        lineNumber: 195,
                                         columnNumber: 31
                                     }, this),
                                     brands.length > 6 && !isMobile ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
@@ -828,17 +920,17 @@ const UserBrands = ()=>{
                                                         count: brands.length
                                                     }, brand.id_brand, false, {
                                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                        lineNumber: 195,
+                                                        lineNumber: 201,
                                                         columnNumber: 27
                                                     }, this))
                                             }, index, false, {
                                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                lineNumber: 193,
+                                                lineNumber: 199,
                                                 columnNumber: 23
                                             }, this))
                                     }, void 0, false, {
                                         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                        lineNumber: 191,
+                                        lineNumber: 197,
                                         columnNumber: 19
                                     }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
                                         children: isMobile && brands.length > 1 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
@@ -850,12 +942,12 @@ const UserBrands = ()=>{
                                                     count: brands.length
                                                 }, brand.id_brand, false, {
                                                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                    lineNumber: 211,
+                                                    lineNumber: 217,
                                                     columnNumber: 27
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                            lineNumber: 209,
+                                            lineNumber: 215,
                                             columnNumber: 23
                                         }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                             className: "flex flex-wrap",
@@ -866,45 +958,45 @@ const UserBrands = ()=>{
                                                     count: brands.length
                                                 }, brand.id_brand, false, {
                                                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                                    lineNumber: 223,
+                                                    lineNumber: 229,
                                                     columnNumber: 27
                                                 }, this))
                                         }, void 0, false, {
                                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                            lineNumber: 221,
+                                            lineNumber: 227,
                                             columnNumber: 23
                                         }, this)
                                     }, void 0, false)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 188,
+                                lineNumber: 194,
                                 columnNumber: 15
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 187,
+                            lineNumber: 193,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 177,
+                    lineNumber: 183,
                     columnNumber: 11
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 172,
+            lineNumber: 176,
             columnNumber: 9
         }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 240,
+            lineNumber: 246,
             columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-        lineNumber: 170,
+        lineNumber: 174,
         columnNumber: 5
     }, this);
 };
@@ -916,6 +1008,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
                     className: `flex flex-col items-center`,
                     href: `${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`,
+                    target: "_blank",
                     children: [
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
                             src: `/brands/${brand.CasinoBrand}.png`,
@@ -925,7 +1018,7 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             className: "mb-2"
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 263,
+                            lineNumber: 270,
                             columnNumber: 9
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -934,18 +1027,18 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                                 children: brand.OurOfferContent
                             }, void 0, false, {
                                 fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                                lineNumber: 271,
+                                lineNumber: 278,
                                 columnNumber: 11
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 270,
+                            lineNumber: 277,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 259,
+                    lineNumber: 265,
                     columnNumber: 7
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -957,36 +1050,123 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             children: t("Already Registered")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 278,
+                            lineNumber: 285,
                             columnNumber: 11
                         }, this) : "",
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                            target: "_blank",
                             className: "btn btn-primary btn-fz",
                             href: `${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`,
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                            lineNumber: 287,
+                            lineNumber: 294,
                             columnNumber: 9
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-                    lineNumber: 276,
+                    lineNumber: 283,
                     columnNumber: 7
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-            lineNumber: 254,
+            lineNumber: 260,
             columnNumber: 5
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
-        lineNumber: 253,
+        lineNumber: 259,
         columnNumber: 3
     }, this);
 const __TURBOPACK__default__export__ = UserBrands;
+
+})()),
+"[project]/components/Timer.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+const Timer = ()=>{
+    const [timeLeft, setTimeLeft] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const storedStartDate = localStorage.getItem("startDate");
+        let startDate;
+        if (storedStartDate) {
+            startDate = new Date(storedStartDate);
+            const now = new Date();
+            const timeDiff = now - startDate;
+            if (timeDiff >= 48 * 60 * 60 * 1000) {
+                startDate = new Date();
+                localStorage.setItem("startDate", startDate);
+            }
+        } else {
+            startDate = new Date();
+            localStorage.setItem("startDate", startDate);
+        }
+        const updateTimer = ()=>{
+            const now = new Date();
+            const timeDiff = 48 * 60 * 60 * 1000 - (now - startDate);
+            if (timeDiff <= 0) {
+                setTimeLeft(null);
+            } else {
+                const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+                const minutes = Math.floor(timeDiff % (1000 * 60 * 60) / (1000 * 60));
+                const seconds = Math.floor(timeDiff % (1000 * 60) / 1000);
+                setTimeLeft({
+                    hours: String(hours).padStart(2, "0"),
+                    minutes: String(minutes).padStart(2, "0"),
+                    seconds: String(seconds).padStart(2, "0")
+                });
+            }
+        };
+        const timerInterval = setInterval(updateTimer, 1000);
+        updateTimer();
+        return ()=>clearInterval(timerInterval);
+    }, []);
+    if (timeLeft === null) {
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            children: "..."
+        }, void 0, false, {
+            fileName: "<[project]/components/Timer.jsx>",
+            lineNumber: 59,
+            columnNumber: 12
+        }, this);
+    }
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: "timer",
+        children: [
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                children: t("Expires in:")
+            }, void 0, false, {
+                fileName: "<[project]/components/Timer.jsx>",
+                lineNumber: 64,
+                columnNumber: 7
+            }, this),
+            " ",
+            timeLeft.hours,
+            ":",
+            timeLeft.minutes,
+            ":",
+            timeLeft.seconds
+        ]
+    }, void 0, true, {
+        fileName: "<[project]/components/Timer.jsx>",
+        lineNumber: 63,
+        columnNumber: 5
+    }, this);
+};
+const __TURBOPACK__default__export__ = Timer;
 
 })()),
 "[project]/components/getBrands/languages.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
@@ -995,7 +1175,8 @@ __turbopack_esm__({
     "availableLanguages": ()=>availableLanguages,
     "availableLanguages1039": ()=>availableLanguages1039,
     "availableLanguages1043": ()=>availableLanguages1043,
-    "availableLanguages1044": ()=>availableLanguages1044
+    "availableLanguages1044": ()=>availableLanguages1044,
+    "availableLanguagesCLD_VIP": ()=>availableLanguagesCLD_VIP
 });
 const availableLanguages = [
     {
@@ -1004,44 +1185,9 @@ const availableLanguages = [
         flag: "🇦🇺"
     },
     {
-        code: "at",
-        label: "Austria",
-        flag: "🇦🇹"
-    },
-    {
-        code: "be",
-        label: "Belgium",
-        flag: "🇧🇪"
-    },
-    {
-        code: "bg",
-        label: "Bulgaria",
-        flag: "🇧🇬"
-    },
-    {
         code: "ca",
         label: "Canada",
         flag: "🇨🇦"
-    },
-    {
-        code: "cz",
-        label: "Czech",
-        flag: "🇨🇿"
-    },
-    {
-        code: "dk",
-        label: "Denmark",
-        flag: "🇩🇰"
-    },
-    {
-        code: "fi",
-        label: "Finland",
-        flag: "🇫🇮"
-    },
-    {
-        code: "fr",
-        label: "France",
-        flag: "🇫🇷"
     },
     {
         code: "de",
@@ -1049,29 +1195,9 @@ const availableLanguages = [
         flag: "🇩🇪"
     },
     {
-        code: "gr",
-        label: "Greece",
-        flag: "🇬🇷"
-    },
-    {
-        code: "hu",
-        label: "Hungary",
-        flag: "🇭🇺"
-    },
-    {
         code: "ie",
         label: "Ireland",
         flag: "🇮🇪"
-    },
-    {
-        code: "it",
-        label: "Italy",
-        flag: "🇮🇹"
-    },
-    {
-        code: "nl",
-        label: "Netherlands",
-        flag: "🇳🇱"
     },
     {
         code: "nz",
@@ -1084,29 +1210,14 @@ const availableLanguages = [
         flag: "🇳🇴"
     },
     {
-        code: "pl",
-        label: "Poland",
-        flag: "🇵🇱"
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
     },
     {
-        code: "pt",
-        label: "Portugal",
-        flag: "🇵🇹"
-    },
-    {
-        code: "sk",
-        label: "Slovakia",
-        flag: "🇸🇰"
-    },
-    {
-        code: "es",
-        label: "Spain",
-        flag: "🇪🇸"
-    },
-    {
-        code: "se",
-        label: "Sweden",
-        flag: "🇸🇪"
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
     },
     {
         code: "ch",
@@ -1114,14 +1225,64 @@ const availableLanguages = [
         flag: "🇨🇭"
     },
     {
-        code: "tr",
-        label: "Turkey",
-        flag: "🇹🇷"
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
     },
     {
-        code: "gb",
-        label: "United Kingdom",
-        flag: "🇬🇧"
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "cz",
+        label: "Czech",
+        flag: "🇨🇿"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "bg",
+        label: "Bulgaria",
+        flag: "🇧🇬"
     },
     {
         code: "all",
@@ -1375,6 +1536,108 @@ const availableLanguages1044 = [
         flag: "🌍"
     }
 ];
+const availableLanguagesCLD_VIP = [
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
+    },
+    {
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "ca",
+        label: "Canada",
+        flag: "🇨🇦"
+    },
+    {
+        code: "ch",
+        label: "Switzerland",
+        flag: "🇨🇭"
+    },
+    {
+        code: "cz",
+        label: "The Czech Republic",
+        flag: "🇨🇿"
+    },
+    {
+        code: "de",
+        label: "Germany",
+        flag: "🇩🇪"
+    },
+    {
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
+    },
+    {
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
+    },
+    {
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "ie",
+        label: "Ireland",
+        flag: "🇮🇪"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "no",
+        label: "Norway",
+        flag: "🇳🇴"
+    },
+    {
+        code: "nz",
+        label: "New Zealand",
+        flag: "🇳🇿"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "all",
+        label: "World",
+        flag: "🌍"
+    }
+];
 
 })()),
 "[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
@@ -1390,6 +1653,7 @@ const getBrands = async (lng)=>{
     const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
     const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
     const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
+    const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
     const partners = {
         partner1039: {
             url: api1039,
@@ -1402,6 +1666,10 @@ const getBrands = async (lng)=>{
         partner1044: {
             url: api1044,
             languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages1044"]
+        },
+        CLD_VIP: {
+            url: apiCLD_VIP,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
         },
         default: {
             url: apiAll,
@@ -1468,8 +1736,9 @@ function Carroussel(props) {
     const [Carousel, setCarousel] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
     const [offsetRadius, setOffsetRadius] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](4);
     const [showArrows, setShowArrows] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
-    const [goToSlide, setGoToSlide] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
+    const [goToSlide, setGoToSlide] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](0);
     const [cards, setCards] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const autoScrollRef = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useRef"](null);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const loadCarousel = async ()=>{
             const DynamicCarousel = await __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$28$ecmascript$29$__["default"](()=>__turbopack_require__("[project]/node_modules/react-spring-3d-carousel/dist/bundle.js (ecmascript, manifest chunk, loader, ssr)")(__turbopack_import__), {
@@ -1505,6 +1774,27 @@ function Carroussel(props) {
         props.cards,
         setGoToSlide
     ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const startAutoScroll = ()=>{
+            autoScrollRef.current = setInterval(()=>{
+                setGoToSlide((prevSlide)=>(prevSlide + 1) % props.cards.length);
+            }, 5000);
+        };
+        startAutoScroll();
+        return ()=>{
+            clearInterval(autoScrollRef.current);
+        };
+    }, [
+        props.cards.length
+    ]);
+    const handleMouseEnter = ()=>{
+        clearInterval(autoScrollRef.current);
+    };
+    const handleMouseLeave = ()=>{
+        autoScrollRef.current = setInterval(()=>{
+            setGoToSlide((prevSlide)=>(prevSlide + 1) % props.cards.length);
+        }, 5000);
+    };
     if (!Carousel) {
         return null;
     }
@@ -1517,6 +1807,7 @@ function Carroussel(props) {
         const firstTouch = getTouches(evt)[0];
         xDown = firstTouch.clientX;
         yDown = firstTouch.clientY;
+        clearInterval(autoScrollRef.current);
     };
     const handleTouchMove = (evt)=>{
         if (!xDown || !yDown) {
@@ -1528,15 +1819,16 @@ function Carroussel(props) {
         let yDiff = yDown - yUp;
         if (Math.abs(xDiff) > Math.abs(yDiff)) {
             if (xDiff > 0) {
-                setGoToSlide((prevSlide)=>prevSlide + 1);
+                setGoToSlide((prevSlide)=>(prevSlide + 1) % props.cards.length);
             } else {
-                setGoToSlide((prevSlide)=>prevSlide - 1);
+                setGoToSlide((prevSlide)=>(prevSlide - 1 + props.cards.length) % props.cards.length);
             }
-        } else {
-            if (yDiff > 0) {} else {}
         }
         xDown = null;
         yDown = null;
+        autoScrollRef.current = setInterval(()=>{
+            setGoToSlide((prevSlide)=>(prevSlide + 1) % props.cards.length);
+        }, 5000);
     };
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
         style: {
@@ -1544,22 +1836,25 @@ function Carroussel(props) {
             height: props.height,
             margin: props.margin
         },
+        onMouseEnter: handleMouseEnter,
+        onMouseLeave: handleMouseLeave,
         onTouchStart: handleTouchStart,
         onTouchMove: handleTouchMove,
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](Carousel, {
             slides: cards,
             goToSlide: goToSlide,
             offsetRadius: offsetRadius,
-            showNavigation: showArrows
+            showNavigation: showArrows,
+            className: "proverka"
         }, void 0, false, {
             fileName: "<[project]/components/slider/Carousel.jsx>",
-            lineNumber: 96,
-            columnNumber: 7
+            lineNumber: 119,
+            columnNumber: 9
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/slider/Carousel.jsx>",
-        lineNumber: 91,
-        columnNumber: 5
+        lineNumber: 108,
+        columnNumber: 7
     }, this);
 }
 
@@ -1597,7 +1892,6 @@ function Card({ imagen, link, bonus }) {
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const [show, setShown] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const props3 = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$spring$2f$dist$2f$react$2d$spring$2e$modern$2e$mjs__$28$ecmascript$29$__["useSpring"]({
-        opacity: 1,
         borderRadius: 2,
         transform: show ? "scale(1.03)" : "scale(1)",
         boxShadow: show ? "0 20px 25px rgb(0 0 0 / 25%)" : "0 2px 10px rgb(0 0 0 / 8%)"
@@ -1628,12 +1922,12 @@ function Card({ imagen, link, bonus }) {
                     className: "target-top-brand"
                 }, void 0, false, {
                     fileName: "<[project]/components/slider/Card.jsx>",
-                    lineNumber: 47,
+                    lineNumber: 41,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/slider/Card.jsx>",
-                lineNumber: 42,
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -1643,12 +1937,12 @@ function Card({ imagen, link, bonus }) {
                     children: bonus
                 }, void 0, false, {
                     fileName: "<[project]/components/slider/Card.jsx>",
-                    lineNumber: 60,
+                    lineNumber: 51,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/slider/Card.jsx>",
-                lineNumber: 59,
+                lineNumber: 50,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -1660,18 +1954,18 @@ function Card({ imagen, link, bonus }) {
                     children: t("Play Now")
                 }, void 0, false, {
                     fileName: "<[project]/components/slider/Card.jsx>",
-                    lineNumber: 63,
+                    lineNumber: 54,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/slider/Card.jsx>",
-                lineNumber: 62,
+                lineNumber: 53,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/slider/Card.jsx>",
-        lineNumber: 36,
+        lineNumber: 30,
         columnNumber: 5
     }, this);
 }
@@ -1697,9 +1991,11 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$j
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Timer$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Timer.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$UserBrands$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Brands_home/UserBrands.tsx (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
+;
 ;
 ;
 ;
@@ -1720,6 +2016,8 @@ function TopBrands() {
     const [source, setSource] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     const [loading, setLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const [currentBrandIndex, setCurrentBrandIndex] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](0);
+    const [fade, setFade] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
@@ -1734,7 +2032,8 @@ function TopBrands() {
         const partners = [
             "partner1039",
             "partner1043",
-            "partner1044"
+            "partner1044",
+            "CLD_VIP"
         ];
         function setPartnerSource(keyword) {
             const partner = partners.find((p)=>keyword.includes(p));
@@ -1793,47 +2092,150 @@ function TopBrands() {
                 bonus: brand.OurOfferContent
             }, void 0, false, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 94,
+                lineNumber: 97,
                 columnNumber: 7
             }, this)
         }));
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const interval = setInterval(()=>{
+            setFade(false);
+            setTimeout(()=>{
+                setCurrentBrandIndex((prevIndex)=>(prevIndex + 1) % brands.length);
+                setFade(true);
+            }, 500);
+        }, 5000000);
+        return ()=>clearInterval(interval);
+    }, [
+        brands.length
+    ]);
     console.log("BRANDS", brands);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
             className: "topbr",
             children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "main__container",
-                children: loading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                    fileName: "<[project]/components/TopBrands.jsx>",
-                    lineNumber: 110,
-                    columnNumber: 13
-                }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
-                    className: "carmob",
-                    cards: cards2,
-                    height: "500px",
-                    width: "100%",
-                    margin: "0 auto",
-                    offset: 200,
-                    showArrows: false
-                }, void 0, false, {
-                    fileName: "<[project]/components/TopBrands.jsx>",
-                    lineNumber: 113,
-                    columnNumber: 15
-                }, this)
-            }, void 0, false, {
+                children: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Timer$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "<[project]/components/TopBrands.jsx>",
+                        lineNumber: 123,
+                        columnNumber: 11
+                    }, this),
+                    loading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                        fileName: "<[project]/components/TopBrands.jsx>",
+                        lineNumber: 125,
+                        columnNumber: 13
+                    }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "flex justify-between items-center",
+                        children: [
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "slidertop",
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
+                                    className: "carmob",
+                                    cards: cards2,
+                                    height: "500px",
+                                    width: "100%",
+                                    margin: "0 auto",
+                                    offset: 200,
+                                    showArrows: false
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/TopBrands.jsx>",
+                                    lineNumber: 130,
+                                    columnNumber: 19
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "<[project]/components/TopBrands.jsx>",
+                                lineNumber: 129,
+                                columnNumber: 17
+                            }, this),
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "secondbanner flex items-center justify-center",
+                                children: brands.length > 0 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: `card-second-banner mb-2 flex flex-col items-center pb-3 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`,
+                                    children: [
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                            className: "brandImage p-3",
+                                            children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                                className: "flex justify-center flex-col items-center target-top-new-releases",
+                                                href: `${brands[currentBrandIndex].GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                                target: "_blank",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                        src: `/brands/${brands[currentBrandIndex].CasinoBrand}.png`,
+                                                        alt: brands[currentBrandIndex].CasinoBrand,
+                                                        width: 200,
+                                                        height: 80,
+                                                        loading: "lazy",
+                                                        className: "target-top-new-releases"
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/TopBrands.jsx>",
+                                                        lineNumber: 152,
+                                                        columnNumber: 27
+                                                    }, this),
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "p-3 text-center flex items-center review-bonus",
+                                                        children: brands[currentBrandIndex].OurOfferContent
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/TopBrands.jsx>",
+                                                        lineNumber: 160,
+                                                        columnNumber: 27
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/TopBrands.jsx>",
+                                                lineNumber: 147,
+                                                columnNumber: 25
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 146,
+                                            columnNumber: 23
+                                        }, this),
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                            className: "btn btn-primary btn-new target-top-new-releases",
+                                            href: `${brands[currentBrandIndex].GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                            target: "_blank",
+                                            children: t("Play Now")
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 165,
+                                            columnNumber: 23
+                                        }, this)
+                                    ]
+                                }, brands[currentBrandIndex].id_brand, true, {
+                                    fileName: "<[project]/components/TopBrands.jsx>",
+                                    lineNumber: 142,
+                                    columnNumber: 21
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "<[project]/components/TopBrands.jsx>",
+                                lineNumber: 140,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "<[project]/components/TopBrands.jsx>",
+                        lineNumber: 128,
+                        columnNumber: 15
+                    }, this)
+                ]
+            }, void 0, true, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 108,
+                lineNumber: 122,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/TopBrands.jsx>",
-            lineNumber: 106,
+            lineNumber: 121,
             columnNumber: 7
         }, this)
     }, void 0, false);
 }
 
 })()),
+"[project]/components/KeitaroIframe.jsx (ecmascript, ssr)": (function({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__, m: module, e: exports }) { !function() {
+
+
+}.call(this) }),
 "[project]/components/modal/index.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
 
 __turbopack_esm__({
@@ -2259,58 +2661,54 @@ async function initializeI18n() {
     }
     const availableLanguages = [
         "au",
-        "at",
-        "be",
-        "bg",
         "ca",
-        "cz",
-        "dk",
-        "fi",
-        "fr",
         "de",
-        "gr",
-        "hu",
         "ie",
-        "it",
-        "nl",
         "nz",
         "no",
-        "pl",
-        "pt",
-        "sk",
-        "es",
-        "se",
+        "fi",
+        "at",
         "ch",
-        "tr",
-        "gb",
+        "dk",
+        "fr",
+        "it",
+        "pl",
+        "se",
+        "cz",
+        "sk",
+        "be",
+        "gr",
+        "nl",
+        "hu",
+        "bg",
         "all"
     ];
     const availableLanguages1039 = [
         "au",
-        "at",
-        "be",
-        "bg",
         "ca",
-        "cz",
-        "dk",
-        "fi",
-        "fr",
         "de",
-        "gr",
-        "hu",
         "ie",
-        "it",
-        "nl",
         "nz",
         "no",
-        "pl",
-        "pt",
-        "sk",
-        "es",
-        "se",
+        "fi",
+        "at",
         "ch",
-        "tr",
+        "dk",
+        "fr",
+        "it",
+        "es",
+        "pl",
+        "se",
+        "cz",
+        "be",
+        "gr",
         "gb",
+        "nl",
+        "hu",
+        "sk",
+        "bg",
+        "pt",
+        "tr",
         "all"
     ];
     const availableLanguages1043 = [
@@ -2318,25 +2716,56 @@ async function initializeI18n() {
         "us"
     ];
     const availableLanguages1044 = [
+        "fi",
+        "se",
+        "ca",
+        "nz",
+        "au",
+        "cz",
+        "fr",
+        "za",
+        "nl",
+        "gb",
+        "us",
+        "de",
+        "at",
+        "ch",
+        "dk",
+        "it",
+        "es",
+        "pl",
+        "be",
+        "gr",
+        "no",
+        "ie",
+        "pt",
+        "hu",
+        "sk",
+        "bg",
+        "tr",
+        "all"
+    ];
+    const availableLanguagesCLD_VIP = [
         "au",
         "at",
         "be",
         "ca",
         "ch",
-        "nl",
-        "de",
         "cz",
+        "de",
+        "dk",
         "fi",
-        "gb",
+        "fr",
         "gr",
+        "hu",
         "ie",
         "it",
-        "nz",
         "no",
+        "nz",
         "pl",
-        "za",
         "se",
-        "us",
+        "sk",
+        "sk",
         "all"
     ];
     let item;
@@ -2350,6 +2779,8 @@ async function initializeI18n() {
         newLng = availableLanguages1043;
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
+    } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
     }
@@ -2606,9 +3037,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to 20 USD on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
                 "You have successfully registered on these brands": "You have successfully registered on these brands",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL"
+                "* Explore the Hottest New Brands –": "* Explore the Hottest New Brands –",
+                "Click Here!": "Click Here!",
+                "Expires in:": "Expires in:"
             }
         },
         pl: {
@@ -2861,9 +3292,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Otrzymasz 50 darmowych spinów za każdą pierwszą wpłatę z naszej strony internetowej. Obróć te spiny i zdobądź do 20 USD na swoim portfelu kryptowalutowym/PayPal. Aby zakwalifikować się do wypłaty, upewnij się, że Twoja pierwsza wpłata wynosi co najmniej 25 euro lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę.",
                 "You have successfully registered on these brands": "Zarejestrowałeś się pomyślnie na tych markach",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JESTEŚ JUŻ ZAREJESTROWANY TUTAJ, ZRÓB SWOJE PIERWSZE WPŁATY I",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "OTRZYMAJ NAWET DO 2035 PLN Z NATYCHMIASTOWYM WYPŁACANIEM",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "OTRZYMUJ PRAWDZIWE PIENIĄDZE Z NATYCHMIASTOWYM WYPŁACANIEM"
+                "* Explore the Hottest New Brands –": "* Odkrywaj Najgorętsze Nowe Kasyna –",
+                "Click Here!": "Kliknij tutaj!",
+                "Expires in:": "Wygasa za:"
             }
         },
         de: {
@@ -3116,9 +3547,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sie erhalten 50 Freispiele für jede Ersteinzahlung von unserer Website. Drehen Sie diese Spins und erhalten Sie bis zu 20 USD auf Ihrem Kryptowallet/PayPal. Um sich für Auszahlungen zu qualifizieren, stellen Sie sicher, dass Ihre erste Einzahlung mindestens Є25 oder dem Äquivalent in anderen Währungen beträgt und nach der Beantragung einer Auszahlung erfolgt ist.",
                 "You have successfully registered on these brands": "Sie haben sich erfolgreich bei diesen Marken registriert",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SIE SIND BEREITS HIER REGISTRIERT, MACHEN SIE IHRE ERSTEN EINZAHLUNGEN UND",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ERHALTEN SIE BIS ZU 500 EUR MIT SOFORTIGER AUSZAHLUNG",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ERHALTEN SIE ECHTES GELD MIT SOFORTIGER AUSZAHLUNG."
+                "* Explore the Hottest New Brands –": "* Entdecken Sie die heißesten neuen Casinos -",
+                "Click Here!": "Klicken Sie hier!",
+                "Expires in:": "Läuft ab in:"
             }
         },
         bg: {
@@ -3371,9 +3802,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ще получите 50 безплатни завъртания за всеки първи депозит от нашия уебсайт. Завъртете тези завъртания и получете до 20 USD на вашия криптовалутен портфейл/PayPal. За да квалифицирате за изтегляне, се уверете, че първият ви депозит е поне Є25 или еквивалентът му в други валути и е направен след като сте поискали изтегляне.",
                 "You have successfully registered on these brands": "Вие успешно се регистрирахте в тези казина",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ВЕЧЕ СТЕ РЕГИСТРИРАНИ ТУК, НАПРАВЕТЕ ПЪРВИТЕ СИ ДЕПОЗИТИ И",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ПОЛУЧЕТЕ ДО 890 ЛВ. С МИГНОВЕНО ИЗТЕГЛЯНЕ",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ПОЛУЧАЙТЕ РЕАЛНИ ПАРИ С НЕЗАБАВНО ТЕГЛЕНЕ"
+                "* Explore the Hottest New Brands –": "* Разгледайте най-горещите нови казина -",
+                "Click Here!": "Кликни тук!",
+                "Expires in:": "Изтича след:"
             }
         },
         cz: {
@@ -3626,9 +4057,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 volných zatočení za každý první vklad z našich webových stránek. Roztočte tyto zatočení a získejte až 20 USD na svou kryptoměnovou peněženku/PayPal. Pro kvalifikaci k výběrům se ujistěte, že váš první vklad je minimálně 25 € nebo ekvivalent v jiných měnách a byl proveden požadováním výběru.",
                 "You have successfully registered on these brands": "Úspěšně jste se zaregistrovali na tyto značky",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JSTE JIŽ ZAREGISTROVÁNI ZDE, PROVEĎTE SVÉ PRVNÍ VLOŽENÍ A",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKEJTE AŽ 11200 KČ S OKAMŽITÝM VÝBĚREM",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKEJTE SKUTEČNÉ PENÍZE S OKAMŽITÝM VÝBĚREM"
+                "* Explore the Hottest New Brands –": "* Prozkoumejte nejžhavější nová kasina -",
+                "Click Here!": "Klikněte zde!",
+                "Expires in:": "Vyprší za:"
             }
         },
         dk: {
@@ -3881,9 +4312,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratis spins for hver første indbetaling fra vores hjemmeside. Spil disse spins og få op til 20 USD på din kryptopung/PayPal. For at kvalificere dig til udbetalinger, skal du sikre dig, at din første indbetaling er på mindst Є25 eller tilsvarende i andre valutaer og blev foretaget efter anmodning om en udbetaling.",
                 "You have successfully registered on these brands": "Du har succesfuldt registreret dig på disse mærker",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERET HER, LAV DINE FØRSTE INDBETALINGER OG",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MODTAG OP TIL 3400 DKK MED ØJEBLIKKELIG UDBETALING",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MODTAG RIGTIGE PENGE MED ØJEBLIKKELIG UDBETALING."
+                "* Explore the Hottest New Brands –": "* Udforsk de nyeste og mest populære casinoer -",
+                "Click Here!": "Klik her!",
+                "Expires in:": "Udløber om:"
             }
         },
         nl: {
@@ -4136,9 +4567,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Je krijgt 50 gratis spins voor elke eerste storting vanaf onze website. Draai deze spins en krijg tot 20 USD op je crypto wallet/PayPal. Om in aanmerking te komen voor opnames, zorg ervoor dat je eerste storting minstens Є25 is of het equivalent in andere valuta en is gedaan na het aanvragen van een opname.",
                 "You have successfully registered on these brands": "Je hebt succesvol geregistreerd op deze merken",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JE BENT AL GEREGISTREERD HIER, MAAK JE EERSTE STORTINGEN EN",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ONTVANG TOT 500 EURO MET ONMIDDELLIJKE OPNAME",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ONTVANG ECHT GELD MET ONMIDDELLIJKE OPNAME"
+                "* Explore the Hottest New Brands –": "* Verken de Heetste Nieuwe Casino's -",
+                "Click Here!": "Klik hier!",
+                "Expires in:": "Verloopt in:"
             }
         },
         es: {
@@ -4391,9 +4822,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Recibirás 50 giros gratis por cada primer depósito desde nuestro sitio web. Gira estos giros y obtén hasta 20 USD en tu billetera de criptomonedas/PayPal. Para calificar para retiros, asegúrate de que tu primer depósito sea de al menos Є25 o su equivalente en otras monedas y se haya realizado después de solicitar un retiro.",
                 "You have successfully registered on these brands": "Te has registrado con éxito en estas marcas",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YA ESTÁS REGISTRADO AQUÍ, REALIZA TUS PRIMEROS DEPÓSITOS Y",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECIBE HASTA 500 EUR CON RETIRO INSTANTÁNEO",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECIBE DINERO REAL CON RETIRO INSTANTÁNEO"
+                "* Explore the Hottest New Brands –": "* Explora los casinos más nuevos y populares –",
+                "Click Here!": "¡Haz clic aquí!",
+                "Expires in:": "Caduca en:"
             }
         },
         fi: {
@@ -4646,9 +5077,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Saat 50 ilmaiskierrosta jokaisesta ensimmäisestä talletuksestasi verkkosivustoltamme. Pyöritä nämä kierrokset ja saat jopa 20 USD krypto lompakkoosi/PayPaliin. Jotta voit olla oikeutettu nostoihin, varmista että ensimmäinen talletuksesi on vähintään 25 euroa tai vastaava summa muissa valuutoissa ja se on tehty pyynnön jälkeen.",
                 "You have successfully registered on these brands": "Olet rekisteröitynyt näille brändeille onnistuneesti",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "OLET JO REKISTERÖITYNYT TÄHÄN, TEE ENSIMMÄISET TALLETUKSESI JA",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "SAAT JOPA 500 EURON NOPEALLA NOSTOLLA",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "SAAT OIKEAA RAHAA NOPEALLA NOSTOLLA"
+                "* Explore the Hottest New Brands –": "* Tutustu uusimpiin ja kuumimpiin kasinoihin –",
+                "Click Here!": "Klikkaa tästä!",
+                "Expires in:": "Vanhenee:"
             }
         },
         fr: {
@@ -4901,9 +5332,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Vous recevrez 50 tours gratuits pour chaque premier dépôt à partir de notre site Web. Faites tourner ces tours et obtenez jusqu'à 20 USD sur votre portefeuille crypto/PayPal. Pour être éligible aux retraits, assurez-vous que vos premiers dépôts sont d'au moins 25 € ou l'équivalent dans d'autres devises et ont été effectués après avoir demandé un retrait.",
                 "You have successfully registered on these brands": "Vous vous êtes inscrit avec succès sur ces marques",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOUS ÊTES DÉJÀ INSCRIT ICI, FAITES VOS PREMIERS DÉPÔTS ET",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEVEZ JUSQU'À 500 EUR AVEC RETRAIT INSTANTANÉ",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEVEZ DE L'ARGENT RÉEL AVEC RETRAIT INSTANTANÉ"
+                "* Explore the Hottest New Brands –": "* Découvrez les nouveaux casinos les plus populaires -",
+                "Click Here!": "Cliquez ici!",
+                "Expires in:": "Expire dans:"
             }
         },
         gr: {
@@ -5156,9 +5587,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Θα λάβετε 50 δωρεάν περιστροφές για κάθε Πρώτη Κατάθεση από την ιστοσελίδα μας. Περιστρέψτε αυτές τις περιστροφές και κερδίστε έως και 20 USD στο κρυπτονόμισμά σας/PayPal. Για να προκριθείτε για αναλήψεις, βεβαιωθείτε ότι η πρώτη κατάθεσή σας είναι τουλάχιστον €25 ή το αντίστοιχο σε άλλα νομίσματα και έγινε μετά από αίτηση ανάληψης.",
                 "You have successfully registered on these brands": "Έχετε εγγραφεί με επιτυχία σε αυτά τα καζίνο",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ΕΊΣΤΕ ΉΔΗ ΕΓΓΕΓΡΑΜΜΈΝΟΙ ΕΔΏ, ΚΆΝΤΕ ΤΙΣ ΠΡΏΤΕΣ ΣΑΣ ΚΑΤΑΘΈΣΕΙΣ ΚΑΙ",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ΛΑΒΕ ΜΕΧΡΙ 500 ΕΥΡΩ ΜΕ ΑΜΕΣΗ ΑΝΑΛΗΨΗ",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ΛΑΜΒΆΝΕΤΕ ΠΡΑΓΜΑΤΙΚΆ ΧΡΗΜΑΤΑ ΜΕ ΆΜΕΣΗ ΑΝΑΛΗΨΗ"
+                "* Explore the Hottest New Brands –": "* Εξερευνήστε τα πιο δημοφιλή νέα καζίνο -",
+                "Click Here!": "Κάντε κλικ εδώ!",
+                "Expires in:": "Λήγει σε:"
             }
         },
         hu: {
@@ -5411,9 +5842,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ingyenes 50 pörgetést kapsz minden első befizetésért a weboldalunkról. Pörgetsd ezeket a pörgetéseket, és akár 20 USD is kaphatsz a kriptopénz tárcádon/PayPal számládon. A kifizetésekhez való jogosultsághoz biztosítsd, hogy az első befizetés legalább 25 euró vagy annak megfelelője más devizákon, és azt a kifizetés kérése után végezted.",
                 "You have successfully registered on these brands": "Sikeresen regisztrált ezeken a márkákon",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "MÁR REGISZTRÁLTÁL ITT, KEZD EL AZ ELSŐ BEFIZETÉSEIDET ÉS",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "AKÁR 184060 HUF-OT IS KAPHAT AZONNALI KIFIZETÉSSEL",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "VALÓDI PÉNZT KAPJ AZ AZONNALI KIFIZETÉSSEL"
+                "* Explore the Hottest New Brands –": "* Fedezze fel a legforróbb új kaszinókat -",
+                "Click Here!": "Kattints ide!",
+                "Expires in:": "Lejár:"
             }
         },
         it: {
@@ -5666,9 +6097,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Riceverai 50 giri gratuiti per ogni primo deposito dal nostro sito web. Fai girare questi giri e ottieni fino a 20 USD sul tuo portafoglio criptato/PayPal. Per poter prelevare, assicurati che il tuo primo deposito sia di almeno Є25 o l'equivalente in altre valute e sia stato effettuato dopo aver richiesto un prelievo.",
                 "You have successfully registered on these brands": "Hai completato con successo la registrazione su questi marchi",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SEI GIÀ REGISTRATO QUI, EFFETTUA I TUOI PRIMI DEPOSITI E",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RICEVI FINO A 500 EURO CON PRELIEVO ISTANTANEO",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RICEVI DENARO REALE CON PRELIEVO ISTANTANEO"
+                "* Explore the Hottest New Brands –": "* Esplora i nuovi casinò più caldi -",
+                "Click Here!": "Clicca qui!",
+                "Expires in:": "Scade tra:"
             }
         },
         no: {
@@ -5921,9 +6352,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratisspinn for hver første innskudd fra nettstedet vårt. Spinn disse spinnene og få opptil 20 USD på din kryptolommebok/PayPal. For å kvalifisere for uttak, sørg for at ditt første innskudd er på minst Є25 eller tilsvarende i andre valutaer og ble gjort etter at du ba om et uttak.",
                 "You have successfully registered on these brands": "Du har registrert deg vellykket på disse merkene",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERT HER, GJØR DINE FØRSTE INNSKUDD OG",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MOTTA OPPTIL 4625 NOK MED UMIDDELBAR UTTAK",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MOTTA EKTE PENGER MED ØYEBLIKKELIG UTTAK"
+                "* Explore the Hottest New Brands –": "* Utforsk de nyeste og mest populære casinoene -",
+                "Click Here!": "Klikk her!",
+                "Expires in:": "Utløper om:"
             }
         },
         pt: {
@@ -6176,9 +6607,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Você receberá 50 rodadas grátis para cada primeiro depósito em nosso site. Gire essas rodadas e ganhe até 20 USD em sua carteira de criptomoedas/PayPal. Para se qualificar para saques, certifique-se de que seu primeiro depósito seja de pelo menos Є25 ou o equivalente em outras moedas e tenha sido feito após solicitar um saque.",
                 "You have successfully registered on these brands": "Você se registrou com sucesso nestas marcas",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOCÊ JÁ ESTÁ REGISTRADO AQUI, FAÇA SEUS PRIMEIROS DEPÓSITOS E",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEBA ATÉ 500 EUR COM RETIRADA INSTANTÂNEA",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEBA DINHEIRO REAL COM SAQUE INSTANTÂNEO"
+                "* Explore the Hottest New Brands –": "* Explore os Novos Cassinos Mais Quentes -",
+                "Click Here!": "Clique aqui!",
+                "Expires in:": "Expira em:"
             }
         },
         se: {
@@ -6431,9 +6862,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du kommer att få 50 gratissnurr för varje första insättning från vår webbplats. Snurra dessa snurr och få upp till 20 USD på din kryptoplånbok/PayPal. För att kvalificera dig för uttag, se till att din första insättning är minst Є25 eller motsvarande i andra valutor och gjordes efter att du begärt ett uttag.",
                 "You have successfully registered on these brands": "Du har framgångsrikt registrerat dig på dessa varumärken",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ÄR REDAN REGISTRERAD HÄR, GÖR DINA FÖRSTA INSÄTTNINGAR OCH",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "FÅ UPP TILL 5200 SEK MED OMEDELBAR UTTAG",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "FÅ RIKTIGA PENGAR MED OMEDELBAR UTTAG"
+                "* Explore the Hottest New Brands –": "* Utforska de hetaste nya casinona -",
+                "Click Here!": "Klicka här!",
+                "Expires in:": "Utgår om:"
             }
         },
         sk: {
@@ -6686,9 +7117,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 bezplatných zatočení za každý prvý vklad z našej webovej stránky. Zatočte týmito zatočeniami a získajte až 20 USD na svoj kryptomenový peňaženku/PayPal. Pre kvalifikáciu na výbery sa uistite, že váš prvý vklad je aspoň 25 eur alebo ekvivalent v iných menách a bol vykonaný požiadavkou na výber.",
                 "You have successfully registered on these brands": "Úspešne ste sa zaregistrovali na tieto značky",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "UŽ STE TU ZAREGISTROVANÝ, UROBTE SI PRVÉ VLOŽENIA A",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKAJTE AŽ 500 EUR S OKAMŽITÝM VÝBEROM",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKAJTE SKUTOČNÉ PENIAZE S OKAMŽITÝM VÝBEROM"
+                "* Explore the Hottest New Brands –": "* Preskúmajte najnovšie kasína -",
+                "Click Here!": "Kliknite tu!",
+                "Expires in:": "Vyprší o:"
             }
         },
         tr: {
@@ -6941,9 +7372,9 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sitemizden her ilk para yatırma işlemi için 50 Ücretsiz Dönüş alacaksınız. Bu dönüşleri çevirin ve kripto cüzdanınıza/PayPal hesabınıza kadar 20 USD kazanın. Çekilmeye hak kazanmak için, ilk para yatırma işleminizin en az 25 Є veya diğer para birimlerindeki karşılığı olması ve çekim talebinde bulunulduktan sonra yapılması gerekmektedir.",
                 "You have successfully registered on these brands": "Bu markalara başarıyla kaydoldunuz",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ZATEN BURADA KAYITLISINIZ, İLK YATIRIMLARINIZI YAPIN VE",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "HIZLI ÇEKİM İLE 13000 TRY'YE KADAR ALIN",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ANINDA ÇEKİM İLE GERÇEK PARA ALIN"
+                "* Explore the Hottest New Brands –": "* En Yeni ve En Popüler Casinoları Keşfedin –",
+                "Click Here!": "Buraya Tıkla!",
+                "Expires in:": "Sona erme tarihi:"
             }
         }
     };
@@ -6986,29 +7417,14 @@ const LanguageSwitcher = ()=>{
     const [isLoading, setIsLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const availableLanguages = [
         {
-            code: "bg",
-            label: "Bulgaria",
-            flag: "🇧🇬"
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
-            code: "cz",
-            label: "Czech",
-            flag: "🇨🇿"
-        },
-        {
-            code: "dk",
-            label: "Denmark",
-            flag: "🇩🇰"
-        },
-        {
-            code: "fi",
-            label: "Finland",
-            flag: "🇫🇮"
-        },
-        {
-            code: "fr",
-            label: "France",
-            flag: "🇫🇷"
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
         },
         {
             code: "de",
@@ -7016,24 +7432,14 @@ const LanguageSwitcher = ()=>{
             flag: "🇩🇪"
         },
         {
-            code: "gr",
-            label: "Greece",
-            flag: "🇬🇷"
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
         },
         {
-            code: "hu",
-            label: "Hungary",
-            flag: "🇭🇺"
-        },
-        {
-            code: "it",
-            label: "Italy",
-            flag: "🇮🇹"
-        },
-        {
-            code: "nl",
-            label: "Netherlands",
-            flag: "🇳🇱"
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
         },
         {
             code: "no",
@@ -7041,19 +7447,39 @@ const LanguageSwitcher = ()=>{
             flag: "🇳🇴"
         },
         {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
             code: "pl",
             label: "Poland",
             flag: "🇵🇱"
-        },
-        {
-            code: "sk",
-            label: "Slovakia",
-            flag: "🇸🇰"
-        },
-        {
-            code: "es",
-            label: "Spain",
-            flag: "🇪🇸"
         },
         {
             code: "se",
@@ -7061,13 +7487,43 @@ const LanguageSwitcher = ()=>{
             flag: "🇸🇪"
         },
         {
-            code: "tr",
-            label: "Turkey",
-            flag: "🇹🇷"
+            code: "cz",
+            label: "Czech",
+            flag: "🇨🇿"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "bg",
+            label: "Bulgaria",
+            flag: "🇧🇬"
         },
         {
             code: "all",
-            label: "English",
+            label: "World",
             flag: "🌍"
         }
     ];
@@ -7141,6 +7597,108 @@ const LanguageSwitcher = ()=>{
             flag: "🌍"
         }
     ];
+    const availableLanguagesCLD_VIP = [
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     let source;
     if (typeof window !== "undefined") {
         source = localStorage.getItem("source");
@@ -7156,6 +7714,9 @@ const LanguageSwitcher = ()=>{
         case "partner1044":
             newLng = availableLanguages1044;
             break;
+        case "CLD_VIP":
+            newLng = availableLanguagesCLD_VIP;
+            break;
         default:
             newLng = availableLanguages;
             break;
@@ -7164,7 +7725,7 @@ const LanguageSwitcher = ()=>{
         children: "Failed to load"
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 74,
+        lineNumber: 107,
         columnNumber: 21
     }, this);
     const changeLanguage = async (lng)=>{
@@ -7187,7 +7748,7 @@ const LanguageSwitcher = ()=>{
                     children: t("Website language")
                 }, void 0, false, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 92,
+                    lineNumber: 125,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7216,34 +7777,34 @@ const LanguageSwitcher = ()=>{
                                     ]
                                 }, language.code, true, {
                                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                                    lineNumber: 107,
+                                    lineNumber: 142,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 94,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 116,
+                            lineNumber: 151,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 93,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-            lineNumber: 91,
+            lineNumber: 124,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 90,
+        lineNumber: 123,
         columnNumber: 5
     }, this);
 };
@@ -7303,19 +7864,9 @@ const BrandsSwitcher = ()=>{
             flag: "🇦🇺"
         },
         {
-            code: "at",
-            label: "Austria",
-            flag: "🇦🇹"
-        },
-        {
-            code: "be",
-            label: "Belgium",
-            flag: "🇧🇪"
-        },
-        {
-            code: "bg",
-            label: "Bulgaria",
-            flag: "🇧🇬"
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
             code: "ca",
@@ -7323,54 +7874,14 @@ const BrandsSwitcher = ()=>{
             flag: "🇨🇦"
         },
         {
-            code: "cz",
-            label: "Czech",
-            flag: "🇨🇿"
-        },
-        {
-            code: "dk",
-            label: "Denmark",
-            flag: "🇩🇰"
-        },
-        {
-            code: "fi",
-            label: "Finland",
-            flag: "🇫🇮"
-        },
-        {
-            code: "fr",
-            label: "France",
-            flag: "🇫🇷"
-        },
-        {
             code: "de",
             label: "Germany",
             flag: "🇩🇪"
         },
         {
-            code: "gr",
-            label: "Greece",
-            flag: "🇬🇷"
-        },
-        {
-            code: "hu",
-            label: "Hungary",
-            flag: "🇭🇺"
-        },
-        {
             code: "ie",
             label: "Ireland",
             flag: "🇮🇪"
-        },
-        {
-            code: "it",
-            label: "Italy",
-            flag: "🇮🇹"
-        },
-        {
-            code: "nl",
-            label: "Netherlands",
-            flag: "🇳🇱"
         },
         {
             code: "nz",
@@ -7383,29 +7894,14 @@ const BrandsSwitcher = ()=>{
             flag: "🇳🇴"
         },
         {
-            code: "pl",
-            label: "Poland",
-            flag: "🇵🇱"
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
         },
         {
-            code: "pt",
-            label: "Portugal",
-            flag: "🇵🇹"
-        },
-        {
-            code: "sk",
-            label: "Slovakia",
-            flag: "🇸🇰"
-        },
-        {
-            code: "es",
-            label: "Spain",
-            flag: "🇪🇸"
-        },
-        {
-            code: "se",
-            label: "Sweden",
-            flag: "🇸🇪"
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
         },
         {
             code: "ch",
@@ -7413,14 +7909,64 @@ const BrandsSwitcher = ()=>{
             flag: "🇨🇭"
         },
         {
-            code: "tr",
-            label: "Turkey",
-            flag: "🇹🇷"
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
         },
         {
-            code: "gb",
-            label: "United Kingdom",
-            flag: "🇬🇧"
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "cz",
+            label: "Czech",
+            flag: "🇨🇿"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "bg",
+            label: "Bulgaria",
+            flag: "🇧🇬"
         },
         {
             code: "all",
@@ -7689,6 +8235,108 @@ const BrandsSwitcher = ()=>{
             flag: "🌍"
         }
     ];
+    const availableLanguagesCLD_VIP = [
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     let item;
     if (typeof window !== "undefined") {
         item = localStorage.getItem("source");
@@ -7700,6 +8348,8 @@ const BrandsSwitcher = ()=>{
         newLng = availableLanguages1043;
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
+    } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
     }
@@ -7738,23 +8388,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 169,
+                        lineNumber: 189,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 158,
+                lineNumber: 178,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 179,
+                lineNumber: 199,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 157,
+        lineNumber: 177,
         columnNumber: 5
     }, this);
 };
@@ -8204,6 +8854,108 @@ function MultipleSelectPlaceholder() {
             flag: "🌍"
         }
     ];
+    const flagsCLD_VIP = [
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     const [lng, setLng] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         setLng(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$i18n$2e$js__$28$ecmascript$29$__["default"].language);
@@ -8224,6 +8976,9 @@ function MultipleSelectPlaceholder() {
             break;
         case "partner1044":
             newFlag = flags1044;
+            break;
+        case "CLD_VIP":
+            newFlag = flagsCLD_VIP;
             break;
         default:
             newFlag = flags;
@@ -8247,7 +9002,7 @@ function MultipleSelectPlaceholder() {
                 input: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$OutlinedInput$2f$index$2e$js__$28$ecmascript$29$__["default"], {}, void 0, false, void 0, void 0),
                 renderValue: (selected)=>{
                     if (selected.length === 0) {
-                        const languageFlag = newFlag.find((f)=>f.code === language)?.flag || newFlag.find((f)=>f.code === 'all').flag;
+                        const languageFlag = newFlag.find((f)=>f.code === language)?.flag || newFlag.find((f)=>f.code === "all").flag;
                         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                             className: "flex items-center",
                             children: [
@@ -8277,33 +9032,33 @@ function MultipleSelectPlaceholder() {
                         children: t("Your country of residence")
                     }, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 187,
+                        lineNumber: 217,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 188,
+                        lineNumber: 218,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 189,
+                        lineNumber: 219,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                lineNumber: 158,
+                lineNumber: 186,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-            lineNumber: 157,
+            lineNumber: 182,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-        lineNumber: 156,
+        lineNumber: 181,
         columnNumber: 5
     }, this);
 }
@@ -9157,6 +9912,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/swr/core/dist/index.mjs (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$i18n$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/i18n.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navigation$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Navigation.tsx (ecmascript, ssr)");
@@ -9176,8 +9932,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$updateGeo$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getUser/updateGeo.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$geo$2d$identifier$2f$index$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/geo-identifier/index.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modal$2f$index$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/modal/index.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$KeitaroIframe$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/KeitaroIframe.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
+;
+;
+;
+;
 ;
 ;
 ;
@@ -9229,7 +9992,8 @@ const TheHeader = ()=>{
             const partners = [
                 "partner1039",
                 "partner1043",
-                "partner1044"
+                "partner1044",
+                "CLD_VIP"
             ];
             partners.forEach((partner)=>{
                 if (data.includes(partner)) {
@@ -9299,6 +10063,23 @@ const TheHeader = ()=>{
             window.removeEventListener("message", handleMessage);
         };
     }, []);
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
+    const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const { data, error } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__["default"]([
+        "brands",
+        language
+    ], ()=>__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__["getBrands"](language), {
+        initialData: brands
+    });
+    const [links, setLinks] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (data) {
+            setBrands(data);
+            setLinks(data.map((brand)=>brand.GoBig));
+        }
+    }, [
+        data
+    ]);
     const [showResponsiveDialog, setShowResponsiveDialog] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const [showBasicModal, setShowBasicModal] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
@@ -9316,11 +10097,11 @@ const TheHeader = ()=>{
         children: [
             load ? dataUser.geo_approve === null || dataUser.geo_approve === "" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$geo$2d$identifier$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 182,
+                lineNumber: 197,
                 columnNumber: 11
             }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 184,
+                lineNumber: 199,
                 columnNumber: 11
             }, this) : "",
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9339,17 +10120,17 @@ const TheHeader = ()=>{
                                     loading: "lazy"
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 194,
+                                    lineNumber: 210,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                lineNumber: 193,
+                                lineNumber: 209,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 192,
+                            lineNumber: 208,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9370,7 +10151,7 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 204,
+                                                        lineNumber: 220,
                                                         columnNumber: 23
                                                     }, this),
                                                     " ",
@@ -9378,24 +10159,24 @@ const TheHeader = ()=>{
                                                         children: t("My Wallet")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 208,
+                                                        lineNumber: 224,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 202,
+                                            lineNumber: 218,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 201,
+                                        lineNumber: 217,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 199,
+                                    lineNumber: 215,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9413,31 +10194,31 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 221,
+                                                        lineNumber: 237,
                                                         columnNumber: 23
                                                     }, this),
                                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                         children: t("Fortune Wheel")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 225,
+                                                        lineNumber: 241,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 219,
+                                            lineNumber: 235,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 218,
+                                        lineNumber: 234,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 216,
+                                    lineNumber: 232,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9452,32 +10233,32 @@ const TheHeader = ()=>{
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 237,
+                                                    lineNumber: 253,
                                                     columnNumber: 21
                                                 }, this),
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                     children: t("Cards Shop")
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 238,
+                                                    lineNumber: 254,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 235,
+                                        lineNumber: 251,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 233,
+                                    lineNumber: 249,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 198,
+                            lineNumber: 214,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["I18nextProvider"], {
@@ -9485,7 +10266,7 @@ const TheHeader = ()=>{
                             children: [
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuLanguages$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 246,
+                                    lineNumber: 262,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9496,31 +10277,31 @@ const TheHeader = ()=>{
                                             children: [
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 249,
+                                                    lineNumber: 265,
                                                     columnNumber: 17
                                                 }, this),
                                                 " "
                                             ]
                                         }, void 0, true, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 248,
+                                            lineNumber: 264,
                                             columnNumber: 15
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 251,
+                                            lineNumber: 267,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 247,
+                                    lineNumber: 263,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 245,
+                            lineNumber: 261,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuPages$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -9528,7 +10309,7 @@ const TheHeader = ()=>{
                             t: t
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 255,
+                            lineNumber: 271,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9544,32 +10325,32 @@ const TheHeader = ()=>{
                                                 className: "line line1"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 263,
+                                                lineNumber: 279,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line2"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 264,
+                                                lineNumber: 280,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line3"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 265,
+                                                lineNumber: 281,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 262,
+                                        lineNumber: 278,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 258,
+                                    lineNumber: 274,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9584,34 +10365,34 @@ const TheHeader = ()=>{
                                             onLinkClick: closeMobileMenu
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 270,
+                                            lineNumber: 286,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 269,
+                                        lineNumber: 285,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 268,
+                                    lineNumber: 284,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 257,
+                            lineNumber: 273,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 191,
+                    lineNumber: 207,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 190,
+                lineNumber: 206,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -9623,18 +10404,18 @@ const TheHeader = ()=>{
                         }))
                 }, void 0, false, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 283,
+                    lineNumber: 299,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 282,
+                lineNumber: 298,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/TheHeader.jsx>",
-        lineNumber: 179,
+        lineNumber: 194,
         columnNumber: 5
     }, this);
 };

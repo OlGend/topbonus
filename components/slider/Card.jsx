@@ -3,19 +3,14 @@ import Styles from "./Card.module.css";
 import React, { useState, useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import Image from "next/image";
-// import { track } from '@vercel/analytics';
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 
-// import Button from "./Button";
-
 function Card({ imagen, link, bonus }) {
   const { t } = useTranslation();
-
   const [show, setShown] = useState(false);
 
   const props3 = useSpring({
-    opacity: 1,
     borderRadius: 2,
     transform: show ? "scale(1.03)" : "scale(1)",
     boxShadow: show
@@ -24,7 +19,6 @@ function Card({ imagen, link, bonus }) {
   });
 
   const [newUrl, setNewUrl] = useState("");
-  // Чтение сохраненной ссылки из локального хранилища
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedUrl = localStorage.getItem("savedUrl");
@@ -53,9 +47,6 @@ function Card({ imagen, link, bonus }) {
           className="target-top-brand"
         />
       </Link>
-
-      {/* <h2>Title</h2> */}
-
       <div className="tobbb">
         <div className="review-bonus bb">{bonus}</div>
       </div>
@@ -67,8 +58,6 @@ function Card({ imagen, link, bonus }) {
         >
           {t("Play Now")}
         </Link>
-        {/* <Button text="Demo" />
-        <Button text="Code" /> */}
       </div>
     </animated.div>
   );

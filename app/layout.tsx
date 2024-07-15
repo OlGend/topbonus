@@ -5,6 +5,7 @@ import type { Metadata } from "next";
 import { TheFooter } from "@/components/TheFooter";
 import { LanguageProvider } from "@/components/switcher/LanguageContext";
 import RandomWindow from "@/components/random/RandomWindow";
+import Marque from "@/components/Marque";
 
 // import BannerWindow from "@/components/banner/BannerWindow";
 import Script from "next/script";
@@ -44,6 +45,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         </noscript>
 
         <LanguageProvider>
+          <Marque />
           <TheHeader />
 
           <main>
@@ -69,16 +71,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
           defer
         ></Script>
-        <Script id="onesignal">
+        {/* <Script id="onesignal">
           {`window.OneSignalDeferred = window.OneSignalDeferred || [];
   OneSignalDeferred.push(function(OneSignal) {
     OneSignal.init({
       appId: "7bc5d17e-80e2-4e29-8894-67b4cef49fd6",
     });
   });`}
-        </Script>
-
-
+        </Script> */}
 
         <Script id="ladesc">
           {`
@@ -101,8 +101,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             });
           `}
         </Script>
-
-
       </body>
     </html>
   );

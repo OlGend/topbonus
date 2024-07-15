@@ -10,11 +10,10 @@ import Loader from "../Loader";
 
 const Fortunes = ({ banner, target, creative }) => {
   const [brands, setBrands] = useState([]);
-  const [visibleBrands, setVisibleBrands] = useState(5); 
+  const [visibleBrands, setVisibleBrands] = useState(5);
   const [isLoading, setIsLoading] = useState(false);
   const { language } = useLanguage();
   const categoryBrands = { key1: "FirstPriority", key2: "1" };
-
 
   const { data, error } = useSWR(
     ["brands", language],
@@ -34,8 +33,6 @@ const Fortunes = ({ banner, target, creative }) => {
 
   const { t } = useTranslation();
 
-
-
   const [newUrl, setNewUrl] = useState("");
   useEffect(() => {
     const savedUrl = localStorage.getItem("savedUrl");
@@ -45,12 +42,12 @@ const Fortunes = ({ banner, target, creative }) => {
   }, []);
 
   const loadMoreBrands = () => {
-    setVisibleBrands((prev) => prev + 5); 
+    setVisibleBrands((prev) => prev + 5);
   };
 
-  const hasMoreBrands = brands.length > visibleBrands; 
+  const hasMoreBrands = brands.length > visibleBrands;
 
-  console.log("aaaaaa", brands)
+  console.log("aaaaaa", brands);
 
   return (
     <div className="flex flex-col container-fortune">
@@ -58,7 +55,11 @@ const Fortunes = ({ banner, target, creative }) => {
         <h3>{t("FORTUNE WHEEL BRANDS")}</h3>
         <p>{t("Pick a brand below, make first deposit and win real cash")}</p>
         {banner && (
-          <Link target="_blank" className="btn btn-thirdy target-spin-the-roulette" href={`/fortune`}>
+          <Link
+            target="_blank"
+            className="btn btn-thirdy target-spin-the-roulette"
+            href={`/fortune`}
+          >
             {t("Spin the Roulette")}
           </Link>
         )}
@@ -75,7 +76,11 @@ const Fortunes = ({ banner, target, creative }) => {
           brands.slice(0, visibleBrands).map((brand) => (
             <div key={brand.id_brand} className="card-brand mb-3 basis-[19%]">
               <div className="brandImage p-3">
-                <Link target="_blank" className={target} href={`${brand.GoBig}/${newUrl}&creative_id=${target}`}>
+                <Link
+                  target="_blank"
+                  className={target}
+                  href={`${brand.GoBig}/${newUrl}&creative_id=${target}`}
+                >
                   <Image
                     src={`/brands/${brand.CasinoBrand}.png`}
                     alt={brand.CasinoBrand}
@@ -89,7 +94,7 @@ const Fortunes = ({ banner, target, creative }) => {
                 <div className="review-bonus">{brand.OurOfferContent}</div>
                 <div className="buttons">
                   <Link
-                  target="_blank"
+                    target="_blank"
                     className={`btn btn-primary ${target}`}
                     href={`${brand.GoBig}/${newUrl}&creative_id=${target}`}
                   >

@@ -6500,7 +6500,8 @@ h1 {
 .sub-menu {
   z-index: 3;
 }
-.preview2 h2 .text-blued, .text-blued  {
+.preview2 h2 .text-blued,
+.text-blued {
   color: #0066dc;
 }
 .topbr .btn-primary {
@@ -7666,6 +7667,9 @@ p {
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .randomimg {
+    display: none;
+  }
   .topbr {
     overflow: hidden;
   }
@@ -7694,10 +7698,21 @@ p {
     text-align: left;
   }
   .topbr .main__container > div {
-    height: 500px !important;
+    height: 300px !important;
     padding-top: 35px !important;
   }
-
+  .topbr .main__container {
+    padding: 150px 0 60px;
+  }
+  .topbr .main__container .timer {
+    height: initial !important;
+    padding-top: 90px !important;
+    font-size: 30px;
+    top: 30px;
+  }
+  .imgrandom {
+    display: none;
+  }
   .topbr .preview h1 {
     width: 100%;
   }
@@ -8219,6 +8234,38 @@ input.error {
   .tabNavigation {
     padding: 30px 0;
   }
+  .topbr .main__container .card-second-banner {
+    display: flex;
+    flex-direction: row !important;
+    padding: 0 15px;
+  }
+  .topbr .main__container .secondbanner {
+    background-position: top center;
+  }
+  .topbr .main__container .secondbanner .brandImage {
+    padding: 0 !important;
+    max-width: 50%;
+  }
+  .topbr .main__container .secondbanner .review-bonus {
+    width: 100% !important;
+  }
+  .topbr .main__container .flex .secondbanner {
+    min-height: initial !important;
+    max-height: 200px;
+  }
+  .topbr .secondbanner .btn-primary {
+    max-width: 150px;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+  .topbr .main__container .target-top-new-releases {
+    align-items: flex-start !important;
+    text-align: center !important;
+  }
+  .topbr .main__container .target-top-new-releases .review-bonus {
+    text-align: left !important;
+  }
   .tabNavigation .top-navigate {
     flex-direction: column;
   }
@@ -8341,14 +8388,34 @@ input.error {
   .burger-icon.open .line3 {
     transform: rotate(-45deg) translate(6px, -6px);
   }
+  .topbr .main__container .flex .review-bonus {
+ 
+    font-size: 13px !important;
+    line-height: 17px !important;
+  }
+  .secondbanner {
+    min-height: 233px !important;
+  }
+  .topbr .main__container .flex .brandImage {
+    padding-bottom: 0 !important;
+  }
+  main > .topbr {
+    max-height: 680px !important;
+    height: 680px !important;
+  }
+  .topbr .main__container .flex .brandImage img {
+    max-width: 150px !important;
+  }
+  .topbr .main__container .flex .secondbanner {
 
+  }
   /* .burger-icon {
     // Style your burger icon button here
   }
    */
   .mobile-menu {
     position: fixed;
-    top: 61px;
+    top: 105px;
     left: -100%;
     width: 80%;
     max-width: 300px;
@@ -8377,7 +8444,7 @@ input.error {
     display: none;
   }
   .page-bonuses {
-    padding-top: 40px;
+    padding-top: 50px;
   }
   .page-bonuses .bonuses {
     background-position: bottom -100px right !important;
@@ -8486,7 +8553,7 @@ input.error {
    */
   .mobile-menu {
     position: fixed;
-    top: 61px;
+    top: 105px;
     left: -100%;
     width: 80%;
     max-width: 300px;
@@ -9148,7 +9215,7 @@ input.error {
 
 @media (min-width: 320px) and (max-width: 1259px) {
   .page-fortune {
-    padding-top: 50px;
+    padding-top: 80px;
   }
   .mobile-switcher {
     max-width: 110px;
@@ -9651,7 +9718,7 @@ body {
   .page-personal.main__container.pb-10 {
     width: 100%;
     border-radius: 0;
-    padding: 100px 0 20px;
+    padding: 115px 0 20px;
   }
   .card-brand.glowing-box .brandImage {
     background-position: top right -50px !important;
@@ -9700,7 +9767,6 @@ body {
   background-position: top -1571px right -72px;
 }
 .bander {
-
   position: relative;
   overflow: hidden;
   border-radius: 4px;
@@ -10100,9 +10166,9 @@ h1.fz31 {
   display: flex !important;
   flex-wrap: wrap !important;
 }
-@media(min-width:1921px) and (max-width:10000px) {
-
-  .topbr, .background-block {
+@media (min-width: 1921px) and (max-width: 10000px) {
+  .topbr,
+  .background-block {
     background-size: cover !important;
   }
   .preview2 {
@@ -10114,7 +10180,6 @@ h1.fz31 {
   .w679 {
     min-width: initial;
   }
-
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .brands-keitaro {
@@ -10142,7 +10207,7 @@ h1.fz31 {
   }
   .brands-keitaro {
     flex-basis: 100%;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .brands-keitaro .slick-slide {
     margin-right: 0 !important;
@@ -10222,10 +10287,177 @@ h1.fz31 {
 span.descriptions {
   font-size: 14px;
   line-height: 17px;
+}
+.review2 .main__container img {
+  max-width: 250px;
+}
+.preview2 {
+  padding-bottom: 30px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Tourney:wght@700&display=swap");
 
+.timer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #2ceb8f;
+  font-size: 48px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Tourney", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  max-width: 400px;
+  min-width: 400px;
+  top: 20px;
+  left: calc(50% - 400px / 2);
+}
+.timer p {
+  font-family: Arial, sans-serif;
+  color: #fff;
+}
+.topbr .main__container {
+  position: relative;
+}
+.wrap-line-text {
+  /* max-width: 600px; */
+  margin: auto;
+  padding: 10px 0;
+  background-color: #3760b1;
 }
 
-#keitaro-iframe {
+.marquee-container {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+}
+
+.marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 60s linear infinite;
+}
+
+.marquee span {
+  font-size: 18px;
+  font-weight: 600;
+  display: inline-block;
+  color: #fff;
+  padding-right: 100%; /* This ensures smooth repeat */
+}
+.marquee b {
+  color: #2ceb8f;
+}
+
+.marquee-container:hover .marquee {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@media (min-width: 320px) and (max-width: 1259px) {
+  .wrap-line-text {
+    position: fixed;
+    z-index: 4;
+  }
+  .marquee span {
+    font-size: 14px;
+  }
+  .header {
+    margin-top: 41px;
+  }
+}
+
+.btn.target-top-new-releases {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn.target-top-new-releases:before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background-image: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 30%,
+    /* Прозрачность начала блика */ rgba(255, 255, 255, 0.8),
+    /* Цвет блика */ rgba(255, 255, 255, 0) 70% /* Прозрачность конца блика */
+  );
+  top: 0;
+  left: -100px;
+  animation: shine 2s infinite linear; /* Анимация блика */
+}
+
+/* Ключевые кадры для анимации блика */
+@keyframes shine {
+  0% {
+    left: -100px; /* Начальная позиция блика (левая сторона кнопки) */
+  }
+  20% {
+    left: 100%; /* Позиция блика в конце (правая сторона кнопки) */
+  }
+  100% {
+    left: 100%; /* Завершение анимации */
+  }
+}
+
+.slidertop {
+  max-width: 700px;
   width: 100%;
-  height: 500px;
+}
+main > .topbr {
+  max-height: 450px;
+}
+.css-doq0dk > div {
+  opacity: 1 !important;
+}
+.secondbanner {
+  background: url(/crd1.png) no-repeat center !important;
+  background-size: cover !important;
+  max-width: 400px;
+  min-width: 400px;
+  width: 100%;
+  max-height: 300px;
+  min-height: 300px;
+  height: fit-content;
+}
+.secondbanner .brandImage {
+  max-height: initial !important;
+}
+.topbr .secondbanner .review-bonus {
+  margin-bottom: 0 !important;
+}
+.marquee {
+  cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .slidertop > div {
+    height: 300px !important;
+  }
+  main > .topbr {
+    max-height: 820px;
+    height: 820px;
+    background-position: top 10% left 0 !important;
+    background-size: cover !important;
+  }
+  .topbr .main__container .flex {
+    flex-direction: column;
+  }
+  .topbr .secondbanner .btn-primary {
+    margin-left: auto;
+  }
+  .secondbanner {
+    min-width: initial;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
