@@ -14,23 +14,28 @@ const LanguageSwitcher = () => {
 
   // Define language options for different partners and the default list
   const availableLanguages = [
-    { code: "bg", label: "Bulgaria", flag: "🇧🇬" },
-    { code: "cz", label: "Czech", flag: "🇨🇿" },
-    { code: "dk", label: "Denmark", flag: "🇩🇰" },
-    { code: "fi", label: "Finland", flag: "🇫🇮" },
-    { code: "fr", label: "France", flag: "🇫🇷" },
+    { code: "au", label: "Australia", flag: "🇦🇺" },
+    { code: "ca", label: "Canada", flag: "🇨🇦" },
     { code: "de", label: "Germany", flag: "🇩🇪" },
-    { code: "gr", label: "Greece", flag: "🇬🇷" },
-    { code: "hu", label: "Hungary", flag: "🇭🇺" },
-    { code: "it", label: "Italy", flag: "🇮🇹" },
-    { code: "nl", label: "Netherlands", flag: "🇳🇱" },
+    { code: "ie", label: "Ireland", flag: "🇮🇪" },
+    { code: "nz", label: "New Zealand", flag: "🇳🇿" },
     { code: "no", label: "Norway", flag: "🇳🇴" },
+    { code: "fi", label: "Finland", flag: "🇫🇮" },
+    { code: "at", label: "Austria", flag: "🇦🇹" },
+    { code: "ch", label: "Switzerland", flag: "🇨🇭" },
+    { code: "dk", label: "Denmark", flag: "🇩🇰" },
+    { code: "fr", label: "France", flag: "🇫🇷" },
+    { code: "it", label: "Italy", flag: "🇮🇹" },
     { code: "pl", label: "Poland", flag: "🇵🇱" },
-    { code: "sk", label: "Slovakia", flag: "🇸🇰" },
-    { code: "es", label: "Spain", flag: "🇪🇸" },
     { code: "se", label: "Sweden", flag: "🇸🇪" },
-    { code: "tr", label: "Turkey", flag: "🇹🇷" },
-    { code: "all", label: "English", flag: "🌍" },
+    { code: "cz", label: "Czech", flag: "🇨🇿" },
+    { code: "sk", label: "Slovakia", flag: "🇸🇰" },
+    { code: "be", label: "Belgium", flag: "🇧🇪" },
+    { code: "gr", label: "Greece", flag: "🇬🇷" },
+    { code: "nl", label: "Netherlands", flag: "🇳🇱" },
+    { code: "hu", label: "Hungary", flag: "🇭🇺" },
+    { code: "bg", label: "Bulgaria", flag: "🇧🇬" },
+    { code: "all", label: "World", flag: "🌍" }
   ];
 
   // Define partner-specific language options

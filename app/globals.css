@@ -8234,6 +8234,38 @@ input.error {
   .tabNavigation {
     padding: 30px 0;
   }
+  .topbr .main__container .card-second-banner {
+    display: flex;
+    flex-direction: row !important;
+    padding: 0 15px;
+  }
+  .topbr .main__container .secondbanner {
+    background-position: top center;
+  }
+  .topbr .main__container .secondbanner .brandImage {
+    padding: 0 !important;
+    max-width: 50%;
+  }
+  .topbr .main__container .secondbanner .review-bonus {
+    width: 100% !important;
+  }
+  .topbr .main__container .flex .secondbanner {
+    min-height: initial !important;
+    max-height: 200px;
+  }
+  .topbr .secondbanner .btn-primary {
+    max-width: 150px;
+    text-align: center;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+  .topbr .main__container .target-top-new-releases {
+    align-items: flex-start !important;
+    text-align: center !important;
+  }
+  .topbr .main__container .target-top-new-releases .review-bonus {
+    text-align: left !important;
+  }
   .tabNavigation .top-navigate {
     flex-direction: column;
   }
@@ -8357,7 +8389,7 @@ input.error {
     transform: rotate(-45deg) translate(6px, -6px);
   }
   .topbr .main__container .flex .review-bonus {
-    text-align: center;
+ 
     font-size: 13px !important;
     line-height: 17px !important;
   }
@@ -8368,8 +8400,8 @@ input.error {
     padding-bottom: 0 !important;
   }
   main > .topbr {
-    max-height: 760px !important;
-    height: 760px !important;
+    max-height: 680px !important;
+    height: 680px !important;
   }
   .topbr .main__container .flex .brandImage img {
     max-width: 150px !important;

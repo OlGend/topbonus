@@ -109,7 +109,7 @@ export default function TopBrands() {
         setCurrentBrandIndex((prevIndex) => (prevIndex + 1) % brands.length);
         setFade(true); // Start fade-in
       }, 500); // Duration of fade-out effect
-    }, 5000); // Change brand every 5 seconds
+    }, 5000000); // Change brand every 5 seconds
 
     return () => clearInterval(interval);
   }, [brands.length]);

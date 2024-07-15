@@ -25,81 +25,85 @@ async function initializeI18n() {
 
   const availableLanguages = [
     "au",
-    "at",
-    "be",
-    "bg",
     "ca",
-    "cz",
-    "dk",
-    "fi",
-    "fr",
     "de",
-    "gr",
-    "hu",
     "ie",
-    "it",
-    "nl",
     "nz",
     "no",
-    "pl",
-    "pt",
-    "sk",
-    "es",
-    "se",
+    "fi",
+    "at",
     "ch",
-    "tr",
-    "gb",
+    "dk",
+    "fr",
+    "it",
+    "pl",
+    "se",
+    "cz",
+    "sk",
+    "be",
+    "gr",
+    "nl",
+    "hu",
+    "bg",
     "all",
   ];
   const availableLanguages1039 = [
     "au",
-    "at",
-    "be",
-    "bg",
     "ca",
-    "cz",
-    "dk",
-    "fi",
-    "fr",
     "de",
-    "gr",
-    "hu",
     "ie",
-    "it",
-    "nl",
     "nz",
     "no",
-    "pl",
-    "pt",
-    "sk",
-    "es",
-    "se",
+    "fi",
+    "at",
     "ch",
-    "tr",
+    "dk",
+    "fr",
+    "it",
+    "es",
+    "pl",
+    "se",
+    "cz",
+    "be",
+    "gr",
     "gb",
+    "nl",
+    "hu",
+    "sk",
+    "bg",
+    "pt",
+    "tr",
     "all",
   ];
   const availableLanguages1043 = ["ca", "us"];
   const availableLanguages1044 = [
-    "au",
-    "at",
-    "be",
-    "ca",
-    "ch",
-    "nl",
-    "de",
-    "cz",
     "fi",
-    "gb",
-    "gr",
-    "ie",
-    "it",
-    "nz",
-    "no",
-    "pl",
-    "za",
     "se",
+    "ca",
+    "nz",
+    "au",
+    "cz",
+    "fr",
+    "za",
+    "nl",
+    "gb",
     "us",
+    "de",
+    "at",
+    "ch",
+    "dk",
+    "it",
+    "es",
+    "pl",
+    "be",
+    "gr",
+    "no",
+    "ie",
+    "pt",
+    "hu",
+    "sk",
+    "bg",
+    "tr",
     "all",
   ];
   const availableLanguagesCLD_VIP = [
@@ -122,7 +126,7 @@ async function initializeI18n() {
     "pl",
     "se",
     "sk",
-    "sk", 
+    "sk",
     "all",
   ];
 
@@ -230,7 +234,7 @@ async function initializeI18n() {
         "My wallet": "My wallet",
         "Cards Shop": "Cards Shop",
         "Account menu": "Account menu",
-  
+
         "Fee:": "Fee:",
         "You will receive on balance:": "You will receive on balance:",
         "Payment Method": "Payment Method",
@@ -496,22 +500,30 @@ async function initializeI18n() {
         "I’m Registered": "I’m Registered",
         "Deposit Now": "Deposit Now",
         "Get $20": "Get $20",
-          "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "You Already Made Registration Here, Make First Deposit & Get Up To $20!",
-          "Make First Deposit On One Brand Below & Get Up To $20!": "Make First Deposit On One Brand Below & Get Up To $20!",
-          "Make First Deposit On One Of These Brands &": "Make First Deposit On One Of These Brands &",
-          "Get Up To $20 Right On Your Wallet!": "Get Up To $20 Right On Your Wallet!",
-          "Already Registered": "Already Registered",
-          "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Select a brand from the list below, make your first deposit and receive up to 20 USD in rewards!",
-            "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to 20 USD on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
-            "You have successfully registered on these brands": "You have successfully registered on these brands",
-            "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
-            "* Explore the Hottest New Brands –": "* Explore the Hottest New Brands –",
-              "Click Here!": "Click Here!",
-              "Expires in:": "Expires in:",
-  
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "You Already Made Registration Here, Make First Deposit & Get Up To $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Make First Deposit On One Brand Below & Get Up To $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Make First Deposit On One Of These Brands &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Get Up To $20 Right On Your Wallet!",
+        "Already Registered": "Already Registered",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Select a brand from the list below, make your first deposit and receive up to 20 USD in rewards!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to 20 USD on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
+        "You have successfully registered on these brands":
+          "You have successfully registered on these brands",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
+        "* Explore the Hottest New Brands –":
+          "* Explore the Hottest New Brands –",
+        "Click Here!": "Click Here!",
+        "Expires in:": "Expires in:",
       },
     },
-  
+
     pl: {
       translation: {
         "Casinos ▼": "Kasyna ▼",
@@ -595,7 +607,7 @@ async function initializeI18n() {
         "My wallet": "Mój portfel",
         "Cards Shop": "Sklep",
         "Account menu": "Menu konta",
-  
+
         "Fee:": "Opłata:",
         "You will receive on balance:": "Otrzymasz na saldo:",
         "Payment Method": "Metoda płatności",
@@ -815,7 +827,8 @@ async function initializeI18n() {
           "Dostępność kart różni się w zależności od regionu.",
         "Withdrawal rejected: Minimum withdrawal amount is 4 USD.":
           "Odrzucono wypłatę: Minimalna kwota wypłaty to 4 USD.",
-        "Not enough funds in the account.": "Niewystarczające środki na koncie.",
+        "Not enough funds in the account.":
+          "Niewystarczające środki na koncie.",
         "Something wrong, try again!": "Coś poszło nie tak, spróbuj ponownie!",
         "Please note: PayPal withdrawals are processed every day from 7 AM to 8 PM CET":
           "Proszę zauważyć: Wypłaty z PayPal są przetwarzane codziennie od 7:00 do 20:00 czasu środkowoeuropejskiego",
@@ -862,18 +875,27 @@ async function initializeI18n() {
         "I’m Registered": "Jestem zarejestrowany",
         "Deposit Now": "Zdeponuj teraz",
         "Get $20": "Dostań 20 dolarów",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Już dokonałeś rejestracji tutaj, dokonaj pierwszej wpłaty i otrzymaj nawet do 20 dolarów!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Zrób pierwszą wpłatę na jednej z marek poniżej i otrzymaj nawet do 20 dolarów!",
-  "Make First Deposit On One Of These Brands &": "Dokonaj pierwszej wpłaty na jednej z tych marek &",
-  "Get Up To $20 Right On Your Wallet!": "Dostań nawet do 20 dolarów prosto na swoje konto!",
-  "Already Registered": "Już zarejestrowany",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wybierz kasyno z poniższej listy, dokonaj pierwszej wpłaty i odbierz nawet do 20 USD nagrody!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Otrzymasz 50 darmowych spinów za każdą pierwszą wpłatę z naszej strony internetowej. Obróć te spiny i zdobądź do 20 USD na swoim portfelu kryptowalutowym/PayPal. Aby zakwalifikować się do wypłaty, upewnij się, że Twoja pierwsza wpłata wynosi co najmniej 25 euro lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę.",
-  "You have successfully registered on these brands": "Zarejestrowałeś się pomyślnie na tych markach",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
-  "* Explore the Hottest New Brands –": "* Odkrywaj Najgorętsze Nowe Kasyna –",
-  "Click Here!": "Kliknij tutaj!",
-  "Expires in:": "Wygasa za:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Już dokonałeś rejestracji tutaj, dokonaj pierwszej wpłaty i otrzymaj nawet do 20 dolarów!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Zrób pierwszą wpłatę na jednej z marek poniżej i otrzymaj nawet do 20 dolarów!",
+        "Make First Deposit On One Of These Brands &":
+          "Dokonaj pierwszej wpłaty na jednej z tych marek &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Dostań nawet do 20 dolarów prosto na swoje konto!",
+        "Already Registered": "Już zarejestrowany",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Wybierz kasyno z poniższej listy, dokonaj pierwszej wpłaty i odbierz nawet do 20 USD nagrody!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Otrzymasz 50 darmowych spinów za każdą pierwszą wpłatę z naszej strony internetowej. Obróć te spiny i zdobądź do 20 USD na swoim portfelu kryptowalutowym/PayPal. Aby zakwalifikować się do wypłaty, upewnij się, że Twoja pierwsza wpłata wynosi co najmniej 25 euro lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę.",
+        "You have successfully registered on these brands":
+          "Zarejestrowałeś się pomyślnie na tych markach",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
+        "* Explore the Hottest New Brands –":
+          "* Odkrywaj Najgorętsze Nowe Kasyna –",
+        "Click Here!": "Kliknij tutaj!",
+        "Expires in:": "Wygasa za:",
       },
     },
     de: {
@@ -958,7 +980,7 @@ async function initializeI18n() {
         "My wallet": "Meine Brieftasche",
         "Cards Shop": "Kaufen",
         "Account menu": "Kontomenü",
-  
+
         "Fee:": "Gebühr:",
         "You will receive on balance:": "Sie werden auf Balance erhalten:",
         "Payment Method": "Zahlungsmethode",
@@ -1180,7 +1202,8 @@ async function initializeI18n() {
           "Auszahlung abgelehnt: Mindestauszahlungsbetrag beträgt 4 USD.",
         "Not enough funds in the account.":
           "Nicht genügend Geldmittel auf dem Konto.",
-        "Something wrong, try again!": "Etwas stimmt nicht, versuche es erneut!",
+        "Something wrong, try again!":
+          "Etwas stimmt nicht, versuche es erneut!",
         "Please note: PayPal withdrawals are processed every day from 7 AM to 8 PM CET":
           "Bitte beachten Sie: PayPal-Auszahlungen werden täglich von 7 bis 20 Uhr MEZ bearbeitet.",
         "Your prepaid card request has been received. Our support team will contact you soon to finalize details. Check your inbox.":
@@ -1226,18 +1249,27 @@ async function initializeI18n() {
         "I’m Registered": "Ich bin registriert",
         "Deposit Now": "Einzahlen Sie jetzt",
         "Get $20": "Holen Sie sich 20 $",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Sie haben sich bereits hier registriert, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 $!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Tätigen Sie die erste Einzahlung bei einer der unten aufgeführten Marken und erhalten Sie bis zu 20 $!",
-  "Make First Deposit On One Of These Brands &": "Tätigen Sie die erste Einzahlung bei einer dieser Marken &",
-  "Get Up To $20 Right On Your Wallet!": "Erhalten Sie bis zu 20 $ direkt auf Ihr Portemonnaie!",
-  "Already Registered": "Bereits registriert",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Wählen Sie ein Casino aus der Liste unten, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 USD Belohnung!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sie erhalten 50 Freispiele für jede Ersteinzahlung von unserer Website. Drehen Sie diese Spins und erhalten Sie bis zu 20 USD auf Ihrem Kryptowallet/PayPal. Um sich für Auszahlungen zu qualifizieren, stellen Sie sicher, dass Ihre erste Einzahlung mindestens Є25 oder dem Äquivalent in anderen Währungen beträgt und nach der Beantragung einer Auszahlung erfolgt ist.",
-  "You have successfully registered on these brands": "Sie haben sich erfolgreich bei diesen Marken registriert",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
-  "* Explore the Hottest New Brands –": "* Entdecken Sie die heißesten neuen Casinos -",
-  "Click Here!": "Klicken Sie hier!",
-  "Expires in:": "Läuft ab in:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Sie haben sich bereits hier registriert, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 $!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Tätigen Sie die erste Einzahlung bei einer der unten aufgeführten Marken und erhalten Sie bis zu 20 $!",
+        "Make First Deposit On One Of These Brands &":
+          "Tätigen Sie die erste Einzahlung bei einer dieser Marken &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Erhalten Sie bis zu 20 $ direkt auf Ihr Portemonnaie!",
+        "Already Registered": "Bereits registriert",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Wählen Sie ein Casino aus der Liste unten, tätigen Sie Ihre erste Einzahlung und erhalten Sie bis zu 20 USD Belohnung!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Sie erhalten 50 Freispiele für jede Ersteinzahlung von unserer Website. Drehen Sie diese Spins und erhalten Sie bis zu 20 USD auf Ihrem Kryptowallet/PayPal. Um sich für Auszahlungen zu qualifizieren, stellen Sie sicher, dass Ihre erste Einzahlung mindestens Є25 oder dem Äquivalent in anderen Währungen beträgt und nach der Beantragung einer Auszahlung erfolgt ist.",
+        "You have successfully registered on these brands":
+          "Sie haben sich erfolgreich bei diesen Marken registriert",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
+        "* Explore the Hottest New Brands –":
+          "* Entdecken Sie die heißesten neuen Casinos -",
+        "Click Here!": "Klicken Sie hier!",
+        "Expires in:": "Läuft ab in:",
       },
     },
     bg: {
@@ -1322,7 +1354,7 @@ async function initializeI18n() {
         "My wallet": "Портфейла ми",
         "Cards Shop": "Магазин",
         "Account menu": "Меню на акаунта",
-  
+
         "Fee:": "Такса:",
         "You will receive on balance:": "Ще получите на баланса",
         "Payment Method": "Метод на плащане",
@@ -1589,18 +1621,27 @@ async function initializeI18n() {
         "I’m Registered": "Аз съм регистриран",
         "Deposit Now": "Депозирай сега",
         "Get $20": "Вземи $20",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Вече сте се регистрирали тук, направете първи депозит и вземете до $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Направете първия депозит в една от марките по-долу и получете до 20 долара!",
-  "Make First Deposit On One Of These Brands &": "Направете първия депозит в една от тези марки &",
-  "Get Up To $20 Right On Your Wallet!": "Вземете до $20 директно във вашата портмоне!",
-  "Already Registered": "Вече регистриран",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Изберете казино от списъка по-долу, направете първия си депозит и получете до 20 USD награда!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ще получите 50 безплатни завъртания за всеки първи депозит от нашия уебсайт. Завъртете тези завъртания и получете до 20 USD на вашия криптовалутен портфейл/PayPal. За да квалифицирате за изтегляне, се уверете, че първият ви депозит е поне Є25 или еквивалентът му в други валути и е направен след като сте поискали изтегляне.",
-  "You have successfully registered on these brands": "Вие успешно се регистрирахте в тези казина",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
-  "* Explore the Hottest New Brands –": "* Разгледайте най-горещите нови казина -",
-  "Click Here!": "Кликни тук!",
-  "Expires in:": "Изтича след:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Вече сте се регистрирали тук, направете първи депозит и вземете до $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Направете първия депозит в една от марките по-долу и получете до 20 долара!",
+        "Make First Deposit On One Of These Brands &":
+          "Направете първия депозит в една от тези марки &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Вземете до $20 директно във вашата портмоне!",
+        "Already Registered": "Вече регистриран",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Изберете казино от списъка по-долу, направете първия си депозит и получете до 20 USD награда!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Ще получите 50 безплатни завъртания за всеки първи депозит от нашия уебсайт. Завъртете тези завъртания и получете до 20 USD на вашия криптовалутен портфейл/PayPal. За да квалифицирате за изтегляне, се уверете, че първият ви депозит е поне Є25 или еквивалентът му в други валути и е направен след като сте поискали изтегляне.",
+        "You have successfully registered on these brands":
+          "Вие успешно се регистрирахте в тези казина",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
+        "* Explore the Hottest New Brands –":
+          "* Разгледайте най-горещите нови казина -",
+        "Click Here!": "Кликни тук!",
+        "Expires in:": "Изтича след:",
       },
     },
     cz: {
@@ -1685,7 +1726,7 @@ async function initializeI18n() {
         "My wallet": "Můj peněženka",
         "Cards Shop": "Obchod",
         "Account menu": "Menu účtu",
-  
+
         "Fee:": "Poplatek:",
         "You will receive on balance:": "Dostanete na účet",
         "Payment Method": "Způsob platby",
@@ -1952,18 +1993,27 @@ async function initializeI18n() {
         "I’m Registered": "Jsem registrován",
         "Deposit Now": "Vložit nyní",
         "Get $20": "Získejte 20 dolarů",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Již jste se zde zaregistrovali, proveďte první vklad a získejte až 20 $!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Proveďte první vklad na jednu značku níže a získejte až 20 $!",
-  "Make First Deposit On One Of These Brands &": "Proveďte první vklad na jednu z těchto značek &",
-  "Get Up To $20 Right On Your Wallet!": "Získejte až 20 $ přímo na svůj peněženku!",
-  "Already Registered": "Již registrován",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasino z níže uvedeného seznamu, proveďte svůj první vklad a získejte až 20 USD odměny!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 volných zatočení za každý první vklad z našich webových stránek. Roztočte tyto zatočení a získejte až 20 USD na svou kryptoměnovou peněženku/PayPal. Pro kvalifikaci k výběrům se ujistěte, že váš první vklad je minimálně 25 € nebo ekvivalent v jiných měnách a byl proveden požadováním výběru.",
-  "You have successfully registered on these brands": "Úspěšně jste se zaregistrovali na tyto značky",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
-  "* Explore the Hottest New Brands –": "* Prozkoumejte nejžhavější nová kasina -",
-  "Click Here!": "Klikněte zde!",
-  "Expires in:": "Vyprší za:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Již jste se zde zaregistrovali, proveďte první vklad a získejte až 20 $!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Proveďte první vklad na jednu značku níže a získejte až 20 $!",
+        "Make First Deposit On One Of These Brands &":
+          "Proveďte první vklad na jednu z těchto značek &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Získejte až 20 $ přímo na svůj peněženku!",
+        "Already Registered": "Již registrován",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Vyberte si kasino z níže uvedeného seznamu, proveďte svůj první vklad a získejte až 20 USD odměny!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Dostanete 50 volných zatočení za každý první vklad z našich webových stránek. Roztočte tyto zatočení a získejte až 20 USD na svou kryptoměnovou peněženku/PayPal. Pro kvalifikaci k výběrům se ujistěte, že váš první vklad je minimálně 25 € nebo ekvivalent v jiných měnách a byl proveden požadováním výběru.",
+        "You have successfully registered on these brands":
+          "Úspěšně jste se zaregistrovali na tyto značky",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
+        "* Explore the Hottest New Brands –":
+          "* Prozkoumejte nejžhavější nová kasina -",
+        "Click Here!": "Klikněte zde!",
+        "Expires in:": "Vyprší za:",
       },
     },
     dk: {
@@ -2048,7 +2098,7 @@ async function initializeI18n() {
         "My wallet": "Min tegnebog",
         "Cards Shop": "Butik",
         "Account menu": "Konto menu",
-  
+
         "Fee:": "Gebyr:",
         "You will receive on balance:": "Du vil modtage på balance:",
         "Payment Method": "Betalingsmetode",
@@ -2314,18 +2364,27 @@ async function initializeI18n() {
         "I’m Registered": "Jeg er registreret",
         "Deposit Now": "Indsæt nu",
         "Get $20": "Få 20 dollars",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Du har allerede foretaget registrering her, lav første indbetaling og få op til $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Foretag første indbetaling på et af nedenstående mærker og få op til $20!",
-  "Make First Deposit On One Of These Brands &": "Foretag første indbetaling på en af disse mærker &",
-  "Get Up To $20 Right On Your Wallet!": "Få op til $20 lige på din tegnebog!",
-  "Already Registered": "Allerede registreret",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vælg et casino fra listen nedenfor, foretag dit første indskud og modtag op til 20 USD i belønninger!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratis spins for hver første indbetaling fra vores hjemmeside. Spil disse spins og få op til 20 USD på din kryptopung/PayPal. For at kvalificere dig til udbetalinger, skal du sikre dig, at din første indbetaling er på mindst Є25 eller tilsvarende i andre valutaer og blev foretaget efter anmodning om en udbetaling.",
-  "You have successfully registered on these brands": "Du har succesfuldt registreret dig på disse mærker",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
-  "* Explore the Hottest New Brands –": "* Udforsk de nyeste og mest populære casinoer -",
-  "Click Here!": "Klik her!",
-  "Expires in:": "Udløber om:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Du har allerede foretaget registrering her, lav første indbetaling og få op til $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Foretag første indbetaling på et af nedenstående mærker og få op til $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Foretag første indbetaling på en af disse mærker &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Få op til $20 lige på din tegnebog!",
+        "Already Registered": "Allerede registreret",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Vælg et casino fra listen nedenfor, foretag dit første indskud og modtag op til 20 USD i belønninger!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Du vil få 50 gratis spins for hver første indbetaling fra vores hjemmeside. Spil disse spins og få op til 20 USD på din kryptopung/PayPal. For at kvalificere dig til udbetalinger, skal du sikre dig, at din første indbetaling er på mindst Є25 eller tilsvarende i andre valutaer og blev foretaget efter anmodning om en udbetaling.",
+        "You have successfully registered on these brands":
+          "Du har succesfuldt registreret dig på disse mærker",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
+        "* Explore the Hottest New Brands –":
+          "* Udforsk de nyeste og mest populære casinoer -",
+        "Click Here!": "Klik her!",
+        "Expires in:": "Udløber om:",
       },
     },
     nl: {
@@ -2410,7 +2469,7 @@ async function initializeI18n() {
         "My wallet": "Mijn portemonnee",
         "Cards Shop": "Winkel",
         "Account menu": "Account menu",
-  
+
         "Fee:": "Betaling:",
         "You will receive on balance:": "Je zult ontvangen op saldo:",
         "Payment Method": "Betalingsmethode",
@@ -2677,18 +2736,27 @@ async function initializeI18n() {
         "I’m Registered": "Ik ben geregistreerd",
         "Deposit Now": "Stort nu",
         "Get $20": "Ontvang $20",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Je hebt je hier al geregistreerd, maak een eerste storting en ontvang tot $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Maak een eerste storting op een van de onderstaande merken en ontvang tot $20!",
-  "Make First Deposit On One Of These Brands &": "Maak een eerste storting op een van deze merken &",
-  "Get Up To $20 Right On Your Wallet!": "Krijg tot $20 rechtstreeks op je portemonnee!",
-  "Already Registered": "Al geregistreerd",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecteer een casino uit de onderstaande lijst, maak je eerste storting en ontvang tot 20 USD aan beloningen!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Je krijgt 50 gratis spins voor elke eerste storting vanaf onze website. Draai deze spins en krijg tot 20 USD op je crypto wallet/PayPal. Om in aanmerking te komen voor opnames, zorg ervoor dat je eerste storting minstens Є25 is of het equivalent in andere valuta en is gedaan na het aanvragen van een opname.",
-  "You have successfully registered on these brands": "Je hebt succesvol geregistreerd op deze merken",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
-  "* Explore the Hottest New Brands –": "* Verken de Heetste Nieuwe Casino's -",
-  "Click Here!": "Klik hier!",
-  "Expires in:": "Verloopt in:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Je hebt je hier al geregistreerd, maak een eerste storting en ontvang tot $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Maak een eerste storting op een van de onderstaande merken en ontvang tot $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Maak een eerste storting op een van deze merken &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Krijg tot $20 rechtstreeks op je portemonnee!",
+        "Already Registered": "Al geregistreerd",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Selecteer een casino uit de onderstaande lijst, maak je eerste storting en ontvang tot 20 USD aan beloningen!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Je krijgt 50 gratis spins voor elke eerste storting vanaf onze website. Draai deze spins en krijg tot 20 USD op je crypto wallet/PayPal. Om in aanmerking te komen voor opnames, zorg ervoor dat je eerste storting minstens Є25 is of het equivalent in andere valuta en is gedaan na het aanvragen van een opname.",
+        "You have successfully registered on these brands":
+          "Je hebt succesvol geregistreerd op deze merken",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
+        "* Explore the Hottest New Brands –":
+          "* Verken de Heetste Nieuwe Casino's -",
+        "Click Here!": "Klik hier!",
+        "Expires in:": "Verloopt in:",
       },
     },
     es: {
@@ -2773,7 +2841,7 @@ async function initializeI18n() {
         "My wallet": "Mi cartera",
         "Cards Shop": "Tienda",
         "Account menu": "Menú de cuenta",
-  
+
         "Fee:": "Tarifa:",
         "You will receive on balance:": "Recibirás en saldo:",
         "Payment Method": "Método de pago",
@@ -3040,18 +3108,27 @@ async function initializeI18n() {
         "I’m Registered": "Estoy registrado",
         "Deposit Now": "Depositar ahora",
         "Get $20": "Obtener $20",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Ya te registraste aquí, ¡haz tu primer depósito y obtén hasta $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "¡Realiza tu primer depósito en una de las marcas a continuación y obtén hasta $20!",
-  "Make First Deposit On One Of These Brands &": "Realiza el primer depósito en una de estas marcas &",
-  "Get Up To $20 Right On Your Wallet!": "¡Obtén hasta $20 directamente en tu billetera!",
-  "Already Registered": "Ya registrado",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "¡Selecciona un casino de la lista a continuación, realiza tu primer depósito y recibe hasta 20 USD en recompensas!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Recibirás 50 giros gratis por cada primer depósito desde nuestro sitio web. Gira estos giros y obtén hasta 20 USD en tu billetera de criptomonedas/PayPal. Para calificar para retiros, asegúrate de que tu primer depósito sea de al menos Є25 o su equivalente en otras monedas y se haya realizado después de solicitar un retiro.",
-  "You have successfully registered on these brands": "Te has registrado con éxito en estas marcas",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
-  "* Explore the Hottest New Brands –": "* Explora los casinos más nuevos y populares –",
-  "Click Here!": "¡Haz clic aquí!",
-  "Expires in:": "Caduca en:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Ya te registraste aquí, ¡haz tu primer depósito y obtén hasta $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "¡Realiza tu primer depósito en una de las marcas a continuación y obtén hasta $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Realiza el primer depósito en una de estas marcas &",
+        "Get Up To $20 Right On Your Wallet!":
+          "¡Obtén hasta $20 directamente en tu billetera!",
+        "Already Registered": "Ya registrado",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "¡Selecciona un casino de la lista a continuación, realiza tu primer depósito y recibe hasta 20 USD en recompensas!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Recibirás 50 giros gratis por cada primer depósito desde nuestro sitio web. Gira estos giros y obtén hasta 20 USD en tu billetera de criptomonedas/PayPal. Para calificar para retiros, asegúrate de que tu primer depósito sea de al menos Є25 o su equivalente en otras monedas y se haya realizado después de solicitar un retiro.",
+        "You have successfully registered on these brands":
+          "Te has registrado con éxito en estas marcas",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
+        "* Explore the Hottest New Brands –":
+          "* Explora los casinos más nuevos y populares –",
+        "Click Here!": "¡Haz clic aquí!",
+        "Expires in:": "Caduca en:",
       },
     },
     fi: {
@@ -3099,7 +3176,8 @@ async function initializeI18n() {
         Spinomenal: "Spinomenal",
         "Play Now": "Pelaa nyt",
         "How to get bonus?": "Kuinka saada bonus?",
-        "Activate bonus in your casino account": "Aktivoi bonus kasinotililläsi",
+        "Activate bonus in your casino account":
+          "Aktivoi bonus kasinotililläsi",
         "Load More Brands": "Lataa lisää kasinoita",
         "Withdrawal Limits:": "Nosto rajoitukset:",
         Advantages: "Edut",
@@ -3135,7 +3213,7 @@ async function initializeI18n() {
         "My wallet": "Minun lompakkoni",
         "Cards Shop": "Kauppa",
         "Account menu": "Tilivalikko",
-  
+
         "Fee:": "Maksu:",
         "You will receive on balance:": "Sinä saat saldona:",
         "Payment Method": "Maksutapa",
@@ -3402,18 +3480,27 @@ async function initializeI18n() {
         "I’m Registered": "Olen rekisteröity",
         "Deposit Now": "Talleta nyt",
         "Get $20": "Saa 20 dollaria",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Olet jo rekisteröitynyt täällä, tee ensimmäinen talletus ja saat jopa 20 dollaria!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Tee ensimmäinen talletus yhdelle alla olevista brändeistä ja saat jopa 20 dollaria!",
-  "Make First Deposit On One Of These Brands &": "Tee ensimmäinen talletus yhdelle näistä brändeistä &",
-  "Get Up To $20 Right On Your Wallet!": "Saat jopa 20 dollaria suoraan lompakkoosi!",
-  "Already Registered": "Jo rekisteröitynyt",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Valitse kasino alla olevasta listasta, tee ensimmäinen talletuksesi ja saat jopa 20 USD palkintoina!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Saat 50 ilmaiskierrosta jokaisesta ensimmäisestä talletuksestasi verkkosivustoltamme. Pyöritä nämä kierrokset ja saat jopa 20 USD krypto lompakkoosi/PayPaliin. Jotta voit olla oikeutettu nostoihin, varmista että ensimmäinen talletuksesi on vähintään 25 euroa tai vastaava summa muissa valuutoissa ja se on tehty pyynnön jälkeen.",
-  "You have successfully registered on these brands": "Olet rekisteröitynyt näille brändeille onnistuneesti",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
-  "* Explore the Hottest New Brands –": "* Tutustu uusimpiin ja kuumimpiin kasinoihin –",
-  "Click Here!": "Klikkaa tästä!",
-  "Expires in:": "Vanhenee:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Olet jo rekisteröitynyt täällä, tee ensimmäinen talletus ja saat jopa 20 dollaria!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Tee ensimmäinen talletus yhdelle alla olevista brändeistä ja saat jopa 20 dollaria!",
+        "Make First Deposit On One Of These Brands &":
+          "Tee ensimmäinen talletus yhdelle näistä brändeistä &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Saat jopa 20 dollaria suoraan lompakkoosi!",
+        "Already Registered": "Jo rekisteröitynyt",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Valitse kasino alla olevasta listasta, tee ensimmäinen talletuksesi ja saat jopa 20 USD palkintoina!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Saat 50 ilmaiskierrosta jokaisesta ensimmäisestä talletuksestasi verkkosivustoltamme. Pyöritä nämä kierrokset ja saat jopa 20 USD krypto lompakkoosi/PayPaliin. Jotta voit olla oikeutettu nostoihin, varmista että ensimmäinen talletuksesi on vähintään 25 euroa tai vastaava summa muissa valuutoissa ja se on tehty pyynnön jälkeen.",
+        "You have successfully registered on these brands":
+          "Olet rekisteröitynyt näille brändeille onnistuneesti",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
+        "* Explore the Hottest New Brands –":
+          "* Tutustu uusimpiin ja kuumimpiin kasinoihin –",
+        "Click Here!": "Klikkaa tästä!",
+        "Expires in:": "Vanhenee:",
       },
     },
     fr: {
@@ -3499,7 +3586,7 @@ async function initializeI18n() {
         "My wallet": "Mon portefeuille",
         "Cards Shop": "Magasin",
         "Account menu": "Menu du compte",
-  
+
         "Fee:": "Frais:",
         "You will receive on balance:": "Vous recevrez au solde:",
         "Payment Method": "Méthode de paiement",
@@ -3717,7 +3804,8 @@ async function initializeI18n() {
           "La disponibilité des cartes varie selon la région.",
         "Withdrawal rejected: Minimum withdrawal amount is 4 USD.":
           "Retrait refusé : Le montant minimum de retrait est de 4 USD.",
-        "Not enough funds in the account.": "Pas assez de fonds dans le compte.",
+        "Not enough funds in the account.":
+          "Pas assez de fonds dans le compte.",
         "Something wrong, try again!": "Quelque chose ne va pas, réessayez !",
         "Please note: PayPal withdrawals are processed every day from 7 AM to 8 PM CET":
           "Veuillez noter : les retraits PayPal sont traités tous les jours de 7h à 20h CET",
@@ -3764,21 +3852,30 @@ async function initializeI18n() {
         "I’m Registered": "Je suis inscrit",
         "Deposit Now": "Effectuer un dépôt maintenant",
         "Get $20": "Obtenez 20 $",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Vous avez déjà fait une inscription ici, faites un premier dépôt et obtenez jusqu'à 20 $ !",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Effectuez un premier dépôt sur une des marques ci-dessous et obtenez jusqu'à 20 $ !",
-  "Make First Deposit On One Of These Brands &": "Effectuez un premier dépôt sur l'une de ces marques &",
-  "Get Up To $20 Right On Your Wallet!": "Recevez jusqu'à 20 $ directement sur votre portefeuille!",
-  "Already Registered": "Déjà inscrit",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Sélectionnez un casino dans la liste ci-dessous, effectuez votre premier dépôt et recevez jusqu'à 20 USD de récompenses!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Vous recevrez 50 tours gratuits pour chaque premier dépôt à partir de notre site Web. Faites tourner ces tours et obtenez jusqu'à 20 USD sur votre portefeuille crypto/PayPal. Pour être éligible aux retraits, assurez-vous que vos premiers dépôts sont d'au moins 25 € ou l'équivalent dans d'autres devises et ont été effectués après avoir demandé un retrait.",
-  "You have successfully registered on these brands": "Vous vous êtes inscrit avec succès sur ces marques",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
-  "* Explore the Hottest New Brands –": "* Découvrez les nouveaux casinos les plus populaires -",
-  "Click Here!": "Cliquez ici!",
-  "Expires in:": "Expire dans:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Vous avez déjà fait une inscription ici, faites un premier dépôt et obtenez jusqu'à 20 $ !",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Effectuez un premier dépôt sur une des marques ci-dessous et obtenez jusqu'à 20 $ !",
+        "Make First Deposit On One Of These Brands &":
+          "Effectuez un premier dépôt sur l'une de ces marques &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Recevez jusqu'à 20 $ directement sur votre portefeuille!",
+        "Already Registered": "Déjà inscrit",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Sélectionnez un casino dans la liste ci-dessous, effectuez votre premier dépôt et recevez jusqu'à 20 USD de récompenses!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Vous recevrez 50 tours gratuits pour chaque premier dépôt à partir de notre site Web. Faites tourner ces tours et obtenez jusqu'à 20 USD sur votre portefeuille crypto/PayPal. Pour être éligible aux retraits, assurez-vous que vos premiers dépôts sont d'au moins 25 € ou l'équivalent dans d'autres devises et ont été effectués après avoir demandé un retrait.",
+        "You have successfully registered on these brands":
+          "Vous vous êtes inscrit avec succès sur ces marques",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
+        "* Explore the Hottest New Brands –":
+          "* Découvrez les nouveaux casinos les plus populaires -",
+        "Click Here!": "Cliquez ici!",
+        "Expires in:": "Expire dans:",
       },
     },
-  
+
     gr: {
       translation: {
         "Casinos ▼": "Καζίνο ▼",
@@ -3861,7 +3958,7 @@ async function initializeI18n() {
         "My wallet": "Ο πορτοφόλι μου",
         "Cards Shop": "Κατάστημα",
         "Account menu": "Μενού λογαριασμού",
-  
+
         "Fee:": "Κόστος:",
         "You will receive on balance:": "Θα λάβετε στο υπόλοιπό σας:",
         "Payment Method": "Μέθοδος Πληρωμής",
@@ -4128,18 +4225,27 @@ async function initializeI18n() {
         "I’m Registered": "Είμαι εγγεγραμμένος",
         "Deposit Now": "Κατάθεση τώρα",
         "Get $20": "Λάβε $20",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Έχετε ήδη κάνει εγγραφή εδώ, κάντε την πρώτη κατάθεση και κερδίστε έως και $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Κάντε την πρώτη κατάθεση σε μια από τις παρακάτω μάρκες και κερδίστε μέχρι και $20!",
-  "Make First Deposit On One Of These Brands &": "Κάντε την πρώτη κατάθεση σε μία από αυτές τις εταιρείες &",
-  "Get Up To $20 Right On Your Wallet!": "Πάρτε μέχρι και $20 απευθείας στο πορτοφόλι σας!",
-  "Already Registered": "Ήδη Εγγεγραμμένος",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Επιλέξτε ένα καζίνο από τη λίστα παρακάτω, κάντε την πρώτη σας κατάθεση και λάβετε μέχρι και 20 USD σε ανταμοιβές!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Θα λάβετε 50 δωρεάν περιστροφές για κάθε Πρώτη Κατάθεση από την ιστοσελίδα μας. Περιστρέψτε αυτές τις περιστροφές και κερδίστε έως και 20 USD στο κρυπτονόμισμά σας/PayPal. Για να προκριθείτε για αναλήψεις, βεβαιωθείτε ότι η πρώτη κατάθεσή σας είναι τουλάχιστον €25 ή το αντίστοιχο σε άλλα νομίσματα και έγινε μετά από αίτηση ανάληψης.",
-  "You have successfully registered on these brands": "Έχετε εγγραφεί με επιτυχία σε αυτά τα καζίνο",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
-  "* Explore the Hottest New Brands –": "* Εξερευνήστε τα πιο δημοφιλή νέα καζίνο -",
-  "Click Here!": "Κάντε κλικ εδώ!",
-  "Expires in:": "Λήγει σε:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Έχετε ήδη κάνει εγγραφή εδώ, κάντε την πρώτη κατάθεση και κερδίστε έως και $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Κάντε την πρώτη κατάθεση σε μια από τις παρακάτω μάρκες και κερδίστε μέχρι και $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Κάντε την πρώτη κατάθεση σε μία από αυτές τις εταιρείες &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Πάρτε μέχρι και $20 απευθείας στο πορτοφόλι σας!",
+        "Already Registered": "Ήδη Εγγεγραμμένος",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Επιλέξτε ένα καζίνο από τη λίστα παρακάτω, κάντε την πρώτη σας κατάθεση και λάβετε μέχρι και 20 USD σε ανταμοιβές!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Θα λάβετε 50 δωρεάν περιστροφές για κάθε Πρώτη Κατάθεση από την ιστοσελίδα μας. Περιστρέψτε αυτές τις περιστροφές και κερδίστε έως και 20 USD στο κρυπτονόμισμά σας/PayPal. Για να προκριθείτε για αναλήψεις, βεβαιωθείτε ότι η πρώτη κατάθεσή σας είναι τουλάχιστον €25 ή το αντίστοιχο σε άλλα νομίσματα και έγινε μετά από αίτηση ανάληψης.",
+        "You have successfully registered on these brands":
+          "Έχετε εγγραφεί με επιτυχία σε αυτά τα καζίνο",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
+        "* Explore the Hottest New Brands –":
+          "* Εξερευνήστε τα πιο δημοφιλή νέα καζίνο -",
+        "Click Here!": "Κάντε κλικ εδώ!",
+        "Expires in:": "Λήγει σε:",
       },
     },
     hu: {
@@ -4224,7 +4330,7 @@ async function initializeI18n() {
         "My wallet": "A pénztárcám",
         "Cards Shop": "Üzlet",
         "Account menu": "Fiók menü",
-  
+
         "Fee:": "Díj:",
         "You will receive on balance:": "Az egyenlegedre kapod:",
         "Payment Method": "Fizetési mód",
@@ -4491,18 +4597,27 @@ async function initializeI18n() {
         "I’m Registered": "Regisztrált vagyok",
         "Deposit Now": "Letét most",
         "Get $20": "Kapj 20 dollárt",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Már regisztráltál itt, végezz első befizetést és akár 20 dollárt kapj!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Hajtsa végre az első befizetést az alábbi egyik márkánál, és akár 20 dollárt kapjon!",
-  "Make First Deposit On One Of These Brands &": "Hajtsa végre az első befizetést az egyik ilyen márka esetében &",
-  "Get Up To $20 Right On Your Wallet!": "Akár 20 dollárt is kapj a pénztárcádba!",
-  "Already Registered": "Már regisztrált",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Válasszon egy kaszinót az alábbi listából, végezze el az első befizetését, és akár 20 USD jutalmat kapjon!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ingyenes 50 pörgetést kapsz minden első befizetésért a weboldalunkról. Pörgetsd ezeket a pörgetéseket, és akár 20 USD is kaphatsz a kriptopénz tárcádon/PayPal számládon. A kifizetésekhez való jogosultsághoz biztosítsd, hogy az első befizetés legalább 25 euró vagy annak megfelelője más devizákon, és azt a kifizetés kérése után végezted.",
-  "You have successfully registered on these brands": "Sikeresen regisztrált ezeken a márkákon",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
-  "* Explore the Hottest New Brands –": "* Fedezze fel a legforróbb új kaszinókat -",
-  "Click Here!": "Kattints ide!",
-  "Expires in:": "Lejár:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Már regisztráltál itt, végezz első befizetést és akár 20 dollárt kapj!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Hajtsa végre az első befizetést az alábbi egyik márkánál, és akár 20 dollárt kapjon!",
+        "Make First Deposit On One Of These Brands &":
+          "Hajtsa végre az első befizetést az egyik ilyen márka esetében &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Akár 20 dollárt is kapj a pénztárcádba!",
+        "Already Registered": "Már regisztrált",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Válasszon egy kaszinót az alábbi listából, végezze el az első befizetését, és akár 20 USD jutalmat kapjon!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Ingyenes 50 pörgetést kapsz minden első befizetésért a weboldalunkról. Pörgetsd ezeket a pörgetéseket, és akár 20 USD is kaphatsz a kriptopénz tárcádon/PayPal számládon. A kifizetésekhez való jogosultsághoz biztosítsd, hogy az első befizetés legalább 25 euró vagy annak megfelelője más devizákon, és azt a kifizetés kérése után végezted.",
+        "You have successfully registered on these brands":
+          "Sikeresen regisztrált ezeken a márkákon",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
+        "* Explore the Hottest New Brands –":
+          "* Fedezze fel a legforróbb új kaszinókat -",
+        "Click Here!": "Kattints ide!",
+        "Expires in:": "Lejár:",
       },
     },
     it: {
@@ -4587,7 +4702,7 @@ async function initializeI18n() {
         "My wallet": "Il mio portafoglio",
         "Cards Shop": "Negozio",
         "Account menu": "Menu account",
-  
+
         "Fee:": "Tassa:",
         "You will receive on balance:": "Riceverai sul saldo:",
         "Payment Method": "Metodo di pagamento",
@@ -4854,18 +4969,27 @@ async function initializeI18n() {
         "I’m Registered": "Sono registrato",
         "Deposit Now": "Fai un deposito ora",
         "Get $20": "Ottieni 20 dollari",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Hai già effettuato la registrazione qui, effettua il primo deposito e ottieni fino a $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Effettua il primo deposito su uno dei marchi qui sotto e ottieni fino a $20!",
-  "Make First Deposit On One Of These Brands &": "Effettua il primo deposito su uno di questi marchi &",
-  "Get Up To $20 Right On Your Wallet!": "Ricevi fino a $20 direttamente sul tuo portafoglio!",
-  "Already Registered": "Gia registrato",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Seleziona un casinò dalla lista qui sotto, effettua il tuo primo deposito e ricevi fino a 20 USD di ricompense!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Riceverai 50 giri gratuiti per ogni primo deposito dal nostro sito web. Fai girare questi giri e ottieni fino a 20 USD sul tuo portafoglio criptato/PayPal. Per poter prelevare, assicurati che il tuo primo deposito sia di almeno Є25 o l'equivalente in altre valute e sia stato effettuato dopo aver richiesto un prelievo.",
-  "You have successfully registered on these brands": "Hai completato con successo la registrazione su questi marchi",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
-  "* Explore the Hottest New Brands –": "* Esplora i nuovi casinò più caldi -",
-  "Click Here!": "Clicca qui!",
-  "Expires in:": "Scade tra:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Hai già effettuato la registrazione qui, effettua il primo deposito e ottieni fino a $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Effettua il primo deposito su uno dei marchi qui sotto e ottieni fino a $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Effettua il primo deposito su uno di questi marchi &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Ricevi fino a $20 direttamente sul tuo portafoglio!",
+        "Already Registered": "Gia registrato",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Seleziona un casinò dalla lista qui sotto, effettua il tuo primo deposito e ricevi fino a 20 USD di ricompense!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Riceverai 50 giri gratuiti per ogni primo deposito dal nostro sito web. Fai girare questi giri e ottieni fino a 20 USD sul tuo portafoglio criptato/PayPal. Per poter prelevare, assicurati che il tuo primo deposito sia di almeno Є25 o l'equivalente in altre valute e sia stato effettuato dopo aver richiesto un prelievo.",
+        "You have successfully registered on these brands":
+          "Hai completato con successo la registrazione su questi marchi",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
+        "* Explore the Hottest New Brands –":
+          "* Esplora i nuovi casinò più caldi -",
+        "Click Here!": "Clicca qui!",
+        "Expires in:": "Scade tra:",
       },
     },
     no: {
@@ -4950,7 +5074,7 @@ async function initializeI18n() {
         "My wallet": "Min lommebok",
         "Cards Shop": "Butikk",
         "Account menu": "Kontomeny",
-  
+
         "Fee:": "Gebyr:",
         "You will receive on balance:": "Du vil motta på balanse:",
         "Payment Method": "Betalingsmetode",
@@ -5217,18 +5341,27 @@ async function initializeI18n() {
         "I’m Registered": "Jeg er registrert",
         "Deposit Now": "Innskudd nå",
         "Get $20": "Få $20",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Du har allerede registrert deg her, gjør ditt første innskudd og få opptil $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Gjør første innskudd på ett av merkene nedenfor og få opptil $20!",
-  "Make First Deposit On One Of These Brands &": "Gjør første innskudd på en av disse merkene &",
-  "Get Up To $20 Right On Your Wallet!": "Få opptil $20 rett på lommeboken din!",
-  "Already Registered": "Allerede registrert",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Velg et kasino fra listen nedenfor, gjør ditt første innskudd og motta opptil 20 USD i belønninger!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratisspinn for hver første innskudd fra nettstedet vårt. Spinn disse spinnene og få opptil 20 USD på din kryptolommebok/PayPal. For å kvalifisere for uttak, sørg for at ditt første innskudd er på minst Є25 eller tilsvarende i andre valutaer og ble gjort etter at du ba om et uttak.",
-  "You have successfully registered on these brands": "Du har registrert deg vellykket på disse merkene",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
-  "* Explore the Hottest New Brands –": "* Utforsk de nyeste og mest populære casinoene -",
-  "Click Here!": "Klikk her!",
-  "Expires in:": "Utløper om:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Du har allerede registrert deg her, gjør ditt første innskudd og få opptil $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Gjør første innskudd på ett av merkene nedenfor og få opptil $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Gjør første innskudd på en av disse merkene &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Få opptil $20 rett på lommeboken din!",
+        "Already Registered": "Allerede registrert",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Velg et kasino fra listen nedenfor, gjør ditt første innskudd og motta opptil 20 USD i belønninger!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Du vil få 50 gratisspinn for hver første innskudd fra nettstedet vårt. Spinn disse spinnene og få opptil 20 USD på din kryptolommebok/PayPal. For å kvalifisere for uttak, sørg for at ditt første innskudd er på minst Є25 eller tilsvarende i andre valutaer og ble gjort etter at du ba om et uttak.",
+        "You have successfully registered on these brands":
+          "Du har registrert deg vellykket på disse merkene",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
+        "* Explore the Hottest New Brands –":
+          "* Utforsk de nyeste og mest populære casinoene -",
+        "Click Here!": "Klikk her!",
+        "Expires in:": "Utløper om:",
       },
     },
     pt: {
@@ -5313,7 +5446,7 @@ async function initializeI18n() {
         "My wallet": "Minha carteira",
         "Cards Shop": "Loja",
         "Account menu": "Menu da conta",
-  
+
         "Fee:": "Taxa:",
         "You will receive on balance:": "Você receberá no saldo:",
         "Payment Method": "Método de Pagamento",
@@ -5532,7 +5665,8 @@ async function initializeI18n() {
           "A disponibilidade do cartão varia de acordo com a região.",
         "Withdrawal rejected: Minimum withdrawal amount is 4 USD.":
           "Retirada rejeitada: O valor mínimo de retirada é de 4 USD.",
-        "Not enough funds in the account.": "Não há fundos suficientes na conta.",
+        "Not enough funds in the account.":
+          "Não há fundos suficientes na conta.",
         "Something wrong, try again!": "Algo errado, tente novamente!",
         "Please note: PayPal withdrawals are processed every day from 7 AM to 8 PM CET":
           "Por favor, note: Os saques do PayPal são processados todos os dias das 7h às 20h CET",
@@ -5579,18 +5713,27 @@ async function initializeI18n() {
         "I’m Registered": "Estou registrado",
         "Deposit Now": "Deposite Agora",
         "Get $20": "Receba $20",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Você já fez o registro aqui, faça o primeiro depósito e ganhe até $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Faça o primeiro depósito em uma das marcas abaixo e ganhe até $20!",
-  "Make First Deposit On One Of These Brands &": "Faça o primeiro depósito em uma dessas marcas &",
-  "Get Up To $20 Right On Your Wallet!": "Receba até $20 direto na sua carteira!",
-  "Already Registered": "Já Registrado",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Selecione um cassino da lista abaixo, faça seu primeiro depósito e receba até 20 USD em recompensas!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Você receberá 50 rodadas grátis para cada primeiro depósito em nosso site. Gire essas rodadas e ganhe até 20 USD em sua carteira de criptomoedas/PayPal. Para se qualificar para saques, certifique-se de que seu primeiro depósito seja de pelo menos Є25 ou o equivalente em outras moedas e tenha sido feito após solicitar um saque.",
-  "You have successfully registered on these brands": "Você se registrou com sucesso nestas marcas",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
-  "* Explore the Hottest New Brands –": "* Explore os Novos Cassinos Mais Quentes -",
-  "Click Here!": "Clique aqui!",
-  "Expires in:": "Expira em:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Você já fez o registro aqui, faça o primeiro depósito e ganhe até $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Faça o primeiro depósito em uma das marcas abaixo e ganhe até $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Faça o primeiro depósito em uma dessas marcas &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Receba até $20 direto na sua carteira!",
+        "Already Registered": "Já Registrado",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Selecione um cassino da lista abaixo, faça seu primeiro depósito e receba até 20 USD em recompensas!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Você receberá 50 rodadas grátis para cada primeiro depósito em nosso site. Gire essas rodadas e ganhe até 20 USD em sua carteira de criptomoedas/PayPal. Para se qualificar para saques, certifique-se de que seu primeiro depósito seja de pelo menos Є25 ou o equivalente em outras moedas e tenha sido feito após solicitar um saque.",
+        "You have successfully registered on these brands":
+          "Você se registrou com sucesso nestas marcas",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
+        "* Explore the Hottest New Brands –":
+          "* Explore os Novos Cassinos Mais Quentes -",
+        "Click Here!": "Clique aqui!",
+        "Expires in:": "Expira em:",
       },
     },
     se: {
@@ -5675,7 +5818,7 @@ async function initializeI18n() {
         "My wallet": "Min plånbok",
         "Cards Shop": "Butik",
         "Account menu": "Kontomeny",
-  
+
         "Fee:": "Avgift",
         "You will receive on balance:": "Du kommer att få på balans:",
         "Payment Method": "Betalningsmetod",
@@ -5943,18 +6086,27 @@ async function initializeI18n() {
         "I’m Registered": "Jag är registrerad",
         "Deposit Now": "Insättning nu",
         "Get $20": "Få 20 dollar",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Du har redan registrerat dig här, gör första insättningen och få upp till $20!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Gör första insättningen på ett av varumärkena nedan och få upp till $20!",
-  "Make First Deposit On One Of These Brands &": "Gör första insättningen på ett av dessa varumärken &",
-  "Get Up To $20 Right On Your Wallet!": "Få upp till $20 direkt på plånboken!",
-  "Already Registered": "Redan registrerad",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Välj ett kasino från listan nedan, gör din första insättning och få upp till 20 USD i belöningar!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du kommer att få 50 gratissnurr för varje första insättning från vår webbplats. Snurra dessa snurr och få upp till 20 USD på din kryptoplånbok/PayPal. För att kvalificera dig för uttag, se till att din första insättning är minst Є25 eller motsvarande i andra valutor och gjordes efter att du begärt ett uttag.",
-  "You have successfully registered on these brands": "Du har framgångsrikt registrerat dig på dessa varumärken",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
-  "* Explore the Hottest New Brands –": "* Utforska de hetaste nya casinona -",
-  "Click Here!": "Klicka här!",
-  "Expires in:": "Utgår om:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Du har redan registrerat dig här, gör första insättningen och få upp till $20!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Gör första insättningen på ett av varumärkena nedan och få upp till $20!",
+        "Make First Deposit On One Of These Brands &":
+          "Gör första insättningen på ett av dessa varumärken &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Få upp till $20 direkt på plånboken!",
+        "Already Registered": "Redan registrerad",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Välj ett kasino från listan nedan, gör din första insättning och få upp till 20 USD i belöningar!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Du kommer att få 50 gratissnurr för varje första insättning från vår webbplats. Snurra dessa snurr och få upp till 20 USD på din kryptoplånbok/PayPal. För att kvalificera dig för uttag, se till att din första insättning är minst Є25 eller motsvarande i andra valutor och gjordes efter att du begärt ett uttag.",
+        "You have successfully registered on these brands":
+          "Du har framgångsrikt registrerat dig på dessa varumärken",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
+        "* Explore the Hottest New Brands –":
+          "* Utforska de hetaste nya casinona -",
+        "Click Here!": "Klicka här!",
+        "Expires in:": "Utgår om:",
       },
     },
     sk: {
@@ -6039,7 +6191,7 @@ async function initializeI18n() {
         "My wallet": "Moja peňaženka",
         "Cards Shop": "Obchod",
         "Account menu": "Účetové menu",
-  
+
         "Fee:": "Poplatok:",
         "You will receive on balance:": "Na účet dostanete:",
         "Payment Method": "Spôsob platby",
@@ -6306,18 +6458,27 @@ async function initializeI18n() {
         "I’m Registered": "Som registrovaný",
         "Deposit Now": "Vložiť teraz",
         "Get $20": "Získajte 20 dolárov",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Už ste sa tu zaregistrovali, urobte prvý vklad a získajte až 20 dolárov!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Urobte prvý vklad na jednu značku nižšie a získajte až 20 dolárov!",
-  "Make First Deposit On One Of These Brands &": "Urobte prvý vklad na jednu z týchto značiek &",
-  "Get Up To $20 Right On Your Wallet!": "Získajte až 20 dolárov priamo na svojom peňaženke!",
-  "Already Registered": "Už registrovaný",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Vyberte si kasíno zo zoznamu nižšie, urobte svoj prvý vklad a získajte až 20 USD odmeny!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 bezplatných zatočení za každý prvý vklad z našej webovej stránky. Zatočte týmito zatočeniami a získajte až 20 USD na svoj kryptomenový peňaženku/PayPal. Pre kvalifikáciu na výbery sa uistite, že váš prvý vklad je aspoň 25 eur alebo ekvivalent v iných menách a bol vykonaný požiadavkou na výber.",
-  "You have successfully registered on these brands": "Úspešne ste sa zaregistrovali na tieto značky",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
-  "* Explore the Hottest New Brands –": "* Preskúmajte najnovšie kasína -",
-  "Click Here!": "Kliknite tu!",
-  "Expires in:": "Vyprší o:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Už ste sa tu zaregistrovali, urobte prvý vklad a získajte až 20 dolárov!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Urobte prvý vklad na jednu značku nižšie a získajte až 20 dolárov!",
+        "Make First Deposit On One Of These Brands &":
+          "Urobte prvý vklad na jednu z týchto značiek &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Získajte až 20 dolárov priamo na svojom peňaženke!",
+        "Already Registered": "Už registrovaný",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Vyberte si kasíno zo zoznamu nižšie, urobte svoj prvý vklad a získajte až 20 USD odmeny!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Dostanete 50 bezplatných zatočení za každý prvý vklad z našej webovej stránky. Zatočte týmito zatočeniami a získajte až 20 USD na svoj kryptomenový peňaženku/PayPal. Pre kvalifikáciu na výbery sa uistite, že váš prvý vklad je aspoň 25 eur alebo ekvivalent v iných menách a bol vykonaný požiadavkou na výber.",
+        "You have successfully registered on these brands":
+          "Úspešne ste sa zaregistrovali na tieto značky",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
+        "* Explore the Hottest New Brands –":
+          "* Preskúmajte najnovšie kasína -",
+        "Click Here!": "Kliknite tu!",
+        "Expires in:": "Vyprší o:",
       },
     },
     tr: {
@@ -6402,7 +6563,7 @@ async function initializeI18n() {
         "My wallet": "Cüzdanım",
         "Cards Shop": "Mağaza",
         "Account menu": "Hesap menüsü",
-  
+
         "Fee:": "Ücret:",
         "You will receive on balance:": "Bakiyenize alacaksınız:",
         "Payment Method": "Ödeme Yöntemi",
@@ -6667,28 +6828,30 @@ async function initializeI18n() {
         "I’m Registered": "Kayıtlıyım",
         "Deposit Now": "Şimdi Yatırım Yap",
         "Get $20": "20 dolar al",
-  "You Already Made Registration Here, Make First Deposit & Get Up To $20!": "Zaten burada kaydınızı yaptırdınız, ilk para yatırma işlemini yapın ve 20 $'a kadar kazanın!",
-  "Make First Deposit On One Brand Below & Get Up To $20!": "Aşağıdaki Markaya İlk Yatırımı Yapın ve 20 $'a Kadar Kazanın!",
-  "Make First Deposit On One Of These Brands &": "Bir Bu Markalardan İlk Yatırımı Yapın &",
-  "Get Up To $20 Right On Your Wallet!": "Cüzdanınızda Hemen 20 Dolara Kadar Kazanın!",
-  "Already Registered": "Zaten Kayıtlı",
-  "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!": "Aşağıdaki listeden bir kumarhaneyi seçin, ilk para yatırmanızı yapın ve 20 USD'a kadar ödül alın!",
-  "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sitemizden her ilk para yatırma işlemi için 50 Ücretsiz Dönüş alacaksınız. Bu dönüşleri çevirin ve kripto cüzdanınıza/PayPal hesabınıza kadar 20 USD kazanın. Çekilmeye hak kazanmak için, ilk para yatırma işleminizin en az 25 Є veya diğer para birimlerindeki karşılığı olması ve çekim talebinde bulunulduktan sonra yapılması gerekmektedir.",
-  "You have successfully registered on these brands": "Bu markalara başarıyla kaydoldunuz",
-  "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
-  "* Explore the Hottest New Brands –": "* En Yeni ve En Popüler Casinoları Keşfedin –",
-  "Click Here!": "Buraya Tıkla!",
-  "Expires in:": "Sona erme tarihi:",
+        "You Already Made Registration Here, Make First Deposit & Get Up To $20!":
+          "Zaten burada kaydınızı yaptırdınız, ilk para yatırma işlemini yapın ve 20 $'a kadar kazanın!",
+        "Make First Deposit On One Brand Below & Get Up To $20!":
+          "Aşağıdaki Markaya İlk Yatırımı Yapın ve 20 $'a Kadar Kazanın!",
+        "Make First Deposit On One Of These Brands &":
+          "Bir Bu Markalardan İlk Yatırımı Yapın &",
+        "Get Up To $20 Right On Your Wallet!":
+          "Cüzdanınızda Hemen 20 Dolara Kadar Kazanın!",
+        "Already Registered": "Zaten Kayıtlı",
+        "Select a brand from the list below, make your first deposit and receive up to $20 in rewards!":
+          "Aşağıdaki listeden bir kumarhaneyi seçin, ilk para yatırmanızı yapın ve 20 USD'a kadar ödül alın!",
+        "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.":
+          "Sitemizden her ilk para yatırma işlemi için 50 Ücretsiz Dönüş alacaksınız. Bu dönüşleri çevirin ve kripto cüzdanınıza/PayPal hesabınıza kadar 20 USD kazanın. Çekilmeye hak kazanmak için, ilk para yatırma işleminizin en az 25 Є veya diğer para birimlerindeki karşılığı olması ve çekim talebinde bulunulduktan sonra yapılması gerekmektedir.",
+        "You have successfully registered on these brands":
+          "Bu markalara başarıyla kaydoldunuz",
+        "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!":
+          "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
+        "* Explore the Hottest New Brands –":
+          "* En Yeni ve En Popüler Casinoları Keşfedin –",
+        "Click Here!": "Buraya Tıkla!",
+        "Expires in:": "Sona erme tarihi:",
       },
     },
   };
-  
-  
-  
-  
-  
-  
-  
 
   let source;
   if (typeof window !== "undefined") {
