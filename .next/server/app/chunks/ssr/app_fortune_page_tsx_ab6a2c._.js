@@ -40,7 +40,7 @@ function Fortune() {
                 className: "pt-10 pb-10",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("iframe", {
                     id: "myIframe",
-                    src: "/wheelNew/index.html",
+                    src: "/wheelNew2/index.html",
                     width: iframeWidth,
                     height: iframeHeight
                 }, void 0, false, {

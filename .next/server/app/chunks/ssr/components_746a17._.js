@@ -1057,7 +1057,6 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
                             target: "_blank",
                             className: "btn btn-primary btn-fz",
                             href: `${brand.GoBig}/${savedUrl}&creative_id=XXL_Registration`,
-                            target: "_blank",
                             children: t("Deposit Now")
                         }, void 0, false, {
                             fileName: "<[project]/components/Brands_home/UserBrands.tsx>",
@@ -7865,11 +7864,6 @@ const BrandsSwitcher = ()=>{
             flag: "🇦🇺"
         },
         {
-            code: "au",
-            label: "Australia",
-            flag: "🇦🇺"
-        },
-        {
             code: "ca",
             label: "Canada",
             flag: "🇨🇦"
@@ -8389,23 +8383,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 189,
+                        lineNumber: 188,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 178,
+                lineNumber: 177,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 199,
+                lineNumber: 198,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 177,
+        lineNumber: 176,
         columnNumber: 5
     }, this);
 };

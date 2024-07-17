@@ -39,11 +39,9 @@ export default async function Home() {
 
       <div className="background-block">
         <FilteredHome />
-        {/* <NewBrands /> */}
+
       </div>
-      {/* <TopBrandsOriginal /> */}
-      {/* <ReviewBrands /> */}
-      {/* <GuideSlotsHome /> */}
+
     </>
   );
 }

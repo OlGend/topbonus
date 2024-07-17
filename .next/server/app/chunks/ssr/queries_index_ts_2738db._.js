@@ -29,7 +29,7 @@ const useMutationUpdatePayment = (userId, coin, estimatedAmount, walletAddress, 
             sumMinus: amount
         });
         try {
-            const response = await fetch(`https://pickbonus.myawardwallet.com/api/user/update_payment.php`, {
+            const response = await fetch(`https://bonusnumber1.com/api/user/update_payment.php`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -82,7 +82,7 @@ const useMutationSendUserPhoneNumber = ()=>{
         setError(false);
         setMessage("");
         try {
-            const response = await fetch("https://pickbonus.myawardwallet.com/api/user/get_token.php", {
+            const response = await fetch("https://bonusnumber1.com/api/user/get_token.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/x-www-form-urlencoded"
@@ -128,7 +128,7 @@ const useMutationSaveUserPhoneNumber = ()=>{
         setLoading(true);
         setError(false);
         try {
-            const response = await fetch(`https://pickbonus.myawardwallet.com/api/user/update_phone.php`, {
+            const response = await fetch(`https://bonusnumber1.com/api/user/update_phone.php`, {
                 method: "POST",
                 body: JSON.stringify({
                     id: userId,
@@ -221,7 +221,7 @@ __turbopack_esm__({
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 ;
-const api = "https://pickbonus.myawardwallet.com/api";
+const api = "https://bonusnumber1.com/api";
 const getUserId = ()=>{
     return localStorage.getItem("user_id") ?? new URLSearchParams(window.location.search).get("keyword");
 };
@@ -327,7 +327,7 @@ const useQueryEstimated = (coin, amount)=>{
         setError(false);
         setErrorMessage(null);
         try {
-            const response = await fetch(`https://pickbonus.myawardwallet.com/api/payment/estimated.php?amount=${amount}&currency_from=usd&currency_to=${coin}`);
+            const response = await fetch(`https://bonusnumber1.com/api/payment/estimated.php?amount=${amount}&currency_from=usd&currency_to=${coin}`);
             if (!response.ok) throw new Error();
             const data = await response.json();
             setData(data.estimated_amount);

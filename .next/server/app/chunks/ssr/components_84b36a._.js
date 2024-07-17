@@ -54,44 +54,9 @@ const availableLanguages = [
         flag: "🇦🇺"
     },
     {
-        code: "at",
-        label: "Austria",
-        flag: "🇦🇹"
-    },
-    {
-        code: "be",
-        label: "Belgium",
-        flag: "🇧🇪"
-    },
-    {
-        code: "bg",
-        label: "Bulgaria",
-        flag: "🇧🇬"
-    },
-    {
         code: "ca",
         label: "Canada",
         flag: "🇨🇦"
-    },
-    {
-        code: "cz",
-        label: "Czech",
-        flag: "🇨🇿"
-    },
-    {
-        code: "dk",
-        label: "Denmark",
-        flag: "🇩🇰"
-    },
-    {
-        code: "fi",
-        label: "Finland",
-        flag: "🇫🇮"
-    },
-    {
-        code: "fr",
-        label: "France",
-        flag: "🇫🇷"
     },
     {
         code: "de",
@@ -99,29 +64,9 @@ const availableLanguages = [
         flag: "🇩🇪"
     },
     {
-        code: "gr",
-        label: "Greece",
-        flag: "🇬🇷"
-    },
-    {
-        code: "hu",
-        label: "Hungary",
-        flag: "🇭🇺"
-    },
-    {
         code: "ie",
         label: "Ireland",
         flag: "🇮🇪"
-    },
-    {
-        code: "it",
-        label: "Italy",
-        flag: "🇮🇹"
-    },
-    {
-        code: "nl",
-        label: "Netherlands",
-        flag: "🇳🇱"
     },
     {
         code: "nz",
@@ -134,29 +79,14 @@ const availableLanguages = [
         flag: "🇳🇴"
     },
     {
-        code: "pl",
-        label: "Poland",
-        flag: "🇵🇱"
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
     },
     {
-        code: "pt",
-        label: "Portugal",
-        flag: "🇵🇹"
-    },
-    {
-        code: "sk",
-        label: "Slovakia",
-        flag: "🇸🇰"
-    },
-    {
-        code: "es",
-        label: "Spain",
-        flag: "🇪🇸"
-    },
-    {
-        code: "se",
-        label: "Sweden",
-        flag: "🇸🇪"
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
     },
     {
         code: "ch",
@@ -164,14 +94,64 @@ const availableLanguages = [
         flag: "🇨🇭"
     },
     {
-        code: "tr",
-        label: "Turkey",
-        flag: "🇹🇷"
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
     },
     {
-        code: "gb",
-        label: "United Kingdom",
-        flag: "🇬🇧"
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "cz",
+        label: "Czech",
+        flag: "🇨🇿"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "bg",
+        label: "Bulgaria",
+        flag: "🇧🇬"
     },
     {
         code: "all",
@@ -1123,58 +1103,54 @@ async function initializeI18n() {
     }
     const availableLanguages = [
         "au",
-        "at",
-        "be",
-        "bg",
         "ca",
-        "cz",
-        "dk",
-        "fi",
-        "fr",
         "de",
-        "gr",
-        "hu",
         "ie",
-        "it",
-        "nl",
         "nz",
         "no",
-        "pl",
-        "pt",
-        "sk",
-        "es",
-        "se",
+        "fi",
+        "at",
         "ch",
-        "tr",
-        "gb",
+        "dk",
+        "fr",
+        "it",
+        "pl",
+        "se",
+        "cz",
+        "sk",
+        "be",
+        "gr",
+        "nl",
+        "hu",
+        "bg",
         "all"
     ];
     const availableLanguages1039 = [
         "au",
-        "at",
-        "be",
-        "bg",
         "ca",
-        "cz",
-        "dk",
-        "fi",
-        "fr",
         "de",
-        "gr",
-        "hu",
         "ie",
-        "it",
-        "nl",
         "nz",
         "no",
-        "pl",
-        "pt",
-        "sk",
-        "es",
-        "se",
+        "fi",
+        "at",
         "ch",
-        "tr",
+        "dk",
+        "fr",
+        "it",
+        "es",
+        "pl",
+        "se",
+        "cz",
+        "be",
+        "gr",
         "gb",
+        "nl",
+        "hu",
+        "sk",
+        "bg",
+        "pt",
+        "tr",
         "all"
     ];
     const availableLanguages1043 = [
@@ -1182,25 +1158,33 @@ async function initializeI18n() {
         "us"
     ];
     const availableLanguages1044 = [
-        "au",
-        "at",
-        "be",
-        "ca",
-        "ch",
-        "nl",
-        "de",
-        "cz",
         "fi",
-        "gb",
-        "gr",
-        "ie",
-        "it",
-        "nz",
-        "no",
-        "pl",
-        "za",
         "se",
+        "ca",
+        "nz",
+        "au",
+        "cz",
+        "fr",
+        "za",
+        "nl",
+        "gb",
         "us",
+        "de",
+        "at",
+        "ch",
+        "dk",
+        "it",
+        "es",
+        "pl",
+        "be",
+        "gr",
+        "no",
+        "ie",
+        "pt",
+        "hu",
+        "sk",
+        "bg",
+        "tr",
         "all"
     ];
     const availableLanguagesCLD_VIP = [
@@ -5875,29 +5859,14 @@ const LanguageSwitcher = ()=>{
     const [isLoading, setIsLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const availableLanguages = [
         {
-            code: "bg",
-            label: "Bulgaria",
-            flag: "🇧🇬"
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
-            code: "cz",
-            label: "Czech",
-            flag: "🇨🇿"
-        },
-        {
-            code: "dk",
-            label: "Denmark",
-            flag: "🇩🇰"
-        },
-        {
-            code: "fi",
-            label: "Finland",
-            flag: "🇫🇮"
-        },
-        {
-            code: "fr",
-            label: "France",
-            flag: "🇫🇷"
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
         },
         {
             code: "de",
@@ -5905,24 +5874,14 @@ const LanguageSwitcher = ()=>{
             flag: "🇩🇪"
         },
         {
-            code: "gr",
-            label: "Greece",
-            flag: "🇬🇷"
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
         },
         {
-            code: "hu",
-            label: "Hungary",
-            flag: "🇭🇺"
-        },
-        {
-            code: "it",
-            label: "Italy",
-            flag: "🇮🇹"
-        },
-        {
-            code: "nl",
-            label: "Netherlands",
-            flag: "🇳🇱"
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
         },
         {
             code: "no",
@@ -5930,19 +5889,39 @@ const LanguageSwitcher = ()=>{
             flag: "🇳🇴"
         },
         {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
             code: "pl",
             label: "Poland",
             flag: "🇵🇱"
-        },
-        {
-            code: "sk",
-            label: "Slovakia",
-            flag: "🇸🇰"
-        },
-        {
-            code: "es",
-            label: "Spain",
-            flag: "🇪🇸"
         },
         {
             code: "se",
@@ -5950,13 +5929,43 @@ const LanguageSwitcher = ()=>{
             flag: "🇸🇪"
         },
         {
-            code: "tr",
-            label: "Turkey",
-            flag: "🇹🇷"
+            code: "cz",
+            label: "Czech",
+            flag: "🇨🇿"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "bg",
+            label: "Bulgaria",
+            flag: "🇧🇬"
         },
         {
             code: "all",
-            label: "English",
+            label: "World",
             flag: "🌍"
         }
     ];
@@ -6158,7 +6167,7 @@ const LanguageSwitcher = ()=>{
         children: "Failed to load"
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 102,
+        lineNumber: 107,
         columnNumber: 21
     }, this);
     const changeLanguage = async (lng)=>{
@@ -6181,7 +6190,7 @@ const LanguageSwitcher = ()=>{
                     children: t("Website language")
                 }, void 0, false, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 120,
+                    lineNumber: 125,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -6210,34 +6219,34 @@ const LanguageSwitcher = ()=>{
                                     ]
                                 }, language.code, true, {
                                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                                    lineNumber: 137,
+                                    lineNumber: 142,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 122,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 146,
+                            lineNumber: 151,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 121,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-            lineNumber: 119,
+            lineNumber: 124,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 118,
+        lineNumber: 123,
         columnNumber: 5
     }, this);
 };
@@ -6297,44 +6306,9 @@ const BrandsSwitcher = ()=>{
             flag: "🇦🇺"
         },
         {
-            code: "at",
-            label: "Austria",
-            flag: "🇦🇹"
-        },
-        {
-            code: "be",
-            label: "Belgium",
-            flag: "🇧🇪"
-        },
-        {
-            code: "bg",
-            label: "Bulgaria",
-            flag: "🇧🇬"
-        },
-        {
             code: "ca",
             label: "Canada",
             flag: "🇨🇦"
-        },
-        {
-            code: "cz",
-            label: "Czech",
-            flag: "🇨🇿"
-        },
-        {
-            code: "dk",
-            label: "Denmark",
-            flag: "🇩🇰"
-        },
-        {
-            code: "fi",
-            label: "Finland",
-            flag: "🇫🇮"
-        },
-        {
-            code: "fr",
-            label: "France",
-            flag: "🇫🇷"
         },
         {
             code: "de",
@@ -6342,29 +6316,9 @@ const BrandsSwitcher = ()=>{
             flag: "🇩🇪"
         },
         {
-            code: "gr",
-            label: "Greece",
-            flag: "🇬🇷"
-        },
-        {
-            code: "hu",
-            label: "Hungary",
-            flag: "🇭🇺"
-        },
-        {
             code: "ie",
             label: "Ireland",
             flag: "🇮🇪"
-        },
-        {
-            code: "it",
-            label: "Italy",
-            flag: "🇮🇹"
-        },
-        {
-            code: "nl",
-            label: "Netherlands",
-            flag: "🇳🇱"
         },
         {
             code: "nz",
@@ -6377,29 +6331,14 @@ const BrandsSwitcher = ()=>{
             flag: "🇳🇴"
         },
         {
-            code: "pl",
-            label: "Poland",
-            flag: "🇵🇱"
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
         },
         {
-            code: "pt",
-            label: "Portugal",
-            flag: "🇵🇹"
-        },
-        {
-            code: "sk",
-            label: "Slovakia",
-            flag: "🇸🇰"
-        },
-        {
-            code: "es",
-            label: "Spain",
-            flag: "🇪🇸"
-        },
-        {
-            code: "se",
-            label: "Sweden",
-            flag: "🇸🇪"
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
         },
         {
             code: "ch",
@@ -6407,14 +6346,64 @@ const BrandsSwitcher = ()=>{
             flag: "🇨🇭"
         },
         {
-            code: "tr",
-            label: "Turkey",
-            flag: "🇹🇷"
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
         },
         {
-            code: "gb",
-            label: "United Kingdom",
-            flag: "🇬🇧"
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "cz",
+            label: "Czech",
+            flag: "🇨🇿"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "bg",
+            label: "Bulgaria",
+            flag: "🇧🇬"
         },
         {
             code: "all",
@@ -6836,23 +6825,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 192,
+                        lineNumber: 188,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 181,
+                lineNumber: 177,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 202,
+                lineNumber: 198,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 180,
+        lineNumber: 176,
         columnNumber: 5
     }, this);
 };
