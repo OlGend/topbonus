@@ -59,7 +59,13 @@ const TheHeader = () => {
     return params;
   };
 
-  const urlParams = getParamsFromUrl();
+  let urlParams;
+
+if (typeof window !== "undefined") {
+  urlParams = getParamsFromUrl();
+} else {
+  urlParams = new URLSearchParams(); // Пустой объект для серверной стороны
+}
 
 
 
