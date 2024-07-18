@@ -27,6 +27,7 @@ import BasicModal from "@/components/modal";
 import KeitaroIframe from "@/components/KeitaroIframe";
 import { getBrands } from "@/components/getBrands/getBrands2";
 import { useLanguage } from "@/components/switcher/LanguageContext";
+import { track } from '@vercel/analytics';
 
 const TheHeader = () => {
   const { t } = useTranslation();
@@ -43,9 +44,25 @@ const TheHeader = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [user, setUser] = useState(null);
 
-  const urlParams = new URLSearchParams(
-    typeof window !== "undefined" ? window.location.search : ""
-  );
+  // const urlParams = new URLSearchParams(
+  //   typeof window !== "undefined" ? window.location.search : ""
+  // );
+
+  const getParamsFromUrl = () => {
+    let params = new URLSearchParams(window.location.search);
+    if (!params.has("keyword")) {
+      const hash = window.location.hash;
+      if (hash.includes("?")) {
+        params = new URLSearchParams(hash.split("?")[1]);
+      }
+    }
+    return params;
+  };
+
+  const urlParams = getParamsFromUrl();
+
+
+
   const [load, setLoad] = useState(false);
   const [keywordValue, setKeywordValue] = useState(null);
   const idUserParam = urlParams.get("keyword");
