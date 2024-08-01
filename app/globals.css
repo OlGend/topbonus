@@ -10461,3 +10461,9 @@ main > .topbr {
     margin-right: auto;
   }
 }
+
+
+/* .brandImage img, .slidertop img {
+  filter: drop-shadow(0 0 1px #fff);
+  filter: drop-shadow(0 0mm 2mm rgba(255, 255, 255, 0.367));
+} */

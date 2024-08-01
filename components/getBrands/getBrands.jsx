@@ -5,6 +5,8 @@ export const getBrands = async (categoryBrands, lng) => {
   const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
   const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
 
+
+
   const availableLanguages = [
     { code: "au", label: "Australia", flag: "🇦🇺" },
     { code: "ca", label: "Canada", flag: "🇨🇦" },
@@ -107,11 +109,13 @@ export const getBrands = async (categoryBrands, lng) => {
     { code: "all", label: "World", flag: "🌍" },
   ];
 
+
   const partners = {
     partner1039: { url: api1039, languages: availableLanguages1039 },
     partner1043: { url: api1043, languages: availableLanguages1043 },
     partner1044: { url: api1044, languages: availableLanguages1044 },
     CLD_VIP: { url: apiCLD_VIP, languages: availableLanguagesCLD_VIP },
+    partner1045_b1: { url: apiCLD_VIP, languages: availableLanguagesCLD_VIP },
     default: { url: apiAll, languages: availableLanguages },
   };
 

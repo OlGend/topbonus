@@ -172,6 +172,9 @@ export default function MultipleSelectPlaceholder() {
     case "CLD_VIP":
       newFlag = flagsCLD_VIP;
       break;
+    case "partner1045_b1":
+      newFlag = flagsCLD_VIP;
+      break;
     default:
       newFlag = flags;
       break;

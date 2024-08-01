@@ -654,6 +654,10 @@ const getBrands = async (categoryBrands, lng)=>{
             url: apiCLD_VIP,
             languages: availableLanguagesCLD_VIP
         },
+        partner1045_b1: {
+            url: apiCLD_VIP,
+            languages: availableLanguagesCLD_VIP
+        },
         default: {
             url: apiAll,
             languages: availableLanguages
@@ -1671,6 +1675,10 @@ const getBrands = async (lng)=>{
             url: apiCLD_VIP,
             languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
         },
+        partner1045_b1: {
+            url: apiCLD_VIP,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
+        },
         default: {
             url: apiAll,
             languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages"]
@@ -2033,7 +2041,8 @@ function TopBrands() {
             "partner1039",
             "partner1043",
             "partner1044",
-            "CLD_VIP"
+            "CLD_VIP",
+            "partner1045_b1"
         ];
         function setPartnerSource(keyword) {
             const partner = partners.find((p)=>keyword.includes(p));
@@ -2780,6 +2789,8 @@ async function initializeI18n() {
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
     } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
+    } else if (item === "partner1045_b1") {
         newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
@@ -7717,6 +7728,9 @@ const LanguageSwitcher = ()=>{
         case "CLD_VIP":
             newLng = availableLanguagesCLD_VIP;
             break;
+        case "partner1045_b1":
+            newLng = availableLanguagesCLD_VIP;
+            break;
         default:
             newLng = availableLanguages;
             break;
@@ -7725,7 +7739,7 @@ const LanguageSwitcher = ()=>{
         children: "Failed to load"
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 107,
+        lineNumber: 110,
         columnNumber: 21
     }, this);
     const changeLanguage = async (lng)=>{
@@ -7748,7 +7762,7 @@ const LanguageSwitcher = ()=>{
                     children: t("Website language")
                 }, void 0, false, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 125,
+                    lineNumber: 128,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7777,34 +7791,34 @@ const LanguageSwitcher = ()=>{
                                     ]
                                 }, language.code, true, {
                                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                                    lineNumber: 142,
+                                    lineNumber: 145,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 127,
+                            lineNumber: 130,
                             columnNumber: 11
                         }, this),
                         isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 151,
+                            lineNumber: 154,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 126,
+                    lineNumber: 129,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-            lineNumber: 124,
+            lineNumber: 127,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 123,
+        lineNumber: 126,
         columnNumber: 5
     }, this);
 };
@@ -8345,6 +8359,8 @@ const BrandsSwitcher = ()=>{
         newLng = availableLanguages1044;
     } else if (item === "CLD_VIP") {
         newLng = availableLanguagesCLD_VIP;
+    } else if (item === "partner1045_b1") {
+        newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
     }
@@ -8383,23 +8399,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 188,
+                        lineNumber: 190,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 177,
+                lineNumber: 179,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 198,
+                lineNumber: 200,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 176,
+        lineNumber: 178,
         columnNumber: 5
     }, this);
 };
@@ -8975,6 +8991,9 @@ function MultipleSelectPlaceholder() {
         case "CLD_VIP":
             newFlag = flagsCLD_VIP;
             break;
+        case "partner1045_b1":
+            newFlag = flagsCLD_VIP;
+            break;
         default:
             newFlag = flags;
             break;
@@ -9027,33 +9046,33 @@ function MultipleSelectPlaceholder() {
                         children: t("Your country of residence")
                     }, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 217,
+                        lineNumber: 220,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 218,
+                        lineNumber: 221,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 219,
+                        lineNumber: 222,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                lineNumber: 186,
+                lineNumber: 189,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-            lineNumber: 182,
+            lineNumber: 185,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-        lineNumber: 181,
+        lineNumber: 184,
         columnNumber: 5
     }, this);
 }
@@ -10005,7 +10024,8 @@ const TheHeader = ()=>{
                 "partner1039",
                 "partner1043",
                 "partner1044",
-                "CLD_VIP"
+                "CLD_VIP",
+                "partner1045_b1"
             ];
             partners.forEach((partner)=>{
                 if (data.includes(partner)) {

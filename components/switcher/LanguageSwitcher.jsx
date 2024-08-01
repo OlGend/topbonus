@@ -35,7 +35,7 @@ const LanguageSwitcher = () => {
     { code: "nl", label: "Netherlands", flag: "🇳🇱" },
     { code: "hu", label: "Hungary", flag: "🇭🇺" },
     { code: "bg", label: "Bulgaria", flag: "🇧🇬" },
-    { code: "all", label: "World", flag: "🌍" }
+    { code: "all", label: "World", flag: "🌍" },
   ];
 
   // Define partner-specific language options
@@ -97,6 +97,9 @@ const LanguageSwitcher = () => {
       newLng = availableLanguages1044;
       break;
     case "CLD_VIP":
+      newLng = availableLanguagesCLD_VIP;
+      break;
+    case "partner1045_b1":
       newLng = availableLanguagesCLD_VIP;
       break;
     default:
