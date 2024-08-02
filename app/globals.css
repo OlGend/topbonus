@@ -10571,3 +10571,6 @@ main > .topbr {
 .brandImage img {
   filter: drop-shadow(0 0 1px #ffffffad);
 }
+.banners-anim {
+  margin-bottom: 1.25rem !important;
+}
