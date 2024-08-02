@@ -2684,7 +2684,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18
 async function initializeI18n() {
     let defLng;
     try {
-        const response = await fetch("https://ipapi.co/json");
+        const response = await fetch("https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW");
         const data = await response.json();
         if (typeof window !== "undefined") {
             localStorage.setItem("country", data.country);

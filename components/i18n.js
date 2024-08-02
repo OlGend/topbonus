@@ -8,7 +8,7 @@ async function initializeI18n() {
 
   try {
     const response = await fetch(
-      "https://ipapi.co/json"
+      "https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW"
     );
     const data = await response.json();
     if (typeof window !== "undefined") {

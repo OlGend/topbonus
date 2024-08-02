@@ -9779,6 +9779,7 @@ main > .topbr {
 }
 .banners-anim {
   margin-bottom: 1.25rem !important;
+  margin-top: 1.25rem !important;
 }
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
