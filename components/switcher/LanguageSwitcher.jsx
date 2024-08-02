@@ -58,11 +58,8 @@ const LanguageSwitcher = () => {
     { code: "all", label: "English", flag: "🌍" },
   ];
   const availableLanguagesCLD_VIP = [
-    { code: "au", label: "Australia", flag: "🇦🇺" },
-    { code: "at", label: "Austria", flag: "🇦🇹" },
-    { code: "be", label: "Belgium", flag: "🇧🇪" },
-    { code: "ca", label: "Canada", flag: "🇨🇦" },
-    { code: "ch", label: "Switzerland", flag: "🇨🇭" },
+
+
     { code: "cz", label: "The Czech Republic", flag: "🇨🇿" },
     { code: "de", label: "Germany", flag: "🇩🇪" },
     { code: "dk", label: "Denmark", flag: "🇩🇰" },
@@ -70,11 +67,11 @@ const LanguageSwitcher = () => {
     { code: "fr", label: "France", flag: "🇫🇷" },
     { code: "gr", label: "Greece", flag: "🇬🇷" },
     { code: "hu", label: "Hungary", flag: "🇭🇺" },
-    { code: "ie", label: "Ireland", flag: "🇮🇪" },
     { code: "it", label: "Italy", flag: "🇮🇹" },
+    { code: "nl", label: "Netherlands", flag: "🇳🇱" },
     { code: "no", label: "Norway", flag: "🇳🇴" },
-    { code: "nz", label: "New Zealand", flag: "🇳🇿" },
     { code: "pl", label: "Poland", flag: "🇵🇱" },
+    { code: "es", label: "Spain", flag: "🇪🇸" },
     { code: "se", label: "Sweden", flag: "🇸🇪" },
     { code: "sk", label: "Slovakia", flag: "🇸🇰" },
     { code: "all", label: "World", flag: "🌍" },
