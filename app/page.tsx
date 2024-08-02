@@ -34,7 +34,7 @@ export default async function Home() {
       </div>
 
       <Tournament />
-      <TopBrandsRandom />
+      {/* <TopBrandsRandom /> */}
 
       <NewArrivals />
       
