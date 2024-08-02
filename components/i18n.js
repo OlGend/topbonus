@@ -523,6 +523,8 @@ async function initializeI18n() {
           "* Explore the Hottest New Brands –",
         "Click Here!": "Click Here!",
         "Expires in:": "Expires in:",
+        "BIGGEST JACKPOTS": "BIGGEST JACKPOTS",
+        "TOP TOURNAMENTS": "TOP TOURNAMENTS",
       },
     },
 
@@ -898,6 +900,8 @@ async function initializeI18n() {
           "* Odkrywaj Najgorętsze Nowe Kasyna –",
         "Click Here!": "Kliknij tutaj!",
         "Expires in:": "Wygasa za:",
+        "BIGGEST JACKPOTS": "NAJWIĘKSZE JACKPOTY",
+        "TOP TOURNAMENTS": "TOP TURNIEJE"
       },
     },
     de: {
@@ -1272,6 +1276,8 @@ async function initializeI18n() {
           "* Entdecken Sie die heißesten neuen Casinos -",
         "Click Here!": "Klicken Sie hier!",
         "Expires in:": "Läuft ab in:",
+        "BIGGEST JACKPOTS": "GRÖSSTE JACKPOTS",
+        "TOP TOURNAMENTS": "TOP TURNIERE"
       },
     },
     bg: {
@@ -1644,6 +1650,8 @@ async function initializeI18n() {
           "* Разгледайте най-горещите нови казина -",
         "Click Here!": "Кликни тук!",
         "Expires in:": "Изтича след:",
+        "BIGGEST JACKPOTS": "НАЙ-ГОЛЕМИТЕ ДЖАКПОТИ",
+        "TOP TOURNAMENTS": "ТОП ТУРНИРИ"
       },
     },
     cz: {
@@ -2016,6 +2024,8 @@ async function initializeI18n() {
           "* Prozkoumejte nejžhavější nová kasina -",
         "Click Here!": "Klikněte zde!",
         "Expires in:": "Vyprší za:",
+        "BIGGEST JACKPOTS": "NEJVĚTŠÍ JACKPOTY",
+        "TOP TOURNAMENTS": "NEJLEPŠÍ TURNAJE"
       },
     },
     dk: {
@@ -2387,6 +2397,8 @@ async function initializeI18n() {
           "* Udforsk de nyeste og mest populære casinoer -",
         "Click Here!": "Klik her!",
         "Expires in:": "Udløber om:",
+        "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
+        "TOP TOURNAMENTS": "TOP TURNERINGER"
       },
     },
     nl: {
@@ -2759,6 +2771,8 @@ async function initializeI18n() {
           "* Verken de Heetste Nieuwe Casino's -",
         "Click Here!": "Klik hier!",
         "Expires in:": "Verloopt in:",
+        "BIGGEST JACKPOTS": "GROOTSTE JACKPOTS",
+        "TOP TOURNAMENTS": "TOP TOERNOOIEN"
       },
     },
     es: {
@@ -3131,6 +3145,8 @@ async function initializeI18n() {
           "* Explora los casinos más nuevos y populares –",
         "Click Here!": "¡Haz clic aquí!",
         "Expires in:": "Caduca en:",
+        "BIGGEST JACKPOTS": "LOS MAYORES JACKPOTS",
+        "TOP TOURNAMENTS": "LOS MEJORES TORNEOS"
       },
     },
     fi: {
@@ -3503,6 +3519,8 @@ async function initializeI18n() {
           "* Tutustu uusimpiin ja kuumimpiin kasinoihin –",
         "Click Here!": "Klikkaa tästä!",
         "Expires in:": "Vanhenee:",
+        "BIGGEST JACKPOTS": "SUURIMMAT JACKPOTIT",
+        "TOP TOURNAMENTS": "HUIPPU TURNAUKSET"
       },
     },
     fr: {
@@ -3875,6 +3893,8 @@ async function initializeI18n() {
           "* Découvrez les nouveaux casinos les plus populaires -",
         "Click Here!": "Cliquez ici!",
         "Expires in:": "Expire dans:",
+        "BIGGEST JACKPOTS": "PLUS GROS JACKPOTS",
+        "TOP TOURNAMENTS": "MEILLEURS TOURNOIS"
       },
     },
 
@@ -4248,6 +4268,8 @@ async function initializeI18n() {
           "* Εξερευνήστε τα πιο δημοφιλή νέα καζίνο -",
         "Click Here!": "Κάντε κλικ εδώ!",
         "Expires in:": "Λήγει σε:",
+        "BIGGEST JACKPOTS": "ΜΕΓΑΛΥΤΕΡΑ ΤΖΑΚΠΟΤ",
+        "TOP TOURNAMENTS": "ΚΟΡΥΦΑΙΑ ΤΟΥΡΝΟΥΑ"
       },
     },
     hu: {
@@ -4620,6 +4642,8 @@ async function initializeI18n() {
           "* Fedezze fel a legforróbb új kaszinókat -",
         "Click Here!": "Kattints ide!",
         "Expires in:": "Lejár:",
+        "BIGGEST JACKPOTS": "LEGNAGYOBB JACKPOTOK",
+        "TOP TOURNAMENTS": "TOP VERSENYEK"
       },
     },
     it: {
@@ -4992,6 +5016,8 @@ async function initializeI18n() {
           "* Esplora i nuovi casinò più caldi -",
         "Click Here!": "Clicca qui!",
         "Expires in:": "Scade tra:",
+        "BIGGEST JACKPOTS": "I PIÙ GRANDI JACKPOT",
+        "TOP TOURNAMENTS": "I MIGLIORI TORNEI"
       },
     },
     no: {
@@ -5364,6 +5390,8 @@ async function initializeI18n() {
           "* Utforsk de nyeste og mest populære casinoene -",
         "Click Here!": "Klikk her!",
         "Expires in:": "Utløper om:",
+        "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
+        "TOP TOURNAMENTS": "TOP TURNERINGER"
       },
     },
     pt: {
@@ -5736,6 +5764,8 @@ async function initializeI18n() {
           "* Explore os Novos Cassinos Mais Quentes -",
         "Click Here!": "Clique aqui!",
         "Expires in:": "Expira em:",
+        "BIGGEST JACKPOTS": "MAIORES JACKPOTS",
+        "TOP TOURNAMENTS": "MELHORES TORNEIOS"
       },
     },
     se: {
@@ -6109,6 +6139,8 @@ async function initializeI18n() {
           "* Utforska de hetaste nya casinona -",
         "Click Here!": "Klicka här!",
         "Expires in:": "Utgår om:",
+        "BIGGEST JACKPOTS": "STÖRSTA JACKPOTS",
+        "TOP TOURNAMENTS": "TOP TURNERINGAR"
       },
     },
     sk: {
@@ -6481,6 +6513,8 @@ async function initializeI18n() {
           "* Preskúmajte najnovšie kasína -",
         "Click Here!": "Kliknite tu!",
         "Expires in:": "Vyprší o:",
+        "BIGGEST JACKPOTS": "NAJVÄČŠIE JACKPOTY",
+        "TOP TOURNAMENTS": "NAJLEPŠIE TURNAJE"
       },
     },
     tr: {
@@ -6851,6 +6885,8 @@ async function initializeI18n() {
           "* En Yeni ve En Popüler Casinoları Keşfedin –",
         "Click Here!": "Buraya Tıkla!",
         "Expires in:": "Sona erme tarihi:",
+        "BIGGEST JACKPOTS": "EN BÜYÜK JACKPOTLAR",
+        "TOP TOURNAMENTS": "EN İYİ TURNUVALAR"
       },
     },
   };

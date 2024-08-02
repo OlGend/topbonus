@@ -12,8 +12,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$TopBrandsRando
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$FilteredHome$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Brands_home/FilteredHome.jsx (ecmascript, rsc)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$fortune$2f$index$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/fortune/index.jsx (ecmascript, rsc)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$newArrivals$2f$NewArrivals$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/newArrivals/NewArrivals.jsx (ecmascript, rsc)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Tournament$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Tournament.jsx (ecmascript, rsc)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$UserBrands$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Brands_home/UserBrands.tsx (ecmascript, rsc)");
 "__TURBOPACK__ecmascript__hoisting__location__";
+;
 ;
 ;
 ;
@@ -33,29 +35,34 @@ async function Home() {
         children: [
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$TopBrands$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/app/page.tsx>",
-                lineNumber: 28,
+                lineNumber: 29,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "main__container mt-3",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$UserBrands$2e$tsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "<[project]/app/page.tsx>",
-                    lineNumber: 32,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/app/page.tsx>",
-                lineNumber: 31,
+                lineNumber: 32,
+                columnNumber: 7
+            }, this),
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Tournament$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                fileName: "<[project]/app/page.tsx>",
+                lineNumber: 36,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$TopBrandsRandom$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/app/page.tsx>",
-                lineNumber: 34,
+                lineNumber: 37,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$newArrivals$2f$NewArrivals$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/app/page.tsx>",
-                lineNumber: 36,
+                lineNumber: 39,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -66,24 +73,24 @@ async function Home() {
                     creative: creative
                 }, void 0, false, {
                     fileName: "<[project]/app/page.tsx>",
-                    lineNumber: 40,
+                    lineNumber: 43,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/app/page.tsx>",
-                lineNumber: 39,
+                lineNumber: 42,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "background-block",
                 children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$FilteredHome$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "<[project]/app/page.tsx>",
-                    lineNumber: 44,
+                    lineNumber: 47,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/app/page.tsx>",
-                lineNumber: 43,
+                lineNumber: 46,
                 columnNumber: 7
             }, this)
         ]
