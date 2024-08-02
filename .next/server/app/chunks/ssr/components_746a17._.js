@@ -537,14 +537,19 @@ const getBrands = async (categoryBrands, lng)=>{
     ];
     const availableLanguagesCLD_VIP = [
         {
-            code: "au",
-            label: "Australia",
-            flag: "🇦🇺"
+            code: "all",
+            label: "All",
+            flag: "🌍"
         },
         {
             code: "at",
             label: "Austria",
             flag: "🇦🇹"
+        },
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
             code: "be",
@@ -563,7 +568,7 @@ const getBrands = async (categoryBrands, lng)=>{
         },
         {
             code: "cz",
-            label: "The Czech Republic",
+            label: "Czech Republic",
             flag: "🇨🇿"
         },
         {
@@ -577,6 +582,11 @@ const getBrands = async (categoryBrands, lng)=>{
             flag: "🇩🇰"
         },
         {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
+        },
+        {
             code: "fi",
             label: "Finland",
             flag: "🇫🇮"
@@ -585,6 +595,11 @@ const getBrands = async (categoryBrands, lng)=>{
             code: "fr",
             label: "France",
             flag: "🇫🇷"
+        },
+        {
+            code: "gb",
+            label: "United Kingdom",
+            flag: "🇬🇧"
         },
         {
             code: "gr",
@@ -605,6 +620,11 @@ const getBrands = async (categoryBrands, lng)=>{
             code: "it",
             label: "Italy",
             flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
         },
         {
             code: "no",
@@ -630,11 +650,6 @@ const getBrands = async (categoryBrands, lng)=>{
             code: "sk",
             label: "Slovakia",
             flag: "🇸🇰"
-        },
-        {
-            code: "all",
-            label: "World",
-            flag: "🌍"
         }
     ];
     const partners = {
@@ -2655,7 +2670,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18
 async function initializeI18n() {
     let defLng;
     try {
-        const response = await fetch("https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW");
+        const response = await fetch("https://ipapi.co/json");
         const data = await response.json();
         if (typeof window !== "undefined") {
             localStorage.setItem("country", data.country);
@@ -3050,7 +3065,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
                 "* Explore the Hottest New Brands –": "* Explore the Hottest New Brands –",
                 "Click Here!": "Click Here!",
-                "Expires in:": "Expires in:"
+                "Expires in:": "Expires in:",
+                "BIGGEST JACKPOTS": "BIGGEST JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TOURNAMENTS"
             }
         },
         pl: {
@@ -8246,14 +8263,19 @@ const BrandsSwitcher = ()=>{
     ];
     const availableLanguagesCLD_VIP = [
         {
-            code: "au",
-            label: "Australia",
-            flag: "🇦🇺"
+            code: "all",
+            label: "All",
+            flag: "🌍"
         },
         {
             code: "at",
             label: "Austria",
             flag: "🇦🇹"
+        },
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
             code: "be",
@@ -8272,7 +8294,7 @@ const BrandsSwitcher = ()=>{
         },
         {
             code: "cz",
-            label: "The Czech Republic",
+            label: "Czech Republic",
             flag: "🇨🇿"
         },
         {
@@ -8286,6 +8308,11 @@ const BrandsSwitcher = ()=>{
             flag: "🇩🇰"
         },
         {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
+        },
+        {
             code: "fi",
             label: "Finland",
             flag: "🇫🇮"
@@ -8294,6 +8321,11 @@ const BrandsSwitcher = ()=>{
             code: "fr",
             label: "France",
             flag: "🇫🇷"
+        },
+        {
+            code: "gb",
+            label: "United Kingdom",
+            flag: "🇬🇧"
         },
         {
             code: "gr",
@@ -8314,6 +8346,11 @@ const BrandsSwitcher = ()=>{
             code: "it",
             label: "Italy",
             flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
         },
         {
             code: "no",
@@ -8339,11 +8376,6 @@ const BrandsSwitcher = ()=>{
             code: "sk",
             label: "Slovakia",
             flag: "🇸🇰"
-        },
-        {
-            code: "all",
-            label: "World",
-            flag: "🌍"
         }
     ];
     let item;
@@ -8399,23 +8431,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 190,
+                        lineNumber: 193,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 179,
+                lineNumber: 182,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 200,
+                lineNumber: 203,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 178,
+        lineNumber: 181,
         columnNumber: 5
     }, this);
 };
@@ -8867,14 +8899,19 @@ function MultipleSelectPlaceholder() {
     ];
     const flagsCLD_VIP = [
         {
-            code: "au",
-            label: "Australia",
-            flag: "🇦🇺"
+            code: "all",
+            label: "All",
+            flag: "🌍"
         },
         {
             code: "at",
             label: "Austria",
             flag: "🇦🇹"
+        },
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
             code: "be",
@@ -8893,7 +8930,7 @@ function MultipleSelectPlaceholder() {
         },
         {
             code: "cz",
-            label: "The Czech Republic",
+            label: "Czech Republic",
             flag: "🇨🇿"
         },
         {
@@ -8907,6 +8944,11 @@ function MultipleSelectPlaceholder() {
             flag: "🇩🇰"
         },
         {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
+        },
+        {
             code: "fi",
             label: "Finland",
             flag: "🇫🇮"
@@ -8915,6 +8957,11 @@ function MultipleSelectPlaceholder() {
             code: "fr",
             label: "France",
             flag: "🇫🇷"
+        },
+        {
+            code: "gb",
+            label: "United Kingdom",
+            flag: "🇬🇧"
         },
         {
             code: "gr",
@@ -8935,6 +8982,11 @@ function MultipleSelectPlaceholder() {
             code: "it",
             label: "Italy",
             flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
         },
         {
             code: "no",
@@ -8960,11 +9012,6 @@ function MultipleSelectPlaceholder() {
             code: "sk",
             label: "Slovakia",
             flag: "🇸🇰"
-        },
-        {
-            code: "all",
-            label: "World",
-            flag: "🌍"
         }
     ];
     const [lng, setLng] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
@@ -9046,33 +9093,33 @@ function MultipleSelectPlaceholder() {
                         children: t("Your country of residence")
                     }, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 220,
+                        lineNumber: 223,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 221,
+                        lineNumber: 224,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 222,
+                        lineNumber: 225,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                lineNumber: 189,
+                lineNumber: 192,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-            lineNumber: 185,
+            lineNumber: 188,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-        lineNumber: 184,
+        lineNumber: 187,
         columnNumber: 5
     }, this);
 }
