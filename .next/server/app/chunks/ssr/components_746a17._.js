@@ -1557,14 +1557,14 @@ const availableLanguages1044 = [
 ];
 const availableLanguagesCLD_VIP = [
     {
-        code: "au",
-        label: "Australia",
-        flag: "🇦🇺"
-    },
-    {
         code: "at",
         label: "Austria",
         flag: "🇦🇹"
+    },
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
     },
     {
         code: "be",
@@ -1583,7 +1583,7 @@ const availableLanguagesCLD_VIP = [
     },
     {
         code: "cz",
-        label: "The Czech Republic",
+        label: "Czech Republic",
         flag: "🇨🇿"
     },
     {
@@ -1597,6 +1597,11 @@ const availableLanguagesCLD_VIP = [
         flag: "🇩🇰"
     },
     {
+        code: "es",
+        label: "Spain",
+        flag: "🇪🇸"
+    },
+    {
         code: "fi",
         label: "Finland",
         flag: "🇫🇮"
@@ -1605,6 +1610,11 @@ const availableLanguagesCLD_VIP = [
         code: "fr",
         label: "France",
         flag: "🇫🇷"
+    },
+    {
+        code: "gb",
+        label: "United Kingdom",
+        flag: "🇬🇧"
     },
     {
         code: "gr",
@@ -1625,6 +1635,11 @@ const availableLanguagesCLD_VIP = [
         code: "it",
         label: "Italy",
         flag: "🇮🇹"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
     },
     {
         code: "no",
@@ -1653,7 +1668,7 @@ const availableLanguagesCLD_VIP = [
     },
     {
         code: "all",
-        label: "World",
+        label: "All",
         flag: "🌍"
     }
 ];
@@ -2770,27 +2785,29 @@ async function initializeI18n() {
         "all"
     ];
     const availableLanguagesCLD_VIP = [
-        "au",
+        "all",
         "at",
+        "au",
         "be",
         "ca",
         "ch",
         "cz",
         "de",
         "dk",
+        "es",
         "fi",
         "fr",
+        "gb",
         "gr",
         "hu",
         "ie",
         "it",
+        "nl",
         "no",
         "nz",
         "pl",
         "se",
-        "sk",
-        "sk",
-        "all"
+        "sk"
     ];
     let item;
     if (typeof window !== "undefined") {
@@ -7862,7 +7879,7 @@ const BrandsSwitcher = ()=>{
     const { language, setLanguage } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const ipData = async ()=>{
         try {
-            const response = await fetch("https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW");
+            const response = await fetch("https://ipapi.co/json");
             const data = await response.json();
             if (data.country) {
                 setLanguage(data.country.toLowerCase());

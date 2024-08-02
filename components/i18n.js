@@ -107,27 +107,29 @@ async function initializeI18n() {
     "all",
   ];
   const availableLanguagesCLD_VIP = [
-    "au",
+    "all",
     "at",
+    "au",
     "be",
     "ca",
     "ch",
     "cz",
     "de",
     "dk",
+    "es",
     "fi",
     "fr",
+    "gb",
     "gr",
     "hu",
     "ie",
     "it",
+    "nl",
     "no",
     "nz",
     "pl",
     "se",
-    "sk",
-    "sk",
-    "all",
+    "sk"
   ];
 
   let item;
