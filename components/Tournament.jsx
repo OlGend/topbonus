@@ -149,6 +149,7 @@ export default function Tournament() {
             loading="lazy"
             className="floating-image cup2"
           />
+          
           <a
             target="_blank"
             href={`${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`}
