@@ -8,6 +8,7 @@ import Fortunes from "@/components/fortune";
 import NewArrivals from "@/components/newArrivals/NewArrivals";
 // import Tournament from "@/components/Tournament";
 // import TimeModal from "@/components/TimeModal";
+import Tournament from "@/components/Tournament";
 
 import UserBrands from "@/components/Brands_home/UserBrands";
 // import KeitaroIframe from "@/components/KeitaroIframe";
@@ -32,7 +33,9 @@ export default async function Home() {
       <div className="main__container mt-3">
         <UserBrands />
       </div>
-      <TopBrandsRandom />
+
+      <Tournament />
+      {/* <TopBrandsRandom /> */}
 
       <NewArrivals />
       

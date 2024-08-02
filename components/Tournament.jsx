@@ -5,6 +5,11 @@ import Link from "next/link";
 import imgrandom from "@/public/coins_banner2.jpg";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { useTranslation } from "react-i18next";
+import coin1 from "@/public/coin_01.png";
+import coin2 from "@/public/coin_02.png";
+import cup1 from "@/public/cup.png";
+import cup2 from "@/public/cup-1.png";
+import diamond from "@/public/diamond.png";
 
 export default function Tournament() {
   const [newUrl, setNewUrl] = useState("");
@@ -67,39 +72,91 @@ export default function Tournament() {
     if (savedUrl) {
       setNewUrl(savedUrl);
     }
-
-
   }, [language]);
 
   useEffect(() => {
     let url = "";
     switch (source) {
       case "partner1039":
-        url = "https://info.topbon.us/partner_aurnd";
+        url = "https://link.reg2dep.business/topbonus_rnd39";
         break;
       case "partner1043":
-        url = "https://info.topbon.us/rnd1043";
+        url = "https://link.reg2dep.business/topbonus_rnd43";
         break;
       case "partner1044":
-        url = "https://info.topbon.us/rnd1044";
+        url = "https://link.reg2dep.business/topbonus_rnd44";
         break;
       case "CLD_VIP":
-        url = "https://link.bo-nus.com/rnd_cld";
+        url = "https://link.reg2dep.business/topbonus_rndcld";
         break;
       case "partner1045_b1":
-        url = "https://link.bo-nus.com/rnd_cld";
+        url = "https://link.reg2dep.business/topbonus_rndcld";
         break;
       default:
-        url = "https://info.topbon.us/aurnd";
+        url = "https://link.reg2dep.business/topbonus_rnd";
     }
+
     setRedirectUrl(url);
   }, [source]);
 
   return (
     <>
-      <div className="preview2 flex flex-col">
-        <div className="main__container flex items-center">
-       
+      <div className="main__container banners-anim flex items-center justify-between mt-5 mb-5">
+        <div className="banner-animation animation1">
+          <h3>{t("BIGGEST JACKPOTS")}</h3>
+          <Image
+            src={coin1}
+            alt="coin"
+            width={86}
+            loading="lazy"
+            className="floating-image coin1"
+          />
+          <Image
+            src={coin2}
+            alt="coin"
+            width={83}
+            loading="lazy"
+            className="floating-image coin2"
+          />
+          <Image
+            src={diamond}
+            alt="coin"
+            width={80}
+            loading="lazy"
+            className="floating-image diamond"
+          />
+          <a
+            href={`${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`}
+            className="btn btn-primary btn-tournament"
+            target="_blank"
+          >
+            {t("Play Now")}
+          </a>
+        </div>
+        <div className="banner-animation animation2">
+          <h3>{t("TOP TOURNAMENTS")}</h3>
+          <Image
+            src={cup1}
+            alt="coin"
+            width={180}
+            loading="lazy"
+            className="floating-image cup1"
+          />
+          <Image
+            src={cup2}
+            alt="coin"
+            width={180}
+            loading="lazy"
+            className="floating-image cup2"
+          />
+
+          <a
+            target="_blank"
+            href={`${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`}
+            className="btn btn-primary btn-tournament"
+          >
+            {t("Play Now")}
+          </a>
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["chunks/ssr/node_modules_c5f61f._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["chunks/ssr/components_4119c1._.js", {
 
 "[project]/components/TopBrands.jsx (ecmascript, chunks, rsc)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname }) => (() => {
 
@@ -170,45 +170,75 @@ var __TURBOPACK__imported__module__$5b$next$5d2f$entry$2f$app$2f$server$2d$to$2d
 __turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$next$5d2f$entry$2f$app$2f$server$2d$to$2d$client$2d$ssr$2e$tsx$2f28$CLIENT_MODULE$292f5b$project$5d2f$components$2f$TopBrands$2e$jsx__$28$ecmascript$2c$__with__chunking__context__scope$292f28$CLIENT_CHUNKS$292f5b$project$5d2f$components$2f$TopBrands$2e$jsx__$28$ecmascript$2c$__chunks$29$__$28$ecmascript$29$__["default"]);
 
 })()),
-"[project]/components/TopBrandsRandom.jsx (ecmascript, chunks, rsc)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname }) => (() => {
+"[project]/components/Tournament.jsx (ecmascript, chunks, rsc)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname }) => (() => {
 
 __turbopack_esm__({
-    default: () => "[project]/components/TopBrandsRandom.jsx (ecmascript)",
+    default: () => "[project]/components/Tournament.jsx (ecmascript)",
     chunks: () => chunks,
 });
 const chunks = [
   {
-    "path": "_next/static/chunks/public_coins_banner2_jpg_mjs_42a69f._.js",
+    "path": "_next/static/chunks/public_coins_banner2_jpg_mjs_c00bef._.js",
     "included": [
       "[project]/public/coins_banner2.jpg.mjs/(IMAGE)/[project]/public/coins_banner2.jpg (static) (structured image object, ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/components_TopBrandsRandom_jsx_b53fce._.js",
+    "path": "_next/static/chunks/public_coin_01_png_mjs_a8d67b._.js",
     "included": [
-      "[project]/components/TopBrandsRandom.jsx (ecmascript)"
+      "[project]/public/coin_01.png.mjs/(IMAGE)/[project]/public/coin_01.png (static) (structured image object, ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_inherits_inherits_browser_f5cf02.js",
+    "path": "_next/static/chunks/public_coin_02_png_mjs_be335e._.js",
+    "included": [
+      "[project]/public/coin_02.png.mjs/(IMAGE)/[project]/public/coin_02.png (static) (structured image object, ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/public_cup_png_mjs_84c33f._.js",
+    "included": [
+      "[project]/public/cup.png.mjs/(IMAGE)/[project]/public/cup.png (static) (structured image object, ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/public_cup-1_png_mjs_ee519b._.js",
+    "included": [
+      "[project]/public/cup-1.png.mjs/(IMAGE)/[project]/public/cup-1.png (static) (structured image object, ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/public_diamond_png_mjs_15fe65._.js",
+    "included": [
+      "[project]/public/diamond.png.mjs/(IMAGE)/[project]/public/diamond.png (static) (structured image object, ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/components_Tournament_jsx_b53fce._.js",
+    "included": [
+      "[project]/components/Tournament.jsx (ecmascript)"
+    ]
+  },
+  {
+    "path": "_next/static/chunks/node_modules_inherits_inherits_browser_cbf060.js",
     "included": [
       "[project]/node_modules/inherits/inherits_browser.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_util_util_a0d290.js",
+    "path": "_next/static/chunks/node_modules_util_util_4a2ad1.js",
     "included": [
       "[project]/node_modules/util/util.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/0df90_inherits_inherits_browser_890db3.js",
+    "path": "_next/static/chunks/0df90_inherits_inherits_browser_63fd29.js",
     "included": [
       "[project]/node_modules/util/node_modules/inherits/inherits_browser.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_next_f14058._.js",
+    "path": "_next/static/chunks/node_modules_next_70fa6f._.js",
     "included": [
       "[project]/node_modules/next/image.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/process/browser.js (ecmascript)",
@@ -216,71 +246,71 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_next_link_f8b909.js",
+    "path": "_next/static/chunks/node_modules_next_link_d8a3ae.js",
     "included": [
       "[project]/node_modules/next/link.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_next_dist_compiled_react_226c08._.js",
+    "path": "_next/static/chunks/node_modules_next_dist_compiled_react_f348c2._.js",
     "included": [
       "[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript)",
       "[project]/node_modules/next/dist/compiled/react/index.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_void-elements_index_d79bf2.js",
+    "path": "_next/static/chunks/node_modules_void-elements_index_816dba.js",
     "included": [
       "[project]/node_modules/void-elements/index.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_html-parse-stringify_dist_html-parse-stringify_module_f19bab.js",
+    "path": "_next/static/chunks/node_modules_html-parse-stringify_dist_html-parse-stringify_module_45e491.js",
     "included": [
       "[project]/node_modules/html-parse-stringify/dist/html-parse-stringify.module.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_wildcard_cjs_fc7ed3._.js",
+    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_wildcard_cjs_7f2b78._.js",
     "included": [
       "[project]/node_modules/@swc/helpers/cjs/_interop_require_wildcard.cjs (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_default_cjs_c515f6._.js",
+    "path": "_next/static/chunks/node_modules_@swc_helpers_cjs__interop_require_default_cjs_363791._.js",
     "included": [
       "[project]/node_modules/@swc/helpers/cjs/_interop_require_default.cjs (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_wildcard_e62699.js",
+    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_wildcard_5da887.js",
     "included": [
       "[project]/node_modules/@swc/helpers/esm/_interop_require_wildcard.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_default_3f1681.js",
+    "path": "_next/static/chunks/node_modules_@swc_helpers_esm__interop_require_default_d2da1a.js",
     "included": [
       "[project]/node_modules/@swc/helpers/esm/_interop_require_default.js (ecmascript)"
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_react-i18next_dist_es_index_22923c.js",
+    "path": "_next/static/chunks/node_modules_react-i18next_dist_es_index_34a380.js",
     "included": [
       "[project]/node_modules/react-i18next/dist/es/index.js (ecmascript)"
     ]
   },
-  "_next/static/chunks/components_TopBrandsRandom_jsx_5771e1._.js"
+  "_next/static/chunks/components_Tournament_jsx_5771e1._.js"
 ];
 
 })()),
-"[project]/components/TopBrandsRandom.jsx (ecmascript, rsc)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+"[project]/components/Tournament.jsx (ecmascript, rsc)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
 
-var __TURBOPACK__imported__module__$5b$next$5d2f$entry$2f$app$2f$server$2d$to$2d$client$2d$ssr$2e$tsx$2f28$CLIENT_MODULE$292f5b$project$5d2f$components$2f$TopBrandsRandom$2e$jsx__$28$ecmascript$2c$__with__chunking__context__scope$292f28$CLIENT_CHUNKS$292f5b$project$5d2f$components$2f$TopBrandsRandom$2e$jsx__$28$ecmascript$2c$__chunks$29$__$28$ecmascript$29$__ = __turbopack_import__("[next]/entry/app/server-to-client-ssr.tsx/(CLIENT_MODULE)/[project]/components/TopBrandsRandom.jsx (ecmascript, with chunking context scope)/(CLIENT_CHUNKS)/[project]/components/TopBrandsRandom.jsx (ecmascript, chunks) (ecmascript, rsc)");
+var __TURBOPACK__imported__module__$5b$next$5d2f$entry$2f$app$2f$server$2d$to$2d$client$2d$ssr$2e$tsx$2f28$CLIENT_MODULE$292f5b$project$5d2f$components$2f$Tournament$2e$jsx__$28$ecmascript$2c$__with__chunking__context__scope$292f28$CLIENT_CHUNKS$292f5b$project$5d2f$components$2f$Tournament$2e$jsx__$28$ecmascript$2c$__chunks$29$__$28$ecmascript$29$__ = __turbopack_import__("[next]/entry/app/server-to-client-ssr.tsx/(CLIENT_MODULE)/[project]/components/Tournament.jsx (ecmascript, with chunking context scope)/(CLIENT_CHUNKS)/[project]/components/Tournament.jsx (ecmascript, chunks) (ecmascript, rsc)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "TURBOPACK { transition: server-to-client }";
 ;
-__turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$next$5d2f$entry$2f$app$2f$server$2d$to$2d$client$2d$ssr$2e$tsx$2f28$CLIENT_MODULE$292f5b$project$5d2f$components$2f$TopBrandsRandom$2e$jsx__$28$ecmascript$2c$__with__chunking__context__scope$292f28$CLIENT_CHUNKS$292f5b$project$5d2f$components$2f$TopBrandsRandom$2e$jsx__$28$ecmascript$2c$__chunks$29$__$28$ecmascript$29$__["default"]);
+__turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$next$5d2f$entry$2f$app$2f$server$2d$to$2d$client$2d$ssr$2e$tsx$2f28$CLIENT_MODULE$292f5b$project$5d2f$components$2f$Tournament$2e$jsx__$28$ecmascript$2c$__with__chunking__context__scope$292f28$CLIENT_CHUNKS$292f5b$project$5d2f$components$2f$Tournament$2e$jsx__$28$ecmascript$2c$__chunks$29$__$28$ecmascript$29$__["default"]);
 
 })()),
 "[project]/components/TheHeader.jsx (ecmascript, chunks, rsc)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname }) => (() => {
@@ -1307,4 +1337,4 @@ __turbopack_export_namespace__(__TURBOPACK__imported__module__$5b$next$5d2f$entr
 })()),
 }]);
 
-//# sourceMappingURL=node_modules_c5f61f._.js.map
+//# sourceMappingURL=components_4119c1._.js.map

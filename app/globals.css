@@ -8389,7 +8389,6 @@ input.error {
     transform: rotate(-45deg) translate(6px, -6px);
   }
   .topbr .main__container .flex .review-bonus {
- 
     font-size: 13px !important;
     line-height: 17px !important;
   }
@@ -8407,7 +8406,6 @@ input.error {
     max-width: 150px !important;
   }
   .topbr .main__container .flex .secondbanner {
-
   }
   /* .burger-icon {
     // Style your burger icon button here
@@ -10375,12 +10373,14 @@ span.descriptions {
   }
 }
 
-.btn.target-top-new-releases {
+.btn.target-top-new-releases,
+.btn.btn-tournament {
   position: relative;
   overflow: hidden;
 }
 
-.btn.target-top-new-releases:before {
+.btn.target-top-new-releases:before,
+.btn.btn-tournament:before {
   content: "";
   position: absolute;
   width: 100px;
@@ -10462,8 +10462,115 @@ main > .topbr {
   }
 }
 
-
-/* .brandImage img, .slidertop img {
-  filter: drop-shadow(0 0 1px #fff);
-  filter: drop-shadow(0 0mm 2mm rgba(255, 255, 255, 0.367));
-} */
+.animation1 {
+  background: url(/bj.png) no-repeat center !important;
+}
+.animation2 {
+  background: url(/tt.png) no-repeat center !important;
+}
+.banner-animation {
+  min-height: 250px;
+  min-width: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+.animation1 h3,
+.animation2 h3 {
+  font-size: 40px;
+  color: #fff;
+}
+.banner-animation .btn {
+  font-size: 16px;
+  border: 1px solid #fff;
+  margin-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.coin1 {
+  position: absolute;
+  left: 10px;
+  bottom: 0;
+}
+.coin2 {
+  position: absolute;
+  right: 30px;
+  bottom: 0;
+}
+.cup1 {
+  position: absolute;
+  left: 0px;
+  bottom: -30px;
+}
+.cup2 {
+  position: absolute;
+  right: 0px;
+  bottom: -30px;
+}
+.diamond {
+  position: absolute;
+  right: 30px;
+  top: 0;
+}
+.floating-image {
+  animation: float 3s ease-in-out infinite; /* Apply the animation */
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banners-anim {
+    flex-direction: column;
+  }
+  .banner-animation {
+    min-height: initial;
+    min-width: 100%;
+    padding: 30px 0;
+    margin-top: 10px;
+    background-size: cover !important;
+  }
+  .animation1 h3,
+  .animation2 h3 {
+    font-size: 20px;
+    color: #fff;
+  }
+  .banner-animation .btn {
+    font-size: 13px;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+  }
+  .coin1 {
+    max-width: 35px;
+  }
+  .coin2 {
+    max-width: 34px;
+  }
+  .cup1 {
+    max-width: 100px;
+    bottom: -20px;
+  }
+  .cup2 {
+    max-width: 100px;
+    bottom: -20px;
+  }
+  .diamond {
+    max-width: 30px;
+  }
+}
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0); /* Start and end at the same position */
+  }
+  50% {
+    transform: translateY(-20px); /* Move the image up by 20 pixels */
+  }
+}
+.brandImage img {
+  filter: drop-shadow(0 0 1px #ffffffad);
+}
+.banners-anim {
+  margin-bottom: 1.25rem !important;
+}
