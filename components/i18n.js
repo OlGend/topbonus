@@ -523,6 +523,8 @@ async function initializeI18n() {
           "* Explore the Hottest New Brands –",
         "Click Here!": "Click Here!",
         "Expires in:": "Expires in:",
+        "BIGGEST JACKPOTS": "BIGGEST JACKPOTS",
+        "TOP TOURNAMENTS": "TOP TOURNAMENTS",
       },
     },
 

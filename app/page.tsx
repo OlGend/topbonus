@@ -6,6 +6,7 @@ import TopBrandsRandom from "@/components/TopBrandsRandom";
 import FilteredHome from "@/components/Brands_home/FilteredHome";
 import Fortunes from "@/components/fortune";
 import NewArrivals from "@/components/newArrivals/NewArrivals";
+// import Tournament from "@/components/Tournament";
 // import TimeModal from "@/components/TimeModal";
 
 import UserBrands from "@/components/Brands_home/UserBrands";
