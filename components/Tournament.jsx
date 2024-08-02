@@ -101,7 +101,7 @@ export default function Tournament() {
 
   return (
     <>
-      <div className="main__container banners-anim flex items-center justify-between mt-5">
+      <div className="main__container banners-anim flex items-center justify-between mt-5 mb-5">
         <div className="banner-animation animation1">
           <h3>{t("BIGGEST JACKPOTS")}</h3>
           <Image
@@ -149,7 +149,7 @@ export default function Tournament() {
             loading="lazy"
             className="floating-image cup2"
           />
-          
+
           <a
             target="_blank"
             href={`${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`}
