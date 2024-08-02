@@ -171,9 +171,9 @@ const UserBrands = () => {
   const brandChunks = chunkBrands(brands, 6);
 
   return (
-    <div className="mt-10">
+    <div>
       {brands.length > 0 ? (
-        <div className="flex flex-col">
+        <div className="flex flex-col mt-10">
           <h2 className="fz31 text-center">
             {t("YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND")}{" "}
             <span className="text-blued">

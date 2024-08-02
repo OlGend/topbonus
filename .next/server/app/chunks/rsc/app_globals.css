@@ -429,6 +429,9 @@ video {
 .mb-3 {
   margin-bottom: 0.75rem;
 }
+.mb-5 {
+  margin-bottom: 1.25rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -9773,6 +9776,9 @@ main > .topbr {
 }
 .brandImage img {
   filter: drop-shadow(0 0 1px #ffffffad);
+}
+.banners-anim {
+  margin-bottom: 1.25rem !important;
 }
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;

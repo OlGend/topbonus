@@ -68,6 +68,8 @@ const NewArrivals = () => {
       setBrands(filteredData);
     }
   }, [data, categoryBrands.key1, categoryBrands.key2]);
+
+  console.log("WWWWWWWWWWWWWWWW", brands)
   return (
     <div id="real-block" className="bl-sand">
       <div className="main__container block-sandbox">

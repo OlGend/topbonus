@@ -1,4 +1,4 @@
-(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["chunks/ssr/components_746a17._.js", {
+(globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["chunks/ssr/components_5b51f3._.js", {
 
 "[project]/components/getUser/getUser.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
 
@@ -873,9 +873,8 @@ const UserBrands = ()=>{
     };
     const brandChunks = chunkBrands(brands, 6);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-        className: "mt-10",
         children: brands.length > 0 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-            className: "flex flex-col",
+            className: "flex flex-col mt-10",
             children: [
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h2", {
                     className: "fz31 text-center",
@@ -3339,7 +3338,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
                 "* Explore the Hottest New Brands –": "* Odkrywaj Najgorętsze Nowe Kasyna –",
                 "Click Here!": "Kliknij tutaj!",
-                "Expires in:": "Wygasa za:"
+                "Expires in:": "Wygasa za:",
+                "BIGGEST JACKPOTS": "NAJWIĘKSZE JACKPOTY",
+                "TOP TOURNAMENTS": "TOP TURNIEJE"
             }
         },
         de: {
@@ -3594,7 +3595,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
                 "* Explore the Hottest New Brands –": "* Entdecken Sie die heißesten neuen Casinos -",
                 "Click Here!": "Klicken Sie hier!",
-                "Expires in:": "Läuft ab in:"
+                "Expires in:": "Läuft ab in:",
+                "BIGGEST JACKPOTS": "GRÖSSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNIERE"
             }
         },
         bg: {
@@ -3849,7 +3852,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
                 "* Explore the Hottest New Brands –": "* Разгледайте най-горещите нови казина -",
                 "Click Here!": "Кликни тук!",
-                "Expires in:": "Изтича след:"
+                "Expires in:": "Изтича след:",
+                "BIGGEST JACKPOTS": "НАЙ-ГОЛЕМИТЕ ДЖАКПОТИ",
+                "TOP TOURNAMENTS": "ТОП ТУРНИРИ"
             }
         },
         cz: {
@@ -4104,7 +4109,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
                 "* Explore the Hottest New Brands –": "* Prozkoumejte nejžhavější nová kasina -",
                 "Click Here!": "Klikněte zde!",
-                "Expires in:": "Vyprší za:"
+                "Expires in:": "Vyprší za:",
+                "BIGGEST JACKPOTS": "NEJVĚTŠÍ JACKPOTY",
+                "TOP TOURNAMENTS": "NEJLEPŠÍ TURNAJE"
             }
         },
         dk: {
@@ -4359,7 +4366,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
                 "* Explore the Hottest New Brands –": "* Udforsk de nyeste og mest populære casinoer -",
                 "Click Here!": "Klik her!",
-                "Expires in:": "Udløber om:"
+                "Expires in:": "Udløber om:",
+                "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGER"
             }
         },
         nl: {
@@ -4614,7 +4623,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
                 "* Explore the Hottest New Brands –": "* Verken de Heetste Nieuwe Casino's -",
                 "Click Here!": "Klik hier!",
-                "Expires in:": "Verloopt in:"
+                "Expires in:": "Verloopt in:",
+                "BIGGEST JACKPOTS": "GROOTSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TOERNOOIEN"
             }
         },
         es: {
@@ -4869,7 +4880,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
                 "* Explore the Hottest New Brands –": "* Explora los casinos más nuevos y populares –",
                 "Click Here!": "¡Haz clic aquí!",
-                "Expires in:": "Caduca en:"
+                "Expires in:": "Caduca en:",
+                "BIGGEST JACKPOTS": "LOS MAYORES JACKPOTS",
+                "TOP TOURNAMENTS": "LOS MEJORES TORNEOS"
             }
         },
         fi: {
@@ -5124,7 +5137,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
                 "* Explore the Hottest New Brands –": "* Tutustu uusimpiin ja kuumimpiin kasinoihin –",
                 "Click Here!": "Klikkaa tästä!",
-                "Expires in:": "Vanhenee:"
+                "Expires in:": "Vanhenee:",
+                "BIGGEST JACKPOTS": "SUURIMMAT JACKPOTIT",
+                "TOP TOURNAMENTS": "HUIPPU TURNAUKSET"
             }
         },
         fr: {
@@ -5379,7 +5394,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
                 "* Explore the Hottest New Brands –": "* Découvrez les nouveaux casinos les plus populaires -",
                 "Click Here!": "Cliquez ici!",
-                "Expires in:": "Expire dans:"
+                "Expires in:": "Expire dans:",
+                "BIGGEST JACKPOTS": "PLUS GROS JACKPOTS",
+                "TOP TOURNAMENTS": "MEILLEURS TOURNOIS"
             }
         },
         gr: {
@@ -5634,7 +5651,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
                 "* Explore the Hottest New Brands –": "* Εξερευνήστε τα πιο δημοφιλή νέα καζίνο -",
                 "Click Here!": "Κάντε κλικ εδώ!",
-                "Expires in:": "Λήγει σε:"
+                "Expires in:": "Λήγει σε:",
+                "BIGGEST JACKPOTS": "ΜΕΓΑΛΥΤΕΡΑ ΤΖΑΚΠΟΤ",
+                "TOP TOURNAMENTS": "ΚΟΡΥΦΑΙΑ ΤΟΥΡΝΟΥΑ"
             }
         },
         hu: {
@@ -5889,7 +5908,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
                 "* Explore the Hottest New Brands –": "* Fedezze fel a legforróbb új kaszinókat -",
                 "Click Here!": "Kattints ide!",
-                "Expires in:": "Lejár:"
+                "Expires in:": "Lejár:",
+                "BIGGEST JACKPOTS": "LEGNAGYOBB JACKPOTOK",
+                "TOP TOURNAMENTS": "TOP VERSENYEK"
             }
         },
         it: {
@@ -6144,7 +6165,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
                 "* Explore the Hottest New Brands –": "* Esplora i nuovi casinò più caldi -",
                 "Click Here!": "Clicca qui!",
-                "Expires in:": "Scade tra:"
+                "Expires in:": "Scade tra:",
+                "BIGGEST JACKPOTS": "I PIÙ GRANDI JACKPOT",
+                "TOP TOURNAMENTS": "I MIGLIORI TORNEI"
             }
         },
         no: {
@@ -6399,7 +6422,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
                 "* Explore the Hottest New Brands –": "* Utforsk de nyeste og mest populære casinoene -",
                 "Click Here!": "Klikk her!",
-                "Expires in:": "Utløper om:"
+                "Expires in:": "Utløper om:",
+                "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGER"
             }
         },
         pt: {
@@ -6654,7 +6679,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
                 "* Explore the Hottest New Brands –": "* Explore os Novos Cassinos Mais Quentes -",
                 "Click Here!": "Clique aqui!",
-                "Expires in:": "Expira em:"
+                "Expires in:": "Expira em:",
+                "BIGGEST JACKPOTS": "MAIORES JACKPOTS",
+                "TOP TOURNAMENTS": "MELHORES TORNEIOS"
             }
         },
         se: {
@@ -6909,7 +6936,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
                 "* Explore the Hottest New Brands –": "* Utforska de hetaste nya casinona -",
                 "Click Here!": "Klicka här!",
-                "Expires in:": "Utgår om:"
+                "Expires in:": "Utgår om:",
+                "BIGGEST JACKPOTS": "STÖRSTA JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGAR"
             }
         },
         sk: {
@@ -7164,7 +7193,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
                 "* Explore the Hottest New Brands –": "* Preskúmajte najnovšie kasína -",
                 "Click Here!": "Kliknite tu!",
-                "Expires in:": "Vyprší o:"
+                "Expires in:": "Vyprší o:",
+                "BIGGEST JACKPOTS": "NAJVÄČŠIE JACKPOTY",
+                "TOP TOURNAMENTS": "NAJLEPŠIE TURNAJE"
             }
         },
         tr: {
@@ -7419,7 +7450,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
                 "* Explore the Hottest New Brands –": "* En Yeni ve En Popüler Casinoları Keşfedin –",
                 "Click Here!": "Buraya Tıkla!",
-                "Expires in:": "Sona erme tarihi:"
+                "Expires in:": "Sona erme tarihi:",
+                "BIGGEST JACKPOTS": "EN BÜYÜK JACKPOTLAR",
+                "TOP TOURNAMENTS": "EN İYİ TURNUVALAR"
             }
         }
     };
@@ -7644,31 +7677,6 @@ const LanguageSwitcher = ()=>{
     ];
     const availableLanguagesCLD_VIP = [
         {
-            code: "au",
-            label: "Australia",
-            flag: "🇦🇺"
-        },
-        {
-            code: "at",
-            label: "Austria",
-            flag: "🇦🇹"
-        },
-        {
-            code: "be",
-            label: "Belgium",
-            flag: "🇧🇪"
-        },
-        {
-            code: "ca",
-            label: "Canada",
-            flag: "🇨🇦"
-        },
-        {
-            code: "ch",
-            label: "Switzerland",
-            flag: "🇨🇭"
-        },
-        {
             code: "cz",
             label: "The Czech Republic",
             flag: "🇨🇿"
@@ -7704,14 +7712,14 @@ const LanguageSwitcher = ()=>{
             flag: "🇭🇺"
         },
         {
-            code: "ie",
-            label: "Ireland",
-            flag: "🇮🇪"
-        },
-        {
             code: "it",
             label: "Italy",
             flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
         },
         {
             code: "no",
@@ -7719,14 +7727,14 @@ const LanguageSwitcher = ()=>{
             flag: "🇳🇴"
         },
         {
-            code: "nz",
-            label: "New Zealand",
-            flag: "🇳🇿"
-        },
-        {
             code: "pl",
             label: "Poland",
             flag: "🇵🇱"
+        },
+        {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
         },
         {
             code: "se",
@@ -7773,7 +7781,7 @@ const LanguageSwitcher = ()=>{
         children: "Failed to load"
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 110,
+        lineNumber: 107,
         columnNumber: 21
     }, this);
     const changeLanguage = async (lng)=>{
@@ -7796,7 +7804,7 @@ const LanguageSwitcher = ()=>{
                     children: t("Website language")
                 }, void 0, false, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 128,
+                    lineNumber: 125,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7825,34 +7833,34 @@ const LanguageSwitcher = ()=>{
                                     ]
                                 }, language.code, true, {
                                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                                    lineNumber: 145,
+                                    lineNumber: 142,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 130,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 154,
+                            lineNumber: 151,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 129,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-            lineNumber: 127,
+            lineNumber: 124,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 126,
+        lineNumber: 123,
         columnNumber: 5
     }, this);
 };
@@ -10518,6 +10526,2193 @@ const TheHeader = ()=>{
 ;
 
 })()),
+"[project]/components/FilterLoader.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+;
+;
+const Loader = ()=>{
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: "loader loader2",
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            className: "loader-inner",
+            children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "loader-line-wrap",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "loader-line"
+                    }, void 0, false, {
+                        fileName: "<[project]/components/FilterLoader.jsx>",
+                        lineNumber: 9,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/FilterLoader.jsx>",
+                    lineNumber: 8,
+                    columnNumber: 7
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "loader-line-wrap",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "loader-line"
+                    }, void 0, false, {
+                        fileName: "<[project]/components/FilterLoader.jsx>",
+                        lineNumber: 12,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/FilterLoader.jsx>",
+                    lineNumber: 11,
+                    columnNumber: 7
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "loader-line-wrap",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "loader-line"
+                    }, void 0, false, {
+                        fileName: "<[project]/components/FilterLoader.jsx>",
+                        lineNumber: 15,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/FilterLoader.jsx>",
+                    lineNumber: 14,
+                    columnNumber: 7
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "loader-line-wrap",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "loader-line"
+                    }, void 0, false, {
+                        fileName: "<[project]/components/FilterLoader.jsx>",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/FilterLoader.jsx>",
+                    lineNumber: 17,
+                    columnNumber: 7
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "loader-line-wrap",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "loader-line"
+                    }, void 0, false, {
+                        fileName: "<[project]/components/FilterLoader.jsx>",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/FilterLoader.jsx>",
+                    lineNumber: 20,
+                    columnNumber: 7
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "<[project]/components/FilterLoader.jsx>",
+            lineNumber: 7,
+            columnNumber: 5
+        }, this)
+    }, void 0, false, {
+        fileName: "<[project]/components/FilterLoader.jsx>",
+        lineNumber: 6,
+        columnNumber: 5
+    }, this);
+};
+const __TURBOPACK__default__export__ = Loader;
+
+})()),
+"[project]/components/Tournament.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>Tournament
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$jpg$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coins_banner2$2e$jpg__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/coins_banner2.jpg.mjs/(IMAGE)/[project]/public/coins_banner2.jpg (static) (structured image object, ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coin_01$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coin_01$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/coin_01.png.mjs/(IMAGE)/[project]/public/coin_01.png (static) (structured image object, ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coin_02$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coin_02$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/coin_02.png.mjs/(IMAGE)/[project]/public/coin_02.png (static) (structured image object, ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/cup.png.mjs/(IMAGE)/[project]/public/cup.png (static) (structured image object, ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2d$1$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2d$1$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/cup-1.png.mjs/(IMAGE)/[project]/public/cup-1.png (static) (structured image object, ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$diamond$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$diamond$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/diamond.png.mjs/(IMAGE)/[project]/public/diamond.png (static) (structured image object, ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function Tournament() {
+    const [newUrl, setNewUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const [source, setSource] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    const [redirectUrl, setRedirectUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const currentUrl = window.location.href;
+        const indexOfQuestionMark = currentUrl.indexOf("?");
+        const newUrl2 = indexOfQuestionMark !== -1 ? currentUrl.substring(0, indexOfQuestionMark) : currentUrl;
+        window.history.replaceState({}, document.title, newUrl2);
+        const urlObj = new URL(currentUrl);
+        const searchParams = new URLSearchParams(urlObj.search);
+        searchParams.delete("brand");
+        const currentKeyword = searchParams.get("keyword");
+        const partners = [
+            "partner1039",
+            "partner1043",
+            "partner1044",
+            "CLD_VIP",
+            "partner1045_b1"
+        ];
+        function setPartnerSource(keyword) {
+            const partner = partners.find((p)=>keyword.includes(p));
+            if (partner) {
+                localStorage.setItem("source", partner);
+                setSource(partner);
+                searchParams.set("source", partner);
+            } else {
+                setSource("0");
+                const sourceFound = localStorage.getItem("source");
+                if (!partners.includes(sourceFound)) {
+                    localStorage.setItem("source", "0");
+                    searchParams.set("source", "0");
+                } else {
+                    setSource(sourceFound);
+                }
+            }
+        }
+        if (currentKeyword) {
+            setPartnerSource(currentKeyword);
+        } else {
+            const savedSource = localStorage.getItem("source");
+            if (savedSource) {
+                setSource(savedSource);
+            }
+        }
+        const savedUrl = localStorage.getItem("savedUrl");
+        if (savedUrl) {
+            setNewUrl(savedUrl);
+        }
+    }, [
+        language
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        let url = "";
+        switch(source){
+            case "partner1039":
+                url = "https://link.reg2dep.business/topbonus_rnd39";
+                break;
+            case "partner1043":
+                url = "https://link.reg2dep.business/topbonus_rnd43";
+                break;
+            case "partner1044":
+                url = "https://link.reg2dep.business/topbonus_rnd44";
+                break;
+            case "CLD_VIP":
+                url = "https://link.reg2dep.business/topbonus_rndcld";
+                break;
+            case "partner1045_b1":
+                url = "https://link.reg2dep.business/topbonus_rndcld";
+                break;
+            default:
+                url = "https://link.reg2dep.business/topbonus_rnd";
+        }
+        setRedirectUrl(url);
+    }, [
+        source
+    ]);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            className: "main__container banners-anim flex items-center justify-between mt-5 mb-5",
+            children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "banner-animation animation1",
+                    children: [
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h3", {
+                            children: t("BIGGEST JACKPOTS")
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 106,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coin_01$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coin_01$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            alt: "coin",
+                            width: 86,
+                            loading: "lazy",
+                            className: "floating-image coin1"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 107,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coin_02$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coin_02$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            alt: "coin",
+                            width: 83,
+                            loading: "lazy",
+                            className: "floating-image coin2"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 114,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$diamond$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$diamond$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            alt: "coin",
+                            width: 80,
+                            loading: "lazy",
+                            className: "floating-image diamond"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 121,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
+                            href: `${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`,
+                            className: "btn btn-primary btn-tournament",
+                            target: "_blank",
+                            children: t("Play Now")
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 128,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/Tournament.jsx>",
+                    lineNumber: 105,
+                    columnNumber: 9
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "banner-animation animation2",
+                    children: [
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h3", {
+                            children: t("TOP TOURNAMENTS")
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 137,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            alt: "coin",
+                            width: 180,
+                            loading: "lazy",
+                            className: "floating-image cup1"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 138,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2d$1$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2d$1$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            alt: "coin",
+                            width: 180,
+                            loading: "lazy",
+                            className: "floating-image cup2"
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 145,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
+                            target: "_blank",
+                            href: `${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`,
+                            className: "btn btn-primary btn-tournament",
+                            children: t("Play Now")
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 153,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/Tournament.jsx>",
+                    lineNumber: 136,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "<[project]/components/Tournament.jsx>",
+            lineNumber: 104,
+            columnNumber: 7
+        }, this)
+    }, void 0, false);
+}
+
+})()),
+"[project]/components/TheFooter.tsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "TheFooter": ()=>TheFooter
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo3$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$logo3$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__ = __turbopack_import__("[project]/public/logo3.png.mjs/(IMAGE)/[project]/public/logo3.png (static) (structured image object, ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+;
+const TheFooter = ()=>{
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("footer", {
+        className: "footer",
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            className: "flex  text-white flex-col",
+            children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "footer-top ",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "main__container flex justify-between items-center pb-3 pt-5",
+                        children: [
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "logo",
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                    src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$logo3$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$logo3$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                                    alt: "logo",
+                                    width: 150,
+                                    loading: "lazy"
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/TheFooter.tsx>",
+                                    lineNumber: 17,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "<[project]/components/TheFooter.tsx>",
+                                lineNumber: 16,
+                                columnNumber: 13
+                            }, this),
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "solution-contacts flex",
+                                children: [
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                        children: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                                className: "mb-1",
+                                                children: t("Our Contacts:")
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/TheFooter.tsx>",
+                                                lineNumber: 21,
+                                                columnNumber: 17
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
+                                                className: "underline flex items-center",
+                                                href: "mailto:support@myawardwallet.com",
+                                                children: "support@myawardwallet.com"
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/TheFooter.tsx>",
+                                                lineNumber: 22,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/TheFooter.tsx>",
+                                        lineNumber: 20,
+                                        columnNumber: 15
+                                    }, this),
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                        className: "flex flex-col",
+                                        children: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
+                                                className: "underline ml-5 flex items-end mb-1",
+                                                href: "/responsible-gaming",
+                                                children: t("Responsible Gaming")
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/TheFooter.tsx>",
+                                                lineNumber: 30,
+                                                columnNumber: 17
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
+                                                className: "underline ml-5 flex items-end mb-1",
+                                                href: "/privacy-policy",
+                                                children: t("Privacy Policy")
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/TheFooter.tsx>",
+                                                lineNumber: 36,
+                                                columnNumber: 17
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
+                                                className: "underline ml-5 flex items-end ",
+                                                href: "/terms-and-conditions",
+                                                children: t("Terms and Conditions")
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/TheFooter.tsx>",
+                                                lineNumber: 42,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/TheFooter.tsx>",
+                                        lineNumber: 29,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "<[project]/components/TheFooter.tsx>",
+                                lineNumber: 19,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "<[project]/components/TheFooter.tsx>",
+                        lineNumber: 15,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/TheFooter.tsx>",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "footer-end",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "main__container pt-3 pb-3 flex justify-center",
+                        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                            children: "Copyright \xa9 2024, topbon.us All rights reserved."
+                        }, void 0, false, {
+                            fileName: "<[project]/components/TheFooter.tsx>",
+                            lineNumber: 80,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "<[project]/components/TheFooter.tsx>",
+                        lineNumber: 79,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/TheFooter.tsx>",
+                    lineNumber: 78,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "<[project]/components/TheFooter.tsx>",
+            lineNumber: 13,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "<[project]/components/TheFooter.tsx>",
+        lineNumber: 12,
+        columnNumber: 5
+    }, this);
+};
+;
+
+})()),
+"[project]/components/Marque.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+const Marque = ()=>{
+    const handleClick = ()=>{
+        const targetElement = document.getElementById("real-block");
+        if (targetElement) {
+            const headerOffset = 50;
+            const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
+            const elementStyle = window.getComputedStyle(targetElement);
+            const elementMarginTop = parseInt(elementStyle.marginTop, 10) || 0;
+            const elementPaddingTop = parseInt(elementStyle.paddingTop, 10) || 0;
+            const offsetPosition = elementPosition - headerOffset - elementPaddingTop - elementMarginTop;
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+    };
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: "wrap-line-text",
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            className: "marquee-container",
+            children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "marquee",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                        onClick: handleClick,
+                        children: [
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 30,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 31,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 32,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 33,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 34,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 35,
+                                columnNumber: 55
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "<[project]/components/Marque.jsx>",
+                        lineNumber: 29,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/Marque.jsx>",
+                    lineNumber: 28,
+                    columnNumber: 9
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    "aria-hidden": "true",
+                    className: "marquee",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                        onClick: handleClick,
+                        children: [
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 40,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 41,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 42,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 43,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 44,
+                                columnNumber: 55
+                            }, this),
+                            " ",
+                            t("* Explore the Hottest New Brands –"),
+                            " ",
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("b", {
+                                children: t("Click Here!")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Marque.jsx>",
+                                lineNumber: 45,
+                                columnNumber: 55
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "<[project]/components/Marque.jsx>",
+                        lineNumber: 39,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/Marque.jsx>",
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "<[project]/components/Marque.jsx>",
+            lineNumber: 27,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "<[project]/components/Marque.jsx>",
+        lineNumber: 26,
+        columnNumber: 5
+    }, this);
+};
+const __TURBOPACK__default__export__ = Marque;
+
+})()),
+"[project]/components/Brands_home/AllBrands.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>AllBrands
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$2c$__chunks$29$__ = __turbopack_import__("[project]/node_modules/react-slick/lib/index.js (ecmascript, chunks, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/swr/core/dist/index.mjs (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FilterLoader$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/FilterLoader.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/phosphor-react/dist/index.esm.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/shared/lib/app-dynamic.js (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"TURBOPACK { transition: next-client-chunks }";
+;
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const LazySlider = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$shared$2f$lib$2f$app$2d$dynamic$2e$js__$28$ecmascript$29$__["default"](null, {
+    loadableGenerated: {
+        modules: [
+            JSON.stringify({
+                id: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$2c$__chunks$29$__["default"],
+                chunks: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$2c$__chunks$29$__["chunks"]
+            })
+        ]
+    },
+    ssr: false,
+    loading: ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+            children: "Download..."
+        }, void 0, false, {
+            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+            lineNumber: 25,
+            columnNumber: 18
+        }, this)
+});
+;
+;
+function AllBrands({ creative, isLoader, segment, value, target, brands }) {
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    const itemsPerPage = 4;
+    const itemsPerPage2 = 4;
+    const [visibleBrands, setVisibleBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](itemsPerPage);
+    const [visibleBrands2, setVisibleBrands2] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](itemsPerPage2);
+    const [hasMoreBrands, setHasMoreBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    const [openPlusesId, setOpenPlusesId] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
+    const [openWithdrawalId, setOpenWithdrawalId] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
+    const [openDepositsId, setOpenDepositsId] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
+    const [openCountriesId, setOpenCountriesId] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
+    const [filteredBrands, setFilteredBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const [topBrands, setTopBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const [br, setBr] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](brands || []);
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
+    const categoryBrandsAll = {
+        key1: segment,
+        key2: value
+    };
+    const categoryBrands = {
+        key1: "Video",
+        key2: "1"
+    };
+    const [visible, setVisible] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    const { data, error } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__["default"]([
+        "brands",
+        language
+    ], ()=>__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__["getBrands"](language), {
+        initialData: brands
+    });
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (data) {
+            setVisible(true);
+            const filteredData = data.filter((rowData)=>rowData[categoryBrandsAll.key1] === categoryBrandsAll.key2);
+            const topData = data.filter((rowData)=>rowData[categoryBrands.key1] === categoryBrands.key2);
+            setTopBrands(topData);
+            setFilteredBrands(filteredData);
+        }
+    }, [
+        data,
+        categoryBrandsAll.key1,
+        categoryBrandsAll.key2,
+        categoryBrands.key1,
+        categoryBrands.key2
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        setHasMoreBrands(visibleBrands < filteredBrands.length);
+    }, [
+        visibleBrands,
+        filteredBrands.length
+    ]);
+    const loadMoreBrands = ()=>{
+        setVisibleBrands((prevVisibleBrands)=>prevVisibleBrands + itemsPerPage);
+        setVisibleBrands2((prevVisibleBrands)=>prevVisibleBrands + itemsPerPage2);
+    };
+    const [newUrl, setNewUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const savedUrl = localStorage.getItem("savedUrl");
+        if (savedUrl) {
+            setNewUrl(savedUrl);
+        }
+    }, []);
+    const [randomBrands, setRandomBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const [randomBrands2, setRandomBrands2] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const [brandsGenerated, setBrandsGenerated] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const generateRandomBrands = ()=>{
+            if (!brandsGenerated && filteredBrands.length > 0) {
+                const shuffledBrands = [
+                    ...filteredBrands
+                ].sort(()=>Math.random() - 0.5);
+                const shuffledBrands2 = [
+                    ...topBrands
+                ].sort(()=>Math.random() - 0.5);
+                setRandomBrands(shuffledBrands);
+                setRandomBrands2(shuffledBrands2);
+                setBrandsGenerated(true);
+            }
+        };
+        generateRandomBrands();
+    }, [
+        brandsGenerated,
+        filteredBrands
+    ]);
+    const vis = randomBrands.length > 0 ? randomBrands : filteredBrands;
+    const vis2 = randomBrands2.length > 0 ? randomBrands2 : topBrands;
+    const [isMobile, setIsMobile] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        setIsMobile(window.innerWidth < 768);
+        const handleResize = ()=>{
+            setIsMobile(window.innerWidth < 768);
+        };
+        window.addEventListener("resize", handleResize);
+        return ()=>{
+            window.removeEventListener("resize", handleResize);
+        };
+    }, []);
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        centerMode: true,
+        variableWidth: true,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }
+        ]
+    };
+    const handlePlusesClick = (brandId)=>{
+        setOpenPlusesId((prevId)=>prevId === brandId ? null : brandId);
+    };
+    const handleWithdrawalClick = (brandId)=>{
+        setOpenWithdrawalId((prevId)=>prevId === brandId ? null : brandId);
+    };
+    const handleDepositsClick = (brandId)=>{
+        setOpenDepositsId((prevId)=>prevId === brandId ? null : brandId);
+    };
+    const handleCountriesClick = (brandId)=>{
+        setOpenCountriesId((prevId)=>prevId === brandId ? null : brandId);
+    };
+    console.log("BRANDS", vis, vis2);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
+        children: isLoader ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$FilterLoader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+            lineNumber: 182,
+            columnNumber: 9
+        }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            className: "flex flex-wrap justify-between awesome",
+            children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "flex flex-col px-0 py-6 basis-[75%]",
+                    children: [
+                        visible && vis.slice(0, visibleBrands).map((brand)=>{
+                            const advantages = brand.advantages !== null ? brand.advantages.split(",").map((advantage)=>({
+                                    advantage: advantage.trim()
+                                })) : "";
+                            const deposits = brand.DepositMethods !== null ? brand.DepositMethods.split(",").map((deposit)=>({
+                                    deposit: deposit.trim()
+                                })) : "";
+                            const withdrawals = brand.WithdrawalMethods !== null ? brand.WithdrawalMethods.split(",").map((withdrawal)=>({
+                                    withdrawal: withdrawal.trim()
+                                })) : "";
+                            const restricted = brand.RestrictedCountries !== null ? brand.RestrictedCountries.split(",").map((restrict)=>({
+                                    restrict: restrict.trim()
+                                })) : "";
+                            const isPlusesOpen = openPlusesId === brand.id_brand;
+                            const isWithdrawalOpen = openWithdrawalId === brand.id_brand;
+                            const isDepositsOpen = openDepositsId === brand.id_brand;
+                            const isCountriesOpen = openCountriesId === brand.id_brand;
+                            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "p-3 flex justify-between flex-wrap mb-2 card-brand-filtered w-full",
+                                children: [
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                        className: "flex flex-col basis-[63%]",
+                                        children: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "flex ml-1 mb-3"
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 224,
+                                                columnNumber: 23
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "flex mb-1",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["Gift"], {
+                                                        className: "mr-1",
+                                                        size: 24
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 226,
+                                                        columnNumber: 25
+                                                    }, this),
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: " flex items-center review-bonus",
+                                                        children: brand.OurOfferContent
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 227,
+                                                        columnNumber: 25
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 225,
+                                                columnNumber: 23
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "mb-2 withdrawal withdrawal-limits flex items-center",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["Handshake"], {
+                                                        className: "mr-1 mb-1",
+                                                        size: 24
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 232,
+                                                        columnNumber: 25
+                                                    }, this),
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "title mr-2",
+                                                        children: t("Withdrawal Limits:")
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 234,
+                                                        columnNumber: 25
+                                                    }, this),
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "items-center",
+                                                        children: brand.WithdrawalLimits
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 237,
+                                                        columnNumber: 25
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 231,
+                                                columnNumber: 23
+                                            }, this),
+                                            advantages && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                onClick: ()=>handlePlusesClick(brand.id_brand),
+                                                className: "pluses custom-list-item mb-1",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "title flex items-center",
+                                                        children: [
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["ShieldPlus"], {
+                                                                size: 24
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 247,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                                className: "mt-1 ml-2",
+                                                                children: t("Advantages")
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 248,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["CaretDown"], {
+                                                                className: "ml-auto",
+                                                                size: 20
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 249,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 246,
+                                                        columnNumber: 27
+                                                    }, this),
+                                                    isPlusesOpen && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "items-center ml-3",
+                                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("ul", {
+                                                            className: "review-pros",
+                                                            children: advantages.map((advantage, index)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("li", {
+                                                                    className: "review-pros-item",
+                                                                    children: advantage.advantage
+                                                                }, index, false, {
+                                                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                    lineNumber: 255,
+                                                                    columnNumber: 35
+                                                                }, this))
+                                                        }, void 0, false, {
+                                                            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                            lineNumber: 253,
+                                                            columnNumber: 31
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 252,
+                                                        columnNumber: 29
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 242,
+                                                columnNumber: 25
+                                            }, this),
+                                            deposits && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                onClick: ()=>handleDepositsClick(brand.id_brand),
+                                                className: "withdrawal custom-list-item mb-1",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "title flex items-center",
+                                                        children: [
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["CurrencyCircleDollar"], {
+                                                                size: 24
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 271,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                                className: "mt-1 ml-2",
+                                                                children: t("Payment Methods")
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 272,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["CaretDown"], {
+                                                                className: "ml-auto",
+                                                                size: 20
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 275,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 270,
+                                                        columnNumber: 27
+                                                    }, this),
+                                                    isDepositsOpen && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "withdrawal flex mt-2",
+                                                        children: deposits.map((deposit, index)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                                className: "depimg flex items-center justify-center mr-1 mb-1 flex-wrap",
+                                                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                                    width: 60,
+                                                                    height: 38,
+                                                                    src: `/payments/${deposit.deposit}.png`,
+                                                                    alt: `${deposit.deposit}`,
+                                                                    loading: "lazy"
+                                                                }, void 0, false, {
+                                                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                    lineNumber: 284,
+                                                                    columnNumber: 35
+                                                                }, this)
+                                                            }, index, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 280,
+                                                                columnNumber: 33
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 278,
+                                                        columnNumber: 29
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 266,
+                                                columnNumber: 25
+                                            }, this),
+                                            withdrawals && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                onClick: ()=>handleWithdrawalClick(brand.id_brand),
+                                                className: "withdrawal custom-list-item mb-1",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "title flex items-center",
+                                                        children: [
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["GameController"], {
+                                                                size: 24
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 303,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                                className: "mt-1 ml-2",
+                                                                children: t("Game Providers")
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 304,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["CaretDown"], {
+                                                                className: "ml-auto",
+                                                                size: 20
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 307,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 302,
+                                                        columnNumber: 27
+                                                    }, this),
+                                                    isWithdrawalOpen && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "withdrawal flex mt-2",
+                                                        children: withdrawals.map((withdrawal, index)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                                className: "depimg flex items-center justify-center mr-1 mb-1 flex-wrap",
+                                                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                                    width: 60,
+                                                                    height: 38,
+                                                                    src: `/providers/${withdrawal.withdrawal}.png`,
+                                                                    alt: `${withdrawal.withdrawal}`,
+                                                                    loading: "lazy"
+                                                                }, void 0, false, {
+                                                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                    lineNumber: 316,
+                                                                    columnNumber: 35
+                                                                }, this)
+                                                            }, index, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 312,
+                                                                columnNumber: 33
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 310,
+                                                        columnNumber: 29
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 298,
+                                                columnNumber: 25
+                                            }, this),
+                                            restricted && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                onClick: ()=>handleCountriesClick(brand.id_brand),
+                                                className: "withdrawal custom-list-item mb-1",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "title flex items-center",
+                                                        children: [
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["Prohibit"], {
+                                                                size: 24
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 335,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                                className: "mt-1 ml-2",
+                                                                children: t("Restricted Countries")
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 336,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["CaretDown"], {
+                                                                className: "ml-auto",
+                                                                size: 20
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 339,
+                                                                columnNumber: 29
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 334,
+                                                        columnNumber: 27
+                                                    }, this),
+                                                    isCountriesOpen && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "withdrawal",
+                                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                            className: "countries flex flex-wrap justify-between mt-1",
+                                                            children: restricted.map((restrict, index)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                                    className: "basis-[49%] pl-1 mb-2 flex",
+                                                                    children: [
+                                                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["MinusCircle"], {
+                                                                            color: "#dd3333",
+                                                                            size: 18
+                                                                        }, void 0, false, {
+                                                                            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                            lineNumber: 349,
+                                                                            columnNumber: 37
+                                                                        }, this),
+                                                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                                            children: restrict.restrict
+                                                                        }, void 0, false, {
+                                                                            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                            lineNumber: 350,
+                                                                            columnNumber: 37
+                                                                        }, this)
+                                                                    ]
+                                                                }, index, true, {
+                                                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                    lineNumber: 345,
+                                                                    columnNumber: 35
+                                                                }, this))
+                                                        }, void 0, false, {
+                                                            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                            lineNumber: 343,
+                                                            columnNumber: 31
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 342,
+                                                        columnNumber: 29
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 330,
+                                                columnNumber: 25
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                        lineNumber: 223,
+                                        columnNumber: 21
+                                    }, this),
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                        className: "basis-[36%]",
+                                        children: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "brandImage p-3",
+                                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                                    href: `${brand.GoBig}/${newUrl}&creative_id=XXL_${creative}`,
+                                                    className: `${target}`,
+                                                    target: "_blank",
+                                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                        className: `${target}`,
+                                                        src: `/brands/${brand.CasinoBrand}.png`,
+                                                        alt: `/brands/${brand.CasinoBrand}.png`,
+                                                        width: 250,
+                                                        height: 125,
+                                                        loading: "lazy"
+                                                    }, void 0, false, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 367,
+                                                        columnNumber: 27
+                                                    }, this)
+                                                }, brand.id_brand, false, {
+                                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                    lineNumber: 361,
+                                                    columnNumber: 25
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 360,
+                                                columnNumber: 23
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "buttons ml-auto flex items-center",
+                                                children: [
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                        className: "flex flex-col items-center w-full p-4 howUse mt-2 mb-2",
+                                                        children: [
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                                className: "text-center",
+                                                                children: t("How to get bonus?")
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 380,
+                                                                columnNumber: 27
+                                                            }, this),
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                                                className: "text-center m-0 text-slate-500",
+                                                                children: t("Activate bonus in your casino account")
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 383,
+                                                                columnNumber: 27
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 379,
+                                                        columnNumber: 25
+                                                    }, this),
+                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                                        className: `btn btn-primary mt-0 text-center flex justify-center items-center ${target}`,
+                                                        href: `${brand.GoBig}/${newUrl}&creative_id=XXL_${creative}`,
+                                                        target: "_blank",
+                                                        children: [
+                                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["Play"], {
+                                                                className: "mr-2",
+                                                                size: 24
+                                                            }, void 0, false, {
+                                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                                lineNumber: 392,
+                                                                columnNumber: 27
+                                                            }, this),
+                                                            " ",
+                                                            t("Play Now")
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                        lineNumber: 387,
+                                                        columnNumber: 25
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 378,
+                                                columnNumber: 23
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                        lineNumber: 359,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, brand.id_brand, true, {
+                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                lineNumber: 219,
+                                columnNumber: 19
+                            }, this);
+                        }),
+                        hasMoreBrands && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
+                            className: "btn-primary btn-more text-lg max-w-sm p-3 ml-auto mr-auto mt-4 font-semibold text-white flex justify-center items-center",
+                            onClick: loadMoreBrands,
+                            children: [
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["DotsThreeCircle"], {
+                                    className: "mr-1",
+                                    size: 24
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                    lineNumber: 405,
+                                    columnNumber: 17
+                                }, this),
+                                t("Load More Brands")
+                            ]
+                        }, void 0, true, {
+                            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                            lineNumber: 401,
+                            columnNumber: 15
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                    lineNumber: 185,
+                    columnNumber: 11
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "flex flex-col basis-[24%] py-6",
+                    children: !isMobile ? vis2.slice(0, visibleBrands2).map((item)=>{
+                        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "card-brand-banner mb-2 flex flex-col items-center pb-3",
+                            children: [
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: "brandImage p-3",
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                        className: "flex justify-center flex-col items-center target-listing-brands",
+                                        href: `${item.GoBig}/${newUrl}&creative_id=XXL_Listing_Brands`,
+                                        target: "_blank",
+                                        children: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                src: `/brands/${item.CasinoBrand}.png`,
+                                                alt: `/brands/${item.CasinoBrand}.png`,
+                                                width: 200,
+                                                height: 80,
+                                                loading: "lazy",
+                                                className: "target-listing-brands"
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 425,
+                                                columnNumber: 25
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "p-3 text-center flex items-center review-bonus",
+                                                children: item.OurOfferContent
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                lineNumber: 433,
+                                                columnNumber: 25
+                                            }, this)
+                                        ]
+                                    }, item.id_brand, true, {
+                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                        lineNumber: 419,
+                                        columnNumber: 23
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                    lineNumber: 418,
+                                    columnNumber: 21
+                                }, this),
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                    className: "btn btn-primary btn-new target-listing-brands",
+                                    href: `${item.GoBig}/${newUrl}&creative_id=XXL_Listing_Brands`,
+                                    target: "_blank",
+                                    children: t("Play Now")
+                                }, item.id_brand, false, {
+                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                    lineNumber: 438,
+                                    columnNumber: 21
+                                }, this)
+                            ]
+                        }, item.id_brand, true, {
+                            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                            lineNumber: 414,
+                            columnNumber: 19
+                        }, this);
+                    }) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LazySlider, {
+                        ...settings,
+                        children: vis2.map((item)=>{
+                            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "card-brand-banner mb-2 flex flex-col items-center pb-3",
+                                children: [
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                        className: "brandImage p-3",
+                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                            className: "flex justify-center flex-col items-center target-listing-brands",
+                                            href: `${item.GoBig}/${newUrl}`,
+                                            target: "_blank",
+                                            children: [
+                                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                    className: "target-listing-brands",
+                                                    src: `/brands/${item.CasinoBrand}.png`,
+                                                    alt: `/brands/${item.CasinoBrand}.png`,
+                                                    width: 200,
+                                                    height: 80,
+                                                    loading: "lazy"
+                                                }, void 0, false, {
+                                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                    lineNumber: 464,
+                                                    columnNumber: 27
+                                                }, this),
+                                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                    className: "p-3 text-center flex items-center review-bonus",
+                                                    children: item.OurOfferContent
+                                                }, void 0, false, {
+                                                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                                    lineNumber: 472,
+                                                    columnNumber: 27
+                                                }, this)
+                                            ]
+                                        }, item.id_brand, true, {
+                                            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                            lineNumber: 458,
+                                            columnNumber: 25
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                        lineNumber: 457,
+                                        columnNumber: 23
+                                    }, this),
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                        className: "btn btn-primary btn-new target-listing-brands",
+                                        href: `${item.GoBig}/${newUrl}`,
+                                        target: "_blank",
+                                        children: t("Play Now")
+                                    }, item.id_brand, false, {
+                                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                        lineNumber: 477,
+                                        columnNumber: 23
+                                    }, this)
+                                ]
+                            }, item.id_brand, true, {
+                                fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                                lineNumber: 453,
+                                columnNumber: 21
+                            }, this);
+                        })
+                    }, void 0, false, {
+                        fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                        lineNumber: 450,
+                        columnNumber: 15
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+                    lineNumber: 410,
+                    columnNumber: 11
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "<[project]/components/Brands_home/AllBrands.jsx>",
+            lineNumber: 184,
+            columnNumber: 9
+        }, this)
+    }, void 0, false);
+}
+
+})()),
+"[project]/components/Brands_home/Navigate.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/phosphor-react/dist/index.esm.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+;
+;
+;
+;
+const useNavigateBrands = ()=>{
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    return [
+        {
+            currentTab: 1,
+            currentCategories: 25,
+            currentText: "All_Brands",
+            segment: "CurrentStatus",
+            value: "Ongoing",
+            target: "target-all-brands",
+            currentText2: t("All Brands"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["SquareLogo"], {
+                className: "mr-2 pb-1",
+                size: 32
+            }, void 0, false, {
+                fileName: "<[project]/components/Brands_home/Navigate.jsx>",
+                lineNumber: 23,
+                columnNumber: 13
+            }, this)
+        },
+        {
+            currentTab: 5,
+            currentCategories: 187,
+            currentText: "New_Arrivals",
+            segment: "Segment2",
+            value: "Sandbox",
+            target: "target-new-arrivals",
+            currentText2: t("New Arrivals"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["DribbbleLogo"], {
+                className: "mr-2 pb-1",
+                size: 32
+            }, void 0, false, {
+                fileName: "<[project]/components/Brands_home/Navigate.jsx>",
+                lineNumber: 33,
+                columnNumber: 13
+            }, this)
+        },
+        {
+            currentTab: 2,
+            currentCategories: 26,
+            currentText: "Recommended_Brands",
+            segment: "Segment2",
+            value: "Premium",
+            target: "target-recommended-brands",
+            currentText2: t("Recommended Brands"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["Medal"], {
+                className: "mr-2 pb-1",
+                size: 32
+            }, void 0, false, {
+                fileName: "<[project]/components/Brands_home/Navigate.jsx>",
+                lineNumber: 43,
+                columnNumber: 13
+            }, this)
+        },
+        {
+            currentTab: 3,
+            currentCategories: 24,
+            currentText: "Quick_Sign-Up_Brands",
+            segment: "QuickSignUp",
+            value: "1",
+            target: "target-quick-sign-up-brands",
+            currentText2: t("Quick Sign-Up"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["Crown"], {
+                className: "mr-2 pb-1",
+                size: 32
+            }, void 0, false, {
+                fileName: "<[project]/components/Brands_home/Navigate.jsx>",
+                lineNumber: 53,
+                columnNumber: 13
+            }, this)
+        },
+        {
+            currentTab: 4,
+            currentCategories: 19,
+            currentText: "Hottest_Deals",
+            segment: "Hottest",
+            value: "1",
+            target: "target-hottest-deals",
+            currentText2: t("Hottest Deals"),
+            icon: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$phosphor$2d$react$2f$dist$2f$index$2e$esm$2e$js__$28$ecmascript$29$__["Fire"], {
+                className: "mr-2 pb-1",
+                size: 32
+            }, void 0, false, {
+                fileName: "<[project]/components/Brands_home/Navigate.jsx>",
+                lineNumber: 63,
+                columnNumber: 13
+            }, this)
+        }
+    ];
+};
+const __TURBOPACK__default__export__ = useNavigateBrands;
+
+})()),
+"[project]/components/Brands_home/FilteredHome.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$Navigate$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Brands_home/Navigate.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$AllBrands$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Brands_home/AllBrands.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+;
+;
+;
+const FilteredHome = ()=>{
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
+    const [isLoader, setIsLoader] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    const [currentTab, setCurrentTab] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](1);
+    const navigateBrands = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$Navigate$2e$jsx__$28$ecmascript$29$__["default"]();
+    const handleTabChange = (tabNumber)=>{
+        setCurrentTab(tabNumber);
+        setIsLoader(true);
+        setTimeout(()=>{
+            setIsLoader(false);
+        }, 500);
+    };
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: "main pt-10 pb-10 other-custom-bonuses",
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            className: "main__container filter-brands",
+            children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "content flex flex-wrap",
+                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "left flex flex-col justify-center basis-[60%]",
+                        children: [
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h2", {
+                                className: "",
+                                children: t("Catalog of all 2024 Online Casino Bonuses Offered")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+                                lineNumber: 31,
+                                columnNumber: 13
+                            }, this),
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                className: "mt-3 pb-4",
+                                children: t("Seeking online casino bonuses and promotions? Explore our current database featuring numerous casino bonus offers for your selection.")
+                            }, void 0, false, {
+                                fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+                                lineNumber: 34,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+                        lineNumber: 30,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+                    lineNumber: 29,
+                    columnNumber: 9
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "flex navigate-filter",
+                    children: navigateBrands.map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
+                            className: `flex justify-center flex-col basis-[20%] items-center p-2 border text-lg button-tab ${currentTab === item.currentTab ? "active" : ""}`,
+                            onClick: ()=>handleTabChange(item.currentTab),
+                            children: [
+                                item.icon,
+                                item.currentText2
+                            ]
+                        }, item.currentTab, true, {
+                            fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+                            lineNumber: 41,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, this),
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "overlay-filter",
+                    children: navigateBrands.map((item)=>{
+                        return currentTab === item.currentTab && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$AllBrands$2e$jsx__$28$ecmascript$29$__["default"], {
+                            creative: item.currentText,
+                            isLoader: isLoader,
+                            segment: item.segment,
+                            value: item.value,
+                            target: item.target
+                        }, `${item.currentTab}-${language}`, false, {
+                            fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+                            lineNumber: 58,
+                            columnNumber: 17
+                        }, this);
+                    })
+                }, void 0, false, {
+                    fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+                    lineNumber: 54,
+                    columnNumber: 9
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+            lineNumber: 28,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "<[project]/components/Brands_home/FilteredHome.jsx>",
+        lineNumber: 27,
+        columnNumber: 5
+    }, this);
+};
+const __TURBOPACK__default__export__ = FilteredHome;
+
+})()),
+"[project]/components/fortune/index.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/swr/core/dist/index.mjs (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Loader.jsx (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const Fortunes = ({ banner, target, creative })=>{
+    const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const [visibleBrands, setVisibleBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](5);
+    const [isLoading, setIsLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
+    const categoryBrands = {
+        key1: "FirstPriority",
+        key2: "1"
+    };
+    const { data, error } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__["default"]([
+        "brands",
+        language
+    ], ()=>__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__["getBrands"](language), {
+        initialData: brands
+    });
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (data) {
+            const filteredData = data.filter((rowData)=>rowData[categoryBrands.key1] === categoryBrands.key2);
+            console.log("FILTER", filteredData);
+            setBrands(filteredData);
+        }
+    }, [
+        data,
+        categoryBrands.key1,
+        categoryBrands.key2
+    ]);
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    const [newUrl, setNewUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const savedUrl = localStorage.getItem("savedUrl");
+        if (savedUrl) {
+            setNewUrl(savedUrl);
+        }
+    }, []);
+    const loadMoreBrands = ()=>{
+        setVisibleBrands((prev)=>prev + 5);
+    };
+    const hasMoreBrands = brands.length > visibleBrands;
+    console.log("aaaaaa", brands);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+        className: "flex flex-col container-fortune",
+        children: [
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                id: "banner-wheel",
+                className: "banner-wheel",
+                children: [
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h3", {
+                        children: t("FORTUNE WHEEL BRANDS")
+                    }, void 0, false, {
+                        fileName: "<[project]/components/fortune/index.jsx>",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, this),
+                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                        children: t("Pick a brand below, make first deposit and win real cash")
+                    }, void 0, false, {
+                        fileName: "<[project]/components/fortune/index.jsx>",
+                        lineNumber: 56,
+                        columnNumber: 9
+                    }, this),
+                    banner && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                        target: "_blank",
+                        className: "btn btn-thirdy target-spin-the-roulette",
+                        href: `/fortune`,
+                        children: t("Spin the Roulette")
+                    }, void 0, false, {
+                        fileName: "<[project]/components/fortune/index.jsx>",
+                        lineNumber: 58,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "<[project]/components/fortune/index.jsx>",
+                lineNumber: 54,
+                columnNumber: 7
+            }, this),
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                className: "text-center mt-3",
+                children: t("To qualify for withdrawals, ensure your first deposit is at least €25 or the equivalent in other currencies and was made after requesting a withdrawal.")
+            }, void 0, false, {
+                fileName: "<[project]/components/fortune/index.jsx>",
+                lineNumber: 67,
+                columnNumber: 7
+            }, this),
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                className: "flex flex-wrap px-0 py-6",
+                children: isLoading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "<[project]/components/fortune/index.jsx>",
+                    lineNumber: 74,
+                    columnNumber: 11
+                }, this) : brands.slice(0, visibleBrands).map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                        className: "card-brand mb-3 basis-[19%]",
+                        children: [
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "brandImage p-3",
+                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                    target: "_blank",
+                                    className: target,
+                                    href: `${brand.GoBig}/${newUrl}&creative_id=${target}`,
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                        src: `/brands/${brand.CasinoBrand}.png`,
+                                        alt: brand.CasinoBrand,
+                                        width: 150,
+                                        height: 75,
+                                        className: target
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/fortune/index.jsx>",
+                                        lineNumber: 84,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/fortune/index.jsx>",
+                                    lineNumber: 79,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "<[project]/components/fortune/index.jsx>",
+                                lineNumber: 78,
+                                columnNumber: 15
+                            }, this),
+                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                className: "brandContent p-3",
+                                children: [
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                        className: "review-bonus",
+                                        children: brand.OurOfferContent
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/fortune/index.jsx>",
+                                        lineNumber: 94,
+                                        columnNumber: 17
+                                    }, this),
+                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                        className: "buttons",
+                                        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                            target: "_blank",
+                                            className: `btn btn-primary ${target}`,
+                                            href: `${brand.GoBig}/${newUrl}&creative_id=${target}`,
+                                            children: t("Play Now")
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/fortune/index.jsx>",
+                                            lineNumber: 96,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "<[project]/components/fortune/index.jsx>",
+                                        lineNumber: 95,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "<[project]/components/fortune/index.jsx>",
+                                lineNumber: 93,
+                                columnNumber: 15
+                            }, this)
+                        ]
+                    }, brand.id_brand, true, {
+                        fileName: "<[project]/components/fortune/index.jsx>",
+                        lineNumber: 77,
+                        columnNumber: 13
+                    }, this))
+            }, void 0, false, {
+                fileName: "<[project]/components/fortune/index.jsx>",
+                lineNumber: 72,
+                columnNumber: 7
+            }, this),
+            hasMoreBrands && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
+                className: "btn-primary btn-more text-lg max-w-sm p-3 ml-auto mr-auto mt-4 font-semibold text-white flex justify-center items-center",
+                onClick: loadMoreBrands,
+                children: t("Load More Brands")
+            }, void 0, false, {
+                fileName: "<[project]/components/fortune/index.jsx>",
+                lineNumber: 110,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "<[project]/components/fortune/index.jsx>",
+        lineNumber: 53,
+        columnNumber: 5
+    }, this);
+};
+const __TURBOPACK__default__export__ = Fortunes;
+
+})()),
+"[project]/components/newArrivals/NewArrivals.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "default": ()=>__TURBOPACK__default__export__
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/swr/core/dist/index.mjs (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-slick/lib/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/link.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+const NewArrivals = ()=>{
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    const [newUrl, setNewUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const settings = {
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    initialSlide: 1
+                }
+            }
+        ]
+    };
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
+    const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const savedUrl = localStorage.getItem("savedUrl");
+        if (savedUrl) {
+            setNewUrl(savedUrl);
+        }
+    }, []);
+    const categoryBrands = {
+        key1: "Segment2",
+        key2: "Sandbox"
+    };
+    const { data, error } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__["default"]([
+        "brands",
+        language
+    ], ()=>__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__["getBrands"](language), {
+        initialData: brands
+    });
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (data) {
+            const filteredData = data.filter((rowData)=>rowData[categoryBrands.key1] === categoryBrands.key2);
+            console.log("FILTER", filteredData);
+            setBrands(filteredData);
+        }
+    }, [
+        data,
+        categoryBrands.key1,
+        categoryBrands.key2
+    ]);
+    console.log("WWWWWWWWWWWWWWWW", brands);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+        id: "real-block",
+        className: "bl-sand",
+        children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            className: "main__container block-sandbox",
+            children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h2", {
+                    children: t("Top New Releases")
+                }, void 0, false, {
+                    fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                    lineNumber: 76,
+                    columnNumber: 9
+                }, this),
+                brands.length > 3 ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$slick$2f$lib$2f$index$2e$js__$28$ecmascript$29$__["default"], {
+                    ...settings,
+                    children: brands.map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "card-second-banner mb-2 flex flex-col items-center pb-3",
+                            children: [
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: "brandImage p-3",
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                        className: "flex justify-center flex-col items-center target-top-new-releases",
+                                        href: `${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                        target: "_blank",
+                                        children: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                src: `/brands/${item.CasinoBrand}.png`,
+                                                alt: item.CasinoBrand,
+                                                width: 200,
+                                                height: 80,
+                                                loading: "lazy",
+                                                className: "target-top-new-releases"
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                                lineNumber: 90,
+                                                columnNumber: 21
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "p-3 text-center flex items-center review-bonus",
+                                                children: item.OurOfferContent
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                                lineNumber: 98,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                        lineNumber: 85,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                    lineNumber: 84,
+                                    columnNumber: 17
+                                }, this),
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                    className: "btn btn-primary btn-new target-top-new-releases",
+                                    href: `${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                    target: "_blank",
+                                    children: t("Play Now")
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                    lineNumber: 103,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, item.id_brand, true, {
+                            fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                            lineNumber: 80,
+                            columnNumber: 15
+                        }, this))
+                }, void 0, false, {
+                    fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                    lineNumber: 78,
+                    columnNumber: 11
+                }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
+                    children: brands.map((item)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "card-second-banner mb-2 flex flex-col items-center pb-3",
+                            children: [
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: "brandImage p-3",
+                                    children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                        className: "flex justify-center flex-col items-center target-top-new-releases",
+                                        href: `${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                        target: "_blank",
+                                        children: [
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
+                                                src: `/brands/${item.CasinoBrand}.png`,
+                                                alt: item.CasinoBrand,
+                                                width: 200,
+                                                height: 80,
+                                                loading: "lazy",
+                                                className: "target-top-new-releases"
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                                lineNumber: 126,
+                                                columnNumber: 21
+                                            }, this),
+                                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                                className: "p-3 text-center flex items-center review-bonus",
+                                                children: item.OurOfferContent
+                                            }, void 0, false, {
+                                                fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                                lineNumber: 134,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                        lineNumber: 121,
+                                        columnNumber: 19
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                    lineNumber: 120,
+                                    columnNumber: 17
+                                }, this),
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                                    className: "btn btn-primary btn-new target-top-new-releases",
+                                    href: `${item.GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
+                                    target: "_blank",
+                                    children: t("Play Now")
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                                    lineNumber: 139,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, item.id_brand, true, {
+                            fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+                            lineNumber: 116,
+                            columnNumber: 15
+                        }, this))
+                }, void 0, false)
+            ]
+        }, void 0, true, {
+            fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+            lineNumber: 75,
+            columnNumber: 7
+        }, this)
+    }, void 0, false, {
+        fileName: "<[project]/components/newArrivals/NewArrivals.jsx>",
+        lineNumber: 74,
+        columnNumber: 5
+    }, this);
+};
+const __TURBOPACK__default__export__ = NewArrivals;
+
+})()),
 }]);
 
-//# sourceMappingURL=components_746a17._.js.map
+//# sourceMappingURL=components_5b51f3._.js.map
