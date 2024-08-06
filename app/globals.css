@@ -7702,7 +7702,7 @@ p {
     padding-top: 35px !important;
   }
   .topbr .main__container {
-    padding: 150px 0 60px;
+    padding: 75px 0 60px;
   }
   .topbr .main__container .timer {
     height: initial !important;
@@ -10631,8 +10631,8 @@ main > .topbr {
 
 @media(min-width: 320px) and (max-width: 767px) {
   main > .topbr {
-    height: 710px !important;
-    max-height: 710px !important;
+    height: 690px !important;
+    max-height: 690px !important;
   }
   .jins {
     padding-bottom: 30px;
@@ -10641,12 +10641,15 @@ main > .topbr {
     min-width: initial;
     max-width: initial;
     min-height: initial;
-    max-height: initial;
+    max-height: 250px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
     align-items: center !important;
     padding: 50px 20px 20px;
+  }
+  .jins div p {
+    text-align: center;
   }
   .jins div .btn {
     margin-left: auto;
