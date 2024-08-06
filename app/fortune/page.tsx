@@ -18,32 +18,32 @@ export default function Fortune() {
   // const [usId, setUsId] = useState();
   // console.log("USID", usId);
 
-  // Обновление размеров iframe при изменении размеров окна
-  useEffect(() => {
-    // Получение ID пользователя
-    // if (typeof window !== "undefined") {
-    //   const userId = localStorage.getItem("user_id");
-    //   setUsId(userId);
-    // }
-    const updateIframeSize = () => {
-      const screenWidth = window.innerWidth;
-      setIframeWidth(screenWidth <= 767 ? "100%" : "1170px");
-      setIframeHeight(screenWidth <= 767 ? "100%" : "658px");
-    };
+  // // Обновление размеров iframe при изменении размеров окна
+  // useEffect(() => {
+  //   //Получение ID пользователя
+  //   if (typeof window !== "undefined") {
+  //     const userId = localStorage.getItem("user_id");
+  //     setUsId(userId);
+  //   }
+  //   const updateIframeSize = () => {
+  //     const screenWidth = window.innerWidth;
+  //     setIframeWidth(screenWidth <= 767 ? "100%" : "1170px");
+  //     setIframeHeight(screenWidth <= 767 ? "100%" : "658px");
+  //   };
 
-    window.addEventListener("resize", updateIframeSize);
-    updateIframeSize();
+  //   window.addEventListener("resize", updateIframeSize);
+  //   updateIframeSize();
 
-    return () => window.removeEventListener("resize", updateIframeSize);
-  }, []);
+  //   return () => window.removeEventListener("resize", updateIframeSize);
+  // }, []);
 
-  // Функция для обнуления времени в объекте даты
+  // // Функция для обнуления времени в объекте даты
   // const startOfDay = (date: Date) => {
   //   date.setHours(0, 0, 0, 0);
   //   return date;
   // };
 
-  // Функция для обновления данных пользователя, если необходимо
+  // // Функция для обновления данных пользователя, если необходимо
   // const updateUserDataIfNeeded = async (data: UserData) => {
   //   if (!data) return;
 
@@ -94,37 +94,39 @@ export default function Fortune() {
 
   // addEventListener("message", (event) => {
   //   console.log("EVENT", event);
-  // fetchData(userId);
+  // fetchData(usId);
   // updateUserDataIfNeeded(userData);
   // });
 
-  // const [messageData, setMessageData] = useState(null);
+  // const [messageData, setMessageData] = useState(false);
   // useEffect(() => {
   //   const handleMessage = (event) => {
   //     if (event.origin !== window.location.origin) {
   //       console.error("unauthorized origin", event.origin);
   //       return;
   //     }
+  
   //     let dataString =
-  //       typeof event.data === "string"
-  //         ? event.data
-  //         : JSON.stringify(event.data);
-
-  //     if (dataString.includes("Json:")) {
-  //       setMessageData(dataString);
-
-  //       fetchData();
-  //       if (userData) {
-  //         updateUserDataIfNeeded(userData);
-  //         // return;
-  //       }
+  //       typeof event.data === "string" ? event.data : JSON.stringify(event.data);
+  
+  //     // Проверка на сообщение об обновлении пользователя
+  //     const updateMessagePattern = /Json: \s*{"message":"Пользователь был обновлен"}/;
+  
+  //     if (updateMessagePattern.test(dataString)) {
+  //       setMessageData(true);
+  
+  //       // fetchData();
+  //       // if (userData) {
+  //       //   updateUserDataIfNeeded(userData);
+  //       // }
   //     }
   //     console.log("Received data", dataString);
   //   };
-
+  
   //   window.addEventListener("message", handleMessage);
   //   return () => window.removeEventListener("message", handleMessage);
   // }, [messageData]);
+  // console.log("MESSAGE", messageData);
 
   const target = "target-fw-brands-wheel-page";
   const creative = "FW_Brands_Wheel_Page";

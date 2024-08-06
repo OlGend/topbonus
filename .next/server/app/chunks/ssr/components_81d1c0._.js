@@ -508,14 +508,14 @@ const availableLanguages1044 = [
 ];
 const availableLanguagesCLD_VIP = [
     {
-        code: "au",
-        label: "Australia",
-        flag: "🇦🇺"
-    },
-    {
         code: "at",
         label: "Austria",
         flag: "🇦🇹"
+    },
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
     },
     {
         code: "be",
@@ -534,7 +534,7 @@ const availableLanguagesCLD_VIP = [
     },
     {
         code: "cz",
-        label: "The Czech Republic",
+        label: "Czech Republic",
         flag: "🇨🇿"
     },
     {
@@ -548,6 +548,11 @@ const availableLanguagesCLD_VIP = [
         flag: "🇩🇰"
     },
     {
+        code: "es",
+        label: "Spain",
+        flag: "🇪🇸"
+    },
+    {
         code: "fi",
         label: "Finland",
         flag: "🇫🇮"
@@ -556,6 +561,11 @@ const availableLanguagesCLD_VIP = [
         code: "fr",
         label: "France",
         flag: "🇫🇷"
+    },
+    {
+        code: "gb",
+        label: "United Kingdom",
+        flag: "🇬🇧"
     },
     {
         code: "gr",
@@ -576,6 +586,11 @@ const availableLanguagesCLD_VIP = [
         code: "it",
         label: "Italy",
         flag: "🇮🇹"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
     },
     {
         code: "no",
@@ -604,7 +619,7 @@ const availableLanguagesCLD_VIP = [
     },
     {
         code: "all",
-        label: "World",
+        label: "All",
         flag: "🌍"
     }
 ];
@@ -638,6 +653,10 @@ const getBrands = async (lng)=>{
             languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages1044"]
         },
         CLD_VIP: {
+            url: apiCLD_VIP,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
+        },
+        partner1045_b1: {
             url: apiCLD_VIP,
             languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
         },
@@ -1188,27 +1207,29 @@ async function initializeI18n() {
         "all"
     ];
     const availableLanguagesCLD_VIP = [
-        "au",
+        "all",
         "at",
+        "au",
         "be",
         "ca",
         "ch",
         "cz",
         "de",
         "dk",
+        "es",
         "fi",
         "fr",
+        "gb",
         "gr",
         "hu",
         "ie",
         "it",
+        "nl",
         "no",
         "nz",
         "pl",
         "se",
-        "sk",
-        "sk",
-        "all"
+        "sk"
     ];
     let item;
     if (typeof window !== "undefined") {
@@ -1222,6 +1243,8 @@ async function initializeI18n() {
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
     } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
+    } else if (item === "partner1045_b1") {
         newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
@@ -1481,7 +1504,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
                 "* Explore the Hottest New Brands –": "* Explore the Hottest New Brands –",
                 "Click Here!": "Click Here!",
-                "Expires in:": "Expires in:"
+                "Expires in:": "Expires in:",
+                "BIGGEST JACKPOTS": "BIGGEST JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TOURNAMENTS"
             }
         },
         pl: {
@@ -1736,7 +1761,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
                 "* Explore the Hottest New Brands –": "* Odkrywaj Najgorętsze Nowe Kasyna –",
                 "Click Here!": "Kliknij tutaj!",
-                "Expires in:": "Wygasa za:"
+                "Expires in:": "Wygasa za:",
+                "BIGGEST JACKPOTS": "NAJWIĘKSZE JACKPOTY",
+                "TOP TOURNAMENTS": "TOP TURNIEJE"
             }
         },
         de: {
@@ -1991,7 +2018,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
                 "* Explore the Hottest New Brands –": "* Entdecken Sie die heißesten neuen Casinos -",
                 "Click Here!": "Klicken Sie hier!",
-                "Expires in:": "Läuft ab in:"
+                "Expires in:": "Läuft ab in:",
+                "BIGGEST JACKPOTS": "GRÖSSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNIERE"
             }
         },
         bg: {
@@ -2246,7 +2275,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
                 "* Explore the Hottest New Brands –": "* Разгледайте най-горещите нови казина -",
                 "Click Here!": "Кликни тук!",
-                "Expires in:": "Изтича след:"
+                "Expires in:": "Изтича след:",
+                "BIGGEST JACKPOTS": "НАЙ-ГОЛЕМИТЕ ДЖАКПОТИ",
+                "TOP TOURNAMENTS": "ТОП ТУРНИРИ"
             }
         },
         cz: {
@@ -2501,7 +2532,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
                 "* Explore the Hottest New Brands –": "* Prozkoumejte nejžhavější nová kasina -",
                 "Click Here!": "Klikněte zde!",
-                "Expires in:": "Vyprší za:"
+                "Expires in:": "Vyprší za:",
+                "BIGGEST JACKPOTS": "NEJVĚTŠÍ JACKPOTY",
+                "TOP TOURNAMENTS": "NEJLEPŠÍ TURNAJE"
             }
         },
         dk: {
@@ -2756,7 +2789,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
                 "* Explore the Hottest New Brands –": "* Udforsk de nyeste og mest populære casinoer -",
                 "Click Here!": "Klik her!",
-                "Expires in:": "Udløber om:"
+                "Expires in:": "Udløber om:",
+                "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGER"
             }
         },
         nl: {
@@ -3011,7 +3046,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
                 "* Explore the Hottest New Brands –": "* Verken de Heetste Nieuwe Casino's -",
                 "Click Here!": "Klik hier!",
-                "Expires in:": "Verloopt in:"
+                "Expires in:": "Verloopt in:",
+                "BIGGEST JACKPOTS": "GROOTSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TOERNOOIEN"
             }
         },
         es: {
@@ -3266,7 +3303,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
                 "* Explore the Hottest New Brands –": "* Explora los casinos más nuevos y populares –",
                 "Click Here!": "¡Haz clic aquí!",
-                "Expires in:": "Caduca en:"
+                "Expires in:": "Caduca en:",
+                "BIGGEST JACKPOTS": "LOS MAYORES JACKPOTS",
+                "TOP TOURNAMENTS": "LOS MEJORES TORNEOS"
             }
         },
         fi: {
@@ -3521,7 +3560,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
                 "* Explore the Hottest New Brands –": "* Tutustu uusimpiin ja kuumimpiin kasinoihin –",
                 "Click Here!": "Klikkaa tästä!",
-                "Expires in:": "Vanhenee:"
+                "Expires in:": "Vanhenee:",
+                "BIGGEST JACKPOTS": "SUURIMMAT JACKPOTIT",
+                "TOP TOURNAMENTS": "HUIPPU TURNAUKSET"
             }
         },
         fr: {
@@ -3776,7 +3817,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
                 "* Explore the Hottest New Brands –": "* Découvrez les nouveaux casinos les plus populaires -",
                 "Click Here!": "Cliquez ici!",
-                "Expires in:": "Expire dans:"
+                "Expires in:": "Expire dans:",
+                "BIGGEST JACKPOTS": "PLUS GROS JACKPOTS",
+                "TOP TOURNAMENTS": "MEILLEURS TOURNOIS"
             }
         },
         gr: {
@@ -4031,7 +4074,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
                 "* Explore the Hottest New Brands –": "* Εξερευνήστε τα πιο δημοφιλή νέα καζίνο -",
                 "Click Here!": "Κάντε κλικ εδώ!",
-                "Expires in:": "Λήγει σε:"
+                "Expires in:": "Λήγει σε:",
+                "BIGGEST JACKPOTS": "ΜΕΓΑΛΥΤΕΡΑ ΤΖΑΚΠΟΤ",
+                "TOP TOURNAMENTS": "ΚΟΡΥΦΑΙΑ ΤΟΥΡΝΟΥΑ"
             }
         },
         hu: {
@@ -4286,7 +4331,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
                 "* Explore the Hottest New Brands –": "* Fedezze fel a legforróbb új kaszinókat -",
                 "Click Here!": "Kattints ide!",
-                "Expires in:": "Lejár:"
+                "Expires in:": "Lejár:",
+                "BIGGEST JACKPOTS": "LEGNAGYOBB JACKPOTOK",
+                "TOP TOURNAMENTS": "TOP VERSENYEK"
             }
         },
         it: {
@@ -4541,7 +4588,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
                 "* Explore the Hottest New Brands –": "* Esplora i nuovi casinò più caldi -",
                 "Click Here!": "Clicca qui!",
-                "Expires in:": "Scade tra:"
+                "Expires in:": "Scade tra:",
+                "BIGGEST JACKPOTS": "I PIÙ GRANDI JACKPOT",
+                "TOP TOURNAMENTS": "I MIGLIORI TORNEI"
             }
         },
         no: {
@@ -4796,7 +4845,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
                 "* Explore the Hottest New Brands –": "* Utforsk de nyeste og mest populære casinoene -",
                 "Click Here!": "Klikk her!",
-                "Expires in:": "Utløper om:"
+                "Expires in:": "Utløper om:",
+                "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGER"
             }
         },
         pt: {
@@ -5051,7 +5102,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
                 "* Explore the Hottest New Brands –": "* Explore os Novos Cassinos Mais Quentes -",
                 "Click Here!": "Clique aqui!",
-                "Expires in:": "Expira em:"
+                "Expires in:": "Expira em:",
+                "BIGGEST JACKPOTS": "MAIORES JACKPOTS",
+                "TOP TOURNAMENTS": "MELHORES TORNEIOS"
             }
         },
         se: {
@@ -5306,7 +5359,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
                 "* Explore the Hottest New Brands –": "* Utforska de hetaste nya casinona -",
                 "Click Here!": "Klicka här!",
-                "Expires in:": "Utgår om:"
+                "Expires in:": "Utgår om:",
+                "BIGGEST JACKPOTS": "STÖRSTA JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGAR"
             }
         },
         sk: {
@@ -5561,7 +5616,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
                 "* Explore the Hottest New Brands –": "* Preskúmajte najnovšie kasína -",
                 "Click Here!": "Kliknite tu!",
-                "Expires in:": "Vyprší o:"
+                "Expires in:": "Vyprší o:",
+                "BIGGEST JACKPOTS": "NAJVÄČŠIE JACKPOTY",
+                "TOP TOURNAMENTS": "NAJLEPŠIE TURNAJE"
             }
         },
         tr: {
@@ -5816,7 +5873,9 @@ async function initializeI18n() {
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
                 "* Explore the Hottest New Brands –": "* En Yeni ve En Popüler Casinoları Keşfedin –",
                 "Click Here!": "Buraya Tıkla!",
-                "Expires in:": "Sona erme tarihi:"
+                "Expires in:": "Sona erme tarihi:",
+                "BIGGEST JACKPOTS": "EN BÜYÜK JACKPOTLAR",
+                "TOP TOURNAMENTS": "EN İYİ TURNUVALAR"
             }
         }
     };
@@ -6041,31 +6100,6 @@ const LanguageSwitcher = ()=>{
     ];
     const availableLanguagesCLD_VIP = [
         {
-            code: "au",
-            label: "Australia",
-            flag: "🇦🇺"
-        },
-        {
-            code: "at",
-            label: "Austria",
-            flag: "🇦🇹"
-        },
-        {
-            code: "be",
-            label: "Belgium",
-            flag: "🇧🇪"
-        },
-        {
-            code: "ca",
-            label: "Canada",
-            flag: "🇨🇦"
-        },
-        {
-            code: "ch",
-            label: "Switzerland",
-            flag: "🇨🇭"
-        },
-        {
             code: "cz",
             label: "The Czech Republic",
             flag: "🇨🇿"
@@ -6101,14 +6135,14 @@ const LanguageSwitcher = ()=>{
             flag: "🇭🇺"
         },
         {
-            code: "ie",
-            label: "Ireland",
-            flag: "🇮🇪"
-        },
-        {
             code: "it",
             label: "Italy",
             flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
         },
         {
             code: "no",
@@ -6116,14 +6150,14 @@ const LanguageSwitcher = ()=>{
             flag: "🇳🇴"
         },
         {
-            code: "nz",
-            label: "New Zealand",
-            flag: "🇳🇿"
-        },
-        {
             code: "pl",
             label: "Poland",
             flag: "🇵🇱"
+        },
+        {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
         },
         {
             code: "se",
@@ -6157,6 +6191,9 @@ const LanguageSwitcher = ()=>{
             newLng = availableLanguages1044;
             break;
         case "CLD_VIP":
+            newLng = availableLanguagesCLD_VIP;
+            break;
+        case "partner1045_b1":
             newLng = availableLanguagesCLD_VIP;
             break;
         default:
@@ -6273,7 +6310,7 @@ const BrandsSwitcher = ()=>{
     const { language, setLanguage } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const ipData = async ()=>{
         try {
-            const response = await fetch("https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW");
+            const response = await fetch("https://ipapi.co/json");
             const data = await response.json();
             if (data.country) {
                 setLanguage(data.country.toLowerCase());
@@ -6674,14 +6711,19 @@ const BrandsSwitcher = ()=>{
     ];
     const availableLanguagesCLD_VIP = [
         {
-            code: "au",
-            label: "Australia",
-            flag: "🇦🇺"
+            code: "all",
+            label: "All",
+            flag: "🌍"
         },
         {
             code: "at",
             label: "Austria",
             flag: "🇦🇹"
+        },
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
             code: "be",
@@ -6700,7 +6742,7 @@ const BrandsSwitcher = ()=>{
         },
         {
             code: "cz",
-            label: "The Czech Republic",
+            label: "Czech Republic",
             flag: "🇨🇿"
         },
         {
@@ -6714,6 +6756,11 @@ const BrandsSwitcher = ()=>{
             flag: "🇩🇰"
         },
         {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
+        },
+        {
             code: "fi",
             label: "Finland",
             flag: "🇫🇮"
@@ -6722,6 +6769,11 @@ const BrandsSwitcher = ()=>{
             code: "fr",
             label: "France",
             flag: "🇫🇷"
+        },
+        {
+            code: "gb",
+            label: "United Kingdom",
+            flag: "🇬🇧"
         },
         {
             code: "gr",
@@ -6742,6 +6794,11 @@ const BrandsSwitcher = ()=>{
             code: "it",
             label: "Italy",
             flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
         },
         {
             code: "no",
@@ -6767,11 +6824,6 @@ const BrandsSwitcher = ()=>{
             code: "sk",
             label: "Slovakia",
             flag: "🇸🇰"
-        },
-        {
-            code: "all",
-            label: "World",
-            flag: "🌍"
         }
     ];
     let item;
@@ -6786,6 +6838,8 @@ const BrandsSwitcher = ()=>{
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
     } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
+    } else if (item === "partner1045_b1") {
         newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
@@ -6825,23 +6879,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 188,
+                        lineNumber: 193,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 177,
+                lineNumber: 182,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 198,
+                lineNumber: 203,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 176,
+        lineNumber: 181,
         columnNumber: 5
     }, this);
 };
@@ -7293,14 +7347,19 @@ function MultipleSelectPlaceholder() {
     ];
     const flagsCLD_VIP = [
         {
-            code: "au",
-            label: "Australia",
-            flag: "🇦🇺"
+            code: "all",
+            label: "All",
+            flag: "🌍"
         },
         {
             code: "at",
             label: "Austria",
             flag: "🇦🇹"
+        },
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
             code: "be",
@@ -7319,7 +7378,7 @@ function MultipleSelectPlaceholder() {
         },
         {
             code: "cz",
-            label: "The Czech Republic",
+            label: "Czech Republic",
             flag: "🇨🇿"
         },
         {
@@ -7333,6 +7392,11 @@ function MultipleSelectPlaceholder() {
             flag: "🇩🇰"
         },
         {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
+        },
+        {
             code: "fi",
             label: "Finland",
             flag: "🇫🇮"
@@ -7341,6 +7405,11 @@ function MultipleSelectPlaceholder() {
             code: "fr",
             label: "France",
             flag: "🇫🇷"
+        },
+        {
+            code: "gb",
+            label: "United Kingdom",
+            flag: "🇬🇧"
         },
         {
             code: "gr",
@@ -7361,6 +7430,11 @@ function MultipleSelectPlaceholder() {
             code: "it",
             label: "Italy",
             flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
         },
         {
             code: "no",
@@ -7386,11 +7460,6 @@ function MultipleSelectPlaceholder() {
             code: "sk",
             label: "Slovakia",
             flag: "🇸🇰"
-        },
-        {
-            code: "all",
-            label: "World",
-            flag: "🌍"
         }
     ];
     const [lng, setLng] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
@@ -7415,6 +7484,9 @@ function MultipleSelectPlaceholder() {
             newFlag = flags1044;
             break;
         case "CLD_VIP":
+            newFlag = flagsCLD_VIP;
+            break;
+        case "partner1045_b1":
             newFlag = flagsCLD_VIP;
             break;
         default:
@@ -7469,33 +7541,33 @@ function MultipleSelectPlaceholder() {
                         children: t("Your country of residence")
                     }, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 217,
+                        lineNumber: 223,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 218,
+                        lineNumber: 224,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 219,
+                        lineNumber: 225,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                lineNumber: 186,
+                lineNumber: 192,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-            lineNumber: 182,
+            lineNumber: 188,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-        lineNumber: 181,
+        lineNumber: 187,
         columnNumber: 5
     }, this);
 }
@@ -8394,8 +8466,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modal$2f$index
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$KeitaroIframe$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/KeitaroIframe.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@vercel/analytics/dist/index.mjs (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
+;
 ;
 ;
 ;
@@ -8434,7 +8508,22 @@ const TheHeader = ()=>{
     };
     const [isLoading, setIsLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const [user, setUser] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
-    const urlParams = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
+    const getParamsFromUrl = ()=>{
+        let params = new URLSearchParams(window.location.search);
+        if (!params.has("keyword")) {
+            const hash = window.location.hash;
+            if (hash.includes("?")) {
+                params = new URLSearchParams(hash.split("?")[1]);
+            }
+        }
+        return params;
+    };
+    let urlParams;
+    if (typeof window !== "undefined") {
+        urlParams = getParamsFromUrl();
+    } else {
+        urlParams = new URLSearchParams();
+    }
     const [load, setLoad] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const [keywordValue, setKeywordValue] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
     const idUserParam = urlParams.get("keyword");
@@ -8452,7 +8541,8 @@ const TheHeader = ()=>{
                 "partner1039",
                 "partner1043",
                 "partner1044",
-                "CLD_VIP"
+                "CLD_VIP",
+                "partner1045_b1"
             ];
             partners.forEach((partner)=>{
                 if (data.includes(partner)) {
@@ -8556,11 +8646,11 @@ const TheHeader = ()=>{
         children: [
             load ? dataUser.geo_approve === null || dataUser.geo_approve === "" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$geo$2d$identifier$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 197,
+                lineNumber: 220,
                 columnNumber: 11
             }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 199,
+                lineNumber: 222,
                 columnNumber: 11
             }, this) : "",
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8579,17 +8669,17 @@ const TheHeader = ()=>{
                                     loading: "lazy"
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 210,
+                                    lineNumber: 233,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                lineNumber: 209,
+                                lineNumber: 232,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 208,
+                            lineNumber: 231,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8610,7 +8700,7 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 220,
+                                                        lineNumber: 243,
                                                         columnNumber: 23
                                                     }, this),
                                                     " ",
@@ -8618,24 +8708,24 @@ const TheHeader = ()=>{
                                                         children: t("My Wallet")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 224,
+                                                        lineNumber: 247,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 218,
+                                            lineNumber: 241,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 217,
+                                        lineNumber: 240,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 215,
+                                    lineNumber: 238,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8653,31 +8743,31 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 237,
+                                                        lineNumber: 260,
                                                         columnNumber: 23
                                                     }, this),
                                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                         children: t("Fortune Wheel")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 241,
+                                                        lineNumber: 264,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 235,
+                                            lineNumber: 258,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 234,
+                                        lineNumber: 257,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 232,
+                                    lineNumber: 255,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8692,32 +8782,32 @@ const TheHeader = ()=>{
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 253,
+                                                    lineNumber: 276,
                                                     columnNumber: 21
                                                 }, this),
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                     children: t("Cards Shop")
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 254,
+                                                    lineNumber: 277,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 251,
+                                        lineNumber: 274,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 249,
+                                    lineNumber: 272,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 214,
+                            lineNumber: 237,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["I18nextProvider"], {
@@ -8725,7 +8815,7 @@ const TheHeader = ()=>{
                             children: [
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuLanguages$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 262,
+                                    lineNumber: 285,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8736,31 +8826,31 @@ const TheHeader = ()=>{
                                             children: [
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 265,
+                                                    lineNumber: 288,
                                                     columnNumber: 17
                                                 }, this),
                                                 " "
                                             ]
                                         }, void 0, true, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 264,
+                                            lineNumber: 287,
                                             columnNumber: 15
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 267,
+                                            lineNumber: 290,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 263,
+                                    lineNumber: 286,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 261,
+                            lineNumber: 284,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuPages$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -8768,7 +8858,7 @@ const TheHeader = ()=>{
                             t: t
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 271,
+                            lineNumber: 294,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8784,32 +8874,32 @@ const TheHeader = ()=>{
                                                 className: "line line1"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 279,
+                                                lineNumber: 302,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line2"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 280,
+                                                lineNumber: 303,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line3"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 281,
+                                                lineNumber: 304,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 278,
+                                        lineNumber: 301,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 274,
+                                    lineNumber: 297,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8824,34 +8914,34 @@ const TheHeader = ()=>{
                                             onLinkClick: closeMobileMenu
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 286,
+                                            lineNumber: 309,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 285,
+                                        lineNumber: 308,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 284,
+                                    lineNumber: 307,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 273,
+                            lineNumber: 296,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 207,
+                    lineNumber: 230,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 206,
+                lineNumber: 229,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -8863,18 +8953,18 @@ const TheHeader = ()=>{
                         }))
                 }, void 0, false, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 299,
+                    lineNumber: 322,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 298,
+                lineNumber: 321,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/TheHeader.jsx>",
-        lineNumber: 194,
+        lineNumber: 217,
         columnNumber: 5
     }, this);
 };

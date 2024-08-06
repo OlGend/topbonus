@@ -21,16 +21,24 @@ function Fortune() {
     const [userData, setUserData] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const banner = false;
+    const [messageData, setMessageData] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        const updateIframeSize = ()=>{
-            const screenWidth = window.innerWidth;
-            setIframeWidth(screenWidth <= 767 ? "100%" : "1170px");
-            setIframeHeight(screenWidth <= 767 ? "100%" : "658px");
+        const handleMessage = (event)=>{
+            if (event.origin !== window.location.origin) {
+                console.error("unauthorized origin", event.origin);
+                return;
+            }
+            let dataString = typeof event.data === "string" ? event.data : JSON.stringify(event.data);
+            if (dataString.includes("Json:")) {
+                setMessageData(dataString);
+            }
         };
-        window.addEventListener("resize", updateIframeSize);
-        updateIframeSize();
-        return ()=>window.removeEventListener("resize", updateIframeSize);
-    }, []);
+        window.addEventListener("message", handleMessage);
+        return ()=>window.removeEventListener("message", handleMessage);
+    }, [
+        messageData
+    ]);
+    console.log("MESSAGE", messageData);
     const target = "target-fw-brands-wheel-page";
     const creative = "FW_Brands_Wheel_Page";
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -45,12 +53,12 @@ function Fortune() {
                     height: iframeHeight
                 }, void 0, false, {
                     fileName: "<[project]/app/fortune/page.tsx>",
-                    lineNumber: 135,
+                    lineNumber: 136,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/app/fortune/page.tsx>",
-                lineNumber: 134,
+                lineNumber: 135,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$fortune$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {
@@ -59,13 +67,13 @@ function Fortune() {
                 creative: creative
             }, void 0, false, {
                 fileName: "<[project]/app/fortune/page.tsx>",
-                lineNumber: 143,
+                lineNumber: 144,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/app/fortune/page.tsx>",
-        lineNumber: 132,
+        lineNumber: 133,
         columnNumber: 5
     }, this);
 }

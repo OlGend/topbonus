@@ -387,9 +387,10 @@ const chunks = [
     ]
   },
   {
-    "path": "_next/static/chunks/node_modules_react-i18next_dist_es_index_eaecc5.js",
+    "path": "_next/static/chunks/node_modules_2e440f._.js",
     "included": [
-      "[project]/node_modules/react-i18next/dist/es/index.js (ecmascript)"
+      "[project]/node_modules/react-i18next/dist/es/index.js (ecmascript)",
+      "[project]/node_modules/@vercel/analytics/dist/index.mjs (ecmascript)"
     ]
   },
   "_next/static/chunks/components_TheHeader_jsx_5771e1._.js"

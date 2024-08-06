@@ -1,7 +1,7 @@
 Error.stackTraceLimit = 100;
 global.self = global;
-require("./node_modules_067d70._.js");
-require("./node_modules_0ce700._.js");
+require("./node_modules_2b4d28._.js");
+require("./node_modules_b5d294._.js");
 require("./components_81d1c0._.js");
 require("./components_TheFooter_tsx_39d08d._.js");
 require("./components_Marque_jsx_52abb2._.js");
@@ -30,4 +30,4 @@ require("./components_switcher_LanguageContext_jsx_631687._.js");
 require("./components_switcher_LanguageContext_jsx_bf02d4._.js");
 require("./app_8d53cb._.js");
 require("./[next]_entry_app-renderer_tsx_ee0717._.js");
-require("./[next]_entry_app-renderer_tsx_3696d3._.js");
+require("./[next]_entry_app-renderer_tsx_e729e4._.js");
