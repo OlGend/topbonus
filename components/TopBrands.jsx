@@ -26,6 +26,7 @@ export default function TopBrands() {
   const { language } = useLanguage();
   const { t } = useTranslation();
 
+  const [source, setSource] = useState("");
 
   useEffect(() => {
     // Обновляем URL, удаляем параметры и устанавливаем source на основе localStorage
@@ -58,21 +59,25 @@ export default function TopBrands() {
         setSource(partner);
         searchParams.set("source", partner);
       } else {
-        setSource("0");
-        // Получаем текущий источник и проверяем, не является ли он одним из допустимых партнеров
-        const sourceFound = localStorage.getItem("source");
+        // Проверка, есть ли источник в localStorage, если нет, устанавливаем "0"
+        const sourceFound = localStorage.getItem("source") || "0";
         if (!partners.includes(sourceFound)) {
           localStorage.setItem("source", "0");
           searchParams.set("source", "0");
+        } else {
+          setSource(sourceFound);
         }
       }
     }
 
     if (currentKeyword) {
       setPartnerSource(currentKeyword);
+    } else {
+      const savedSource = localStorage.getItem("source");
+      if (savedSource) {
+        setSource(savedSource); // Устанавливаем source из localStorage
+      }
     }
-
-    const ad_campaign = localStorage.getItem("ad_campaign_id");
 
     const savedUrl = localStorage.getItem("savedUrl");
     if (savedUrl) {
@@ -116,71 +121,35 @@ export default function TopBrands() {
         setCurrentBrandIndex((prevIndex) => (prevIndex + 1) % brands.length);
         setFade(true); // Start fade-in
       }, 500); // Duration of fade-out effect
-    }, 5000000); // Change brand every 5 seconds
+    }, 5000); // Change brand every 5 seconds
 
     return () => clearInterval(interval);
   }, [brands.length]);
 
-
-
   const TWO_DAYS_IN_MS = 2 * 24 * 60 * 60 * 1000; // Константа для двух суток
   const ONE_MINUTE_IN_MS = 60 * 1000; // Константа для одной минуты
   const [redirectUrl, setRedirectUrl] = useState(""); // Состояние для URL перенаправления
-  const source = "partner1039"; // Пример значения, используемого для выбора URL
+  const [stage, setStage] = useState("first-stage"); // Начальное значение состояния на клиенте
+  const [timestamp, setTimestamp] = useState(null); // Начальное значение таймстампа
+  const [remainingTime, setRemainingTime] = useState(ONE_MINUTE_IN_MS); // 
 
-  // Получаем или создаем таймстамп в localStorage
-  const getOrSetTimestamp = () => {
-    let timestamp = localStorage.getItem("timestamp");
-    if (!timestamp) {
-      timestamp = Date.now().toString();
-      localStorage.setItem("timestamp", timestamp);
-    }
-    return parseInt(timestamp, 10);
-  };
+  // useEffect для инициализации состояния на клиенте
+  useEffect(() => {
+    const storedStage = localStorage.getItem("stage") || "first-stage";
+    const storedTimestamp = localStorage.getItem("timestamp");
 
-  // Инициализация состояния stage с использованием вычисленного значения из localStorage
-  const [stage, setStage] = useState(() => {
-    const existingStage = localStorage.getItem("stage");
-    if (!existingStage) {
-      // Если stage не существует в localStorage, записываем новое значение
-      localStorage.setItem("stage", "first-stage");
-      return "first-stage";
-    }
-    return existingStage;
-  });
+    setStage(storedStage);
 
-  // Инициализация таймстампа
-  const [timestamp, setTimestamp] = useState(getOrSetTimestamp);
-
-  // Состояние для хранения оставшегося времени
-  const [remainingTime, setRemainingTime] = useState(() => {
-    const timeElapsed = Date.now() - timestamp;
-    return ONE_MINUTE_IN_MS - timeElapsed;
-  });
-
-  // Проверка загрузки данных
-
-  // Функция для перехода на второй этап
-  const scndstage = () => {
-    setStage("second-stage");
-    if (!localStorage.getItem("timestamp")) {
+    if (storedTimestamp) {
+      const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
+      setRemainingTime(ONE_MINUTE_IN_MS - timeElapsed);
+      setTimestamp(parseInt(storedTimestamp, 10));
+    } else {
       const newTimestamp = Date.now();
-      setTimestamp(newTimestamp);
       localStorage.setItem("timestamp", newTimestamp.toString());
+      setTimestamp(newTimestamp);
     }
-  };
-
-  // Функция для сброса состояния на первый этап и открытия новой вкладки
-  const resetToFirstStage = () => {
-    setStage("first-stage");
-    localStorage.setItem("stage", "first-stage");
-    localStorage.removeItem("timestamp"); // Удаляем таймстамп из localStorage
-
-    if (redirectUrl) {
-      // Открываем новую вкладку с URL из состояния
-      window.open(redirectUrl, "_blank");
-    }
-  };
+  }, []);
 
   // useEffect для установки URL перенаправления на основе source
   useEffect(() => {
@@ -206,16 +175,19 @@ export default function TopBrands() {
     }
     setRedirectUrl(url); // Сохраняем URL в состояние
   }, [source]);
+  console.log("RED", redirectUrl, source)
 
   // useEffect для синхронизации stage с localStorage
   useEffect(() => {
-    localStorage.setItem("stage", stage);
-    console.log("STAGE", stage);
+    if (stage) {
+      localStorage.setItem("stage", stage);
+      console.log("STAGE", stage);
+    }
   }, [stage]);
 
   // useEffect для обновления оставшегося времени и перехода на третий этап
   useEffect(() => {
-    if (stage === "second-stage") {
+    if (stage === "second-stage" && timestamp) {
       const intervalId = setInterval(() => {
         const timeElapsed = Date.now() - timestamp;
         const newRemainingTime = ONE_MINUTE_IN_MS - timeElapsed;
@@ -231,6 +203,27 @@ export default function TopBrands() {
       return () => clearInterval(intervalId);
     }
   }, [stage, timestamp]);
+
+  // Функция для перехода на второй этап
+  const scndstage = () => {
+    setStage("second-stage");
+    const newTimestamp = Date.now();
+    setTimestamp(newTimestamp);
+    localStorage.setItem("timestamp", newTimestamp.toString());
+  };
+
+  // Функция для сброса состояния на первый этап и открытия новой вкладки
+  const resetToFirstStage = () => {
+    setStage("first-stage");
+    localStorage.setItem("stage", "first-stage");
+    localStorage.removeItem("timestamp"); // Удаляем таймстамп из localStorage
+
+    if (redirectUrl) {
+      // Открываем новую вкладку с URL из состояния
+      window.open(redirectUrl, "_blank");
+      console.log("REDIRECT", redirectUrl);
+    }
+  };
 
   // Форматирование оставшегося времени
   const formatTime = (milliseconds) => {
