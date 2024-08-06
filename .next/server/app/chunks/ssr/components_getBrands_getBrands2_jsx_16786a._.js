@@ -6,7 +6,8 @@ __turbopack_esm__({
     "availableLanguages": ()=>availableLanguages,
     "availableLanguages1039": ()=>availableLanguages1039,
     "availableLanguages1043": ()=>availableLanguages1043,
-    "availableLanguages1044": ()=>availableLanguages1044
+    "availableLanguages1044": ()=>availableLanguages1044,
+    "availableLanguagesCLD_VIP": ()=>availableLanguagesCLD_VIP
 });
 const availableLanguages = [
     {
@@ -15,44 +16,9 @@ const availableLanguages = [
         flag: "🇦🇺"
     },
     {
-        code: "at",
-        label: "Austria",
-        flag: "🇦🇹"
-    },
-    {
-        code: "be",
-        label: "Belgium",
-        flag: "🇧🇪"
-    },
-    {
-        code: "bg",
-        label: "Bulgaria",
-        flag: "🇧🇬"
-    },
-    {
         code: "ca",
         label: "Canada",
         flag: "🇨🇦"
-    },
-    {
-        code: "cz",
-        label: "Czech",
-        flag: "🇨🇿"
-    },
-    {
-        code: "dk",
-        label: "Denmark",
-        flag: "🇩🇰"
-    },
-    {
-        code: "fi",
-        label: "Finland",
-        flag: "🇫🇮"
-    },
-    {
-        code: "fr",
-        label: "France",
-        flag: "🇫🇷"
     },
     {
         code: "de",
@@ -60,29 +26,9 @@ const availableLanguages = [
         flag: "🇩🇪"
     },
     {
-        code: "gr",
-        label: "Greece",
-        flag: "🇬🇷"
-    },
-    {
-        code: "hu",
-        label: "Hungary",
-        flag: "🇭🇺"
-    },
-    {
         code: "ie",
         label: "Ireland",
         flag: "🇮🇪"
-    },
-    {
-        code: "it",
-        label: "Italy",
-        flag: "🇮🇹"
-    },
-    {
-        code: "nl",
-        label: "Netherlands",
-        flag: "🇳🇱"
     },
     {
         code: "nz",
@@ -95,29 +41,14 @@ const availableLanguages = [
         flag: "🇳🇴"
     },
     {
-        code: "pl",
-        label: "Poland",
-        flag: "🇵🇱"
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
     },
     {
-        code: "pt",
-        label: "Portugal",
-        flag: "🇵🇹"
-    },
-    {
-        code: "sk",
-        label: "Slovakia",
-        flag: "🇸🇰"
-    },
-    {
-        code: "es",
-        label: "Spain",
-        flag: "🇪🇸"
-    },
-    {
-        code: "se",
-        label: "Sweden",
-        flag: "🇸🇪"
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
     },
     {
         code: "ch",
@@ -125,14 +56,64 @@ const availableLanguages = [
         flag: "🇨🇭"
     },
     {
-        code: "tr",
-        label: "Turkey",
-        flag: "🇹🇷"
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
     },
     {
-        code: "gb",
-        label: "United Kingdom",
-        flag: "🇬🇧"
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "cz",
+        label: "Czech",
+        flag: "🇨🇿"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "bg",
+        label: "Bulgaria",
+        flag: "🇧🇬"
     },
     {
         code: "all",
@@ -386,6 +367,123 @@ const availableLanguages1044 = [
         flag: "🌍"
     }
 ];
+const availableLanguagesCLD_VIP = [
+    {
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
+    },
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "ca",
+        label: "Canada",
+        flag: "🇨🇦"
+    },
+    {
+        code: "ch",
+        label: "Switzerland",
+        flag: "🇨🇭"
+    },
+    {
+        code: "cz",
+        label: "Czech Republic",
+        flag: "🇨🇿"
+    },
+    {
+        code: "de",
+        label: "Germany",
+        flag: "🇩🇪"
+    },
+    {
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
+    },
+    {
+        code: "es",
+        label: "Spain",
+        flag: "🇪🇸"
+    },
+    {
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
+    },
+    {
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "gb",
+        label: "United Kingdom",
+        flag: "🇬🇧"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "ie",
+        label: "Ireland",
+        flag: "🇮🇪"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
+    },
+    {
+        code: "no",
+        label: "Norway",
+        flag: "🇳🇴"
+    },
+    {
+        code: "nz",
+        label: "New Zealand",
+        flag: "🇳🇿"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "all",
+        label: "All",
+        flag: "🌍"
+    }
+];
 
 })()),
 "[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
@@ -401,6 +499,7 @@ const getBrands = async (lng)=>{
     const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
     const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
     const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
+    const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
     const partners = {
         partner1039: {
             url: api1039,
@@ -413,6 +512,14 @@ const getBrands = async (lng)=>{
         partner1044: {
             url: api1044,
             languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages1044"]
+        },
+        CLD_VIP: {
+            url: apiCLD_VIP,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
+        },
+        partner1045_b1: {
+            url: apiCLD_VIP,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
         },
         default: {
             url: apiAll,
