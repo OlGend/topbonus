@@ -98,22 +98,22 @@ export default function TopBrandsRandom() {
     let url = "";
     switch (source) {
       case "partner1039":
-        url = "https://info.topbon.us/partner_aurnd";
+        url = `https://info.topbon.us/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
         break;
       case "partner1043":
-        url = "https://info.topbon.us/rnd1043";
+        url = `https://info.topbon.us/rnd1043/${newUrl}&creative_id=XXL_JIN`;
         break;
       case "partner1044":
-        url = "https://info.topbon.us/rnd1044";
+        url = `https://info.topbon.us/rnd1044/${newUrl}&creative_id=XXL_JIN`;
         break;
       case "CLD_VIP":
-        url = "https://link.bo-nus.com/rnd_cld";
+        url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
         break;
       case "partner1045_b1":
-        url = "https://link.bo-nus.com/rnd_cld";
+        url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
         break;
       default:
-        url = "https://info.topbon.us/aurnd";
+        url = `https://info.topbon.us/aurnd/${newUrl}&creative_id=XXL_JIN`;
     }
     setRedirectUrl(url);
   }, [source]);
