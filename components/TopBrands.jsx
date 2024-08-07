@@ -125,7 +125,7 @@ export default function TopBrands() {
     return () => clearInterval(interval);
   }, [brands.length]);
 
-  const TWO_DAYS_IN_MS = 2 * 24 * 60 * 60 * 1000; // Константа для двух суток
+  const ONE_DAY_IN_MS = 1 * 24 * 60 * 60 * 1000; // Константа для двух суток
   const ONE_MINUTE_IN_MS = 60 * 1000; // Константа для одной минуты
   const [redirectUrl, setRedirectUrl] = useState(""); // Состояние для URL перенаправления
   // Инициализация состояний
@@ -138,7 +138,7 @@ export default function TopBrands() {
     // Получаем текущее значение 'timestamp' из localStorage при первой загрузке
     return localStorage.getItem('timestamp') || null;
   });
-  const [remainingTime, setRemainingTime] = useState(ONE_MINUTE_IN_MS); //
+  const [remainingTime, setRemainingTime] = useState(ONE_DAY_IN_MS); //
 
   // useEffect для инициализации состояния на клиенте
   useEffect(() => {
@@ -150,7 +150,7 @@ export default function TopBrands() {
 
     if (storedTimestamp) {
       const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
-      setRemainingTime(ONE_MINUTE_IN_MS - timeElapsed);
+      setRemainingTime(ONE_DAY_IN_MS - timeElapsed);
       setTimestamp(parseInt(storedTimestamp, 10));
     } else {
       const newTimestamp = Date.now();
@@ -198,7 +198,7 @@ export default function TopBrands() {
     if (stage === "second-stage" && timestamp) {
       const intervalId = setInterval(() => {
         const timeElapsed = Date.now() - timestamp;
-        const newRemainingTime = ONE_MINUTE_IN_MS - timeElapsed;
+        const newRemainingTime = ONE_DAY_IN_MS - timeElapsed;
         setRemainingTime(newRemainingTime);
 
         if (newRemainingTime <= 0) {
