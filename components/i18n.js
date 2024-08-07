@@ -129,7 +129,7 @@ async function initializeI18n() {
     "nz",
     "pl",
     "se",
-    "sk"
+    "sk",
   ];
 
   let item;
@@ -527,6 +527,18 @@ async function initializeI18n() {
         "Expires in:": "Expires in:",
         "BIGGEST JACKPOTS": "BIGGEST JACKPOTS",
         "TOP TOURNAMENTS": "TOP TOURNAMENTS",
+
+
+        "Click Here to Unleash Your Magic Bonus!": "Click Here to Unleash Your Magic Bonus!",
+        "Get a bonus just for you tomorrow!": "Get a bonus just for you tomorrow!",
+        "Get Bonus": "Get Bonus",
+        "Thank you! Your Bonus Will Be Here Soon": "Thank you! Your Bonus Will Be Here Soon",
+        "Come back after": "Come back after",
+        "to collect it!": "to collect it!",
+        "Your Bonus is Ready!": "Your Bonus is Ready!",
+        "Click below to claim your magical reward!": "Click below to claim your magical reward!",
+        "Bonus Ready!": "Bonus Ready!",
+ 
       },
     },
 

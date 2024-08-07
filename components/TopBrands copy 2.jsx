@@ -128,22 +128,13 @@ export default function TopBrands() {
   const TWO_DAYS_IN_MS = 2 * 24 * 60 * 60 * 1000; // Константа для двух суток
   const ONE_MINUTE_IN_MS = 60 * 1000; // Константа для одной минуты
   const [redirectUrl, setRedirectUrl] = useState(""); // Состояние для URL перенаправления
-  // Инициализация состояний
-  const [stage, setStage] = useState(() => {
-    // Получаем текущее значение 'stage' из localStorage при первой загрузке
-    return localStorage.getItem('stage') || 'first-stage';
-  });
-
-  const [timestamp, setTimestamp] = useState(() => {
-    // Получаем текущее значение 'timestamp' из localStorage при первой загрузке
-    return localStorage.getItem('timestamp') || null;
-  });
+  const [stage, setStage] = useState("first-stage"); // Начальное значение состояния на клиенте
+  const [timestamp, setTimestamp] = useState(null); // Начальное значение таймстампа
   const [remainingTime, setRemainingTime] = useState(ONE_MINUTE_IN_MS); //
 
   // useEffect для инициализации состояния на клиенте
   useEffect(() => {
     const storedStage = localStorage.getItem("stage") || "first-stage";
-  
     const storedTimestamp = localStorage.getItem("timestamp");
 
     setStage(storedStage);

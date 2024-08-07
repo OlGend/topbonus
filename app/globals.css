@@ -10640,13 +10640,22 @@ main > .topbr {
   .jins div {
     min-width: initial;
     max-width: initial;
-    min-height: initial;
+    min-height: 250px;
     max-height: 250px;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
     align-items: center !important;
     padding: 50px 20px 20px;
+  }
+  .frstjin {
+    background: url(/jin/jin11.png) no-repeat center;
+  }
+  .scnjin {
+    background: url(/jin/jin22.png) no-repeat center;
+  }
+  .thrdjin {
+    background: url(/jin/jin33.png) no-repeat center;
   }
   .jins div p {
     text-align: center;
