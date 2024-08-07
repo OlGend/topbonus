@@ -272,6 +272,7 @@ export default function TopBrands() {
           }),
         }
       );
+      
 
       const result = await response.json();
 
