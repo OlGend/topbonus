@@ -1970,48 +1970,50 @@ function TopBrands() {
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const [source, setSource] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        const currentUrl = window.location.href;
-        const indexOfQuestionMark = currentUrl.indexOf("?");
-        const newUrl2 = indexOfQuestionMark !== -1 ? currentUrl.substring(0, indexOfQuestionMark) : currentUrl;
-        window.history.replaceState({}, document.title, newUrl2);
-        const urlObj = new URL(currentUrl);
-        const searchParams = new URLSearchParams(urlObj.search);
-        searchParams.delete("brand");
-        const currentKeyword = searchParams.get("keyword");
-        const partners = [
-            "partner1039",
-            "partner1043",
-            "partner1044",
-            "CLD_VIP",
-            "partner1045_b1"
-        ];
-        function setPartnerSource(keyword) {
-            const partner = partners.find((p)=>keyword.includes(p));
-            if (partner) {
-                localStorage.setItem("source", partner);
-                setSource(partner);
-                searchParams.set("source", partner);
-            } else {
-                const sourceFound = localStorage.getItem("source") || "0";
-                if (!partners.includes(sourceFound)) {
-                    localStorage.setItem("source", "0");
-                    searchParams.set("source", "0");
+        if (typeof window !== 'undefined') {
+            const currentUrl = window.location.href;
+            const indexOfQuestionMark = currentUrl.indexOf("?");
+            const newUrl2 = indexOfQuestionMark !== -1 ? currentUrl.substring(0, indexOfQuestionMark) : currentUrl;
+            window.history.replaceState({}, document.title, newUrl2);
+            const urlObj = new URL(currentUrl);
+            const searchParams = new URLSearchParams(urlObj.search);
+            searchParams.delete("brand");
+            const currentKeyword = searchParams.get("keyword");
+            const partners = [
+                "partner1039",
+                "partner1043",
+                "partner1044",
+                "CLD_VIP",
+                "partner1045_b1"
+            ];
+            function setPartnerSource(keyword) {
+                const partner = partners.find((p)=>keyword.includes(p));
+                if (partner) {
+                    localStorage.setItem("source", partner);
+                    setSource(partner);
+                    searchParams.set("source", partner);
                 } else {
-                    setSource(sourceFound);
+                    const sourceFound = localStorage.getItem("source") || "0";
+                    if (!partners.includes(sourceFound)) {
+                        localStorage.setItem("source", "0");
+                        searchParams.set("source", "0");
+                    } else {
+                        setSource(sourceFound);
+                    }
                 }
             }
-        }
-        if (currentKeyword) {
-            setPartnerSource(currentKeyword);
-        } else {
-            const savedSource = localStorage.getItem("source");
-            if (savedSource) {
-                setSource(savedSource);
+            if (currentKeyword) {
+                setPartnerSource(currentKeyword);
+            } else {
+                const savedSource = localStorage.getItem("source");
+                if (savedSource) {
+                    setSource(savedSource);
+                }
             }
-        }
-        const savedUrl = localStorage.getItem("savedUrl");
-        if (savedUrl) {
-            setNewUrl(savedUrl);
+            const savedUrl = localStorage.getItem("savedUrl");
+            if (savedUrl) {
+                setNewUrl(savedUrl);
+            }
         }
     }, [
         language
@@ -2047,7 +2049,7 @@ function TopBrands() {
                 bonus: brand.OurOfferContent
             }, void 0, false, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 108,
+                lineNumber: 110,
                 columnNumber: 7
             }, this)
         }));
@@ -2067,54 +2069,64 @@ function TopBrands() {
     const ONE_MINUTE_IN_MS = 60 * 1000;
     const [redirectUrl, setRedirectUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     const [stage, setStage] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](()=>{
-        return localStorage.getItem('stage') || 'first-stage';
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('stage') || 'first-stage';
+        }
+        return 'first-stage';
     });
     const [timestamp, setTimestamp] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](()=>{
-        return localStorage.getItem('timestamp') || null;
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('timestamp') || null;
+        }
+        return null;
     });
     const [remainingTime, setRemainingTime] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](ONE_DAY_IN_MS);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        const storedStage = localStorage.getItem("stage") || "first-stage";
-        const storedTimestamp = localStorage.getItem("timestamp");
-        setStage(storedStage);
-        if (storedTimestamp) {
-            const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
-            setRemainingTime(ONE_DAY_IN_MS - timeElapsed);
-            setTimestamp(parseInt(storedTimestamp, 10));
-        } else {
-            const newTimestamp = Date.now();
-            localStorage.setItem("timestamp", newTimestamp.toString());
-            setTimestamp(newTimestamp);
+        if (typeof window !== 'undefined') {
+            const storedStage = localStorage.getItem("stage") || "first-stage";
+            const storedTimestamp = localStorage.getItem("timestamp");
+            setStage(storedStage);
+            if (storedTimestamp) {
+                const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
+                setRemainingTime(ONE_DAY_IN_MS - timeElapsed);
+                setTimestamp(parseInt(storedTimestamp, 10));
+            } else {
+                const newTimestamp = Date.now();
+                localStorage.setItem("timestamp", newTimestamp.toString());
+                setTimestamp(newTimestamp);
+            }
         }
     }, []);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        let url = "";
-        switch(source){
-            case "partner1039":
-                url = `https://info.topbon.us/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
-                break;
-            case "partner1043":
-                url = `https://info.topbon.us/rnd1043/${newUrl}&creative_id=XXL_JIN`;
-                break;
-            case "partner1044":
-                url = `https://info.topbon.us/rnd1044/${newUrl}&creative_id=XXL_JIN`;
-                break;
-            case "CLD_VIP":
-                url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
-                break;
-            case "partner1045_b1":
-                url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
-                break;
-            default:
-                url = `https://info.topbon.us/aurnd/${newUrl}&creative_id=XXL_JIN`;
+        if (typeof window !== 'undefined') {
+            let url = "";
+            switch(source){
+                case "partner1039":
+                    url = `https://info.topbon.us/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                case "partner1043":
+                    url = `https://info.topbon.us/rnd1043/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                case "partner1044":
+                    url = `https://info.topbon.us/rnd1044/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                case "CLD_VIP":
+                    url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                case "partner1045_b1":
+                    url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                default:
+                    url = `https://info.topbon.us/aurnd/${newUrl}&creative_id=XXL_JIN`;
+            }
+            setRedirectUrl(url);
         }
-        setRedirectUrl(url);
     }, [
         source
     ]);
     console.log("RED", redirectUrl, source);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        if (stage) {
+        if (typeof window !== 'undefined' && stage) {
             localStorage.setItem("stage", stage);
             console.log("STAGE", stage);
         }
@@ -2122,7 +2134,7 @@ function TopBrands() {
         stage
     ]);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        if (stage === "second-stage" && timestamp) {
+        if (typeof window !== 'undefined' && stage === "second-stage" && timestamp) {
             const intervalId = setInterval(()=>{
                 const timeElapsed = Date.now() - timestamp;
                 const newRemainingTime = ONE_DAY_IN_MS - timeElapsed;
@@ -2142,16 +2154,18 @@ function TopBrands() {
     const [customer, setCustomer] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
     const [user, setUser] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        const userData = localStorage.getItem("userData");
-        if (userData) {
-            const userObject = JSON.parse(userData);
-            const customerValue = userObject.customer;
-            const idValue = userObject.id;
-            setUser(idValue);
-            setCustomer(customerValue);
-            console.log("Значение поля customer:", customerValue);
-        } else {
-            console.log("Данные userData отсутствуют в localStorage.");
+        if (typeof window !== 'undefined') {
+            const userData = localStorage.getItem("userData");
+            if (userData) {
+                const userObject = JSON.parse(userData);
+                const customerValue = userObject.customer;
+                const idValue = userObject.id;
+                setUser(idValue);
+                setCustomer(customerValue);
+                console.log("Значение поля customer:", customerValue);
+            } else {
+                console.log("Данные userData отсутствуют в localStorage.");
+            }
         }
     }, []);
     const sendUserData = async (userId, customerType, nameEvent)=>{
@@ -2212,7 +2226,7 @@ function TopBrands() {
                 className: "main__container",
                 children: loading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "<[project]/components/TopBrands.jsx>",
-                    lineNumber: 318,
+                    lineNumber: 336,
                     columnNumber: 13
                 }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                     className: "flex justify-between items-center",
@@ -2229,12 +2243,12 @@ function TopBrands() {
                                 showArrows: false
                             }, void 0, false, {
                                 fileName: "<[project]/components/TopBrands.jsx>",
-                                lineNumber: 323,
+                                lineNumber: 341,
                                 columnNumber: 19
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/TopBrands.jsx>",
-                            lineNumber: 322,
+                            lineNumber: 340,
                             columnNumber: 17
                         }, this),
                         stage != null && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -2248,14 +2262,14 @@ function TopBrands() {
                                             children: t("Click Here to Unleash Your Magic Bonus!")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 337,
+                                            lineNumber: 355,
                                             columnNumber: 25
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                                             children: t("Get a bonus just for you tomorrow!")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 340,
+                                            lineNumber: 358,
                                             columnNumber: 25
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -2264,13 +2278,13 @@ function TopBrands() {
                                             children: t("Get Bonus")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 341,
+                                            lineNumber: 359,
                                             columnNumber: 25
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/TopBrands.jsx>",
-                                    lineNumber: 336,
+                                    lineNumber: 354,
                                     columnNumber: 23
                                 }, this),
                                 stage === "second-stage" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -2281,7 +2295,7 @@ function TopBrands() {
                                             children: t("Thank you! Your Bonus Will Be Here Soon")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 351,
+                                            lineNumber: 369,
                                             columnNumber: 25
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
@@ -2292,7 +2306,7 @@ function TopBrands() {
                                                     children: formatTime(remainingTime)
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TopBrands.jsx>",
-                                                    lineNumber: 356,
+                                                    lineNumber: 374,
                                                     columnNumber: 27
                                                 }, this),
                                                 " ",
@@ -2300,13 +2314,13 @@ function TopBrands() {
                                             ]
                                         }, void 0, true, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 354,
+                                            lineNumber: 372,
                                             columnNumber: 25
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/TopBrands.jsx>",
-                                    lineNumber: 350,
+                                    lineNumber: 368,
                                     columnNumber: 23
                                 }, this),
                                 stage === "third-stage" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -2317,14 +2331,14 @@ function TopBrands() {
                                             children: t("Your Bonus is Ready!")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 365,
+                                            lineNumber: 383,
                                             columnNumber: 25
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                                             children: t("Click below to claim your magical reward!")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 366,
+                                            lineNumber: 384,
                                             columnNumber: 25
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -2333,35 +2347,35 @@ function TopBrands() {
                                             children: t("Bonus Ready!")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 367,
+                                            lineNumber: 385,
                                             columnNumber: 25
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/TopBrands.jsx>",
-                                    lineNumber: 364,
+                                    lineNumber: 382,
                                     columnNumber: 23
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TopBrands.jsx>",
-                            lineNumber: 334,
+                            lineNumber: 352,
                             columnNumber: 19
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/TopBrands.jsx>",
-                    lineNumber: 321,
+                    lineNumber: 339,
                     columnNumber: 15
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 316,
+                lineNumber: 334,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/TopBrands.jsx>",
-            lineNumber: 315,
+            lineNumber: 333,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -10997,8 +11011,29 @@ function Tournament() {
     }, [
         source
     ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined') {
+            const scrollToHash = ()=>{
+                if (window.location.hash) {
+                    const id = window.location.hash.slice(1);
+                    const targetElement = document.getElementById(id);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            };
+            scrollToHash();
+            window.addEventListener('hashchange', scrollToHash);
+            return ()=>{
+                window.removeEventListener('hashchange', scrollToHash);
+            };
+        }
+    }, []);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+            id: "rand-brand",
             className: "preview2 main__container banners-anim flex items-center justify-between mt-5 mb-5",
             children: [
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -11014,7 +11049,7 @@ function Tournament() {
                                     children: t("Click now to play")
                                 }, void 0, false, {
                                     fileName: "<[project]/components/Tournament.jsx>",
-                                    lineNumber: 108,
+                                    lineNumber: 137,
                                     columnNumber: 15
                                 }, this),
                                 " ",
@@ -11028,13 +11063,13 @@ function Tournament() {
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/Tournament.jsx>",
-                                    lineNumber: 110,
+                                    lineNumber: 139,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 106,
+                            lineNumber: 135,
                             columnNumber: 13
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
@@ -11044,13 +11079,13 @@ function Tournament() {
                             children: t("Try Your Luck")
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 112,
+                            lineNumber: 141,
                             columnNumber: 13
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Tournament.jsx>",
-                    lineNumber: 105,
+                    lineNumber: 134,
                     columnNumber: 7
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -11060,7 +11095,7 @@ function Tournament() {
                             children: t("BIGGEST JACKPOTS")
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 121,
+                            lineNumber: 150,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -11071,7 +11106,7 @@ function Tournament() {
                             className: "floating-image coin1"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 122,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -11082,7 +11117,7 @@ function Tournament() {
                             className: "floating-image coin2"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 129,
+                            lineNumber: 158,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -11093,19 +11128,19 @@ function Tournament() {
                             className: "floating-image diamond"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 136,
+                            lineNumber: 165,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Tournament.jsx>",
-                    lineNumber: 120,
+                    lineNumber: 149,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Tournament.jsx>",
-            lineNumber: 104,
+            lineNumber: 133,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -12595,7 +12630,6 @@ const Fortunes = ({ banner, target, creative })=>{
         setVisibleBrands((prev)=>prev + 5);
     };
     const hasMoreBrands = brands.length > visibleBrands;
-    console.log("aaaaaa", brands);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
         className: "flex flex-col container-fortune",
         children: [

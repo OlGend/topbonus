@@ -99,28 +99,33 @@ export default function Tournament() {
     setRedirectUrl(url);
   }, [source]);
 
-
   useEffect(() => {
-    const handleLoad = () => {
-      // Проверяем наличие якоря в URL
-      if (window.location.hash) {
-        const id = window.location.hash.slice(1);
-        const targetElement = document.getElementById(id);
+    // Проверяем, что выполняемся на клиенте
+    if (typeof window !== 'undefined') {
+      // Функция для обработки перехода к якорной ссылке
+      const scrollToHash = () => {
+        if (window.location.hash) {
+          const id = window.location.hash.slice(1);
+          const targetElement = document.getElementById(id);
 
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' });
+          }
         }
-      }
-    };
+      };
 
-    // Добавляем слушатель события load
-    window.addEventListener('load', handleLoad);
+      // Выполняем прокрутку к якорю сразу после загрузки
+      scrollToHash();
 
-    // Убираем слушатель при размонтировании компонента
-    return () => {
-      window.removeEventListener('load', handleLoad);
-    };
-  }, []);
+      // Добавляем обработчик события hashchange для перехода по якорям
+      window.addEventListener('hashchange', scrollToHash);
+
+      // Убираем обработчик при размонтировании компонента
+      return () => {
+        window.removeEventListener('hashchange', scrollToHash);
+      };
+    }
+  }, []); 
   
 
   return (
