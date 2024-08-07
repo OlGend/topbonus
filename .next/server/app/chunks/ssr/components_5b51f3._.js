@@ -2063,7 +2063,7 @@ function TopBrands() {
     }, [
         brands.length
     ]);
-    const TWO_DAYS_IN_MS = 2 * 24 * 60 * 60 * 1000;
+    const ONE_DAY_IN_MS = 1 * 24 * 60 * 60 * 1000;
     const ONE_MINUTE_IN_MS = 60 * 1000;
     const [redirectUrl, setRedirectUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     const [stage, setStage] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](()=>{
@@ -2072,14 +2072,14 @@ function TopBrands() {
     const [timestamp, setTimestamp] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](()=>{
         return localStorage.getItem('timestamp') || null;
     });
-    const [remainingTime, setRemainingTime] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](ONE_MINUTE_IN_MS);
+    const [remainingTime, setRemainingTime] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](ONE_DAY_IN_MS);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const storedStage = localStorage.getItem("stage") || "first-stage";
         const storedTimestamp = localStorage.getItem("timestamp");
         setStage(storedStage);
         if (storedTimestamp) {
             const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
-            setRemainingTime(ONE_MINUTE_IN_MS - timeElapsed);
+            setRemainingTime(ONE_DAY_IN_MS - timeElapsed);
             setTimestamp(parseInt(storedTimestamp, 10));
         } else {
             const newTimestamp = Date.now();
@@ -2125,7 +2125,7 @@ function TopBrands() {
         if (stage === "second-stage" && timestamp) {
             const intervalId = setInterval(()=>{
                 const timeElapsed = Date.now() - timestamp;
-                const newRemainingTime = ONE_MINUTE_IN_MS - timeElapsed;
+                const newRemainingTime = ONE_DAY_IN_MS - timeElapsed;
                 setRemainingTime(newRemainingTime);
                 if (newRemainingTime <= 0) {
                     setStage("third-stage");
@@ -3447,7 +3447,16 @@ async function initializeI18n() {
                 "Click Here!": "Kliknij tutaj!",
                 "Expires in:": "Wygasa za:",
                 "BIGGEST JACKPOTS": "NAJWIĘKSZE JACKPOTY",
-                "TOP TOURNAMENTS": "TOP TURNIEJE"
+                "TOP TOURNAMENTS": "TOP TURNIEJE",
+                "Click Here to Unleash Your Magic Bonus!": "Kliknij tutaj, aby uwolnić swój magiczny bonus!",
+                "Get a bonus just for you tomorrow!": "Odbierz jutro bonus tylko dla Ciebie!",
+                "Get Bonus": "Odbierz Bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Dziękujemy! Twój bonus wkrótce będzie tutaj",
+                "Come back after": "Wróć po",
+                "to collect it!": "aby go odebrać!",
+                "Your Bonus is Ready!": "Twój bonus jest gotowy!",
+                "Click below to claim your magical reward!": "Kliknij poniżej, aby odebrać swoją magiczną nagrodę!",
+                "Bonus Ready!": "Bonus gotowy!"
             }
         },
         de: {
@@ -3704,7 +3713,16 @@ async function initializeI18n() {
                 "Click Here!": "Klicken Sie hier!",
                 "Expires in:": "Läuft ab in:",
                 "BIGGEST JACKPOTS": "GRÖSSTE JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TURNIERE"
+                "TOP TOURNAMENTS": "TOP TURNIERE",
+                "Click Here to Unleash Your Magic Bonus!": "Klicken Sie hier, um Ihren magischen Bonus freizuschalten!",
+                "Get a bonus just for you tomorrow!": "Holen Sie sich morgen einen Bonus nur für Sie!",
+                "Get Bonus": "Bonus holen",
+                "Thank you! Your Bonus Will Be Here Soon": "Danke! Ihr Bonus wird bald hier sein",
+                "Come back after": "Kommen Sie nach",
+                "to collect it!": "zurück, um ihn abzuholen!",
+                "Your Bonus is Ready!": "Ihr Bonus ist bereit!",
+                "Click below to claim your magical reward!": "Klicken Sie unten, um Ihre magische Belohnung zu erhalten!",
+                "Bonus Ready!": "Bonus bereit!"
             }
         },
         bg: {
@@ -3961,7 +3979,16 @@ async function initializeI18n() {
                 "Click Here!": "Кликни тук!",
                 "Expires in:": "Изтича след:",
                 "BIGGEST JACKPOTS": "НАЙ-ГОЛЕМИТЕ ДЖАКПОТИ",
-                "TOP TOURNAMENTS": "ТОП ТУРНИРИ"
+                "TOP TOURNAMENTS": "ТОП ТУРНИРИ",
+                "Click Here to Unleash Your Magic Bonus!": "Кликнете тук, за да отключите своя магически бонус!",
+                "Get a bonus just for you tomorrow!": "Получете бонус само за вас утре!",
+                "Get Bonus": "Вземи бонус",
+                "Thank you! Your Bonus Will Be Here Soon": "Благодаря! Вашият бонус скоро ще бъде тук",
+                "Come back after": "Върнете се след",
+                "to collect it!": "за да го получите!",
+                "Your Bonus is Ready!": "Вашият бонус е готов!",
+                "Click below to claim your magical reward!": "Кликнете по-долу, за да получите вашата магическа награда!",
+                "Bonus Ready!": "Бонус готов!"
             }
         },
         cz: {
@@ -4218,7 +4245,16 @@ async function initializeI18n() {
                 "Click Here!": "Klikněte zde!",
                 "Expires in:": "Vyprší za:",
                 "BIGGEST JACKPOTS": "NEJVĚTŠÍ JACKPOTY",
-                "TOP TOURNAMENTS": "NEJLEPŠÍ TURNAJE"
+                "TOP TOURNAMENTS": "NEJLEPŠÍ TURNAJE",
+                "Click Here to Unleash Your Magic Bonus!": "Klikněte zde a uvolněte svůj magický bonus!",
+                "Get a bonus just for you tomorrow!": "Zítra získáte bonus jen pro vás!",
+                "Get Bonus": "Získat bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Děkujeme! Váš bonus bude brzy zde",
+                "Come back after": "Vraťte se po",
+                "to collect it!": "abyste si ho vyzvedli!",
+                "Your Bonus is Ready!": "Váš bonus je připraven!",
+                "Click below to claim your magical reward!": "Klikněte níže a získejte svou magickou odměnu!",
+                "Bonus Ready!": "Bonus připraven!"
             }
         },
         dk: {
@@ -4475,7 +4511,16 @@ async function initializeI18n() {
                 "Click Here!": "Klik her!",
                 "Expires in:": "Udløber om:",
                 "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TURNERINGER"
+                "TOP TOURNAMENTS": "TOP TURNERINGER",
+                "Click Here to Unleash Your Magic Bonus!": "Klik her for at frigøre din magiske bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus kun til dig i morgen!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Tak! Din bonus vil snart være her",
+                "Come back after": "Kom tilbage efter",
+                "to collect it!": "for at hente den!",
+                "Your Bonus is Ready!": "Din bonus er klar!",
+                "Click below to claim your magical reward!": "Klik nedenfor for at få din magiske belønning!",
+                "Bonus Ready!": "Bonus klar!"
             }
         },
         nl: {
@@ -4732,7 +4777,16 @@ async function initializeI18n() {
                 "Click Here!": "Klik hier!",
                 "Expires in:": "Verloopt in:",
                 "BIGGEST JACKPOTS": "GROOTSTE JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TOERNOOIEN"
+                "TOP TOURNAMENTS": "TOP TOERNOOIEN",
+                "Click Here to Unleash Your Magic Bonus!": "Klik hier om je magische bonus te ontketenen!",
+                "Get a bonus just for you tomorrow!": "Krijg morgen een bonus alleen voor jou!",
+                "Get Bonus": "Bonus krijgen",
+                "Thank you! Your Bonus Will Be Here Soon": "Dank je! Je bonus komt er binnenkort aan",
+                "Come back after": "Kom terug na",
+                "to collect it!": "om het op te halen!",
+                "Your Bonus is Ready!": "Je bonus is klaar!",
+                "Click below to claim your magical reward!": "Klik hieronder om je magische beloning te claimen!",
+                "Bonus Ready!": "Bonus klaar!"
             }
         },
         es: {
@@ -4989,7 +5043,16 @@ async function initializeI18n() {
                 "Click Here!": "¡Haz clic aquí!",
                 "Expires in:": "Caduca en:",
                 "BIGGEST JACKPOTS": "LOS MAYORES JACKPOTS",
-                "TOP TOURNAMENTS": "LOS MEJORES TORNEOS"
+                "TOP TOURNAMENTS": "LOS MEJORES TORNEOS",
+                "Click Here to Unleash Your Magic Bonus!": "Haz clic aquí para liberar tu bono mágico!",
+                "Get a bonus just for you tomorrow!": "¡Consigue un bono solo para ti mañana!",
+                "Get Bonus": "Obtener bono",
+                "Thank you! Your Bonus Will Be Here Soon": "¡Gracias! Tu bono estará aquí pronto",
+                "Come back after": "Vuelve después de",
+                "to collect it!": "para recogerlo!",
+                "Your Bonus is Ready!": "¡Tu bono está listo!",
+                "Click below to claim your magical reward!": "Haz clic abajo para reclamar tu recompensa mágica!",
+                "Bonus Ready!": "Bono listo!"
             }
         },
         fi: {
@@ -5246,7 +5309,16 @@ async function initializeI18n() {
                 "Click Here!": "Klikkaa tästä!",
                 "Expires in:": "Vanhenee:",
                 "BIGGEST JACKPOTS": "SUURIMMAT JACKPOTIT",
-                "TOP TOURNAMENTS": "HUIPPU TURNAUKSET"
+                "TOP TOURNAMENTS": "HUIPPU TURNAUKSET",
+                "Click Here to Unleash Your Magic Bonus!": "Klikkaa tästä vapauttaaksesi maagisen bonuksesi!",
+                "Get a bonus just for you tomorrow!": "Saat bonuksen vain sinulle huomenna!",
+                "Get Bonus": "Hanki bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Kiitos! Bonuksesi tulee pian",
+                "Come back after": "Tule takaisin jälkeen",
+                "to collect it!": "noudettavaksi!",
+                "Your Bonus is Ready!": "Bonuksesi on valmis!",
+                "Click below to claim your magical reward!": "Klikkaa alla saadaksesi maagisen palkkiosi!",
+                "Bonus Ready!": "Bonus valmis!"
             }
         },
         fr: {
@@ -5503,7 +5575,16 @@ async function initializeI18n() {
                 "Click Here!": "Cliquez ici!",
                 "Expires in:": "Expire dans:",
                 "BIGGEST JACKPOTS": "PLUS GROS JACKPOTS",
-                "TOP TOURNAMENTS": "MEILLEURS TOURNOIS"
+                "TOP TOURNAMENTS": "MEILLEURS TOURNOIS",
+                "Click Here to Unleash Your Magic Bonus!": "Cliquez ici pour libérer votre bonus magique!",
+                "Get a bonus just for you tomorrow!": "Obtenez un bonus rien que pour vous demain!",
+                "Get Bonus": "Obtenez un bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Merci! Votre bonus sera bientôt ici",
+                "Come back after": "Revenez après",
+                "to collect it!": "pour le récupérer!",
+                "Your Bonus is Ready!": "Votre bonus est prêt!",
+                "Click below to claim your magical reward!": "Cliquez ci-dessous pour réclamer votre récompense magique!",
+                "Bonus Ready!": "Bonus prêt!"
             }
         },
         gr: {
@@ -5760,7 +5841,16 @@ async function initializeI18n() {
                 "Click Here!": "Κάντε κλικ εδώ!",
                 "Expires in:": "Λήγει σε:",
                 "BIGGEST JACKPOTS": "ΜΕΓΑΛΥΤΕΡΑ ΤΖΑΚΠΟΤ",
-                "TOP TOURNAMENTS": "ΚΟΡΥΦΑΙΑ ΤΟΥΡΝΟΥΑ"
+                "TOP TOURNAMENTS": "ΚΟΡΥΦΑΙΑ ΤΟΥΡΝΟΥΑ",
+                "Click Here to Unleash Your Magic Bonus!": "Κάντε κλικ εδώ για να απελευθερώσετε το μαγικό σας μπόνους!",
+                "Get a bonus just for you tomorrow!": "Πάρτε ένα μπόνους μόνο για εσάς αύριο!",
+                "Get Bonus": "Πάρτε το μπόνους",
+                "Thank you! Your Bonus Will Be Here Soon": "Ευχαριστούμε! Το μπόνους σας θα είναι εδώ σύντομα",
+                "Come back after": "Επιστρέψτε μετά",
+                "to collect it!": "για να το συλλέξετε!",
+                "Your Bonus is Ready!": "Το μπόνους σας είναι έτοιμο!",
+                "Click below to claim your magical reward!": "Κάντε κλικ παρακάτω για να διεκδικήσετε την μαγική σας ανταμοιβή!",
+                "Bonus Ready!": "Το μπόνους είναι έτοιμο!"
             }
         },
         hu: {
@@ -6017,7 +6107,16 @@ async function initializeI18n() {
                 "Click Here!": "Kattints ide!",
                 "Expires in:": "Lejár:",
                 "BIGGEST JACKPOTS": "LEGNAGYOBB JACKPOTOK",
-                "TOP TOURNAMENTS": "TOP VERSENYEK"
+                "TOP TOURNAMENTS": "TOP VERSENYEK",
+                "Click Here to Unleash Your Magic Bonus!": "Kattintson ide a varázslatos bónusz felszabadításához!",
+                "Get a bonus just for you tomorrow!": "Szerezzen holnap egy bónuszt csak önnek!",
+                "Get Bonus": "Szerezzen bónuszt",
+                "Thank you! Your Bonus Will Be Here Soon": "Köszönjük! A bónusz hamarosan itt lesz",
+                "Come back after": "Térjen vissza",
+                "to collect it!": "hogy begyűjtse!",
+                "Your Bonus is Ready!": "A bónusza készen áll!",
+                "Click below to claim your magical reward!": "Kattintson alul, hogy igényelje varázslatos jutalmát!",
+                "Bonus Ready!": "A bónusz készen áll!"
             }
         },
         it: {
@@ -6274,7 +6373,16 @@ async function initializeI18n() {
                 "Click Here!": "Clicca qui!",
                 "Expires in:": "Scade tra:",
                 "BIGGEST JACKPOTS": "I PIÙ GRANDI JACKPOT",
-                "TOP TOURNAMENTS": "I MIGLIORI TORNEI"
+                "TOP TOURNAMENTS": "I MIGLIORI TORNEI",
+                "Click Here to Unleash Your Magic Bonus!": "Clicca qui per sbloccare il tuo bonus magico!",
+                "Get a bonus just for you tomorrow!": "Ottieni un bonus solo per te domani!",
+                "Get Bonus": "Ottieni bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Grazie! Il tuo bonus sarà qui presto",
+                "Come back after": "Torna dopo",
+                "to collect it!": "per ritirarlo!",
+                "Your Bonus is Ready!": "Il tuo bonus è pronto!",
+                "Click below to claim your magical reward!": "Clicca sotto per richiedere la tua ricompensa magica!",
+                "Bonus Ready!": "Bonus pronto!"
             }
         },
         no: {
@@ -6531,7 +6639,16 @@ async function initializeI18n() {
                 "Click Here!": "Klikk her!",
                 "Expires in:": "Utløper om:",
                 "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TURNERINGER"
+                "TOP TOURNAMENTS": "TOP TURNERINGER",
+                "Click Here to Unleash Your Magic Bonus!": "Klikk her for å frigjøre din magiske bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus bare for deg i morgen!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Takk! Bonusen din vil snart være her",
+                "Come back after": "Kom tilbake etter",
+                "to collect it!": "for å hente den!",
+                "Your Bonus is Ready!": "Din bonus er klar!",
+                "Click below to claim your magical reward!": "Klikk nedenfor for å få din magiske belønning!",
+                "Bonus Ready!": "Bonus klar!"
             }
         },
         pt: {
@@ -6788,7 +6905,16 @@ async function initializeI18n() {
                 "Click Here!": "Clique aqui!",
                 "Expires in:": "Expira em:",
                 "BIGGEST JACKPOTS": "MAIORES JACKPOTS",
-                "TOP TOURNAMENTS": "MELHORES TORNEIOS"
+                "TOP TOURNAMENTS": "MELHORES TORNEIOS",
+                "Click Here to Unleash Your Magic Bonus!": "Clique aqui para liberar seu bônus mágico!",
+                "Get a bonus just for you tomorrow!": "Receba um bônus só para você amanhã!",
+                "Get Bonus": "Obter Bônus",
+                "Thank you! Your Bonus Will Be Here Soon": "Obrigado! Seu bônus estará aqui em breve",
+                "Come back after": "Volte depois de",
+                "to collect it!": "para coletá-lo!",
+                "Your Bonus is Ready!": "Seu bônus está pronto!",
+                "Click below to claim your magical reward!": "Clique abaixo para reivindicar sua recompensa mágica!",
+                "Bonus Ready!": "Bônus pronto!"
             }
         },
         se: {
@@ -7045,7 +7171,16 @@ async function initializeI18n() {
                 "Click Here!": "Klicka här!",
                 "Expires in:": "Utgår om:",
                 "BIGGEST JACKPOTS": "STÖRSTA JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TURNERINGAR"
+                "TOP TOURNAMENTS": "TOP TURNERINGAR",
+                "Click Here to Unleash Your Magic Bonus!": "Klicka här för att frigöra din magiska bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus bara för dig i morgon!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Tack! Din bonus kommer snart att vara här",
+                "Come back after": "Kom tillbaka efter",
+                "to collect it!": "för att hämta den!",
+                "Your Bonus is Ready!": "Din bonus är redo!",
+                "Click below to claim your magical reward!": "Klicka nedan för att hämta din magiska belöning!",
+                "Bonus Ready!": "Bonus redo!"
             }
         },
         sk: {
@@ -7302,7 +7437,16 @@ async function initializeI18n() {
                 "Click Here!": "Kliknite tu!",
                 "Expires in:": "Vyprší o:",
                 "BIGGEST JACKPOTS": "NAJVÄČŠIE JACKPOTY",
-                "TOP TOURNAMENTS": "NAJLEPŠIE TURNAJE"
+                "TOP TOURNAMENTS": "NAJLEPŠIE TURNAJE",
+                "Click Here to Unleash Your Magic Bonus!": "Kliknite sem a uvoľnite svoj magický bonus!",
+                "Get a bonus just for you tomorrow!": "Získajte zajtra bonus len pre vás!",
+                "Get Bonus": "Získať bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Ďakujeme! Váš bonus bude čoskoro tu",
+                "Come back after": "Vráťte sa po",
+                "to collect it!": "aby ste si ho vyzdvihli!",
+                "Your Bonus is Ready!": "Váš bonus je pripravený!",
+                "Click below to claim your magical reward!": "Kliknite nižšie a získajte svoju magickú odmenu!",
+                "Bonus Ready!": "Bonus pripravený!"
             }
         },
         tr: {
@@ -7559,7 +7703,16 @@ async function initializeI18n() {
                 "Click Here!": "Buraya Tıkla!",
                 "Expires in:": "Sona erme tarihi:",
                 "BIGGEST JACKPOTS": "EN BÜYÜK JACKPOTLAR",
-                "TOP TOURNAMENTS": "EN İYİ TURNUVALAR"
+                "TOP TOURNAMENTS": "EN İYİ TURNUVALAR",
+                "Click Here to Unleash Your Magic Bonus!": "Sihirli Bonusunuzu serbest bırakmak için buraya tıklayın!",
+                "Get a bonus just for you tomorrow!": "Yarın sadece size özel bir bonus alın!",
+                "Get Bonus": "Bonus Alın",
+                "Thank you! Your Bonus Will Be Here Soon": "Teşekkürler! Bonusunuz yakında burada olacak",
+                "Come back after": "Geri dön",
+                "to collect it!": "toplamak için!",
+                "Your Bonus is Ready!": "Bonusunuz hazır!",
+                "Click below to claim your magical reward!": "Sihirli ödülünüzü almak için aşağıya tıklayın!",
+                "Bonus Ready!": "Bonus Hazır!"
             }
         }
     };
@@ -10846,8 +10999,60 @@ function Tournament() {
     ]);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-            className: "main__container banners-anim flex items-center justify-between mt-5 mb-5",
+            className: "preview2 main__container banners-anim flex items-center justify-between mt-5 mb-5",
             children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "flex flex-col",
+                    children: [
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h1", {
+                            className: "",
+                            children: [
+                                t("Feeling lucky today?"),
+                                " ",
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                    className: "text-blued",
+                                    children: t("Click now to play")
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/Tournament.jsx>",
+                                    lineNumber: 108,
+                                    columnNumber: 15
+                                }, this),
+                                " ",
+                                t("and see if"),
+                                " ",
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                    className: "text-blued",
+                                    children: [
+                                        " ",
+                                        t("luck is on your side!")
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "<[project]/components/Tournament.jsx>",
+                                    lineNumber: 110,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 106,
+                            columnNumber: 13
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                            target: "_blank",
+                            className: "btn btn-primary btn-tournament big-btn mt-3 target-try-your-luck",
+                            href: `${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`,
+                            children: t("Try Your Luck")
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 112,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/Tournament.jsx>",
+                    lineNumber: 105,
+                    columnNumber: 7
+                }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                     className: "banner-animation animation1",
                     children: [
@@ -10855,7 +11060,7 @@ function Tournament() {
                             children: t("BIGGEST JACKPOTS")
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 106,
+                            lineNumber: 121,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -10866,7 +11071,7 @@ function Tournament() {
                             className: "floating-image coin1"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 107,
+                            lineNumber: 122,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -10877,7 +11082,7 @@ function Tournament() {
                             className: "floating-image coin2"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 114,
+                            lineNumber: 129,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -10888,71 +11093,13 @@ function Tournament() {
                             className: "floating-image diamond"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 121,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
-                            href: `${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`,
-                            className: "btn btn-primary btn-tournament",
-                            target: "_blank",
-                            children: t("Play Now")
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 128,
+                            lineNumber: 136,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Tournament.jsx>",
-                    lineNumber: 105,
-                    columnNumber: 9
-                }, this),
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    className: "banner-animation animation2",
-                    children: [
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h3", {
-                            children: t("TOP TOURNAMENTS")
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 137,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                            alt: "coin",
-                            width: 180,
-                            loading: "lazy",
-                            className: "floating-image cup1"
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 138,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2d$1$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2d$1$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                            alt: "coin",
-                            width: 180,
-                            loading: "lazy",
-                            className: "floating-image cup2"
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 145,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
-                            target: "_blank",
-                            href: `${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`,
-                            className: "btn btn-primary btn-tournament",
-                            children: t("Play Now")
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 153,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "<[project]/components/Tournament.jsx>",
-                    lineNumber: 136,
+                    lineNumber: 120,
                     columnNumber: 9
                 }, this)
             ]

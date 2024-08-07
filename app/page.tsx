@@ -1,7 +1,7 @@
 //page.tsx
 import { Metadata } from "next";
 import TopBrands from "@/components/TopBrands";
-import TopBrandsRandom from "@/components/TopBrandsRandom";
+// import TopBrandsRandom from "@/components/TopBrandsRandom";
 
 import FilteredHome from "@/components/Brands_home/FilteredHome";
 import Fortunes from "@/components/fortune";

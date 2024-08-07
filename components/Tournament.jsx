@@ -101,7 +101,22 @@ export default function Tournament() {
 
   return (
     <>
-      <div className="main__container banners-anim flex items-center justify-between mt-5 mb-5">
+      <div className="preview2 main__container banners-anim flex items-center justify-between mt-5 mb-5">
+      <div className="flex flex-col">
+            <h1 className="">
+              {t("Feeling lucky today?")}{" "}
+              <span className="text-blued">{t("Click now to play")}</span>{" "}
+              {t("and see if")}{" "}
+              <span className="text-blued"> {t("luck is on your side!")}</span>
+            </h1>
+            <Link
+              target="_blank"
+              className="btn btn-primary btn-tournament big-btn mt-3 target-try-your-luck"
+              href={`${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`}
+            >
+              {t("Try Your Luck")}
+            </Link>
+          </div>
         <div className="banner-animation animation1">
           <h3>{t("BIGGEST JACKPOTS")}</h3>
           <Image
@@ -125,15 +140,15 @@ export default function Tournament() {
             loading="lazy"
             className="floating-image diamond"
           />
-          <a
+          {/* <a
             href={`${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`}
             className="btn btn-primary btn-tournament"
             target="_blank"
           >
             {t("Play Now")}
-          </a>
+          </a> */}
         </div>
-        <div className="banner-animation animation2">
+        {/* <div className="banner-animation animation2">
           <h3>{t("TOP TOURNAMENTS")}</h3>
           <Image
             src={cup1}
@@ -157,7 +172,7 @@ export default function Tournament() {
           >
             {t("Play Now")}
           </a>
-        </div>
+        </div> */}
       </div>
     </>
   );

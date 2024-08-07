@@ -9859,6 +9859,14 @@ main > .topbr {
     margin-left: auto;
     margin-right: auto;
   }
+  .banner-animation {
+    padding: 60px 0 !important;
+  }
+}
+.preview2.banners-anim {
+  background-image: none !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 }
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
