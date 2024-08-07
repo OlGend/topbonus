@@ -99,9 +99,23 @@ export default function Tournament() {
     setRedirectUrl(url);
   }, [source]);
 
+
+  window.addEventListener('load', () => {
+    // Проверяем наличие якоря в URL
+    if (window.location.hash) {
+      const id = window.location.hash.slice(1);
+      const targetElement = document.getElementById(id);
+  
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  });
+  
+
   return (
     <>
-      <div className="preview2 main__container banners-anim flex items-center justify-between mt-5 mb-5">
+      <div id="rand-brand" className="preview2 main__container banners-anim flex items-center justify-between mt-5 mb-5">
       <div className="flex flex-col">
             <h1 className="">
               {t("Feeling lucky today?")}{" "}

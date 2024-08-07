@@ -47,7 +47,7 @@ const Fortunes = ({ banner, target, creative }) => {
 
   const hasMoreBrands = brands.length > visibleBrands;
 
-  console.log("aaaaaa", brands);
+
 
   return (
     <div className="flex flex-col container-fortune">
