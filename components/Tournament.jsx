@@ -100,17 +100,27 @@ export default function Tournament() {
   }, [source]);
 
 
-  window.addEventListener('load', () => {
-    // Проверяем наличие якоря в URL
-    if (window.location.hash) {
-      const id = window.location.hash.slice(1);
-      const targetElement = document.getElementById(id);
-  
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
+  useEffect(() => {
+    const handleLoad = () => {
+      // Проверяем наличие якоря в URL
+      if (window.location.hash) {
+        const id = window.location.hash.slice(1);
+        const targetElement = document.getElementById(id);
+
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
       }
-    }
-  });
+    };
+
+    // Добавляем слушатель события load
+    window.addEventListener('load', handleLoad);
+
+    // Убираем слушатель при размонтировании компонента
+    return () => {
+      window.removeEventListener('load', handleLoad);
+    };
+  }, []);
   
 
   return (
