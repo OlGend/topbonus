@@ -17,70 +17,71 @@ import UserBrands from "./Brands_home/UserBrands";
 
 export default function TopBrands() {
   const [newUrl, setNewUrl] = useState("");
-
   const [loading, setLoading] = useState(true);
   const [brands, setBrands] = useState([]);
   const [currentBrandIndex, setCurrentBrandIndex] = useState(0);
   const [fade, setFade] = useState(true);
   const { language } = useLanguage();
   const { t } = useTranslation();
-
   const [source, setSource] = useState("");
 
   useEffect(() => {
-    // Обновляем URL, удаляем параметры и устанавливаем source на основе localStorage
-    const currentUrl = window.location.href;
-    const indexOfQuestionMark = currentUrl.indexOf("?");
-    const newUrl2 =
-      indexOfQuestionMark !== -1
-        ? currentUrl.substring(0, indexOfQuestionMark)
-        : currentUrl;
-    window.history.replaceState({}, document.title, newUrl2);
+    // Ensure code runs only on client-side
+    if (typeof window !== 'undefined') {
+      // Обновляем URL, удаляем параметры и устанавливаем source на основе localStorage
+      const currentUrl = window.location.href;
+      const indexOfQuestionMark = currentUrl.indexOf("?");
+      const newUrl2 =
+        indexOfQuestionMark !== -1
+          ? currentUrl.substring(0, indexOfQuestionMark)
+          : currentUrl;
+      window.history.replaceState({}, document.title, newUrl2);
 
-    // Работа с URL и localStorage для определения source
-    const urlObj = new URL(currentUrl);
-    const searchParams = new URLSearchParams(urlObj.search);
-    searchParams.delete("brand");
-    const currentKeyword = searchParams.get("keyword");
+      // Работа с URL и localStorage для определения source
+      const urlObj = new URL(currentUrl);
+      const searchParams = new URLSearchParams(urlObj.search);
+      searchParams.delete("brand");
+      const currentKeyword = searchParams.get("keyword");
 
-    const partners = [
-      "partner1039",
-      "partner1043",
-      "partner1044",
-      "CLD_VIP",
-      "partner1045_b1",
-    ];
+      const partners = [
+        "partner1039",
+        "partner1043",
+        "partner1044",
+        "CLD_VIP",
+        "partner1045_b1",
+      ];
 
-    function setPartnerSource(keyword) {
-      const partner = partners.find((p) => keyword.includes(p));
-      if (partner) {
-        localStorage.setItem("source", partner);
-        setSource(partner);
-        searchParams.set("source", partner);
-      } else {
-        // Проверка, есть ли источник в localStorage, если нет, устанавливаем "0"
-        const sourceFound = localStorage.getItem("source") || "0";
-        if (!partners.includes(sourceFound)) {
-          localStorage.setItem("source", "0");
-          searchParams.set("source", "0");
+      function setPartnerSource(keyword) {
+        const partner = partners.find((p) => keyword.includes(p));
+        if (partner) {
+          localStorage.setItem("source", partner);
+          setSource(partner);
+          searchParams.set("source", partner);
         } else {
-          setSource(sourceFound);
+          // Проверка, есть ли источник в localStorage, если нет, устанавливаем "0"
+          const sourceFound = localStorage.getItem("source") || "0";
+          if (!partners.includes(sourceFound)) {
+            localStorage.setItem("source", "0");
+            searchParams.set("source", "0");
+          } else {
+            setSource(sourceFound);
+          }
         }
       }
-    }
-  
-    if (currentKeyword) {
-      setPartnerSource(currentKeyword);
-    } else {
-      const savedSource = localStorage.getItem("source");
-      if (savedSource) {
-        setSource(savedSource); // Устанавливаем source из localStorage
+    
+      if (currentKeyword) {
+        setPartnerSource(currentKeyword);
+      } else {
+        const savedSource = localStorage.getItem("source");
+        if (savedSource) {
+          setSource(savedSource); // Устанавливаем source из localStorage
+        }
       }
-    }
 
-    const savedUrl = localStorage.getItem("savedUrl");
-    if (savedUrl) {
-      setNewUrl(savedUrl);
+      const savedUrl = localStorage.getItem("savedUrl");
+      if (savedUrl) {
+        setNewUrl(savedUrl);
+      }
     }
   }, [language]);
 
@@ -90,6 +91,7 @@ export default function TopBrands() {
     () => getBrands(language),
     { initialData: brands }
   );
+
   useEffect(() => {
     if (data) {
       const filteredData = data.filter(
@@ -130,64 +132,77 @@ export default function TopBrands() {
   const [redirectUrl, setRedirectUrl] = useState(""); // Состояние для URL перенаправления
   // Инициализация состояний
   const [stage, setStage] = useState(() => {
-    // Получаем текущее значение 'stage' из localStorage при первой загрузке
-    return localStorage.getItem('stage') || 'first-stage';
+    // Ensure code runs only on client-side
+    if (typeof window !== 'undefined') {
+      // Получаем текущее значение 'stage' из localStorage при первой загрузке
+      return localStorage.getItem('stage') || 'first-stage';
+    }
+    return 'first-stage'; // Default to 'first-stage' for SSR
   });
 
   const [timestamp, setTimestamp] = useState(() => {
-    // Получаем текущее значение 'timestamp' из localStorage при первой загрузке
-    return localStorage.getItem('timestamp') || null;
+    // Ensure code runs only on client-side
+    if (typeof window !== 'undefined') {
+      // Получаем текущее значение 'timestamp' из localStorage при первой загрузке
+      return localStorage.getItem('timestamp') || null;
+    }
+    return null;
   });
+
   const [remainingTime, setRemainingTime] = useState(ONE_DAY_IN_MS); //
 
   // useEffect для инициализации состояния на клиенте
   useEffect(() => {
-    const storedStage = localStorage.getItem("stage") || "first-stage";
-  
-    const storedTimestamp = localStorage.getItem("timestamp");
+    if (typeof window !== 'undefined') {
+      const storedStage = localStorage.getItem("stage") || "first-stage";
+    
+      const storedTimestamp = localStorage.getItem("timestamp");
 
-    setStage(storedStage);
+      setStage(storedStage);
 
-    if (storedTimestamp) {
-      const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
-      setRemainingTime(ONE_DAY_IN_MS - timeElapsed);
-      setTimestamp(parseInt(storedTimestamp, 10));
-    } else {
-      const newTimestamp = Date.now();
-      localStorage.setItem("timestamp", newTimestamp.toString());
-      setTimestamp(newTimestamp);
+      if (storedTimestamp) {
+        const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
+        setRemainingTime(ONE_DAY_IN_MS - timeElapsed);
+        setTimestamp(parseInt(storedTimestamp, 10));
+      } else {
+        const newTimestamp = Date.now();
+        localStorage.setItem("timestamp", newTimestamp.toString());
+        setTimestamp(newTimestamp);
+      }
     }
   }, []);
 
   // useEffect для установки URL перенаправления на основе source
   useEffect(() => {
-    let url = "";
-    switch (source) {
-      case "partner1039":
-        url = `https://info.topbon.us/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
-        break;
-      case "partner1043":
-        url = `https://info.topbon.us/rnd1043/${newUrl}&creative_id=XXL_JIN`;
-        break;
-      case "partner1044":
-        url = `https://info.topbon.us/rnd1044/${newUrl}&creative_id=XXL_JIN`;
-        break;
-      case "CLD_VIP":
-        url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
-        break;
-      case "partner1045_b1":
-        url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
-        break;
-      default:
-        url = `https://info.topbon.us/aurnd/${newUrl}&creative_id=XXL_JIN`;
+    if (typeof window !== 'undefined') {
+      let url = "";
+      switch (source) {
+        case "partner1039":
+          url = `https://info.topbon.us/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
+          break;
+        case "partner1043":
+          url = `https://info.topbon.us/rnd1043/${newUrl}&creative_id=XXL_JIN`;
+          break;
+        case "partner1044":
+          url = `https://info.topbon.us/rnd1044/${newUrl}&creative_id=XXL_JIN`;
+          break;
+        case "CLD_VIP":
+          url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
+          break;
+        case "partner1045_b1":
+          url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
+          break;
+        default:
+          url = `https://info.topbon.us/aurnd/${newUrl}&creative_id=XXL_JIN`;
+      }
+      setRedirectUrl(url); // Сохраняем URL в состояние
     }
-    setRedirectUrl(url); // Сохраняем URL в состояние
   }, [source]);
   console.log("RED", redirectUrl, source);
 
   // useEffect для синхронизации stage с localStorage
   useEffect(() => {
-    if (stage) {
+    if (typeof window !== 'undefined' && stage) {
       localStorage.setItem("stage", stage);
       console.log("STAGE", stage);
     }
@@ -195,7 +210,7 @@ export default function TopBrands() {
 
   // useEffect для обновления оставшегося времени и перехода на третий этап
   useEffect(() => {
-    if (stage === "second-stage" && timestamp) {
+    if (typeof window !== 'undefined' && stage === "second-stage" && timestamp) {
       const intervalId = setInterval(() => {
         const timeElapsed = Date.now() - timestamp;
         const newRemainingTime = ONE_DAY_IN_MS - timeElapsed;
@@ -217,26 +232,28 @@ export default function TopBrands() {
   const [customer, setCustomer] = useState();
   const [user, setUser] = useState();
   useEffect(() => {
-    // Извлечение строки из localStorage
-    const userData = localStorage.getItem("userData");
+    if (typeof window !== 'undefined') {
+      // Извлечение строки из localStorage
+      const userData = localStorage.getItem("userData");
 
-    // Проверка, что данные существуют
-    if (userData) {
-      // Преобразование строки в объект JSON
-      const userObject = JSON.parse(userData);
+      // Проверка, что данные существуют
+      if (userData) {
+        // Преобразование строки в объект JSON
+        const userObject = JSON.parse(userData);
 
-      // Извлечение значения поля 'customer' и 'id'
-      const customerValue = userObject.customer;
-      const idValue = userObject.id;
+        // Извлечение значения поля 'customer' и 'id'
+        const customerValue = userObject.customer;
+        const idValue = userObject.id;
 
-      // Установка состояний пользователя и клиента
-      setUser(idValue);
-      setCustomer(customerValue);
+        // Установка состояний пользователя и клиента
+        setUser(idValue);
+        setCustomer(customerValue);
 
-      // Вывод значения поля 'customer'
-      console.log("Значение поля customer:", customerValue);
-    } else {
-      console.log("Данные userData отсутствуют в localStorage.");
+        // Вывод значения поля 'customer'
+        console.log("Значение поля customer:", customerValue);
+      } else {
+        console.log("Данные userData отсутствуют в localStorage.");
+      }
     }
   }, []);
   const sendUserData = async (userId, customerType, nameEvent) => {
@@ -292,10 +309,10 @@ export default function TopBrands() {
       window.open(redirectUrl, "_blank");
       console.log("REDIRECT", redirectUrl);
     }
-      // Отправка данных на сервер
-      if (user && customer) {
-        sendUserData(user, customer, "SECOND EVENT");
-      }
+    // Отправка данных на сервер
+    if (user && customer) {
+      sendUserData(user, customer, "SECOND EVENT");
+    }
   };
 
   // Форматирование оставшегося времени
