@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import useSWR from "swr";
 import Loader from "@/components/Loader";
 import { shuffle } from "lodash";
 import Image from "next/image";
@@ -9,16 +10,22 @@ import Card from "@/components/slider/Card";
 import Carousel from "@/components/slider/Carousel";
 import imgrandom from "@/public/coins_banner2.jpg";
 import { useLanguage } from "@/components/switcher/LanguageContext";
-import { getBrands } from "@/components/getBrands/getBrands";
+import { getBrands } from "@/components/getBrands/getBrands2";
 import { useTranslation } from "react-i18next";
+import Timer from "@/components/Timer";
+
+import UserBrands from "./Brands_home/UserBrands";
 
 export default function TopBrands() {
   const [newUrl, setNewUrl] = useState("");
-  const [source, setSource] = useState("");
+
   const [loading, setLoading] = useState(true);
   const [brands, setBrands] = useState([]);
+  const [currentBrandIndex, setCurrentBrandIndex] = useState(0);
+  const [fade, setFade] = useState(true);
   const { language } = useLanguage();
   const { t } = useTranslation();
+
 
   useEffect(() => {
     // Обновляем URL, удаляем параметры и устанавливаем source на основе localStorage
@@ -36,9 +43,13 @@ export default function TopBrands() {
     searchParams.delete("brand");
     const currentKeyword = searchParams.get("keyword");
 
-  
-
-    const partners = ["partner1039", "partner1043", "partner1044", "CLD_VIP"];
+    const partners = [
+      "partner1039",
+      "partner1043",
+      "partner1044",
+      "CLD_VIP",
+      "partner1045_b1",
+    ];
 
     function setPartnerSource(keyword) {
       const partner = partners.find((p) => keyword.includes(p));
@@ -58,9 +69,8 @@ export default function TopBrands() {
     }
 
     if (currentKeyword) {
-      // Только если currentKeyword не null и не undefined, вызываем функцию
       setPartnerSource(currentKeyword);
-    } 
+    }
 
     const ad_campaign = localStorage.getItem("ad_campaign_id");
 
@@ -68,25 +78,24 @@ export default function TopBrands() {
     if (savedUrl) {
       setNewUrl(savedUrl);
     }
-
-    // Подготовка данных о брендах
-    const fetchBrands = async () => {
-      const brandsData = await getBrands(
-        { key1: "Segment2", key2: "Premium" },
-        language
-      );
-      setBrands(brandsData);
-      setLoading(false);
-    };
-    fetchBrands();
   }, [language]);
 
+  const categoryBrands = { key1: "Segment2", key2: "Premium" };
+  const { data, error } = useSWR(
+    ["brands", language],
+    () => getBrands(language),
+    { initialData: brands }
+  );
   useEffect(() => {
-    setLoading(brands.length === 0);
-    if (brands.length < 1) {
+    if (data) {
+      const filteredData = data.filter(
+        (rowData) => rowData[categoryBrands.key1] === categoryBrands.key2
+      );
+      console.log("FILTER", filteredData);
+      setBrands(filteredData);
       setLoading(false);
     }
-  }, [brands]);
+  }, [data, categoryBrands.key1, categoryBrands.key2]);
 
   const shuffledBrands = shuffle(brands);
   const cards2 = shuffledBrands.slice(0, 6).map((brand) => ({
@@ -100,7 +109,130 @@ export default function TopBrands() {
     ),
   }));
 
-  console.log("BRANDS", brands)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setFade(false); // Start fade-out
+      setTimeout(() => {
+        setCurrentBrandIndex((prevIndex) => (prevIndex + 1) % brands.length);
+        setFade(true); // Start fade-in
+      }, 500); // Duration of fade-out effect
+    }, 5000000); // Change brand every 5 seconds
+
+    return () => clearInterval(interval);
+  }, [brands.length]);
+
+
+
+  const TWO_DAYS_IN_MS = 2 * 24 * 60 * 60 * 1000; // Константа для двух суток
+  const ONE_MINUTE_IN_MS = 60 * 1000; // Константа для одной минуты
+  const [redirectUrl, setRedirectUrl] = useState(""); // Состояние для URL перенаправления
+  const [stage, setStage] = useState("first-stage"); // Начальное значение состояния на клиенте
+  const [timestamp, setTimestamp] = useState(null); // Начальное значение таймстампа
+  const [remainingTime, setRemainingTime] = useState(ONE_MINUTE_IN_MS); // 
+
+  const source = "partner1039"; // Пример значения, используемого для выбора URL
+
+  // useEffect для инициализации состояния на клиенте
+  useEffect(() => {
+    const storedStage = localStorage.getItem("stage") || "first-stage";
+    const storedTimestamp = localStorage.getItem("timestamp");
+
+    setStage(storedStage);
+
+    if (storedTimestamp) {
+      const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
+      setRemainingTime(ONE_MINUTE_IN_MS - timeElapsed);
+      setTimestamp(parseInt(storedTimestamp, 10));
+    } else {
+      const newTimestamp = Date.now();
+      localStorage.setItem("timestamp", newTimestamp.toString());
+      setTimestamp(newTimestamp);
+    }
+  }, []);
+
+  // useEffect для установки URL перенаправления на основе source
+  useEffect(() => {
+    let url = "";
+    switch (source) {
+      case "partner1039":
+        url = "https://info.topbon.us/partner_aurnd";
+        break;
+      case "partner1043":
+        url = "https://info.topbon.us/rnd1043";
+        break;
+      case "partner1044":
+        url = "https://info.topbon.us/rnd1044";
+        break;
+      case "CLD_VIP":
+        url = "https://link.bo-nus.com/rnd_cld";
+        break;
+      case "partner1045_b1":
+        url = "https://link.bo-nus.com/rnd_cld";
+        break;
+      default:
+        url = "https://info.topbon.us/aurnd";
+    }
+    setRedirectUrl(url); // Сохраняем URL в состояние
+  }, [source]);
+
+  // useEffect для синхронизации stage с localStorage
+  useEffect(() => {
+    if (stage) {
+      localStorage.setItem("stage", stage);
+      console.log("STAGE", stage);
+    }
+  }, [stage]);
+
+  // useEffect для обновления оставшегося времени и перехода на третий этап
+  useEffect(() => {
+    if (stage === "second-stage" && timestamp) {
+      const intervalId = setInterval(() => {
+        const timeElapsed = Date.now() - timestamp;
+        const newRemainingTime = ONE_MINUTE_IN_MS - timeElapsed;
+        setRemainingTime(newRemainingTime);
+
+        if (newRemainingTime <= 0) {
+          setStage("third-stage");
+          localStorage.setItem("stage", "third-stage");
+          clearInterval(intervalId);
+        }
+      }, 1000);
+
+      return () => clearInterval(intervalId);
+    }
+  }, [stage, timestamp]);
+
+  // Функция для перехода на второй этап
+  const scndstage = () => {
+    setStage("second-stage");
+    const newTimestamp = Date.now();
+    setTimestamp(newTimestamp);
+    localStorage.setItem("timestamp", newTimestamp.toString());
+  };
+
+  // Функция для сброса состояния на первый этап и открытия новой вкладки
+  const resetToFirstStage = () => {
+    setStage("first-stage");
+    localStorage.setItem("stage", "first-stage");
+    localStorage.removeItem("timestamp"); // Удаляем таймстамп из localStorage
+
+    if (redirectUrl) {
+      // Открываем новую вкладку с URL из состояния
+      window.open(redirectUrl, "_blank");
+    }
+  };
+
+  // Форматирование оставшегося времени
+  const formatTime = (milliseconds) => {
+    const totalSeconds = Math.max(0, Math.floor(milliseconds / 1000));
+    const hours = Math.floor(totalSeconds / 3600);
+    const minutes = Math.floor((totalSeconds % 3600) / 60);
+    const seconds = totalSeconds % 60;
+
+    return `${hours.toString().padStart(2, '0')}:${minutes
+      .toString()
+      .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+  };
 
   return (
     <>
@@ -110,40 +242,45 @@ export default function TopBrands() {
             <Loader />
           ) : (
             cards2 && (
-              <Carousel
-                className="carmob"
-                cards={cards2}
-                height="500px"
-                width="100%"
-                margin="0 auto"
-                offset={200}
-                showArrows={false}
-              />
+              <div className="flex justify-between items-center">
+                <div className="slidertop">
+                  <Carousel
+                    className="carmob"
+                    cards={cards2}
+                    height="500px"
+                    width="100%"
+                    margin="0 auto"
+                    offset={200}
+                    showArrows={false}
+                  />
+                </div>
+                {stage != null && (
+                  <div className="flex items-center justify-center jins">
+                    {stage === "first-stage" && (
+                      <div className="frstjin">
+                        <h5 className="h5">Click Here to Unleash Your Magic Bonus!</h5>
+                        <p>Get a bonus just for you tomorrow!</p>
+                        <button className="btn btn-primary btn-tournament" onClick={scndstage}>Get Bonus</button>
+                      </div>
+                    )}
+                    {stage === "second-stage" && (
+                      <div className="scnjin">
+                        <h5 className="h5">Thank you! Your Bonus Will Be Here Soon</h5>
+                        <p>Come back after <span className="goldie">{formatTime(remainingTime)}</span> to collect it!</p>
+                      </div>
+                    )}
+                    {stage === "third-stage" && (
+                      <div className="thrdjin">
+                        <h5 className="h5">Your Bonus is Ready!</h5>
+                        <p>Click below to claim your magical reward!</p>
+                        <button className="btn btn-primary btn-tournament" onClick={resetToFirstStage}>Bonus Ready!</button>
+                      </div>
+                    )}
+                  </div>
+                )}
+              </div>
             )
           )}
-        </div>
-      </div>
-      <div className="preview2 flex justify-between items-center">
-        <div className="main__container flex items-center">
-          <div className="flex flex-col">
-            <h1 className="">
-              {t("Feeling lucky today?")}{" "}
-              <span className="text-blued">{t("Click now to play")}</span>{" "}
-              {t("and see if")}{" "}
-              <span className="text-blued"> {t("luck is on your side!")}</span>
-            </h1>
-            {shuffledBrands.slice(0, 1).map((item) => (
-              <Link
-                target="_blank"
-                key={item}
-                className="btn btn-primary big-btn mt-3 target-try-your-luck"
-                href={`${item.GoBig}/${newUrl}&creative_id=XXL_Try_Your_Luck`}
-              >
-                {t("Try Your Luck")}
-              </Link>
-            ))}
-          </div>
-          <Image src={imgrandom} alt={imgrandom} width={500} loading="lazy" />
         </div>
       </div>
     </>

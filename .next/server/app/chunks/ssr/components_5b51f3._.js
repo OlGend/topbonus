@@ -1101,92 +1101,6 @@ const BrandCard = ({ brand, savedUrl, register, t, count })=>__TURBOPACK__import
 const __TURBOPACK__default__export__ = UserBrands;
 
 })()),
-"[project]/components/Timer.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
-
-__turbopack_esm__({
-    "default": ()=>__TURBOPACK__default__export__
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
-"__TURBOPACK__ecmascript__hoisting__location__";
-"use client";
-;
-;
-;
-const Timer = ()=>{
-    const [timeLeft, setTimeLeft] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
-    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
-    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        const storedStartDate = localStorage.getItem("startDate");
-        let startDate;
-        if (storedStartDate) {
-            startDate = new Date(storedStartDate);
-            const now = new Date();
-            const timeDiff = now - startDate;
-            if (timeDiff >= 48 * 60 * 60 * 1000) {
-                startDate = new Date();
-                localStorage.setItem("startDate", startDate);
-            }
-        } else {
-            startDate = new Date();
-            localStorage.setItem("startDate", startDate);
-        }
-        const updateTimer = ()=>{
-            const now = new Date();
-            const timeDiff = 48 * 60 * 60 * 1000 - (now - startDate);
-            if (timeDiff <= 0) {
-                setTimeLeft(null);
-            } else {
-                const hours = Math.floor(timeDiff / (1000 * 60 * 60));
-                const minutes = Math.floor(timeDiff % (1000 * 60 * 60) / (1000 * 60));
-                const seconds = Math.floor(timeDiff % (1000 * 60) / 1000);
-                setTimeLeft({
-                    hours: String(hours).padStart(2, "0"),
-                    minutes: String(minutes).padStart(2, "0"),
-                    seconds: String(seconds).padStart(2, "0")
-                });
-            }
-        };
-        const timerInterval = setInterval(updateTimer, 1000);
-        updateTimer();
-        return ()=>clearInterval(timerInterval);
-    }, []);
-    if (timeLeft === null) {
-        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-            children: "..."
-        }, void 0, false, {
-            fileName: "<[project]/components/Timer.jsx>",
-            lineNumber: 59,
-            columnNumber: 12
-        }, this);
-    }
-    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-        className: "timer",
-        children: [
-            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
-                children: t("Expires in:")
-            }, void 0, false, {
-                fileName: "<[project]/components/Timer.jsx>",
-                lineNumber: 64,
-                columnNumber: 7
-            }, this),
-            " ",
-            timeLeft.hours,
-            ":",
-            timeLeft.minutes,
-            ":",
-            timeLeft.seconds
-        ]
-    }, void 0, true, {
-        fileName: "<[project]/components/Timer.jsx>",
-        lineNumber: 63,
-        columnNumber: 5
-    }, this);
-};
-const __TURBOPACK__default__export__ = Timer;
-
-})()),
 "[project]/components/getBrands/languages.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
 
 __turbopack_esm__({
@@ -2028,7 +1942,6 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coins_banner2$2e$j
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Timer$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Timer.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f$UserBrands$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Brands_home/UserBrands.tsx (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
@@ -2047,54 +1960,60 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Brands_home$2f
 ;
 ;
 ;
-;
 function TopBrands() {
     const [newUrl, setNewUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
-    const [source, setSource] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     const [loading, setLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
     const [currentBrandIndex, setCurrentBrandIndex] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](0);
     const [fade, setFade] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
+    const [source, setSource] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        const currentUrl = window.location.href;
-        const indexOfQuestionMark = currentUrl.indexOf("?");
-        const newUrl2 = indexOfQuestionMark !== -1 ? currentUrl.substring(0, indexOfQuestionMark) : currentUrl;
-        window.history.replaceState({}, document.title, newUrl2);
-        const urlObj = new URL(currentUrl);
-        const searchParams = new URLSearchParams(urlObj.search);
-        searchParams.delete("brand");
-        const currentKeyword = searchParams.get("keyword");
-        const partners = [
-            "partner1039",
-            "partner1043",
-            "partner1044",
-            "CLD_VIP",
-            "partner1045_b1"
-        ];
-        function setPartnerSource(keyword) {
-            const partner = partners.find((p)=>keyword.includes(p));
-            if (partner) {
-                localStorage.setItem("source", partner);
-                setSource(partner);
-                searchParams.set("source", partner);
-            } else {
-                setSource("0");
-                const sourceFound = localStorage.getItem("source");
-                if (!partners.includes(sourceFound)) {
-                    localStorage.setItem("source", "0");
-                    searchParams.set("source", "0");
+        if (typeof window !== 'undefined') {
+            const currentUrl = window.location.href;
+            const indexOfQuestionMark = currentUrl.indexOf("?");
+            const newUrl2 = indexOfQuestionMark !== -1 ? currentUrl.substring(0, indexOfQuestionMark) : currentUrl;
+            window.history.replaceState({}, document.title, newUrl2);
+            const urlObj = new URL(currentUrl);
+            const searchParams = new URLSearchParams(urlObj.search);
+            searchParams.delete("brand");
+            const currentKeyword = searchParams.get("keyword");
+            const partners = [
+                "partner1039",
+                "partner1043",
+                "partner1044",
+                "CLD_VIP",
+                "partner1045_b1"
+            ];
+            function setPartnerSource(keyword) {
+                const partner = partners.find((p)=>keyword.includes(p));
+                if (partner) {
+                    localStorage.setItem("source", partner);
+                    setSource(partner);
+                    searchParams.set("source", partner);
+                } else {
+                    const sourceFound = localStorage.getItem("source") || "0";
+                    if (!partners.includes(sourceFound)) {
+                        localStorage.setItem("source", "0");
+                        searchParams.set("source", "0");
+                    } else {
+                        setSource(sourceFound);
+                    }
                 }
             }
-        }
-        if (currentKeyword) {
-            setPartnerSource(currentKeyword);
-        }
-        const ad_campaign = localStorage.getItem("ad_campaign_id");
-        const savedUrl = localStorage.getItem("savedUrl");
-        if (savedUrl) {
-            setNewUrl(savedUrl);
+            if (currentKeyword) {
+                setPartnerSource(currentKeyword);
+            } else {
+                const savedSource = localStorage.getItem("source");
+                if (savedSource) {
+                    setSource(savedSource);
+                }
+            }
+            const savedUrl = localStorage.getItem("savedUrl");
+            if (savedUrl) {
+                setNewUrl(savedUrl);
+            }
         }
     }, [
         language
@@ -2130,7 +2049,7 @@ function TopBrands() {
                 bonus: brand.OurOfferContent
             }, void 0, false, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 97,
+                lineNumber: 110,
                 columnNumber: 7
             }, this)
         }));
@@ -2141,129 +2060,322 @@ function TopBrands() {
                 setCurrentBrandIndex((prevIndex)=>(prevIndex + 1) % brands.length);
                 setFade(true);
             }, 500);
-        }, 5000000);
+        }, 5000);
         return ()=>clearInterval(interval);
     }, [
         brands.length
     ]);
-    console.log("BRANDS", brands);
+    const ONE_DAY_IN_MS = 1 * 24 * 60 * 60 * 1000;
+    const ONE_MINUTE_IN_MS = 60 * 1000;
+    const [redirectUrl, setRedirectUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
+    const [stage, setStage] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](()=>{
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('stage') || 'first-stage';
+        }
+        return 'first-stage';
+    });
+    const [timestamp, setTimestamp] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](()=>{
+        if (typeof window !== 'undefined') {
+            return localStorage.getItem('timestamp') || null;
+        }
+        return null;
+    });
+    const [remainingTime, setRemainingTime] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](ONE_DAY_IN_MS);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined') {
+            const storedStage = localStorage.getItem("stage") || "first-stage";
+            const storedTimestamp = localStorage.getItem("timestamp");
+            setStage(storedStage);
+            if (storedTimestamp) {
+                const timeElapsed = Date.now() - parseInt(storedTimestamp, 10);
+                setRemainingTime(ONE_DAY_IN_MS - timeElapsed);
+                setTimestamp(parseInt(storedTimestamp, 10));
+            } else {
+                const newTimestamp = Date.now();
+                localStorage.setItem("timestamp", newTimestamp.toString());
+                setTimestamp(newTimestamp);
+            }
+        }
+    }, []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined') {
+            let url = "";
+            switch(source){
+                case "partner1039":
+                    url = `https://info.topbon.us/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                case "partner1043":
+                    url = `https://info.topbon.us/rnd1043/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                case "partner1044":
+                    url = `https://info.topbon.us/rnd1044/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                case "CLD_VIP":
+                    url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                case "partner1045_b1":
+                    url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
+                    break;
+                default:
+                    url = `https://info.topbon.us/aurnd/${newUrl}&creative_id=XXL_JIN`;
+            }
+            setRedirectUrl(url);
+        }
+    }, [
+        source
+    ]);
+    console.log("RED", redirectUrl, source);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined' && stage) {
+            localStorage.setItem("stage", stage);
+            console.log("STAGE", stage);
+        }
+    }, [
+        stage
+    ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined' && stage === "second-stage" && timestamp) {
+            const intervalId = setInterval(()=>{
+                const timeElapsed = Date.now() - timestamp;
+                const newRemainingTime = ONE_DAY_IN_MS - timeElapsed;
+                setRemainingTime(newRemainingTime);
+                if (newRemainingTime <= 0) {
+                    setStage("third-stage");
+                    localStorage.setItem("stage", "third-stage");
+                    clearInterval(intervalId);
+                }
+            }, 1000);
+            return ()=>clearInterval(intervalId);
+        }
+    }, [
+        stage,
+        timestamp
+    ]);
+    const [customer, setCustomer] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
+    const [user, setUser] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined') {
+            const userData = localStorage.getItem("userData");
+            if (userData) {
+                const userObject = JSON.parse(userData);
+                const customerValue = userObject.customer;
+                const idValue = userObject.id;
+                setUser(idValue);
+                setCustomer(customerValue);
+                console.log("Значение поля customer:", customerValue);
+            } else {
+                console.log("Данные userData отсутствуют в localStorage.");
+            }
+        }
+    }, []);
+    const sendUserData = async (userId, customerType, nameEvent)=>{
+        try {
+            const response = await fetch("https://bonusnumber1.com/api/jin/jin1.php", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/x-www-form-urlencoded"
+                },
+                body: new URLSearchParams({
+                    customerId: userId,
+                    customer: customerType,
+                    event: nameEvent
+                })
+            });
+            const result = await response.json();
+            if (response.ok) {
+                console.log("Данные успешно отправлены:", result);
+            } else {
+                console.error("Ошибка при отправке данных:", result);
+            }
+        } catch (error) {
+            console.error("Ошибка сети:", error);
+        }
+    };
+    const scndstage = ()=>{
+        setStage("second-stage");
+        const newTimestamp = Date.now();
+        setTimestamp(newTimestamp);
+        localStorage.setItem("timestamp", newTimestamp.toString());
+        if (user && customer) {
+            sendUserData(user, customer, "FIRST EVENT");
+        }
+    };
+    const resetToFirstStage = ()=>{
+        setStage("first-stage");
+        localStorage.setItem("stage", "first-stage");
+        localStorage.removeItem("timestamp");
+        if (redirectUrl) {
+            window.open(redirectUrl, "_blank");
+            console.log("REDIRECT", redirectUrl);
+        }
+        if (user && customer) {
+            sendUserData(user, customer, "SECOND EVENT");
+        }
+    };
+    const formatTime = (milliseconds)=>{
+        const totalSeconds = Math.max(0, Math.floor(milliseconds / 1000));
+        const hours = Math.floor(totalSeconds / 3600);
+        const minutes = Math.floor(totalSeconds % 3600 / 60);
+        const seconds = totalSeconds % 60;
+        return `${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
+    };
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
             className: "topbr",
             children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "main__container",
-                children: [
-                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Timer$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                        fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 123,
-                        columnNumber: 11
-                    }, this),
-                    loading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
-                        fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 125,
-                        columnNumber: 13
-                    }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                        className: "flex justify-between items-center",
-                        children: [
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                className: "slidertop",
-                                children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
-                                    className: "carmob",
-                                    cards: cards2,
-                                    height: "500px",
-                                    width: "100%",
-                                    margin: "0 auto",
-                                    offset: 200,
-                                    showArrows: false
-                                }, void 0, false, {
-                                    fileName: "<[project]/components/TopBrands.jsx>",
-                                    lineNumber: 130,
-                                    columnNumber: 19
-                                }, this)
+                children: loading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
+                    fileName: "<[project]/components/TopBrands.jsx>",
+                    lineNumber: 336,
+                    columnNumber: 13
+                }, this) : cards2 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "flex justify-between items-center",
+                    children: [
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "slidertop",
+                            children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$slider$2f$Carousel$2e$jsx__$28$ecmascript$29$__["default"], {
+                                className: "carmob",
+                                cards: cards2,
+                                height: "500px",
+                                width: "100%",
+                                margin: "0 auto",
+                                offset: 200,
+                                showArrows: false
                             }, void 0, false, {
                                 fileName: "<[project]/components/TopBrands.jsx>",
-                                lineNumber: 129,
-                                columnNumber: 17
-                            }, this),
-                            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                className: "secondbanner flex items-center justify-center",
-                                children: brands.length > 0 && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                    className: `card-second-banner mb-2 flex flex-col items-center pb-3 transition-opacity duration-500 ${fade ? 'opacity-100' : 'opacity-0'}`,
+                                lineNumber: 341,
+                                columnNumber: 19
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "<[project]/components/TopBrands.jsx>",
+                            lineNumber: 340,
+                            columnNumber: 17
+                        }, this),
+                        stage != null && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                            className: "flex items-center justify-center jins",
+                            children: [
+                                stage === "first-stage" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: "frstjin",
                                     children: [
-                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                            className: "brandImage p-3",
-                                            children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
-                                                className: "flex justify-center flex-col items-center target-top-new-releases",
-                                                href: `${brands[currentBrandIndex].GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
-                                                target: "_blank",
-                                                children: [
-                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                                                        src: `/brands/${brands[currentBrandIndex].CasinoBrand}.png`,
-                                                        alt: brands[currentBrandIndex].CasinoBrand,
-                                                        width: 200,
-                                                        height: 80,
-                                                        loading: "lazy",
-                                                        className: "target-top-new-releases"
-                                                    }, void 0, false, {
-                                                        fileName: "<[project]/components/TopBrands.jsx>",
-                                                        lineNumber: 152,
-                                                        columnNumber: 27
-                                                    }, this),
-                                                    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                                                        className: "p-3 text-center flex items-center review-bonus",
-                                                        children: brands[currentBrandIndex].OurOfferContent
-                                                    }, void 0, false, {
-                                                        fileName: "<[project]/components/TopBrands.jsx>",
-                                                        lineNumber: 160,
-                                                        columnNumber: 27
-                                                    }, this)
-                                                ]
-                                            }, void 0, true, {
-                                                fileName: "<[project]/components/TopBrands.jsx>",
-                                                lineNumber: 147,
-                                                columnNumber: 25
-                                            }, this)
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h5", {
+                                            className: "h5",
+                                            children: t("Click Here to Unleash Your Magic Bonus!")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 146,
-                                            columnNumber: 23
+                                            lineNumber: 355,
+                                            columnNumber: 25
                                         }, this),
-                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
-                                            className: "btn btn-primary btn-new target-top-new-releases",
-                                            href: `${brands[currentBrandIndex].GoBig}/${newUrl}&creative_id=XXL_Top_New_Releases`,
-                                            target: "_blank",
-                                            children: t("Play Now")
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                            children: t("Get a bonus just for you tomorrow!")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TopBrands.jsx>",
-                                            lineNumber: 165,
-                                            columnNumber: 23
+                                            lineNumber: 358,
+                                            columnNumber: 25
+                                        }, this),
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
+                                            className: "btn btn-primary btn-tournament",
+                                            onClick: scndstage,
+                                            children: t("Get Bonus")
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 359,
+                                            columnNumber: 25
                                         }, this)
                                     ]
-                                }, brands[currentBrandIndex].id_brand, true, {
+                                }, void 0, true, {
                                     fileName: "<[project]/components/TopBrands.jsx>",
-                                    lineNumber: 142,
-                                    columnNumber: 21
+                                    lineNumber: 354,
+                                    columnNumber: 23
+                                }, this),
+                                stage === "second-stage" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: "scnjin",
+                                    children: [
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h5", {
+                                            className: "h5",
+                                            children: t("Thank you! Your Bonus Will Be Here Soon")
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 369,
+                                            columnNumber: 25
+                                        }, this),
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                            children: [
+                                                t("Come back after "),
+                                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                                    className: "goldie",
+                                                    children: formatTime(remainingTime)
+                                                }, void 0, false, {
+                                                    fileName: "<[project]/components/TopBrands.jsx>",
+                                                    lineNumber: 374,
+                                                    columnNumber: 27
+                                                }, this),
+                                                " ",
+                                                t("to collect it!")
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 372,
+                                            columnNumber: 25
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "<[project]/components/TopBrands.jsx>",
+                                    lineNumber: 368,
+                                    columnNumber: 23
+                                }, this),
+                                stage === "third-stage" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                                    className: "thrdjin",
+                                    children: [
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h5", {
+                                            className: "h5",
+                                            children: t("Your Bonus is Ready!")
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 383,
+                                            columnNumber: 25
+                                        }, this),
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                                            children: t("Click below to claim your magical reward!")
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 384,
+                                            columnNumber: 25
+                                        }, this),
+                                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
+                                            className: "btn btn-primary btn-tournament",
+                                            onClick: resetToFirstStage,
+                                            children: t("Bonus Ready!")
+                                        }, void 0, false, {
+                                            fileName: "<[project]/components/TopBrands.jsx>",
+                                            lineNumber: 385,
+                                            columnNumber: 25
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "<[project]/components/TopBrands.jsx>",
+                                    lineNumber: 382,
+                                    columnNumber: 23
                                 }, this)
-                            }, void 0, false, {
-                                fileName: "<[project]/components/TopBrands.jsx>",
-                                lineNumber: 140,
-                                columnNumber: 17
-                            }, this)
-                        ]
-                    }, void 0, true, {
-                        fileName: "<[project]/components/TopBrands.jsx>",
-                        lineNumber: 128,
-                        columnNumber: 15
-                    }, this)
-                ]
-            }, void 0, true, {
+                            ]
+                        }, void 0, true, {
+                            fileName: "<[project]/components/TopBrands.jsx>",
+                            lineNumber: 352,
+                            columnNumber: 19
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/TopBrands.jsx>",
+                    lineNumber: 339,
+                    columnNumber: 15
+                }, this)
+            }, void 0, false, {
                 fileName: "<[project]/components/TopBrands.jsx>",
-                lineNumber: 122,
+                lineNumber: 334,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/TopBrands.jsx>",
-            lineNumber: 121,
+            lineNumber: 333,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -3083,7 +3195,16 @@ async function initializeI18n() {
                 "Click Here!": "Click Here!",
                 "Expires in:": "Expires in:",
                 "BIGGEST JACKPOTS": "BIGGEST JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TOURNAMENTS"
+                "TOP TOURNAMENTS": "TOP TOURNAMENTS",
+                "Click Here to Unleash Your Magic Bonus!": "Click Here to Unleash Your Magic Bonus!",
+                "Get a bonus just for you tomorrow!": "Get a bonus just for you tomorrow!",
+                "Get Bonus": "Get Bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Thank you! Your Bonus Will Be Here Soon",
+                "Come back after": "Come back after",
+                "to collect it!": "to collect it!",
+                "Your Bonus is Ready!": "Your Bonus is Ready!",
+                "Click below to claim your magical reward!": "Click below to claim your magical reward!",
+                "Bonus Ready!": "Bonus Ready!"
             }
         },
         pl: {
@@ -3340,7 +3461,16 @@ async function initializeI18n() {
                 "Click Here!": "Kliknij tutaj!",
                 "Expires in:": "Wygasa za:",
                 "BIGGEST JACKPOTS": "NAJWIĘKSZE JACKPOTY",
-                "TOP TOURNAMENTS": "TOP TURNIEJE"
+                "TOP TOURNAMENTS": "TOP TURNIEJE",
+                "Click Here to Unleash Your Magic Bonus!": "Kliknij tutaj, aby uwolnić swój magiczny bonus!",
+                "Get a bonus just for you tomorrow!": "Odbierz jutro bonus tylko dla Ciebie!",
+                "Get Bonus": "Odbierz Bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Dziękujemy! Twój bonus wkrótce będzie tutaj",
+                "Come back after": "Wróć po",
+                "to collect it!": "aby go odebrać!",
+                "Your Bonus is Ready!": "Twój bonus jest gotowy!",
+                "Click below to claim your magical reward!": "Kliknij poniżej, aby odebrać swoją magiczną nagrodę!",
+                "Bonus Ready!": "Bonus gotowy!"
             }
         },
         de: {
@@ -3597,7 +3727,16 @@ async function initializeI18n() {
                 "Click Here!": "Klicken Sie hier!",
                 "Expires in:": "Läuft ab in:",
                 "BIGGEST JACKPOTS": "GRÖSSTE JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TURNIERE"
+                "TOP TOURNAMENTS": "TOP TURNIERE",
+                "Click Here to Unleash Your Magic Bonus!": "Klicken Sie hier, um Ihren magischen Bonus freizuschalten!",
+                "Get a bonus just for you tomorrow!": "Holen Sie sich morgen einen Bonus nur für Sie!",
+                "Get Bonus": "Bonus holen",
+                "Thank you! Your Bonus Will Be Here Soon": "Danke! Ihr Bonus wird bald hier sein",
+                "Come back after": "Kommen Sie nach",
+                "to collect it!": "zurück, um ihn abzuholen!",
+                "Your Bonus is Ready!": "Ihr Bonus ist bereit!",
+                "Click below to claim your magical reward!": "Klicken Sie unten, um Ihre magische Belohnung zu erhalten!",
+                "Bonus Ready!": "Bonus bereit!"
             }
         },
         bg: {
@@ -3854,7 +3993,16 @@ async function initializeI18n() {
                 "Click Here!": "Кликни тук!",
                 "Expires in:": "Изтича след:",
                 "BIGGEST JACKPOTS": "НАЙ-ГОЛЕМИТЕ ДЖАКПОТИ",
-                "TOP TOURNAMENTS": "ТОП ТУРНИРИ"
+                "TOP TOURNAMENTS": "ТОП ТУРНИРИ",
+                "Click Here to Unleash Your Magic Bonus!": "Кликнете тук, за да отключите своя магически бонус!",
+                "Get a bonus just for you tomorrow!": "Получете бонус само за вас утре!",
+                "Get Bonus": "Вземи бонус",
+                "Thank you! Your Bonus Will Be Here Soon": "Благодаря! Вашият бонус скоро ще бъде тук",
+                "Come back after": "Върнете се след",
+                "to collect it!": "за да го получите!",
+                "Your Bonus is Ready!": "Вашият бонус е готов!",
+                "Click below to claim your magical reward!": "Кликнете по-долу, за да получите вашата магическа награда!",
+                "Bonus Ready!": "Бонус готов!"
             }
         },
         cz: {
@@ -4111,7 +4259,16 @@ async function initializeI18n() {
                 "Click Here!": "Klikněte zde!",
                 "Expires in:": "Vyprší za:",
                 "BIGGEST JACKPOTS": "NEJVĚTŠÍ JACKPOTY",
-                "TOP TOURNAMENTS": "NEJLEPŠÍ TURNAJE"
+                "TOP TOURNAMENTS": "NEJLEPŠÍ TURNAJE",
+                "Click Here to Unleash Your Magic Bonus!": "Klikněte zde a uvolněte svůj magický bonus!",
+                "Get a bonus just for you tomorrow!": "Zítra získáte bonus jen pro vás!",
+                "Get Bonus": "Získat bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Děkujeme! Váš bonus bude brzy zde",
+                "Come back after": "Vraťte se po",
+                "to collect it!": "abyste si ho vyzvedli!",
+                "Your Bonus is Ready!": "Váš bonus je připraven!",
+                "Click below to claim your magical reward!": "Klikněte níže a získejte svou magickou odměnu!",
+                "Bonus Ready!": "Bonus připraven!"
             }
         },
         dk: {
@@ -4368,7 +4525,16 @@ async function initializeI18n() {
                 "Click Here!": "Klik her!",
                 "Expires in:": "Udløber om:",
                 "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TURNERINGER"
+                "TOP TOURNAMENTS": "TOP TURNERINGER",
+                "Click Here to Unleash Your Magic Bonus!": "Klik her for at frigøre din magiske bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus kun til dig i morgen!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Tak! Din bonus vil snart være her",
+                "Come back after": "Kom tilbage efter",
+                "to collect it!": "for at hente den!",
+                "Your Bonus is Ready!": "Din bonus er klar!",
+                "Click below to claim your magical reward!": "Klik nedenfor for at få din magiske belønning!",
+                "Bonus Ready!": "Bonus klar!"
             }
         },
         nl: {
@@ -4625,7 +4791,16 @@ async function initializeI18n() {
                 "Click Here!": "Klik hier!",
                 "Expires in:": "Verloopt in:",
                 "BIGGEST JACKPOTS": "GROOTSTE JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TOERNOOIEN"
+                "TOP TOURNAMENTS": "TOP TOERNOOIEN",
+                "Click Here to Unleash Your Magic Bonus!": "Klik hier om je magische bonus te ontketenen!",
+                "Get a bonus just for you tomorrow!": "Krijg morgen een bonus alleen voor jou!",
+                "Get Bonus": "Bonus krijgen",
+                "Thank you! Your Bonus Will Be Here Soon": "Dank je! Je bonus komt er binnenkort aan",
+                "Come back after": "Kom terug na",
+                "to collect it!": "om het op te halen!",
+                "Your Bonus is Ready!": "Je bonus is klaar!",
+                "Click below to claim your magical reward!": "Klik hieronder om je magische beloning te claimen!",
+                "Bonus Ready!": "Bonus klaar!"
             }
         },
         es: {
@@ -4882,7 +5057,16 @@ async function initializeI18n() {
                 "Click Here!": "¡Haz clic aquí!",
                 "Expires in:": "Caduca en:",
                 "BIGGEST JACKPOTS": "LOS MAYORES JACKPOTS",
-                "TOP TOURNAMENTS": "LOS MEJORES TORNEOS"
+                "TOP TOURNAMENTS": "LOS MEJORES TORNEOS",
+                "Click Here to Unleash Your Magic Bonus!": "Haz clic aquí para liberar tu bono mágico!",
+                "Get a bonus just for you tomorrow!": "¡Consigue un bono solo para ti mañana!",
+                "Get Bonus": "Obtener bono",
+                "Thank you! Your Bonus Will Be Here Soon": "¡Gracias! Tu bono estará aquí pronto",
+                "Come back after": "Vuelve después de",
+                "to collect it!": "para recogerlo!",
+                "Your Bonus is Ready!": "¡Tu bono está listo!",
+                "Click below to claim your magical reward!": "Haz clic abajo para reclamar tu recompensa mágica!",
+                "Bonus Ready!": "Bono listo!"
             }
         },
         fi: {
@@ -5139,7 +5323,16 @@ async function initializeI18n() {
                 "Click Here!": "Klikkaa tästä!",
                 "Expires in:": "Vanhenee:",
                 "BIGGEST JACKPOTS": "SUURIMMAT JACKPOTIT",
-                "TOP TOURNAMENTS": "HUIPPU TURNAUKSET"
+                "TOP TOURNAMENTS": "HUIPPU TURNAUKSET",
+                "Click Here to Unleash Your Magic Bonus!": "Klikkaa tästä vapauttaaksesi maagisen bonuksesi!",
+                "Get a bonus just for you tomorrow!": "Saat bonuksen vain sinulle huomenna!",
+                "Get Bonus": "Hanki bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Kiitos! Bonuksesi tulee pian",
+                "Come back after": "Tule takaisin jälkeen",
+                "to collect it!": "noudettavaksi!",
+                "Your Bonus is Ready!": "Bonuksesi on valmis!",
+                "Click below to claim your magical reward!": "Klikkaa alla saadaksesi maagisen palkkiosi!",
+                "Bonus Ready!": "Bonus valmis!"
             }
         },
         fr: {
@@ -5396,7 +5589,16 @@ async function initializeI18n() {
                 "Click Here!": "Cliquez ici!",
                 "Expires in:": "Expire dans:",
                 "BIGGEST JACKPOTS": "PLUS GROS JACKPOTS",
-                "TOP TOURNAMENTS": "MEILLEURS TOURNOIS"
+                "TOP TOURNAMENTS": "MEILLEURS TOURNOIS",
+                "Click Here to Unleash Your Magic Bonus!": "Cliquez ici pour libérer votre bonus magique!",
+                "Get a bonus just for you tomorrow!": "Obtenez un bonus rien que pour vous demain!",
+                "Get Bonus": "Obtenez un bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Merci! Votre bonus sera bientôt ici",
+                "Come back after": "Revenez après",
+                "to collect it!": "pour le récupérer!",
+                "Your Bonus is Ready!": "Votre bonus est prêt!",
+                "Click below to claim your magical reward!": "Cliquez ci-dessous pour réclamer votre récompense magique!",
+                "Bonus Ready!": "Bonus prêt!"
             }
         },
         gr: {
@@ -5653,7 +5855,16 @@ async function initializeI18n() {
                 "Click Here!": "Κάντε κλικ εδώ!",
                 "Expires in:": "Λήγει σε:",
                 "BIGGEST JACKPOTS": "ΜΕΓΑΛΥΤΕΡΑ ΤΖΑΚΠΟΤ",
-                "TOP TOURNAMENTS": "ΚΟΡΥΦΑΙΑ ΤΟΥΡΝΟΥΑ"
+                "TOP TOURNAMENTS": "ΚΟΡΥΦΑΙΑ ΤΟΥΡΝΟΥΑ",
+                "Click Here to Unleash Your Magic Bonus!": "Κάντε κλικ εδώ για να απελευθερώσετε το μαγικό σας μπόνους!",
+                "Get a bonus just for you tomorrow!": "Πάρτε ένα μπόνους μόνο για εσάς αύριο!",
+                "Get Bonus": "Πάρτε το μπόνους",
+                "Thank you! Your Bonus Will Be Here Soon": "Ευχαριστούμε! Το μπόνους σας θα είναι εδώ σύντομα",
+                "Come back after": "Επιστρέψτε μετά",
+                "to collect it!": "για να το συλλέξετε!",
+                "Your Bonus is Ready!": "Το μπόνους σας είναι έτοιμο!",
+                "Click below to claim your magical reward!": "Κάντε κλικ παρακάτω για να διεκδικήσετε την μαγική σας ανταμοιβή!",
+                "Bonus Ready!": "Το μπόνους είναι έτοιμο!"
             }
         },
         hu: {
@@ -5910,7 +6121,16 @@ async function initializeI18n() {
                 "Click Here!": "Kattints ide!",
                 "Expires in:": "Lejár:",
                 "BIGGEST JACKPOTS": "LEGNAGYOBB JACKPOTOK",
-                "TOP TOURNAMENTS": "TOP VERSENYEK"
+                "TOP TOURNAMENTS": "TOP VERSENYEK",
+                "Click Here to Unleash Your Magic Bonus!": "Kattintson ide a varázslatos bónusz felszabadításához!",
+                "Get a bonus just for you tomorrow!": "Szerezzen holnap egy bónuszt csak önnek!",
+                "Get Bonus": "Szerezzen bónuszt",
+                "Thank you! Your Bonus Will Be Here Soon": "Köszönjük! A bónusz hamarosan itt lesz",
+                "Come back after": "Térjen vissza",
+                "to collect it!": "hogy begyűjtse!",
+                "Your Bonus is Ready!": "A bónusza készen áll!",
+                "Click below to claim your magical reward!": "Kattintson alul, hogy igényelje varázslatos jutalmát!",
+                "Bonus Ready!": "A bónusz készen áll!"
             }
         },
         it: {
@@ -6167,7 +6387,16 @@ async function initializeI18n() {
                 "Click Here!": "Clicca qui!",
                 "Expires in:": "Scade tra:",
                 "BIGGEST JACKPOTS": "I PIÙ GRANDI JACKPOT",
-                "TOP TOURNAMENTS": "I MIGLIORI TORNEI"
+                "TOP TOURNAMENTS": "I MIGLIORI TORNEI",
+                "Click Here to Unleash Your Magic Bonus!": "Clicca qui per sbloccare il tuo bonus magico!",
+                "Get a bonus just for you tomorrow!": "Ottieni un bonus solo per te domani!",
+                "Get Bonus": "Ottieni bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Grazie! Il tuo bonus sarà qui presto",
+                "Come back after": "Torna dopo",
+                "to collect it!": "per ritirarlo!",
+                "Your Bonus is Ready!": "Il tuo bonus è pronto!",
+                "Click below to claim your magical reward!": "Clicca sotto per richiedere la tua ricompensa magica!",
+                "Bonus Ready!": "Bonus pronto!"
             }
         },
         no: {
@@ -6424,7 +6653,16 @@ async function initializeI18n() {
                 "Click Here!": "Klikk her!",
                 "Expires in:": "Utløper om:",
                 "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TURNERINGER"
+                "TOP TOURNAMENTS": "TOP TURNERINGER",
+                "Click Here to Unleash Your Magic Bonus!": "Klikk her for å frigjøre din magiske bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus bare for deg i morgen!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Takk! Bonusen din vil snart være her",
+                "Come back after": "Kom tilbake etter",
+                "to collect it!": "for å hente den!",
+                "Your Bonus is Ready!": "Din bonus er klar!",
+                "Click below to claim your magical reward!": "Klikk nedenfor for å få din magiske belønning!",
+                "Bonus Ready!": "Bonus klar!"
             }
         },
         pt: {
@@ -6681,7 +6919,16 @@ async function initializeI18n() {
                 "Click Here!": "Clique aqui!",
                 "Expires in:": "Expira em:",
                 "BIGGEST JACKPOTS": "MAIORES JACKPOTS",
-                "TOP TOURNAMENTS": "MELHORES TORNEIOS"
+                "TOP TOURNAMENTS": "MELHORES TORNEIOS",
+                "Click Here to Unleash Your Magic Bonus!": "Clique aqui para liberar seu bônus mágico!",
+                "Get a bonus just for you tomorrow!": "Receba um bônus só para você amanhã!",
+                "Get Bonus": "Obter Bônus",
+                "Thank you! Your Bonus Will Be Here Soon": "Obrigado! Seu bônus estará aqui em breve",
+                "Come back after": "Volte depois de",
+                "to collect it!": "para coletá-lo!",
+                "Your Bonus is Ready!": "Seu bônus está pronto!",
+                "Click below to claim your magical reward!": "Clique abaixo para reivindicar sua recompensa mágica!",
+                "Bonus Ready!": "Bônus pronto!"
             }
         },
         se: {
@@ -6938,7 +7185,16 @@ async function initializeI18n() {
                 "Click Here!": "Klicka här!",
                 "Expires in:": "Utgår om:",
                 "BIGGEST JACKPOTS": "STÖRSTA JACKPOTS",
-                "TOP TOURNAMENTS": "TOP TURNERINGAR"
+                "TOP TOURNAMENTS": "TOP TURNERINGAR",
+                "Click Here to Unleash Your Magic Bonus!": "Klicka här för att frigöra din magiska bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus bara för dig i morgon!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Tack! Din bonus kommer snart att vara här",
+                "Come back after": "Kom tillbaka efter",
+                "to collect it!": "för att hämta den!",
+                "Your Bonus is Ready!": "Din bonus är redo!",
+                "Click below to claim your magical reward!": "Klicka nedan för att hämta din magiska belöning!",
+                "Bonus Ready!": "Bonus redo!"
             }
         },
         sk: {
@@ -7195,7 +7451,16 @@ async function initializeI18n() {
                 "Click Here!": "Kliknite tu!",
                 "Expires in:": "Vyprší o:",
                 "BIGGEST JACKPOTS": "NAJVÄČŠIE JACKPOTY",
-                "TOP TOURNAMENTS": "NAJLEPŠIE TURNAJE"
+                "TOP TOURNAMENTS": "NAJLEPŠIE TURNAJE",
+                "Click Here to Unleash Your Magic Bonus!": "Kliknite sem a uvoľnite svoj magický bonus!",
+                "Get a bonus just for you tomorrow!": "Získajte zajtra bonus len pre vás!",
+                "Get Bonus": "Získať bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Ďakujeme! Váš bonus bude čoskoro tu",
+                "Come back after": "Vráťte sa po",
+                "to collect it!": "aby ste si ho vyzdvihli!",
+                "Your Bonus is Ready!": "Váš bonus je pripravený!",
+                "Click below to claim your magical reward!": "Kliknite nižšie a získajte svoju magickú odmenu!",
+                "Bonus Ready!": "Bonus pripravený!"
             }
         },
         tr: {
@@ -7452,7 +7717,16 @@ async function initializeI18n() {
                 "Click Here!": "Buraya Tıkla!",
                 "Expires in:": "Sona erme tarihi:",
                 "BIGGEST JACKPOTS": "EN BÜYÜK JACKPOTLAR",
-                "TOP TOURNAMENTS": "EN İYİ TURNUVALAR"
+                "TOP TOURNAMENTS": "EN İYİ TURNUVALAR",
+                "Click Here to Unleash Your Magic Bonus!": "Sihirli Bonusunuzu serbest bırakmak için buraya tıklayın!",
+                "Get a bonus just for you tomorrow!": "Yarın sadece size özel bir bonus alın!",
+                "Get Bonus": "Bonus Alın",
+                "Thank you! Your Bonus Will Be Here Soon": "Teşekkürler! Bonusunuz yakında burada olacak",
+                "Come back after": "Geri dön",
+                "to collect it!": "toplamak için!",
+                "Your Bonus is Ready!": "Bonusunuz hazır!",
+                "Click below to claim your magical reward!": "Sihirli ödülünüzü almak için aşağıya tıklayın!",
+                "Bonus Ready!": "Bonus Hazır!"
             }
         }
     };
@@ -10737,10 +11011,83 @@ function Tournament() {
     }, [
         source
     ]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined') {
+            const scrollToHash = ()=>{
+                if (window.location.hash) {
+                    const id = window.location.hash.slice(1);
+                    const targetElement = document.getElementById(id);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            };
+            scrollToHash();
+            window.addEventListener('hashchange', scrollToHash);
+            return ()=>{
+                window.removeEventListener('hashchange', scrollToHash);
+            };
+        }
+    }, []);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["Fragment"], {
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-            className: "main__container banners-anim flex items-center justify-between mt-5 mb-5",
+            id: "rand-brand",
+            className: "preview2 main__container banners-anim flex items-center justify-between mt-5 mb-5",
             children: [
+                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+                    className: "flex flex-col",
+                    children: [
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h1", {
+                            className: "",
+                            children: [
+                                t("Feeling lucky today?"),
+                                " ",
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                    className: "text-blued",
+                                    children: t("Click now to play")
+                                }, void 0, false, {
+                                    fileName: "<[project]/components/Tournament.jsx>",
+                                    lineNumber: 137,
+                                    columnNumber: 15
+                                }, this),
+                                " ",
+                                t("and see if"),
+                                " ",
+                                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
+                                    className: "text-blued",
+                                    children: [
+                                        " ",
+                                        t("luck is on your side!")
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "<[project]/components/Tournament.jsx>",
+                                    lineNumber: 139,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 135,
+                            columnNumber: 13
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
+                            target: "_blank",
+                            className: "btn btn-primary btn-tournament big-btn mt-3 target-try-your-luck",
+                            href: `${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`,
+                            children: t("Try Your Luck")
+                        }, void 0, false, {
+                            fileName: "<[project]/components/Tournament.jsx>",
+                            lineNumber: 141,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "<[project]/components/Tournament.jsx>",
+                    lineNumber: 134,
+                    columnNumber: 7
+                }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                     className: "banner-animation animation1",
                     children: [
@@ -10748,7 +11095,7 @@ function Tournament() {
                             children: t("BIGGEST JACKPOTS")
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 106,
+                            lineNumber: 150,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -10759,7 +11106,7 @@ function Tournament() {
                             className: "floating-image coin1"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 107,
+                            lineNumber: 151,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -10770,7 +11117,7 @@ function Tournament() {
                             className: "floating-image coin2"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 114,
+                            lineNumber: 158,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
@@ -10781,77 +11128,19 @@ function Tournament() {
                             className: "floating-image diamond"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 121,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
-                            href: `${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`,
-                            className: "btn btn-primary btn-tournament",
-                            target: "_blank",
-                            children: t("Play Now")
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 128,
+                            lineNumber: 165,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Tournament.jsx>",
-                    lineNumber: 105,
-                    columnNumber: 9
-                }, this),
-                __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    className: "banner-animation animation2",
-                    children: [
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h3", {
-                            children: t("TOP TOURNAMENTS")
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 137,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                            alt: "coin",
-                            width: 180,
-                            loading: "lazy",
-                            className: "floating-image cup1"
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 138,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2d$1$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2d$1$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                            alt: "coin",
-                            width: 180,
-                            loading: "lazy",
-                            className: "floating-image cup2"
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 145,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("a", {
-                            target: "_blank",
-                            href: `${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`,
-                            className: "btn btn-primary btn-tournament",
-                            children: t("Play Now")
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 153,
-                            columnNumber: 11
-                        }, this)
-                    ]
-                }, void 0, true, {
-                    fileName: "<[project]/components/Tournament.jsx>",
-                    lineNumber: 136,
+                    lineNumber: 149,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/Tournament.jsx>",
-            lineNumber: 104,
+            lineNumber: 133,
             columnNumber: 7
         }, this)
     }, void 0, false);
@@ -12341,7 +12630,6 @@ const Fortunes = ({ banner, target, creative })=>{
         setVisibleBrands((prev)=>prev + 5);
     };
     const hasMoreBrands = brands.length > visibleBrands;
-    console.log("aaaaaa", brands);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
         className: "flex flex-col container-fortune",
         children: [
