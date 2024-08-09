@@ -52,7 +52,7 @@ console.log("BRBRBR", brands)
 
   return (
     <div className="flex flex-col container-fortune">
-      <div className="banner-jackpot content">
+      <div className="banner-jackpot content123">
         <p className="text-shadows">HIT THE JACKPOT!</p>
         <Counter />
       </div>
