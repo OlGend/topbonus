@@ -56,6 +56,7 @@ console.log("BRBRBR", brands)
         <p className="text-shadows">HIT THE JACKPOT!</p>
         <Counter />
       </div>
+      <p className="text-center mt-3">Make deposits on the brands below to participate in the jackpot</p>
 
       <div className="flex flex-wrap px-0 py-6">
         {isLoading ? (

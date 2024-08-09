@@ -2,52 +2,72 @@ import React, { useState, useEffect } from "react";
 
 const Counter = () => {
   const startAmount = 250000;
-  const fixedStartTime = Date.UTC(2024, 7, 4, 0, 0, 0);
-  const averageIncrement = 15;
+  const maxAmount = 375000;
 
-  const calculateCurrentAmount = () => {
+  // Фиксированное время старта (например, сейчас)
+  const fixedStartTime = Date.UTC(2024, 7, 4, 0, 0, 0);
+
+  // Функция для генерации случайного числа от 5 до 25
+  const getRandomIncrement = () => Math.floor(Math.random() * 21) + 5;
+
+  // Функция для вычисления текущей суммы
+  const calculateInitialAmount = () => {
     const now = Date.now();
     const differenceInMs = now - fixedStartTime;
     const differenceInSeconds = Math.floor(differenceInMs / 1000);
-    const totalIncrement = differenceInSeconds * averageIncrement;
 
-    let currentAmount = startAmount + totalIncrement;
-    currentAmount = 250000 + (currentAmount % (375000 - 250000));
+    let currentAmount = startAmount;
+
+    // Генерация случайных приростов для каждой секунды
+    for (let i = 0; i < differenceInSeconds; i++) {
+      currentAmount += getRandomIncrement();
+      if (currentAmount >= maxAmount) {
+        currentAmount = startAmount;
+      }
+    }
 
     return currentAmount;
   };
 
-  const [amount, setAmount] = useState(calculateCurrentAmount);
+  const [amount, setAmount] = useState(calculateInitialAmount());
   const [displayAmount, setDisplayAmount] = useState(amount);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      const newAmount = calculateCurrentAmount();
-      setAmount(newAmount);
-
-      // Плавное изменение значения
-      let currentDisplayAmount = displayAmount;
-      const step = (newAmount - currentDisplayAmount) / 10;
-
-      const animationInterval = setInterval(() => {
-        currentDisplayAmount += step;
-        if (
-          (step > 0 && currentDisplayAmount >= newAmount) ||
-          (step < 0 && currentDisplayAmount <= newAmount)
-        ) {
-          currentDisplayAmount = newAmount;
-          clearInterval(animationInterval);
+      setAmount((prevAmount) => {
+        let newAmount = prevAmount + getRandomIncrement();
+        if (newAmount >= maxAmount) {
+          newAmount = startAmount;
         }
-        setDisplayAmount(currentDisplayAmount);
-      }, 50); // Плавное обновление каждые 50мс
-    }, 1000);
+        return newAmount;
+      });
+    }, 2000);
 
     return () => clearInterval(intervalId);
-  }, [displayAmount]);
+  }, []);
+
+  useEffect(() => {
+    const animationInterval = setInterval(() => {
+      setDisplayAmount((prevDisplayAmount) => {
+        const step = (amount - prevDisplayAmount) / 10;
+        let newDisplayAmount = prevDisplayAmount + step;
+        if (
+          (step > 0 && newDisplayAmount >= amount) ||
+          (step < 0 && newDisplayAmount <= amount)
+        ) {
+          newDisplayAmount = amount;
+          clearInterval(animationInterval);
+        }
+        return newDisplayAmount;
+      });
+    }, 50);
+
+    return () => clearInterval(animationInterval);
+  }, [amount]);
 
   return (
     <div>
-      <h3 >${Math.floor(displayAmount).toLocaleString()}</h3>
+      <h3>${Math.floor(displayAmount).toLocaleString()}</h3>
     </div>
   );
 };

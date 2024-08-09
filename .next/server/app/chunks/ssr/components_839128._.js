@@ -12787,37 +12787,51 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const Counter = ()=>{
     const startAmount = 250000;
+    const maxAmount = 375000;
     const fixedStartTime = Date.UTC(2024, 7, 4, 0, 0, 0);
-    const averageIncrement = 15;
-    const calculateCurrentAmount = ()=>{
+    const getRandomIncrement = ()=>Math.floor(Math.random() * 21) + 5;
+    const calculateInitialAmount = ()=>{
         const now = Date.now();
         const differenceInMs = now - fixedStartTime;
         const differenceInSeconds = Math.floor(differenceInMs / 1000);
-        const totalIncrement = differenceInSeconds * averageIncrement;
-        let currentAmount = startAmount + totalIncrement;
-        currentAmount = 250000 + currentAmount % (375000 - 250000);
+        let currentAmount = startAmount;
+        for(let i = 0; i < differenceInSeconds; i++){
+            currentAmount += getRandomIncrement();
+            if (currentAmount >= maxAmount) {
+                currentAmount = startAmount;
+            }
+        }
         return currentAmount;
     };
-    const [amount, setAmount] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](calculateCurrentAmount);
+    const [amount, setAmount] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](calculateInitialAmount());
     const [displayAmount, setDisplayAmount] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](amount);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const intervalId = setInterval(()=>{
-            const newAmount = calculateCurrentAmount();
-            setAmount(newAmount);
-            let currentDisplayAmount = displayAmount;
-            const step = (newAmount - currentDisplayAmount) / 10;
-            const animationInterval = setInterval(()=>{
-                currentDisplayAmount += step;
-                if (step > 0 && currentDisplayAmount >= newAmount || step < 0 && currentDisplayAmount <= newAmount) {
-                    currentDisplayAmount = newAmount;
+            setAmount((prevAmount)=>{
+                let newAmount = prevAmount + getRandomIncrement();
+                if (newAmount >= maxAmount) {
+                    newAmount = startAmount;
+                }
+                return newAmount;
+            });
+        }, 2000);
+        return ()=>clearInterval(intervalId);
+    }, []);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        const animationInterval = setInterval(()=>{
+            setDisplayAmount((prevDisplayAmount)=>{
+                const step = (amount - prevDisplayAmount) / 10;
+                let newDisplayAmount = prevDisplayAmount + step;
+                if (step > 0 && newDisplayAmount >= amount || step < 0 && newDisplayAmount <= amount) {
+                    newDisplayAmount = amount;
                     clearInterval(animationInterval);
                 }
-                setDisplayAmount(currentDisplayAmount);
-            }, 50);
-        }, 1000);
-        return ()=>clearInterval(intervalId);
+                return newDisplayAmount;
+            });
+        }, 50);
+        return ()=>clearInterval(animationInterval);
     }, [
-        displayAmount
+        amount
     ]);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h3", {
@@ -12827,12 +12841,12 @@ const Counter = ()=>{
             ]
         }, void 0, true, {
             fileName: "<[project]/components/jackpot/calc.jsx>",
-            lineNumber: 50,
+            lineNumber: 70,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/jackpot/calc.jsx>",
-        lineNumber: 49,
+        lineNumber: 69,
         columnNumber: 5
     }, this);
 };
@@ -12909,7 +12923,7 @@ const Jackpot = ()=>{
         className: "flex flex-col container-fortune",
         children: [
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                className: "banner-jackpot content",
+                className: "banner-jackpot content123",
                 children: [
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                         className: "text-shadows",
@@ -12930,11 +12944,19 @@ const Jackpot = ()=>{
                 lineNumber: 55,
                 columnNumber: 7
             }, this),
+            __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
+                className: "text-center mt-3",
+                children: "Make deposits on the brands below to participate in the jackpot"
+            }, void 0, false, {
+                fileName: "<[project]/components/jackpot/index.jsx>",
+                lineNumber: 59,
+                columnNumber: 7
+            }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "flex flex-wrap px-0 py-6",
                 children: isLoading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "<[project]/components/jackpot/index.jsx>",
-                    lineNumber: 62,
+                    lineNumber: 63,
                     columnNumber: 11
                 }, this) : brands.slice(0, visibleBrands).map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                         className: "card-brand mb-3 basis-[19%]",
@@ -12951,17 +12973,17 @@ const Jackpot = ()=>{
                                         height: 75
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 71,
+                                        lineNumber: 72,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/jackpot/index.jsx>",
-                                    lineNumber: 67,
+                                    lineNumber: 68,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/jackpot/index.jsx>",
-                                lineNumber: 66,
+                                lineNumber: 67,
                                 columnNumber: 15
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -12972,7 +12994,7 @@ const Jackpot = ()=>{
                                         children: brand.OurOfferContent
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 80,
+                                        lineNumber: 81,
                                         columnNumber: 17
                                     }, this),
                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -12984,29 +13006,29 @@ const Jackpot = ()=>{
                                             children: t("Play Now")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/jackpot/index.jsx>",
-                                            lineNumber: 82,
+                                            lineNumber: 83,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 81,
+                                        lineNumber: 82,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/jackpot/index.jsx>",
-                                lineNumber: 79,
+                                lineNumber: 80,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, brand.id_brand, true, {
                         fileName: "<[project]/components/jackpot/index.jsx>",
-                        lineNumber: 65,
+                        lineNumber: 66,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 60,
+                lineNumber: 61,
                 columnNumber: 7
             }, this),
             hasMoreBrands && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -13015,7 +13037,7 @@ const Jackpot = ()=>{
                 children: t("Load More Brands")
             }, void 0, false, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 96,
+                lineNumber: 97,
                 columnNumber: 9
             }, this)
         ]
