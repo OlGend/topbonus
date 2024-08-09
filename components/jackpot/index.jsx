@@ -9,12 +9,14 @@ import { useLanguage } from "@/components/switcher/LanguageContext";
 import Loader from "../Loader";
 import Counter from "./calc";
 
+
 const Jackpot = () => {
   const [brands, setBrands] = useState([]);
   const [visibleBrands, setVisibleBrands] = useState(5);
   const [isLoading, setIsLoading] = useState(false);
   const { language } = useLanguage();
   const categoryBrands = { key1: "High_hybrid", key2: "1" };
+  const { t } = useTranslation();
 
   const { data, error } = useSWR(
     ["brands", language],
@@ -32,7 +34,6 @@ const Jackpot = () => {
     }
   }, [data, categoryBrands.key1, categoryBrands.key2]);
 
-  const { t } = useTranslation();
 
   const [newUrl, setNewUrl] = useState("");
   useEffect(() => {
@@ -53,10 +54,10 @@ console.log("BRBRBR", brands)
   return (
     <div className="flex flex-col container-fortune">
       <div className="banner-jackpot content123">
-        <p className="text-shadows">HIT THE JACKPOT!</p>
+        <p className="text-shadows">{t("HIT THE JACKPOT!")}</p>
         <Counter />
       </div>
-      <p className="text-center mt-3">Make deposits on the brands below to participate in the jackpot</p>
+      <p className="text-center mt-3">{t("Make deposits on the brands below to participate in the jackpot")}</p>
 
       <div className="flex flex-wrap px-0 py-6">
         {isLoading ? (
