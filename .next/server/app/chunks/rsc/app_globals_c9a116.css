@@ -9866,6 +9866,127 @@ main > .topbr {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
+.banner-jackpot {
+  background: url(/bannerjackopt.png) no-repeat top center;
+  background-size: cover;
+  min-height: 286px;
+  padding: 20px 140px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid rgba(123, 140, 152, 0.801);
+}
+.banner-jackpot p {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  line-height: 45px;
+}
+.banner-jackpot h3 {
+  font-size: 86px;
+  line-height: 96px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-shadow: -1px -1px 0 #eeaeff, 1px -1px 0 #eeaeff, -1px 1px 0 #eeaeff, 1px 1px 0 #eeaeff;
+}
+.animated-number {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: inline-block;
+}
+.animated-number-enter {
+  transform: translatey(-20px);
+  opacity: 0;
+}
+.animated-number-enter-active {
+  transform: translatey(0);
+  opacity: 1;
+}
+.animated-number-exit {
+  transform: translatey(0);
+  opacity: 1;
+}
+.animated-number-exit-active {
+  transform: translatey(20px);
+  opacity: 0;
+}
+.content123 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.text-shadows {
+  text-shadow: 3px 3px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5, 12px 12px 0 #a2c4f5;
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: #5192ed;
+  animation: shadows 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    transform: translate(-1px, -1px);
+    text-shadow: 1px 1px 0 #69a1f0;
+  }
+  20% {
+    transform: translate(-3px, -3px);
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2;
+  }
+  30% {
+    transform: translate(-6px, -6px);
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5;
+  }
+  40% {
+    transform: translate(-9px, -9px);
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5, 12px 12px 0 #a2c4f5;
+  }
+  50% {
+    transform: translate(-9px, -9px);
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5, 12px 12px 0 #a2c4f5;
+  }
+  60% {
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5, 12px 12px 0 #a2c4f5;
+  }
+  70% {
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5;
+  }
+  80% {
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2;
+  }
+  90% {
+    text-shadow: 1px 1px 0 #69a1f0;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .banner-jackpot {
+    background: url(/bannerjackpotmobile.png) no-repeat top center;
+    background-size: cover;
+    min-height: 100px;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .banner-jackpot p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .banner-jackpot h3 {
+    margin-top: 5px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
 .hover\:bg-gray-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251/ var(--tw-bg-opacity));

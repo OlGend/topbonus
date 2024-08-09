@@ -5,6 +5,7 @@ import TopBrands from "@/components/TopBrands";
 
 import FilteredHome from "@/components/Brands_home/FilteredHome";
 import Fortunes from "@/components/fortune";
+import Jackpot from "@/components/jackpot";
 import NewArrivals from "@/components/newArrivals/NewArrivals";
 // import Tournament from "@/components/Tournament";
 // import TimeModal from "@/components/TimeModal";
@@ -34,6 +35,9 @@ export default async function Home() {
         <UserBrands />
       </div>
 
+      <div className="main__container">
+          <Jackpot />
+      </div>
       <Tournament />
       {/* <TopBrandsRandom /> */}
 
@@ -43,6 +47,7 @@ export default async function Home() {
       <div className="main__container">
         <Fortunes banner={banner} target={target} creative={creative} />
       </div>
+
 
       <div className="background-block">
         <FilteredHome />

@@ -10593,8 +10593,15 @@ main > .topbr {
   margin-top: 10px;
 }
 .jins div .btn {
-  background: linear-gradient(90deg, #FBCC34 0%, #FCDC96 35%, #EDBE28 67%, #F3DEBB 85%, #F3911C 100%);
-  color: #18184B;
+  background: linear-gradient(
+    90deg,
+    #fbcc34 0%,
+    #fcdc96 35%,
+    #edbe28 67%,
+    #f3debb 85%,
+    #f3911c 100%
+  );
+  color: #18184b;
   font-size: 15px;
 }
 .frstjin {
@@ -10610,26 +10617,39 @@ main > .topbr {
   background-size: cover;
 }
 .h5 {
-  background: linear-gradient(90deg, #FBCC34 0%, #FCDC96 35%, #EDBE28 67%, #F3DEBB 85%, #F3911C 100%);
+  background: linear-gradient(
+    90deg,
+    #fbcc34 0%,
+    #fcdc96 35%,
+    #edbe28 67%,
+    #f3debb 85%,
+    #f3911c 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
   font-weight: bold;
-  font-size: 24px; 
+  font-size: 24px;
   text-align: center;
   line-height: 28px;
 }
 .goldie {
-  background: linear-gradient(90deg, #FBCC34 0%, #FCDC96 35%, #EDBE28 67%, #F3DEBB 85%, #F3911C 100%);
+  background: linear-gradient(
+    90deg,
+    #fbcc34 0%,
+    #fcdc96 35%,
+    #edbe28 67%,
+    #f3debb 85%,
+    #f3911c 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
   color: transparent;
-
 }
 
-@media(min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   main > .topbr {
     height: 690px !important;
     max-height: 690px !important;
@@ -10671,5 +10691,160 @@ main > .topbr {
 .preview2.banners-anim {
   background-image: none !important;
   padding-top: 0 !important;
-  padding-bottom: 0 !important; 
+  padding-bottom: 0 !important;
+}
+
+.banner-jackpot {
+  background: url(/bannerjackopt.png) no-repeat top center;
+  background-size: cover;
+  min-height: 286px;
+  padding: 20px 140px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 1px solid rgba(123, 140, 152, 0.801);
+}
+.banner-jackpot p {
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  font-weight: 900;
+  line-height: 45px;
+}
+.banner-jackpot h3 {
+  font-size: 86px;
+  line-height: 96px;
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+  text-shadow: 
+  -1px -1px 0 #EEAEFF, /* Верхний левый угол */
+  1px -1px 0 #EEAEFF,  /* Верхний правый угол */
+  -1px 1px 0 #EEAEFF,  /* Нижний левый угол */
+  1px 1px 0 #EEAEFF; 
+}
+
+/* ////////////////////////////////////// */
+.animated-number {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  display: inline-block;
+}
+
+.animated-number-enter {
+  transform: translateY(-20px);
+  opacity: 0;
+}
+
+.animated-number-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animated-number-exit {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.animated-number-exit-active {
+  transform: translateY(20px);
+  opacity: 0;
+}
+
+/* ////////////////////////////////////////// */
+.content123 {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+.text-shadows {
+  text-shadow: 
+    3px 3px 0 #69a1f0, /* color-secondary */
+    6px 6px 0 #7eaef2, /* color-tertiary */
+    9px 9px 0 #90baf5, /* color-quaternary */
+    12px 12px 0 #a2c4f5; /* color-quinary */
+  font-family: bungee, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: calc(2rem + 5vw);
+  text-align: center;
+  margin: 0;
+  color: #5192ed; /* color-primary */
+  animation: shadows 1.2s ease-in infinite;
+  letter-spacing: 0.4rem;
+}
+
+@keyframes shadows {
+  0% {
+    text-shadow: none;
+  }
+  10% {
+    transform: translate(-1px, -1px);
+    text-shadow: 1px 1px 0 #69a1f0;
+  }
+  20% {
+    transform: translate(-3px, -3px);
+    text-shadow: 1px 1px 0 #69a1f0,
+      6px 6px 0 #7eaef2;
+  }
+  30% {
+    transform: translate(-6px, -6px);
+    text-shadow: 1px 1px 0 #69a1f0,
+      6px 6px 0 #7eaef2, 
+      9px 9px 0 #90baf5;
+  }
+  40% {
+    transform: translate(-9px, -9px);
+    text-shadow: 1px 1px 0 #69a1f0,
+      6px 6px 0 #7eaef2, 
+      9px 9px 0 #90baf5,
+      12px 12px 0 #a2c4f5;
+  }
+  50% {
+    transform: translate(-9px, -9px);
+    text-shadow: 1px 1px 0 #69a1f0,
+      6px 6px 0 #7eaef2, 
+      9px 9px 0 #90baf5,
+      12px 12px 0 #a2c4f5;
+  }
+  60% {
+    text-shadow: 1px 1px 0 #69a1f0,
+      6px 6px 0 #7eaef2, 
+      9px 9px 0 #90baf5,
+      12px 12px 0 #a2c4f5;
+  }
+  70% {
+    text-shadow: 1px 1px 0 #69a1f0,
+      6px 6px 0 #7eaef2, 
+      9px 9px 0 #90baf5;
+  }
+  80% {
+    text-shadow: 1px 1px 0 #69a1f0,
+      6px 6px 0 #7eaef2;
+  }
+  90% {
+    text-shadow: 1px 1px 0 #69a1f0;
+  }
+  100% {
+    text-shadow: none;
+  }
+}
+@media(min-width:320px) and (max-width:767px) {
+  .banner-jackpot {
+    background: url(/bannerjackpotmobile.png) no-repeat top center;
+    background-size: cover;
+    min-height: 100px;
+    padding: 10px;
+    margin-top: 30px;
+  }
+  .banner-jackpot p {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .banner-jackpot h3 {
+    margin-top: 5px;
+    font-size: 32px;
+    line-height: 36px;
+  }
 }
