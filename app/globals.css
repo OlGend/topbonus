@@ -10776,10 +10776,10 @@ main > .topbr {
 }
 .text-red {
   color: rgb(221, 54, 54);
-  max-width: 200px;
 }
 .btn-red {
   background: rgb(221, 54, 54);
+  max-width: 200px;
 }
 .btn-red:hover {
   background: rgb(241, 75, 75);
