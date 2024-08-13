@@ -92,6 +92,16 @@ export default function TopBrands() {
     { initialData: brands }
   );
 
+  // useEffect(() => {
+  //   if (data) {
+  //     const filteredData = data.filter(
+  //       (rowData) => rowData[categoryBrands.key1] === categoryBrands.key2
+  //     );
+  //     console.log("FILTER", filteredData);
+  //     setBrands(filteredData);
+  //     setLoading(false);
+  //   }
+  // }, [data, categoryBrands.key1, categoryBrands.key2]);
   useEffect(() => {
     if (data) {
       const filteredData = data.filter(
@@ -100,8 +110,12 @@ export default function TopBrands() {
       console.log("FILTER", filteredData);
       setBrands(filteredData);
       setLoading(false);
+
+      // Выбираем случайный бренд один раз
+      setCurrentBrandIndex(Math.floor(Math.random() * filteredData.length));
     }
   }, [data, categoryBrands.key1, categoryBrands.key2]);
+
 
   const shuffledBrands = shuffle(brands);
   const cards2 = shuffledBrands.slice(0, 6).map((brand) => ({
@@ -115,17 +129,17 @@ export default function TopBrands() {
     ),
   }));
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setFade(false); // Start fade-out
-      setTimeout(() => {
-        setCurrentBrandIndex((prevIndex) => (prevIndex + 1) % brands.length);
-        setFade(true); // Start fade-in
-      }, 500); // Duration of fade-out effect
-    }, 5000); // Change brand every 5 seconds
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setFade(false); // Start fade-out
+  //     setTimeout(() => {
+  //       setCurrentBrandIndex((prevIndex) => (prevIndex + 1) % brands.length);
+  //       setFade(true); // Start fade-in
+  //     }, 500); // Duration of fade-out effect
+  //   }, 5000); // Change brand every 5 seconds
 
-    return () => clearInterval(interval);
-  }, [brands.length]);
+  //   return () => clearInterval(interval);
+  // }, [brands.length]);
 
   const ONE_DAY_IN_MS = 1 * 24 * 60 * 60 * 1000; // Константа для двух суток
   const ONE_MINUTE_IN_MS = 60 * 1000; // Константа для одной минуты
