@@ -98,6 +98,7 @@ export const availableLanguagesCLD_VIP = [
     { code: "no", label: "Norway", flag: "🇳🇴" },
     { code: "nz", label: "New Zealand", flag: "🇳🇿" },
     { code: "pl", label: "Poland", flag: "🇵🇱" },
+    { code: "pt", label: "Portugal", flag: "🇵🇹" },
     { code: "se", label: "Sweden", flag: "🇸🇪" },
     { code: "sk", label: "Slovakia", flag: "🇸🇰" },
     { code: "all", label: "All", flag: "🌍" }
