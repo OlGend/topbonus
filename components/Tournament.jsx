@@ -134,19 +134,19 @@ export default function Tournament() {
       <div className="flex flex-col">
             <h1 className="">
               {t("Feeling lucky today?")}{" "}
-              <span className="text-blued">{t("Click now to play")}</span>{" "}
+              <span className="text-red">{t("Click now to play")}</span>{" "}
               {t("and see if")}{" "}
-              <span className="text-blued"> {t("luck is on your side!")}</span>
+              <span className="text-red"> {t("luck is on your side!")}</span>
             </h1>
             <Link
               target="_blank"
-              className="btn btn-primary btn-tournament big-btn mt-3 target-try-your-luck"
-              href={`${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`}
+              className="btn btn-red btn-tournament big-btn mt-3 target-try-your-luck"
+              href={`${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`}
             >
               {t("Try Your Luck")}
             </Link>
           </div>
-        <div className="banner-animation animation1">
+        {/* <div className="banner-animation animation1">
           <h3>{t("BIGGEST JACKPOTS")}</h3>
           <Image
             src={coin1}
@@ -169,15 +169,15 @@ export default function Tournament() {
             loading="lazy"
             className="floating-image diamond"
           />
-          {/* <a
+         <a
             href={`${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`}
             className="btn btn-primary btn-tournament"
             target="_blank"
           >
             {t("Play Now")}
-          </a> */}
-        </div>
-        {/* <div className="banner-animation animation2">
+          </a> 
+        </div> */}
+        <div className="banner-animation animation2">
           <h3>{t("TOP TOURNAMENTS")}</h3>
           <Image
             src={cup1}
@@ -193,15 +193,15 @@ export default function Tournament() {
             loading="lazy"
             className="floating-image cup2"
           />
-
+{/* 
           <a
             target="_blank"
             href={`${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`}
             className="btn btn-primary btn-tournament"
           >
             {t("Play Now")}
-          </a>
-        </div> */}
+          </a> */}
+        </div>
       </div>
     </>
   );

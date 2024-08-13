@@ -3204,7 +3204,9 @@ async function initializeI18n() {
                 "to collect it!": "to collect it!",
                 "Your Bonus is Ready!": "Your Bonus is Ready!",
                 "Click below to claim your magical reward!": "Click below to claim your magical reward!",
-                "Bonus Ready!": "Bonus Ready!"
+                "Bonus Ready!": "Bonus Ready!",
+                "HIT THE JACKPOT!": "HIT THE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Make deposits on the brands below to participate in the jackpot"
             }
         },
         pl: {
@@ -3470,7 +3472,9 @@ async function initializeI18n() {
                 "to collect it!": "aby go odebrać!",
                 "Your Bonus is Ready!": "Twój bonus jest gotowy!",
                 "Click below to claim your magical reward!": "Kliknij poniżej, aby odebrać swoją magiczną nagrodę!",
-                "Bonus Ready!": "Bonus gotowy!"
+                "Bonus Ready!": "Bonus gotowy!",
+                "HIT THE JACKPOT!": "ZGARNIJ JACKPOTA!",
+                "Make deposits on the brands below to participate in the jackpot": "Dokonaj wpłat na poniższe marki, aby wziąć udział w jackpotie"
             }
         },
         de: {
@@ -3736,7 +3740,9 @@ async function initializeI18n() {
                 "to collect it!": "zurück, um ihn abzuholen!",
                 "Your Bonus is Ready!": "Ihr Bonus ist bereit!",
                 "Click below to claim your magical reward!": "Klicken Sie unten, um Ihre magische Belohnung zu erhalten!",
-                "Bonus Ready!": "Bonus bereit!"
+                "Bonus Ready!": "Bonus bereit!",
+                "HIT THE JACKPOT!": "KNACKEN SIE DEN JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Tätigen Sie Einzahlungen bei den unten stehenden Marken, um am Jackpot teilzunehmen"
             }
         },
         bg: {
@@ -4002,7 +4008,9 @@ async function initializeI18n() {
                 "to collect it!": "за да го получите!",
                 "Your Bonus is Ready!": "Вашият бонус е готов!",
                 "Click below to claim your magical reward!": "Кликнете по-долу, за да получите вашата магическа награда!",
-                "Bonus Ready!": "Бонус готов!"
+                "Bonus Ready!": "Бонус готов!",
+                "HIT THE JACKPOT!": "УДАРЕТЕ ДЖАКПОТА!",
+                "Make deposits on the brands below to participate in the jackpot": "Направете депозити в посочените по-долу марки, за да участвате в джакпота"
             }
         },
         cz: {
@@ -4268,7 +4276,9 @@ async function initializeI18n() {
                 "to collect it!": "abyste si ho vyzvedli!",
                 "Your Bonus is Ready!": "Váš bonus je připraven!",
                 "Click below to claim your magical reward!": "Klikněte níže a získejte svou magickou odměnu!",
-                "Bonus Ready!": "Bonus připraven!"
+                "Bonus Ready!": "Bonus připraven!",
+                "HIT THE JACKPOT!": "TREFTE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Proveďte vklady na níže uvedené značky, abyste se zúčastnili jackpotu"
             }
         },
         dk: {
@@ -4534,7 +4544,9 @@ async function initializeI18n() {
                 "to collect it!": "for at hente den!",
                 "Your Bonus is Ready!": "Din bonus er klar!",
                 "Click below to claim your magical reward!": "Klik nedenfor for at få din magiske belønning!",
-                "Bonus Ready!": "Bonus klar!"
+                "Bonus Ready!": "Bonus klar!",
+                "HIT THE JACKPOT!": "RAM JACKPOTTEN!",
+                "Make deposits on the brands below to participate in the jackpot": "Foretag indbetalinger på mærkerne nedenfor for at deltage i jackpotten"
             }
         },
         nl: {
@@ -4800,7 +4812,9 @@ async function initializeI18n() {
                 "to collect it!": "om het op te halen!",
                 "Your Bonus is Ready!": "Je bonus is klaar!",
                 "Click below to claim your magical reward!": "Klik hieronder om je magische beloning te claimen!",
-                "Bonus Ready!": "Bonus klaar!"
+                "Bonus Ready!": "Bonus klaar!",
+                "HIT THE JACKPOT!": "RAAK DE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Stort geld op de onderstaande merken om deel te nemen aan de jackpot"
             }
         },
         es: {
@@ -5066,7 +5080,9 @@ async function initializeI18n() {
                 "to collect it!": "para recogerlo!",
                 "Your Bonus is Ready!": "¡Tu bono está listo!",
                 "Click below to claim your magical reward!": "Haz clic abajo para reclamar tu recompensa mágica!",
-                "Bonus Ready!": "Bono listo!"
+                "Bonus Ready!": "Bono listo!",
+                "HIT THE JACKPOT!": "¡GANA EL JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Realiza depósitos en las marcas a continuación para participar en el jackpot"
             }
         },
         fi: {
@@ -5332,7 +5348,9 @@ async function initializeI18n() {
                 "to collect it!": "noudettavaksi!",
                 "Your Bonus is Ready!": "Bonuksesi on valmis!",
                 "Click below to claim your magical reward!": "Klikkaa alla saadaksesi maagisen palkkiosi!",
-                "Bonus Ready!": "Bonus valmis!"
+                "Bonus Ready!": "Bonus valmis!",
+                "HIT THE JACKPOT!": "ISKE JACKPOTIIN!",
+                "Make deposits on the brands below to participate in the jackpot": "Tee talletuksia alla oleviin brändeihin osallistuaksesi jackpot-pottiin"
             }
         },
         fr: {
@@ -5598,7 +5616,9 @@ async function initializeI18n() {
                 "to collect it!": "pour le récupérer!",
                 "Your Bonus is Ready!": "Votre bonus est prêt!",
                 "Click below to claim your magical reward!": "Cliquez ci-dessous pour réclamer votre récompense magique!",
-                "Bonus Ready!": "Bonus prêt!"
+                "Bonus Ready!": "Bonus prêt!",
+                "HIT THE JACKPOT!": "DÉCROCHEZ LE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Faites des dépôts sur les marques ci-dessous pour participer au jackpot"
             }
         },
         gr: {
@@ -5864,7 +5884,9 @@ async function initializeI18n() {
                 "to collect it!": "για να το συλλέξετε!",
                 "Your Bonus is Ready!": "Το μπόνους σας είναι έτοιμο!",
                 "Click below to claim your magical reward!": "Κάντε κλικ παρακάτω για να διεκδικήσετε την μαγική σας ανταμοιβή!",
-                "Bonus Ready!": "Το μπόνους είναι έτοιμο!"
+                "Bonus Ready!": "Το μπόνους είναι έτοιμο!",
+                "HIT THE JACKPOT!": "ΚΕΡΔΙΣΤΕ ΤΟ ΤΖΑΚΠΟΤ!",
+                "Make deposits on the brands below to participate in the jackpot": "Κάντε καταθέσεις στις παρακάτω μάρκες για να συμμετάσχετε στο τζάκποτ"
             }
         },
         hu: {
@@ -6130,7 +6152,9 @@ async function initializeI18n() {
                 "to collect it!": "hogy begyűjtse!",
                 "Your Bonus is Ready!": "A bónusza készen áll!",
                 "Click below to claim your magical reward!": "Kattintson alul, hogy igényelje varázslatos jutalmát!",
-                "Bonus Ready!": "A bónusz készen áll!"
+                "Bonus Ready!": "A bónusz készen áll!",
+                "HIT THE JACKPOT!": "ÜSSE MEG A JACKPOTOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Tegyen befizetéseket az alábbi márkákon, hogy részt vegyen a jackpotban"
             }
         },
         it: {
@@ -6396,7 +6420,9 @@ async function initializeI18n() {
                 "to collect it!": "per ritirarlo!",
                 "Your Bonus is Ready!": "Il tuo bonus è pronto!",
                 "Click below to claim your magical reward!": "Clicca sotto per richiedere la tua ricompensa magica!",
-                "Bonus Ready!": "Bonus pronto!"
+                "Bonus Ready!": "Bonus pronto!",
+                "HIT THE JACKPOT!": "COLPISCI IL JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Effettua depositi sui marchi sottostanti per partecipare al jackpot"
             }
         },
         no: {
@@ -6662,7 +6688,9 @@ async function initializeI18n() {
                 "to collect it!": "for å hente den!",
                 "Your Bonus is Ready!": "Din bonus er klar!",
                 "Click below to claim your magical reward!": "Klikk nedenfor for å få din magiske belønning!",
-                "Bonus Ready!": "Bonus klar!"
+                "Bonus Ready!": "Bonus klar!",
+                "HIT THE JACKPOT!": "SLÅ JACKPOTTEN!",
+                "Make deposits on the brands below to participate in the jackpot": "Gjør innskudd på merkene nedenfor for å delta i jackpotten"
             }
         },
         pt: {
@@ -6928,7 +6956,9 @@ async function initializeI18n() {
                 "to collect it!": "para coletá-lo!",
                 "Your Bonus is Ready!": "Seu bônus está pronto!",
                 "Click below to claim your magical reward!": "Clique abaixo para reivindicar sua recompensa mágica!",
-                "Bonus Ready!": "Bônus pronto!"
+                "Bonus Ready!": "Bônus pronto!",
+                "HIT THE JACKPOT!": "ACERTE O JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Faça depósitos nas marcas abaixo para participar do jackpot"
             }
         },
         se: {
@@ -7194,7 +7224,9 @@ async function initializeI18n() {
                 "to collect it!": "för att hämta den!",
                 "Your Bonus is Ready!": "Din bonus är redo!",
                 "Click below to claim your magical reward!": "Klicka nedan för att hämta din magiska belöning!",
-                "Bonus Ready!": "Bonus redo!"
+                "Bonus Ready!": "Bonus redo!",
+                "HIT THE JACKPOT!": "SLÅ JACKPOTTEN!",
+                "Make deposits on the brands below to participate in the jackpot": "Gör insättningar på varumärkena nedan för att delta i jackpotten"
             }
         },
         sk: {
@@ -7460,7 +7492,9 @@ async function initializeI18n() {
                 "to collect it!": "aby ste si ho vyzdvihli!",
                 "Your Bonus is Ready!": "Váš bonus je pripravený!",
                 "Click below to claim your magical reward!": "Kliknite nižšie a získajte svoju magickú odmenu!",
-                "Bonus Ready!": "Bonus pripravený!"
+                "Bonus Ready!": "Bonus pripravený!",
+                "HIT THE JACKPOT!": "ZASIAHNITE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Vykonajte vklady na nižšie uvedené značky, aby ste sa zúčastnili jackpotu"
             }
         },
         tr: {
@@ -7726,7 +7760,9 @@ async function initializeI18n() {
                 "to collect it!": "toplamak için!",
                 "Your Bonus is Ready!": "Bonusunuz hazır!",
                 "Click below to claim your magical reward!": "Sihirli ödülünüzü almak için aşağıya tıklayın!",
-                "Bonus Ready!": "Bonus Hazır!"
+                "Bonus Ready!": "Bonus Hazır!",
+                "HIT THE JACKPOT!": "JACKPOT'U VUR!",
+                "Make deposits on the brands below to participate in the jackpot": "Jackpot'a katılmak için aşağıdaki markalara para yatırın"
             }
         }
     };
@@ -11045,7 +11081,7 @@ function Tournament() {
                                 t("Feeling lucky today?"),
                                 " ",
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                    className: "text-blued",
+                                    className: "text-red",
                                     children: t("Click now to play")
                                 }, void 0, false, {
                                     fileName: "<[project]/components/Tournament.jsx>",
@@ -11056,7 +11092,7 @@ function Tournament() {
                                 t("and see if"),
                                 " ",
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
-                                    className: "text-blued",
+                                    className: "text-red",
                                     children: [
                                         " ",
                                         t("luck is on your side!")
@@ -11074,8 +11110,8 @@ function Tournament() {
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
                             target: "_blank",
-                            className: "btn btn-primary btn-tournament big-btn mt-3 target-try-your-luck",
-                            href: `${redirectUrl}/${newUrl}&creative_id=BIGGEST_JACKPOTS`,
+                            className: "btn btn-red btn-tournament big-btn mt-3 target-try-your-luck",
+                            href: `${redirectUrl}/${newUrl}&creative_id=TOP_TOURNAMENTS`,
                             children: t("Try Your Luck")
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
@@ -11089,52 +11125,41 @@ function Tournament() {
                     columnNumber: 7
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-                    className: "banner-animation animation1",
+                    className: "banner-animation animation2",
                     children: [
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("h3", {
-                            children: t("BIGGEST JACKPOTS")
+                            children: t("TOP TOURNAMENTS")
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 150,
+                            lineNumber: 181,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coin_01$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coin_01$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                             alt: "coin",
-                            width: 86,
+                            width: 180,
                             loading: "lazy",
-                            className: "floating-image coin1"
+                            className: "floating-image cup1"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 151,
+                            lineNumber: 182,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$coin_02$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$coin_02$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
+                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$cup$2d$1$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$cup$2d$1$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
                             alt: "coin",
-                            width: 83,
+                            width: 180,
                             loading: "lazy",
-                            className: "floating-image coin2"
+                            className: "floating-image cup2"
                         }, void 0, false, {
                             fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 158,
-                            columnNumber: 11
-                        }, this),
-                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
-                            src: __TURBOPACK__imported__module__$5b$project$5d2f$public$2f$diamond$2e$png$2e$mjs$2f28$IMAGE$292f5b$project$5d2f$public$2f$diamond$2e$png__$28$static$29$__$28$structured__image__object$2c$__ecmascript$29$__["default"],
-                            alt: "coin",
-                            width: 80,
-                            loading: "lazy",
-                            className: "floating-image diamond"
-                        }, void 0, false, {
-                            fileName: "<[project]/components/Tournament.jsx>",
-                            lineNumber: 165,
+                            lineNumber: 189,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/Tournament.jsx>",
-                    lineNumber: 149,
+                    lineNumber: 180,
                     columnNumber: 9
                 }, this)
             ]
@@ -12889,6 +12914,7 @@ const Jackpot = ()=>{
         key1: "High_hybrid",
         key2: "1"
     };
+    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const { data, error } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__["default"]([
         "brands",
         language
@@ -12906,7 +12932,6 @@ const Jackpot = ()=>{
         categoryBrands.key1,
         categoryBrands.key2
     ]);
-    const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const [newUrl, setNewUrl] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]("");
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         const savedUrl = localStorage.getItem("savedUrl");
@@ -12927,36 +12952,36 @@ const Jackpot = ()=>{
                 children: [
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                         className: "text-shadows",
-                        children: "HIT THE JACKPOT!"
+                        children: t("HIT THE JACKPOT!")
                     }, void 0, false, {
                         fileName: "<[project]/components/jackpot/index.jsx>",
-                        lineNumber: 56,
+                        lineNumber: 57,
                         columnNumber: 9
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$jackpot$2f$calc$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/jackpot/index.jsx>",
-                        lineNumber: 57,
+                        lineNumber: 58,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 55,
+                lineNumber: 56,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                 className: "text-center mt-3",
-                children: "Make deposits on the brands below to participate in the jackpot"
+                children: t("Make deposits on the brands below to participate in the jackpot")
             }, void 0, false, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 59,
+                lineNumber: 60,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "flex flex-wrap px-0 py-6",
                 children: isLoading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "<[project]/components/jackpot/index.jsx>",
-                    lineNumber: 63,
+                    lineNumber: 64,
                     columnNumber: 11
                 }, this) : brands.slice(0, visibleBrands).map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                         className: "card-brand mb-3 basis-[19%]",
@@ -12973,17 +12998,17 @@ const Jackpot = ()=>{
                                         height: 75
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 72,
+                                        lineNumber: 73,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/jackpot/index.jsx>",
-                                    lineNumber: 68,
+                                    lineNumber: 69,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/jackpot/index.jsx>",
-                                lineNumber: 67,
+                                lineNumber: 68,
                                 columnNumber: 15
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -12994,7 +13019,7 @@ const Jackpot = ()=>{
                                         children: brand.OurOfferContent
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 81,
+                                        lineNumber: 82,
                                         columnNumber: 17
                                     }, this),
                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -13006,29 +13031,29 @@ const Jackpot = ()=>{
                                             children: t("Play Now")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/jackpot/index.jsx>",
-                                            lineNumber: 83,
+                                            lineNumber: 84,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 82,
+                                        lineNumber: 83,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/jackpot/index.jsx>",
-                                lineNumber: 80,
+                                lineNumber: 81,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, brand.id_brand, true, {
                         fileName: "<[project]/components/jackpot/index.jsx>",
-                        lineNumber: 66,
+                        lineNumber: 67,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 61,
+                lineNumber: 62,
                 columnNumber: 7
             }, this),
             hasMoreBrands && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -13037,13 +13062,13 @@ const Jackpot = ()=>{
                 children: t("Load More Brands")
             }, void 0, false, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 97,
+                lineNumber: 98,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/jackpot/index.jsx>",
-        lineNumber: 54,
+        lineNumber: 55,
         columnNumber: 5
     }, this);
 };

@@ -9929,6 +9929,16 @@ main > .topbr {
   animation: shadows 1.2s ease-in infinite;
   letter-spacing: 0.4rem;
 }
+.text-red {
+  color: rgb(221, 54, 54);
+  max-width: 200px;
+}
+.btn-red {
+  background: rgb(221, 54, 54);
+}
+.btn-red:hover {
+  background: rgb(241, 75, 75);
+}
 @keyframes shadows {
   0% {
     text-shadow: none;
