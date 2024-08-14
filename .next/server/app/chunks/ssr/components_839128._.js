@@ -12990,9 +12990,14 @@ const Jackpot = ()=>{
     });
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         if (data) {
-            const filteredData = data.filter((rowData)=>rowData[categoryBrands.key1] === categoryBrands.key2);
-            console.log("FILTER", filteredData);
-            setBrands(filteredData);
+            const filteredData1 = data.filter((rowData)=>rowData[categoryBrands.key1] === categoryBrands.key2);
+            const filteredData2 = data.filter((rowData)=>rowData["Networks"] === "1");
+            const combinedData = [
+                ...filteredData1,
+                ...filteredData2
+            ];
+            console.log("FILTER", combinedData);
+            setBrands(combinedData);
         }
     }, [
         data,
@@ -13022,18 +13027,18 @@ const Jackpot = ()=>{
                         children: t("HIT THE JACKPOT!")
                     }, void 0, false, {
                         fileName: "<[project]/components/jackpot/index.jsx>",
-                        lineNumber: 57,
+                        lineNumber: 68,
                         columnNumber: 9
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$jackpot$2f$calc$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/jackpot/index.jsx>",
-                        lineNumber: 58,
+                        lineNumber: 69,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 56,
+                lineNumber: 67,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
@@ -13041,14 +13046,14 @@ const Jackpot = ()=>{
                 children: t("Make deposits on the brands below to participate in the jackpot")
             }, void 0, false, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 60,
+                lineNumber: 71,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                 className: "flex flex-wrap px-0 py-6",
                 children: isLoading ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                     fileName: "<[project]/components/jackpot/index.jsx>",
-                    lineNumber: 64,
+                    lineNumber: 75,
                     columnNumber: 11
                 }, this) : brands.slice(0, visibleBrands).map((brand)=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                         className: "card-brand mb-3 basis-[19%]",
@@ -13065,17 +13070,17 @@ const Jackpot = ()=>{
                                         height: 75
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 73,
+                                        lineNumber: 84,
                                         columnNumber: 19
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/jackpot/index.jsx>",
-                                    lineNumber: 69,
+                                    lineNumber: 80,
                                     columnNumber: 17
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/jackpot/index.jsx>",
-                                lineNumber: 68,
+                                lineNumber: 79,
                                 columnNumber: 15
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -13086,7 +13091,7 @@ const Jackpot = ()=>{
                                         children: brand.OurOfferContent
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 82,
+                                        lineNumber: 93,
                                         columnNumber: 17
                                     }, this),
                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -13098,29 +13103,29 @@ const Jackpot = ()=>{
                                             children: t("Play Now")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/jackpot/index.jsx>",
-                                            lineNumber: 84,
+                                            lineNumber: 95,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/jackpot/index.jsx>",
-                                        lineNumber: 83,
+                                        lineNumber: 94,
                                         columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "<[project]/components/jackpot/index.jsx>",
-                                lineNumber: 81,
+                                lineNumber: 92,
                                 columnNumber: 15
                             }, this)
                         ]
                     }, brand.id_brand, true, {
                         fileName: "<[project]/components/jackpot/index.jsx>",
-                        lineNumber: 67,
+                        lineNumber: 78,
                         columnNumber: 13
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 62,
+                lineNumber: 73,
                 columnNumber: 7
             }, this),
             hasMoreBrands && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -13129,13 +13134,13 @@ const Jackpot = ()=>{
                 children: t("Load More Brands")
             }, void 0, false, {
                 fileName: "<[project]/components/jackpot/index.jsx>",
-                lineNumber: 98,
+                lineNumber: 109,
                 columnNumber: 9
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/jackpot/index.jsx>",
-        lineNumber: 55,
+        lineNumber: 66,
         columnNumber: 5
     }, this);
 };

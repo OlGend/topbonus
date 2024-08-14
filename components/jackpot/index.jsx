@@ -26,13 +26,24 @@ const Jackpot = () => {
 
   useEffect(() => {
     if (data) {
-      const filteredData = data.filter(
+      // Фильтрация по первому столбцу
+      const filteredData1 = data.filter(
         (rowData) => rowData[categoryBrands.key1] === categoryBrands.key2
       );
-      console.log("FILTER", filteredData);
-      setBrands(filteredData);
+  
+      // Фильтрация по второму столбцу (добавьте нужные ключи)
+      const filteredData2 = data.filter(
+        (rowData) => rowData["Networks"] === "1"
+      );
+  
+      // Объединение данных из двух фильтраций
+      const combinedData = [...filteredData1, ...filteredData2];
+  
+      console.log("FILTER", combinedData);
+      setBrands(combinedData);
     }
   }, [data, categoryBrands.key1, categoryBrands.key2]);
+  
 
 
   const [newUrl, setNewUrl] = useState("");
