@@ -79,7 +79,7 @@ console.log("BRBRBR", brands)
               <div className="brandImage p-3">
                 <Link
                   target="_blank"
-                  href={`${brand.GoBig}/${newUrl}&creative_id=`}
+                  href={`${brand.GoBig}/${newUrl}&creative_id=NEW_JACKPOT`}
                 >
                   <Image
                     src={`/brands/${brand.CasinoBrand}.png`}
