@@ -95,7 +95,7 @@ console.log("BRBRBR", brands)
                   <Link
                     target="_blank"
                     className={`btn btn-primary`}
-                    href={`${brand.GoBig}/${newUrl}&creative_id=`}
+                    href={`${brand.GoBig}/${newUrl}&creative_id=NEW_JACKPOT`}
                   >
                     {t("Play Now")}
                   </Link>
