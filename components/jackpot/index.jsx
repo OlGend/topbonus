@@ -63,7 +63,7 @@ const Jackpot = () => {
 console.log("BRBRBR", brands)
 
   return (
-    <div className="flex flex-col container-fortune">
+    <div id="jackpot" className="flex flex-col container-fortune">
       <div className="banner-jackpot content123">
         <p className="text-shadows">{t("HIT THE JACKPOT!")}</p>
         <Counter />
