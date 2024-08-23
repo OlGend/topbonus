@@ -10578,11 +10578,11 @@ const TheHeader = ()=>{
         children: [
             load ? dataUser.geo_approve === null || dataUser.geo_approve === "" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$geo$2d$identifier$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 220,
+                lineNumber: 221,
                 columnNumber: 11
             }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 222,
+                lineNumber: 223,
                 columnNumber: 11
             }, this) : "",
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -10601,17 +10601,17 @@ const TheHeader = ()=>{
                                     loading: "lazy"
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 233,
+                                    lineNumber: 234,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                lineNumber: 232,
+                                lineNumber: 233,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 231,
+                            lineNumber: 232,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -10632,7 +10632,7 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 243,
+                                                        lineNumber: 244,
                                                         columnNumber: 23
                                                     }, this),
                                                     " ",
@@ -10640,24 +10640,24 @@ const TheHeader = ()=>{
                                                         children: t("My Wallet")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 247,
+                                                        lineNumber: 248,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 241,
+                                            lineNumber: 242,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 240,
+                                        lineNumber: 241,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 238,
+                                    lineNumber: 239,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -10675,31 +10675,31 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 260,
+                                                        lineNumber: 261,
                                                         columnNumber: 23
                                                     }, this),
                                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                         children: t("Fortune Wheel")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 264,
+                                                        lineNumber: 265,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 258,
+                                            lineNumber: 259,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 257,
+                                        lineNumber: 258,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 255,
+                                    lineNumber: 256,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -10714,32 +10714,32 @@ const TheHeader = ()=>{
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 276,
+                                                    lineNumber: 277,
                                                     columnNumber: 21
                                                 }, this),
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                     children: t("Cards Shop")
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 277,
+                                                    lineNumber: 278,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 274,
+                                        lineNumber: 275,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 272,
+                                    lineNumber: 273,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 237,
+                            lineNumber: 238,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["I18nextProvider"], {
@@ -10747,7 +10747,7 @@ const TheHeader = ()=>{
                             children: [
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuLanguages$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 285,
+                                    lineNumber: 286,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -10758,31 +10758,31 @@ const TheHeader = ()=>{
                                             children: [
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 288,
+                                                    lineNumber: 289,
                                                     columnNumber: 17
                                                 }, this),
                                                 " "
                                             ]
                                         }, void 0, true, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 287,
+                                            lineNumber: 288,
                                             columnNumber: 15
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 290,
+                                            lineNumber: 291,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 286,
+                                    lineNumber: 287,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 284,
+                            lineNumber: 285,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuPages$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -10790,7 +10790,7 @@ const TheHeader = ()=>{
                             t: t
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 294,
+                            lineNumber: 295,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -10806,32 +10806,32 @@ const TheHeader = ()=>{
                                                 className: "line line1"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 302,
+                                                lineNumber: 303,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line2"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 303,
+                                                lineNumber: 304,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line3"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 304,
+                                                lineNumber: 305,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 301,
+                                        lineNumber: 302,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 297,
+                                    lineNumber: 298,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -10846,34 +10846,34 @@ const TheHeader = ()=>{
                                             onLinkClick: closeMobileMenu
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 309,
+                                            lineNumber: 310,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 308,
+                                        lineNumber: 309,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 307,
+                                    lineNumber: 308,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 296,
+                            lineNumber: 297,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 230,
+                    lineNumber: 231,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 229,
+                lineNumber: 230,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -10885,18 +10885,18 @@ const TheHeader = ()=>{
                         }))
                 }, void 0, false, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 322,
+                    lineNumber: 323,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 321,
+                lineNumber: 322,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/TheHeader.jsx>",
-        lineNumber: 217,
+        lineNumber: 218,
         columnNumber: 5
     }, this);
 };
@@ -11415,7 +11415,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18
 ;
 const Marque = ()=>{
     const handleClick = ()=>{
-        const targetElement = document.getElementById("real-block");
+        const targetElement = document.getElementById("real");
         if (targetElement) {
             const headerOffset = 50;
             const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;
@@ -13017,6 +13017,7 @@ const Jackpot = ()=>{
     const hasMoreBrands = brands.length > visibleBrands;
     console.log("BRBRBR", brands);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
+        id: "jackpot",
         className: "flex flex-col container-fortune",
         children: [
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -13062,7 +13063,7 @@ const Jackpot = ()=>{
                                 className: "brandImage p-3",
                                 children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
                                     target: "_blank",
-                                    href: `${brand.GoBig}/${newUrl}&creative_id=`,
+                                    href: `${brand.GoBig}/${newUrl}&creative_id=NEW_JACKPOT`,
                                     children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$28$ecmascript$29$__["default"], {
                                         src: `/brands/${brand.CasinoBrand}.png`,
                                         alt: brand.CasinoBrand,
@@ -13099,7 +13100,7 @@ const Jackpot = ()=>{
                                         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$link$2e$js__$28$ecmascript$29$__["default"], {
                                             target: "_blank",
                                             className: `btn btn-primary`,
-                                            href: `${brand.GoBig}/${newUrl}&creative_id=`,
+                                            href: `${brand.GoBig}/${newUrl}&creative_id=NEW_JACKPOT`,
                                             children: t("Play Now")
                                         }, void 0, false, {
                                             fileName: "<[project]/components/jackpot/index.jsx>",
@@ -13222,9 +13223,8 @@ const NewArrivals = ()=>{
         categoryBrands.key1,
         categoryBrands.key2
     ]);
-    console.log("WWWWWWWWWWWWWWWW", brands);
     return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
-        id: "real-block",
+        id: "real",
         className: "bl-sand",
         children: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
             className: "main__container block-sandbox",

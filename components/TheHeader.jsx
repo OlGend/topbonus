@@ -29,6 +29,7 @@ import { getBrands } from "@/components/getBrands/getBrands2";
 import { useLanguage } from "@/components/switcher/LanguageContext";
 import { track } from '@vercel/analytics';
 
+
 const TheHeader = () => {
   const { t } = useTranslation();
   const items = navItems(t);
