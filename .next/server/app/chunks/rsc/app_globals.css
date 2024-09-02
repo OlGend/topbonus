@@ -9547,6 +9547,7 @@ span.descriptions {
   display: flex;
   white-space: nowrap;
   animation: scroll 60s linear infinite;
+  will-change: transform;
 }
 .marquee span {
   font-size: 18px;

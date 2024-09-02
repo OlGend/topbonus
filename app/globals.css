@@ -10335,6 +10335,7 @@ span.descriptions {
   display: flex;
   white-space: nowrap;
   animation: scroll 60s linear infinite;
+  will-change: transform;
 }
 
 .marquee span {
@@ -10354,9 +10355,11 @@ span.descriptions {
 
 @keyframes scroll {
   0% {
+    -webkit-transform: translateX(0);
     transform: translateX(0);
   }
   100% {
+    -webkit-transform: translateX(-100%);
     transform: translateX(-100%);
   }
 }
@@ -10718,11 +10721,9 @@ main > .topbr {
   font-weight: 900;
   color: #fff;
   text-align: center;
-  text-shadow: 
-  -1px -1px 0 #EEAEFF, /* Верхний левый угол */
-  1px -1px 0 #EEAEFF,  /* Верхний правый угол */
-  -1px 1px 0 #EEAEFF,  /* Нижний левый угол */
-  1px 1px 0 #EEAEFF; 
+  text-shadow: -1px -1px 0 #eeaeff, /* Верхний левый угол */ 1px -1px 0 #eeaeff,
+    /* Верхний правый угол */ -1px 1px 0 #eeaeff,
+    /* Нижний левый угол */ 1px 1px 0 #eeaeff;
 }
 
 /* ////////////////////////////////////// */
@@ -10759,11 +10760,9 @@ main > .topbr {
 }
 
 .text-shadows {
-  text-shadow: 
-    3px 3px 0 #69a1f0, /* color-secondary */
-    6px 6px 0 #7eaef2, /* color-tertiary */
-    9px 9px 0 #90baf5, /* color-quaternary */
-    12px 12px 0 #a2c4f5; /* color-quinary */
+  text-shadow: 3px 3px 0 #69a1f0, /* color-secondary */ 6px 6px 0 #7eaef2,
+    /* color-tertiary */ 9px 9px 0 #90baf5,
+    /* color-quaternary */ 12px 12px 0 #a2c4f5; /* color-quinary */
   font-family: bungee, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
@@ -10794,43 +10793,31 @@ main > .topbr {
   }
   20% {
     transform: translate(-3px, -3px);
-    text-shadow: 1px 1px 0 #69a1f0,
-      6px 6px 0 #7eaef2;
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2;
   }
   30% {
     transform: translate(-6px, -6px);
-    text-shadow: 1px 1px 0 #69a1f0,
-      6px 6px 0 #7eaef2, 
-      9px 9px 0 #90baf5;
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5;
   }
   40% {
     transform: translate(-9px, -9px);
-    text-shadow: 1px 1px 0 #69a1f0,
-      6px 6px 0 #7eaef2, 
-      9px 9px 0 #90baf5,
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5,
       12px 12px 0 #a2c4f5;
   }
   50% {
     transform: translate(-9px, -9px);
-    text-shadow: 1px 1px 0 #69a1f0,
-      6px 6px 0 #7eaef2, 
-      9px 9px 0 #90baf5,
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5,
       12px 12px 0 #a2c4f5;
   }
   60% {
-    text-shadow: 1px 1px 0 #69a1f0,
-      6px 6px 0 #7eaef2, 
-      9px 9px 0 #90baf5,
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5,
       12px 12px 0 #a2c4f5;
   }
   70% {
-    text-shadow: 1px 1px 0 #69a1f0,
-      6px 6px 0 #7eaef2, 
-      9px 9px 0 #90baf5;
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2, 9px 9px 0 #90baf5;
   }
   80% {
-    text-shadow: 1px 1px 0 #69a1f0,
-      6px 6px 0 #7eaef2;
+    text-shadow: 1px 1px 0 #69a1f0, 6px 6px 0 #7eaef2;
   }
   90% {
     text-shadow: 1px 1px 0 #69a1f0;
@@ -10839,7 +10826,7 @@ main > .topbr {
     text-shadow: none;
   }
 }
-@media(min-width:320px) and (max-width:767px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .banner-jackpot {
     background: url(/bannerjackpotmobile.png) no-repeat top center;
     background-size: cover;
