@@ -10,7 +10,7 @@ async function initializeI18n() {
     if (typeof window !== "undefined") {
       const storedCountry = localStorage.getItem("country");
       if (!storedCountry) {
-        const response = await fetch('/api/getLocation');
+        const response = await fetch('/api/geolocation');
         const data = await response.json();
         
         // Записываем данные в localStorage только если он пуст
