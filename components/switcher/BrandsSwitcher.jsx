@@ -9,7 +9,7 @@ const BrandsSwitcher = () => {
 
   const ipData = async () => {
     try {
-      const response = await fetch('/api/getLocation'); // Используем ваш API route
+      const response = await fetch('/api/geolocation'); // Используем ваш API route
       const data = await response.json();
       if (data.country) {
         setLanguage(data.country.toLowerCase()); // Используй setLanguage из контекста
