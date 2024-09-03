@@ -34,7 +34,16 @@ const TheHeader = () => {
   const { t } = useTranslation();
   const items = navItems(t);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-
+  useEffect(() => {
+    if (typeof window !== 'undefined') {  // Проверка на выполнение кода в браузере
+      fetch('/api/geolocation')
+        .then(response => response.json())
+        .then(data => {
+          console.log("IPIPIPIPIPIP", data);
+        })
+        .catch(error => console.error('Ошибка при получении местоположения:', error));
+    }
+  }, []);
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };

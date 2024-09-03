@@ -12,9 +12,9 @@ import Script from "next/script";
 
 export const metadata: Metadata = {
   title:
-    "Bonus topbonuspicks.com: Your Comprehensive Source for Casino Reviews and Insights",
+    "Bonus topbon.us: Your Comprehensive Source for Casino Reviews and Insights",
   description:
-    "Welcome to Bonus topbonuspicks.com, your ultimate destination for comprehensive casino reviews and invaluable insights. Whether you're a seasoned gambler or just starting your casino journey, we're here to guide you through the world of online casinos. Our expert team meticulously reviews casinos, covering game variety, bonuses, payment options, security, and more. With our in-depth analysis and unbiased recommendations, you can make informed decisions and elevate your gaming experience. Explore our extensive database, stay updated with the latest trends, and embark on a rewarding casino adventure with Bonus topbonuspicks.com.",
+    "Welcome to Bonus topbon.us, your ultimate destination for comprehensive casino reviews and invaluable insights. Whether you're a seasoned gambler or just starting your casino journey, we're here to guide you through the world of online casinos. Our expert team meticulously reviews casinos, covering game variety, bonuses, payment options, security, and more. With our in-depth analysis and unbiased recommendations, you can make informed decisions and elevate your gaming experience. Explore our extensive database, stay updated with the latest trends, and embark on a rewarding casino adventure with Bonus topbon.us.",
 };
 
 export default function RootLayout({
@@ -67,18 +67,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
           `}
         </Script>
-        <Script
-          src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
-          defer
-        ></Script>
-        {/* <Script id="onesignal">
-          {`window.OneSignalDeferred = window.OneSignalDeferred || [];
-  OneSignalDeferred.push(function(OneSignal) {
-    OneSignal.init({
-      appId: "7bc5d17e-80e2-4e29-8894-67b4cef49fd6",
-    });
-  });`}
-        </Script> */}
+
 
         <Script id="ladesc">
           {`
