@@ -2849,15 +2849,22 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18
 async function initializeI18n() {
     let defLng;
     try {
-        const response = await fetch("https://ipapi.co/json");
-        const data = await response.json();
         if (typeof window !== "undefined") {
-            localStorage.setItem("country", data.country);
-            localStorage.setItem("country_phone", data.country);
-            localStorage.setItem("country_data", data.country);
-            localStorage.setItem("country_name", data.country_name);
+            const storedCountry = localStorage.getItem("country");
+            if (!storedCountry) {
+                const response = await fetch('/api/getLocation');
+                const data = await response.json();
+                localStorage.setItem("country", data.country);
+                localStorage.setItem("country_phone", data.country);
+                localStorage.setItem("country_data", data.country);
+                localStorage.setItem("country_name", data.country);
+                defLng = data.country.toLowerCase();
+            } else {
+                defLng = storedCountry.toLowerCase();
+            }
+        } else {
+            defLng = "all";
         }
-        defLng = data.country.toLowerCase();
     } catch (error) {
         console.error("Ошибка при запросе к API:", error);
         defLng = "all";
@@ -8250,7 +8257,7 @@ const BrandsSwitcher = ()=>{
     const { language, setLanguage } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const ipData = async ()=>{
         try {
-            const response = await fetch("https://ipapi.co/json");
+            const response = await fetch('/api/getLocation');
             const data = await response.json();
             if (data.country) {
                 setLanguage(data.country.toLowerCase());
@@ -8267,6 +8274,8 @@ const BrandsSwitcher = ()=>{
         const savedLanguage = localStorage.getItem("country_brands");
         if (!savedLanguage) {
             ipData();
+        } else {
+            setLanguage(savedLanguage);
         }
     }, []);
     const changeLanguage = (lng)=>{
@@ -8824,23 +8833,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 194,
+                        lineNumber: 196,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 183,
+                lineNumber: 185,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 204,
+                lineNumber: 206,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 182,
+        lineNumber: 184,
         columnNumber: 5
     }, this);
 };
