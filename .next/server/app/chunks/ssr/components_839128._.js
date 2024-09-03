@@ -2452,7 +2452,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 ;
 const KeitaroIframe = ()=>{
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        const keitaroLink = 'https://info.topbon.us/aurnd?keyword=test_oleh_1';
+        const keitaroLink = 'https://info.topbon.us/aurnd';
         const keitaroLink2 = 'https://info.topbon.us/partner_aurnd';
         const keitaroLink3 = 'https://info.topbon.us/rnd1043';
         const keitaroLink4 = 'https://info.topbon.us/rnd1044';
@@ -10649,6 +10649,13 @@ const TheHeader = ()=>{
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
                             lineNumber: 232,
+                            columnNumber: 11
+                        }, this),
+                        __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$KeitaroIframe$2e$jsx__$28$ecmascript$29$__["default"], {
+                            links: links
+                        }, void 0, false, {
+                            fileName: "<[project]/components/TheHeader.jsx>",
+                            lineNumber: 237,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
