@@ -2852,7 +2852,7 @@ async function initializeI18n() {
         if (typeof window !== "undefined") {
             const storedCountry = localStorage.getItem("country");
             if (!storedCountry) {
-                const response = await fetch('/api/getLocation');
+                const response = await fetch('/api/geolocation');
                 const data = await response.json();
                 localStorage.setItem("country", data.country);
                 localStorage.setItem("country_phone", data.country);
@@ -8257,7 +8257,7 @@ const BrandsSwitcher = ()=>{
     const { language, setLanguage } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const ipData = async ()=>{
         try {
-            const response = await fetch('/api/getLocation');
+            const response = await fetch('/api/geolocation');
             const data = await response.json();
             if (data.country) {
                 setLanguage(data.country.toLowerCase());
@@ -11103,22 +11103,22 @@ function Tournament() {
         let url = "";
         switch(source){
             case "partner1039":
-                url = "https://link.reg2dep.business/topbonus_rnd39";
+                url = "https://link.bo-nus.com/partner_aurnd";
                 break;
             case "partner1043":
-                url = "https://link.reg2dep.business/topbonus_rnd43";
+                url = "https://info.topbon.us/rnd1043";
                 break;
             case "partner1044":
-                url = "https://link.reg2dep.business/topbonus_rnd44";
+                url = "https://link.gobig.finance/rnd1044";
                 break;
             case "CLD_VIP":
                 url = "https://link.reg2dep.business/topbonus_rndcld";
                 break;
             case "partner1045_b1":
-                url = "https://link.reg2dep.business/topbonus_rndcld";
+                url = "https://link.bo-nus.com/rnd_cld";
                 break;
             default:
-                url = "https://link.reg2dep.business/topbonus_rnd";
+                url = "https://link.bo-nus.com/rnd_cld";
         }
         setRedirectUrl(url);
     }, [

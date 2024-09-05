@@ -95,13 +95,13 @@ export default function Timestamp() {
       let url = "";
       switch (source) {
         case "partner1039":
-          url = `https://info.topbon.us/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
+          url = `https://link.bo-nus.com/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
           break;
         case "partner1043":
           url = `https://info.topbon.us/rnd1043/${newUrl}&creative_id=XXL_JIN`;
           break;
         case "partner1044":
-          url = `https://info.topbon.us/rnd1044/${newUrl}&creative_id=XXL_JIN`;
+          url = `https://link.gobig.finance/rnd1044/${newUrl}&creative_id=XXL_JIN`;
           break;
         case "CLD_VIP":
           url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
@@ -114,6 +114,7 @@ export default function Timestamp() {
       }
       setRedirectUrl(url); // Сохраняем URL в состояние
     }
+
   }, [source]);
   console.log("RED", redirectUrl, source);
 
