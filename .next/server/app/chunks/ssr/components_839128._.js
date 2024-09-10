@@ -2016,13 +2016,13 @@ function Timestamp() {
             let url = "";
             switch(source){
                 case "partner1039":
-                    url = `https://info.topbon.us/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
+                    url = `https://link.bo-nus.com/partner_aurnd/${newUrl}&creative_id=XXL_JIN`;
                     break;
                 case "partner1043":
                     url = `https://info.topbon.us/rnd1043/${newUrl}&creative_id=XXL_JIN`;
                     break;
                 case "partner1044":
-                    url = `https://info.topbon.us/rnd1044/${newUrl}&creative_id=XXL_JIN`;
+                    url = `https://link.gobig.finance/rnd1044/${newUrl}&creative_id=XXL_JIN`;
                     break;
                 case "CLD_VIP":
                     url = `https://link.bo-nus.com/rnd_cld/${newUrl}&creative_id=XXL_JIN`;
@@ -2145,14 +2145,14 @@ function Timestamp() {
                             children: t("Click Here to Unleash Your Magic Bonus!")
                         }, void 0, false, {
                             fileName: "<[project]/components/timestamp.jsx>",
-                            lineNumber: 256,
+                            lineNumber: 257,
                             columnNumber: 25
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                             children: t("Get a bonus just for you tomorrow!")
                         }, void 0, false, {
                             fileName: "<[project]/components/timestamp.jsx>",
-                            lineNumber: 259,
+                            lineNumber: 260,
                             columnNumber: 25
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -2161,13 +2161,13 @@ function Timestamp() {
                             children: t("Get Bonus")
                         }, void 0, false, {
                             fileName: "<[project]/components/timestamp.jsx>",
-                            lineNumber: 260,
+                            lineNumber: 261,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/timestamp.jsx>",
-                    lineNumber: 255,
+                    lineNumber: 256,
                     columnNumber: 23
                 }, this),
                 stage === "second-stage" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -2178,7 +2178,7 @@ function Timestamp() {
                             children: t("Thank you! Your Bonus Will Be Here Soon")
                         }, void 0, false, {
                             fileName: "<[project]/components/timestamp.jsx>",
-                            lineNumber: 270,
+                            lineNumber: 271,
                             columnNumber: 25
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
@@ -2189,7 +2189,7 @@ function Timestamp() {
                                     children: formatTime(remainingTime)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/timestamp.jsx>",
-                                    lineNumber: 275,
+                                    lineNumber: 276,
                                     columnNumber: 27
                                 }, this),
                                 " ",
@@ -2197,13 +2197,13 @@ function Timestamp() {
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/timestamp.jsx>",
-                            lineNumber: 273,
+                            lineNumber: 274,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/timestamp.jsx>",
-                    lineNumber: 269,
+                    lineNumber: 270,
                     columnNumber: 23
                 }, this),
                 stage === "third-stage" && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -2214,14 +2214,14 @@ function Timestamp() {
                             children: t("Your Bonus is Ready!")
                         }, void 0, false, {
                             fileName: "<[project]/components/timestamp.jsx>",
-                            lineNumber: 284,
+                            lineNumber: 285,
                             columnNumber: 25
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("p", {
                             children: t("Click below to claim your magical reward!")
                         }, void 0, false, {
                             fileName: "<[project]/components/timestamp.jsx>",
-                            lineNumber: 285,
+                            lineNumber: 286,
                             columnNumber: 25
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("button", {
@@ -2230,19 +2230,19 @@ function Timestamp() {
                             children: t("Bonus Ready!")
                         }, void 0, false, {
                             fileName: "<[project]/components/timestamp.jsx>",
-                            lineNumber: 286,
+                            lineNumber: 287,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/timestamp.jsx>",
-                    lineNumber: 283,
+                    lineNumber: 284,
                     columnNumber: 23
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/timestamp.jsx>",
-            lineNumber: 253,
+            lineNumber: 254,
             columnNumber: 19
         }, this)
     }, void 0, false);
@@ -11112,13 +11112,13 @@ function Tournament() {
                 url = "https://link.gobig.finance/rnd1044";
                 break;
             case "CLD_VIP":
-                url = "https://link.reg2dep.business/topbonus_rndcld";
+                url = "https://link.bo-nus.com/rnd_cld";
                 break;
             case "partner1045_b1":
                 url = "https://link.bo-nus.com/rnd_cld";
                 break;
             default:
-                url = "https://link.bo-nus.com/rnd_cld";
+                url = "https://info.topbon.us/aurnd";
         }
         setRedirectUrl(url);
     }, [

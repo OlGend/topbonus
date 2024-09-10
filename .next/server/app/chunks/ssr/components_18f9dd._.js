@@ -1,5 +1,602 @@
 (globalThis.TURBOPACK = globalThis.TURBOPACK || []).push(["chunks/ssr/components_18f9dd._.js", {
 
+"[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "LanguageProvider": ()=>LanguageProvider,
+    "useLanguage": ()=>useLanguage
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+"use client";
+;
+;
+const LanguageContext = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["createContext"]();
+const useLanguage = ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useContext"](LanguageContext);
+const LanguageProvider = ({ children })=>{
+    const [language, setLanguage] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]('all');
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined') {
+            const storedLanguage = localStorage.getItem('country_brands');
+            if (storedLanguage) {
+                setLanguage(storedLanguage);
+            }
+        }
+    }, []);
+    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LanguageContext.Provider, {
+        value: {
+            language,
+            setLanguage
+        },
+        children: children
+    }, void 0, false, {
+        fileName: "<[project]/components/switcher/LanguageContext.jsx>",
+        lineNumber: 21,
+        columnNumber: 5
+    }, this);
+};
+
+})()),
+"[project]/components/getBrands/languages.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "availableLanguages": ()=>availableLanguages,
+    "availableLanguages1039": ()=>availableLanguages1039,
+    "availableLanguages1043": ()=>availableLanguages1043,
+    "availableLanguages1044": ()=>availableLanguages1044,
+    "availableLanguagesCLD_VIP": ()=>availableLanguagesCLD_VIP
+});
+const availableLanguages = [
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
+    },
+    {
+        code: "ca",
+        label: "Canada",
+        flag: "🇨🇦"
+    },
+    {
+        code: "de",
+        label: "Germany",
+        flag: "🇩🇪"
+    },
+    {
+        code: "ie",
+        label: "Ireland",
+        flag: "🇮🇪"
+    },
+    {
+        code: "nz",
+        label: "New Zealand",
+        flag: "🇳🇿"
+    },
+    {
+        code: "no",
+        label: "Norway",
+        flag: "🇳🇴"
+    },
+    {
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
+    },
+    {
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
+    },
+    {
+        code: "ch",
+        label: "Switzerland",
+        flag: "🇨🇭"
+    },
+    {
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
+    },
+    {
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "cz",
+        label: "Czech",
+        flag: "🇨🇿"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "bg",
+        label: "Bulgaria",
+        flag: "🇧🇬"
+    },
+    {
+        code: "all",
+        label: "World",
+        flag: "🌍"
+    }
+];
+const availableLanguages1039 = [
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
+    },
+    {
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "bg",
+        label: "Bulgaria",
+        flag: "🇧🇬"
+    },
+    {
+        code: "ca",
+        label: "Canada",
+        flag: "🇨🇦"
+    },
+    {
+        code: "cz",
+        label: "Czech",
+        flag: "🇨🇿"
+    },
+    {
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
+    },
+    {
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
+    },
+    {
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "de",
+        label: "Germany",
+        flag: "🇩🇪"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "ie",
+        label: "Ireland",
+        flag: "🇮🇪"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
+    },
+    {
+        code: "nz",
+        label: "New Zealand",
+        flag: "🇳🇿"
+    },
+    {
+        code: "no",
+        label: "Norway",
+        flag: "🇳🇴"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "pt",
+        label: "Portugal",
+        flag: "🇵🇹"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "es",
+        label: "Spain",
+        flag: "🇪🇸"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "ch",
+        label: "Switzerland",
+        flag: "🇨🇭"
+    },
+    {
+        code: "tr",
+        label: "Turkey",
+        flag: "🇹🇷"
+    },
+    {
+        code: "gb",
+        label: "United Kingdom",
+        flag: "🇬🇧"
+    },
+    {
+        code: "all",
+        label: "World",
+        flag: "🌍"
+    }
+];
+const availableLanguages1043 = [
+    {
+        code: "ca",
+        label: "Canada",
+        flag: "🇨🇦"
+    },
+    {
+        code: "us",
+        label: "United States",
+        flag: "🇺🇸"
+    }
+];
+const availableLanguages1044 = [
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
+    },
+    {
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "ca",
+        label: "Canada",
+        flag: "🇨🇦"
+    },
+    {
+        code: "ch",
+        label: "Switzerland",
+        flag: "🇨🇭"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
+    },
+    {
+        code: "de",
+        label: "Germany",
+        flag: "🇩🇪"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "cz",
+        label: "The Czech Republic",
+        flag: "🇨🇿"
+    },
+    {
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
+    },
+    {
+        code: "gb",
+        label: "Great Britain",
+        flag: "🇬🇧"
+    },
+    {
+        code: "ie",
+        label: "Ireland",
+        flag: "🇮🇪"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "nz",
+        label: "New Zealand",
+        flag: "🇳🇿"
+    },
+    {
+        code: "no",
+        label: "Norway",
+        flag: "🇳🇴"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "za",
+        label: "South Africa",
+        flag: "🇿🇦"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "us",
+        label: "USA",
+        flag: "🇺🇸"
+    },
+    {
+        code: "all",
+        label: "World",
+        flag: "🌍"
+    }
+];
+const availableLanguagesCLD_VIP = [
+    {
+        code: "at",
+        label: "Austria",
+        flag: "🇦🇹"
+    },
+    {
+        code: "au",
+        label: "Australia",
+        flag: "🇦🇺"
+    },
+    {
+        code: "be",
+        label: "Belgium",
+        flag: "🇧🇪"
+    },
+    {
+        code: "ca",
+        label: "Canada",
+        flag: "🇨🇦"
+    },
+    {
+        code: "ch",
+        label: "Switzerland",
+        flag: "🇨🇭"
+    },
+    {
+        code: "cz",
+        label: "Czech Republic",
+        flag: "🇨🇿"
+    },
+    {
+        code: "de",
+        label: "Germany",
+        flag: "🇩🇪"
+    },
+    {
+        code: "dk",
+        label: "Denmark",
+        flag: "🇩🇰"
+    },
+    {
+        code: "es",
+        label: "Spain",
+        flag: "🇪🇸"
+    },
+    {
+        code: "fi",
+        label: "Finland",
+        flag: "🇫🇮"
+    },
+    {
+        code: "fr",
+        label: "France",
+        flag: "🇫🇷"
+    },
+    {
+        code: "gb",
+        label: "United Kingdom",
+        flag: "🇬🇧"
+    },
+    {
+        code: "gr",
+        label: "Greece",
+        flag: "🇬🇷"
+    },
+    {
+        code: "hu",
+        label: "Hungary",
+        flag: "🇭🇺"
+    },
+    {
+        code: "ie",
+        label: "Ireland",
+        flag: "🇮🇪"
+    },
+    {
+        code: "it",
+        label: "Italy",
+        flag: "🇮🇹"
+    },
+    {
+        code: "nl",
+        label: "Netherlands",
+        flag: "🇳🇱"
+    },
+    {
+        code: "no",
+        label: "Norway",
+        flag: "🇳🇴"
+    },
+    {
+        code: "nz",
+        label: "New Zealand",
+        flag: "🇳🇿"
+    },
+    {
+        code: "pl",
+        label: "Poland",
+        flag: "🇵🇱"
+    },
+    {
+        code: "pt",
+        label: "Portugal",
+        flag: "🇵🇹"
+    },
+    {
+        code: "se",
+        label: "Sweden",
+        flag: "🇸🇪"
+    },
+    {
+        code: "sk",
+        label: "Slovakia",
+        flag: "🇸🇰"
+    },
+    {
+        code: "all",
+        label: "All",
+        flag: "🌍"
+    }
+];
+
+})()),
+"[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
+
+__turbopack_esm__({
+    "getBrands": ()=>getBrands
+});
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/languages.jsx (ecmascript, ssr)");
+"__TURBOPACK__ecmascript__hoisting__location__";
+;
+const getBrands = async (lng)=>{
+    const apiAll = "https://bonusnumber1.com/api/brandsNew/read.php";
+    const api1039 = "https://bonusnumber1.com/api/brandsNew2/read.php";
+    const api1043 = "https://bonusnumber1.com/api/brandsNew3/read.php";
+    const api1044 = "https://bonusnumber1.com/api/brandsNew4/read.php";
+    const apiCLD_VIP = "https://bonusnumber1.com/api/brandsNew5/read.php";
+    const partners = {
+        partner1039: {
+            url: api1039,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages1039"]
+        },
+        partner1043: {
+            url: api1043,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages1043"]
+        },
+        partner1044: {
+            url: api1044,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages1044"]
+        },
+        CLD_VIP: {
+            url: apiCLD_VIP,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
+        },
+        partner1045_b1: {
+            url: apiCLD_VIP,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguagesCLD_VIP"]
+        },
+        default: {
+            url: apiAll,
+            languages: __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$languages$2e$jsx__$28$ecmascript$29$__["availableLanguages"]
+        }
+    };
+    const source = localStorage.getItem("source") || "default";
+    const { url, languages } = partners[source];
+    let supportedLanguage = languages.find((language)=>language.code.toUpperCase() === lng.toUpperCase());
+    if (!supportedLanguage) {
+        supportedLanguage = {
+            code: "all"
+        };
+    }
+    try {
+        const res = await fetch(url);
+        if (!res.ok) {
+            console.error("Failed to fetch data:", res.status);
+            return [];
+        }
+        const responseData = await res.json();
+        const filteredData = responseData.brandsNew.filter((rowData)=>(rowData.GEO === supportedLanguage.code.toUpperCase() || supportedLanguage.code === "ALL") && rowData["CurrentStatus"] === "Ongoing" && ![
+                "Mirax (FS)",
+                "Katsubet (FS)",
+                "7Bit (FS)"
+            ].includes(rowData["CasinoBrand"]));
+        return filteredData;
+    } catch (error) {
+        console.error("An error occurred:", error);
+        return [];
+    }
+};
+
+})()),
 "[project]/components/modal/index.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
 
 __turbopack_esm__({
@@ -511,73 +1108,76 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18
 async function initializeI18n() {
     let defLng;
     try {
-        const response = await fetch("https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW");
-        const data = await response.json();
         if (typeof window !== "undefined") {
-            localStorage.setItem("country", data.country);
-            localStorage.setItem("country_phone", data.country);
-            localStorage.setItem("country_data", data.country);
-            localStorage.setItem("country_name", data.country_name);
+            const storedCountry = localStorage.getItem("country");
+            if (!storedCountry) {
+                const response = await fetch('/api/geolocation');
+                const data = await response.json();
+                localStorage.setItem("country", data.country);
+                localStorage.setItem("country_phone", data.country);
+                localStorage.setItem("country_data", data.country);
+                localStorage.setItem("country_name", data.country);
+                defLng = data.country.toLowerCase();
+            } else {
+                defLng = storedCountry.toLowerCase();
+            }
+        } else {
+            defLng = "all";
         }
-        defLng = data.country.toLowerCase();
     } catch (error) {
         console.error("Ошибка при запросе к API:", error);
         defLng = "all";
     }
     const availableLanguages = [
         "au",
-        "at",
-        "be",
-        "bg",
         "ca",
-        "cz",
-        "dk",
-        "fi",
-        "fr",
         "de",
-        "gr",
-        "hu",
         "ie",
-        "it",
-        "nl",
         "nz",
         "no",
-        "pl",
-        "pt",
-        "sk",
-        "es",
-        "se",
+        "fi",
+        "at",
         "ch",
-        "tr",
-        "gb",
+        "dk",
+        "fr",
+        "it",
+        "pl",
+        "se",
+        "cz",
+        "sk",
+        "be",
+        "gr",
+        "nl",
+        "hu",
+        "bg",
         "all"
     ];
     const availableLanguages1039 = [
         "au",
-        "at",
-        "be",
-        "bg",
         "ca",
-        "cz",
-        "dk",
-        "fi",
-        "fr",
         "de",
-        "gr",
-        "hu",
         "ie",
-        "it",
-        "nl",
         "nz",
         "no",
-        "pl",
-        "pt",
-        "sk",
-        "es",
-        "se",
+        "fi",
+        "at",
         "ch",
-        "tr",
+        "dk",
+        "fr",
+        "it",
+        "es",
+        "pl",
+        "se",
+        "cz",
+        "be",
+        "gr",
         "gb",
+        "nl",
+        "hu",
+        "sk",
+        "bg",
+        "pt",
+        "tr",
         "all"
     ];
     const availableLanguages1043 = [
@@ -585,26 +1185,59 @@ async function initializeI18n() {
         "us"
     ];
     const availableLanguages1044 = [
+        "fi",
+        "se",
+        "ca",
+        "nz",
         "au",
+        "cz",
+        "fr",
+        "za",
+        "nl",
+        "gb",
+        "us",
+        "de",
         "at",
+        "ch",
+        "dk",
+        "it",
+        "es",
+        "pl",
+        "be",
+        "gr",
+        "no",
+        "ie",
+        "pt",
+        "hu",
+        "sk",
+        "bg",
+        "tr",
+        "all"
+    ];
+    const availableLanguagesCLD_VIP = [
+        "all",
+        "at",
+        "au",
         "be",
         "ca",
         "ch",
-        "nl",
-        "de",
         "cz",
+        "de",
+        "dk",
+        "es",
         "fi",
+        "fr",
         "gb",
         "gr",
+        "hu",
         "ie",
         "it",
-        "nz",
+        "nl",
         "no",
+        "nz",
         "pl",
-        "za",
         "se",
-        "us",
-        "all"
+        "sk"
     ];
     let item;
     if (typeof window !== "undefined") {
@@ -617,6 +1250,10 @@ async function initializeI18n() {
         newLng = availableLanguages1043;
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
+    } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
+    } else if (item === "partner1045_b1") {
+        newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
     }
@@ -873,9 +1510,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to 20 USD on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.",
                 "You have successfully registered on these brands": "You have successfully registered on these brands",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL"
+                "* Explore the Hottest New Brands –": "* Explore the Hottest New Brands –",
+                "Click Here!": "Click Here!",
+                "Expires in:": "Expires in:",
+                "BIGGEST JACKPOTS": "BIGGEST JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TOURNAMENTS",
+                "Click Here to Unleash Your Magic Bonus!": "Click Here to Unleash Your Magic Bonus!",
+                "Get a bonus just for you tomorrow!": "Get a bonus just for you tomorrow!",
+                "Get Bonus": "Get Bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Thank you! Your Bonus Will Be Here Soon",
+                "Come back after": "Come back after",
+                "to collect it!": "to collect it!",
+                "Your Bonus is Ready!": "Your Bonus is Ready!",
+                "Click below to claim your magical reward!": "Click below to claim your magical reward!",
+                "Bonus Ready!": "Bonus Ready!",
+                "HIT THE JACKPOT!": "HIT THE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Make deposits on the brands below to participate in the jackpot"
             }
         },
         pl: {
@@ -1128,9 +1778,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Otrzymasz 50 darmowych spinów za każdą pierwszą wpłatę z naszej strony internetowej. Obróć te spiny i zdobądź do 20 USD na swoim portfelu kryptowalutowym/PayPal. Aby zakwalifikować się do wypłaty, upewnij się, że Twoja pierwsza wpłata wynosi co najmniej 25 euro lub równowartość w innych walutach i została dokonana po złożeniu wniosku o wypłatę.",
                 "You have successfully registered on these brands": "Zarejestrowałeś się pomyślnie na tych markach",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Dziękujemy za zweryfikowanie numeru telefonu! Twój menedżer VIP zadzwoni do Ciebie w ciągu 10 minut, aby podzielić się naszymi ekskluzywnymi ofertami. Bądźcie na bieżąco!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JESTEŚ JUŻ ZAREJESTROWANY TUTAJ, ZRÓB SWOJE PIERWSZE WPŁATY I",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "OTRZYMAJ NAWET DO 2035 PLN Z NATYCHMIASTOWYM WYPŁACANIEM",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "OTRZYMUJ PRAWDZIWE PIENIĄDZE Z NATYCHMIASTOWYM WYPŁACANIEM"
+                "* Explore the Hottest New Brands –": "* Odkrywaj Najgorętsze Nowe Kasyna –",
+                "Click Here!": "Kliknij tutaj!",
+                "Expires in:": "Wygasa za:",
+                "BIGGEST JACKPOTS": "NAJWIĘKSZE JACKPOTY",
+                "TOP TOURNAMENTS": "TOP TURNIEJE",
+                "Click Here to Unleash Your Magic Bonus!": "Kliknij tutaj, aby uwolnić swój magiczny bonus!",
+                "Get a bonus just for you tomorrow!": "Odbierz jutro bonus tylko dla Ciebie!",
+                "Get Bonus": "Odbierz Bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Dziękujemy! Twój bonus wkrótce będzie tutaj",
+                "Come back after": "Wróć po",
+                "to collect it!": "aby go odebrać!",
+                "Your Bonus is Ready!": "Twój bonus jest gotowy!",
+                "Click below to claim your magical reward!": "Kliknij poniżej, aby odebrać swoją magiczną nagrodę!",
+                "Bonus Ready!": "Bonus gotowy!",
+                "HIT THE JACKPOT!": "ZGARNIJ JACKPOTA!",
+                "Make deposits on the brands below to participate in the jackpot": "Dokonaj wpłat na poniższe marki, aby wziąć udział w jackpotie"
             }
         },
         de: {
@@ -1383,9 +2046,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sie erhalten 50 Freispiele für jede Ersteinzahlung von unserer Website. Drehen Sie diese Spins und erhalten Sie bis zu 20 USD auf Ihrem Kryptowallet/PayPal. Um sich für Auszahlungen zu qualifizieren, stellen Sie sicher, dass Ihre erste Einzahlung mindestens Є25 oder dem Äquivalent in anderen Währungen beträgt und nach der Beantragung einer Auszahlung erfolgt ist.",
                 "You have successfully registered on these brands": "Sie haben sich erfolgreich bei diesen Marken registriert",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Vielen Dank, dass Sie Ihre Telefonnummer verifiziert haben! Ihr VIP-Manager wird Sie innerhalb von 10 Minuten anrufen, um unsere exklusiven Angebote mit Ihnen zu teilen. Bleiben Sie dran!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SIE SIND BEREITS HIER REGISTRIERT, MACHEN SIE IHRE ERSTEN EINZAHLUNGEN UND",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ERHALTEN SIE BIS ZU 500 EUR MIT SOFORTIGER AUSZAHLUNG",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ERHALTEN SIE ECHTES GELD MIT SOFORTIGER AUSZAHLUNG."
+                "* Explore the Hottest New Brands –": "* Entdecken Sie die heißesten neuen Casinos -",
+                "Click Here!": "Klicken Sie hier!",
+                "Expires in:": "Läuft ab in:",
+                "BIGGEST JACKPOTS": "GRÖSSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNIERE",
+                "Click Here to Unleash Your Magic Bonus!": "Klicken Sie hier, um Ihren magischen Bonus freizuschalten!",
+                "Get a bonus just for you tomorrow!": "Holen Sie sich morgen einen Bonus nur für Sie!",
+                "Get Bonus": "Bonus holen",
+                "Thank you! Your Bonus Will Be Here Soon": "Danke! Ihr Bonus wird bald hier sein",
+                "Come back after": "Kommen Sie nach",
+                "to collect it!": "zurück, um ihn abzuholen!",
+                "Your Bonus is Ready!": "Ihr Bonus ist bereit!",
+                "Click below to claim your magical reward!": "Klicken Sie unten, um Ihre magische Belohnung zu erhalten!",
+                "Bonus Ready!": "Bonus bereit!",
+                "HIT THE JACKPOT!": "KNACKEN SIE DEN JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Tätigen Sie Einzahlungen bei den unten stehenden Marken, um am Jackpot teilzunehmen"
             }
         },
         bg: {
@@ -1638,9 +2314,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ще получите 50 безплатни завъртания за всеки първи депозит от нашия уебсайт. Завъртете тези завъртания и получете до 20 USD на вашия криптовалутен портфейл/PayPal. За да квалифицирате за изтегляне, се уверете, че първият ви депозит е поне Є25 или еквивалентът му в други валути и е направен след като сте поискали изтегляне.",
                 "You have successfully registered on these brands": "Вие успешно се регистрирахте в тези казина",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Благодарим ви, че потвърдихте вашия телефонен номер! Вашият VIP мениджър ще ви се обади в рамките на 10 минути, за да сподели нашите ексклузивни оферти. Следете новините!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ВЕЧЕ СТЕ РЕГИСТРИРАНИ ТУК, НАПРАВЕТЕ ПЪРВИТЕ СИ ДЕПОЗИТИ И",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ПОЛУЧЕТЕ ДО 890 ЛВ. С МИГНОВЕНО ИЗТЕГЛЯНЕ",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ПОЛУЧАЙТЕ РЕАЛНИ ПАРИ С НЕЗАБАВНО ТЕГЛЕНЕ"
+                "* Explore the Hottest New Brands –": "* Разгледайте най-горещите нови казина -",
+                "Click Here!": "Кликни тук!",
+                "Expires in:": "Изтича след:",
+                "BIGGEST JACKPOTS": "НАЙ-ГОЛЕМИТЕ ДЖАКПОТИ",
+                "TOP TOURNAMENTS": "ТОП ТУРНИРИ",
+                "Click Here to Unleash Your Magic Bonus!": "Кликнете тук, за да отключите своя магически бонус!",
+                "Get a bonus just for you tomorrow!": "Получете бонус само за вас утре!",
+                "Get Bonus": "Вземи бонус",
+                "Thank you! Your Bonus Will Be Here Soon": "Благодаря! Вашият бонус скоро ще бъде тук",
+                "Come back after": "Върнете се след",
+                "to collect it!": "за да го получите!",
+                "Your Bonus is Ready!": "Вашият бонус е готов!",
+                "Click below to claim your magical reward!": "Кликнете по-долу, за да получите вашата магическа награда!",
+                "Bonus Ready!": "Бонус готов!",
+                "HIT THE JACKPOT!": "УДАРЕТЕ ДЖАКПОТА!",
+                "Make deposits on the brands below to participate in the jackpot": "Направете депозити в посочените по-долу марки, за да участвате в джакпота"
             }
         },
         cz: {
@@ -1893,9 +2582,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 volných zatočení za každý první vklad z našich webových stránek. Roztočte tyto zatočení a získejte až 20 USD na svou kryptoměnovou peněženku/PayPal. Pro kvalifikaci k výběrům se ujistěte, že váš první vklad je minimálně 25 € nebo ekvivalent v jiných měnách a byl proveden požadováním výběru.",
                 "You have successfully registered on these brands": "Úspěšně jste se zaregistrovali na tyto značky",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Děkujeme za ověření vašeho telefonního čísla! Váš VIP manažer vás zavolá do 10 minut, aby vám sdělil naše exkluzivní nabídky. Buďte ve střehu!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JSTE JIŽ ZAREGISTROVÁNI ZDE, PROVEĎTE SVÉ PRVNÍ VLOŽENÍ A",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKEJTE AŽ 11200 KČ S OKAMŽITÝM VÝBĚREM",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKEJTE SKUTEČNÉ PENÍZE S OKAMŽITÝM VÝBĚREM"
+                "* Explore the Hottest New Brands –": "* Prozkoumejte nejžhavější nová kasina -",
+                "Click Here!": "Klikněte zde!",
+                "Expires in:": "Vyprší za:",
+                "BIGGEST JACKPOTS": "NEJVĚTŠÍ JACKPOTY",
+                "TOP TOURNAMENTS": "NEJLEPŠÍ TURNAJE",
+                "Click Here to Unleash Your Magic Bonus!": "Klikněte zde a uvolněte svůj magický bonus!",
+                "Get a bonus just for you tomorrow!": "Zítra získáte bonus jen pro vás!",
+                "Get Bonus": "Získat bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Děkujeme! Váš bonus bude brzy zde",
+                "Come back after": "Vraťte se po",
+                "to collect it!": "abyste si ho vyzvedli!",
+                "Your Bonus is Ready!": "Váš bonus je připraven!",
+                "Click below to claim your magical reward!": "Klikněte níže a získejte svou magickou odměnu!",
+                "Bonus Ready!": "Bonus připraven!",
+                "HIT THE JACKPOT!": "TREFTE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Proveďte vklady na níže uvedené značky, abyste se zúčastnili jackpotu"
             }
         },
         dk: {
@@ -2148,9 +2850,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratis spins for hver første indbetaling fra vores hjemmeside. Spil disse spins og få op til 20 USD på din kryptopung/PayPal. For at kvalificere dig til udbetalinger, skal du sikre dig, at din første indbetaling er på mindst Є25 eller tilsvarende i andre valutaer og blev foretaget efter anmodning om en udbetaling.",
                 "You have successfully registered on these brands": "Du har succesfuldt registreret dig på disse mærker",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tak for at verificere dit telefonnummer! Din VIP-manager vil ringe til dig inden for 10 minutter for at dele vores eksklusive tilbud. Bliv hængende!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERET HER, LAV DINE FØRSTE INDBETALINGER OG",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MODTAG OP TIL 3400 DKK MED ØJEBLIKKELIG UDBETALING",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MODTAG RIGTIGE PENGE MED ØJEBLIKKELIG UDBETALING."
+                "* Explore the Hottest New Brands –": "* Udforsk de nyeste og mest populære casinoer -",
+                "Click Here!": "Klik her!",
+                "Expires in:": "Udløber om:",
+                "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGER",
+                "Click Here to Unleash Your Magic Bonus!": "Klik her for at frigøre din magiske bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus kun til dig i morgen!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Tak! Din bonus vil snart være her",
+                "Come back after": "Kom tilbage efter",
+                "to collect it!": "for at hente den!",
+                "Your Bonus is Ready!": "Din bonus er klar!",
+                "Click below to claim your magical reward!": "Klik nedenfor for at få din magiske belønning!",
+                "Bonus Ready!": "Bonus klar!",
+                "HIT THE JACKPOT!": "RAM JACKPOTTEN!",
+                "Make deposits on the brands below to participate in the jackpot": "Foretag indbetalinger på mærkerne nedenfor for at deltage i jackpotten"
             }
         },
         nl: {
@@ -2403,9 +3118,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Je krijgt 50 gratis spins voor elke eerste storting vanaf onze website. Draai deze spins en krijg tot 20 USD op je crypto wallet/PayPal. Om in aanmerking te komen voor opnames, zorg ervoor dat je eerste storting minstens Є25 is of het equivalent in andere valuta en is gedaan na het aanvragen van een opname.",
                 "You have successfully registered on these brands": "Je hebt succesvol geregistreerd op deze merken",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Bedankt voor het verifiëren van uw telefoonnummer! Uw VIP-manager zal u binnen 10 minuten bellen om onze exclusieve aanbiedingen te delen. Blijf op de hoogte!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "JE BENT AL GEREGISTREERD HIER, MAAK JE EERSTE STORTINGEN EN",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ONTVANG TOT 500 EURO MET ONMIDDELLIJKE OPNAME",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ONTVANG ECHT GELD MET ONMIDDELLIJKE OPNAME"
+                "* Explore the Hottest New Brands –": "* Verken de Heetste Nieuwe Casino's -",
+                "Click Here!": "Klik hier!",
+                "Expires in:": "Verloopt in:",
+                "BIGGEST JACKPOTS": "GROOTSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TOERNOOIEN",
+                "Click Here to Unleash Your Magic Bonus!": "Klik hier om je magische bonus te ontketenen!",
+                "Get a bonus just for you tomorrow!": "Krijg morgen een bonus alleen voor jou!",
+                "Get Bonus": "Bonus krijgen",
+                "Thank you! Your Bonus Will Be Here Soon": "Dank je! Je bonus komt er binnenkort aan",
+                "Come back after": "Kom terug na",
+                "to collect it!": "om het op te halen!",
+                "Your Bonus is Ready!": "Je bonus is klaar!",
+                "Click below to claim your magical reward!": "Klik hieronder om je magische beloning te claimen!",
+                "Bonus Ready!": "Bonus klaar!",
+                "HIT THE JACKPOT!": "RAAK DE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Stort geld op de onderstaande merken om deel te nemen aan de jackpot"
             }
         },
         es: {
@@ -2658,9 +3386,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Recibirás 50 giros gratis por cada primer depósito desde nuestro sitio web. Gira estos giros y obtén hasta 20 USD en tu billetera de criptomonedas/PayPal. Para calificar para retiros, asegúrate de que tu primer depósito sea de al menos Є25 o su equivalente en otras monedas y se haya realizado después de solicitar un retiro.",
                 "You have successfully registered on these brands": "Te has registrado con éxito en estas marcas",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "¡Gracias por verificar tu número de teléfono! Tu gerente VIP te llamará en un plazo de 10 minutos para compartir nuestras ofertas exclusivas. ¡Mantente atento!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "YA ESTÁS REGISTRADO AQUÍ, REALIZA TUS PRIMEROS DEPÓSITOS Y",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECIBE HASTA 500 EUR CON RETIRO INSTANTÁNEO",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECIBE DINERO REAL CON RETIRO INSTANTÁNEO"
+                "* Explore the Hottest New Brands –": "* Explora los casinos más nuevos y populares –",
+                "Click Here!": "¡Haz clic aquí!",
+                "Expires in:": "Caduca en:",
+                "BIGGEST JACKPOTS": "LOS MAYORES JACKPOTS",
+                "TOP TOURNAMENTS": "LOS MEJORES TORNEOS",
+                "Click Here to Unleash Your Magic Bonus!": "Haz clic aquí para liberar tu bono mágico!",
+                "Get a bonus just for you tomorrow!": "¡Consigue un bono solo para ti mañana!",
+                "Get Bonus": "Obtener bono",
+                "Thank you! Your Bonus Will Be Here Soon": "¡Gracias! Tu bono estará aquí pronto",
+                "Come back after": "Vuelve después de",
+                "to collect it!": "para recogerlo!",
+                "Your Bonus is Ready!": "¡Tu bono está listo!",
+                "Click below to claim your magical reward!": "Haz clic abajo para reclamar tu recompensa mágica!",
+                "Bonus Ready!": "Bono listo!",
+                "HIT THE JACKPOT!": "¡GANA EL JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Realiza depósitos en las marcas a continuación para participar en el jackpot"
             }
         },
         fi: {
@@ -2913,9 +3654,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Saat 50 ilmaiskierrosta jokaisesta ensimmäisestä talletuksestasi verkkosivustoltamme. Pyöritä nämä kierrokset ja saat jopa 20 USD krypto lompakkoosi/PayPaliin. Jotta voit olla oikeutettu nostoihin, varmista että ensimmäinen talletuksesi on vähintään 25 euroa tai vastaava summa muissa valuutoissa ja se on tehty pyynnön jälkeen.",
                 "You have successfully registered on these brands": "Olet rekisteröitynyt näille brändeille onnistuneesti",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Kiitos puhelinnumerosi varmistamisesta! VIP-myyjämme soittaa sinulle 10 minuutin kuluessa ja jakaa kanssasi eksklusiivisia tarjouksiamme. Pysy kuulolla!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "OLET JO REKISTERÖITYNYT TÄHÄN, TEE ENSIMMÄISET TALLETUKSESI JA",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "SAAT JOPA 500 EURON NOPEALLA NOSTOLLA",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "SAAT OIKEAA RAHAA NOPEALLA NOSTOLLA"
+                "* Explore the Hottest New Brands –": "* Tutustu uusimpiin ja kuumimpiin kasinoihin –",
+                "Click Here!": "Klikkaa tästä!",
+                "Expires in:": "Vanhenee:",
+                "BIGGEST JACKPOTS": "SUURIMMAT JACKPOTIT",
+                "TOP TOURNAMENTS": "HUIPPU TURNAUKSET",
+                "Click Here to Unleash Your Magic Bonus!": "Klikkaa tästä vapauttaaksesi maagisen bonuksesi!",
+                "Get a bonus just for you tomorrow!": "Saat bonuksen vain sinulle huomenna!",
+                "Get Bonus": "Hanki bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Kiitos! Bonuksesi tulee pian",
+                "Come back after": "Tule takaisin jälkeen",
+                "to collect it!": "noudettavaksi!",
+                "Your Bonus is Ready!": "Bonuksesi on valmis!",
+                "Click below to claim your magical reward!": "Klikkaa alla saadaksesi maagisen palkkiosi!",
+                "Bonus Ready!": "Bonus valmis!",
+                "HIT THE JACKPOT!": "ISKE JACKPOTIIN!",
+                "Make deposits on the brands below to participate in the jackpot": "Tee talletuksia alla oleviin brändeihin osallistuaksesi jackpot-pottiin"
             }
         },
         fr: {
@@ -3168,9 +3922,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Vous recevrez 50 tours gratuits pour chaque premier dépôt à partir de notre site Web. Faites tourner ces tours et obtenez jusqu'à 20 USD sur votre portefeuille crypto/PayPal. Pour être éligible aux retraits, assurez-vous que vos premiers dépôts sont d'au moins 25 € ou l'équivalent dans d'autres devises et ont été effectués après avoir demandé un retrait.",
                 "You have successfully registered on these brands": "Vous vous êtes inscrit avec succès sur ces marques",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Merci d'avoir vérifié votre numéro de téléphone ! Votre gestionnaire VIP vous appellera dans les 10 prochaines minutes pour vous faire part de nos offres exclusives. Restez à l'écoute !",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOUS ÊTES DÉJÀ INSCRIT ICI, FAITES VOS PREMIERS DÉPÔTS ET",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEVEZ JUSQU'À 500 EUR AVEC RETRAIT INSTANTANÉ",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEVEZ DE L'ARGENT RÉEL AVEC RETRAIT INSTANTANÉ"
+                "* Explore the Hottest New Brands –": "* Découvrez les nouveaux casinos les plus populaires -",
+                "Click Here!": "Cliquez ici!",
+                "Expires in:": "Expire dans:",
+                "BIGGEST JACKPOTS": "PLUS GROS JACKPOTS",
+                "TOP TOURNAMENTS": "MEILLEURS TOURNOIS",
+                "Click Here to Unleash Your Magic Bonus!": "Cliquez ici pour libérer votre bonus magique!",
+                "Get a bonus just for you tomorrow!": "Obtenez un bonus rien que pour vous demain!",
+                "Get Bonus": "Obtenez un bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Merci! Votre bonus sera bientôt ici",
+                "Come back after": "Revenez après",
+                "to collect it!": "pour le récupérer!",
+                "Your Bonus is Ready!": "Votre bonus est prêt!",
+                "Click below to claim your magical reward!": "Cliquez ci-dessous pour réclamer votre récompense magique!",
+                "Bonus Ready!": "Bonus prêt!",
+                "HIT THE JACKPOT!": "DÉCROCHEZ LE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Faites des dépôts sur les marques ci-dessous pour participer au jackpot"
             }
         },
         gr: {
@@ -3423,9 +4190,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Θα λάβετε 50 δωρεάν περιστροφές για κάθε Πρώτη Κατάθεση από την ιστοσελίδα μας. Περιστρέψτε αυτές τις περιστροφές και κερδίστε έως και 20 USD στο κρυπτονόμισμά σας/PayPal. Για να προκριθείτε για αναλήψεις, βεβαιωθείτε ότι η πρώτη κατάθεσή σας είναι τουλάχιστον €25 ή το αντίστοιχο σε άλλα νομίσματα και έγινε μετά από αίτηση ανάληψης.",
                 "You have successfully registered on these brands": "Έχετε εγγραφεί με επιτυχία σε αυτά τα καζίνο",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ευχαριστούμε που επιβεβαιώσατε τον αριθμό τηλεφώνου σας! Ο VIP διευθυντής σας θα σας καλέσει εντός 10 λεπτών για να μοιραστεί τις αποκλειστικές προσφορές μας. Μείνετε συντονισμένοι!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ΕΊΣΤΕ ΉΔΗ ΕΓΓΕΓΡΑΜΜΈΝΟΙ ΕΔΏ, ΚΆΝΤΕ ΤΙΣ ΠΡΏΤΕΣ ΣΑΣ ΚΑΤΑΘΈΣΕΙΣ ΚΑΙ",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ΛΑΒΕ ΜΕΧΡΙ 500 ΕΥΡΩ ΜΕ ΑΜΕΣΗ ΑΝΑΛΗΨΗ",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ΛΑΜΒΆΝΕΤΕ ΠΡΑΓΜΑΤΙΚΆ ΧΡΗΜΑΤΑ ΜΕ ΆΜΕΣΗ ΑΝΑΛΗΨΗ"
+                "* Explore the Hottest New Brands –": "* Εξερευνήστε τα πιο δημοφιλή νέα καζίνο -",
+                "Click Here!": "Κάντε κλικ εδώ!",
+                "Expires in:": "Λήγει σε:",
+                "BIGGEST JACKPOTS": "ΜΕΓΑΛΥΤΕΡΑ ΤΖΑΚΠΟΤ",
+                "TOP TOURNAMENTS": "ΚΟΡΥΦΑΙΑ ΤΟΥΡΝΟΥΑ",
+                "Click Here to Unleash Your Magic Bonus!": "Κάντε κλικ εδώ για να απελευθερώσετε το μαγικό σας μπόνους!",
+                "Get a bonus just for you tomorrow!": "Πάρτε ένα μπόνους μόνο για εσάς αύριο!",
+                "Get Bonus": "Πάρτε το μπόνους",
+                "Thank you! Your Bonus Will Be Here Soon": "Ευχαριστούμε! Το μπόνους σας θα είναι εδώ σύντομα",
+                "Come back after": "Επιστρέψτε μετά",
+                "to collect it!": "για να το συλλέξετε!",
+                "Your Bonus is Ready!": "Το μπόνους σας είναι έτοιμο!",
+                "Click below to claim your magical reward!": "Κάντε κλικ παρακάτω για να διεκδικήσετε την μαγική σας ανταμοιβή!",
+                "Bonus Ready!": "Το μπόνους είναι έτοιμο!",
+                "HIT THE JACKPOT!": "ΚΕΡΔΙΣΤΕ ΤΟ ΤΖΑΚΠΟΤ!",
+                "Make deposits on the brands below to participate in the jackpot": "Κάντε καταθέσεις στις παρακάτω μάρκες για να συμμετάσχετε στο τζάκποτ"
             }
         },
         hu: {
@@ -3678,9 +4458,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Ingyenes 50 pörgetést kapsz minden első befizetésért a weboldalunkról. Pörgetsd ezeket a pörgetéseket, és akár 20 USD is kaphatsz a kriptopénz tárcádon/PayPal számládon. A kifizetésekhez való jogosultsághoz biztosítsd, hogy az első befizetés legalább 25 euró vagy annak megfelelője más devizákon, és azt a kifizetés kérése után végezted.",
                 "You have successfully registered on these brands": "Sikeresen regisztrált ezeken a márkákon",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Köszönjük, hogy ellenőrizted a telefonszámod! A VIP menedzserünk 10 percen belül fel fog hívni, hogy megoszthassa veled exkluzív ajánlatainkat. Maradj velünk!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "MÁR REGISZTRÁLTÁL ITT, KEZD EL AZ ELSŐ BEFIZETÉSEIDET ÉS",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "AKÁR 184060 HUF-OT IS KAPHAT AZONNALI KIFIZETÉSSEL",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "VALÓDI PÉNZT KAPJ AZ AZONNALI KIFIZETÉSSEL"
+                "* Explore the Hottest New Brands –": "* Fedezze fel a legforróbb új kaszinókat -",
+                "Click Here!": "Kattints ide!",
+                "Expires in:": "Lejár:",
+                "BIGGEST JACKPOTS": "LEGNAGYOBB JACKPOTOK",
+                "TOP TOURNAMENTS": "TOP VERSENYEK",
+                "Click Here to Unleash Your Magic Bonus!": "Kattintson ide a varázslatos bónusz felszabadításához!",
+                "Get a bonus just for you tomorrow!": "Szerezzen holnap egy bónuszt csak önnek!",
+                "Get Bonus": "Szerezzen bónuszt",
+                "Thank you! Your Bonus Will Be Here Soon": "Köszönjük! A bónusz hamarosan itt lesz",
+                "Come back after": "Térjen vissza",
+                "to collect it!": "hogy begyűjtse!",
+                "Your Bonus is Ready!": "A bónusza készen áll!",
+                "Click below to claim your magical reward!": "Kattintson alul, hogy igényelje varázslatos jutalmát!",
+                "Bonus Ready!": "A bónusz készen áll!",
+                "HIT THE JACKPOT!": "ÜSSE MEG A JACKPOTOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Tegyen befizetéseket az alábbi márkákon, hogy részt vegyen a jackpotban"
             }
         },
         it: {
@@ -3933,9 +4726,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Riceverai 50 giri gratuiti per ogni primo deposito dal nostro sito web. Fai girare questi giri e ottieni fino a 20 USD sul tuo portafoglio criptato/PayPal. Per poter prelevare, assicurati che il tuo primo deposito sia di almeno Є25 o l'equivalente in altre valute e sia stato effettuato dopo aver richiesto un prelievo.",
                 "You have successfully registered on these brands": "Hai completato con successo la registrazione su questi marchi",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Grazie per aver verificato il tuo numero di telefono! Il tuo manager VIP ti chiamerà entro 10 minuti per condividere le nostre offerte esclusive. Resta sintonizzato!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "SEI GIÀ REGISTRATO QUI, EFFETTUA I TUOI PRIMI DEPOSITI E",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RICEVI FINO A 500 EURO CON PRELIEVO ISTANTANEO",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RICEVI DENARO REALE CON PRELIEVO ISTANTANEO"
+                "* Explore the Hottest New Brands –": "* Esplora i nuovi casinò più caldi -",
+                "Click Here!": "Clicca qui!",
+                "Expires in:": "Scade tra:",
+                "BIGGEST JACKPOTS": "I PIÙ GRANDI JACKPOT",
+                "TOP TOURNAMENTS": "I MIGLIORI TORNEI",
+                "Click Here to Unleash Your Magic Bonus!": "Clicca qui per sbloccare il tuo bonus magico!",
+                "Get a bonus just for you tomorrow!": "Ottieni un bonus solo per te domani!",
+                "Get Bonus": "Ottieni bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Grazie! Il tuo bonus sarà qui presto",
+                "Come back after": "Torna dopo",
+                "to collect it!": "per ritirarlo!",
+                "Your Bonus is Ready!": "Il tuo bonus è pronto!",
+                "Click below to claim your magical reward!": "Clicca sotto per richiedere la tua ricompensa magica!",
+                "Bonus Ready!": "Bonus pronto!",
+                "HIT THE JACKPOT!": "COLPISCI IL JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Effettua depositi sui marchi sottostanti per partecipare al jackpot"
             }
         },
         no: {
@@ -4188,9 +4994,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du vil få 50 gratisspinn for hver første innskudd fra nettstedet vårt. Spinn disse spinnene og få opptil 20 USD på din kryptolommebok/PayPal. For å kvalifisere for uttak, sørg for at ditt første innskudd er på minst Є25 eller tilsvarende i andre valutaer og ble gjort etter at du ba om et uttak.",
                 "You have successfully registered on these brands": "Du har registrert deg vellykket på disse merkene",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Takk for at du har bekreftet telefonnummeret ditt! Din VIP-manager vil ringe deg innen 10 minutter for å dele våre eksklusive tilbud. Følg med!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ER ALLEREDE REGISTRERT HER, GJØR DINE FØRSTE INNSKUDD OG",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "MOTTA OPPTIL 4625 NOK MED UMIDDELBAR UTTAK",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "MOTTA EKTE PENGER MED ØYEBLIKKELIG UTTAK"
+                "* Explore the Hottest New Brands –": "* Utforsk de nyeste og mest populære casinoene -",
+                "Click Here!": "Klikk her!",
+                "Expires in:": "Utløper om:",
+                "BIGGEST JACKPOTS": "STØRSTE JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGER",
+                "Click Here to Unleash Your Magic Bonus!": "Klikk her for å frigjøre din magiske bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus bare for deg i morgen!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Takk! Bonusen din vil snart være her",
+                "Come back after": "Kom tilbake etter",
+                "to collect it!": "for å hente den!",
+                "Your Bonus is Ready!": "Din bonus er klar!",
+                "Click below to claim your magical reward!": "Klikk nedenfor for å få din magiske belønning!",
+                "Bonus Ready!": "Bonus klar!",
+                "HIT THE JACKPOT!": "SLÅ JACKPOTTEN!",
+                "Make deposits on the brands below to participate in the jackpot": "Gjør innskudd på merkene nedenfor for å delta i jackpotten"
             }
         },
         pt: {
@@ -4443,9 +5262,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Você receberá 50 rodadas grátis para cada primeiro depósito em nosso site. Gire essas rodadas e ganhe até 20 USD em sua carteira de criptomoedas/PayPal. Para se qualificar para saques, certifique-se de que seu primeiro depósito seja de pelo menos Є25 ou o equivalente em outras moedas e tenha sido feito após solicitar um saque.",
                 "You have successfully registered on these brands": "Você se registrou com sucesso nestas marcas",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Obrigado por verificar o seu número de telefone! Seu gerente VIP irá ligar para você dentro de 10 minutos para compartilhar nossas ofertas exclusivas. Fique ligado!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "VOCÊ JÁ ESTÁ REGISTRADO AQUI, FAÇA SEUS PRIMEIROS DEPÓSITOS E",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "RECEBA ATÉ 500 EUR COM RETIRADA INSTANTÂNEA",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "RECEBA DINHEIRO REAL COM SAQUE INSTANTÂNEO"
+                "* Explore the Hottest New Brands –": "* Explore os Novos Cassinos Mais Quentes -",
+                "Click Here!": "Clique aqui!",
+                "Expires in:": "Expira em:",
+                "BIGGEST JACKPOTS": "MAIORES JACKPOTS",
+                "TOP TOURNAMENTS": "MELHORES TORNEIOS",
+                "Click Here to Unleash Your Magic Bonus!": "Clique aqui para liberar seu bônus mágico!",
+                "Get a bonus just for you tomorrow!": "Receba um bônus só para você amanhã!",
+                "Get Bonus": "Obter Bônus",
+                "Thank you! Your Bonus Will Be Here Soon": "Obrigado! Seu bônus estará aqui em breve",
+                "Come back after": "Volte depois de",
+                "to collect it!": "para coletá-lo!",
+                "Your Bonus is Ready!": "Seu bônus está pronto!",
+                "Click below to claim your magical reward!": "Clique abaixo para reivindicar sua recompensa mágica!",
+                "Bonus Ready!": "Bônus pronto!",
+                "HIT THE JACKPOT!": "ACERTE O JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Faça depósitos nas marcas abaixo para participar do jackpot"
             }
         },
         se: {
@@ -4698,9 +5530,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Du kommer att få 50 gratissnurr för varje första insättning från vår webbplats. Snurra dessa snurr och få upp till 20 USD på din kryptoplånbok/PayPal. För att kvalificera dig för uttag, se till att din första insättning är minst Є25 eller motsvarande i andra valutor och gjordes efter att du begärt ett uttag.",
                 "You have successfully registered on these brands": "Du har framgångsrikt registrerat dig på dessa varumärken",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Tack för att du verifierat ditt telefonnummer! Din VIP-manager kommer att ringa dig inom 10 minuter för att dela våra exklusiva erbjudanden. Håll dig uppdaterad!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "DU ÄR REDAN REGISTRERAD HÄR, GÖR DINA FÖRSTA INSÄTTNINGAR OCH",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "FÅ UPP TILL 5200 SEK MED OMEDELBAR UTTAG",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "FÅ RIKTIGA PENGAR MED OMEDELBAR UTTAG"
+                "* Explore the Hottest New Brands –": "* Utforska de hetaste nya casinona -",
+                "Click Here!": "Klicka här!",
+                "Expires in:": "Utgår om:",
+                "BIGGEST JACKPOTS": "STÖRSTA JACKPOTS",
+                "TOP TOURNAMENTS": "TOP TURNERINGAR",
+                "Click Here to Unleash Your Magic Bonus!": "Klicka här för att frigöra din magiska bonus!",
+                "Get a bonus just for you tomorrow!": "Få en bonus bara för dig i morgon!",
+                "Get Bonus": "Få bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Tack! Din bonus kommer snart att vara här",
+                "Come back after": "Kom tillbaka efter",
+                "to collect it!": "för att hämta den!",
+                "Your Bonus is Ready!": "Din bonus är redo!",
+                "Click below to claim your magical reward!": "Klicka nedan för att hämta din magiska belöning!",
+                "Bonus Ready!": "Bonus redo!",
+                "HIT THE JACKPOT!": "SLÅ JACKPOTTEN!",
+                "Make deposits on the brands below to participate in the jackpot": "Gör insättningar på varumärkena nedan för att delta i jackpotten"
             }
         },
         sk: {
@@ -4953,9 +5798,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Dostanete 50 bezplatných zatočení za každý prvý vklad z našej webovej stránky. Zatočte týmito zatočeniami a získajte až 20 USD na svoj kryptomenový peňaženku/PayPal. Pre kvalifikáciu na výbery sa uistite, že váš prvý vklad je aspoň 25 eur alebo ekvivalent v iných menách a bol vykonaný požiadavkou na výber.",
                 "You have successfully registered on these brands": "Úspešne ste sa zaregistrovali na tieto značky",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Ďakujeme za overenie vášho telefónneho čísla! Váš VIP manažér vás zavolá do 10 minút, aby vám predstavil naše exkluzívne ponuky. Buďte naladení!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "UŽ STE TU ZAREGISTROVANÝ, UROBTE SI PRVÉ VLOŽENIA A",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "ZÍSKAJTE AŽ 500 EUR S OKAMŽITÝM VÝBEROM",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ZÍSKAJTE SKUTOČNÉ PENIAZE S OKAMŽITÝM VÝBEROM"
+                "* Explore the Hottest New Brands –": "* Preskúmajte najnovšie kasína -",
+                "Click Here!": "Kliknite tu!",
+                "Expires in:": "Vyprší o:",
+                "BIGGEST JACKPOTS": "NAJVÄČŠIE JACKPOTY",
+                "TOP TOURNAMENTS": "NAJLEPŠIE TURNAJE",
+                "Click Here to Unleash Your Magic Bonus!": "Kliknite sem a uvoľnite svoj magický bonus!",
+                "Get a bonus just for you tomorrow!": "Získajte zajtra bonus len pre vás!",
+                "Get Bonus": "Získať bonus",
+                "Thank you! Your Bonus Will Be Here Soon": "Ďakujeme! Váš bonus bude čoskoro tu",
+                "Come back after": "Vráťte sa po",
+                "to collect it!": "aby ste si ho vyzdvihli!",
+                "Your Bonus is Ready!": "Váš bonus je pripravený!",
+                "Click below to claim your magical reward!": "Kliknite nižšie a získajte svoju magickú odmenu!",
+                "Bonus Ready!": "Bonus pripravený!",
+                "HIT THE JACKPOT!": "ZASIAHNITE JACKPOT!",
+                "Make deposits on the brands below to participate in the jackpot": "Vykonajte vklady na nižšie uvedené značky, aby ste sa zúčastnili jackpotu"
             }
         },
         tr: {
@@ -5208,9 +6066,22 @@ async function initializeI18n() {
                 "You will get 50 Free Spins for every First Deposit from our website. Spin these spins and get up to $20 on your crypto wallet/PayPal. To qualify for withdrawals, ensure your first deposits is at least Є25 or the equivalent on other currencies and was made after requesting a withdrawal.": "Sitemizden her ilk para yatırma işlemi için 50 Ücretsiz Dönüş alacaksınız. Bu dönüşleri çevirin ve kripto cüzdanınıza/PayPal hesabınıza kadar 20 USD kazanın. Çekilmeye hak kazanmak için, ilk para yatırma işleminizin en az 25 Є veya diğer para birimlerindeki karşılığı olması ve çekim talebinde bulunulduktan sonra yapılması gerekmektedir.",
                 "You have successfully registered on these brands": "Bu markalara başarıyla kaydoldunuz",
                 "Thank you for verifying your phone number! Your VIP manager will call you within 10 minutes to share our exclusive offers. Stay tuned!": "Telefon numaranızı doğruladığınız için teşekkür ederiz! VIP yöneticiniz size özel tekliflerimizi paylaşmak için 10 dakika içinde arayacak. Takipte kalın!",
-                "YOU ARE ALREADY REGISTERED HERE, MAKE YOUR FIRST DEPOSITS AND": "ZATEN BURADA KAYITLISINIZ, İLK YATIRIMLARINIZI YAPIN VE",
-                "RECEIVE UP TO 500$ WITH INSTANT WITHDRAWAL": "HIZLI ÇEKİM İLE 13000 TRY'YE KADAR ALIN",
-                "RECEIVE REAL MONEY WITH INSTANT WITHDRAWAL": "ANINDA ÇEKİM İLE GERÇEK PARA ALIN"
+                "* Explore the Hottest New Brands –": "* En Yeni ve En Popüler Casinoları Keşfedin –",
+                "Click Here!": "Buraya Tıkla!",
+                "Expires in:": "Sona erme tarihi:",
+                "BIGGEST JACKPOTS": "EN BÜYÜK JACKPOTLAR",
+                "TOP TOURNAMENTS": "EN İYİ TURNUVALAR",
+                "Click Here to Unleash Your Magic Bonus!": "Sihirli Bonusunuzu serbest bırakmak için buraya tıklayın!",
+                "Get a bonus just for you tomorrow!": "Yarın sadece size özel bir bonus alın!",
+                "Get Bonus": "Bonus Alın",
+                "Thank you! Your Bonus Will Be Here Soon": "Teşekkürler! Bonusunuz yakında burada olacak",
+                "Come back after": "Geri dön",
+                "to collect it!": "toplamak için!",
+                "Your Bonus is Ready!": "Bonusunuz hazır!",
+                "Click below to claim your magical reward!": "Sihirli ödülünüzü almak için aşağıya tıklayın!",
+                "Bonus Ready!": "Bonus Hazır!",
+                "HIT THE JACKPOT!": "JACKPOT'U VUR!",
+                "Make deposits on the brands below to participate in the jackpot": "Jackpot'a katılmak için aşağıdaki markalara para yatırın"
             }
         }
     };
@@ -5253,29 +6124,14 @@ const LanguageSwitcher = ()=>{
     const [isLoading, setIsLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const availableLanguages = [
         {
-            code: "bg",
-            label: "Bulgaria",
-            flag: "🇧🇬"
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
         },
         {
-            code: "cz",
-            label: "Czech",
-            flag: "🇨🇿"
-        },
-        {
-            code: "dk",
-            label: "Denmark",
-            flag: "🇩🇰"
-        },
-        {
-            code: "fi",
-            label: "Finland",
-            flag: "🇫🇮"
-        },
-        {
-            code: "fr",
-            label: "France",
-            flag: "🇫🇷"
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
         },
         {
             code: "de",
@@ -5283,24 +6139,14 @@ const LanguageSwitcher = ()=>{
             flag: "🇩🇪"
         },
         {
-            code: "gr",
-            label: "Greece",
-            flag: "🇬🇷"
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
         },
         {
-            code: "hu",
-            label: "Hungary",
-            flag: "🇭🇺"
-        },
-        {
-            code: "it",
-            label: "Italy",
-            flag: "🇮🇹"
-        },
-        {
-            code: "nl",
-            label: "Netherlands",
-            flag: "🇳🇱"
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
         },
         {
             code: "no",
@@ -5308,19 +6154,39 @@ const LanguageSwitcher = ()=>{
             flag: "🇳🇴"
         },
         {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
             code: "pl",
             label: "Poland",
             flag: "🇵🇱"
-        },
-        {
-            code: "sk",
-            label: "Slovakia",
-            flag: "🇸🇰"
-        },
-        {
-            code: "es",
-            label: "Spain",
-            flag: "🇪🇸"
         },
         {
             code: "se",
@@ -5328,13 +6194,43 @@ const LanguageSwitcher = ()=>{
             flag: "🇸🇪"
         },
         {
-            code: "tr",
-            label: "Turkey",
-            flag: "🇹🇷"
+            code: "cz",
+            label: "Czech",
+            flag: "🇨🇿"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "bg",
+            label: "Bulgaria",
+            flag: "🇧🇬"
         },
         {
             code: "all",
-            label: "English",
+            label: "World",
             flag: "🌍"
         }
     ];
@@ -5408,6 +6304,83 @@ const LanguageSwitcher = ()=>{
             flag: "🌍"
         }
     ];
+    const availableLanguagesCLD_VIP = [
+        {
+            code: "cz",
+            label: "The Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "all",
+            label: "World",
+            flag: "🌍"
+        }
+    ];
     let source;
     if (typeof window !== "undefined") {
         source = localStorage.getItem("source");
@@ -5423,6 +6396,12 @@ const LanguageSwitcher = ()=>{
         case "partner1044":
             newLng = availableLanguages1044;
             break;
+        case "CLD_VIP":
+            newLng = availableLanguagesCLD_VIP;
+            break;
+        case "partner1045_b1":
+            newLng = availableLanguagesCLD_VIP;
+            break;
         default:
             newLng = availableLanguages;
             break;
@@ -5431,7 +6410,7 @@ const LanguageSwitcher = ()=>{
         children: "Failed to load"
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 74,
+        lineNumber: 107,
         columnNumber: 21
     }, this);
     const changeLanguage = async (lng)=>{
@@ -5454,7 +6433,7 @@ const LanguageSwitcher = ()=>{
                     children: t("Website language")
                 }, void 0, false, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 92,
+                    lineNumber: 125,
                     columnNumber: 9
                 }, this),
                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -5483,76 +6462,38 @@ const LanguageSwitcher = ()=>{
                                     ]
                                 }, language.code, true, {
                                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                                    lineNumber: 107,
+                                    lineNumber: 142,
                                     columnNumber: 15
                                 }, this))
                         }, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 94,
+                            lineNumber: 127,
                             columnNumber: 11
                         }, this),
                         isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                            lineNumber: 116,
+                            lineNumber: 151,
                             columnNumber: 25
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-                    lineNumber: 93,
+                    lineNumber: 126,
                     columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-            lineNumber: 91,
+            lineNumber: 124,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/switcher/LanguageSwitcher.jsx>",
-        lineNumber: 90,
+        lineNumber: 123,
         columnNumber: 5
     }, this);
 };
 const __TURBOPACK__default__export__ = LanguageSwitcher;
-
-})()),
-"[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
-
-__turbopack_esm__({
-    "LanguageProvider": ()=>LanguageProvider,
-    "useLanguage": ()=>useLanguage
-});
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
-var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
-"__TURBOPACK__ecmascript__hoisting__location__";
-"use client";
-;
-;
-const LanguageContext = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["createContext"]();
-const useLanguage = ()=>__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useContext"](LanguageContext);
-const LanguageProvider = ({ children })=>{
-    const [language, setLanguage] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]('all');
-    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
-        if (typeof window !== 'undefined') {
-            const storedLanguage = localStorage.getItem('country_brands');
-            if (storedLanguage) {
-                setLanguage(storedLanguage);
-            }
-        }
-    }, []);
-    return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](LanguageContext.Provider, {
-        value: {
-            language,
-            setLanguage
-        },
-        children: children
-    }, void 0, false, {
-        fileName: "<[project]/components/switcher/LanguageContext.jsx>",
-        lineNumber: 21,
-        columnNumber: 5
-    }, this);
-};
 
 })()),
 "[project]/components/switcher/BrandsSwitcher.jsx (ecmascript, ssr)": (({ r: __turbopack_require__, f: __turbopack_require_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, l: __turbopack_load__, j: __turbopack_dynamic__, g: global, __dirname, x: __turbopack_external_require__, y: __turbopack_external_import__, k: __turbopack_refresh__ }) => (() => {
@@ -5575,7 +6516,7 @@ const BrandsSwitcher = ()=>{
     const { language, setLanguage } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
     const ipData = async ()=>{
         try {
-            const response = await fetch("https://ipapi.co/json/?key=YD0x5VtXrPJkOcFQMjEyQgqjfM6jUcwS4J54b3DI8ztyrFpHzW");
+            const response = await fetch('/api/geolocation');
             const data = await response.json();
             if (data.country) {
                 setLanguage(data.country.toLowerCase());
@@ -5592,6 +6533,8 @@ const BrandsSwitcher = ()=>{
         const savedLanguage = localStorage.getItem("country_brands");
         if (!savedLanguage) {
             ipData();
+        } else {
+            setLanguage(savedLanguage);
         }
     }, []);
     const changeLanguage = (lng)=>{
@@ -5608,44 +6551,9 @@ const BrandsSwitcher = ()=>{
             flag: "🇦🇺"
         },
         {
-            code: "at",
-            label: "Austria",
-            flag: "🇦🇹"
-        },
-        {
-            code: "be",
-            label: "Belgium",
-            flag: "🇧🇪"
-        },
-        {
-            code: "bg",
-            label: "Bulgaria",
-            flag: "🇧🇬"
-        },
-        {
             code: "ca",
             label: "Canada",
             flag: "🇨🇦"
-        },
-        {
-            code: "cz",
-            label: "Czech",
-            flag: "🇨🇿"
-        },
-        {
-            code: "dk",
-            label: "Denmark",
-            flag: "🇩🇰"
-        },
-        {
-            code: "fi",
-            label: "Finland",
-            flag: "🇫🇮"
-        },
-        {
-            code: "fr",
-            label: "France",
-            flag: "🇫🇷"
         },
         {
             code: "de",
@@ -5653,29 +6561,9 @@ const BrandsSwitcher = ()=>{
             flag: "🇩🇪"
         },
         {
-            code: "gr",
-            label: "Greece",
-            flag: "🇬🇷"
-        },
-        {
-            code: "hu",
-            label: "Hungary",
-            flag: "🇭🇺"
-        },
-        {
             code: "ie",
             label: "Ireland",
             flag: "🇮🇪"
-        },
-        {
-            code: "it",
-            label: "Italy",
-            flag: "🇮🇹"
-        },
-        {
-            code: "nl",
-            label: "Netherlands",
-            flag: "🇳🇱"
         },
         {
             code: "nz",
@@ -5688,29 +6576,14 @@ const BrandsSwitcher = ()=>{
             flag: "🇳🇴"
         },
         {
-            code: "pl",
-            label: "Poland",
-            flag: "🇵🇱"
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
         },
         {
-            code: "pt",
-            label: "Portugal",
-            flag: "🇵🇹"
-        },
-        {
-            code: "sk",
-            label: "Slovakia",
-            flag: "🇸🇰"
-        },
-        {
-            code: "es",
-            label: "Spain",
-            flag: "🇪🇸"
-        },
-        {
-            code: "se",
-            label: "Sweden",
-            flag: "🇸🇪"
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
         },
         {
             code: "ch",
@@ -5718,14 +6591,64 @@ const BrandsSwitcher = ()=>{
             flag: "🇨🇭"
         },
         {
-            code: "tr",
-            label: "Turkey",
-            flag: "🇹🇷"
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
         },
         {
-            code: "gb",
-            label: "United Kingdom",
-            flag: "🇬🇧"
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "cz",
+            label: "Czech",
+            flag: "🇨🇿"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "bg",
+            label: "Bulgaria",
+            flag: "🇧🇬"
         },
         {
             code: "all",
@@ -5994,6 +6917,128 @@ const BrandsSwitcher = ()=>{
             flag: "🌍"
         }
     ];
+    const availableLanguagesCLD_VIP = [
+        {
+            code: "all",
+            label: "All",
+            flag: "🌍"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gb",
+            label: "United Kingdom",
+            flag: "🇬🇧"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "pt",
+            label: "Portugal",
+            flag: "🇵🇹"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        }
+    ];
     let item;
     if (typeof window !== "undefined") {
         item = localStorage.getItem("source");
@@ -6005,6 +7050,10 @@ const BrandsSwitcher = ()=>{
         newLng = availableLanguages1043;
     } else if (item === "partner1044") {
         newLng = availableLanguages1044;
+    } else if (item === "CLD_VIP") {
+        newLng = availableLanguagesCLD_VIP;
+    } else if (item === "partner1045_b1") {
+        newLng = availableLanguagesCLD_VIP;
     } else {
         newLng = availableLanguages;
     }
@@ -6043,23 +7092,23 @@ const BrandsSwitcher = ()=>{
                         ]
                     }, language.code, true, {
                         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                        lineNumber: 169,
+                        lineNumber: 196,
                         columnNumber: 11
                     }, this))
             }, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 158,
+                lineNumber: 185,
                 columnNumber: 7
             }, this),
             isLoading && __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Loader$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-                lineNumber: 179,
+                lineNumber: 206,
                 columnNumber: 21
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/switcher/BrandsSwitcher.jsx>",
-        lineNumber: 157,
+        lineNumber: 184,
         columnNumber: 5
     }, this);
 };
@@ -6509,6 +7558,128 @@ function MultipleSelectPlaceholder() {
             flag: "🌍"
         }
     ];
+    const flagsCLD_VIP = [
+        {
+            code: "all",
+            label: "All",
+            flag: "🌍"
+        },
+        {
+            code: "at",
+            label: "Austria",
+            flag: "🇦🇹"
+        },
+        {
+            code: "au",
+            label: "Australia",
+            flag: "🇦🇺"
+        },
+        {
+            code: "be",
+            label: "Belgium",
+            flag: "🇧🇪"
+        },
+        {
+            code: "ca",
+            label: "Canada",
+            flag: "🇨🇦"
+        },
+        {
+            code: "ch",
+            label: "Switzerland",
+            flag: "🇨🇭"
+        },
+        {
+            code: "cz",
+            label: "Czech Republic",
+            flag: "🇨🇿"
+        },
+        {
+            code: "de",
+            label: "Germany",
+            flag: "🇩🇪"
+        },
+        {
+            code: "dk",
+            label: "Denmark",
+            flag: "🇩🇰"
+        },
+        {
+            code: "es",
+            label: "Spain",
+            flag: "🇪🇸"
+        },
+        {
+            code: "fi",
+            label: "Finland",
+            flag: "🇫🇮"
+        },
+        {
+            code: "fr",
+            label: "France",
+            flag: "🇫🇷"
+        },
+        {
+            code: "gb",
+            label: "United Kingdom",
+            flag: "🇬🇧"
+        },
+        {
+            code: "gr",
+            label: "Greece",
+            flag: "🇬🇷"
+        },
+        {
+            code: "hu",
+            label: "Hungary",
+            flag: "🇭🇺"
+        },
+        {
+            code: "ie",
+            label: "Ireland",
+            flag: "🇮🇪"
+        },
+        {
+            code: "it",
+            label: "Italy",
+            flag: "🇮🇹"
+        },
+        {
+            code: "nl",
+            label: "Netherlands",
+            flag: "🇳🇱"
+        },
+        {
+            code: "no",
+            label: "Norway",
+            flag: "🇳🇴"
+        },
+        {
+            code: "nz",
+            label: "New Zealand",
+            flag: "🇳🇿"
+        },
+        {
+            code: "pl",
+            label: "Poland",
+            flag: "🇵🇱"
+        },
+        {
+            code: "pt",
+            label: "Portugal",
+            flag: "🇵🇹"
+        },
+        {
+            code: "se",
+            label: "Sweden",
+            flag: "🇸🇪"
+        },
+        {
+            code: "sk",
+            label: "Slovakia",
+            flag: "🇸🇰"
+        }
+    ];
     const [lng, setLng] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]();
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
         setLng(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$i18n$2e$js__$28$ecmascript$29$__["default"].language);
@@ -6529,6 +7700,12 @@ function MultipleSelectPlaceholder() {
             break;
         case "partner1044":
             newFlag = flags1044;
+            break;
+        case "CLD_VIP":
+            newFlag = flagsCLD_VIP;
+            break;
+        case "partner1045_b1":
+            newFlag = flagsCLD_VIP;
             break;
         default:
             newFlag = flags;
@@ -6552,7 +7729,7 @@ function MultipleSelectPlaceholder() {
                 input: __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$material$2f$OutlinedInput$2f$index$2e$js__$28$ecmascript$29$__["default"], {}, void 0, false, void 0, void 0),
                 renderValue: (selected)=>{
                     if (selected.length === 0) {
-                        const languageFlag = newFlag.find((f)=>f.code === language)?.flag || newFlag.find((f)=>f.code === 'all').flag;
+                        const languageFlag = newFlag.find((f)=>f.code === language)?.flag || newFlag.find((f)=>f.code === "all").flag;
                         return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                             className: "flex items-center",
                             children: [
@@ -6582,33 +7759,33 @@ function MultipleSelectPlaceholder() {
                         children: t("Your country of residence")
                     }, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 187,
+                        lineNumber: 224,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 188,
+                        lineNumber: 225,
                         columnNumber: 11
                     }, this),
                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                        lineNumber: 189,
+                        lineNumber: 226,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-                lineNumber: 158,
+                lineNumber: 193,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-            lineNumber: 157,
+            lineNumber: 189,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "<[project]/components/header/MenuLanguages/index.jsx>",
-        lineNumber: 156,
+        lineNumber: 188,
         columnNumber: 5
     }, this);
 }
@@ -7484,6 +8661,7 @@ __turbopack_esm__({
 });
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/jsx-dev-runtime.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/compiled/react/index.js (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/swr/core/dist/index.mjs (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/react-i18next/dist/es/index.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$i18n$2e$js__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/i18n.js (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$Navigation$2e$tsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/Navigation.tsx (ecmascript, ssr)");
@@ -7503,8 +8681,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$mui$2f$mat
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getUser$2f$updateGeo$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getUser/updateGeo.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$geo$2d$identifier$2f$index$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/geo-identifier/index.jsx (ecmascript, ssr)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$modal$2f$index$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/modal/index.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/getBrands/getBrands2.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__ = __turbopack_import__("[project]/components/switcher/LanguageContext.jsx (ecmascript, ssr)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$vercel$2f$analytics$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/@vercel/analytics/dist/index.mjs (ecmascript, ssr)");
 "__TURBOPACK__ecmascript__hoisting__location__";
 "use client";
+;
+;
+;
+;
 ;
 ;
 ;
@@ -7531,6 +8716,13 @@ const TheHeader = ()=>{
     const { t } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["useTranslation"]();
     const items = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$NavItems$2f$index$2e$js__$28$ecmascript$29$__["navItems"](t);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (typeof window !== 'undefined') {
+            fetch('/api/geolocation').then((response)=>response.json()).then((data)=>{
+                console.log("IPIPIPIPIPIP", data);
+            }).catch((error)=>console.error('Ошибка при получении местоположения:', error));
+        }
+    }, []);
     const toggleMobileMenu = ()=>{
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
@@ -7539,7 +8731,22 @@ const TheHeader = ()=>{
     };
     const [isLoading, setIsLoading] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](true);
     const [user, setUser] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
-    const urlParams = new URLSearchParams(typeof window !== "undefined" ? window.location.search : "");
+    const getParamsFromUrl = ()=>{
+        let params = new URLSearchParams(window.location.search);
+        if (!params.has("keyword")) {
+            const hash = window.location.hash;
+            if (hash.includes("?")) {
+                params = new URLSearchParams(hash.split("?")[1]);
+            }
+        }
+        return params;
+    };
+    let urlParams;
+    if (typeof window !== "undefined") {
+        urlParams = getParamsFromUrl();
+    } else {
+        urlParams = new URLSearchParams();
+    }
     const [load, setLoad] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const [keywordValue, setKeywordValue] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](null);
     const idUserParam = urlParams.get("keyword");
@@ -7556,7 +8763,9 @@ const TheHeader = ()=>{
             const partners = [
                 "partner1039",
                 "partner1043",
-                "partner1044"
+                "partner1044",
+                "CLD_VIP",
+                "partner1045_b1"
             ];
             partners.forEach((partner)=>{
                 if (data.includes(partner)) {
@@ -7626,6 +8835,23 @@ const TheHeader = ()=>{
             window.removeEventListener("message", handleMessage);
         };
     }, []);
+    const { language } = __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageContext$2e$jsx__$28$ecmascript$29$__["useLanguage"]();
+    const [brands, setBrands] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    const { data, error } = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$swr$2f$core$2f$dist$2f$index$2e$mjs__$28$ecmascript$29$__["default"]([
+        "brands",
+        language
+    ], ()=>__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$getBrands$2f$getBrands2$2e$jsx__$28$ecmascript$29$__["getBrands"](language), {
+        initialData: brands
+    });
+    const [links, setLinks] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"]([]);
+    __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
+        if (data) {
+            setBrands(data);
+            setLinks(data.map((brand)=>brand.GoBig));
+        }
+    }, [
+        data
+    ]);
     const [showResponsiveDialog, setShowResponsiveDialog] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     const [showBasicModal, setShowBasicModal] = __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useState"](false);
     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$28$ecmascript$29$__["useEffect"](()=>{
@@ -7643,11 +8869,11 @@ const TheHeader = ()=>{
         children: [
             load ? dataUser.geo_approve === null || dataUser.geo_approve === "" ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$geo$2d$identifier$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 182,
+                lineNumber: 230,
                 columnNumber: 11
             }, this) : __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {}, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 184,
+                lineNumber: 232,
                 columnNumber: 11
             }, this) : "",
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7666,17 +8892,17 @@ const TheHeader = ()=>{
                                     loading: "lazy"
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 194,
+                                    lineNumber: 243,
                                     columnNumber: 15
                                 }, this)
                             }, void 0, false, {
                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                lineNumber: 193,
+                                lineNumber: 242,
                                 columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 192,
+                            lineNumber: 241,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7697,7 +8923,7 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 204,
+                                                        lineNumber: 253,
                                                         columnNumber: 23
                                                     }, this),
                                                     " ",
@@ -7705,24 +8931,24 @@ const TheHeader = ()=>{
                                                         children: t("My Wallet")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 208,
+                                                        lineNumber: 257,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 202,
+                                            lineNumber: 251,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 201,
+                                        lineNumber: 250,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 199,
+                                    lineNumber: 248,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7740,31 +8966,31 @@ const TheHeader = ()=>{
                                                         size: 18
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 221,
+                                                        lineNumber: 270,
                                                         columnNumber: 23
                                                     }, this),
                                                     __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                         children: t("Fortune Wheel")
                                                     }, void 0, false, {
                                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                                        lineNumber: 225,
+                                                        lineNumber: 274,
                                                         columnNumber: 23
                                                     }, this)
                                                 ]
                                             }, void 0, true)
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 219,
+                                            lineNumber: 268,
                                             columnNumber: 19
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 218,
+                                        lineNumber: 267,
                                         columnNumber: 17
                                     }, this) : ""
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 216,
+                                    lineNumber: 265,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7779,32 +9005,32 @@ const TheHeader = ()=>{
                                                     size: 18
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 237,
+                                                    lineNumber: 286,
                                                     columnNumber: 21
                                                 }, this),
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("span", {
                                                     children: t("Cards Shop")
                                                 }, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 238,
+                                                    lineNumber: 287,
                                                     columnNumber: 21
                                                 }, this)
                                             ]
                                         }, void 0, true)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 235,
+                                        lineNumber: 284,
                                         columnNumber: 17
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 233,
+                                    lineNumber: 282,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 198,
+                            lineNumber: 247,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18next$2f$dist$2f$es$2f$index$2e$js__$28$ecmascript$29$__["I18nextProvider"], {
@@ -7812,7 +9038,7 @@ const TheHeader = ()=>{
                             children: [
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuLanguages$2f$index$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 246,
+                                    lineNumber: 295,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7823,31 +9049,31 @@ const TheHeader = ()=>{
                                             children: [
                                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$LanguageSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                                    lineNumber: 249,
+                                                    lineNumber: 298,
                                                     columnNumber: 17
                                                 }, this),
                                                 " "
                                             ]
                                         }, void 0, true, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 248,
+                                            lineNumber: 297,
                                             columnNumber: 15
                                         }, this),
                                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$switcher$2f$BrandsSwitcher$2e$jsx__$28$ecmascript$29$__["default"], {}, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 251,
+                                            lineNumber: 300,
                                             columnNumber: 15
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 247,
+                                    lineNumber: 296,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 245,
+                            lineNumber: 294,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"](__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$header$2f$MenuPages$2f$index$2e$js__$28$ecmascript$29$__["default"], {
@@ -7855,7 +9081,7 @@ const TheHeader = ()=>{
                             t: t
                         }, void 0, false, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 255,
+                            lineNumber: 304,
                             columnNumber: 11
                         }, this),
                         __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7871,32 +9097,32 @@ const TheHeader = ()=>{
                                                 className: "line line1"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 263,
+                                                lineNumber: 312,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line2"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 264,
+                                                lineNumber: 313,
                                                 columnNumber: 17
                                             }, this),
                                             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
                                                 className: "line line3"
                                             }, void 0, false, {
                                                 fileName: "<[project]/components/TheHeader.jsx>",
-                                                lineNumber: 265,
+                                                lineNumber: 314,
                                                 columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 262,
+                                        lineNumber: 311,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 258,
+                                    lineNumber: 307,
                                     columnNumber: 13
                                 }, this),
                                 __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7911,34 +9137,34 @@ const TheHeader = ()=>{
                                             onLinkClick: closeMobileMenu
                                         }, void 0, false, {
                                             fileName: "<[project]/components/TheHeader.jsx>",
-                                            lineNumber: 270,
+                                            lineNumber: 319,
                                             columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "<[project]/components/TheHeader.jsx>",
-                                        lineNumber: 269,
+                                        lineNumber: 318,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "<[project]/components/TheHeader.jsx>",
-                                    lineNumber: 268,
+                                    lineNumber: 317,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "<[project]/components/TheHeader.jsx>",
-                            lineNumber: 257,
+                            lineNumber: 306,
                             columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 191,
+                    lineNumber: 240,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 190,
+                lineNumber: 239,
                 columnNumber: 7
             }, this),
             __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$28$ecmascript$29$__["jsxDEV"]("div", {
@@ -7950,18 +9176,18 @@ const TheHeader = ()=>{
                         }))
                 }, void 0, false, {
                     fileName: "<[project]/components/TheHeader.jsx>",
-                    lineNumber: 283,
+                    lineNumber: 332,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "<[project]/components/TheHeader.jsx>",
-                lineNumber: 282,
+                lineNumber: 331,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "<[project]/components/TheHeader.jsx>",
-        lineNumber: 179,
+        lineNumber: 227,
         columnNumber: 5
     }, this);
 };

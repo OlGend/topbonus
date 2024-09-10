@@ -7,9 +7,6 @@ __turbopack_esm__({
     chunks: () => chunks,
 });
 const chunks = [
-  "chunks/ssr/components_slider_Card_module.css",
-  "chunks/ssr/node_modules_slick-carousel_slick_slick.css",
-  "chunks/ssr/node_modules_slick-carousel_slick_slick-theme.css",
   "chunks/rsc/app_globals.css"
 ];
 

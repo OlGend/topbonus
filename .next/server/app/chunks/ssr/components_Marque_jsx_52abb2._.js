@@ -15,7 +15,7 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$react$2d$i18
 ;
 const Marque = ()=>{
     const handleClick = ()=>{
-        const targetElement = document.getElementById("real-block");
+        const targetElement = document.getElementById("real");
         if (targetElement) {
             const headerOffset = 50;
             const elementPosition = targetElement.getBoundingClientRect().top + window.pageYOffset;

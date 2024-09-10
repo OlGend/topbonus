@@ -10849,3 +10849,9 @@ main > .topbr {
     margin-top: 15px;
   }
 }
+
+
+#keitaro-iframe {
+  width: 500px;
+  height: 500px;
+}

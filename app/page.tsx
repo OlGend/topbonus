@@ -26,36 +26,30 @@ export default async function Home() {
   const creative = "FW_Brands_Main_Page";
   return (
     <>
-      {/* <PreviewHome /> */}
+      {/* <KeitaroIframe /> */}
 
       <TopBrands />
 
-{/* <TimeModal /> */}
+      {/* <TimeModal /> */}
       <div className="main__container mt-3">
         <UserBrands />
       </div>
 
       <div className="main__container">
-          <Jackpot />
+        <Jackpot />
       </div>
       <Tournament />
       {/* <TopBrandsRandom /> */}
 
       <NewArrivals />
-      
 
       <div className="main__container">
         <Fortunes banner={banner} target={target} creative={creative} />
       </div>
 
-
       <div className="background-block">
         <FilteredHome />
-
       </div>
-
     </>
   );
 }
-
-
